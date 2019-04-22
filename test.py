@@ -20,14 +20,5 @@ model_state = climt.get_default_state([radiation, convection, boundary_layer])
 time_stepper = TendencyStepper([radiation, convection])
 monitor = NetCDFMonitor('radiative_convective.nc')
 
-# step model forward
-for step in range(10):
-    bl_diagnostics, bl_new_state = boundary_layer(model_state)
-    model_state.update(bl_diagnostics)
-    model_state.update(bl_new_state)
-
-    diagnostics, new_state = time_stepper(model_state, model_timestep)
-    model_state.update(diagnostics)
-    monitor.store(model_state)
-    model_state.update(new_state)
-    model_state['time'] += model_timestep
+bl_diagnostics, bl_new_state = boundary_layer(model_state)
+print(bl_diagnostics.keys())
