@@ -1,7 +1,4 @@
 import climt
-import numpy as np
-import matplotlib.pyplot as plt
-from sympl import (AdamsBashforth, TendencyStepper, NetCDFMonitor)
 from datetime import timedelta
 
 # Define model timestep in minutes
@@ -9,6 +6,7 @@ model_timestep = timedelta(minutes=20)
 
 # Create some components
 radiation = climt.GrayLongwaveRadiation()
+radiation = climt.radiation(scheme='ccm3')
 convection = climt.EmanuelConvection()
 boundary_layer = climt.SlabSurface()
 
