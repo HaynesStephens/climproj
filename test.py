@@ -17,7 +17,7 @@ boundary_layer = climt.SlabSurface()
 model_state = climt.get_default_state([radiation, convection, boundary_layer])
 
 # Create integrator
-time_stepper = TendencyStepper([radiation, convection])
+time_stepper = AdamsBashforth([radiation, convection])
 monitor = NetCDFMonitor('radiative_convective.nc')
 
 bl_diagnostics, bl_new_state = boundary_layer(model_state)
