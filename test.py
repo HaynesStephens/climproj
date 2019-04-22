@@ -20,5 +20,5 @@ model_state = climt.get_default_state([radiation, convection, boundary_layer])
 time_stepper = AdamsBashforth([radiation, convection])
 monitor = NetCDFMonitor('radiative_convective.nc')
 
-diagnostics, new_state = convection(model_state)
+diagnostics, new_state = convection(model_state, model_timestep)
 print(diagnostics.keys())
