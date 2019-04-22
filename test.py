@@ -12,7 +12,7 @@ surface = climt.SlabSurface()
 state = climt.get_default_state([radiation, convection, surface])
 
 # Run components
-tendencies, diagnostics = convection(state)
+tendencies, diagnostics = radiation(state)
 
 # See output
 print(tendencies.keys())
