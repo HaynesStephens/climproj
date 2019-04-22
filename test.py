@@ -14,5 +14,5 @@ boundary_layer = climt.SlabSurface()
 # for the components to run
 model_state = climt.get_default_state([lw_radiation, sw_radiation, convection, boundary_layer])
 
-diagnostics, new_state = radiation(model_state)
+diagnostics, new_state = lw_radiation(model_state)
 print(diagnostics.keys())
