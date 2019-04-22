@@ -1,7 +1,7 @@
 import climt
 import numpy as np
 import matplotlib.pyplot as plt
-from sympl import (AdamsBashforth, NetCDFMonitor)
+from sympl import (AdamsBashforth, TendencyStepper, NetCDFMonitor)
 from datetime import timedelta
 
 # Define model timestep in minutes
@@ -17,7 +17,7 @@ boundary_layer = climt.SlabSurface()
 model_state = climt.get_default_state([radiation, convection, boundary_layer])
 
 # Create integrator
-time_stepper = AdamsBashforth([radiation, convection])
+time_stepper = TendencyStepper([radiation, convection])
 monitor = NetCDFMonitor('radiative_convective.nc')
 
 # step model forward
