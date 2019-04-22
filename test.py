@@ -22,7 +22,7 @@ monitor = NetCDFMonitor('radiative_convective.nc')
 
 # step model forward
 for step in range(10):
-    bl_diagnostics, bl_new_state = boundary_layer(model_state, model_timestep)
+    bl_diagnostics, bl_new_state = boundary_layer(model_state)
     model_state.update(bl_diagnostics)
     model_state.update(bl_new_state)
 
