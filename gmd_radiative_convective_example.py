@@ -110,16 +110,14 @@ for i in range(2000):
     convection.current_time_step = timestep
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
-    if i == 1:
-        print(state['air_temperature'])
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
     if (i+1) % 20 == 0:
-        # monitor.store(state)
+        monitor.store(state)
         netcdf_monitor.store(state)
-        print(i, state['surface_temperature'].values)
-        print(state['surface_upward_sensible_heat_flux'])
-        print(state['surface_upward_latent_heat_flux'])
+        # print(i, state['surface_temperature'].values)
+        # print(state['surface_upward_sensible_heat_flux'])
+        # (state['surface_upward_latent_heat_flux'])
 
     state.update(new_state)
     state['time'] += timestep
