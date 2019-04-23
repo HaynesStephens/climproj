@@ -100,7 +100,7 @@ state['ocean_mixed_layer_thickness'].values[:] = 5
 state['area_type'].values[:] = 'sea'
 
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:] = 0.05
-state['flux_adjustment_for_earth_sun_distance'].values = 1.0
+# state['flux_adjustment_for_earth_sun_distance'].values = 1.0
 
 time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
 
