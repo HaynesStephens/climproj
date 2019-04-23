@@ -73,6 +73,7 @@ slab = SlabSurface()
 simple_physics = SimplePhysics()
 
 store_quantities = ['air_temperature',
+                    'surface_temperature',
                     'air_pressure',
                     'specific_humidity',
                     'air_pressure_on_interface_levels',
