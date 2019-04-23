@@ -64,7 +64,7 @@ def plot_function(fig, state):
 
 monitor = PlotFunctionMonitor(plot_function, interactive=True)
 
-timestep = timedelta(minutes=5)
+timestep = timedelta(hours=1)
 
 convection = EmanuelConvection()
 radiation_sw = RRTMGShortwave()
@@ -90,17 +90,17 @@ convection.current_time_step = timestep
 state = get_default_state([simple_physics, convection,
                            radiation_lw, radiation_sw, slab])
 
-state['air_temperature'].values[:] = 270
-state['surface_albedo_for_direct_shortwave'].values[:] = 0.5
+state['air_temperature'].values[:]                         = 270
+state['surface_albedo_for_direct_shortwave'].values[:]     = 0.5
 state['surface_albedo_for_direct_near_infrared'].values[:] = 0.5
-state['surface_albedo_for_diffuse_shortwave'].values[:] = 0.5
-state['zenith_angle'].values[:] = np.pi/2.5
-state['surface_temperature'].values[:] = 300.
-state['ocean_mixed_layer_thickness'].values[:] = 5
-state['area_type'].values[:] = 'sea'
+state['surface_albedo_for_diffuse_shortwave'].values[:]    = 0.5
+state['zenith_angle'].values[:]                            = np.pi/2.5
+state['surface_temperature'].values[:]                     = 300.
+state['ocean_mixed_layer_thickness'].values[:]             = 5
+state['area_type'].values[:]                               = 'sea'
 
-state['mole_fraction_of_carbon_dioxide_in_air'].values[:] = 0.05
-print(state['flux_adjustment_for_earth_sun_distance'].values)
+state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = 0.05
+state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
 
 time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
 
