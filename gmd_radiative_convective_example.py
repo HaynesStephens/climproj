@@ -105,7 +105,7 @@ state['area_type'].values[:] = 'sea'
 
 time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
 
-for i in range(2000):
+for i in range(200):
     convection.current_time_step = timestep
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
