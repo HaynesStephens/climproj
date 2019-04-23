@@ -80,9 +80,6 @@ store_quantities = ['air_temperature',
                     'air_temperature_tendency_from_longwave',
                     'air_temperature_tendency_from_shortwave',
                     'mole_fraction_of_carbon_dioxide_in_air',
-                    'flux_adjustment_for_earth_sun_distance',
-                    'convective_precipitation_rate']
-store_quantities = ['mole_fraction_of_carbon_dioxide_in_air',
                     'convective_precipitation_rate']
 netcdf_monitor = NetCDFMonitor('rad_conv_eq.nc',
                                store_names=store_quantities,
@@ -114,9 +111,9 @@ for i in range(200):
     if (i+1) % 20 == 0:
         monitor.store(state)
         netcdf_monitor.store(state)
-        # print(i, state['surface_temperature'].values)
-        # print(state['surface_upward_sensible_heat_flux'])
-        # (state['surface_upward_latent_heat_flux'])
+        print(i, state['surface_temperature'].values)
+        print(state['surface_upward_sensible_heat_flux'])
+        print(state['surface_upward_latent_heat_flux'])
 
     state.update(new_state)
     state['time'] += timestep
