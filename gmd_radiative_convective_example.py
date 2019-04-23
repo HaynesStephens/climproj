@@ -115,7 +115,7 @@ for i in range(2000):
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
     if (i+1) % 20 == 0:
-        monitor.store(state)
+        # monitor.store(state)
         netcdf_monitor.store(state)
         print(i, state['surface_temperature'].values)
         print(state['surface_upward_sensible_heat_flux'])
