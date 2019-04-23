@@ -79,9 +79,9 @@ store_quantities = ['air_temperature',
                     'air_temperature_tendency_from_convection',
                     'air_temperature_tendency_from_longwave',
                     'air_temperature_tendency_from_shortwave']
-                    # 'mole_fraction_of_carbon_dioxide_in_air',
-                    # 'flux_adjustment_for_earth_sun_distance',
-                    # 'convective_precipitation_rate']
+                    'mole_fraction_of_carbon_dioxide_in_air',
+                    'flux_adjustment_for_earth_sun_distance',
+                    'convective_precipitation_rate']
 netcdf_monitor = NetCDFMonitor('rad_conv_eq.nc',
                                store_names=store_quantities,
                                write_on_store=True)
