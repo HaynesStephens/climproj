@@ -78,7 +78,7 @@ store_quantities = ['air_temperature',
                     'air_pressure_on_interface_levels',
                     'air_temperature_tendency_from_convection',
                     'air_temperature_tendency_from_longwave',
-                    'air_temperature_tendency_from_shortwave'
+                    'air_temperature_tendency_from_shortwave',
                     'mole_fraction_of_carbon_dioxide_in_air',
                     'flux_adjustment_for_earth_sun_distance',
                     'convective_precipitation_rate']
