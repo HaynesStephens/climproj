@@ -110,7 +110,8 @@ for i in range(2000):
     convection.current_time_step = timestep
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
-    print(state.keys())
+    if i == 1:
+        print(state.keys())
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
     if (i+1) % 20 == 0:
