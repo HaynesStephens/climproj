@@ -111,7 +111,7 @@ for i in range(2000):
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
     if i == 1:
-        print(state['mole_fraction_of_carbon_dioxide_in_air'])
+        print(state['air_temperature'])
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
     if (i+1) % 20 == 0:
