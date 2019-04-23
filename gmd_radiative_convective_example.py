@@ -83,7 +83,7 @@ store_quantities = ['air_temperature',
                     'flux_adjustment_for_earth_sun_distance',
                     'convective_precipitation_rate']
 netcdf_monitor = NetCDFMonitor('rad_conv_eq.nc',
-                               store_names=None,
+                               store_names=store_quantities,
                                write_on_store=True)
 convection.current_time_step = timestep
 
