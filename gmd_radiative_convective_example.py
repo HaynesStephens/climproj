@@ -179,7 +179,7 @@ for i in range(200):
     # state['eastward_wind'].values[:] = 3.
 
 nc = ds(nc_name, 'r+', format='NETCDF4')
-plt.plot(nc_name['time'][:], nc_name['convective_precipitation_rate'][:])
+plt.plot(nc['time'][:], nc['convective_precipitation_rate'][:])
 plt.xlabel('Time')
 plt.ylabel('mm/day')
 plt.show()
