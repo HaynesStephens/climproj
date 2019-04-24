@@ -81,7 +81,9 @@ store_quantities = ['air_temperature',
                     'air_temperature_tendency_from_longwave',
                     'air_temperature_tendency_from_shortwave',
                     'mole_fraction_of_carbon_dioxide_in_air',
-                    'convective_precipitation_rate']
+                    'convective_precipitation_rate',
+                    'surface_upward_sensible_heat_flux',
+                    'surface_upward_latent_heat_flux']
 netcdf_monitor = NetCDFMonitor('rad_conv_eq.nc',
                                store_names=store_quantities,
                                write_on_store=True)
@@ -105,7 +107,7 @@ state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
 
 time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
 
-for i in range(200):
+for i in range(2000):
     convection.current_time_step = timestep
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
