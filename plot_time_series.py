@@ -18,7 +18,7 @@ def plot_time_series(filename):
                 nc['downwelling_longwave_flux_in_air'][:] -
                 nc['downwelling_shortwave_flux_in_air'][:])
 
-    fig, axes = plt.subplots((2,2))
+    fig, axes = plt.subplots(2,2)
     ax0 = axes[0,0]
     ax0.plot(net_flux.values.flatten(), nc['air_pressure_on_interface_levels'][:].flatten(), '-o')
     ax0.set_title('Net Flux')
