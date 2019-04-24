@@ -127,4 +127,4 @@ for i in range(1000):
 
     state.update(new_state)
     state['time'] += timestep
-    # state['eastward_wind'].values[:] = 3.
+    state['eastward_wind'].values[:] = 3.
