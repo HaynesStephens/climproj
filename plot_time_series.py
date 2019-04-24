@@ -8,6 +8,11 @@ def getNC(filename):
 def plot_time_series(filename):
     mid_levels = 28
     interface_levels = 29
+    def getLastInstance(data, levels = None):
+        if levels is None:
+            return data[:].flatten()[-1]
+        else:
+            return data[:].flatten()[-levels:]
 
     nc = getNC(filename)
     time_arr = nc['time'][:]
@@ -16,15 +21,15 @@ def plot_time_series(filename):
     precip = nc['convective_precipitation_rate'][:].flatten()
     co2_ppm = nc['mole_fraction_of_carbon_dioxide_in_air'][:].flatten()[0]
 
-    net_flux = (nc['upwelling_longwave_flux_in_air'][:].flatten()[-interface_levels:] +
-                nc['upwelling_shortwave_flux_in_air'][:].flatten()[-interface_levels:] -
-                nc['downwelling_longwave_flux_in_air'][:].flatten()[-interface_levels:] -
-                nc['downwelling_shortwave_flux_in_air'][:].flatten()[-interface_levels:])
+    net_flux = (getLastInstance(nc['upwelling_longwave_flux_in_air'], interface_levels) +
+                getLastInstance(nc['upwelling_shortwave_flux_in_air'], interface_levels) -
+                getLastInstance(nc['downwelling_longwave_flux_in_air'], interface_levels) -
+                getLastInstance(nc['downwelling_shortwave_flux_in_air'], interface_levels))
     print(net_flux)
 
     fig, axes = plt.subplots(2,2)
     ax0 = axes[0,0]
-    ax0.plot(net_flux, nc['air_pressure_on_interface_levels'][:].flatten()[-interface_levels:], '-o')
+    ax0.plot(net_flux, getLastInstance(nc['air_pressure_on_interface_levels'], interface_levels), '-o')
     ax0.set_title('Net Flux')
     ax0.axes.invert_yaxis()
     ax0.set_xlabel('W/m^2')
