@@ -163,13 +163,13 @@ state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
 
 time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
 
-for i in range(200):
+for i in range(2000):
     convection.current_time_step = timestep
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
-    if (i+1) % 20 == 0:
+    if (i+1) % 50 == 0:
         monitor.store(state)
         netcdf_monitor.store(state)
         print(i, state['surface_temperature'].values)
