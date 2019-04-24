@@ -167,8 +167,6 @@ for i in range(2000):
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
 
-    time_array.append(state['time'])
-
     if (i+1) % 20 == 0:
         monitor.store(state)
         # netcdf_monitor.store(state)
