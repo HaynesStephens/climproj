@@ -65,7 +65,7 @@ def plot_function(fig, state):
 
 monitor = PlotFunctionMonitor(plot_function, interactive=True)
 
-timestep = timedelta(hours=1)
+timestep = timedelta(minutes=30)
 
 convection = EmanuelConvection()
 radiation_sw = RRTMGShortwave()
