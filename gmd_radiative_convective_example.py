@@ -3,6 +3,7 @@ from sympl import (
 )
 from climt import SimplePhysics, get_default_state
 import numpy as np
+from netCDF4 import Dataset as ds
 from datetime import timedelta
 
 from climt import EmanuelConvection, RRTMGShortwave, RRTMGLongwave, SlabSurface
@@ -137,7 +138,9 @@ store_quantities = ['air_temperature',
                     'convective_precipitation_rate',
                     'surface_upward_sensible_heat_flux',
                     'surface_upward_latent_heat_flux']
-netcdf_monitor = NetCDFMonitor('rad_conv_eq.nc',
+
+nc_name = 'rad_conv_eq.nc'
+netcdf_monitor = NetCDFMonitor(nc_name,
                                store_names=store_quantities,
                                write_on_store=True)
 convection.current_time_step = timestep
@@ -174,3 +177,9 @@ for i in range(200):
     state.update(new_state)
     state['time'] += timestep
     # state['eastward_wind'].values[:] = 3.
+
+nc = ds(nc_name, 'r+', format='NETCDF4')
+plt.plot(nc_name['time'][:], nc_name['convective_precipitation_rate'][:])
+plt.xlabel('Time')
+plt.ylabel('mm/day')
+plt.show()
