@@ -25,7 +25,6 @@ def plot_time_series(filename):
                 getLastInstance(nc['upwelling_shortwave_flux_in_air'], interface_levels) -
                 getLastInstance(nc['downwelling_longwave_flux_in_air'], interface_levels) -
                 getLastInstance(nc['downwelling_shortwave_flux_in_air'], interface_levels))
-    print(net_flux)
 
     fig, axes = plt.subplots(2,2)
 
