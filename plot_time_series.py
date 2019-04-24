@@ -13,10 +13,10 @@ def plot_time_series(filename):
     precip = nc['convective_precipitation_rate'][:].flatten()
     co2_ppm = nc['mole_fraction_of_carbon_dioxide_in_air'][:].flatten()[0]
 
-    net_flux = (nc['upwelling_longwave_flux_in_air'][:] +
-                nc['upwelling_shortwave_flux_in_air'][:] -
-                nc['downwelling_longwave_flux_in_air'][:] -
-                nc['downwelling_shortwave_flux_in_air'][:]).flatten()
+    net_flux = (nc['upwelling_longwave_flux_in_air'][:].flatten()[-1] +
+                nc['upwelling_shortwave_flux_in_air'][:].flatten()[-1] -
+                nc['downwelling_longwave_flux_in_air'][:].flatten()[-1] -
+                nc['downwelling_shortwave_flux_in_air'][:].flatten()[-1])
     print(net_flux.shape)
 
     fig, axes = plt.subplots(2,2)
