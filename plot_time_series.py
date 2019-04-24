@@ -8,8 +8,24 @@ def getNC(filename):
 def plot_time_series(filename):
     nc = getNC(filename)
     time_arr = nc['time'][:]
-    fig, ax0 = plt.subplots()
-    ax0.plot(time_arr, nc['surface_upward_latent_heat_flux'][:].flatten())
+    lh_flux = nc['surface_upward_latent_heat_flux'][:].flatten()
+    sh_flux = nc['surface_upward_sensible_heat_flux'][:].flatten()
+    precip = nc['convective_precipitation_rate'][:].flatten()
+    co2_ppm = nc['mole_fraction_of_carbon_dioxide_in_air'][:].flatten()[0]
+
+    net_flux = (nc['upwelling_longwave_flux_in_air'][:] +
+                nc['upwelling_shortwave_flux_in_air'][:] -
+                nc['downwelling_longwave_flux_in_air'][:] -
+                nc['downwelling_shortwave_flux_in_air'][:])
+
+    fig, axes = plt.subplots((2,2))
+    ax0 = axes[0,0]
+    ax0.plot(net_flux.values.flatten(), nc['air_pressure_on_interface_levels'][:].flatten(), '-o')
+    ax0.set_title('Net Flux')
+    ax0.axes.invert_yaxis()
+    ax0.set_xlabel('W/m^2')
+    ax0.grid()
+
     plt.savefig('test.pdf')
     plt.show()
 

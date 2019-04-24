@@ -20,8 +20,8 @@ def plot_function(fig, state):
     ax.set_xlabel('K/day')
     ax.set_ylabel('millibar')
     ax.grid()
-
     ax.axes.invert_yaxis()
+
     ax = fig.add_subplot(2, 2, 2)
     ax.plot(
         state['air_temperature'].values.flatten(),
@@ -124,11 +124,3 @@ for i in range(2000):
     state.update(new_state)
     state['time'] += timestep
     # state['eastward_wind'].values[:] = 3.
-
-nc = ds(nc_name, 'r+', format='NETCDF4')
-plt.clf()
-plt.plot(nc['time'][:], nc['surface_upward_latent_heat_flux'][:].flatten())
-plt.xlabel('Time')
-plt.ylabel('mm/day')
-plt.savefig('test.pdf')
-plt.show()
