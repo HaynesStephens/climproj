@@ -84,7 +84,11 @@ store_quantities = ['air_temperature',
                     'mole_fraction_of_carbon_dioxide_in_air',
                     'convective_precipitation_rate',
                     'surface_upward_sensible_heat_flux',
-                    'surface_upward_latent_heat_flux']
+                    'surface_upward_latent_heat_flux',
+                    'upwelling_longwave_flux_in_air',
+                    'upwelling_shortwave_flux_in_air',
+                    'downwelling_longwave_flux_in_air',
+                    'downwelling_shortwave_flux_in_air']
 
 nc_name = 'rad_conv_eq.nc'
 netcdf_monitor = NetCDFMonitor(nc_name,
