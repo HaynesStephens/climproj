@@ -28,6 +28,7 @@ def plot_time_series(filename):
     print(net_flux)
 
     fig, axes = plt.subplots(2,2)
+
     ax0 = axes[0,0]
     ax0.plot(net_flux, getLastInstance(nc['air_pressure_on_interface_levels'], interface_levels), '-o')
     ax0.set_title('Net Flux')
@@ -35,6 +36,13 @@ def plot_time_series(filename):
     ax0.set_xlabel('W/m^2')
     ax0.set_ylabel('Pa')
     ax0.grid()
+
+    ax1 = axes[0, 1]
+    ax1.plot(time_arr/60, precip, '-o')
+    ax1.set_title('Precipitation')
+    ax1.set_xlabel('Minutes')
+    ax1.set_ylabel('mm/day')
+    ax1.grid()
 
     plt.tight_layout()
     plt.savefig('test.pdf')
