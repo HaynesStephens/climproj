@@ -8,7 +8,7 @@ def getNC(filename):
 def plot_time_series(filename):
     nc = getNC(filename)
     time_arr = nc['time'][:]
-    ax0, fig = plt.subplots()
+    fig, ax0 = plt.subplots()
     ax0.plot(time_arr, nc['surface_upward_latent_heat_flux'][:].flatten())
     plt.savefig('test.pdf')
     plt.show()
