@@ -59,7 +59,7 @@ def plot_time_series(filename):
     ax3.grid()
 
     fig.suptitle('CO$_2$: {0} ppm'.format(co2_ppm), fontsize = 10,
-                 bbox=dict(facecolor='none', edgecolor='green', pad=10.0))
+                 bbox=dict(facecolor='none', edgecolor='green'))
     plt.tight_layout()
     plt.savefig('test.pdf')
     plt.show()
