@@ -17,7 +17,7 @@ def plot_time_series(filename):
                 nc['upwelling_shortwave_flux_in_air'][:].flatten()[-1] -
                 nc['downwelling_longwave_flux_in_air'][:].flatten()[-1] -
                 nc['downwelling_shortwave_flux_in_air'][:].flatten()[-1])
-    print(net_flux.shape)
+    print(net_flux)
 
     fig, axes = plt.subplots(2,2)
     ax0 = axes[0,0]
