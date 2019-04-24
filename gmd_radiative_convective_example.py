@@ -90,7 +90,7 @@ store_quantities = ['air_temperature',
                     'downwelling_longwave_flux_in_air',
                     'downwelling_shortwave_flux_in_air']
 
-nc_name = 'rad_conv_eq.nc'
+nc_name = 'rad_conv_eq_800.nc'
 netcdf_monitor = NetCDFMonitor(nc_name,
                                store_names=store_quantities,
                                write_on_store=True)
@@ -109,7 +109,7 @@ state['surface_temperature'].values[:]                     = 300.
 state['ocean_mixed_layer_thickness'].values[:]             = 5
 state['area_type'].values[:]                               = 'sea'
 
-# state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = 330.0 * 10**(-6)
+state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = 800.0 * 10**(-6)
 state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
 
 time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])

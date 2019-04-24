@@ -60,8 +60,8 @@ def plot_time_series(filename):
     fig.suptitle('CO$_2$: {0} ppm'.format(co2_ppm), fontsize = 10,
                  bbox=dict(facecolor='none', edgecolor='green'))
     plt.tight_layout()
-    plt.savefig('test.pdf')
+    plt.savefig('test_800.pdf')
     plt.show()
 
 
-plot_time_series('rad_conv_eq.nc')
+plot_time_series('rad_conv_eq_800.nc')
