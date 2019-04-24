@@ -58,7 +58,7 @@ def plot_time_series(filename):
     ax3.set_ylabel('W/m^2')
     ax3.grid()
 
-    fig.suptitle('CO$_{2}$: {0}'.format(co2_ppm))
+    fig.suptitle('CO$_2$: {0}'.format(co2_ppm))
     plt.tight_layout()
     plt.savefig('test.pdf')
     plt.show()
