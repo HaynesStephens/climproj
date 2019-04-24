@@ -19,7 +19,7 @@ def plot_time_series(filename):
     lh_flux = nc['surface_upward_latent_heat_flux'][:].flatten()
     sh_flux = nc['surface_upward_sensible_heat_flux'][:].flatten()
     precip = nc['convective_precipitation_rate'][:].flatten()
-    co2_ppm = nc['mole_fraction_of_carbon_dioxide_in_air'][:].flatten()[0]
+    co2_ppm = nc['mole_fraction_of_carbon_dioxide_in_air'][:].flatten()[0] * (10**6)
 
     net_flux = (getLastInstance(nc['upwelling_longwave_flux_in_air'], interface_levels) +
                 getLastInstance(nc['upwelling_shortwave_flux_in_air'], interface_levels) -
@@ -58,6 +58,7 @@ def plot_time_series(filename):
     ax3.set_ylabel('W/m^2')
     ax3.grid()
 
+    fig.suptitle('CO$_{2}$: {0}'.format(co2_ppm))
     plt.tight_layout()
     plt.savefig('test.pdf')
     plt.show()
