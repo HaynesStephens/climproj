@@ -63,7 +63,7 @@ def plot_function(fig, state):
     plt.tight_layout()
 
 
-monitor = PlotFunctionMonitor(alt_plot_function, interactive=True)
+monitor = PlotFunctionMonitor(plot_function, interactive=True)
 
 timestep = timedelta(minutes=5)
 
