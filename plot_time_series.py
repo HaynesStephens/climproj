@@ -6,6 +6,9 @@ def getNC(filename):
     return ds(filename, 'r+', format='NETCDF4')
 
 def plot_time_series(filename):
+    mid_levels = 28
+    interface_levels = 29
+
     nc = getNC(filename)
     time_arr = nc['time'][:]
     lh_flux = nc['surface_upward_latent_heat_flux'][:].flatten()
@@ -13,15 +16,15 @@ def plot_time_series(filename):
     precip = nc['convective_precipitation_rate'][:].flatten()
     co2_ppm = nc['mole_fraction_of_carbon_dioxide_in_air'][:].flatten()[0]
 
-    net_flux = (nc['upwelling_longwave_flux_in_air'][:].flatten()[-1] +
-                nc['upwelling_shortwave_flux_in_air'][:].flatten()[-1] -
-                nc['downwelling_longwave_flux_in_air'][:].flatten()[-1] -
-                nc['downwelling_shortwave_flux_in_air'][:].flatten()[-1])
+    net_flux = (nc['upwelling_longwave_flux_in_air'][:].flatten()[-interface_levels:] +
+                nc['upwelling_shortwave_flux_in_air'][:].flatten()[-interface_levels:] -
+                nc['downwelling_longwave_flux_in_air'][:].flatten()[-interface_levels:] -
+                nc['downwelling_shortwave_flux_in_air'][:].flatten()[-interface_levels:])
     print(net_flux)
 
     fig, axes = plt.subplots(2,2)
     ax0 = axes[0,0]
-    ax0.plot(net_flux, nc['air_pressure_on_interface_levels'][:].flatten(), '-o')
+    ax0.plot(net_flux, nc['air_pressure_on_interface_levels'][:].flatten()[-interface_levels:], '-o')
     ax0.set_title('Net Flux')
     ax0.axes.invert_yaxis()
     ax0.set_xlabel('W/m^2')
