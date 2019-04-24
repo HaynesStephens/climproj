@@ -169,9 +169,9 @@ for i in range(200):
 
     if (i+1) % 20 == 0:
         monitor.store(state)
-        netcdf_monitor.store(state)
+        # netcdf_monitor.store(state)
         print(i, state['surface_temperature'].values)
 
     state.update(new_state)
     state['time'] += timestep
-    # state['eastward_wind'].values[:] = 3.
+    state['eastward_wind'].values[:] = 3.
