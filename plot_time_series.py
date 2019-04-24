@@ -24,6 +24,7 @@ def plot_time_series(filename):
     ax0.set_title('Net Flux')
     ax0.axes.invert_yaxis()
     ax0.set_xlabel('W/m^2')
+    ax0.set_ylabel('Pa')
     ax0.grid()
 
     plt.tight_layout()
