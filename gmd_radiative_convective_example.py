@@ -179,7 +179,9 @@ for i in range(2000):
     # state['eastward_wind'].values[:] = 3.
 
 nc = ds(nc_name, 'r+', format='NETCDF4')
+plt.clf()
 plt.plot(nc['time'][:], nc['surface_upward_latent_heat_flux'][:].flatten())
 plt.xlabel('Time')
 plt.ylabel('mm/day')
 plt.savefig('test.pdf')
+plt.show()
