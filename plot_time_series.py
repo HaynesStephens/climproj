@@ -29,7 +29,7 @@ def plot_time_series(filename):
     fig, axes = plt.subplots(2,2)
 
     ax0 = axes[0,0]
-    ax0.plot(net_flux, getLastInstance(nc['air_pressure_on_interface_levels'], interface_levels), '-o')
+    ax0.plot(net_flux, getLastInstance(nc['air_pressure_on_interface_levels'], interface_levels), '-')
     ax0.set_title('Net Flux')
     ax0.axes.invert_yaxis()
     ax0.set_xlabel('W/m^2')
@@ -37,21 +37,21 @@ def plot_time_series(filename):
     ax0.grid()
 
     ax1 = axes[0, 1]
-    ax1.plot(time_arr/60, precip, '-o')
+    ax1.plot(time_arr/60, precip, '-')
     ax1.set_title('Precipitation')
     ax1.set_xlabel('Minutes')
     ax1.set_ylabel('mm/day')
     ax1.grid()
 
     ax2 = axes[1, 0]
-    ax2.plot(time_arr/60, lh_flux, '-o')
+    ax2.plot(time_arr/60, lh_flux, '-')
     ax2.set_title('Latent Heat Flux')
     ax2.set_xlabel('Minutes')
     ax2.set_ylabel('W/m^2')
     ax2.grid()
 
     ax3 = axes[1, 1]
-    ax3.plot(time_arr/60, sh_flux, '-o')
+    ax3.plot(time_arr/60, sh_flux, '-')
     ax3.set_title('Sensible Heat Flux')
     ax3.set_xlabel('Minutes')
     ax3.set_ylabel('W/m^2')

@@ -114,7 +114,7 @@ state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
 
 time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
 
-for i in range(1000):
+for i in range(10000):
     convection.current_time_step = timestep
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
