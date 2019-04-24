@@ -44,6 +44,20 @@ def plot_time_series(filename):
     ax1.set_ylabel('mm/day')
     ax1.grid()
 
+    ax2 = axes[1, 0]
+    ax2.plot(time_arr/60, lh_flux, '-o')
+    ax2.set_title('Latent Heat Flux')
+    ax2.set_xlabel('Minutes')
+    ax2.set_ylabel('W/m^2')
+    ax2.grid()
+
+    ax3 = axes[1, 1]
+    ax3.plot(time_arr/60, sh_flux, '-o')
+    ax3.set_title('Sensible Heat Flux')
+    ax3.set_xlabel('Minutes')
+    ax3.set_ylabel('W/m^2')
+    ax3.grid()
+
     plt.tight_layout()
     plt.savefig('test.pdf')
     plt.show()
