@@ -26,6 +26,7 @@ def plot_time_series(filename):
     ax0.set_xlabel('W/m^2')
     ax0.grid()
 
+    plt.tight_layout()
     plt.savefig('test.pdf')
     plt.show()
 
