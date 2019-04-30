@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 def getNC(filename):
     return ds(filename, 'r+', format='NETCDF4')
 
-def plot_time_series(filename):
+def plot_time_series(co2_level):
+    filename = 'rad_conv_eq_'+str(co2_level)+'.nc'
     mid_levels = 28
     interface_levels = 29
     def getLastInstance(data, levels = None):
@@ -60,8 +61,9 @@ def plot_time_series(filename):
     fig.suptitle('CO$_2$: {0} ppm'.format(co2_ppm//1), fontsize = 10,
                  bbox=dict(facecolor='none', edgecolor='green'))
     plt.tight_layout()
-    plt.savefig('test_800.pdf')
+    fig_name = 'test_'+str(co2_level)+'.pdf'
+    plt.savefig(fig_name)
     plt.show()
 
 
-plot_time_series('rad_conv_eq_800.nc')
+plot_time_series(400)
