@@ -106,7 +106,7 @@ state = get_default_state([simple_physics, convection,
 
 air_temp_csv = pd.read_csv('TProfile.csv').Kelvin
 
-state['air_temperature'].values[:]                         = air_temp_csv
+state['air_temperature'].values[:]                         = air_temp_csv.reshape(28, 1, 1)
 state['surface_albedo_for_direct_shortwave'].values[:]     = 0.5
 state['surface_albedo_for_direct_near_infrared'].values[:] = 0.5
 state['surface_albedo_for_diffuse_shortwave'].values[:]    = 0.5
