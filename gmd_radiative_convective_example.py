@@ -104,14 +104,14 @@ state = get_default_state([simple_physics, convection,
                            radiation_lw, radiation_sw, slab])
 
 
-air_temp_csv = pd.read_csv('TProfile.csv').Kelvin
+air_temp_csv = pd.read_csv('TProfile.csv').Kelvin[::-1].reshape(28, 1, 1)
 
-state['air_temperature'].values[:]                         = air_temp_csv[::-1].reshape(28, 1, 1)
+state['air_temperature'].values[:]                         = air_temp_csv
 state['surface_albedo_for_direct_shortwave'].values[:]     = 0.5
 state['surface_albedo_for_direct_near_infrared'].values[:] = 0.5
 state['surface_albedo_for_diffuse_shortwave'].values[:]    = 0.5
 state['zenith_angle'].values[:]                            = np.pi/2.5
-state['surface_temperature'].values[:]                     = 295.
+state['surface_temperature'].values[:]                     = air_temp_csv[0,0,0]
 state['ocean_mixed_layer_thickness'].values[:]             = 5
 state['area_type'].values[:]                               = 'sea'
 
