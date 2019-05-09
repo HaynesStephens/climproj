@@ -3,11 +3,12 @@ from sympl import (
 )
 from climt import SimplePhysics, get_default_state
 import numpy as np
-from netCDF4 import Dataset as ds
 from datetime import timedelta
 
 from climt import EmanuelConvection, RRTMGShortwave, RRTMGLongwave, SlabSurface
 import matplotlib.pyplot as plt
+
+import pandas as pd
 
 
 def plot_function(fig, state):
@@ -91,7 +92,7 @@ store_quantities = ['air_temperature',
                     'downwelling_shortwave_flux_in_air']
 
 co2_level = 800
-nc_name = 'rad_conv_eq_'+str(co2_level)+'.nc'
+nc_name = '~/climt_files/rad_conv_eq_'+str(co2_level)+'.nc'
 
 netcdf_monitor = NetCDFMonitor(nc_name,
                                store_names=store_quantities,
@@ -102,12 +103,15 @@ convection.current_time_step = timestep
 state = get_default_state([simple_physics, convection,
                            radiation_lw, radiation_sw, slab])
 
-state['air_temperature'].values[:]                         = 270
+
+air_temp_csv = pd.read_csv('TProfile.csv').Kelvin
+
+state['air_temperature'].values[:]                         = air_temp_csv
 state['surface_albedo_for_direct_shortwave'].values[:]     = 0.5
 state['surface_albedo_for_direct_near_infrared'].values[:] = 0.5
 state['surface_albedo_for_diffuse_shortwave'].values[:]    = 0.5
 state['zenith_angle'].values[:]                            = np.pi/2.5
-state['surface_temperature'].values[:]                     = 300.
+state['surface_temperature'].values[:]                     = 295.
 state['ocean_mixed_layer_thickness'].values[:]             = 5
 state['area_type'].values[:]                               = 'sea'
 
@@ -116,7 +120,7 @@ state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
 
 time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
 
-for i in range(50000):
+for i in range(10000):
     convection.current_time_step = timestep
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
