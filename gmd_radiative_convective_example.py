@@ -9,6 +9,7 @@ from climt import EmanuelConvection, RRTMGShortwave, RRTMGLongwave, SlabSurface
 import matplotlib.pyplot as plt
 
 import pandas as pd
+from netCDF4 import Dataset as ds
 
 
 def plot_function(fig, state):
@@ -92,7 +93,7 @@ store_quantities = ['air_temperature',
                     'downwelling_shortwave_flux_in_air']
 
 co2_level = 290
-nc_name = 'rad_conv_eq_'+str(co2_level)+'.nc'
+nc_name = 'rad_conv_eq_'+str(co2_level)+'_1.nc'
 
 netcdf_monitor = NetCDFMonitor(nc_name,
                                store_names=store_quantities,
@@ -103,15 +104,25 @@ convection.current_time_step = timestep
 state = get_default_state([simple_physics, convection,
                            radiation_lw, radiation_sw, slab])
 
+def getAirTempInitial(type, temp=0, filename=None):
+    if type == 'profile':
+        return pd.read_csv('TProfile.csv').Kelvin[::-1].reshape(28, 1, 1)
+    elif type == 'isothermal':
+        return temp
+    elif type == 'last':
+        nc = ds(filename, 'r+', format='NETCDF4')
+        return nc['air_temperature'][:][-1]
 
-air_temp_csv = pd.read_csv('TProfile.csv').Kelvin[::-1].reshape(28, 1, 1)
 
-state['air_temperature'].values[:]                         = air_temp_csv
+air_temp_filename = 'rad_conv_eq_'+str(co2_level)+'.nc'
+air_temp_i = getAirTempInitial('last', filename=air_temp_filename)
+
+state['air_temperature'].values[:]                         = air_temp_i
 state['surface_albedo_for_direct_shortwave'].values[:]     = 0.5
 state['surface_albedo_for_direct_near_infrared'].values[:] = 0.5
 state['surface_albedo_for_diffuse_shortwave'].values[:]    = 0.5
 state['zenith_angle'].values[:]                            = np.pi/2.5
-state['surface_temperature'].values[:]                     = air_temp_csv[0,0,0]
+state['surface_temperature'].values[:]                     = air_temp_i[0,0,0]
 state['ocean_mixed_layer_thickness'].values[:]             = 5
 state['area_type'].values[:]                               = 'sea'
 

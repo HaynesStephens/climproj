@@ -5,15 +5,16 @@ import matplotlib.pyplot as plt
 def getNC(filename):
     return ds(filename, 'r+', format='NETCDF4')
 
+def getLastInstance(data, levels = None):
+    if levels is None:
+        return data[:].flatten()[-1]
+    else:
+        return data[:].flatten()[-levels:]
+
 def plot_time_series(co2_level):
     filename = 'rad_conv_eq_'+str(co2_level)+'.nc'
     mid_levels = 28
     interface_levels = 29
-    def getLastInstance(data, levels = None):
-        if levels is None:
-            return data[:].flatten()[-1]
-        else:
-            return data[:].flatten()[-levels:]
 
     nc = getNC(filename)
     time_arr = nc['time'][:]
