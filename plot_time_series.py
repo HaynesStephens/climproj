@@ -67,4 +67,4 @@ def plot_time_series(co2_level):
     plt.show()
 
 
-plot_time_series(100)
+plot_time_series(290)
