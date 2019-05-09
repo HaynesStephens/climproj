@@ -92,7 +92,7 @@ store_quantities = ['air_temperature',
                     'downwelling_shortwave_flux_in_air']
 
 co2_level = 290
-nc_name = '~/climt_files/rad_conv_eq_'+str(co2_level)+'.nc'
+nc_name = '/home/climt_files/rad_conv_eq_'+str(co2_level)+'.nc'
 
 netcdf_monitor = NetCDFMonitor(nc_name,
                                store_names=store_quantities,
