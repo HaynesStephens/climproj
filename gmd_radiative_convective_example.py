@@ -125,6 +125,7 @@ state['zenith_angle'].values[:]                            = np.pi/2.5
 state['surface_temperature'].values[:]                     = air_temp_i[0,0,0]
 state['ocean_mixed_layer_thickness'].values[:]             = 5
 state['area_type'].values[:]                               = 'sea'
+print(state['ocean_mixed_layer_thickness'].values[:])
 
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_level) * 10**(-6)
 state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
