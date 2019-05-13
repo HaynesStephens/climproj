@@ -118,9 +118,9 @@ air_temp_filename = 'rad_conv_eq_'+str(co2_level)+'.nc'
 air_temp_i = getAirTempInitial('profile')
 
 state['air_temperature'].values[:]                         = air_temp_i
-state['surface_albedo_for_direct_shortwave'].values[:]     = 0.5
-state['surface_albedo_for_direct_near_infrared'].values[:] = 0.5
-state['surface_albedo_for_diffuse_shortwave'].values[:]    = 0.5
+state['surface_albedo_for_direct_shortwave'].values[:]     = 0.3
+state['surface_albedo_for_direct_near_infrared'].values[:] = 0.3
+state['surface_albedo_for_diffuse_shortwave'].values[:]    = 0.3
 state['zenith_angle'].values[:]                            = np.pi/2.5
 state['surface_temperature'].values[:]                     = air_temp_i[0,0,0]
 state['ocean_mixed_layer_thickness'].values[:]             = 5
@@ -132,7 +132,7 @@ state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
 
 time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
 
-for i in range(20000):
+for i in range(40000):
     convection.current_time_step = timestep
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
