@@ -93,7 +93,7 @@ store_quantities = ['air_temperature',
                     'downwelling_shortwave_flux_in_air']
 
 co2_level = 290
-nc_name = 'rad_conv_eq_'+str(co2_level)+'.nc'
+nc_name = 'rad_conv_eq_'+str(co2_level)+'_1.nc'
 
 netcdf_monitor = NetCDFMonitor(nc_name,
                                store_names=store_quantities,
@@ -115,7 +115,7 @@ def getAirTempInitial(type, temp=0, filename=None):
 
 
 air_temp_filename = 'rad_conv_eq_'+str(co2_level)+'.nc'
-air_temp_i = getAirTempInitial('profile')
+air_temp_i = getAirTempInitial('last', filename=air_temp_filename)
 
 state['air_temperature'].values[:]                         = air_temp_i
 state['surface_albedo_for_direct_shortwave'].values[:]     = 0.06
@@ -125,7 +125,6 @@ state['zenith_angle'].values[:]                            = np.pi/2.5
 state['surface_temperature'].values[:]                     = air_temp_i[0,0,0]
 state['ocean_mixed_layer_thickness'].values[:]             = 5
 state['area_type'].values[:]                               = 'sea'
-print(state['ocean_mixed_layer_thickness'].values[:])
 
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_level) * 10**(-6)
 state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
