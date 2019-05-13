@@ -137,7 +137,7 @@ for i in range(1000000):
     state.update(diagnostics)
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
-    if (i) % 100 == 0:
+    if (i) % 500 == 0:
         monitor.store(state)
         netcdf_monitor.store(state)
         print(i, state['surface_temperature'].values)
