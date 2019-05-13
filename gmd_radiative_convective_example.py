@@ -106,7 +106,7 @@ state = get_default_state([simple_physics, convection,
 
 def getAirTempInitial(type, temp=0, filename=None):
     if type == 'profile':
-        return pd.read_csv('TProfile.csv').Kelvin[::-1].reshape(28, 1, 1)
+        return pd.read_csv('TProfile.csv').Kelvin[::-1].values.reshape(28, 1, 1)
     elif type == 'isothermal':
         return temp
     elif type == 'last':
@@ -118,9 +118,9 @@ air_temp_filename = 'rad_conv_eq_'+str(co2_level)+'.nc'
 air_temp_i = getAirTempInitial('profile')
 
 state['air_temperature'].values[:]                         = air_temp_i
-state['surface_albedo_for_direct_shortwave'].values[:]     = 0.3
-state['surface_albedo_for_direct_near_infrared'].values[:] = 0.3
-state['surface_albedo_for_diffuse_shortwave'].values[:]    = 0.3
+state['surface_albedo_for_direct_shortwave'].values[:]     = 0.06
+state['surface_albedo_for_direct_near_infrared'].values[:] = 0.06
+state['surface_albedo_for_diffuse_shortwave'].values[:]    = 0.06
 state['zenith_angle'].values[:]                            = np.pi/2.5
 state['surface_temperature'].values[:]                     = air_temp_i[0,0,0]
 state['ocean_mixed_layer_thickness'].values[:]             = 5
