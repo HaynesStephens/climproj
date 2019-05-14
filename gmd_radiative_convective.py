@@ -73,12 +73,21 @@ slab = SlabSurface()
 simple_physics = SimplePhysics()
 
 store_quantities = ['air_temperature',
+                    'surface_temperature',
                     'air_pressure',
                     'specific_humidity',
                     'air_pressure_on_interface_levels',
                     'air_temperature_tendency_from_convection',
                     'air_temperature_tendency_from_longwave',
-                    'air_temperature_tendency_from_shortwave']
+                    'air_temperature_tendency_from_shortwave',
+                    'mole_fraction_of_carbon_dioxide_in_air',
+                    'convective_precipitation_rate',
+                    'surface_upward_sensible_heat_flux',
+                    'surface_upward_latent_heat_flux',
+                    'upwelling_longwave_flux_in_air',
+                    'upwelling_shortwave_flux_in_air',
+                    'downwelling_longwave_flux_in_air',
+                    'downwelling_shortwave_flux_in_air']
 netcdf_monitor = NetCDFMonitor('rad_conv_eq.nc',
                                store_names=store_quantities,
                                write_on_store=True)
