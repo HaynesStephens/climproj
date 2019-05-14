@@ -88,6 +88,7 @@ store_quantities = ['air_temperature',
                     'upwelling_shortwave_flux_in_air',
                     'downwelling_longwave_flux_in_air',
                     'downwelling_shortwave_flux_in_air']
+
 netcdf_monitor = NetCDFMonitor('rad_conv_eq.nc',
                                store_names=store_quantities,
                                write_on_store=True)
@@ -109,13 +110,13 @@ state['area_type'].values[:] = 'sea'
 
 time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
 
-for i in range(20000):
+for i in range(2000000):
     convection.current_time_step = timestep
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
-    if (i+1) % 20 == 0:
+    if (i+1) % 100 == 0:
         monitor.store(state)
         netcdf_monitor.store(state)
         print(i, state['surface_temperature'].values)
