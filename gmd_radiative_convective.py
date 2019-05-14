@@ -107,7 +107,7 @@ state['surface_temperature'].values[:] = 300.
 state['ocean_mixed_layer_thickness'].values[:] = 5
 state['area_type'].values[:] = 'sea'
 
-time_stepper = AdamsBashforth([simple_physics, convection, radiation_lw, radiation_sw, slab])
+time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
 
 for i in range(20000):
     convection.current_time_step = timestep
