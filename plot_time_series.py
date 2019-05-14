@@ -13,6 +13,7 @@ def getLastInstance(data, levels = None):
 
 def plot_time_series(co2_level):
     filename = 'rad_conv_eq_'+str(co2_level)+'.nc'
+    filename = 'rad_conv_eq.nc'
     mid_levels = 28
     interface_levels = 29
 
@@ -21,7 +22,7 @@ def plot_time_series(co2_level):
     lh_flux = nc['surface_upward_latent_heat_flux'][:].flatten()
     sh_flux = nc['surface_upward_sensible_heat_flux'][:].flatten()
     precip = nc['convective_precipitation_rate'][:].flatten()
-    co2_ppm = nc['mole_fraction_of_carbon_dioxide_in_air'][:].flatten()[0] * (10**6)
+    # co2_ppm = nc['mole_fraction_of_carbon_dioxide_in_air'][:].flatten()[0] * (10**6)
 
     net_flux = (getLastInstance(nc['upwelling_longwave_flux_in_air'], interface_levels) +
                 getLastInstance(nc['upwelling_shortwave_flux_in_air'], interface_levels) -
@@ -59,12 +60,13 @@ def plot_time_series(co2_level):
     ax3.set_ylabel('W/m^2')
     ax3.grid()
 
-    fig.suptitle('CO$_2$: {0} ppm'.format(co2_ppm//1), fontsize = 10,
-                 bbox=dict(facecolor='none', edgecolor='green'))
+    # fig.suptitle('CO$_2$: {0} ppm'.format(co2_ppm//1), fontsize = 10,
+    #              bbox=dict(facecolor='none', edgecolor='green'))
     plt.tight_layout()
     fig_name = 'test_'+str(co2_level)+'.pdf'
+    fig_name = 'test.pdf'
     plt.savefig(fig_name)
     plt.show()
 
 
-plot_time_series(290)
+plot_time_series(0)

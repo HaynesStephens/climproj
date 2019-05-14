@@ -118,17 +118,17 @@ def getAirTempInitial(type, temp=0, filename=None):
 air_temp_filename = 'rad_conv_eq_'+str(co2_level)+'.nc'
 air_temp_i = getAirTempInitial('profile', filename=air_temp_filename)
 
-# state['air_temperature'].values[:]                         = air_temp_i
-# state['surface_albedo_for_direct_shortwave'].values[:]     = 0.06
-# state['surface_albedo_for_direct_near_infrared'].values[:] = 0.06
-# state['surface_albedo_for_diffuse_shortwave'].values[:]    = 0.06
-# state['zenith_angle'].values[:]                            = np.pi/2.5
-# state['surface_temperature'].values[:]                     = air_temp_i[0,0,0]
-# state['ocean_mixed_layer_thickness'].values[:]             = 5
-# state['area_type'].values[:]                               = 'sea'
-#
-# state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_level) * 10**(-6)
-# state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
+state['air_temperature'].values[:]                         = air_temp_i
+state['surface_albedo_for_direct_shortwave'].values[:]     = 0.06
+state['surface_albedo_for_direct_near_infrared'].values[:] = 0.06
+state['surface_albedo_for_diffuse_shortwave'].values[:]    = 0.06
+state['zenith_angle'].values[:]                            = np.pi/2.5
+state['surface_temperature'].values[:]                     = air_temp_i[0,0,0]
+state['ocean_mixed_layer_thickness'].values[:]             = 5
+state['area_type'].values[:]                               = 'sea'
+
+state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_level) * 10**(-6)
+state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
 
 time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
 
@@ -145,4 +145,4 @@ for i in range(100000):
 
     state.update(new_state)
     state['time'] += timestep
-    # state['eastward_wind'].values[:] = 1.
+    state['eastward_wind'].values[:] = 1.
