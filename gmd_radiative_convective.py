@@ -8,9 +8,6 @@ from datetime import timedelta
 from climt import EmanuelConvection, RRTMGShortwave, RRTMGLongwave, SlabSurface
 import matplotlib.pyplot as plt
 
-import pandas as pd
-from netCDF4 import Dataset as ds
-
 
 def plot_function(fig, state):
     ax = fig.add_subplot(2, 2, 1)
@@ -22,8 +19,8 @@ def plot_function(fig, state):
     ax.set_xlabel('K/day')
     ax.set_ylabel('millibar')
     ax.grid()
-    ax.axes.invert_yaxis()
 
+    ax.axes.invert_yaxis()
     ax = fig.add_subplot(2, 2, 2)
     ax.plot(
         state['air_temperature'].values.flatten(),
@@ -65,7 +62,7 @@ def plot_function(fig, state):
     plt.tight_layout()
 
 
-monitor = PlotFunctionMonitor(plot_function, interactive=True)
+monitor = PlotFunctionMonitor(plot_function)
 
 timestep = timedelta(minutes=5)
 
@@ -76,27 +73,13 @@ slab = SlabSurface()
 simple_physics = SimplePhysics()
 
 store_quantities = ['air_temperature',
-                    'surface_temperature',
                     'air_pressure',
                     'specific_humidity',
                     'air_pressure_on_interface_levels',
                     'air_temperature_tendency_from_convection',
                     'air_temperature_tendency_from_longwave',
-                    'air_temperature_tendency_from_shortwave',
-                    'mole_fraction_of_carbon_dioxide_in_air',
-                    'convective_precipitation_rate',
-                    'surface_upward_sensible_heat_flux',
-                    'surface_upward_latent_heat_flux',
-                    'upwelling_longwave_flux_in_air',
-                    'upwelling_shortwave_flux_in_air',
-                    'downwelling_longwave_flux_in_air',
-                    'downwelling_shortwave_flux_in_air']
-
-co2_level = 290
-# nc_name = 'rad_conv_eq_'+str(co2_level)+'.nc'
-nc_name = 'rad_conv_eq_test.nc'
-
-netcdf_monitor = NetCDFMonitor(nc_name,
+                    'air_temperature_tendency_from_shortwave']
+netcdf_monitor = NetCDFMonitor('rad_conv_eq.nc',
                                store_names=store_quantities,
                                write_on_store=True)
 convection.current_time_step = timestep
@@ -105,44 +88,31 @@ convection.current_time_step = timestep
 state = get_default_state([simple_physics, convection,
                            radiation_lw, radiation_sw, slab])
 
-def getAirTempInitial(type, temp=0, filename=None):
-    if type == 'profile':
-        return pd.read_csv('TProfile.csv').Kelvin[::-1].values.reshape(28, 1, 1)
-    elif type == 'isothermal':
-        return temp
-    elif type == 'last':
-        nc = ds(filename, 'r+', format='NETCDF4')
-        return nc['air_temperature'][:][-1]
+state['air_temperature'].values[:] = 270
+state['surface_albedo_for_direct_shortwave'].values[:] = 0.5
+state['surface_albedo_for_direct_near_infrared'].values[:] = 0.5
+state['surface_albedo_for_diffuse_shortwave'].values[:] = 0.5
 
-
-air_temp_filename = 'rad_conv_eq_'+str(co2_level)+'.nc'
-air_temp_i = getAirTempInitial('profile', filename=air_temp_filename)
-
-# state['air_temperature'].values[:]                         = air_temp_i
-# state['surface_albedo_for_direct_shortwave'].values[:]     = 0.06
-# state['surface_albedo_for_direct_near_infrared'].values[:] = 0.06
-# state['surface_albedo_for_diffuse_shortwave'].values[:]    = 0.06
-# state['zenith_angle'].values[:]                            = np.pi/2.5
-# state['surface_temperature'].values[:]                     = air_temp_i[0,0,0]
-# state['ocean_mixed_layer_thickness'].values[:]             = 5
-# state['area_type'].values[:]                               = 'sea'
-#
-# state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_level) * 10**(-6)
-# state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
+state['zenith_angle'].values[:] = np.pi/2.5
+state['surface_temperature'].values[:] = 300.
+state['ocean_mixed_layer_thickness'].values[:] = 5
+state['area_type'].values[:] = 'sea'
 
 time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
 
-for i in range(100000):
+for i in range(20000):
     convection.current_time_step = timestep
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
-    if (i) % 100 == 0:
+    if (i+1) % 20 == 0:
         monitor.store(state)
         netcdf_monitor.store(state)
         print(i, state['surface_temperature'].values)
+        print(state['surface_upward_sensible_heat_flux'])
+        print(state['surface_upward_latent_heat_flux'])
 
     state.update(new_state)
     state['time'] += timestep
-    # state['eastward_wind'].values[:] = 1.
+    state['eastward_wind'].values[:] = 3.
