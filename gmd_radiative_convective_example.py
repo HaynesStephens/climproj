@@ -132,7 +132,7 @@ air_temp_i = getAirTempInitial('profile', filename=air_temp_filename)
 
 time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
 
-for i in range(10000):
+for i in range(100000):
     convection.current_time_step = timestep
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
