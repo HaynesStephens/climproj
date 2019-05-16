@@ -140,7 +140,18 @@ for i in range(10000):
     if (i) % 100 == 0:
         monitor.store(state)
         netcdf_monitor.store(state)
-        print(i, state['surface_temperature'].values)
+        net_flux = (state['upwelling_longwave_flux_in_air'] +
+                    state['upwelling_shortwave_flux_in_air'] -
+                    state['downwelling_longwave_flux_in_air'] -
+                    state['downwelling_shortwave_flux_in_air'])
+        net_flux_surface = net_flux[0, 0, 0]
+        print(i)
+        print('AIR TEMP:')
+        print(state['surface_temperature'].values)
+        print('SURFACE FLUX')
+        print(net_flux_surface +
+              state['surface_upward_sensible_heat_flux'] +
+              state['surface_upward_latent_heat_flux'])
 
     state.update(new_state)
     state['time'] += timestep
