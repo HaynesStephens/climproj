@@ -24,10 +24,10 @@ def plot_time_series(co2_level):
     precip = nc['convective_precipitation_rate'][:].flatten()
     # co2_ppm = nc['mole_fraction_of_carbon_dioxide_in_air'][:].flatten()[0] * (10**6)
 
-    net_flux = (nc['upwelling_longwave_flux_in_air'] +
-                nc['upwelling_shortwave_flux_in_air'] -
-                nc['downwelling_longwave_flux_in_air'] -
-                nc['downwelling_shortwave_flux_in_air'])
+    net_flux = (nc['upwelling_longwave_flux_in_air'][:] +
+                nc['upwelling_shortwave_flux_in_air'][:] -
+                nc['downwelling_longwave_flux_in_air'][:] -
+                nc['downwelling_shortwave_flux_in_air'][:])
 
     last_net_flux = getLastInstance(net_flux, interface_levels)
     net_flux_surface = net_flux[:, 0, 0, 0]
