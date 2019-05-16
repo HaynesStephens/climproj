@@ -36,7 +36,7 @@ def plot_time_series(co2_level):
 
     ax0 = axes[0,0]
     ax0.plot(last_net_flux, getLastInstance(nc['air_pressure_on_interface_levels'], interface_levels), '-')
-    ax0.set_title('Net Flux')
+    ax0.set_title('Net Rad Flux')
     ax0.axes.invert_yaxis()
     ax0.set_xlabel('W/m^2')
     ax0.set_ylabel('Pa')
