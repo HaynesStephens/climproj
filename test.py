@@ -137,7 +137,7 @@ for i in range(30000):
     state.update(diagnostics)
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
-    if (i) % 500 == 0:
+    if (i) % 100 == 0:
         monitor.store(state)
         netcdf_monitor.store(state)
         net_flux = (state['upwelling_longwave_flux_in_air'] +
