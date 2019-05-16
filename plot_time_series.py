@@ -50,8 +50,8 @@ def plot_time_series(co2_level):
     ax1.grid()
 
     ax2 = axes[1, 0]
-    ax2.plot(time_arr/60, lh_flux, '-', label = 'LH')
-    ax2.plot(time_arr/60, sh_flux, '.-', label = 'SH')
+    ax2.plot(time_arr/60, lh_flux, c = 'b', label = 'LH')
+    ax2.plot(time_arr/60, sh_flux, c = 'r', label = 'SH')
     ax2.set_title('Heat Fluxes')
     ax2.set_xlabel('Minutes')
     ax2.set_ylabel('W/m^2')
@@ -60,7 +60,7 @@ def plot_time_series(co2_level):
 
     ax3 = axes[1, 1]
     ax3.plot(time_arr/60, net_flux_surface + lh_flux + sh_flux, '-')
-    ax3.set_title('Sensible Heat Flux')
+    ax3.set_title('Surface Net Flux')
     ax3.set_xlabel('Minutes')
     ax3.set_ylabel('W/m^2')
     ax3.grid()
