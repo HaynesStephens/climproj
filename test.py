@@ -92,9 +92,8 @@ store_quantities = ['air_temperature',
                     'downwelling_longwave_flux_in_air',
                     'downwelling_shortwave_flux_in_air']
 
-co2_level = 290
-# nc_name = 'rad_conv_eq_'+str(co2_level)+'.nc'
-nc_name = 'rad_conv_eq_test.nc'
+co2_level = 415
+nc_name = 'rad_conv_eq_'+str(co2_level)+'.nc'
 
 netcdf_monitor = NetCDFMonitor(nc_name,
                                store_names=store_quantities,
@@ -115,8 +114,8 @@ def getAirTempInitial(type, temp=0, filename=None):
         return nc['air_temperature'][:][-1]
 
 
-air_temp_filename = 'rad_conv_eq_'+str(co2_level)+'.nc'
-air_temp_i = getAirTempInitial('profile', filename=air_temp_filename)
+air_temp_filename = 'rad_conv_eq.nc'
+air_temp_i = getAirTempInitial('last', filename=air_temp_filename)
 
 state['air_temperature'].values[:]                         = air_temp_i
 state['surface_albedo_for_direct_shortwave'].values[:]     = 0.06
@@ -124,7 +123,7 @@ state['surface_albedo_for_direct_near_infrared'].values[:] = 0.06
 state['surface_albedo_for_diffuse_shortwave'].values[:]    = 0.06
 state['zenith_angle'].values[:]                            = np.pi/2.5
 state['surface_temperature'].values[:]                     = air_temp_i[0,0,0]
-state['ocean_mixed_layer_thickness'].values[:]             = 5
+state['ocean_mixed_layer_thickness'].values[:]             = 3
 state['area_type'].values[:]                               = 'sea'
 
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_level) * 10**(-6)
@@ -132,7 +131,7 @@ state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
 
 time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
 
-for i in range(100000):
+for i in range(10000):
     convection.current_time_step = timestep
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
