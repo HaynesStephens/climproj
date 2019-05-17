@@ -114,7 +114,7 @@ def getAirTempInitial(type, temp=0, filename=None):
         return nc['air_temperature'][:][-1]
 
 
-air_temp_filename = 'rad_conv_eq.nc'
+air_temp_filename = 'rad_conv_eq_415_1.nc'
 air_temp_i = getAirTempInitial('last', filename=air_temp_filename)
 
 state['air_temperature'].values[:]                         = air_temp_i
@@ -131,7 +131,7 @@ state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
 
 time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
 
-for i in range(30000):
+for i in range(100000):
     convection.current_time_step = timestep
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
