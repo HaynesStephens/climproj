@@ -171,6 +171,7 @@ for i in range(100000):
 
     if i % 100 == 0:
         monitor.store(state)
+        netcdf_monitor.store(state)
 
         print(i)
         print('Forcing and Column integral: ', total_heat_gain, enthalpy_gain / timestep.total_seconds())
