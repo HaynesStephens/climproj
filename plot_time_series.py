@@ -19,6 +19,7 @@ def plot_time_series(co2_level):
 
     nc = getNC(filename)
     time_arr = nc['time'][:]
+    time_arr = np.arange(nc['time'][:].size)*10*100*60
     time_adj = time_arr / (3600 * 24)
     time_title = 'Days'
     lh_flux = nc['surface_upward_latent_heat_flux'][:].flatten()
