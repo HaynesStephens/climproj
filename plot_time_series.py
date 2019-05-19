@@ -12,7 +12,7 @@ def getLastInstance(data, levels = None):
         return data[:].flatten()[-levels:]
 
 def plot_time_series(co2_level):
-    filename = 'rad_conv_eq_'+str(co2_level)+'.nc'
+    filename = 'rad_conv_eq_'+str(co2_level)+'_new.nc'
     # filename = 'conservation_test.nc'
     mid_levels = 28
     interface_levels = 29
@@ -73,7 +73,7 @@ def plot_time_series(co2_level):
     # fig.suptitle('CO$_2$: {0} ppm'.format(co2_ppm//1), fontsize = 10,
     #              bbox=dict(facecolor='none', edgecolor='green'))
     plt.tight_layout()
-    fig_name = 'test_'+str(co2_level)+'.pdf'
+    fig_name = 'test_'+str(co2_level)+'_new.pdf'
     # fig_name = 'conservation_test.pdf'
     plt.savefig(fig_name)
     plt.show()

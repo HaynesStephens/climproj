@@ -93,7 +93,7 @@ store_quantities = ['air_temperature',
                     'downwelling_shortwave_flux_in_air']
 
 co2_level = 415
-nc_name = 'rad_conv_eq_'+str(co2_level)+'_new.nc'
+nc_name = 'rad_conv_eq_'+str(co2_level)+'.nc'
 
 netcdf_monitor = NetCDFMonitor(nc_name,
                                store_names=store_quantities,
@@ -111,10 +111,10 @@ def getAirTempInitial(type, temp=0, filename=None):
         return temp
     elif type == 'last':
         nc = ds(filename, 'r+', format='NETCDF4')
-        return nc['air_temperature'][:][500]
+        return nc['air_temperature'][:][-1]
 
 
-air_temp_filename = 'rad_conv_eq_415.nc'
+air_temp_filename = 'rad_conv_eq_415_1.nc'
 air_temp_i = getAirTempInitial('last', filename=air_temp_filename)
 
 state['air_temperature'].values[:]                         = air_temp_i
