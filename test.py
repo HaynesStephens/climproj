@@ -111,7 +111,7 @@ def getAirTempInitial(type, temp=0, filename=None):
         return temp
     elif type == 'last':
         nc = ds(filename, 'r+', format='NETCDF4')
-        return nc['air_temperature'][:][0]
+        return nc['air_temperature'][:][500]
 
 
 air_temp_filename = 'rad_conv_eq_415.nc'
