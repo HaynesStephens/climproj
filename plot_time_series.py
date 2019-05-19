@@ -58,6 +58,7 @@ def plot_time_series(co2_level):
     ax2.set_title('Heat Fluxes')
     ax2.set_xlabel(time_title)
     ax2.set_ylabel('W/m^2')
+    ax2.set_ylim(0, 250)
     ax2.legend()
     ax2.grid()
 
@@ -66,6 +67,7 @@ def plot_time_series(co2_level):
     ax3.set_title('Surface Net Flux')
     ax3.set_xlabel(time_title)
     ax3.set_ylabel('W/m^2')
+    ax3.set_ylim(-100, 100)
     ax3.grid()
 
     # fig.suptitle('CO$_2$: {0} ppm'.format(co2_ppm//1), fontsize = 10,
