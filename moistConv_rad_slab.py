@@ -93,7 +93,7 @@ store_quantities = ['air_temperature',
                     'downwelling_shortwave_flux_in_air']
 
 co2_level = 415
-run_num = 2
+run_num = 1
 nc_name = 'rad_conv_eq_'+str(co2_level)+'_'+str(run_num)+'.nc'
 
 netcdf_monitor = NetCDFMonitor(nc_name,
