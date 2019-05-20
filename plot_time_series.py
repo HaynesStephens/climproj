@@ -76,7 +76,7 @@ def plot_time_series(co2_level):
                  bbox=dict(facecolor='none', edgecolor='green'),
                  x=0.55, y=0.525)
     plt.tight_layout()
-    fig_name = 'test_'+str(co2_level)+'_new.pdf'
+    fig_name = 'test_'+str(co2_level)+'_1.pdf'
     plt.savefig(fig_name)
     plt.show()
 
