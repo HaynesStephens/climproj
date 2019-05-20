@@ -36,7 +36,7 @@ def plot_time_series(co2_level):
 
     ax0 = axes[0,0]
     ax0.plot(getLastInstance(net_flux, interface_levels),
-             getLastInstance(nc['air_pressure_on_interface_levels'], interface_levels), '-')
+             getLastInstance(nc['air_pressure_on_interface_levels'], interface_levels), '-', c='k')
     ax0.set_title('Net Rad Flux')
     ax0.axes.invert_yaxis()
     ax0.set_xlabel('W/m^2')
@@ -45,7 +45,7 @@ def plot_time_series(co2_level):
 
     ax1 = axes[0,1]
     ax1.plot(getLastInstance(nc['air_temperature'], mid_levels),
-             getLastInstance(nc['air_pressure'], mid_levels), '-')
+             getLastInstance(nc['air_pressure'], mid_levels), '-', c='k')
     ax1.set_title('Net Rad Flux')
     ax1.axes.invert_yaxis()
     ax1.set_xlabel('K')
@@ -53,7 +53,7 @@ def plot_time_series(co2_level):
     ax1.grid()
 
     ax2 = axes[1, 0]
-    ax2.plot(time_adj, precip, '-')
+    ax2.plot(time_adj, precip, '-', c='b')
     ax2.set_title('Precipitation')
     ax2.set_xlabel(time_title)
     ax2.set_ylabel('mm/day')
@@ -68,7 +68,7 @@ def plot_time_series(co2_level):
     ax3.set_xlabel(time_title)
     ax3.set_ylabel('W/m^2')
     ax3.set_ylim(-50, 250)
-    ax3.set_legend()
+    ax3.legend()
     ax3.grid()
 
     fig.suptitle('CO$_2$: {0} ppm'.format(co2_ppm//1), fontsize = 10,
