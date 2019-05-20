@@ -73,7 +73,7 @@ def plot_time_series(co2_level):
 
     fig.suptitle('CO$_2$: {0} ppm'.format(co2_ppm//1), fontsize = 10,
                  bbox=dict(facecolor='none', edgecolor='green'),
-                 x=0.55, y=0.55)
+                 x=0.55, y=0.525)
     plt.tight_layout()
     fig_name = 'test_'+str(co2_level)+'_new.pdf'
     plt.savefig(fig_name)
