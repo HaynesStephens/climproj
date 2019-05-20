@@ -4,7 +4,6 @@
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plot_time_series.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_time_series.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rad_conv_eq_415_1.nc" beforeDir="false" afterPath="$PROJECT_DIR$/rad_conv_eq_415_1.nc" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_time_series.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="38" column="97" selection-start-line="38" selection-start-column="97" selection-end-line="38" selection-end-column="97" />
+            <state relative-caret-position="257">
+              <caret line="74" column="64" selection-start-line="74" selection-start-column="64" selection-end-line="74" selection-end-column="64" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -181,21 +180,7 @@
       <workItem from="1558033769316" duration="2381000" />
       <workItem from="1558110436588" duration="2067000" />
       <workItem from="1558286228105" duration="1415000" />
-      <workItem from="1558365944757" duration="1323000" />
-    </task>
-    <task id="LOCAL-00100" summary="new climt run w T profile">
-      <created>1557429573976</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1557429573977</updated>
-    </task>
-    <task id="LOCAL-00101" summary="new climt run w T profile">
-      <created>1557430134092</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1557430134092</updated>
+      <workItem from="1558365944757" duration="1488000" />
     </task>
     <task id="LOCAL-00102" summary="new climt run w T profile">
       <created>1557430288502</created>
@@ -526,11 +511,25 @@
       <option name="project" value="LOCAL" />
       <updated>1558368136613</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="new eq check for run">
+      <created>1558368206387</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1558368206388</updated>
+    </task>
+    <task id="LOCAL-00150" summary="new eq check for run">
+      <created>1558368277163</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1558368277163</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32118000" />
+    <option name="totallyTimeSpent" value="32283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -601,8 +600,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plot_time_series.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="38" column="97" selection-start-line="38" selection-start-column="97" selection-end-line="38" selection-end-column="97" />
+        <state relative-caret-position="257">
+          <caret line="74" column="64" selection-start-line="74" selection-start-column="64" selection-end-line="74" selection-end-column="64" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
