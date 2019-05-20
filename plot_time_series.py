@@ -67,7 +67,7 @@ def plot_time_series(co2_level):
     ax3.set_title('Fluxes')
     ax3.set_xlabel(time_title)
     ax3.set_ylabel('W/m^2')
-    ax3.set_ylim(-50, 250)
+    # ax3.set_ylim(-50, 250)
     ax3.legend()
     ax3.grid()
 
