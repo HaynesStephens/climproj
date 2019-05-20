@@ -47,7 +47,7 @@ def plot_time_series(co2_level):
     ax1 = axes[0,1]
     ax1.plot(getLastInstance(nc['air_temperature'], mid_levels),
              getLastInstance(nc['air_pressure'], mid_levels), '-o', markersize=3, c='k')
-    ax1.set_title('Net Rad Flux')
+    ax1.set_title('Temperature')
     ax1.axes.invert_yaxis()
     ax1.set_xlabel('K')
     ax1.set_ylabel('Pa')
