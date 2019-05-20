@@ -49,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_time_series.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="48" column="72" selection-start-line="48" selection-start-column="72" selection-end-line="48" selection-end-column="72" />
+            <state relative-caret-position="145">
+              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -180,21 +180,7 @@
       <workItem from="1558033769316" duration="2381000" />
       <workItem from="1558110436588" duration="2067000" />
       <workItem from="1558286228105" duration="1415000" />
-      <workItem from="1558365944757" duration="1665000" />
-    </task>
-    <task id="LOCAL-00108" summary="new climt run w T profile">
-      <created>1557778918090</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1557778918091</updated>
-    </task>
-    <task id="LOCAL-00109" summary="new climt run w T profile">
-      <created>1557780044068</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1557780044068</updated>
+      <workItem from="1558365944757" duration="1749000" />
     </task>
     <task id="LOCAL-00110" summary="new climt run w T profile">
       <created>1557780062851</created>
@@ -525,11 +511,25 @@
       <option name="project" value="LOCAL" />
       <updated>1558368511307</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="new eq check for run">
+      <created>1558368546887</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1558368546887</updated>
+    </task>
+    <task id="LOCAL-00158" summary="new eq check for run">
+      <created>1558368593127</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1558368593130</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32460000" />
+    <option name="totallyTimeSpent" value="32544000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -600,8 +600,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plot_time_series.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="48" column="72" selection-start-line="48" selection-start-column="72" selection-end-line="48" selection-end-column="72" />
+        <state relative-caret-position="145">
+          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
