@@ -93,7 +93,7 @@ store_quantities = ['air_temperature',
                     'downwelling_shortwave_flux_in_air']
 
 co2_level = 415
-run_num = 1
+run_num = 2
 nc_name = 'rad_conv_eq_'+str(co2_level)+'_'+str(run_num)+'.nc'
 
 netcdf_monitor = NetCDFMonitor(nc_name,
@@ -132,7 +132,7 @@ state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
 
 time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
 
-for i in range(50000):
+for i in range(500000):
     convection.current_time_step = timestep
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
