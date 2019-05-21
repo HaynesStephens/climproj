@@ -123,7 +123,7 @@ state['surface_albedo_for_direct_shortwave'].values[:]     = 0.06
 state['surface_albedo_for_direct_near_infrared'].values[:] = 0.06
 state['surface_albedo_for_diffuse_shortwave'].values[:]    = 0.06
 state['zenith_angle'].values[:]                            = np.pi/2.5
-state['surface_temperature'].values[:]                     = air_temp_i[0,0,0]
+state['surface_temperature'].values[:]                     = state['air_temperature'].values[0,0,0]
 state['ocean_mixed_layer_thickness'].values[:]             = 0.01
 state['area_type'].values[:]                               = 'sea'
 
