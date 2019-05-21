@@ -12,7 +12,7 @@ def getLastInstance(data, levels = None):
         return data[:].flatten()[-levels:]
 
 def plot_time_series(co2_level, run_num):
-    filename = 'rad_conv_eq_'+str(co2_level)+'.nc'
+    filename = 'rad_conv_eq_'+str(co2_level)+'_'+str(run_num)+'.nc'
     mid_levels = 28
     interface_levels = 29
 
