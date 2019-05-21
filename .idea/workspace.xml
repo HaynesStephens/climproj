@@ -49,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_time_series.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="67" column="54" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
+            <state relative-caret-position="376">
+              <caret line="68" column="71" selection-start-line="68" selection-start-column="71" selection-end-line="68" selection-end-column="71" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -184,21 +184,7 @@
       <workItem from="1558286228105" duration="1415000" />
       <workItem from="1558365944757" duration="2831000" />
       <workItem from="1558378303147" duration="1314000" />
-      <workItem from="1558447930135" duration="569000" />
-    </task>
-    <task id="LOCAL-00122" summary="longgggggg ass run, looking for EQ state">
-      <created>1558034602376</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1558034602377</updated>
-    </task>
-    <task id="LOCAL-00123" summary="longgggggg ass run, looking for EQ state">
-      <created>1558034948733</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1558034948733</updated>
+      <workItem from="1558447930135" duration="789000" />
     </task>
     <task id="LOCAL-00124" summary="longgggggg ass run, looking for EQ state">
       <created>1558035366101</created>
@@ -529,11 +515,25 @@
       <option name="project" value="LOCAL" />
       <updated>1558448122624</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="new eq check for run">
+      <created>1558448694046</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1558448694046</updated>
+    </task>
+    <task id="LOCAL-00172" summary="new eq check for run">
+      <created>1558448842094</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1558448842094</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35509000" />
+    <option name="totallyTimeSpent" value="35729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -605,8 +605,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plot_time_series.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="67" column="54" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
+        <state relative-caret-position="376">
+          <caret line="68" column="71" selection-start-line="68" selection-start-column="71" selection-end-line="68" selection-end-column="71" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
