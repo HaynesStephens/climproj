@@ -31,6 +31,7 @@ def plot_time_series(co2_level, run_num):
                 nc['downwelling_shortwave_flux_in_air'][:])
 
     net_flux_surface = net_flux[:, 0, 0, 0]
+    net_flux_toa = net_flux[:,-1,0,0]
 
     fig, axes = plt.subplots(2,2)
 
@@ -61,10 +62,11 @@ def plot_time_series(co2_level, run_num):
     ax2.grid()
 
     ax3 = axes[1, 1]
-    ax3.plot(time_adj, net_flux_surface, c = 'y', label='Rad')
-    ax3.plot(time_adj, sh_flux, c = 'r', label = 'SH')
-    ax3.plot(time_adj, lh_flux, c = 'b', label = 'LH')
-    ax3.plot(time_adj, net_flux_surface + lh_flux + sh_flux, c='k', label = 'Tot')
+    # ax3.plot(time_adj, net_flux_surface, c = 'y', label='Rad')
+    # ax3.plot(time_adj, sh_flux, c = 'r', label = 'SH')
+    # ax3.plot(time_adj, lh_flux, c = 'b', label = 'LH')
+    ax3.plot(time_adj, net_flux_toa, c='k', label='TOA')
+    ax3.plot(time_adj, net_flux_surface + lh_flux + sh_flux, c='b', label = 'Surf')
     ax3.set_title('Surface Fluxes')
     ax3.set_xlabel(time_title)
     ax3.set_ylabel('W/m^2')
