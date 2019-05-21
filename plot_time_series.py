@@ -83,4 +83,4 @@ def plot_time_series(co2_level, run_num):
     plt.show()
 
 
-plot_time_series(415, 1)
+plot_time_series(415, 2)
