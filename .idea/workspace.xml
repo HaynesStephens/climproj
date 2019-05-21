@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moistConv_rad_slab.py" beforeDir="false" afterPath="$PROJECT_DIR$/moistConv_rad_slab.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plot_time_series.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_time_series.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/moistConv_rad_slab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="134" column="21" selection-start-line="134" selection-start-column="21" selection-end-line="134" selection-end-column="21" />
+            <state relative-caret-position="1449">
+              <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
               <folding>
                 <element signature="e#0#76#0" expanded="true" />
               </folding>
@@ -28,8 +29,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conservation_longTerm_MoistConvecting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
-              <caret line="105" column="49" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="49" />
+            <state relative-caret-position="155">
+              <caret line="148" column="43" selection-start-line="148" selection-start-column="29" selection-end-line="148" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#105#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,7 +53,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_time_series.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
+            <state relative-caret-position="461">
               <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -69,10 +73,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>surface</find>
-      <find>air_pressure_on</find>
-      <find>netcdf_monitor</find>
-      <find>print</find>
       <find>flux_ad</find>
       <find>surface_temperature</find>
       <find>time_arra</find>
@@ -99,6 +99,10 @@
       <find>co2_level</find>
       <find>last_net_flux</find>
       <find>_1</find>
+      <find>run_num</find>
+      <find>DryConvectiveAdjustment</find>
+      <find>dry_convection</find>
+      <find>415</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -184,21 +188,7 @@
       <workItem from="1558286228105" duration="1415000" />
       <workItem from="1558365944757" duration="2831000" />
       <workItem from="1558378303147" duration="1314000" />
-      <workItem from="1558447930135" duration="1071000" />
-    </task>
-    <task id="LOCAL-00126" summary="new eq check for run">
-      <created>1558036279953</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1558036279953</updated>
-    </task>
-    <task id="LOCAL-00127" summary="new eq check for run">
-      <created>1558036459636</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1558036459636</updated>
+      <workItem from="1558447930135" duration="1907000" />
     </task>
     <task id="LOCAL-00128" summary="new eq check for run">
       <created>1558036513548</created>
@@ -529,11 +519,25 @@
       <option name="project" value="LOCAL" />
       <updated>1558449088746</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="new eq check for run">
+      <created>1558454850854</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1558454850854</updated>
+    </task>
+    <task id="LOCAL-00176" summary="new eq check for run">
+      <created>1558454978348</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1558454978348</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36011000" />
+    <option name="totallyTimeSpent" value="36847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -576,13 +580,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gmd_radiative_convective_example.py" />
     <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/conservation_longTerm_MoistConvecting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="105" column="49" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gmd_radiative_convective.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1870">
@@ -593,10 +590,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/conservation_longTerm_MoistConvecting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="148" column="43" selection-start-line="148" selection-start-column="29" selection-end-line="148" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/moistConv_rad_slab.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="134" column="21" selection-start-line="134" selection-start-column="21" selection-end-line="134" selection-end-column="21" />
+        <state relative-caret-position="1449">
+          <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
           <folding>
             <element signature="e#0#76#0" expanded="true" />
           </folding>
@@ -605,7 +612,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plot_time_series.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
+        <state relative-caret-position="461">
           <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
