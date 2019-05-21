@@ -93,7 +93,7 @@ store_quantities = ['air_temperature',
                     'downwelling_shortwave_flux_in_air']
 
 co2_level = 270
-run_num = 0
+run_num = 1
 nc_name = 'rad_conv_eq_'+str(co2_level)+'_'+str(run_num)+'.nc'
 
 netcdf_monitor = NetCDFMonitor(nc_name,
@@ -116,7 +116,7 @@ def getAirTempInitial(type, temp=0, filename=None):
 
 
 # air_temp_filename = 'rad_conv_eq_'+str(co2_level)+'_'+str(run_num-2)+'.nc'
-air_temp_i = getAirTempInitial('profile')
+air_temp_i = getAirTempInitial('isothermal', temp=274)
 
 state['air_temperature'].values[:]                         = air_temp_i
 state['surface_albedo_for_direct_shortwave'].values[:]     = 0.06
@@ -149,13 +149,13 @@ for i in range(500000):
         net_flux_toa = net_flux.values[-1, 0, 0]
         print(i)
         print('AIR TEMP:')
-        print(state['surface_temperature'].values)
+        print(state['surface_temperature'].values[0,0])
         print('TOA FLUX')
         print(net_flux_toa)
         print('SURFACE FLUX (incl. LH & SH)')
         print(net_flux_surface +
-              state['surface_upward_sensible_heat_flux'] +
-              state['surface_upward_latent_heat_flux'])
+              state['surface_upward_sensible_heat_flux'].values +
+              state['surface_upward_latent_heat_flux'].values)
 
     state.update(new_state)
     state['time'] += timestep
