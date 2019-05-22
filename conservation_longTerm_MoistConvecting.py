@@ -138,12 +138,12 @@ time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convectio
 old_enthalpy = calc_moist_enthalpy(state)
 
 for i in range(100000):
-    diagnostics, state = time_stepper(state, timestep)
-    state.update(diagnostics)
-    #flip these blocks back if it doesn't work
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
     state.update(new_state)
+
+    diagnostics, state = time_stepper(state, timestep)
+    state.update(diagnostics)
 
     diagnostics, new_state = dry_convection(state, timestep)
     state.update(diagnostics)
@@ -178,4 +178,5 @@ for i in range(100000):
         print('Surf flux:', surf_flux_to_col)
 
     state.update(new_state)
+    state['time'] += timestep
     state['eastward_wind'].values[:] = 3.
