@@ -137,7 +137,7 @@ time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convectio
 
 old_enthalpy = calc_moist_enthalpy(state)
 
-for i in range(100000):
+for i in range(70000):
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
     state.update(new_state)
