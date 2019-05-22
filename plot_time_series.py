@@ -11,8 +11,12 @@ def getLastInstance(data, levels = None):
     else:
         return data[:].flatten()[-levels:]
 
-def plot_time_series(co2_level, run_num):
-    filename = 'rad_conv_eq_'+str(co2_level)+'_'+str(run_num)+'.nc'
+def plot_time_series(co2_level, run_num, run_type):
+    if run_type == 'rad_conv_eq':
+        basename = 'rad_conv_eq_'+str(co2_level)+'_'+str(run_num)
+    elif run_type == 'dry_adj':
+        basename = 'dry_adj_'+str(co2_level)+'_'+str(run_num)
+    filename = basename + '.nc'
     mid_levels = 28
     interface_levels = 29
 
@@ -78,9 +82,9 @@ def plot_time_series(co2_level, run_num):
                  bbox=dict(facecolor='none', edgecolor='green'),
                  x=0.55, y=0.525)
     plt.tight_layout()
-    fig_name = 'rad_conv_eq_'+str(co2_level)+'_'+str(run_num)+'.pdf'
+    fig_name = basename + '.pdf'
     plt.savefig('plots/'+fig_name)
     plt.show()
 
 
-plot_time_series(270, 1)
+plot_time_series(330, 0, 'dry_adj')
