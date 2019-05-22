@@ -89,4 +89,4 @@ def plot_time_series(co2_ppm, run_num, run_type):
     plt.show()
 
 
-plot_time_series(co2_ppm=330, run_num=0, run_type='dry_adj')
+plot_time_series(co2_ppm=330, run_num=2, run_type='dry_adj')
