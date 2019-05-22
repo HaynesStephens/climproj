@@ -1,15 +1,34 @@
 from sympl import (
-    PlotFunctionMonitor, AdamsBashforth, NetCDFMonitor
+    DataArray, PlotFunctionMonitor,
+    AdamsBashforth, get_constant, NetCDFMonitor
 )
-from climt import SimplePhysics, get_default_state
 import numpy as np
 from datetime import timedelta
-
-from climt import EmanuelConvection, RRTMGShortwave, RRTMGLongwave, SlabSurface
 import matplotlib.pyplot as plt
 
-import pandas as pd
-from netCDF4 import Dataset as ds
+from climt import (
+    EmanuelConvection, RRTMGShortwave, RRTMGLongwave, SlabSurface,
+    DryConvectiveAdjustment, SimplePhysics, get_default_state
+)
+
+
+Cpd = get_constant('heat_capacity_of_dry_air_at_constant_pressure', 'J/kg/degK')
+Cvap = get_constant('heat_capacity_of_vapor_phase', 'J/kg/K')
+g = get_constant('gravitational_acceleration', 'm/s^2')
+Lv = get_constant('latent_heat_of_condensation', 'J/kg')
+
+
+def heat_capacity(q):
+    return Cpd * (1 - q) + Cvap * q
+
+
+def calc_moist_enthalpy(state):
+    dp = (state['air_pressure_on_interface_levels'][:-1] - state['air_pressure_on_interface_levels'][1:]).rename(
+        dict(interface_levels='mid_levels'))
+
+    C_tot = heat_capacity(state['specific_humidity'])
+
+    return ((C_tot * state['air_temperature'] + Lv * state['specific_humidity']) * dp / g).sum().values
 
 
 def plot_function(fig, state):
@@ -67,14 +86,6 @@ def plot_function(fig, state):
 
 monitor = PlotFunctionMonitor(plot_function, interactive=True)
 
-timestep = timedelta(minutes=5)
-
-convection = EmanuelConvection()
-radiation_sw = RRTMGShortwave()
-radiation_lw = RRTMGLongwave()
-slab = SlabSurface()
-simple_physics = SimplePhysics()
-
 store_quantities = ['air_temperature',
                     'surface_temperature',
                     'air_pressure',
@@ -92,19 +103,27 @@ store_quantities = ['air_temperature',
                     'downwelling_longwave_flux_in_air',
                     'downwelling_shortwave_flux_in_air']
 
-netcdf_monitor = NetCDFMonitor(nc_name,
+netcdf_monitor = NetCDFMonitor('dry_adj_330_2.nc',
                                store_names=store_quantities,
                                write_on_store=True)
-convection.current_time_step = timestep
 
+timestep = timedelta(minutes=10)
 
-state = get_default_state([simple_physics, convection,
-                           radiation_lw, radiation_sw, slab])
+radiation_sw = RRTMGShortwave()
+radiation_lw = RRTMGLongwave()
+slab = SlabSurface()
+simple_physics = SimplePhysics()
+dry_convection = DryConvectiveAdjustment()
+moist_convection = EmanuelConvection()
 
+state = get_default_state(
+    [simple_physics, dry_convection, moist_convection,
+     radiation_lw, radiation_sw, slab]
+)
 
 co2_ppm = 270
-run_num = 1
-basename = 'rad_conv_eq_'
+run_num = 0
+basename = 'dry_adj_'
 nc_name = basename+str(co2_ppm)+'_'+str(run_num)+'.nc'
 
 
@@ -118,7 +137,8 @@ def getAirTempInitial(type, temp=0, filename=None):
         return nc['air_temperature'][:][-1]
 
 
-air_temp_filename = basename+str(co2_ppm)+'_'+str(run_num-1)+'.nc'
+# air_temp_filename = basename+str(co2_ppm)+'_'+str(run_num-1)+'.nc'
+air_temp_filename = 'dry_adj_330_2.nc'
 air_temp_i = getAirTempInitial('last', filename=air_temp_filename)
 
 state['air_temperature'].values[:]                         = air_temp_i
@@ -133,33 +153,50 @@ state['area_type'].values[:]                               = 'sea'
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10**(-6)
 state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
 
-time_stepper = AdamsBashforth([convection, radiation_lw, radiation_sw, slab])
+time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convection])
 
-for i in range(500000):
-    convection.current_time_step = timestep
-    diagnostics, state = time_stepper(state, timestep)
-    state.update(diagnostics)
+old_enthalpy = calc_moist_enthalpy(state)
+
+for i in range(70000):
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
-    if (i) % 100 == 0:
+    state.update(new_state)
+
+    diagnostics, state = time_stepper(state, timestep)
+    state.update(diagnostics)
+
+    diagnostics, new_state = dry_convection(state, timestep)
+    state.update(diagnostics)
+    state.update(new_state)
+
+    surf_flux_to_col = -(state['downwelling_shortwave_flux_in_air'][0] +
+                         state['downwelling_longwave_flux_in_air'][0] -
+                         state['upwelling_shortwave_flux_in_air'][0] -
+                         state['upwelling_longwave_flux_in_air'][0] -
+                         state['surface_upward_sensible_heat_flux'] -
+                         state['surface_upward_latent_heat_flux']).values
+
+    toa_flux_to_col = (state['downwelling_shortwave_flux_in_air'][-1] -
+                       state['upwelling_shortwave_flux_in_air'][-1] -
+                       state['upwelling_longwave_flux_in_air'][-1]).values
+
+    # print('TOA flux:', toa_flux_to_col)
+    # print('Surf flux:', surf_flux_to_col)
+
+    total_heat_gain = surf_flux_to_col + toa_flux_to_col
+    current_enthalpy = calc_moist_enthalpy(state)
+    enthalpy_gain = current_enthalpy - old_enthalpy
+    old_enthalpy = current_enthalpy
+
+    if i % 100 == 0:
         monitor.store(state)
         netcdf_monitor.store(state)
-        net_flux = (state['upwelling_longwave_flux_in_air'] +
-                    state['upwelling_shortwave_flux_in_air'] -
-                    state['downwelling_longwave_flux_in_air'] -
-                    state['downwelling_shortwave_flux_in_air'])
-        net_flux_surface = net_flux.values[0, 0, 0]
-        net_flux_toa = net_flux.values[-1, 0, 0]
+
         print(i)
-        print('AIR TEMP:')
-        print(state['surface_temperature'].values[0,0])
-        print('TOA FLUX')
-        print(net_flux_toa)
-        print('SURFACE FLUX (incl. LH & SH)')
-        print(net_flux_surface +
-              state['surface_upward_sensible_heat_flux'].values +
-              state['surface_upward_latent_heat_flux'].values)
+        print('Forcing and Column integral: ', total_heat_gain, enthalpy_gain / timestep.total_seconds())
+        print('TOA flux:', toa_flux_to_col)
+        print('Surf flux:', surf_flux_to_col)
 
     state.update(new_state)
-    state['time'] += timestep
+    # state['time'] += timestep
     state['eastward_wind'].values[:] = 3.
