@@ -103,7 +103,7 @@ store_quantities = ['air_temperature',
                     'downwelling_longwave_flux_in_air',
                     'downwelling_shortwave_flux_in_air']
 
-netcdf_monitor = NetCDFMonitor('conservation_test.nc',
+netcdf_monitor = NetCDFMonitor('dry_adj_300_0_1.nc',
                                store_names=store_quantities,
                                write_on_store=True)
 
@@ -138,13 +138,12 @@ time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convectio
 old_enthalpy = calc_moist_enthalpy(state)
 
 for i in range(100000):
-
+    diagnostics, state = time_stepper(state, timestep)
+    state.update(diagnostics)
+    #flip these blocks back if it doesn't work
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
     state.update(new_state)
-
-    diagnostics, state = time_stepper(state, timestep)
-    state.update(diagnostics)
 
     diagnostics, new_state = dry_convection(state, timestep)
     state.update(diagnostics)
