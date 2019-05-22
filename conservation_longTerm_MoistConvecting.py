@@ -103,7 +103,7 @@ store_quantities = ['air_temperature',
                     'downwelling_longwave_flux_in_air',
                     'downwelling_shortwave_flux_in_air']
 
-netcdf_monitor = NetCDFMonitor('dry_adj_330_1.nc',
+netcdf_monitor = NetCDFMonitor('dry_adj_330_2.nc',
                                store_names=store_quantities,
                                write_on_store=True)
 
@@ -178,5 +178,5 @@ for i in range(70000):
         print('Surf flux:', surf_flux_to_col)
 
     state.update(new_state)
-    state['time'] += timestep
+    # state['time'] += timestep
     state['eastward_wind'].values[:] = 3.
