@@ -105,7 +105,12 @@ store_quantities = ['air_temperature',
                     'downwelling_longwave_flux_in_air',
                     'downwelling_shortwave_flux_in_air']
 
-netcdf_monitor = NetCDFMonitor('dry_adj_330_2.nc',
+co2_ppm = 270
+run_num = 0
+basename = 'dry_adj_'
+nc_name = basename+str(co2_ppm)+'_'+str(run_num)+'.nc'
+
+netcdf_monitor = NetCDFMonitor(nc_name,
                                store_names=store_quantities,
                                write_on_store=True)
 
@@ -122,11 +127,6 @@ state = get_default_state(
     [simple_physics, dry_convection, moist_convection,
      radiation_lw, radiation_sw, slab]
 )
-
-co2_ppm = 270
-run_num = 0
-basename = 'dry_adj_'
-nc_name = basename+str(co2_ppm)+'_'+str(run_num)+'.nc'
 
 
 def getAirTempInitial(type, temp=0, filename=None):
