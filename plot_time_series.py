@@ -84,7 +84,7 @@ def plot_time_series(co2_ppm, run_num, run_type):
                  bbox=dict(facecolor='none', edgecolor='green'),
                  x=0.55, y=0.525)
     plt.tight_layout()
-    fig_name = basename + '_edit.pdf'
+    fig_name = basename + '.pdf'
     plt.savefig('plots/'+fig_name)
     plt.show()
 
