@@ -141,7 +141,7 @@ def getAirTempInitial(type, temp=0, filename=None):
 
 # air_temp_filename = basename+str(co2_ppm)+'_'+str(run_num-1)+'.nc'
 air_temp_filename = 'dry_adj_330_2.nc'
-air_temp_i = getAirTempInitial('isothermal', temp=265, filename=air_temp_filename)
+air_temp_i = getAirTempInitial('isothermal', temp=265, fadfilename=air_temp_filename)
 
 state['air_temperature'].values[:]                         = air_temp_i
 state['surface_albedo_for_direct_shortwave'].values[:]     = 0.06

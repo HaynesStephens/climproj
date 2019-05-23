@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/longTerm_moistConvection_edit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="143" column="55" selection-start-line="143" selection-start-column="55" selection-end-line="143" selection-end-column="55" />
+            <state relative-caret-position="17">
+              <caret line="143" column="58" selection-start-line="143" selection-start-column="58" selection-end-line="143" selection-end-column="58" />
               <folding>
                 <element signature="e#0#105#0" expanded="true" />
               </folding>
@@ -81,9 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fig</find>
-      <find>400</find>
-      <find>co2_pp</find>
       <find>ds</find>
       <find>getLastInstance</find>
       <find>print(</find>
@@ -111,6 +108,9 @@
       <find>nc_name</find>
       <find>print</find>
       <find>basename</find>
+      <find>Cpd</find>
+      <find>heat_capacity</find>
+      <find>calc_moist_enthalpy</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -197,14 +197,7 @@
       <workItem from="1558286228105" duration="1415000" />
       <workItem from="1558365944757" duration="2831000" />
       <workItem from="1558378303147" duration="1314000" />
-      <workItem from="1558447930135" duration="6374000" />
-    </task>
-    <task id="LOCAL-00149" summary="new eq check for run">
-      <created>1558368206387</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1558368206388</updated>
+      <workItem from="1558447930135" duration="6454000" />
     </task>
     <task id="LOCAL-00150" summary="new eq check for run">
       <created>1558368277163</created>
@@ -542,11 +535,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558621892540</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="new eq check for run">
+      <created>1558621983321</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1558621983321</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41314000" />
+    <option name="totallyTimeSpent" value="41394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -628,8 +628,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/longTerm_moistConvection_edit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="143" column="55" selection-start-line="143" selection-start-column="55" selection-end-line="143" selection-end-column="55" />
+        <state relative-caret-position="17">
+          <caret line="143" column="58" selection-start-line="143" selection-start-column="58" selection-end-line="143" selection-end-column="58" />
           <folding>
             <element signature="e#0#105#0" expanded="true" />
           </folding>
