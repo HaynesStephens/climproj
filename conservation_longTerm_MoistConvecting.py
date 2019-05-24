@@ -103,7 +103,7 @@ store_quantities = ['air_temperature',
                     'downwelling_longwave_flux_in_air',
                     'downwelling_shortwave_flux_in_air']
 
-netcdf_monitor = NetCDFMonitor('CLTMC_330_3.nc',
+netcdf_monitor = NetCDFMonitor('CLTMC_330_4.nc',
                                store_names=store_quantities,
                                write_on_store=True)
 
@@ -137,7 +137,7 @@ time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convectio
 
 old_enthalpy = calc_moist_enthalpy(state)
 
-for i in range(120000):
+for i in range(200000):
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
     state.update(new_state)
