@@ -161,5 +161,5 @@ for i in range(500000):
               state['surface_upward_latent_heat_flux'].values)
 
     state.update(new_state)
-    state['time'] += timestep
+    # state['time'] += timestep
     state['eastward_wind'].values[:] = 3.

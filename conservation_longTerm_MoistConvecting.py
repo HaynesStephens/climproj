@@ -103,7 +103,7 @@ store_quantities = ['air_temperature',
                     'downwelling_longwave_flux_in_air',
                     'downwelling_shortwave_flux_in_air']
 
-netcdf_monitor = NetCDFMonitor('dry_adj_330_2.nc',
+netcdf_monitor = NetCDFMonitor('dry_adj_330_3.nc',
                                store_names=store_quantities,
                                write_on_store=True)
 
@@ -137,7 +137,7 @@ time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convectio
 
 old_enthalpy = calc_moist_enthalpy(state)
 
-for i in range(70000):
+for i in range(120000):
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
     state.update(new_state)
@@ -178,5 +178,5 @@ for i in range(70000):
         print('Surf flux:', surf_flux_to_col)
 
     state.update(new_state)
-    # state['time'] += timestep
+    state['time'] += timestep
     state['eastward_wind'].values[:] = 3.
