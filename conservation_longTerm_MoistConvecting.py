@@ -156,9 +156,10 @@ for i in range(120000):
                          state['surface_upward_sensible_heat_flux'] -
                          state['surface_upward_latent_heat_flux']).values
 
-    toa_flux_to_col = (state['downwelling_shortwave_flux_in_air'][-1] -
-                       state['upwelling_shortwave_flux_in_air'][-1] -
-                       state['upwelling_longwave_flux_in_air'][-1]).values
+    toa_flux_to_col = (state['downwelling_shortwave_flux_in_air'][-1] +
+                         state['downwelling_longwave_flux_in_air'][-1] -
+                         state['upwelling_shortwave_flux_in_air'][-1] -
+                         state['upwelling_longwave_flux_in_air'][-1]).values
 
     # print('TOA flux:', toa_flux_to_col)
     # print('Surf flux:', surf_flux_to_col)
