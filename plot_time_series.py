@@ -86,4 +86,4 @@ def plot_time_series(co2_ppm, run_num, run_type):
     plt.show()
 
 
-plot_time_series(co2_ppm=330, run_num=3, run_type='CLTMC')
+plot_time_series(co2_ppm=330, run_num=4, run_type='CLTMC')

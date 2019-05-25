@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conservation_longTerm_MoistConvecting.py" beforeDir="false" afterPath="$PROJECT_DIR$/conservation_longTerm_MoistConvecting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plot_time_series.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_time_series.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conservation_longTerm_MoistConvecting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="105" column="37" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="37" />
+            <state relative-caret-position="98">
+              <caret line="139" column="17" selection-start-line="139" selection-start-column="17" selection-end-line="139" selection-end-column="17" />
               <folding>
                 <element signature="e#0#105#0" expanded="true" />
               </folding>
@@ -38,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/longTerm_moistConvection_edit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2499">
+            <state relative-caret-position="472">
               <caret line="161" column="20" selection-start-line="161" selection-start-column="15" selection-end-line="161" selection-end-column="20" />
               <folding>
                 <element signature="e#0#105#0" expanded="true" />
@@ -189,21 +188,7 @@
       <workItem from="1558378303147" duration="1314000" />
       <workItem from="1558447930135" duration="8502000" />
       <workItem from="1558659226450" duration="45000" />
-      <workItem from="1558715972715" duration="753000" />
-    </task>
-    <task id="LOCAL-00159" summary="new eq check for run">
-      <created>1558368630780</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1558368630780</updated>
-    </task>
-    <task id="LOCAL-00160" summary="new eq check for run">
-      <created>1558368644711</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1558368644711</updated>
+      <workItem from="1558715972715" duration="1171000" />
     </task>
     <task id="LOCAL-00161" summary="new eq check for run">
       <created>1558368660980</created>
@@ -534,11 +519,25 @@
       <option name="project" value="LOCAL" />
       <updated>1558716202350</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="new eq check for run">
+      <created>1558724949811</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1558724949812</updated>
+    </task>
+    <task id="LOCAL-00209" summary="new eq check for run">
+      <created>1558725112099</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1558725112099</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44240000" />
+    <option name="totallyTimeSpent" value="44658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -601,7 +600,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/longTerm_moistConvection_edit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2499">
+        <state relative-caret-position="472">
           <caret line="161" column="20" selection-start-line="161" selection-start-column="15" selection-end-line="161" selection-end-column="20" />
           <folding>
             <element signature="e#0#105#0" expanded="true" />
@@ -611,8 +610,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conservation_longTerm_MoistConvecting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="105" column="37" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="37" />
+        <state relative-caret-position="98">
+          <caret line="139" column="17" selection-start-line="139" selection-start-column="17" selection-end-line="139" selection-end-column="17" />
           <folding>
             <element signature="e#0#105#0" expanded="true" />
           </folding>
