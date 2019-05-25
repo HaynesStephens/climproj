@@ -113,13 +113,18 @@ radiation_sw = RRTMGShortwave()
 radiation_lw = RRTMGLongwave()
 slab = SlabSurface()
 simple_physics = SimplePhysics()
-dry_convection = DryConvectiveAdjustment()
+# dry_convection = DryConvectiveAdjustment()
 moist_convection = EmanuelConvection()
 
+# state = get_default_state(
+#     [simple_physics, dry_convection, moist_convection,
+#      radiation_lw, radiation_sw, slab]
+# )
 state = get_default_state(
-    [simple_physics, dry_convection, moist_convection,
+    [simple_physics, moist_convection,
      radiation_lw, radiation_sw, slab]
 )
+
 
 state['surface_temperature'].values[:] = 268.
 
@@ -147,9 +152,10 @@ for i in range(100000):
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
 
-    diagnostics, new_state = dry_convection(state, timestep)
-    state.update(diagnostics)
-    state.update(new_state)
+    # Let's see what happens if we only use moist convection
+    # diagnostics, new_state = dry_convection(state, timestep)
+    # state.update(diagnostics)
+    # state.update(new_state)
 
     surf_flux_to_col = -(state['downwelling_shortwave_flux_in_air'][0] +
                          state['downwelling_longwave_flux_in_air'][0] -
