@@ -11,6 +11,7 @@ def getLastInstance(data, levels = None):
     else:
         return data[:].flatten()[-levels:]
 
+
 def plot_time_series(co2_ppm, run_num, run_type):
     basename = run_type + '_' + str(co2_ppm) + '_' + str(run_num)
     filename = basename + '.nc'
@@ -84,6 +85,5 @@ def plot_time_series(co2_ppm, run_num, run_type):
     fig_name = basename + '.pdf'
     plt.savefig('plots/'+fig_name)
     plt.show()
-
 
 plot_time_series(co2_ppm=330, run_num=4, run_type='CLTMC')
