@@ -43,7 +43,7 @@ def plot_time_series(co2_ppm, run_num, run_type):
     ax0.plot(getLastInstance(net_flux, interface_levels),
              getLastInstance(nc['air_pressure_on_interface_levels'], interface_levels), '-o',
              markersize=3, c='k')
-    ax0.set_title('Net Rad Flux')
+    ax0.set_title('Net Rad Flux (Up is +)')
     ax0.axes.invert_yaxis()
     ax0.set_xlabel('W/m^2')
     ax0.set_ylabel('Pa')
@@ -71,7 +71,7 @@ def plot_time_series(co2_ppm, run_num, run_type):
     # ax3.plot(time_adj, lh_flux, c = 'b', label = 'LH')
     ax3.plot(time_adj, net_flux_toa, c='#d95f02', label='TOA')
     ax3.plot(time_adj, net_flux_surface + lh_flux + sh_flux, c='#7570b3', label = 'Surf')
-    ax3.set_title('Surface Fluxes')
+    ax3.set_title('Boundary Fluxes (Up is +)')
     ax3.set_xlabel(time_title)
     ax3.set_ylabel('W/m^2')
     # ax3.set_ylim(-50, 250)
@@ -86,4 +86,4 @@ def plot_time_series(co2_ppm, run_num, run_type):
     plt.savefig('plots/'+fig_name)
     plt.show()
 
-plot_time_series(co2_ppm=330, run_num=4, run_type='CLTMC')
+plot_time_series(co2_ppm=270, run_num=0, run_type='CLTMC')
