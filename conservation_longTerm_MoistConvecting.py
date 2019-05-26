@@ -103,7 +103,7 @@ store_quantities = ['air_temperature',
                     'downwelling_longwave_flux_in_air',
                     'downwelling_shortwave_flux_in_air']
 
-netcdf_monitor = NetCDFMonitor('CLTMC_noDry_270_0.nc',
+netcdf_monitor = NetCDFMonitor('CLTMC_150_0.nc',
                                store_names=store_quantities,
                                write_on_store=True)
 
@@ -113,15 +113,11 @@ radiation_sw = RRTMGShortwave()
 radiation_lw = RRTMGLongwave()
 slab = SlabSurface()
 simple_physics = SimplePhysics()
-# dry_convection = DryConvectiveAdjustment()
+dry_convection = DryConvectiveAdjustment()
 moist_convection = EmanuelConvection()
 
-# state = get_default_state(
-#     [simple_physics, dry_convection, moist_convection,
-#      radiation_lw, radiation_sw, slab]
-# )
 state = get_default_state(
-    [simple_physics, moist_convection,
+    [simple_physics, dry_convection, moist_convection,
      radiation_lw, radiation_sw, slab]
 )
 
@@ -133,7 +129,7 @@ state['surface_albedo_for_direct_shortwave'].values[:] = 0.4
 state['surface_albedo_for_direct_near_infrared'].values[:] = 0.4
 state['surface_albedo_for_diffuse_shortwave'].values[:] = 0.4
 # Changing of default
-state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(330) * 10**(-6)
+state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(150) * 10**(-6)
 
 state['zenith_angle'].values[:] = np.pi / 2.45
 
@@ -152,10 +148,9 @@ for i in range(100000):
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
 
-    # Let's see what happens if we only use moist convection
-    # diagnostics, new_state = dry_convection(state, timestep)
-    # state.update(diagnostics)
-    # state.update(new_state)
+    diagnostics, new_state = dry_convection(state, timestep)
+    state.update(diagnostics)
+    state.update(new_state)
 
     surf_flux_to_col = -(state['downwelling_shortwave_flux_in_air'][0] +
                          state['downwelling_longwave_flux_in_air'][0] -
