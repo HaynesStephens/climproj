@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="new eq check for run">
+    <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_time_series.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_time_series.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,8 +113,8 @@
         <option value="$PROJECT_DIR$/longTerm_moistConvection_edit.py" />
         <option value="$PROJECT_DIR$/dry_adj_270_1.txt" />
         <option value="$PROJECT_DIR$/moistConv_rad_slab.py" />
-        <option value="$PROJECT_DIR$/plot_time_series.py" />
         <option value="$PROJECT_DIR$/conservation_longTerm_MoistConvecting.py" />
+        <option value="$PROJECT_DIR$/plot_time_series.py" />
       </list>
     </option>
   </component>
@@ -189,14 +190,7 @@
       <workItem from="1558659226450" duration="45000" />
       <workItem from="1558715972715" duration="1902000" />
       <workItem from="1558805209770" duration="2004000" />
-      <workItem from="1558969626386" duration="21000" />
-    </task>
-    <task id="LOCAL-00172" summary="new eq check for run">
-      <created>1558448842094</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1558448842094</updated>
+      <workItem from="1558969626386" duration="32000" />
     </task>
     <task id="LOCAL-00173" summary="new eq check for run">
       <created>1558448915187</created>
@@ -534,11 +528,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558902683916</updated>
     </task>
-    <option name="localTasksCounter" value="221" />
+    <task id="LOCAL-00221" summary="new eq check for run">
+      <created>1558969650199</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1558969650200</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47414000" />
+    <option name="totallyTimeSpent" value="47425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
