@@ -60,6 +60,8 @@ def plotTProfile():
     ax.plot(air_pressure, T_600)
     plt.show()
 
+plotTProfile()
+
 
 
 
