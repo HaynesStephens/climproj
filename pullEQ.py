@@ -38,7 +38,7 @@ def checkEQ(nc, eq_time, eq_threshold):
 
 
 def pullEQData(filename, var, eq_time = 15, eq_threshold = 1):
-    nc = getNC(filename+'.nc')
+    nc = getNC(filename)
     eq_index = checkEQ(nc, eq_time, eq_threshold)
     return nc[var][:][eq_index: eq_index+eq_time]
 
