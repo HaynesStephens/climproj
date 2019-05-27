@@ -62,8 +62,8 @@ def plotProfile(var, xlabel):
     # ax.set_yscale('log')
     ax.invert_yaxis()
     ax.legend()
-    plt.savefig('plots/profile_{0}.pdf'.format(var))
     plt.tight_layout()
+    plt.savefig('plots/profile_{0}.pdf'.format(var))
     plt.show()
 
 plotProfile('specific_humidity', '[kg/kg]')
