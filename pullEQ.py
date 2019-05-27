@@ -59,7 +59,7 @@ def plotProfile(var, xlabel):
     ax.plot(T_600, air_pressure, '-o', markersize=3, label = '600 ppm')
     ax.set_ylabel('Pressure [Pa]')
     ax.set_xlabel(xlabel)
-    ax.set_yscale('log')
+    # ax.set_yscale('log')
     ax.invert_yaxis()
     ax.legend()
     plt.savefig('plots/profile_{0}.pdf'.format(var))

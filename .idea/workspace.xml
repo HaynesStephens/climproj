@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conservation_longTerm_MoistConvecting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="105" column="41" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
+            <state relative-caret-position="136">
+              <caret line="94" column="29" lean-forward="true" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
               <folding>
                 <element signature="e#0#105#0" expanded="true" />
               </folding>
@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/longTerm_moistConvection_edit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1024">
-              <caret line="148" column="50" selection-start-line="148" selection-start-column="50" selection-end-line="148" selection-end-column="50" />
+            <state relative-caret-position="89">
+              <caret line="93" column="38" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="38" />
               <folding>
                 <element signature="e#0#105#0" expanded="true" />
               </folding>
@@ -61,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pullEQ.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+            <state relative-caret-position="243">
+              <caret line="61" column="19" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="19" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -81,7 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>air_temp_filena</find>
       <find>.nc</find>
       <find>co2_ppm</find>
       <find>co2</find>
@@ -111,6 +110,7 @@
       <find>edit</find>
       <find>dry</find>
       <find>eq_inde</find>
+      <find>precip</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -203,21 +203,7 @@
       <workItem from="1558659226450" duration="45000" />
       <workItem from="1558715972715" duration="1902000" />
       <workItem from="1558805209770" duration="2004000" />
-      <workItem from="1558969626386" duration="5885000" />
-    </task>
-    <task id="LOCAL-00195" summary="new eq check for run">
-      <created>1558616884216</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
-      <option name="project" value="LOCAL" />
-      <updated>1558616884216</updated>
-    </task>
-    <task id="LOCAL-00196" summary="new eq check for run">
-      <created>1558616892903</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
-      <option name="project" value="LOCAL" />
-      <updated>1558616892904</updated>
+      <workItem from="1558969626386" duration="5991000" />
     </task>
     <task id="LOCAL-00197" summary="new eq check for run">
       <created>1558621892540</created>
@@ -548,17 +534,31 @@
       <option name="project" value="LOCAL" />
       <updated>1558991859033</updated>
     </task>
-    <option name="localTasksCounter" value="244" />
+    <task id="LOCAL-00244" summary="new eq check for run">
+      <created>1558991976140</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1558991976140</updated>
+    </task>
+    <task id="LOCAL-00245" summary="new eq check for run">
+      <created>1558992049510</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1558992049510</updated>
+    </task>
+    <option name="localTasksCounter" value="246" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53278000" />
+    <option name="totallyTimeSpent" value="53384000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2003231" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2003231" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -625,8 +625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/longTerm_moistConvection_edit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1024">
-          <caret line="148" column="50" selection-start-line="148" selection-start-column="50" selection-end-line="148" selection-end-column="50" />
+        <state relative-caret-position="89">
+          <caret line="93" column="38" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="38" />
           <folding>
             <element signature="e#0#105#0" expanded="true" />
           </folding>
@@ -635,8 +635,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conservation_longTerm_MoistConvecting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="105" column="41" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
+        <state relative-caret-position="136">
+          <caret line="94" column="29" lean-forward="true" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
           <folding>
             <element signature="e#0#105#0" expanded="true" />
           </folding>
@@ -645,8 +645,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pullEQ.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+        <state relative-caret-position="243">
+          <caret line="61" column="19" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="19" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
