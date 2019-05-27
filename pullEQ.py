@@ -70,8 +70,12 @@ plotProfile('air_temperature', 'T [K]')
 
 
 def getAVG(var):
-    var = 'precipitation'
-
+    var_150 = np.mean(pullEQData(filename150, var), axis=0)
+    var_270 = np.mean(pullEQData(filename270, var), axis=0)
+    var_600 = np.mean(pullEQData(filename600, var), axis=0)
+    print('150 ppm', var_150)
+    print('270 ppm', var_270)
+    print('600 ppm', var_600)
 
 
 
