@@ -65,7 +65,7 @@ def plotProfile(var, xlabel):
     plt.savefig('plots/profile_{0}.pdf'.format(var))
     plt.show()
 
-plotProfile('air_temperature', 'T [K]')
+plotProfile('specific_humidity', '[kg/kg]')
 
 
 def getAVG(var):
