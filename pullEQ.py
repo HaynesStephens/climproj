@@ -66,16 +66,16 @@ def plotProfile(var, xlabel):
     plt.savefig('plots/profile_{0}.pdf'.format(var))
     plt.show()
 
-plotProfile('air_temperature', 'T [K]')
 
-
-def getAVG(var):
+def getAVG(var, units):
     var_150 = np.mean(pullEQData(filename150, var), axis=0)
     var_270 = np.mean(pullEQData(filename270, var), axis=0)
     var_600 = np.mean(pullEQData(filename600, var), axis=0)
-    print('150 ppm', var_150)
-    print('270 ppm', var_270)
-    print('600 ppm', var_600)
+    print('150 ppm: {0} {1}'.format(var_150, units))
+    print('270 ppm: {0} {1}'.format(var_270, units))
+    print('600 ppm: {0} {1}'.format(var_600, units))
+
+getAVG('convective_precipitation_rate', 'mm/day')
 
 
 

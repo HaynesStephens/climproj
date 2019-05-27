@@ -61,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pullEQ.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+            <state relative-caret-position="427">
+              <caret line="77" column="47" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -203,21 +203,7 @@
       <workItem from="1558659226450" duration="45000" />
       <workItem from="1558715972715" duration="1902000" />
       <workItem from="1558805209770" duration="2004000" />
-      <workItem from="1558969626386" duration="6153000" />
-    </task>
-    <task id="LOCAL-00203" summary="new eq check for run">
-      <created>1558631952785</created>
-      <option name="number" value="00203" />
-      <option name="presentableId" value="LOCAL-00203" />
-      <option name="project" value="LOCAL" />
-      <updated>1558631952786</updated>
-    </task>
-    <task id="LOCAL-00204" summary="new eq check for run">
-      <created>1558631961002</created>
-      <option name="number" value="00204" />
-      <option name="presentableId" value="LOCAL-00204" />
-      <option name="project" value="LOCAL" />
-      <updated>1558631961002</updated>
+      <workItem from="1558969626386" duration="6489000" />
     </task>
     <task id="LOCAL-00205" summary="new eq check for run">
       <created>1558631966747</created>
@@ -548,11 +534,25 @@
       <option name="project" value="LOCAL" />
       <updated>1558992236987</updated>
     </task>
-    <option name="localTasksCounter" value="252" />
+    <task id="LOCAL-00252" summary="new eq check for run">
+      <created>1558992243934</created>
+      <option name="number" value="00252" />
+      <option name="presentableId" value="LOCAL-00252" />
+      <option name="project" value="LOCAL" />
+      <updated>1558992243935</updated>
+    </task>
+    <task id="LOCAL-00253" summary="new eq check for run">
+      <created>1558992471329</created>
+      <option name="number" value="00253" />
+      <option name="presentableId" value="LOCAL-00253" />
+      <option name="project" value="LOCAL" />
+      <updated>1558992471329</updated>
+    </task>
+    <option name="localTasksCounter" value="254" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53546000" />
+    <option name="totallyTimeSpent" value="53882000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -645,8 +645,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pullEQ.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+        <state relative-caret-position="427">
+          <caret line="77" column="47" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
