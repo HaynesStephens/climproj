@@ -58,6 +58,8 @@ def plotTProfile():
     ax.plot(T_150, air_pressure)
     ax.plot(T_270, air_pressure)
     ax.plot(T_600, air_pressure)
+    ax.set_yscale('log')
+    ax.invert_yaxis()
     plt.show()
 
 plotTProfile()
