@@ -61,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pullEQ.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+            <state relative-caret-position="234">
+              <caret line="44" column="32" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="32" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -203,14 +203,7 @@
       <workItem from="1558659226450" duration="45000" />
       <workItem from="1558715972715" duration="1902000" />
       <workItem from="1558805209770" duration="2004000" />
-      <workItem from="1558969626386" duration="3977000" />
-    </task>
-    <task id="LOCAL-00178" summary="new eq check for run">
-      <created>1558466688444</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1558466688444</updated>
+      <workItem from="1558969626386" duration="3987000" />
     </task>
     <task id="LOCAL-00179" summary="new eq check for run">
       <created>1558466876117</created>
@@ -548,11 +541,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558989159439</updated>
     </task>
-    <option name="localTasksCounter" value="227" />
+    <task id="LOCAL-00227" summary="new eq check for run">
+      <created>1558989650764</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1558989650765</updated>
+    </task>
+    <option name="localTasksCounter" value="228" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51370000" />
+    <option name="totallyTimeSpent" value="51380000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -645,8 +645,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pullEQ.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+        <state relative-caret-position="234">
+          <caret line="44" column="32" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="32" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
