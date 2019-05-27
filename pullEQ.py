@@ -37,14 +37,30 @@ def checkEQ(nc, eq_time, eq_threshold):
     raise (ValueError, 'No equilibrium reached.')
 
 
-def pullEQData(filename, var, bad_shape = False, eq_time = 15, eq_threshold = 1,
-               mid_levels=28, interface_levels=29):
-
+def pullEQData(filename, var, eq_time = 15, eq_threshold = 1):
     nc = getNC(filename+'.nc')
     eq_index = checkEQ(nc, eq_time, eq_threshold)
-    # return nc[var][:][eq_index: eq_index+eq_time]
+    return nc[var][:][eq_index: eq_index+eq_time]
 
-pullEQData('CLTMC_600_0', var='lame')
+
+# PLOTS
+filename150 = 'CLTMC_150_0.nc'
+filename270 = 'CLTMC_270_0.nc'
+filename600 = 'CLTMC_600_0.nc'
+air_pressure = getNC(filename150)['air_pressure'][:][0]
+
+def plotTProfile():
+    var = 'air_temperature'
+    T_150 = np.mean(pullEQData(filename150, var), axis=0)
+    T_270 = np.mean(pullEQData(filename270, var), axis=0)
+    T_600 = np.mean(pullEQData(filename600, var), axis=0)
+    fig, ax = plt.subplots()
+    ax.plot(air_pressure, T_150)
+    ax.plot(air_pressure, T_270)
+    ax.plot(air_pressure, T_600)
+    plt.show()
+
+
 
 
 
