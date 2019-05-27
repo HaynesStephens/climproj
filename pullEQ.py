@@ -55,9 +55,9 @@ def plotTProfile():
     T_270 = np.mean(pullEQData(filename270, var), axis=0).flatten()
     T_600 = np.mean(pullEQData(filename600, var), axis=0).flatten()
     fig, ax = plt.subplots()
-    ax.plot(air_pressure, T_150)
-    ax.plot(air_pressure, T_270)
-    ax.plot(air_pressure, T_600)
+    ax.plot(T_150, air_pressure)
+    ax.plot(T_270, air_pressure)
+    ax.plot(T_600, air_pressure)
     plt.show()
 
 plotTProfile()
