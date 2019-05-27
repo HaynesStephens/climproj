@@ -47,7 +47,7 @@ def pullEQData(filename, var, eq_time = 15, eq_threshold = 1):
 filename150 = 'CLTMC_150_0.nc'
 filename270 = 'CLTMC_270_0.nc'
 filename600 = 'CLTMC_600_0.nc'
-air_pressure = getNC(filename150)['air_pressure'][:][0]
+air_pressure = getNC(filename150)['air_pressure'][:][0].flatten()
 
 def plotTProfile():
     var = 'air_temperature'
