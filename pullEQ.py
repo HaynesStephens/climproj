@@ -61,6 +61,7 @@ def plotTProfile():
     ax.set_yscale('log')
     ax.invert_yaxis()
     ax.legend()
+    plt.savefig('plots/TProfile.pdf')
     plt.show()
 
 plotTProfile()
