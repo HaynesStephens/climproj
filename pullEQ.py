@@ -58,7 +58,7 @@ def plotTProfile():
     ax.plot(T_150, air_pressure, label = '150 ppm')
     ax.plot(T_270, air_pressure, label = '270 ppm')
     ax.plot(T_600, air_pressure, label = '600 ppm')
-    # ax.set_yscale('log')
+    ax.set_yscale('log')
     ax.invert_yaxis()
     ax.legend()
     plt.show()
