@@ -44,7 +44,7 @@ def pullEQData(filename, var, bad_shape = False, eq_time = 15, eq_threshold = 1,
     eq_index = checkEQ(nc, eq_time, eq_threshold)
     # return nc[var][:][eq_index: eq_index+eq_time]
 
-pullEQData('CLTMC_330_0', var='lame')
+pullEQData('CLTMC_600_0', var='lame')
 
 
 
