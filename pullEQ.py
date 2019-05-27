@@ -49,8 +49,7 @@ filename270 = 'CLTMC_270_0.nc'
 filename600 = 'CLTMC_600_0.nc'
 air_pressure = getNC(filename150)['air_pressure'][:][0].flatten()
 
-def plotTProfile():
-    var = 'air_temperature'
+def plotProfile(var):
     T_150 = np.mean(pullEQData(filename150, var), axis=0).flatten()
     T_270 = np.mean(pullEQData(filename270, var), axis=0).flatten()
     T_600 = np.mean(pullEQData(filename600, var), axis=0).flatten()
@@ -61,10 +60,14 @@ def plotTProfile():
     ax.set_yscale('log')
     ax.invert_yaxis()
     ax.legend()
-    plt.savefig('plots/TProfile.pdf')
+    plt.savefig('plots/profile_{0}.pdf'.format(var))
     plt.show()
 
-plotTProfile()
+plotProfile('air_temperature')
+
+
+def getAVG(var):
+    var = 'precipitation'
 
 
 
