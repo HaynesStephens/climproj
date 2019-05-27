@@ -28,7 +28,8 @@ def checkEQ(nc, eq_time, eq_threshold):
     net_flux_toa = net_flux[:, -1, 0, 0]
 
     assert net_flux_toa.size == net_flux_surface.size
-    for i in range(n[0].size - eq_time):
+    arr_size = net_flux_surface.size
+    for i in range(arr_size - eq_time):
         if (inEQ(net_flux_surface[i:i + eq_time], eq_threshold) and
                 inEQ(net_flux_toa[i:i + eq_time], eq_threshold)):
             print('SUCCESS')
