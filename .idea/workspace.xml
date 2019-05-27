@@ -190,14 +190,7 @@
       <workItem from="1558659226450" duration="45000" />
       <workItem from="1558715972715" duration="1902000" />
       <workItem from="1558805209770" duration="2004000" />
-      <workItem from="1558969626386" duration="32000" />
-    </task>
-    <task id="LOCAL-00173" summary="new eq check for run">
-      <created>1558448915187</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1558448915187</updated>
+      <workItem from="1558969626386" duration="40000" />
     </task>
     <task id="LOCAL-00174" summary="new eq check for run">
       <created>1558449088746</created>
@@ -535,11 +528,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558969650200</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <task id="LOCAL-00222" summary="new eq check for run">
+      <created>1558969661155</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1558969661155</updated>
+    </task>
+    <option name="localTasksCounter" value="223" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47425000" />
+    <option name="totallyTimeSpent" value="47433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
