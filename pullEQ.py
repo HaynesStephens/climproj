@@ -51,9 +51,9 @@ air_pressure = getNC(filename150)['air_pressure'][:][0]
 
 def plotTProfile():
     var = 'air_temperature'
-    T_150 = np.mean(pullEQData(filename150, var), axis=0)
-    T_270 = np.mean(pullEQData(filename270, var), axis=0)
-    T_600 = np.mean(pullEQData(filename600, var), axis=0)
+    T_150 = np.mean(pullEQData(filename150, var), axis=0).flatten()
+    T_270 = np.mean(pullEQData(filename270, var), axis=0).flatten()
+    T_600 = np.mean(pullEQData(filename600, var), axis=0).flatten()
     fig, ax = plt.subplots()
     ax.plot(air_pressure, T_150)
     ax.plot(air_pressure, T_270)
