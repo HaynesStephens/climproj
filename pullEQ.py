@@ -45,7 +45,7 @@ def pullEQData(filename, var, bad_shape = False, eq_time = 15, eq_threshold = 1,
     # data = nc[var][:]
 
 
-pullEQData('CLTMC_270_0')
+pullEQData('CLTMC_270_0', var='lame')
 
 
 
