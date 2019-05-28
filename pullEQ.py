@@ -75,7 +75,7 @@ def getAVG(var, units):
     print('270 ppm: {0} {1}'.format(var_270, units))
     print('600 ppm: {0} {1}'.format(var_600, units))
 
-getAVG('surface_temperature', 'K')
+getAVG('convective_precipitation_rate', 'mm/day')
 
 
 
