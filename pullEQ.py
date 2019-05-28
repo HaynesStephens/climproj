@@ -110,7 +110,7 @@ def plotProfile2(var1 = 'air_temperature',
     plt.savefig('plots/profile2.pdf')
     plt.show()
 
-plotProfile('air_temperature', '[K]')
+plotProfile('air_temperature', '')
 
 
 
