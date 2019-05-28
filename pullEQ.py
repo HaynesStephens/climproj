@@ -80,7 +80,7 @@ def plotProfile2(var1 = 'air_temperature',
                  var2 = 'specific_humidity',
                  xlabel2 = '[kg/kg]'):
 
-    fig, axes = plt.subplots(1, 2, figsize=(10,8))
+    fig, axes = plt.subplots(1, 2, figsize=(10,5))
 
     T_150 = np.mean(pullEQData(filename150, var1), axis=0).flatten()
     T_270 = np.mean(pullEQData(filename270, var1), axis=0).flatten()
