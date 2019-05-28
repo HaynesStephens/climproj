@@ -75,7 +75,7 @@ def getAVG(var, units):
     print('270 ppm: {0} {1}'.format(var_270, units))
     print('600 ppm: {0} {1}'.format(var_600, units))
 
-plotProfile('air_temperature', '[K]')
+plotProfile('specific_humidity', '[kg/kg]')
 
 
 
