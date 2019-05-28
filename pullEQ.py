@@ -53,7 +53,7 @@ def plotProfile(var, xlabel):
     T_150 = np.mean(pullEQData(filename150, var), axis=0).flatten()
     T_270 = np.mean(pullEQData(filename270, var), axis=0).flatten()
     T_600 = np.mean(pullEQData(filename600, var), axis=0).flatten()
-    fig, ax = plt.subplots(figsize=(5,4))
+    fig, ax = plt.subplots(figsize=(4,5))
     ax.plot(T_150, air_pressure, '-o', markersize=3, label = '150 ppm')
     ax.plot(T_270, air_pressure, '-o', markersize=3, label = '270 ppm')
     ax.plot(T_600, air_pressure, '-o', markersize=3, label = '600 ppm')
