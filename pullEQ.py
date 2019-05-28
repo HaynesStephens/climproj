@@ -110,7 +110,7 @@ def plotProfile2(var1 = 'air_temperature',
     plt.savefig('plots/profile2.pdf')
     plt.show()
 
-getAVG('convective_precipitation_rate', 'mm/day')
+plotProfile('air_temperature', '[K]')
 
 
 
