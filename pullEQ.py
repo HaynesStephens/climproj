@@ -107,7 +107,7 @@ def plotProfile2(var1 = 'air_temperature',
     ax2.invert_yaxis()
 
     plt.tight_layout()
-    plt.savefig('plots/profile2.pdf'.format(var))
+    plt.savefig('plots/profile2.pdf')
     plt.show()
 
 plotProfile2()
