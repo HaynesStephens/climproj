@@ -102,7 +102,7 @@ def plotProfile2(var1 = 'air_temperature',
     ax2.plot(q_150, air_pressure, '-o', markersize=3, label = '150 ppm')
     ax2.plot(q_270, air_pressure, '-o', markersize=3, label = '270 ppm')
     ax2.plot(q_600, air_pressure, '-o', markersize=3, label = '600 ppm')
-    ax2.set_ylabel('Pressure [Pa]')
+    # ax2.set_ylabel('Pressure [Pa]')
     ax2.set_xlabel(xlabel2)
     ax2.invert_yaxis()
 
