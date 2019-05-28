@@ -50,13 +50,13 @@ filename600 = 'CLTMC_600_0.nc'
 air_pressure = getNC(filename150)['air_pressure'][:][0].flatten()
 
 def plotProfile(var, xlabel):
-    T_150 = np.mean(pullEQData(filename150, var), axis=0).flatten()
-    T_270 = np.mean(pullEQData(filename270, var), axis=0).flatten()
-    T_600 = np.mean(pullEQData(filename600, var), axis=0).flatten()
+    var_150 = np.mean(pullEQData(filename150, var), axis=0).flatten()
+    var_270 = np.mean(pullEQData(filename270, var), axis=0).flatten()
+    var_600 = np.mean(pullEQData(filename600, var), axis=0).flatten()
     fig, ax = plt.subplots(figsize=(4,5))
-    ax.plot(T_150, air_pressure, '-o', markersize=3, label = '150 ppm')
-    ax.plot(T_270, air_pressure, '-o', markersize=3, label = '270 ppm')
-    ax.plot(T_600, air_pressure, '-o', markersize=3, label = '600 ppm')
+    ax.plot(var_150, air_pressure, '-o', markersize=3, label = '150 ppm')
+    ax.plot(var_270, air_pressure, '-o', markersize=3, label = '270 ppm')
+    ax.plot(var_600, air_pressure, '-o', markersize=3, label = '600 ppm')
     ax.set_ylabel('Pressure [Pa]')
     ax.set_xlabel(xlabel)
     # ax.set_yscale('log')
@@ -75,9 +75,42 @@ def getAVG(var, units):
     print('270 ppm: {0} {1}'.format(var_270, units))
     print('600 ppm: {0} {1}'.format(var_600, units))
 
-plotProfile('specific_humidity', '[kg/kg]')
+def plotProfile2(var1 = 'air_temperature',
+                 xlabel1 = '[K]',
+                 var2 = 'specific_humidity',
+                 xlabel2 = '[kg/kg]'):
 
+    fig, axes = plt.subplots(1, 2, figsize=(8,10))
 
+    T_150 = np.mean(pullEQData(filename150, var1), axis=0).flatten()
+    T_270 = np.mean(pullEQData(filename270, var1), axis=0).flatten()
+    T_600 = np.mean(pullEQData(filename600, var1), axis=0).flatten()
+    ax1 = axes[0]
+    ax1.plot(T_150, air_pressure, '-o', markersize=3, label = '150 ppm')
+    ax1.plot(T_270, air_pressure, '-o', markersize=3, label = '270 ppm')
+    ax1.plot(T_600, air_pressure, '-o', markersize=3, label = '600 ppm')
+    ax1.set_ylabel('Pressure [Pa]')
+    ax1.set_xlabel(xlabel1)
+    ax1.set_yscale('log')
+    ax1.invert_yaxis()
+    ax1.legend()
+
+    q_150 = np.mean(pullEQData(filename150, var2), axis=0).flatten()
+    q_270 = np.mean(pullEQData(filename270, var2), axis=0).flatten()
+    q_600 = np.mean(pullEQData(filename600, var2), axis=0).flatten()
+    ax2 = axes[1]
+    ax2.plot(q_150, air_pressure, '-o', markersize=3, label = '150 ppm')
+    ax2.plot(q_270, air_pressure, '-o', markersize=3, label = '270 ppm')
+    ax2.plot(q_600, air_pressure, '-o', markersize=3, label = '600 ppm')
+    ax2.set_ylabel('Pressure [Pa]')
+    ax2.set_xlabel(xlabel2)
+    ax2.invert_yaxis()
+
+    plt.tight_layout()
+    plt.savefig('plots/profile2.pdf'.format(var))
+    plt.show()
+
+plotProfile2()
 
 
 
