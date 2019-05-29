@@ -87,7 +87,7 @@ def plot_function(fig, state):
 monitor = PlotFunctionMonitor(plot_function, interactive=True)
 
 store_quantities = ['air_temperature',
-                    'precipitation', #!
+                    'precipitation', #!!!!
                     'surface_temperature',
                     'air_pressure',
                     'specific_humidity',
