@@ -57,9 +57,16 @@ def plotProfile(var, xlabel):
     ax.plot(var_150, air_pressure, '-o', markersize=3, label = '150 ppm')
     ax.plot(var_270, air_pressure, '-o', markersize=3, label = '270 ppm')
     ax.plot(var_600, air_pressure, '-o', markersize=3, label = '600 ppm')
-    ax.set_ylabel('Pressure [Pa]')
     ax.set_xlabel(xlabel)
-    # ax.set_yscale('log')
+
+    if var == 'air_temperature':
+        z, T_dry = getAdiabat('dry')
+        z, T_moist = getAdiabat('moist')
+        ax.plot(T_dry, air_pressure, '--', label = 'dry')
+        ax.plot(T_moist, air_pressure, '--', label='moist')
+
+    ax.set_ylabel('Pressure [Pa]')
+    ax.set_yscale('log')
     ax.invert_yaxis()
     ax.legend()
     plt.tight_layout()
@@ -81,6 +88,7 @@ def plotProfile2(var1 = 'air_temperature',
                  xlabel2 = '[kg/kg]'):
 
     fig, axes = plt.subplots(1, 2, figsize=(10,5))
+
 
     T_150 = np.mean(pullEQData(filename150, var1), axis=0).flatten()
     T_270 = np.mean(pullEQData(filename270, var1), axis=0).flatten()
@@ -109,6 +117,26 @@ def plotProfile2(var1 = 'air_temperature',
     plt.tight_layout()
     plt.savefig('plots/profile2.pdf')
     plt.show()
+
+
+def getAdiabat(type = 'dry'):
+    z = []
+    H = 8.5 #scale height in km
+    P0 = air_pressure[0]
+    for P in air_pressure:
+        height = -H*np.log(P/P0)
+        z.append(height)
+    z = np.array(z)
+    if type == 'dry':
+        gamma = 9.8 #K/km
+    elif type == 'moist':
+        gamma = 5 #K/km
+    T_profile = []
+    for height in z:
+        T_profile.append(height*gamma)
+    T_profile = np.array(T_profile)
+    return z, T_profile
+
 
 plotProfile('air_temperature', '[K]')
 

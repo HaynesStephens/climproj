@@ -104,7 +104,7 @@ store_quantities = ['air_temperature',
                     'downwelling_longwave_flux_in_air',
                     'downwelling_shortwave_flux_in_air']
 
-netcdf_monitor = NetCDFMonitor('CLTMC_300_last.nc',
+netcdf_monitor = NetCDFMonitor('CLTMC_600_last.nc',
                                store_names=store_quantities,
                                write_on_store=True)
 
@@ -130,7 +130,7 @@ state['surface_albedo_for_direct_shortwave'].values[:] = 0.4
 state['surface_albedo_for_direct_near_infrared'].values[:] = 0.4
 state['surface_albedo_for_diffuse_shortwave'].values[:] = 0.4
 # Changing of default
-state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(300) * 10**(-6)
+state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(600) * 10**(-6)
 
 state['zenith_angle'].values[:] = np.pi / 2.45
 
