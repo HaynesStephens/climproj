@@ -133,7 +133,7 @@ def getAdiabat(Tsurf, type = 'dry'):
     elif type == 'moist':
         gamma = 5 #K/km
     T_profile = [Tsurf]
-    for i in range(1,z):
+    for i in range(1,z.size):
         height = z[i]
         T_profile.append(Tsurf - (height*gamma))
     T_profile = np.array(T_profile)

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conservation_longTerm_MoistConvecting.py" beforeDir="false" afterPath="$PROJECT_DIR$/conservation_longTerm_MoistConvecting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pullEQ.py" beforeDir="false" afterPath="$PROJECT_DIR$/pullEQ.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pullEQ.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="68" column="23" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="23" />
+            <state relative-caret-position="216">
+              <caret line="135" column="27" selection-start-line="135" selection-start-column="27" selection-end-line="135" selection-end-column="27" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -205,21 +204,7 @@
       <workItem from="1558715972715" duration="1902000" />
       <workItem from="1558805209770" duration="2004000" />
       <workItem from="1558969626386" duration="8770000" />
-      <workItem from="1559082545957" duration="2177000" />
-    </task>
-    <task id="LOCAL-00226" summary="new eq check for run">
-      <created>1558989159439</created>
-      <option name="number" value="00226" />
-      <option name="presentableId" value="LOCAL-00226" />
-      <option name="project" value="LOCAL" />
-      <updated>1558989159439</updated>
-    </task>
-    <task id="LOCAL-00227" summary="new eq check for run">
-      <created>1558989650764</created>
-      <option name="number" value="00227" />
-      <option name="presentableId" value="LOCAL-00227" />
-      <option name="project" value="LOCAL" />
-      <updated>1558989650765</updated>
+      <workItem from="1559082545957" duration="2410000" />
     </task>
     <task id="LOCAL-00228" summary="new eq check for run">
       <created>1558989660877</created>
@@ -550,11 +535,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559146197541</updated>
     </task>
-    <option name="localTasksCounter" value="275" />
+    <task id="LOCAL-00275" summary="new eq check for run">
+      <created>1559156989555</created>
+      <option name="number" value="00275" />
+      <option name="presentableId" value="LOCAL-00275" />
+      <option name="project" value="LOCAL" />
+      <updated>1559156989556</updated>
+    </task>
+    <task id="LOCAL-00276" summary="new eq check for run">
+      <created>1559157252975</created>
+      <option name="number" value="00276" />
+      <option name="presentableId" value="LOCAL-00276" />
+      <option name="project" value="LOCAL" />
+      <updated>1559157252976</updated>
+    </task>
+    <option name="localTasksCounter" value="277" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58340000" />
+    <option name="totallyTimeSpent" value="58573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -647,8 +646,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pullEQ.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="68" column="23" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="23" />
+        <state relative-caret-position="216">
+          <caret line="135" column="27" selection-start-line="135" selection-start-column="27" selection-end-line="135" selection-end-column="27" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
