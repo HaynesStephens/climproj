@@ -60,8 +60,9 @@ def plotProfile(var, xlabel):
     ax.set_xlabel(xlabel)
 
     if var == 'air_temperature':
-        z, T_dry = getAdiabat('dry')
-        z, T_moist = getAdiabat('moist')
+        Tsurf = var_150[0]
+        z, T_dry = getAdiabat(Tsurf, 'dry')
+        z, T_moist = getAdiabat(Tsurf, 'moist')
         ax.plot(T_dry, air_pressure, '--', label = 'dry')
         ax.plot(T_moist, air_pressure, '--', label='moist')
 
@@ -119,7 +120,7 @@ def plotProfile2(var1 = 'air_temperature',
     plt.show()
 
 
-def getAdiabat(type = 'dry'):
+def getAdiabat(Tsurf, type = 'dry'):
     z = []
     H = 8.5 #scale height in km
     P0 = air_pressure[0]
@@ -131,9 +132,10 @@ def getAdiabat(type = 'dry'):
         gamma = 9.8 #K/km
     elif type == 'moist':
         gamma = 5 #K/km
-    T_profile = []
-    for height in z:
-        T_profile.append(height*gamma)
+    T_profile = [Tsurf]
+    for i in range(1,z):
+        height = z[i]
+        T_profile.append(Tsurf - (height*gamma))
     T_profile = np.array(T_profile)
     return z, T_profile
 
