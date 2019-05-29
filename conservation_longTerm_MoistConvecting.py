@@ -106,7 +106,7 @@ store_quantities = ['air_temperature',
 
 netcdf_monitor = NetCDFMonitor('CLTMC_150_last.nc',
                                store_names=store_quantities,
-                               write_on_store=True)fadf
+                               write_on_store=True)
 
 timestep = timedelta(minutes=10)
 
