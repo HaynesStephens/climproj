@@ -11,7 +11,7 @@ from climt import (
     DryConvectiveAdjustment, SimplePhysics, get_default_state
 )
 
-fadf
+
 Cpd = get_constant('heat_capacity_of_dry_air_at_constant_pressure', 'J/kg/degK')
 Cvap = get_constant('heat_capacity_of_vapor_phase', 'J/kg/K')
 g = get_constant('gravitational_acceleration', 'm/s^2')
