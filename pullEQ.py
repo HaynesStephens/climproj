@@ -77,10 +77,12 @@ def plotProfile(var, xlabel):
     plt.show()
 
 
-def getAVG(var, units):
+def getAVG(var, units, var2 = None):
     var_150 = np.mean(pullEQData(filename150, var), axis=0)
     var_270 = np.mean(pullEQData(filename270, var), axis=0)
     var_600 = np.mean(pullEQData(filename600, var), axis=0)
+    if var2 != None:
+        var_150 = var_150 + (np.mean(pullEQData(filename150, var), axis=0)
     print('150 ppm: {0} {1}'.format(var_150, units))
     print('270 ppm: {0} {1}'.format(var_270, units))
     print('600 ppm: {0} {1}'.format(var_600, units))
