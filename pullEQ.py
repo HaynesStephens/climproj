@@ -59,12 +59,12 @@ def plotProfile(var, xlabel):
     ax.plot(var_600, air_pressure, '-o', markersize=3, label = '600 ppm')
     ax.set_xlabel(xlabel)
 
-    if var == 'air_temperature':
-        Tsurf = var_150[0]
-        z, T_dry = getAdiabat(Tsurf, 'dry')
-        z, T_moist = getAdiabat(Tsurf, 'moist')
-        ax.plot(T_dry, air_pressure, '--', label = 'dry')
-        ax.plot(T_moist, air_pressure, '--', label='moist')
+    # if var == 'air_temperature':
+    #     Tsurf = var_150[0]
+    #     z, T_dry = getAdiabat(Tsurf, 'dry')
+    #     z, T_moist = getAdiabat(Tsurf, 'moist')
+    #     ax.plot(T_dry, air_pressure, '--', label = 'dry')
+    #     ax.plot(T_moist, air_pressure, '--', label='moist')
 
     ax.set_ylabel('Pressure [Pa]')
     ax.set_yscale('log')
