@@ -59,8 +59,8 @@ def plotProfile(var, xlabel):
         Tsurf = var_150[0]
         z, T_dry = getAdiabat(Tsurf, 'dry')
         z, T_moist = getAdiabat(Tsurf, 'moist')
-        ax.plot(T_dry, air_pressure, '-.', label = 'dry (150 ppm)', c = 'k')
-        ax.plot(T_moist, air_pressure, '--', label='moist (150 ppm)', c = 'k')
+        ax.plot(T_dry, air_pressure, '-.', label = 'dry', c = 'k')
+        ax.plot(T_moist, air_pressure, '--', label='moist', c = 'k')
         ax.set_xlim(190,290)
 
     ax.plot(var_150, air_pressure, '-o', markersize=2, label='150 ppm')
