@@ -54,17 +54,17 @@ def plotProfile(var, xlabel):
     var_270 = np.mean(pullEQData(filename270, var), axis=0).flatten()
     var_600 = np.mean(pullEQData(filename600, var), axis=0).flatten()
     fig, ax = plt.subplots(figsize=(4,5))
-    ax.plot(var_150, air_pressure, '-o', markersize=3, label = '150 ppm')
-    ax.plot(var_270, air_pressure, '-o', markersize=3, label = '270 ppm')
-    ax.plot(var_600, air_pressure, '-o', markersize=3, label = '600 ppm')
+    ax.plot(var_150, air_pressure, '-o', markersize=1, label = '150 ppm')
+    ax.plot(var_270, air_pressure, '-o', markersize=1, label = '270 ppm')
+    ax.plot(var_600, air_pressure, '-o', markersize=1, label = '600 ppm')
     ax.set_xlabel(xlabel)
 
     if var == 'air_temperature':
         Tsurf = var_150[0]
         z, T_dry = getAdiabat(Tsurf, 'dry')
         z, T_moist = getAdiabat(Tsurf, 'moist')
-        ax.plot(T_dry, air_pressure, '--', label = 'dry')
-        ax.plot(T_moist, air_pressure, '--', label='moist')
+        ax.plot(T_dry, air_pressure, '-.', label = 'dry', c = 'k')
+        ax.plot(T_moist, air_pressure, '--', label='moist', c = 'k')
         ax.set_xlim(190,290)
 
     ax.set_ylabel('Pressure [Pa]')
