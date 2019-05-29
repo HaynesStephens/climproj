@@ -87,7 +87,7 @@ def plot_function(fig, state):
 monitor = PlotFunctionMonitor(plot_function, interactive=True)
 
 store_quantities = ['air_temperature',
-                    'precipitation', #!!!!
+                    'stratiform_precipitation_rate', #!!!!
                     'surface_temperature',
                     'air_pressure',
                     'specific_humidity',
@@ -104,7 +104,7 @@ store_quantities = ['air_temperature',
                     'downwelling_longwave_flux_in_air',
                     'downwelling_shortwave_flux_in_air']
 
-netcdf_monitor = NetCDFMonitor('CLTMC_300_0.nc',
+netcdf_monitor = NetCDFMonitor('CLTMC_300_last.nc',
                                store_names=store_quantities,
                                write_on_store=True)
 
