@@ -144,7 +144,7 @@ def getAdiabat(Tsurf, type = 'dry'):
     return z, T_profile
 
 
-plotProfile('air_temperature', '[K]')
+plotProfile('specific_humidity', '[kg/kg]')
 
 
 
