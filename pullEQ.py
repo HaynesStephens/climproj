@@ -144,7 +144,7 @@ def getAdiabat(Tsurf, type = 'dry'):
     return z, T_profile
 
 
-getAVG('surface_upward_latent_heat_flux', '[W/m^2]')
+getAVG('surface_upward_sensible_heat_flux', '[W/m^2]')
 
 
 
