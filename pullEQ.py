@@ -44,14 +44,14 @@ def pullEQData(filename, var, eq_time = 15, eq_threshold = 1):
 
 
 # PLOTS
-filename150 = 'CLTMC_150_0.nc'
-filename270 = 'CLTMC_270_0.nc'
-filename600 = 'CLTMC_600_0.nc'
+filename150 = 'CLTMC_150_last.nc'
+filename300 = 'CLTMC_300_last.nc'
+filename600 = 'CLTMC_600_last.nc'
 air_pressure = getNC(filename150)['air_pressure'][:][0].flatten()
 
 def plotProfile(var, xlabel):
     var_150 = np.mean(pullEQData(filename150, var), axis=0).flatten()
-    var_270 = np.mean(pullEQData(filename270, var), axis=0).flatten()
+    var_300 = np.mean(pullEQData(filename300, var), axis=0).flatten()
     var_600 = np.mean(pullEQData(filename600, var), axis=0).flatten()
     fig, ax = plt.subplots(figsize=(4,5))
 
@@ -64,7 +64,7 @@ def plotProfile(var, xlabel):
         ax.set_xlim(190,290)
 
     ax.plot(var_150, air_pressure, '-o', markersize=2, label='150 ppm')
-    ax.plot(var_270, air_pressure, '-o', markersize=2, label='270 ppm')
+    ax.plot(var_300, air_pressure, '-o', markersize=2, label='300 ppm')
     ax.plot(var_600, air_pressure, '-o', markersize=2, label='600 ppm')
     ax.set_xlabel(xlabel)
 
@@ -79,12 +79,12 @@ def plotProfile(var, xlabel):
 
 def getAVG(var, units, var2 = None):
     var_150 = np.mean(pullEQData(filename150, var), axis=0)
-    var_270 = np.mean(pullEQData(filename270, var), axis=0)
+    var_300 = np.mean(pullEQData(filename300, var), axis=0)
     var_600 = np.mean(pullEQData(filename600, var), axis=0)
     if var2 != None:
         var_150 = var_150 + (np.mean(pullEQData(filename150, var), axis=0)
     print('150 ppm: {0} {1}'.format(var_150, units))
-    print('270 ppm: {0} {1}'.format(var_270, units))
+    print('300 ppm: {0} {1}'.format(var_300, units))
     print('600 ppm: {0} {1}'.format(var_600, units))
 
 def plotProfile2(var1 = 'air_temperature',
@@ -96,11 +96,11 @@ def plotProfile2(var1 = 'air_temperature',
 
 
     T_150 = np.mean(pullEQData(filename150, var1), axis=0).flatten()
-    T_270 = np.mean(pullEQData(filename270, var1), axis=0).flatten()
+    T_300 = np.mean(pullEQData(filename300, var1), axis=0).flatten()
     T_600 = np.mean(pullEQData(filename600, var1), axis=0).flatten()
     ax1 = axes[0]
     ax1.plot(T_150, air_pressure, '-o', markersize=3, label = '150 ppm')
-    ax1.plot(T_270, air_pressure, '-o', markersize=3, label = '270 ppm')
+    ax1.plot(T_300, air_pressure, '-o', markersize=3, label = '300 ppm')
     ax1.plot(T_600, air_pressure, '-o', markersize=3, label = '600 ppm')
     ax1.set_ylabel('Pressure [Pa]')
     ax1.set_xlabel(xlabel1)
@@ -109,11 +109,11 @@ def plotProfile2(var1 = 'air_temperature',
     ax1.legend()
 
     q_150 = np.mean(pullEQData(filename150, var2), axis=0).flatten()
-    q_270 = np.mean(pullEQData(filename270, var2), axis=0).flatten()
+    q_300 = np.mean(pullEQData(filename300, var2), axis=0).flatten()
     q_600 = np.mean(pullEQData(filename600, var2), axis=0).flatten()
     ax2 = axes[1]
     ax2.plot(q_150, air_pressure, '-o', markersize=3, label = '150 ppm')
-    ax2.plot(q_270, air_pressure, '-o', markersize=3, label = '270 ppm')
+    ax2.plot(q_300, air_pressure, '-o', markersize=3, label = '300 ppm')
     ax2.plot(q_600, air_pressure, '-o', markersize=3, label = '600 ppm')
     # ax2.set_ylabel('Pressure [Pa]')
     ax2.set_xlabel(xlabel2)
