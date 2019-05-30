@@ -82,7 +82,10 @@ def getAVG(var, units, var2 = None):
     var_300 = np.mean(pullEQData(filename300, var), axis=0)
     var_600 = np.mean(pullEQData(filename600, var), axis=0)
     if var2 != None:
-        var_150 = var_150 + (np.mean(pullEQData(filename150, var2), axis=0))
+        cst = 8.64 * (10**7)
+        var_150 = var_150 + (np.mean(pullEQData(filename150, var2), axis=0) * cst)
+        var_300 = var_300 + (np.mean(pullEQData(filename300, var2), axis=0) * cst)
+        var_600 = var_600 + (np.mean(pullEQData(filename600, var2), axis=0) * cst)
     print('150 ppm: {0} {1}'.format(var_150, units))
     print('300 ppm: {0} {1}'.format(var_300, units))
     print('600 ppm: {0} {1}'.format(var_600, units))
@@ -144,7 +147,7 @@ def getAdiabat(Tsurf, type = 'dry'):
     return z, T_profile
 
 
-getAVG('surface_upward_sensible_heat_flux', '[W/m^2]')
+getAVG('convective_precipitation_rate', '[mm/day]', var2='stratiform_precipitation_rate')
 
 
 
