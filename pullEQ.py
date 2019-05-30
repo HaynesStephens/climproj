@@ -82,7 +82,7 @@ def getAVG(var, units, var2 = None):
     var_300 = np.mean(pullEQData(filename300, var), axis=0)
     var_600 = np.mean(pullEQData(filename600, var), axis=0)
     if var2 != None:
-        var_150 = var_150 + (np.mean(pullEQData(filename150, var), axis=0)
+        var_150 = var_150 + (np.mean(pullEQData(filename150, var), axis=0))
     print('150 ppm: {0} {1}'.format(var_150, units))
     print('300 ppm: {0} {1}'.format(var_300, units))
     print('600 ppm: {0} {1}'.format(var_600, units))
