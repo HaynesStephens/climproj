@@ -69,7 +69,7 @@ def plotProfile(var, xlabel):
     ax.set_xlabel(xlabel)
 
     ax.set_ylabel('Pressure [Pa]')
-    ax.set_yscale('log')
+    # ax.set_yscale('log')
     ax.invert_yaxis()
     ax.legend()
     plt.tight_layout()
