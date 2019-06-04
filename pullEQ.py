@@ -147,7 +147,7 @@ def getAdiabat(Tsurf, type = 'dry'):
     return z, T_profile
 
 
-getAVG('convective_precipitation_rate', '[mm/day]', var2='stratiform_precipitation_rate')
+plotProfile2()
 
 
 
