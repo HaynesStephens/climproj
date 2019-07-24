@@ -106,9 +106,8 @@ store_quantities = ['air_temperature',
                     'downwelling_shortwave_flux_in_air']
 
 co2_ppm = 270
-run_num = 1
-basename = 'dry_adj_'
-nc_name = basename+str(co2_ppm)+'_'+str(run_num)+'.nc'
+run_num = 0
+nc_name = str(co2_ppm)+'_'+str(run_num)+'.nc'
 
 netcdf_monitor = NetCDFMonitor(nc_name,
                                store_names=store_quantities,
@@ -120,16 +119,24 @@ radiation_sw = RRTMGShortwave()
 radiation_lw = RRTMGLongwave()
 slab = SlabSurface()
 simple_physics = SimplePhysics()
-dry_convection = DryConvectiveAdjustment()
+# dry_convection = DryConvectiveAdjustment()
+# Commented out dry convection adjustment. If uncommented, make sure to add back into get_default_state()
 moist_convection = EmanuelConvection()
 
 state = get_default_state(
-    [simple_physics, dry_convection, moist_convection,
+    [simple_physics, moist_convection,
      radiation_lw, radiation_sw, slab]
 )
 
 
-def getAirTempInitial(type, temp=0, filename=None):
+def getAirTempInitial(type, temp=268, filename=None):
+    """
+    Used once we have an equilibrium temperature profile to work with
+    :param type: profile type (standard, isothermal, or the last one from the previous simulation)
+    :param temp: if isothermal, then what temperature (Kelvin)
+    :param filename:
+    :return:
+    """
     if type == 'profile':
         return pd.read_csv('TProfile.csv').Kelvin[::-1].values.reshape(28, 1, 1)
     elif type == 'isothermal':
@@ -138,19 +145,17 @@ def getAirTempInitial(type, temp=0, filename=None):
         nc = ds(filename, 'r+', format='NETCDF4')
         return nc['air_temperature'][:][-1]
 
+# air_temp_i = getAirTempInitial('last', temp=265, filename=air_temp_filename)
 
-# air_temp_filename = basename+str(co2_ppm)+'_'+str(run_num-1)+'.nc'
-air_temp_filename = 'dry_adj_330_2.nc'
-air_temp_i = getAirTempInitial('last', temp=265, filename=air_temp_filename)
-
-state['air_temperature'].values[:]                         = air_temp_i
-state['surface_albedo_for_direct_shortwave'].values[:]     = 0.06
-state['surface_albedo_for_direct_near_infrared'].values[:] = 0.06
-state['surface_albedo_for_diffuse_shortwave'].values[:]    = 0.06
-state['zenith_angle'].values[:]                            = np.pi/2.5
-state['surface_temperature'].values[:]                     = state['air_temperature'].values[0,0,0]
-state['ocean_mixed_layer_thickness'].values[:]             = 0.01
-state['area_type'].values[:]                               = 'sea'
+state['air_temperature'].values[:]                          = 275
+state['surface_albedo_for_direct_shortwave'].values[:]      = 0.15
+state['surface_albedo_for_direct_near_infrared'].values[:]  = 0.15
+state['surface_albedo_for_diffuse_shortwave'].values[:]     = 0.15
+state['surface_albedo_for_diffuse_near_infrared'].values[:] = 0.15
+state['zenith_angle'].values[:]                             = (2 * np.pi) / 5
+state['surface_temperature'].values[:]                      = state['air_temperature'].values[0,0,0]
+state['ocean_mixed_layer_thickness'].values[:]              = 0.01
+state['area_type'].values[:]                                = 'sea'
 
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10**(-6)
 state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
@@ -167,9 +172,10 @@ for i in range(70000):
     diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
 
-    diagnostics, new_state = dry_convection(state, timestep)
-    state.update(diagnostics)
-    state.update(new_state)
+    # Commented out the Dry Convective Adjustment, everything should still work
+    # diagnostics, new_state = dry_convection(state, timestep)
+    # state.update(diagnostics)
+    # state.update(new_state)
 
     surf_flux_to_col = -(state['downwelling_shortwave_flux_in_air'][0] +
                          state['downwelling_longwave_flux_in_air'][0] -
@@ -182,8 +188,8 @@ for i in range(70000):
                        state['upwelling_shortwave_flux_in_air'][-1] -
                        state['upwelling_longwave_flux_in_air'][-1]).values
 
-    # print('TOA flux:', toa_flux_to_col)
-    # print('Surf flux:', surf_flux_to_col)
+    print('TOA flux:', toa_flux_to_col)
+    print('Surf flux:', surf_flux_to_col)
 
     total_heat_gain = surf_flux_to_col + toa_flux_to_col
     current_enthalpy = calc_moist_enthalpy(state)
