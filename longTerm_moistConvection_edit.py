@@ -13,6 +13,7 @@ from climt import (
 
 import pandas as pd
 from netCDF4 import Dataset as ds
+import os
 
 Cpd = get_constant('heat_capacity_of_dry_air_at_constant_pressure', 'J/kg/degK')
 Cvap = get_constant('heat_capacity_of_vapor_phase', 'J/kg/K')
@@ -71,10 +72,10 @@ def plot_function(fig, state):
     ax.set_ylabel('millibar')
 
     ax = fig.add_subplot(2, 2, 4)
-    net_flux = (state['upwelling_longwave_flux_in_air'] +
-                state['upwelling_shortwave_flux_in_air'] -
-                state['downwelling_longwave_flux_in_air'] -
-                state['downwelling_shortwave_flux_in_air'])
+    net_flux = (state['downwelling_longwave_flux_in_air'] +
+                state['downwelling_shortwave_flux_in_air'] -
+                state['upwelling_longwave_flux_in_air'] -
+                state['upwelling_shortwave_flux_in_air'])
     ax.plot(
         net_flux.values.flatten(),
         state['air_pressure_on_interface_levels'].to_units(
@@ -148,23 +149,25 @@ def getAirTempInitial(type, temp=268, filename=None):
 # air_temp_i = getAirTempInitial('last', temp=265, filename=air_temp_filename)
 
 state['air_temperature'].values[:]                          = 275
-state['surface_albedo_for_direct_shortwave'].values[:]      = 0.15
-state['surface_albedo_for_direct_near_infrared'].values[:]  = 0.15
-state['surface_albedo_for_diffuse_shortwave'].values[:]     = 0.15
-state['surface_albedo_for_diffuse_near_infrared'].values[:] = 0.15
-state['zenith_angle'].values[:]                             = (2 * np.pi) / 5
+state['surface_albedo_for_direct_shortwave'].values[:]      = 0.07
+state['surface_albedo_for_direct_near_infrared'].values[:]  = 0.07
+state['surface_albedo_for_diffuse_shortwave'].values[:]     = 0.07
+state['surface_albedo_for_diffuse_near_infrared'].values[:] = 0.07
+state['zenith_angle'].values[:]                             = (2 * np.pi) / 4.5
 state['surface_temperature'].values[:]                      = state['air_temperature'].values[0,0,0]
 state['ocean_mixed_layer_thickness'].values[:]              = 0.01
 state['area_type'].values[:]                                = 'sea'
 
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10**(-6)
-state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
+# Doesn't seem to do anything, I tried changing it and TOA SW flux stays the same.
+# Reverted to using zenith angle instead
+# state['flux_adjustment_for_earth_sun_distance'].values     = 1.0
 
 time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convection])
 
 old_enthalpy = calc_moist_enthalpy(state)
 
-for i in range(70000):
+for i in range(100000):
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
     state.update(new_state)
@@ -188,8 +191,8 @@ for i in range(70000):
                        state['upwelling_shortwave_flux_in_air'][-1] -
                        state['upwelling_longwave_flux_in_air'][-1]).values
 
-    print('TOA flux:', toa_flux_to_col)
-    print('Surf flux:', surf_flux_to_col)
+    # print('TOA flux:', toa_flux_to_col)
+    # print('Surf flux:', surf_flux_to_col)
 
     total_heat_gain = surf_flux_to_col + toa_flux_to_col
     current_enthalpy = calc_moist_enthalpy(state)
@@ -208,3 +211,5 @@ for i in range(70000):
     state.update(new_state)
     # state['time'] += timestep
     state['eastward_wind'].values[:] = 3.
+
+os.system('mv {0} saved_files/'.format(nc_name))
