@@ -13,7 +13,7 @@ def getLastInstance(data, levels = None):
 
 
 def plot_time_series(co2_ppm, run_num):
-    basename = str(co2_ppm) + '_' + str(run_num)
+    basename = 'saved_files/' + str(co2_ppm) + '_' + str(run_num)
     filename = basename + '.nc'
     mid_levels = 28
     interface_levels = 29
