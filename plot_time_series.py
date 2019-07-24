@@ -12,8 +12,8 @@ def getLastInstance(data, levels = None):
         return data[:].flatten()[-levels:]
 
 
-def plot_time_series(co2_ppm, run_num, run_type):
-    basename = run_type + '_' + str(co2_ppm) + '_' + 'last'#str(run_num)
+def plot_time_series(co2_ppm, run_num):
+    basename = str(co2_ppm) + '_' + str(run_num)
     filename = basename + '.nc'
     mid_levels = 28
     interface_levels = 29
@@ -82,8 +82,8 @@ def plot_time_series(co2_ppm, run_num, run_type):
                  bbox=dict(facecolor='none', edgecolor='green'),
                  x=0.55, y=0.525)
     plt.tight_layout()
-    fig_name = basename + '.pdf'
-    plt.savefig('plots/'+fig_name)
+    # fig_name = basename + '.pdf'
+    # plt.savefig('plots/'+fig_name)
     plt.show()
 
-plot_time_series(co2_ppm=600, run_num=0, run_type='CLTMC')
+plot_time_series(co2_ppm=270, run_num=0)
