@@ -1,18 +1,15 @@
 from sympl import (
-    DataArray, PlotFunctionMonitor,
-    AdamsBashforth, get_constant, NetCDFMonitor
+    DataArray, AdamsBashforth, get_constant, NetCDFMonitor
 )
 import numpy as np
 from datetime import timedelta
 import matplotlib.pyplot as plt
 
 from climt import (
-    EmanuelConvection, RRTMGShortwave, RRTMGLongwave, SlabSurface,
-    DryConvectiveAdjustment, SimplePhysics, get_default_state
+    EmanuelConvection, RRTMGShortwave, RRTMGLongwave,
+    SlabSurface, SimplePhysics, get_default_state
 )
 
-import pandas as pd
-from netCDF4 import Dataset as ds
 import os
 
 Cpd = get_constant('heat_capacity_of_dry_air_at_constant_pressure', 'J/kg/degK')
@@ -87,7 +84,7 @@ def plot_function(fig, state):
     plt.tight_layout()
 
 
-monitor = PlotFunctionMonitor(plot_function, interactive=True)
+# monitor = PlotFunctionMonitor(plot_function, interactive=True)
 
 store_quantities = ['air_temperature',
                     'surface_temperature',
@@ -107,14 +104,14 @@ store_quantities = ['air_temperature',
                     'downwelling_shortwave_flux_in_air']
 
 co2_ppm = 270
-run_num = 0
-nc_name = str(co2_ppm)+'_'+str(run_num)+'.nc'
+nc_name = 'rrtmg_emanuel_i' + str(co2_ppm)+'_290solar.nc'
 
 netcdf_monitor = NetCDFMonitor(nc_name,
                                store_names=store_quantities,
                                write_on_store=True)
 
-timestep = timedelta(minutes=10)
+dt_minutes = 10
+timestep = timedelta(minutes=dt_minutes)
 
 radiation_sw = RRTMGShortwave()
 radiation_lw = RRTMGLongwave()
@@ -129,24 +126,6 @@ state = get_default_state(
      radiation_lw, radiation_sw, slab]
 )
 
-
-def getAirTempInitial(type, temp=268, filename=None):
-    """
-    Used once we have an equilibrium temperature profile to work with
-    :param type: profile type (standard, isothermal, or the last one from the previous simulation)
-    :param temp: if isothermal, then what temperature (Kelvin)
-    :param filename:
-    :return:
-    """
-    if type == 'profile':
-        return pd.read_csv('TProfile.csv').Kelvin[::-1].values.reshape(28, 1, 1)
-    elif type == 'isothermal':
-        return temp
-    elif type == 'last':
-        nc = ds(filename, 'r+', format='NETCDF4')
-        return nc['air_temperature'][:][-1]
-
-# air_temp_i = getAirTempInitial('last', temp=265, filename=air_temp_filename)
 
 state['air_temperature'].values[:]                          = 275
 state['surface_albedo_for_direct_shortwave'].values[:]      = 0.07
@@ -167,7 +146,10 @@ time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convectio
 
 old_enthalpy = calc_moist_enthalpy(state)
 
-for i in range(100000):
+run_days = 10950
+run_length = (run_days * 24 * 60) / dt_minutes
+
+for i in range(run_length):
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
     state.update(new_state)
@@ -180,28 +162,28 @@ for i in range(100000):
     # state.update(diagnostics)
     # state.update(new_state)
 
-    surf_flux_to_col = -(state['downwelling_shortwave_flux_in_air'][0] +
-                         state['downwelling_longwave_flux_in_air'][0] -
-                         state['upwelling_shortwave_flux_in_air'][0] -
-                         state['upwelling_longwave_flux_in_air'][0] -
-                         state['surface_upward_sensible_heat_flux'] -
-                         state['surface_upward_latent_heat_flux']).values
-
-    toa_flux_to_col = (state['downwelling_shortwave_flux_in_air'][-1] -
-                       state['upwelling_shortwave_flux_in_air'][-1] -
-                       state['upwelling_longwave_flux_in_air'][-1]).values
-
     # print('TOA flux:', toa_flux_to_col)
     # print('Surf flux:', surf_flux_to_col)
 
-    total_heat_gain = surf_flux_to_col + toa_flux_to_col
-    current_enthalpy = calc_moist_enthalpy(state)
-    enthalpy_gain = current_enthalpy - old_enthalpy
-    old_enthalpy = current_enthalpy
-
-    if i % 100 == 0:
-        monitor.store(state)
+    if (i % 100 == 0) or (i == run_length - 1):
+        # monitor.store(state)
         netcdf_monitor.store(state)
+
+        surf_flux_to_col = -(state['downwelling_shortwave_flux_in_air'][0] +
+                             state['downwelling_longwave_flux_in_air'][0] -
+                             state['upwelling_shortwave_flux_in_air'][0] -
+                             state['upwelling_longwave_flux_in_air'][0] -
+                             state['surface_upward_sensible_heat_flux'] -
+                             state['surface_upward_latent_heat_flux']).values
+
+        toa_flux_to_col = (state['downwelling_shortwave_flux_in_air'][-1] -
+                           state['upwelling_shortwave_flux_in_air'][-1] -
+                           state['upwelling_longwave_flux_in_air'][-1]).values
+
+        total_heat_gain = surf_flux_to_col + toa_flux_to_col
+        current_enthalpy = calc_moist_enthalpy(state)
+        enthalpy_gain = current_enthalpy - old_enthalpy
+        old_enthalpy = current_enthalpy
 
         print(i)
         print('Forcing and Column integral: ', total_heat_gain, enthalpy_gain / timestep.total_seconds())
@@ -209,7 +191,7 @@ for i in range(100000):
         print('Surf flux:', surf_flux_to_col)
 
     state.update(new_state)
-    # state['time'] += timestep
+    state['time'] += timestep
     state['eastward_wind'].values[:] = 3.
 
-os.system('mv {0} saved_files/'.format(nc_name))
+os.system('mv {0} ~/climt_files/{1}/'.format(nc_name, nc_name[:-3]))
