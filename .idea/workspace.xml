@@ -4,7 +4,6 @@
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/climt_scripts/rrtmg_emanuel_i270_290solar.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/rrtmg_emanuel_i270_290solar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_files/270_0.nc" beforeDir="false" afterPath="$PROJECT_DIR$/saved_files/270_0.nc" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/climt_scripts/rrtmg_emanuel_i270_290solar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2281">
-              <caret line="196" column="25" lean-forward="true" selection-start-line="196" selection-start-column="25" selection-end-line="196" selection-end-column="25" />
+            <state relative-caret-position="179">
+              <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
               <folding>
                 <element signature="e#0#80#0" expanded="true" />
               </folding>
@@ -209,21 +208,7 @@
       <workItem from="1559614066596" duration="337000" />
       <workItem from="1560785392021" duration="3000" />
       <workItem from="1563910594651" duration="2785000" />
-      <workItem from="1563983353791" duration="4961000" />
-    </task>
-    <task id="LOCAL-00271" summary="new eq check for run">
-      <created>1559082606491</created>
-      <option name="number" value="00271" />
-      <option name="presentableId" value="LOCAL-00271" />
-      <option name="project" value="LOCAL" />
-      <updated>1559082606494</updated>
-    </task>
-    <task id="LOCAL-00272" summary="new eq check for run">
-      <created>1559135934778</created>
-      <option name="number" value="00272" />
-      <option name="presentableId" value="LOCAL-00272" />
-      <option name="project" value="LOCAL" />
-      <updated>1559135934779</updated>
+      <workItem from="1563983353791" duration="5206000" />
     </task>
     <task id="LOCAL-00273" summary="new eq check for run">
       <created>1559135960812</created>
@@ -554,11 +539,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564002574669</updated>
     </task>
-    <option name="localTasksCounter" value="320" />
+    <task id="LOCAL-00320" summary="new eq check for run">
+      <created>1564070786866</created>
+      <option name="number" value="00320" />
+      <option name="presentableId" value="LOCAL-00320" />
+      <option name="project" value="LOCAL" />
+      <updated>1564070786866</updated>
+    </task>
+    <task id="LOCAL-00321" summary="new eq check for run">
+      <created>1564070894417</created>
+      <option name="number" value="00321" />
+      <option name="presentableId" value="LOCAL-00321" />
+      <option name="project" value="LOCAL" />
+      <updated>1564070894417</updated>
+    </task>
+    <option name="localTasksCounter" value="322" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69761000" />
+    <option name="totallyTimeSpent" value="70006000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-181" y="-1050" width="1680" height="1050" extended-state="0" />
@@ -662,8 +661,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/rrtmg_emanuel_i270_290solar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2281">
-          <caret line="196" column="25" lean-forward="true" selection-start-line="196" selection-start-column="25" selection-end-line="196" selection-end-column="25" />
+        <state relative-caret-position="179">
+          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
           <folding>
             <element signature="e#0#80#0" expanded="true" />
           </folding>

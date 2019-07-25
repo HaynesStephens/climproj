@@ -147,7 +147,7 @@ time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convectio
 old_enthalpy = calc_moist_enthalpy(state)
 
 run_days = 10950
-run_length = (run_days * 24 * 60) / dt_minutes
+run_length = int((run_days * 24 * 60) / dt_minutes)
 
 for i in range(run_length):
     diagnostics, new_state = simple_physics(state, timestep)
