@@ -13,4 +13,4 @@
 
 module load python/3.5.2
 
-python radiative_convective_equilibrium_ccm3_emanuel_i270_290solar.py
+python /home/haynes13/code/python/climproj/#SCRIPT#.py
