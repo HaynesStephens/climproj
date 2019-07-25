@@ -13,4 +13,4 @@
 
 module load python/3.5.2
 
-python /home/haynes13/code/python/climproj/#SCRIPT#.py
+python #SCRIPT#.py
