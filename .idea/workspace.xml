@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/climt_scripts/rrtmg_emanuel_i270_290solar.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="179">
-              <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
+              <caret line="150" selection-start-line="150" selection-end-line="150" />
               <folding>
                 <element signature="e#0#80#0" expanded="true" />
               </folding>
@@ -40,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_time_series.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="192">
+              <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -73,8 +73,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>co2_leve</find>
-      <find>co2_level</find>
       <find>pd</find>
       <find>nc_name</find>
       <find>print</find>
@@ -103,6 +101,8 @@
       <find>plotfun</find>
       <find>plot</find>
       <find>monitor</find>
+      <find>rint</find>
+      <find>solar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -206,14 +206,7 @@
       <workItem from="1559614066596" duration="337000" />
       <workItem from="1560785392021" duration="3000" />
       <workItem from="1563910594651" duration="2785000" />
-      <workItem from="1563983353791" duration="5658000" />
-    </task>
-    <task id="LOCAL-00277" summary="new eq check for run">
-      <created>1559157276161</created>
-      <option name="number" value="00277" />
-      <option name="presentableId" value="LOCAL-00277" />
-      <option name="project" value="LOCAL" />
-      <updated>1559157276162</updated>
+      <workItem from="1563983353791" duration="6005000" />
     </task>
     <task id="LOCAL-00278" summary="new eq check for run">
       <created>1559157355811</created>
@@ -551,11 +544,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564083094331</updated>
     </task>
-    <option name="localTasksCounter" value="326" />
+    <task id="LOCAL-00326" summary="new eq check for run">
+      <created>1564083319954</created>
+      <option name="number" value="00326" />
+      <option name="presentableId" value="LOCAL-00326" />
+      <option name="project" value="LOCAL" />
+      <updated>1564083319954</updated>
+    </task>
+    <option name="localTasksCounter" value="327" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70458000" />
+    <option name="totallyTimeSpent" value="70805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -650,7 +650,7 @@
     <entry file="file://$PROJECT_DIR$/climt_scripts/rrtmg_emanuel_i270_290solar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
-          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
+          <caret line="150" selection-start-line="150" selection-end-line="150" />
           <folding>
             <element signature="e#0#80#0" expanded="true" />
           </folding>
@@ -659,8 +659,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plot_time_series.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="192">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
