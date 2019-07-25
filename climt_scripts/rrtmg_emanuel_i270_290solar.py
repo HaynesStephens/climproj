@@ -31,57 +31,57 @@ def calc_moist_enthalpy(state):
     return ((C_tot * state['air_temperature'] + Lv * state['specific_humidity']) * dp / g).sum().values
 
 
-def plot_function(fig, state):
-    ax = fig.add_subplot(2, 2, 1)
-    ax.plot(
-        state['air_temperature_tendency_from_convection'].to_units(
-            'degK day^-1').values.flatten(),
-        state['air_pressure'].to_units('mbar').values.flatten(), '-o')
-    ax.set_title('Conv. heating rate')
-    ax.set_xlabel('K/day')
-    ax.set_ylabel('millibar')
-    ax.grid()
-    ax.axes.invert_yaxis()
-
-    ax = fig.add_subplot(2, 2, 2)
-    ax.plot(
-        state['air_temperature'].values.flatten(),
-        state['air_pressure'].to_units('mbar').values.flatten(), '-o')
-    ax.set_title('Air temperature')
-    ax.axes.invert_yaxis()
-    ax.set_xlabel('K')
-    ax.grid()
-
-    ax = fig.add_subplot(2, 2, 3)
-    ax.plot(
-        state['air_temperature_tendency_from_longwave'].values.flatten(),
-        state['air_pressure'].to_units('mbar').values.flatten(), '-o',
-        label='LW')
-    ax.plot(
-        state['air_temperature_tendency_from_shortwave'].values.flatten(),
-        state['air_pressure'].to_units('mbar').values.flatten(), '-o',
-        label='SW')
-    ax.set_title('LW and SW Heating rates')
-    ax.legend()
-    ax.axes.invert_yaxis()
-    ax.set_xlabel('K/day')
-    ax.grid()
-    ax.set_ylabel('millibar')
-
-    ax = fig.add_subplot(2, 2, 4)
-    net_flux = (state['downwelling_longwave_flux_in_air'] +
-                state['downwelling_shortwave_flux_in_air'] -
-                state['upwelling_longwave_flux_in_air'] -
-                state['upwelling_shortwave_flux_in_air'])
-    ax.plot(
-        net_flux.values.flatten(),
-        state['air_pressure_on_interface_levels'].to_units(
-            'mbar').values.flatten(), '-o')
-    ax.set_title('Net Flux')
-    ax.axes.invert_yaxis()
-    ax.set_xlabel('W/m^2')
-    ax.grid()
-    plt.tight_layout()
+# def plot_function(fig, state):
+#     ax = fig.add_subplot(2, 2, 1)
+#     ax.plot(
+#         state['air_temperature_tendency_from_convection'].to_units(
+#             'degK day^-1').values.flatten(),
+#         state['air_pressure'].to_units('mbar').values.flatten(), '-o')
+#     ax.set_title('Conv. heating rate')
+#     ax.set_xlabel('K/day')
+#     ax.set_ylabel('millibar')
+#     ax.grid()
+#     ax.axes.invert_yaxis()
+#
+#     ax = fig.add_subplot(2, 2, 2)
+#     ax.plot(
+#         state['air_temperature'].values.flatten(),
+#         state['air_pressure'].to_units('mbar').values.flatten(), '-o')
+#     ax.set_title('Air temperature')
+#     ax.axes.invert_yaxis()
+#     ax.set_xlabel('K')
+#     ax.grid()
+#
+#     ax = fig.add_subplot(2, 2, 3)
+#     ax.plot(
+#         state['air_temperature_tendency_from_longwave'].values.flatten(),
+#         state['air_pressure'].to_units('mbar').values.flatten(), '-o',
+#         label='LW')
+#     ax.plot(
+#         state['air_temperature_tendency_from_shortwave'].values.flatten(),
+#         state['air_pressure'].to_units('mbar').values.flatten(), '-o',
+#         label='SW')
+#     ax.set_title('LW and SW Heating rates')
+#     ax.legend()
+#     ax.axes.invert_yaxis()
+#     ax.set_xlabel('K/day')
+#     ax.grid()
+#     ax.set_ylabel('millibar')
+#
+#     ax = fig.add_subplot(2, 2, 4)
+#     net_flux = (state['downwelling_longwave_flux_in_air'] +
+#                 state['downwelling_shortwave_flux_in_air'] -
+#                 state['upwelling_longwave_flux_in_air'] -
+#                 state['upwelling_shortwave_flux_in_air'])
+#     ax.plot(
+#         net_flux.values.flatten(),
+#         state['air_pressure_on_interface_levels'].to_units(
+#             'mbar').values.flatten(), '-o')
+#     ax.set_title('Net Flux')
+#     ax.axes.invert_yaxis()
+#     ax.set_xlabel('W/m^2')
+#     ax.grid()
+#     plt.tight_layout()
 
 
 # monitor = PlotFunctionMonitor(plot_function, interactive=True)
