@@ -59,6 +59,7 @@ netcdf_monitor = NetCDFMonitor(nc_name,
                                store_names=store_quantities,
                                write_on_store=True)
 
+# Set timestep at 10 minutes
 dt_minutes = 10
 timestep = timedelta(minutes=dt_minutes)
 
@@ -71,7 +72,7 @@ moist_convection = EmanuelConvection()
 state = get_default_state([simple_physics, moist_convection,
                            radiation_lw, radiation_sw, slab])
 
-
+# These values are set to match the default values that Shanshan included in her simulations
 state['air_temperature'].values[:]                          = 283.15
 state['surface_albedo_for_direct_shortwave'].values[:]      = 0.07
 state['surface_albedo_for_direct_near_infrared'].values[:]  = 0.07
@@ -87,6 +88,7 @@ state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10
 time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convection])
 old_enthalpy = calc_moist_enthalpy(state)
 
+# Day length to match Shanshan
 run_days = 10950
 run_length = int((run_days * 24 * 60) / dt_minutes)
 
@@ -123,4 +125,4 @@ for i in range(run_length):
 
     state.update(new_state)
     state['time'] += timestep
-    state['eastward_wind'].values[:] = 5.
+    state['eastward_wind'].values[:] = 5. # default value of old climt turbulence that Shanshan didn't seem to change
