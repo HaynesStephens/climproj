@@ -82,7 +82,7 @@ def plot_time_series(co2_ppm, run_num):
                  bbox=dict(facecolor='none', edgecolor='green'),
                  x=0.55, y=0.525)
     plt.tight_layout()
-    fig_name = 'r_e_270_noT.pdf'
+    fig_name = 'r_e_270.pdf'
     plt.savefig('saved_plots/'+fig_name)
     plt.show()
 
