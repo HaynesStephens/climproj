@@ -13,7 +13,7 @@ def getLastInstance(data, levels = None):
 
 
 def plot_time_series(co2_ppm, run_num):
-    basename = '/home/haynes13/climt_files/rrtmg_emanuel_i{0}_290solar_noT/rrtmg_emanuel_i{0}_290solar_noT'.format(co2_ppm)
+    basename = '/home/haynes13/climt_files/rrtmg_emanuel_i{0}_290solar/rrtmg_emanuel_i{0}_290solar'.format(co2_ppm)
     filename = basename + '.nc'
     mid_levels = 28
     interface_levels = 29

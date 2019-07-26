@@ -40,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_time_series.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+            <state relative-caret-position="255">
+              <caret line="15" column="98" selection-start-line="15" selection-start-column="98" selection-end-line="15" selection-end-column="98" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -125,8 +125,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="x" value="-181" />
+    <option name="y" value="-1050" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -206,21 +208,7 @@
       <workItem from="1559614066596" duration="337000" />
       <workItem from="1560785392021" duration="3000" />
       <workItem from="1563910594651" duration="2785000" />
-      <workItem from="1563983353791" duration="6005000" />
-    </task>
-    <task id="LOCAL-00278" summary="new eq check for run">
-      <created>1559157355811</created>
-      <option name="number" value="00278" />
-      <option name="presentableId" value="LOCAL-00278" />
-      <option name="project" value="LOCAL" />
-      <updated>1559157355811</updated>
-    </task>
-    <task id="LOCAL-00279" summary="new eq check for run">
-      <created>1559157370107</created>
-      <option name="number" value="00279" />
-      <option name="presentableId" value="LOCAL-00279" />
-      <option name="project" value="LOCAL" />
-      <updated>1559157370107</updated>
+      <workItem from="1563983353791" duration="6282000" />
     </task>
     <task id="LOCAL-00280" summary="new eq check for run">
       <created>1559157376728</created>
@@ -551,17 +539,31 @@
       <option name="project" value="LOCAL" />
       <updated>1564083319954</updated>
     </task>
-    <option name="localTasksCounter" value="327" />
+    <task id="LOCAL-00327" summary="new eq check for run">
+      <created>1564093442935</created>
+      <option name="number" value="00327" />
+      <option name="presentableId" value="LOCAL-00327" />
+      <option name="project" value="LOCAL" />
+      <updated>1564093442936</updated>
+    </task>
+    <task id="LOCAL-00328" summary="new eq check for run">
+      <created>1564150429288</created>
+      <option name="number" value="00328" />
+      <option name="presentableId" value="LOCAL-00328" />
+      <option name="project" value="LOCAL" />
+      <updated>1564150429288</updated>
+    </task>
+    <option name="localTasksCounter" value="329" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70805000" />
+    <option name="totallyTimeSpent" value="71082000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="-181" y="-1050" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21567044" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16300367" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -575,7 +577,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2036775" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.15047021" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -659,8 +661,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plot_time_series.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        <state relative-caret-position="255">
+          <caret line="15" column="98" selection-start-line="15" selection-start-column="98" selection-end-line="15" selection-end-column="98" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
