@@ -22,7 +22,7 @@ def createJob(home_dir, job_name): #order input variables by use order, duh
     sbatch_file.write('#SBATCH --mail-type=ALL\n')
     sbatch_file.write('#SBATCH --mail-user=haynes13@uchicago.edu\n')
     sbatch_file.write('\n')
-    sbatch_file.write('module load python/3.5.2')
+    sbatch_file.write('module load python/3.5.2\n')
     sbatch_file.write('\n')
     sbatch_file.write('python /home/haynes13/code/python/climproj/climt_scripts/{0}.py'.format(job_name))
 
