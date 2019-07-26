@@ -8,7 +8,9 @@ from climt import (
     EmanuelConvection, RRTMGShortwave, RRTMGLongwave,
     SlabSurface, SimplePhysics, get_default_state
 )
-
+# a1 = State[‘time’] gets updated
+# b1 = Time_stepper before sympl_physics
+# c1 = Diagnostics updated before state
 #############################
 # PARAMETERS/NAMES TO ALTER #
 #############################
