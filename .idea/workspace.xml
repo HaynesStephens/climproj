@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plot_time_series.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_time_series.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/climt_scripts/rrtmg_emanuel_i270_290solar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="150" selection-start-line="150" selection-end-line="150" />
+            <state relative-caret-position="847">
+              <caret line="192" column="27" lean-forward="true" selection-start-line="192" selection-start-column="4" selection-end-line="192" selection-end-column="27" />
               <folding>
                 <element signature="e#0#80#0" expanded="true" />
               </folding>
@@ -37,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plot_time_series.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="98" selection-start-line="15" selection-start-column="98" selection-end-line="15" selection-end-column="98" />
+            <state relative-caret-position="-16">
+              <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -52,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pullEQ.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2384">
+            <state relative-caret-position="579">
               <caret line="149" column="14" selection-start-line="149" selection-start-column="14" selection-end-line="149" selection-end-column="14" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -208,21 +207,7 @@
       <workItem from="1559614066596" duration="337000" />
       <workItem from="1560785392021" duration="3000" />
       <workItem from="1563910594651" duration="2785000" />
-      <workItem from="1563983353791" duration="6282000" />
-    </task>
-    <task id="LOCAL-00280" summary="new eq check for run">
-      <created>1559157376728</created>
-      <option name="number" value="00280" />
-      <option name="presentableId" value="LOCAL-00280" />
-      <option name="project" value="LOCAL" />
-      <updated>1559157376728</updated>
-    </task>
-    <task id="LOCAL-00281" summary="new eq check for run">
-      <created>1559157425678</created>
-      <option name="number" value="00281" />
-      <option name="presentableId" value="LOCAL-00281" />
-      <option name="project" value="LOCAL" />
-      <updated>1559157425678</updated>
+      <workItem from="1563983353791" duration="6963000" />
     </task>
     <task id="LOCAL-00282" summary="new eq check for run">
       <created>1559157493670</created>
@@ -553,11 +538,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564150429288</updated>
     </task>
-    <option name="localTasksCounter" value="329" />
+    <task id="LOCAL-00329" summary="new eq check for run">
+      <created>1564150513752</created>
+      <option name="number" value="00329" />
+      <option name="presentableId" value="LOCAL-00329" />
+      <option name="project" value="LOCAL" />
+      <updated>1564150513752</updated>
+    </task>
+    <task id="LOCAL-00330" summary="new eq check for run">
+      <created>1564150522591</created>
+      <option name="number" value="00330" />
+      <option name="presentableId" value="LOCAL-00330" />
+      <option name="project" value="LOCAL" />
+      <updated>1564150522591</updated>
+    </task>
+    <option name="localTasksCounter" value="331" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71082000" />
+    <option name="totallyTimeSpent" value="71763000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-181" y="-1050" width="1680" height="1050" extended-state="0" />
@@ -628,17 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pullEQ.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2384">
-          <caret line="149" column="14" selection-start-line="149" selection-start-column="14" selection-end-line="149" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1559614106636" expanded="true" signature="2632:2638" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/longTerm_moistConvection_edit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3638">
@@ -649,22 +637,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/rrtmg_emanuel_i270_290solar.py">
+    <entry file="file://$PROJECT_DIR$/plot_time_series.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="150" selection-start-line="150" selection-end-line="150" />
+        <state relative-caret-position="-16">
+          <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
           <folding>
-            <element signature="e#0#80#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot_time_series.py">
+    <entry file="file://$PROJECT_DIR$/pullEQ.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="98" selection-start-line="15" selection-start-column="98" selection-end-line="15" selection-end-column="98" />
+        <state relative-caret-position="579">
+          <caret line="149" column="14" selection-start-line="149" selection-start-column="14" selection-end-line="149" selection-end-column="14" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+            <marker date="1559614106636" expanded="true" signature="2632:2638" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/rrtmg_emanuel_i270_290solar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="847">
+          <caret line="192" column="27" lean-forward="true" selection-start-line="192" selection-start-column="4" selection-end-line="192" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
           </folding>
         </state>
       </provider>
