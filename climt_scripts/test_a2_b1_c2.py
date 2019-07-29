@@ -9,7 +9,7 @@ from climt import (
     SlabSurface, SimplePhysics, get_default_state
 )
 # a2 = State[‘time’] DOES NOT get updated
-# b1 = Time_stepper BEFORE sympl_physics
+# b1 = Time_stepper BEFORE sympl_physics blah
 # c2 = Diagnostics updated AFTER state
 #############################
 # PARAMETERS/NAMES TO ALTER #
