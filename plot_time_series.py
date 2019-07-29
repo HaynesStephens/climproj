@@ -92,4 +92,4 @@ def plot_time_series(job_name):
     plt.savefig(plot_name)
     plt.show()
 
-plot_time_series(job_name = 'test_a2_b1_c1')
+plot_time_series(job_name = 'test_a1_b1_c1')
