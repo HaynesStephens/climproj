@@ -62,9 +62,14 @@ def plot_time_series(job_name):
 
     ax2 = axes[1, 0]
     ax2.plot(time_adj, precip, '-', c='b')
-    ax2.set_title('Precipitation')
+    ax2.set_title('Precipitation / LH Flux')
     ax2.set_xlabel(time_title)
     ax2.set_ylabel('mm/day')
+
+    ax2b = ax2.twinx()
+    ax2b.plot(time_adj, lh_flux, '-.', c='y')
+    ax2b.set_ylabel('W/m^2')
+
     ax2.grid()
 
     ax3 = axes[1, 1]
