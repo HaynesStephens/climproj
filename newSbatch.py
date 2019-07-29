@@ -6,6 +6,7 @@ job_name = 'test_a1_b2_c2'
 def createJob(home_dir, job_name): #order input variables by use order, duh
     job_dir = home_dir + job_name
     os.system('mkdir {0}'.format(job_dir))
+    os.system('mkdir /home/haynes13/code/python/climproj/saved_plots/{0}'.format(job_name))
     sbatch_filename = job_dir + '/' + job_name + '.sbatch'
     sbatch_file = open(sbatch_filename, 'w')
 
