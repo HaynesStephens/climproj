@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/climt_scripts/test_a2_b1_c2.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/test_a2_b1_c2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/climt_scripts/test_a2_b2_c2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newSbatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/newSbatch.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,10 +15,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/test_a1_b2_c2.py">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b2_c1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1700">
-              <caret line="100" column="29" selection-end-line="128" />
+            <state relative-caret-position="289">
+              <caret line="17" column="24" selection-end-line="128" />
               <folding>
                 <element signature="e#0#94#0" expanded="true" />
               </folding>
@@ -25,10 +27,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b1_c2.py">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b2_c2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+            <state relative-caret-position="1649">
+              <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
               <folding>
                 <element signature="e#0#94#0" expanded="true" />
               </folding>
@@ -39,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newSbatch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="51">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -135,8 +137,10 @@
         <option value="$PROJECT_DIR$/climt_scripts/test_a1_b2_c1.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a1_b1_c2.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a1_b2_c2.py" />
-        <option value="$PROJECT_DIR$/newSbatch.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a2_b1_c2.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/test_a2_b2_c1.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/test_a2_b2_c2.py" />
+        <option value="$PROJECT_DIR$/newSbatch.py" />
       </list>
     </option>
   </component>
@@ -225,21 +229,7 @@
       <workItem from="1560785392021" duration="3000" />
       <workItem from="1563910594651" duration="2785000" />
       <workItem from="1563983353791" duration="10001000" />
-      <workItem from="1564408014307" duration="2239000" />
-    </task>
-    <task id="LOCAL-00297" summary="new eq check for run">
-      <created>1559169589913</created>
-      <option name="number" value="00297" />
-      <option name="presentableId" value="LOCAL-00297" />
-      <option name="project" value="LOCAL" />
-      <updated>1559169589913</updated>
-    </task>
-    <task id="LOCAL-00298" summary="new eq check for run">
-      <created>1559182101450</created>
-      <option name="number" value="00298" />
-      <option name="presentableId" value="LOCAL-00298" />
-      <option name="project" value="LOCAL" />
-      <updated>1559182101450</updated>
+      <workItem from="1564408014307" duration="2499000" />
     </task>
     <task id="LOCAL-00299" summary="new eq check for run">
       <created>1559182107996</created>
@@ -570,11 +560,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564415611256</updated>
     </task>
-    <option name="localTasksCounter" value="346" />
+    <task id="LOCAL-00346" summary="new eq check for run">
+      <created>1564415617002</created>
+      <option name="number" value="00346" />
+      <option name="presentableId" value="LOCAL-00346" />
+      <option name="project" value="LOCAL" />
+      <updated>1564415617002</updated>
+    </task>
+    <task id="LOCAL-00347" summary="new eq check for run">
+      <created>1564415825571</created>
+      <option name="number" value="00347" />
+      <option name="presentableId" value="LOCAL-00347" />
+      <option name="project" value="LOCAL" />
+      <updated>1564415825572</updated>
+    </task>
+    <option name="localTasksCounter" value="348" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77040000" />
+    <option name="totallyTimeSpent" value="77300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-181" y="-1050" width="1680" height="1050" extended-state="0" />
@@ -734,17 +738,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newSbatch.py">
+    <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b1_c2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="-1375">
+          <caret line="11" column="40" selection-end-line="128" />
+          <folding>
+            <element signature="e#0#94#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b1_c2.py">
+    <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b2_c1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        <state relative-caret-position="289">
+          <caret line="17" column="24" selection-end-line="128" />
+          <folding>
+            <element signature="e#0#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newSbatch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b2_c2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1649">
+          <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
           <folding>
             <element signature="e#0#94#0" expanded="true" />
           </folding>
