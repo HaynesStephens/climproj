@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newSbatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/newSbatch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_time_series.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_time_series.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,31 +14,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/longTerm_moistConvection_edit.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3638">
-              <caret line="214" column="32" selection-start-line="214" selection-start-column="32" selection-end-line="214" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#105#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/rrtmg_emanuel_i270_290solar.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/climt_scripts/test_a1_b1_c1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2159">
-              <caret line="127" column="117" selection-start-line="127" selection-start-column="117" selection-end-line="127" selection-end-column="117" />
+            <state>
+              <caret selection-end-line="128" />
               <folding>
                 <element signature="e#0#94#0" expanded="true" />
               </folding>
@@ -46,7 +25,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b1_c1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="38" column="103" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="103" />
+              <folding>
+                <element signature="e#0#94#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newSbatch.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
@@ -55,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_time_series.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
-              <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+            <state relative-caret-position="272">
+              <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -70,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pullEQ.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
+            <state relative-caret-position="2499">
               <caret line="149" column="14" selection-start-line="149" selection-start-column="14" selection-end-line="149" selection-end-column="14" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -91,7 +82,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pd</find>
       <find>nc_name</find>
       <find>print</find>
       <find>basename</find>
@@ -121,6 +111,7 @@
       <find>monitor</find>
       <find>rint</find>
       <find>solar</find>
+      <find>test</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,10 +129,11 @@
         <option value="$PROJECT_DIR$/pullEQ.py" />
         <option value="$PROJECT_DIR$/longTerm_moistConvection_edit.py" />
         <option value="$PROJECT_DIR$/climt_scripts/rrtmg_emanuel_i270_290solar.py" />
-        <option value="$PROJECT_DIR$/plot_time_series.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_d1.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a1_b1_c1.py" />
         <option value="$PROJECT_DIR$/newSbatch.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1.py" />
+        <option value="$PROJECT_DIR$/plot_time_series.py" />
       </list>
     </option>
   </component>
@@ -229,21 +221,8 @@
       <workItem from="1559614066596" duration="337000" />
       <workItem from="1560785392021" duration="3000" />
       <workItem from="1563910594651" duration="2785000" />
-      <workItem from="1563983353791" duration="9650000" />
-    </task>
-    <task id="LOCAL-00287" summary="new eq check for run">
-      <created>1559157747288</created>
-      <option name="number" value="00287" />
-      <option name="presentableId" value="LOCAL-00287" />
-      <option name="project" value="LOCAL" />
-      <updated>1559157747288</updated>
-    </task>
-    <task id="LOCAL-00288" summary="new eq check for run">
-      <created>1559157886021</created>
-      <option name="number" value="00288" />
-      <option name="presentableId" value="LOCAL-00288" />
-      <option name="project" value="LOCAL" />
-      <updated>1559157886021</updated>
+      <workItem from="1563983353791" duration="10001000" />
+      <workItem from="1564408014307" duration="732000" />
     </task>
     <task id="LOCAL-00289" summary="new eq check for run">
       <created>1559158188407</created>
@@ -574,17 +553,31 @@
       <option name="project" value="LOCAL" />
       <updated>1564175682311</updated>
     </task>
-    <option name="localTasksCounter" value="336" />
+    <task id="LOCAL-00336" summary="new eq check for run">
+      <created>1564175729725</created>
+      <option name="number" value="00336" />
+      <option name="presentableId" value="LOCAL-00336" />
+      <option name="project" value="LOCAL" />
+      <updated>1564175729725</updated>
+    </task>
+    <task id="LOCAL-00337" summary="new eq check for run">
+      <created>1564175901212</created>
+      <option name="number" value="00337" />
+      <option name="presentableId" value="LOCAL-00337" />
+      <option name="project" value="LOCAL" />
+      <updated>1564175901212</updated>
+    </task>
+    <option name="localTasksCounter" value="338" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74450000" />
+    <option name="totallyTimeSpent" value="75533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-181" y="-1050" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16300367" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21794872" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -598,7 +591,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.15047021" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.20271683" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -659,37 +652,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot_time_series.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pullEQ.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="149" column="14" selection-start-line="149" selection-start-column="14" selection-end-line="149" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1559614106636" expanded="true" signature="2632:2638" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_d1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1189">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_d1.py" />
     <entry file="file://$PROJECT_DIR$/climt_scripts/rrtmg_emanuel_i270_290solar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -699,8 +662,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/test_a1_b1_c1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2159">
-          <caret line="127" column="117" selection-start-line="127" selection-start-column="117" selection-end-line="127" selection-end-column="117" />
+        <state>
+          <caret selection-end-line="128" />
           <folding>
             <element signature="e#0#94#0" expanded="true" />
           </folding>
@@ -711,6 +674,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pullEQ.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2499">
+          <caret line="149" column="14" selection-start-line="149" selection-start-column="14" selection-end-line="149" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1559614106636" expanded="true" signature="2632:2638" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b1_c1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="38" column="103" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="103" />
+          <folding>
+            <element signature="e#0#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_time_series.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

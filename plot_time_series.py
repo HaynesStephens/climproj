@@ -12,13 +12,15 @@ def getLastInstance(data, levels = None):
         return data[:].flatten()[-levels:]
 
 
-def plot_time_series(co2_ppm, run_num):
-    basename = '/home/haynes13/climt_files/rrtmg_emanuel_i{0}_290solar/rrtmg_emanuel_i{0}_290solar'.format(co2_ppm)
-    filename = basename + '.nc'
+def plot_time_series(job_name):
+    base_name = '/home/haynes13/climt_files/'
+    file_name = '{0}{1}/{1}.nc'.format(base_name, job_name)
+    plot_name = 'saved_plots/{0}/{0}_time_series.pdf'.format(job_name)
+
     mid_levels = 28
     interface_levels = 29
 
-    nc = getNC(filename)
+    nc = getNC(file_name)
     time_arr = nc['time'][:]
     time_arr = np.arange(nc['time'][:].size)*100*10*60
     print(nc['time'][:].size)
@@ -82,8 +84,7 @@ def plot_time_series(co2_ppm, run_num):
                  bbox=dict(facecolor='none', edgecolor='green'),
                  x=0.55, y=0.525)
     plt.tight_layout()
-    fig_name = 'r_e_270.pdf'
-    plt.savefig('saved_plots/'+fig_name)
+    plt.savefig(plot_name)
     plt.show()
 
-plot_time_series(co2_ppm=270, run_num=0)
+plot_time_series(job_name = 'test_a1_b1_c1')
