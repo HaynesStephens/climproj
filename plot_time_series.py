@@ -92,4 +92,7 @@ def plot_time_series(job_name):
     plt.savefig(plot_name)
     plt.show()
 
-plot_time_series(job_name = 'test_a1_b1_c1')
+for ai in range(1,3):
+    for bi in range(1,3):
+        for ci in range(1,3):
+            plot_time_series(job_name = 'test_a{0}_b{1}_c{2}'.format(ai, bi, ci))
