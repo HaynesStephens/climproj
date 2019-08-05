@@ -88,7 +88,6 @@ def calcMoistEnthalpySeries(nc):
 
 # Parameters
 base_path = '/home/haynes13/climt_files'
-file_path = '{0}/{1}/{1}'.format(base_path, job_name)
 var_name = 'moist_enthalpy'
 
 # Procedure
@@ -96,6 +95,7 @@ for i in range(3):
     for j in range(3):
         for k in range(3):
             job_name = 'test_a{0}_b{1}_c{2}'.format(i, j, k)
+            file_path = '{0}/{1}/{1}'.format(base_path, job_name)
             nc = openNC(file_path)
             data = calcMoistEnthalpySeries(nc)
             saveData(data, file_path, var_name)
