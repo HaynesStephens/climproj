@@ -50,7 +50,10 @@ def getTimeSeries1D(nc, var_name):
     """
     data = nc[var_name][:]
     print(data.shape)
-    data = np.reshape(data, (data.shape[0], data.shape[1]))
+    if var_name == 'air_temperature_tendency_from_convection':
+        data = np.reshape(data, (data.shape[0], data.shape[-1]))
+    else:
+        data = np.reshape(data, (data.shape[0], data.shape[1]))
     return data
 
 
