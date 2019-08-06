@@ -121,6 +121,7 @@ for var_name in store_quantities_1D:
                 file_path = '{0}/{1}/{1}'.format(base_path, job_name)
                 nc = openNC(file_path)
                 data = getTimeSeries1D(nc, var_name)
+                print(data.shape)
                 saveData(data, file_path, var_name)
 
 
