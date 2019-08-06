@@ -113,19 +113,18 @@ store_quantities_1D =   ['air_temperature',
 
 # Parameters
 base_path = '/home/haynes13/climt_files'
+var_name = 'time'
 
 # Procedure
-for var_name in store_quantities_1D:
-    print(var_name)
-    for i in range(1,3):
-        for j in range(1,3):
-            for k in range(1,3):
-                job_name = 'test_a{0}_b{1}_c{2}'.format(i, j, k)
-                print(job_name)
-                file_path = '{0}/{1}/{1}'.format(base_path, job_name)
-                nc = openNC(file_path)
-                data = getTimeSeries1D(nc, var_name)
-                saveData(data, file_path, var_name)
+for i in range(1,3):
+    for j in range(1,3):
+        for k in range(1,3):
+            job_name = 'test_a{0}_b{1}_c{2}'.format(i, j, k)
+            print(job_name)
+            file_path = '{0}/{1}/{1}'.format(base_path, job_name)
+            nc = openNC(file_path)
+            data = getTimeSeries0D(nc, var_name)
+            saveData(data, file_path, var_name)
 
 
 
