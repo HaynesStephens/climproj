@@ -1,7 +1,7 @@
 import os
 
 home_dir = '/home/haynes13/climt_files/'
-job_name = 'test_a2_b2_c2'
+job_name = 'test_a2_b1_c1_zen_32'
 
 def createJob(home_dir, job_name): #order input variables by use order, duh
     job_dir = home_dir + job_name

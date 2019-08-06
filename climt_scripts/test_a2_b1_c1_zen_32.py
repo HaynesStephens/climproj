@@ -16,7 +16,7 @@ from climt import (
 # PARAMETERS/NAMES TO ALTER #
 #############################
 co2_ppm = 270
-nc_name = 'test_a2_b1_c1.nc'
+nc_name = 'test_a2_b1_c1_zen_32.nc'
 set_constant('stellar_irradiance', value=290, units='W m^-2')
 #############################
 
