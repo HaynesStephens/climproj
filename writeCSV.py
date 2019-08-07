@@ -114,7 +114,7 @@ store_quantities_1D =   ['air_temperature',
 
 # Parameters
 base_path = '/home/haynes13/climt_files'
-job_name = 'test_a2_b1_c1_zen_32'
+job_name = 'test_a1_b1_c1_zen_32'
 file_path = '{0}/{1}/{1}'.format(base_path, job_name)
 
 # Procedure
