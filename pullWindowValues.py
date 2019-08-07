@@ -20,7 +20,7 @@ def getTimeArray(file_path):
     time_step = 10 * (60)
     save_step = 100 * time_step
     time_arr = getData(file_path, 'time')
-    time_arr = np.arange(time_arr.size*save_step, save_step)
+    time_arr = np.arange(0, time_arr.size*save_step, save_step)
     print(time_arr)
     return time_arr
 
