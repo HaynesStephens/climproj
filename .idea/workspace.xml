@@ -73,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="170">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -93,7 +93,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>heat_capacity</find>
       <find>calc_moist_enthalpy</find>
       <find>edit</find>
       <find>eq_inde</find>
@@ -123,6 +122,7 @@
       <find>a1</find>
       <find>getAdiabat</find>
       <find>file_name</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -245,21 +245,7 @@
       <workItem from="1563910594651" duration="2785000" />
       <workItem from="1563983353791" duration="10001000" />
       <workItem from="1564408014307" duration="10989000" />
-      <workItem from="1565101524435" duration="6155000" />
-    </task>
-    <task id="LOCAL-00326" summary="new eq check for run">
-      <created>1564083319954</created>
-      <option name="number" value="00326" />
-      <option name="presentableId" value="LOCAL-00326" />
-      <option name="project" value="LOCAL" />
-      <updated>1564083319954</updated>
-    </task>
-    <task id="LOCAL-00327" summary="new eq check for run">
-      <created>1564093442935</created>
-      <option name="number" value="00327" />
-      <option name="presentableId" value="LOCAL-00327" />
-      <option name="project" value="LOCAL" />
-      <updated>1564093442936</updated>
+      <workItem from="1565101524435" duration="6251000" />
     </task>
     <task id="LOCAL-00328" summary="new eq check for run">
       <created>1564150429288</created>
@@ -590,11 +576,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565207308945</updated>
     </task>
-    <option name="localTasksCounter" value="375" />
+    <task id="LOCAL-00375" summary="new zen file to write out">
+      <created>1565207354724</created>
+      <option name="number" value="00375" />
+      <option name="presentableId" value="LOCAL-00375" />
+      <option name="project" value="LOCAL" />
+      <updated>1565207354724</updated>
+    </task>
+    <task id="LOCAL-00376" summary="new zen file to write out">
+      <created>1565207396232</created>
+      <option name="number" value="00376" />
+      <option name="presentableId" value="LOCAL-00376" />
+      <option name="project" value="LOCAL" />
+      <updated>1565207396232</updated>
+    </task>
+    <option name="localTasksCounter" value="377" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91945000" />
+    <option name="totallyTimeSpent" value="92041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-513" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -814,8 +814,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="170">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
