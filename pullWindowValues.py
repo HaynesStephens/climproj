@@ -50,7 +50,7 @@ def printWindowValues(file_path, var_name, start_time, end_time):
 
 # Parameters
 base_path = '/home/haynes13/climt_files'
-job_name = 'test_a1_b1_c1_zen_32'
+job_name = 'test_a2_b1_c1_zen_32'
 file_path = '{0}/{1}/{1}'.format(base_path, job_name)
 var_name = 'convective_precipitation_rate'
 start_time = 6000 * (24 * 60 * 60)
