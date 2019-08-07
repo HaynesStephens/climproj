@@ -8,7 +8,7 @@ from netCDF4 import Dataset as ds
 
 def getData(file_path, var_name):
     data = np.loadtxt("{0}_{1}.csv".format(file_path, var_name), delimiter = ',')
-    print(var_name, 'Arr Length', data.size)
+    print(var_name, ', arr length:', data.size)
     return data
 
 
