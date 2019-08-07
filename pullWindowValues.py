@@ -7,7 +7,9 @@ from netCDF4 import Dataset as ds
 #       match a time in the time_array of the simulation
 
 def getData(file_path, var_name):
-    return np.loadtxt("{0}_{1}.csv".format(file_path, var_name), delimiter = ',')
+    data = np.loadtxt("{0}_{1}.csv".format(file_path, var_name), delimiter = ',')
+    print(data.size)
+    return data
 
 
 def getTimeArray(file_path):
@@ -21,7 +23,7 @@ def getTimeArray(file_path):
     save_step = 100 * time_step
     time_arr = getData(file_path, 'time')
     time_arr = np.arange(0, time_arr.size*save_step, save_step)
-    print(time_arr)
+    print(time_arr.size)
     return time_arr
 
 
