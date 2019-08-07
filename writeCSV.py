@@ -123,14 +123,17 @@ nc = openNC(file_path)
 for var_name in store_quantities_0D:
     data = getTimeSeries0D(nc, var_name)
     saveData(data, file_path, var_name)
+    print('Saved:', var_name)
 
 for var_name in store_quantities_1D:
     data = getTimeSeries1D(nc, var_name)
     saveData(data, file_path, var_name)
+    print('Saved:', var_name)
 
 var_name = 'moist_enthalpy'
 data = calcMoistEnthalpySeries(nc)
 saveData(data, file_path, var_name)
+print('Saved:', var_name)
 
 
 
