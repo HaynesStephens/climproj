@@ -53,8 +53,8 @@ base_path = '/home/haynes13/climt_files'
 job_name = 'test_a2_b1_c1_zen_32'
 file_path = '{0}/{1}/{1}'.format(base_path, job_name)
 var_name = 'convective_precipitation_rate'
-start_time = 6000 * (24 * 60 * 60)
-end_time = 10000 * (24 * 60 * 60)
+start_time = np.float(6000 * (24 * 60 * 60))
+end_time = np.float(10000 * (24 * 60 * 60))
 
 # Procedures
 printWindowValues(file_path, var_name, start_time, end_time)
