@@ -113,27 +113,28 @@ store_quantities_1D =   ['air_temperature',
 
 
 # Parameters
-base_path = '/home/haynes13/climt_files'
-job_name = 'test_a1_b1_c1_zen_32'
-file_path = '{0}/{1}/{1}'.format(base_path, job_name)
+for i in range(1,3):
+    job_name    = 'test_a{0}_b1_c1_zen_32'.format(i)
+    nc_path     = '/home/haynes13/climt_runs/{0}/{0}'.format(job_name)
+    save_path   = '/home/haynes13/climt_files/{0}/{0}'.format(job_name)
 
-# Procedure
-nc = openNC(file_path)
+    # Procedure
+    nc = openNC(nc_path)
 
-for var_name in store_quantities_0D:
-    data = getTimeSeries0D(nc, var_name)
-    saveData(data, file_path, var_name)
+    for var_name in store_quantities_0D:
+        data = getTimeSeries0D(nc, var_name)
+        saveData(data, save_path, var_name)
+        print('Saved:', var_name)
+
+    for var_name in store_quantities_1D:
+        data = getTimeSeries1D(nc, var_name)
+        saveData(data, save_path, var_name)
+        print('Saved:', var_name)
+
+    var_name = 'moist_enthalpy'
+    data = calcMoistEnthalpySeries(nc)
+    saveData(data, save_path, var_name)
     print('Saved:', var_name)
-
-for var_name in store_quantities_1D:
-    data = getTimeSeries1D(nc, var_name)
-    saveData(data, file_path, var_name)
-    print('Saved:', var_name)
-
-var_name = 'moist_enthalpy'
-data = calcMoistEnthalpySeries(nc)
-saveData(data, file_path, var_name)
-print('Saved:', var_name)
 
 
 
