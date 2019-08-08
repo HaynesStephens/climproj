@@ -113,29 +113,28 @@ store_quantities_1D =   ['air_temperature',
 
 
 # Parameters
-for i in range(1,3):
-    job_name    = 'test_a{0}_b1_c1_zen_32'.format(i)
-    print('Job:', job_name)
-    nc_path     = '/home/haynes13/climt_runs/{0}/{0}'.format(job_name)
-    save_path   = '/home/haynes13/climt_files/{0}/{0}'.format(job_name)
+job_name    = 'test_a1_b1_c1'.format(i)
+print('Job:', job_name)
+nc_path     = '/home/haynes13/climt_runs/{0}/{0}'.format(job_name)
+save_path   = '/home/haynes13/climt_files/{0}/{0}'.format(job_name)
 
-    # Procedure
-    nc = openNC(nc_path)
+# Procedure
+nc = openNC(nc_path)
 
-    for var_name in store_quantities_0D:
-        data = getTimeSeries0D(nc, var_name)
-        saveData(data, save_path, var_name)
-        print('Saved:', var_name)
-
-    for var_name in store_quantities_1D:
-        data = getTimeSeries1D(nc, var_name)
-        saveData(data, save_path, var_name)
-        print('Saved:', var_name)
-
-    var_name = 'moist_enthalpy'
-    data = calcMoistEnthalpySeries(nc)
+for var_name in store_quantities_0D:
+    data = getTimeSeries0D(nc, var_name)
     saveData(data, save_path, var_name)
     print('Saved:', var_name)
+
+for var_name in store_quantities_1D:
+    data = getTimeSeries1D(nc, var_name)
+    saveData(data, save_path, var_name)
+    print('Saved:', var_name)
+
+var_name = 'moist_enthalpy'
+data = calcMoistEnthalpySeries(nc)
+saveData(data, save_path, var_name)
+print('Saved:', var_name)
 
 
 

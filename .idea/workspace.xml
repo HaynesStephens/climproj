@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newSbatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/newSbatch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/writeCSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/writeCSV.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/writeCSV.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="124" column="32" selection-start-line="124" selection-start-column="32" selection-end-line="124" selection-end-column="32" />
+            <state relative-caret-position="311">
+              <caret line="115" column="28" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
               <folding>
                 <element signature="e#223#241#0" expanded="true" />
               </folding>
@@ -272,21 +271,7 @@
       <workItem from="1563910594651" duration="2785000" />
       <workItem from="1563983353791" duration="10001000" />
       <workItem from="1564408014307" duration="10989000" />
-      <workItem from="1565101524435" duration="8210000" />
-    </task>
-    <task id="LOCAL-00332" summary="new eq check for run">
-      <created>1564174688832</created>
-      <option name="number" value="00332" />
-      <option name="presentableId" value="LOCAL-00332" />
-      <option name="project" value="LOCAL" />
-      <updated>1564174688832</updated>
-    </task>
-    <task id="LOCAL-00333" summary="new eq check for run">
-      <created>1564175636032</created>
-      <option name="number" value="00333" />
-      <option name="presentableId" value="LOCAL-00333" />
-      <option name="project" value="LOCAL" />
-      <updated>1564175636032</updated>
+      <workItem from="1565101524435" duration="8361000" />
     </task>
     <task id="LOCAL-00334" summary="new eq check for run">
       <created>1564175645479</created>
@@ -617,11 +602,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565209498489</updated>
     </task>
-    <option name="localTasksCounter" value="381" />
+    <task id="LOCAL-00381" summary="new zen with every step saved">
+      <created>1565290415432</created>
+      <option name="number" value="00381" />
+      <option name="presentableId" value="LOCAL-00381" />
+      <option name="project" value="LOCAL" />
+      <updated>1565290415432</updated>
+    </task>
+    <task id="LOCAL-00382" summary="new zen with every step saved">
+      <created>1565290447499</created>
+      <option name="number" value="00382" />
+      <option name="presentableId" value="LOCAL-00382" />
+      <option name="project" value="LOCAL" />
+      <updated>1565290447499</updated>
+    </task>
+    <option name="localTasksCounter" value="383" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94000000" />
+    <option name="totallyTimeSpent" value="94151000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-513" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -862,8 +861,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/writeCSV.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="124" column="32" selection-start-line="124" selection-start-column="32" selection-end-line="124" selection-end-column="32" />
+        <state relative-caret-position="311">
+          <caret line="115" column="28" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
           <folding>
             <element signature="e#223#241#0" expanded="true" />
           </folding>
