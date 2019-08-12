@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_zen_32_sol_320.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newSbatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/newSbatch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/plots.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_zen_32_sol_320.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="376">
+              <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
               <folding>
                 <element signature="e#0#94#0" expanded="true" />
               </folding>
@@ -26,7 +25,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newSbatch.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -146,8 +145,8 @@
         <option value="$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_zen_32_full.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_zen_32_full.py" />
         <option value="$PROJECT_DIR$/writeCSV.py" />
-        <option value="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_zen_32_sol_320.py" />
         <option value="$PROJECT_DIR$/newSbatch.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_zen_32_sol_320.py" />
       </list>
     </option>
   </component>
@@ -238,21 +237,7 @@
       <workItem from="1563983353791" duration="10001000" />
       <workItem from="1564408014307" duration="10989000" />
       <workItem from="1565101524435" duration="9220000" />
-      <workItem from="1565618078113" duration="550000" />
-    </task>
-    <task id="LOCAL-00344" summary="new eq check for run">
-      <created>1564415459339</created>
-      <option name="number" value="00344" />
-      <option name="presentableId" value="LOCAL-00344" />
-      <option name="project" value="LOCAL" />
-      <updated>1564415459340</updated>
-    </task>
-    <task id="LOCAL-00345" summary="new eq check for run">
-      <created>1564415611256</created>
-      <option name="number" value="00345" />
-      <option name="presentableId" value="LOCAL-00345" />
-      <option name="project" value="LOCAL" />
-      <updated>1564415611256</updated>
+      <workItem from="1565618078113" duration="960000" />
     </task>
     <task id="LOCAL-00346" summary="new eq check for run">
       <created>1564415617002</created>
@@ -583,11 +568,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565618327194</updated>
     </task>
-    <option name="localTasksCounter" value="393" />
+    <task id="LOCAL-00393" summary="new shit">
+      <created>1565618976780</created>
+      <option name="number" value="00393" />
+      <option name="presentableId" value="LOCAL-00393" />
+      <option name="project" value="LOCAL" />
+      <updated>1565618976781</updated>
+    </task>
+    <task id="LOCAL-00394" summary="new shit">
+      <created>1565624147076</created>
+      <option name="number" value="00394" />
+      <option name="presentableId" value="LOCAL-00394" />
+      <option name="project" value="LOCAL" />
+      <updated>1565624147076</updated>
+    </task>
+    <option name="localTasksCounter" value="395" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95560000" />
+    <option name="totallyTimeSpent" value="95970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-513" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -827,20 +826,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_zen_32_sol_320.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/newSbatch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_zen_32_sol_320.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#94#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
