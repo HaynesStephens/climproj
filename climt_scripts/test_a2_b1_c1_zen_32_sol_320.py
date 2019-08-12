@@ -11,7 +11,8 @@ from climt import (
 # a2 = State[‘time’] DOES NOT get updated
 # b1 = Time_stepper before sympl_physics
 # c1 = Diagnostics updated before state
-# zenith angle changed to 0.55 so that incoming TOA SW is ~247, which seems to match Shanshan's simulations
+# zenith angle changed to 0.55 so that incoming TOA SW is ~247 when insolation is 290, which seems to match Shanshan's simulations
+# insolation changed to 320 to see if it can better match Shanshan's Global EQ Values
 #############################
 # PARAMETERS/NAMES TO ALTER #
 #############################
