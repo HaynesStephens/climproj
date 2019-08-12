@@ -100,7 +100,7 @@ for i in range(run_length):
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
 
-    if (i % 100 == 0) or (i == run_length - 1):
+    if (i % 36 == 0):
         netcdf_monitor.store(state)
 
         surf_flux_to_col = -(state['downwelling_shortwave_flux_in_air'][0] +
