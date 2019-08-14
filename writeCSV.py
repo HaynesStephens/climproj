@@ -4,7 +4,6 @@
 
 import numpy as np
 from netCDF4 import Dataset as ds
-import os
 
 def saveData(data, file_path, var_name, eq_file = False):
     """
