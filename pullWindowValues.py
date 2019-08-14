@@ -20,7 +20,7 @@ def getTimeArray(file_path):
     We want a time array we can index.
     """
     time_step = 10 * (60)
-    save_step = 100 * time_step
+    save_step = 36 * time_step
     time_arr = getData(file_path, 'time')
     time_arr = np.arange(0, time_arr.size*save_step, save_step)
     return time_arr
@@ -67,12 +67,14 @@ def writeEQTable1Values(file_path, start_time, end_time):
     lh = getEQValue('surface_upward_latent_heat_flux')
     sh = getEQValue('surface_upward_sensible_heat_flux')
 
-    net_rad = lw_up + sw_up - lw_dn - sw_dn
+    net_lw = lw_up - lw_dn
+    net_sw = sw_up - sw_dn
+    net_rad = net_lw + net_sw
     net_toa = net_rad[-1]
     net_surf = net_rad[0] + lh + sh
 
     str_list = ['NETtoa', 'NETsurf', 'SWtoa', 'LWtoa', 'SWsurf', 'LWsurf', 'LH', 'SH', 'Ts', 'Prec']
-    val_list = [net_toa, net_surf, sw_dn[-1], lw_up[-1], sw_dn[0], lw_up[0], lh, sh, t_surf, prec]
+    val_list = [net_toa, net_surf, net_sw[-1], net_lw[-1], net_sw[0], net_lw[0], lh, sh, t_surf, prec]
     txt_file = open('{0}_EQTable1Values.txt'.format(file_path), 'w')
 
     assert len(str_list) == len(val_list), "Not the same length of strings and values."
@@ -88,7 +90,7 @@ def writeEQTable1Values(file_path, start_time, end_time):
 
 # Parameters
 base_path = '/home/haynes13/climt_files'
-job_name = 'test_a1_b1_c1'
+job_name = 'test_a2_b1_c1_zen_32_sol_320'
 file_path = '{0}/{1}/{1}'.format(base_path, job_name)
 start_time = np.float(8000 * (24 * 60 * 60))
 end_time = np.float(10000 * (24 * 60 * 60))
