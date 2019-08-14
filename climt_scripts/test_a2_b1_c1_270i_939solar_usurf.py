@@ -11,14 +11,15 @@ from climt import (
 # a2 = State[‘time’] DOES NOT get updated
 # b1 = Time_stepper before sympl_physics
 # c1 = Diagnostics updated before state
-# zenith angle changed to 0.55 so that incoming TOA SW is ~247 when insolation is 290, which seems to match Shanshan's simulations
-# insolation changed to 320 to see if it can better match Shanshan's Global EQ Values
+# Solar insolation set to 939 and zenith angle kept to default,
+# this is in hope to match the earlier 'solin' value of 290 that Shanshan used.
+# usurf = only the surface layer is given a zonal wind to spur convection
 #############################
 # PARAMETERS/NAMES TO ALTER #
 #############################
 co2_ppm = 270
-nc_name = 'test_a2_b1_c1_zen_32_sol_320.nc'
-set_constant('stellar_irradiance', value=320, units='W m^-2')
+nc_name = 'test_a2_b1_c1_270i_939solar_usurf.nc'
+set_constant('stellar_irradiance', value=939, units='W m^-2')
 #############################
 
 
@@ -80,10 +81,10 @@ state['surface_albedo_for_direct_shortwave'].values[:]      = 0.07
 state['surface_albedo_for_direct_near_infrared'].values[:]  = 0.07
 state['surface_albedo_for_diffuse_shortwave'].values[:]     = 0.07
 state['surface_albedo_for_diffuse_near_infrared'].values[:] = 0.07
-state['zenith_angle'].values[:]                             = 0.55
+state['zenith_angle'].values[:]                             = (2 * np.pi) / 5
 state['surface_temperature'].values[:]                      = state['air_temperature'].values[0,0,0]
 state['area_type'].values[:]                                = 'sea'
-state['ocean_mixed_layer_thickness'].values[:]              = 50.0
+state['eastward_wind'].values[0]                            = 5.0
 
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10**(-6)
 
@@ -128,4 +129,4 @@ for i in range(run_length):
 
     state.update(new_state)
     # state['time'] += timestep
-    state['eastward_wind'].values[:] = 5. # default value of old climt turbulence that Shanshan didn't seem to change
+    state['eastward_wind'].values[0] = 5.0 # default value of old climt turbulence that Shanshan didn't seem to change

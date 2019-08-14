@@ -50,6 +50,10 @@ def printWindowValues(file_path, var_name, start_time, end_time):
     print('STD:', np.std(data_window))
 
 
+def printEQTable1Values():
+    return
+
+
 # Parameters
 base_path = '/home/haynes13/climt_files'
 job_name = 'test_a2_b1_c1_zen_32'
