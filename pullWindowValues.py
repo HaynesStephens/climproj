@@ -20,7 +20,7 @@ def getTimeArray(file_path):
     We want a time array we can index.
     """
     time_step = 10 * (60)
-    save_step = 36 * time_step
+    save_step = 100 * time_step
     time_arr = getData(file_path, 'time')
     time_arr = np.arange(0, time_arr.size*save_step, save_step)
     return time_arr
@@ -90,7 +90,7 @@ def writeEQTable1Values(file_path, start_time, end_time):
 
 # Parameters
 base_path = '/home/haynes13/climt_files'
-job_name = 'test_a2_b1_c1_zen_32_sol_320'
+job_name = 'test_a1_b1_c1'
 file_path = '{0}/{1}/{1}'.format(base_path, job_name)
 start_time = np.float(8000 * (24 * 60 * 60))
 end_time = np.float(10000 * (24 * 60 * 60))
