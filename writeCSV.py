@@ -113,7 +113,7 @@ store_quantities_1D =   ['air_temperature',
 
 
 # Parameters
-job_name    = 'test_a1_b1_c1_zen_32_full'
+job_name    = 'test_a2_b1_c1_zen_32_sol_320'
 print('Job:', job_name)
 nc_path     = '/home/haynes13/climt_runs/{0}/{0}'.format(job_name)
 save_path   = '/home/haynes13/climt_files/{0}/{0}'.format(job_name)
