@@ -59,14 +59,20 @@ def saveEQTable1Values(file_path, start_time, end_time):
         return np.mean(data_window, axis = 0)
 
     lw_up = getEQValue('upwelling_longwave_flux_in_air')
+    lw_dn = getEQValue('downwelling_longwave_flux_in_air')
+    sw_up = getEQValue('upwelling_shortwave_flux_in_air')
     sw_dn = getEQValue('downwelling_shortwave_flux_in_air')
     t_surf = getEQValue('surface_temperature')
     prec = getEQValue('convective_precipitation_rate')
     lh = getEQValue('surface_upward_latent_heat_flux')
     sh = getEQValue('surface_upward_sensible_heat_flux')
 
-    str_list = ['SWtoa', 'LWtoa', 'SWsurf', 'LWsurf', 'LH', 'SH', 'Ts', 'Prec']
-    val_list = [sw_dn[-1], lw_up[-1], sw_dn[0], lw_up[0], lh, sh, t_surf, prec]
+    net_rad = lw_up + sw_up - lw_dn - sw_dn
+    net_toa = net_rad[-1]
+    net_surf = net_rad[0] + lh + sh
+
+    str_list = ['NETtoa', 'NETsurf', 'SWtoa', 'LWtoa', 'SWsurf', 'LWsurf', 'LH', 'SH', 'Ts', 'Prec']
+    val_list = [net_toa, net_surf, sw_dn[-1], lw_up[-1], sw_dn[0], lw_up[0], lh, sh, t_surf, prec]
     txt_file = open('{0}_EQTable1Values.txt'.format(file_path), 'w')
 
     assert len(str_list) == len(val_list), "Not the same length of strings and values."
@@ -85,11 +91,11 @@ base_path = '/home/haynes13/climt_files'
 job_name = 'test_a2_b1_c1_zen_32'
 file_path = '{0}/{1}/{1}'.format(base_path, job_name)
 var_name = 'convective_precipitation_rate'
-start_time = np.float(6000 * (24 * 60 * 60))
+start_time = np.float(8000 * (24 * 60 * 60))
 end_time = np.float(10000 * (24 * 60 * 60))
 
 # Procedures
-printWindowValues(file_path, var_name, start_time, end_time)
+saveEQTable1Values(file_path, var_name, start_time, end_time)
 
 
 
