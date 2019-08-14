@@ -85,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+            <state relative-caret-position="579">
+              <caret line="92" column="40" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -264,21 +264,7 @@
       <workItem from="1563983353791" duration="10001000" />
       <workItem from="1564408014307" duration="10989000" />
       <workItem from="1565101524435" duration="9220000" />
-      <workItem from="1565618078113" duration="6929000" />
-    </task>
-    <task id="LOCAL-00361" summary="new run with changed zenith angle">
-      <created>1565114823324</created>
-      <option name="number" value="00361" />
-      <option name="presentableId" value="LOCAL-00361" />
-      <option name="project" value="LOCAL" />
-      <updated>1565114823324</updated>
-    </task>
-    <task id="LOCAL-00362" summary="new run with changed zenith angle">
-      <created>1565114968789</created>
-      <option name="number" value="00362" />
-      <option name="presentableId" value="LOCAL-00362" />
-      <option name="project" value="LOCAL" />
-      <updated>1565114968789</updated>
+      <workItem from="1565618078113" duration="7006000" />
     </task>
     <task id="LOCAL-00363" summary="new run with changed zenith angle">
       <created>1565114984264</created>
@@ -609,11 +595,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565811063235</updated>
     </task>
-    <option name="localTasksCounter" value="410" />
+    <task id="LOCAL-00410" summary="writing out EQ values">
+      <created>1565811080701</created>
+      <option name="number" value="00410" />
+      <option name="presentableId" value="LOCAL-00410" />
+      <option name="project" value="LOCAL" />
+      <updated>1565811080701</updated>
+    </task>
+    <task id="LOCAL-00411" summary="writing out EQ values">
+      <created>1565811091486</created>
+      <option name="number" value="00411" />
+      <option name="presentableId" value="LOCAL-00411" />
+      <option name="project" value="LOCAL" />
+      <updated>1565811091486</updated>
+    </task>
+    <option name="localTasksCounter" value="412" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101939000" />
+    <option name="totallyTimeSpent" value="102016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-513" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -910,8 +910,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+        <state relative-caret-position="579">
+          <caret line="92" column="40" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
