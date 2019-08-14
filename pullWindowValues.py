@@ -91,6 +91,7 @@ def writeEQTable1Values(file_path, start_time, end_time):
 # Parameters
 base_path = '/home/haynes13/climt_files'
 job_name = 'test_a1_b1_c1'
+print(job_name)
 file_path = '{0}/{1}/{1}'.format(base_path, job_name)
 start_time = np.float(8000 * (24 * 60 * 60))
 end_time = np.float(10000 * (24 * 60 * 60))
