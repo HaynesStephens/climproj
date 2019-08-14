@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="320 solar">
-      <change afterPath="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_usurf.py" afterDir="false" />
+    <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_zen_32_sol_320.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_zen_32_sol_320.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/plots.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pullWindowValues.py" beforeDir="false" afterPath="$PROJECT_DIR$/pullWindowValues.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_usurf.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_usurf.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_usurf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1445">
-              <caret line="85" column="67" lean-forward="true" selection-start-line="85" selection-start-column="67" selection-end-line="85" selection-end-column="67" />
+            <state relative-caret-position="-1066">
+              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
               <folding>
                 <element signature="e#0#94#0" expanded="true" />
               </folding>
@@ -254,21 +251,7 @@
       <workItem from="1563983353791" duration="10001000" />
       <workItem from="1564408014307" duration="10989000" />
       <workItem from="1565101524435" duration="9220000" />
-      <workItem from="1565618078113" duration="3998000" />
-    </task>
-    <task id="LOCAL-00351" summary="new eq check for run">
-      <created>1564600468636</created>
-      <option name="number" value="00351" />
-      <option name="presentableId" value="LOCAL-00351" />
-      <option name="project" value="LOCAL" />
-      <updated>1564600468636</updated>
-    </task>
-    <task id="LOCAL-00352" summary="new eq check for run">
-      <created>1565040783623</created>
-      <option name="number" value="00352" />
-      <option name="presentableId" value="LOCAL-00352" />
-      <option name="project" value="LOCAL" />
-      <updated>1565040783630</updated>
+      <workItem from="1565618078113" duration="4060000" />
     </task>
     <task id="LOCAL-00353" summary="new eq check for run">
       <created>1565041068989</created>
@@ -599,11 +582,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565793821323</updated>
     </task>
-    <option name="localTasksCounter" value="400" />
+    <task id="LOCAL-00400" summary="new run">
+      <created>1565807480817</created>
+      <option name="number" value="00400" />
+      <option name="presentableId" value="LOCAL-00400" />
+      <option name="project" value="LOCAL" />
+      <updated>1565807480817</updated>
+    </task>
+    <task id="LOCAL-00401" summary="270i and 939 solar with usurf">
+      <created>1565807495486</created>
+      <option name="number" value="00401" />
+      <option name="presentableId" value="LOCAL-00401" />
+      <option name="project" value="LOCAL" />
+      <updated>1565807495487</updated>
+    </task>
+    <option name="localTasksCounter" value="402" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99008000" />
+    <option name="totallyTimeSpent" value="99070000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-513" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -669,7 +666,9 @@
     <MESSAGE value="new zen with every step saved" />
     <MESSAGE value="new shit" />
     <MESSAGE value="320 solar" />
-    <option name="LAST_COMMIT_MESSAGE" value="320 solar" />
+    <MESSAGE value="new run" />
+    <MESSAGE value="270i and 939 solar with usurf" />
+    <option name="LAST_COMMIT_MESSAGE" value="270i and 939 solar with usurf" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gmd_radiative_convective_example.py" />
@@ -886,8 +885,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_usurf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="85" column="67" lean-forward="true" selection-start-line="85" selection-start-column="67" selection-end-line="85" selection-end-column="67" />
+        <state relative-caret-position="-1066">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
           <folding>
             <element signature="e#0#94#0" expanded="true" />
           </folding>
