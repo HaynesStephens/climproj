@@ -50,7 +50,7 @@ def printWindowValues(file_path, var_name, start_time, end_time):
     print('STD:', np.std(data_window))
 
 
-def saveEQTable1Values(file_path, start_time, end_time):
+def writeEQTable1Values(file_path, start_time, end_time):
     def getEQValue(var_name):
         data = getData(file_path, var_name)
         time_arr = getTimeArray(file_path)
@@ -88,14 +88,13 @@ def saveEQTable1Values(file_path, start_time, end_time):
 
 # Parameters
 base_path = '/home/haynes13/climt_files'
-job_name = 'test_a2_b1_c1_zen_32'
+job_name = 'test_a1_b1_c1'
 file_path = '{0}/{1}/{1}'.format(base_path, job_name)
-var_name = 'convective_precipitation_rate'
 start_time = np.float(8000 * (24 * 60 * 60))
 end_time = np.float(10000 * (24 * 60 * 60))
 
 # Procedures
-saveEQTable1Values(file_path, var_name, start_time, end_time)
+writeEQTable1Values(file_path, start_time, end_time)
 
 
 
