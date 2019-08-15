@@ -73,8 +73,10 @@ def writeEQTable1Values(file_path, start_time, end_time):
     net_toa = net_rad[-1]
     net_surf = net_rad[0] + lh + sh
 
-    str_list = ['STARTtime', 'ENDtime', 'NETtoa', 'NETsurf', 'SWtoa', 'LWtoa', 'SWsurf', 'LWsurf', 'LH', 'SH', 'Ts', 'Prec']
-    val_list = [start_time, end_time, net_toa, net_surf, net_sw[-1], net_lw[-1], net_sw[0], net_lw[0], lh, sh, t_surf, prec]
+    str_list = ['STARTtime', 'ENDtime', 'NETtoa', 'NETsurf', 'SWtoa',
+                'LWtoa', 'SWsurf', 'LWsurf', 'LH', 'SH', 'Ts', 'Prec']
+    val_list = [start_time, end_time, net_toa, net_surf, net_sw[-1],
+                net_lw[-1], net_sw[0], net_lw[0], lh, sh, t_surf, prec]
     txt_file = open('{0}_EQTable1Values.txt'.format(file_path), 'w')
 
     assert len(str_list) == len(val_list), "Not the same length of strings and values."
@@ -90,7 +92,7 @@ def writeEQTable1Values(file_path, start_time, end_time):
 
 # Parameters
 base_path = '/home/haynes13/climt_files'
-job_name = 'test_a2_b1_c1_zen_32_sol_320'
+job_name = 'test_a2_b1_c1_270i_939solar_usurf'
 print('JOB:', job_name)
 file_path = '{0}/{1}/{1}'.format(base_path, job_name)
 start_time = np.float(9950 * (24 * 60 * 60))
