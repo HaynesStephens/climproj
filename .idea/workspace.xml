@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newSbatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/newSbatch.py" afterDir="false" />
-    </list>
+    <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,14 +255,7 @@
       <workItem from="1565101524435" duration="9220000" />
       <workItem from="1565618078113" duration="7613000" />
       <workItem from="1565900389103" duration="719000" />
-      <workItem from="1565971920554" duration="1904000" />
-    </task>
-    <task id="LOCAL-00374" summary="new zen file to write out">
-      <created>1565207308945</created>
-      <option name="number" value="00374" />
-      <option name="presentableId" value="LOCAL-00374" />
-      <option name="project" value="LOCAL" />
-      <updated>1565207308945</updated>
+      <workItem from="1565971920554" duration="2013000" />
     </task>
     <task id="LOCAL-00375" summary="new zen file to write out">
       <created>1565207354724</created>
@@ -603,15 +593,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565981040088</updated>
     </task>
-    <option name="localTasksCounter" value="423" />
+    <task id="LOCAL-00423" summary="including dry convection">
+      <created>1565981093837</created>
+      <option name="number" value="00423" />
+      <option name="presentableId" value="LOCAL-00423" />
+      <option name="project" value="LOCAL" />
+      <updated>1565981093837</updated>
+    </task>
+    <option name="localTasksCounter" value="424" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105246000" />
+    <option name="totallyTimeSpent" value="105355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-513" y="-1080" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10543131" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
