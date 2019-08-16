@@ -18,7 +18,7 @@ from climt import (
 # PARAMETERS/NAMES TO ALTER #
 #############################
 co2_ppm = 270
-nc_name = 'test_a2_b1_c1_270i_939solar_usurf.nc'
+nc_name = 'test_a2_b1_c1_270i_939solar_usurf_noseason.nc'
 set_constant('stellar_irradiance', value=939, units='W m^-2')
 #############################
 
