@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_usurf_noseason.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_usurf_noseason.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,23 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_dryconv_usurf_noseason.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-353">
-              <caret line="14" column="75" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
-              <folding>
-                <element signature="e#0#94#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_usurf_noseason.py">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+            <state relative-caret-position="230">
+              <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
               <folding>
                 <element signature="e#0#94#0" expanded="true" />
               </folding>
@@ -144,13 +132,13 @@
         <option value="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_usurf.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_usurf.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar.py" />
-        <option value="$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_dryconv_usurf_noseason.py" />
         <option value="$PROJECT_DIR$/newSbatch.py" />
         <option value="$PROJECT_DIR$/writeCSV.py" />
         <option value="$PROJECT_DIR$/pullWindowValues.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_270i_939solar_usurf_noseason.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_usurf_noseason.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason.py" />
       </list>
     </option>
   </component>
@@ -246,21 +234,7 @@
       <workItem from="1565971920554" duration="2013000" />
       <workItem from="1565982029036" duration="151000" />
       <workItem from="1566573153371" duration="141000" />
-      <workItem from="1566842279491" duration="779000" />
-    </task>
-    <task id="LOCAL-00377" summary="new zen file to write out">
-      <created>1565207450191</created>
-      <option name="number" value="00377" />
-      <option name="presentableId" value="LOCAL-00377" />
-      <option name="project" value="LOCAL" />
-      <updated>1565207450191</updated>
-    </task>
-    <task id="LOCAL-00378" summary="new zen file to write out">
-      <created>1565207483831</created>
-      <option name="number" value="00378" />
-      <option name="presentableId" value="LOCAL-00378" />
-      <option name="project" value="LOCAL" />
-      <updated>1565207483831</updated>
+      <workItem from="1566842279491" duration="866000" />
     </task>
     <task id="LOCAL-00379" summary="new zen with every step saved">
       <created>1565209354467</created>
@@ -591,11 +565,25 @@
       <option name="project" value="LOCAL" />
       <updated>1566844199523</updated>
     </task>
-    <option name="localTasksCounter" value="426" />
+    <task id="LOCAL-00426" summary="looking at no_season runs">
+      <created>1566844281919</created>
+      <option name="number" value="00426" />
+      <option name="presentableId" value="LOCAL-00426" />
+      <option name="project" value="LOCAL" />
+      <updated>1566844281919</updated>
+    </task>
+    <task id="LOCAL-00427" summary="looking at no_season runs">
+      <created>1566844351557</created>
+      <option name="number" value="00427" />
+      <option name="presentableId" value="LOCAL-00427" />
+      <option name="project" value="LOCAL" />
+      <updated>1566844351558</updated>
+    </task>
+    <option name="localTasksCounter" value="428" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106426000" />
+    <option name="totallyTimeSpent" value="106513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-513" y="-1080" width="1920" height="1080" extended-state="6" />
@@ -876,23 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="61" selection-end-line="138" />
-          <folding>
-            <element signature="e#0#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newSbatch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/writeCSV.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
@@ -920,6 +891,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_usurf_noseason.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="71" column="32" lean-forward="true" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_dryconv_usurf_noseason.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-353">
@@ -930,10 +911,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_usurf_noseason.py">
+    <entry file="file://$PROJECT_DIR$/newSbatch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+        <state relative-caret-position="51">
+          <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
           <folding>
             <element signature="e#0#94#0" expanded="true" />
           </folding>

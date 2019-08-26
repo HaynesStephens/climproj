@@ -67,7 +67,7 @@ dt_minutes = 10
 timestep = timedelta(minutes=dt_minutes)
 
 radiation_sw = RRTMGShortwave(ignore_day_of_year=True)
-radiation_lw = RRTMGLongwave()
+radiation_lw = RRTMGLongwave(fa)
 slab = SlabSurface()
 simple_physics = SimplePhysics()
 moist_convection = EmanuelConvection()
