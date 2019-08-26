@@ -1,6 +1,4 @@
 import numpy as np
-from netCDF4 import Dataset as ds
-
 
 # Pulling Values from whichever window you want
 # Note: Make sure the time-ends (in seconds) of your window
@@ -92,7 +90,7 @@ def writeEQTable1Values(file_path, start_time, end_time):
 
 # Parameters
 base_path = '/home/haynes13/climt_files'
-job_name = 'test_a2_b1_c1_270i_939solar'
+job_name = 'test_a2_b1_c1_270i_939solar_usurf_noseason'
 print('JOB:', job_name)
 file_path = '{0}/{1}/{1}'.format(base_path, job_name)
 start_time = np.float(9950 * (24 * 60 * 60))
