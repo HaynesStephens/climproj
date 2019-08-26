@@ -17,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
-              <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
+              <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
               <folding>
                 <element signature="e#0#94#0" expanded="true" />
               </folding>
@@ -234,14 +234,7 @@
       <workItem from="1565971920554" duration="2013000" />
       <workItem from="1565982029036" duration="151000" />
       <workItem from="1566573153371" duration="141000" />
-      <workItem from="1566842279491" duration="866000" />
-    </task>
-    <task id="LOCAL-00379" summary="new zen with every step saved">
-      <created>1565209354467</created>
-      <option name="number" value="00379" />
-      <option name="presentableId" value="LOCAL-00379" />
-      <option name="project" value="LOCAL" />
-      <updated>1565209354468</updated>
+      <workItem from="1566842279491" duration="871000" />
     </task>
     <task id="LOCAL-00380" summary="new zen with every step saved">
       <created>1565209498489</created>
@@ -579,11 +572,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566844351558</updated>
     </task>
-    <option name="localTasksCounter" value="428" />
+    <task id="LOCAL-00428" summary="looking at no_season runs">
+      <created>1566844368911</created>
+      <option name="number" value="00428" />
+      <option name="presentableId" value="LOCAL-00428" />
+      <option name="project" value="LOCAL" />
+      <updated>1566844368911</updated>
+    </task>
+    <option name="localTasksCounter" value="429" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106513000" />
+    <option name="totallyTimeSpent" value="106518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-513" y="-1080" width="1920" height="1080" extended-state="6" />
@@ -921,7 +921,7 @@
     <entry file="file://$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
+          <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
           <folding>
             <element signature="e#0#94#0" expanded="true" />
           </folding>
