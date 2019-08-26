@@ -134,6 +134,3 @@ var_name = 'moist_enthalpy'
 data = calcMoistEnthalpySeries(nc)
 saveData(data, save_path, var_name)
 print('Saved:', var_name)
-
-
-

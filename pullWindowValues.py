@@ -98,16 +98,3 @@ end_time = np.float(10950 * (24 * 60 * 60))
 
 # Procedures
 writeEQTable1Values(file_path, start_time, end_time)
-
-
-
-
-
-
-
-
-
-
-
-
-
