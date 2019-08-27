@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plot_time_series.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/plot_time_series.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_plots/test_a1_b1_c1_zen_32/test_a1_b1_c1_zen_32_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a1_b1_c1_zen_32/test_a1_b1_c1_zen_32_time_series.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1/test_a2_b1_c1_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1/test_a2_b1_c1_time_series.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_270i_939solar/test_a2_b1_c1_270i_939solar_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_270i_939solar/test_a2_b1_c1_270i_939solar_time_series.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_270i_939solar_usurf/test_a2_b1_c1_270i_939solar_usurf_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_270i_939solar_usurf/test_a2_b1_c1_270i_939solar_usurf_time_series.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_zen_32/test_a2_b1_c1_zen_32_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_zen_32/test_a2_b1_c1_zen_32_time_series.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_zen_32_sol_320/test_a2_b1_c1_zen_32_sol_320_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_zen_32_sol_320/test_a2_b1_c1_zen_32_sol_320_time_series.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pullWindowValues.py" beforeDir="false" afterPath="$PROJECT_DIR$/pullWindowValues.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writeCSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/writeCSV.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/writeCSV.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="464">
-              <caret line="114" column="57" selection-start-line="114" selection-start-column="57" selection-end-line="114" selection-end-column="57" />
+              <caret line="114" column="65" selection-start-line="114" selection-start-column="65" selection-end-line="114" selection-end-column="65" />
               <folding>
                 <element signature="e#223#241#0" expanded="true" />
               </folding>
@@ -44,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="702">
-              <caret line="92" column="54" selection-start-line="92" selection-start-column="54" selection-end-line="92" selection-end-column="54" />
+              <caret line="92" column="62" selection-start-line="92" selection-start-column="62" selection-end-line="92" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -60,7 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>heat_capa</find>
       <find>heat_capacity(</find>
       <find>calc_moist</find>
       <find>current_entha</find>
@@ -90,6 +84,7 @@
       <find>climt_files</find>
       <find>ocean_mixed_layer_thickness</find>
       <find>a</find>
+      <find>sympl</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -229,21 +224,7 @@
       <workItem from="1565982029036" duration="151000" />
       <workItem from="1566573153371" duration="141000" />
       <workItem from="1566842279491" duration="1174000" />
-      <workItem from="1566941823489" duration="166000" />
-    </task>
-    <task id="LOCAL-00383" summary="new zen with every step saved">
-      <created>1565296176192</created>
-      <option name="number" value="00383" />
-      <option name="presentableId" value="LOCAL-00383" />
-      <option name="project" value="LOCAL" />
-      <updated>1565296176192</updated>
-    </task>
-    <task id="LOCAL-00384" summary="new zen with every step saved">
-      <created>1565296236083</created>
-      <option name="number" value="00384" />
-      <option name="presentableId" value="LOCAL-00384" />
-      <option name="project" value="LOCAL" />
-      <updated>1565296236083</updated>
+      <workItem from="1566941823489" duration="814000" />
     </task>
     <task id="LOCAL-00385" summary="new zen with every step saved">
       <created>1565296416890</created>
@@ -574,11 +555,25 @@
       <option name="project" value="LOCAL" />
       <updated>1566844562406</updated>
     </task>
-    <option name="localTasksCounter" value="432" />
+    <task id="LOCAL-00432" summary="looking at no_season runs">
+      <created>1566942362283</created>
+      <option name="number" value="00432" />
+      <option name="presentableId" value="LOCAL-00432" />
+      <option name="project" value="LOCAL" />
+      <updated>1566942362284</updated>
+    </task>
+    <task id="LOCAL-00433" summary="looking at no_season runs">
+      <created>1566943018316</created>
+      <option name="number" value="00433" />
+      <option name="presentableId" value="LOCAL-00433" />
+      <option name="project" value="LOCAL" />
+      <updated>1566943018316</updated>
+    </task>
+    <option name="localTasksCounter" value="434" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106987000" />
+    <option name="totallyTimeSpent" value="107635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-513" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -909,7 +904,7 @@
     <entry file="file://$PROJECT_DIR$/writeCSV.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
-          <caret line="114" column="57" selection-start-line="114" selection-start-column="57" selection-end-line="114" selection-end-column="57" />
+          <caret line="114" column="65" selection-start-line="114" selection-start-column="65" selection-end-line="114" selection-end-column="65" />
           <folding>
             <element signature="e#223#241#0" expanded="true" />
           </folding>
@@ -919,7 +914,7 @@
     <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
-          <caret line="92" column="54" selection-start-line="92" selection-start-column="54" selection-end-line="92" selection-end-column="54" />
+          <caret line="92" column="62" selection-start-line="92" selection-start-column="62" selection-end-line="92" selection-end-column="62" />
         </state>
       </provider>
     </entry>
