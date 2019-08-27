@@ -4,7 +4,6 @@
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pullWindowValues.py" beforeDir="false" afterPath="$PROJECT_DIR$/pullWindowValues.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writeCSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/writeCSV.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="702">
-              <caret line="92" column="62" selection-start-line="92" selection-start-column="62" selection-end-line="92" selection-end-column="62" />
+              <caret line="92" column="63" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -224,28 +223,7 @@
       <workItem from="1565982029036" duration="151000" />
       <workItem from="1566573153371" duration="141000" />
       <workItem from="1566842279491" duration="1174000" />
-      <workItem from="1566941823489" duration="814000" />
-    </task>
-    <task id="LOCAL-00385" summary="new zen with every step saved">
-      <created>1565296416890</created>
-      <option name="number" value="00385" />
-      <option name="presentableId" value="LOCAL-00385" />
-      <option name="project" value="LOCAL" />
-      <updated>1565296416890</updated>
-    </task>
-    <task id="LOCAL-00386" summary="new zen with every step saved">
-      <created>1565296495059</created>
-      <option name="number" value="00386" />
-      <option name="presentableId" value="LOCAL-00386" />
-      <option name="project" value="LOCAL" />
-      <updated>1565296495059</updated>
-    </task>
-    <task id="LOCAL-00387" summary="new shit">
-      <created>1565296650167</created>
-      <option name="number" value="00387" />
-      <option name="presentableId" value="LOCAL-00387" />
-      <option name="project" value="LOCAL" />
-      <updated>1565296650167</updated>
+      <workItem from="1566941823489" duration="1131000" />
     </task>
     <task id="LOCAL-00388" summary="new shit">
       <created>1565296742400</created>
@@ -569,11 +547,32 @@
       <option name="project" value="LOCAL" />
       <updated>1566943018316</updated>
     </task>
-    <option name="localTasksCounter" value="434" />
+    <task id="LOCAL-00434" summary="looking at no_season runs">
+      <created>1566943450303</created>
+      <option name="number" value="00434" />
+      <option name="presentableId" value="LOCAL-00434" />
+      <option name="project" value="LOCAL" />
+      <updated>1566943450303</updated>
+    </task>
+    <task id="LOCAL-00435" summary="looking at no_season runs">
+      <created>1566944249937</created>
+      <option name="number" value="00435" />
+      <option name="presentableId" value="LOCAL-00435" />
+      <option name="project" value="LOCAL" />
+      <updated>1566944249938</updated>
+    </task>
+    <task id="LOCAL-00436" summary="looking at no_season runs">
+      <created>1566944275678</created>
+      <option name="number" value="00436" />
+      <option name="presentableId" value="LOCAL-00436" />
+      <option name="project" value="LOCAL" />
+      <updated>1566944275678</updated>
+    </task>
+    <option name="localTasksCounter" value="437" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107635000" />
+    <option name="totallyTimeSpent" value="107952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-513" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -914,7 +913,7 @@
     <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
-          <caret line="92" column="62" selection-start-line="92" selection-start-column="62" selection-end-line="92" selection-end-column="62" />
+          <caret line="92" column="63" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
         </state>
       </provider>
     </entry>
