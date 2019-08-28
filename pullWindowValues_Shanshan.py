@@ -104,10 +104,11 @@ def writeEQTable1Values(file_path, start_time, end_time):
         :return:
         """
         data = getData(file_path, var_name)
-        time_arr = getTimeArray(file_path)
-        start_i, end_i = getTimeIndices(time_arr, start_time, end_time)
         data_window = getWindow(data, start_i, end_i)
         return np.mean(data_window, axis = 0)
+
+    time_arr = getTimeArray(file_path)
+    start_i, end_i = getTimeIndices(time_arr, start_time, end_time)
 
     lwflx   = getEQValue('lwflx')
     swflx   = getEQValue('swflx')

@@ -70,14 +70,18 @@ def calcMoistEnthalpySeries(nc):
     def heat_capacity(q):
         return Cpd * (1 - q) + Cvap * q
 
+    air_pressure_on_interface_levels = getTimeSeries1D(nc, 'air_pressure_on_interface_levels')
+    specific_humidity = getTimeSeries1D(nc, 'specific_humidity')
+    air_temperature = getTimeSeries1D(nc, 'air_temperature')
     def calcMoistEnthalpy(nc, i):
-        dp = (nc['air_pressure_on_interface_levels'][i, :-1] - nc['air_pressure_on_interface_levels'][i, 1:])
-        specific_humidity_i = nc['specific_humidity'][i]
+        dp = (air_pressure_on_interface_levels[i, :-1] - air_pressure_on_interface_levels[i, 1:])
+        specific_humidity_i = specific_humidity[i]
         C_tot = heat_capacity(specific_humidity_i)
-        return np.sum((C_tot * nc['air_temperature'][i] + Lv * specific_humidity_i) * dp / g) / 1000
+        return np.sum((C_tot * air_temperature[i] + Lv * specific_humidity_i) * dp / g) / 1000
 
     moist_enthalpy_arr = []
-    for i in range(nc['time'].size):
+    time = getTimeSeries0D(nc, 'time')
+    for i in range(time.size):
         moist_enthalpy_arr.append(calcMoistEnthalpy(nc, i))
     return np.array(moist_enthalpy_arr)
 
