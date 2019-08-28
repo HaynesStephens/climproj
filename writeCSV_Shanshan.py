@@ -72,9 +72,9 @@ def calcMoistEnthalpySeries(nc):
 
     def calcMoistEnthalpy(nc, i):
         dp = (nc['p'][i, :-1] - nc['p'][i, 1:])
-        specific_humidity_i = nc['q'][i]
+        specific_humidity_i = nc['q'][i, :-1]
         C_tot = heat_capacity(specific_humidity_i)
-        return np.sum((C_tot * nc['T'][i] + Lv * specific_humidity_i) * dp / g) / 1000
+        return np.sum((C_tot * nc['T'][i, :-1] + Lv * specific_humidity_i) * dp / g) / 1000
 
     moist_enthalpy_arr = []
     for i in range(nc['time'].size):
