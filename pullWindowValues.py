@@ -105,10 +105,11 @@ def writeEQTable1Values(file_path, start_time, end_time):
         :return:
         """
         data = getData(file_path, var_name)
-        time_arr = getTimeArray(file_path)
-        start_i, end_i = getTimeIndices(time_arr, start_time, end_time)
         data_window = getWindow(data, start_i, end_i)
         return np.mean(data_window, axis = 0)
+
+    time_arr = getTimeArray(file_path)
+    start_i, end_i = getTimeIndices(time_arr, start_time, end_time)
 
     lw_up = getEQValue('upwelling_longwave_flux_in_air')
     lw_dn = getEQValue('downwelling_longwave_flux_in_air')
@@ -154,8 +155,10 @@ job_list = ['test_a1_b1_c1_270i_939solar_usurf_noseason', 'test_a2_b1_c1_270i_93
 for job_name in job_list:
     print('JOB:', job_name)
     file_path = '{0}/{1}/{1}'.format(base_path, job_name)
-    start_time = np.float(9950 * (24 * 60 * 60))
-    end_time = np.float(10950 * (24 * 60 * 60))
+    start_day = 9950
+    end_day = 10950 - 1
+    start_time = np.float(start_day * (24 * 60 * 60))
+    end_time = np.float(end_day * (24 * 60 * 60))
 
     # Procedures
     writeEQTable1Values(file_path, start_time, end_time)

@@ -153,8 +153,10 @@ base_path = '/home/haynes13/climt_files'
 job_name = 'shanshan_control'
 print('JOB:', job_name)
 file_path = '{0}/{1}/{1}'.format(base_path, job_name)
-start_time = np.float(9950 * (24 * 60 * 60))
-end_time = np.float(10950 * (24 * 60 * 60))
+start_day = 9950
+end_day = 10950 - 1
+start_time = np.float(start_day * (24 * 60 * 60))
+end_time = np.float((end_day) * (24 * 60 * 60))
 
 # Procedures
 writeEQTable1Values(file_path, start_time, end_time)
