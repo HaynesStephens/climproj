@@ -80,14 +80,13 @@ def calcMoistEnthalpySeries(nc):
     humidity    = cutDataForTimeMatch(getTimeSeries1D(nc, 'q'))
     temperature = cutDataForTimeMatch(getTimeSeries1D(nc, 'T'))
     def calcMoistEnthalpy(nc, i):
-        pressure = cutDataForTimeMatch(getTimeSeries1D(nc, 'p'))
         dp = (pressure[i, :-1] - pressure[i, 1:])
         specific_humidity_i = humidity[i, :-1]
         C_tot = heat_capacity(specific_humidity_i)
         return np.sum((C_tot * temperature[i, :-1] + Lv * specific_humidity_i) * dp / g) / 1000
 
     moist_enthalpy_arr = []
-    time = cutDataForTimeMatch(getTimeSeries1D(nc, 'time'))
+    time = cutDataForTimeMatch(getTimeSeries0D(nc, 'time'))
     for i in range(time.size):
         moist_enthalpy_arr.append(calcMoistEnthalpy(nc, i))
     return np.array(moist_enthalpy_arr)
