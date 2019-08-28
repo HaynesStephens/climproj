@@ -56,14 +56,6 @@ def getTimeSeries1D(nc, var_name):
     return data
 
 
-def getEQValues(arr):
-    time_step = 10 * (60)
-    eq_time = 10 * (24 * 60 * 60)
-    steps_back = eq_time / time_step
-    eq_arr = arr[-steps_back:]
-    return eq_arr
-
-
 def calcMoistEnthalpySeries(nc):
     """
     Return a time series of the atmospheric moist enthalpy

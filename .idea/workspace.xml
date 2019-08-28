@@ -3,7 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/plot_time_series-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/plot_time_series-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_time_series.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/plot_time_series.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pullWindowValues.py" beforeDir="false" afterPath="$PROJECT_DIR$/pullWindowValues.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_plots/test_a1_b1_c1_zen_32/test_a1_b1_c1_zen_32_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a1_b1_c1_zen_32/test_a1_b1_c1_zen_32_time_series.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1/test_a2_b1_c1_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1/test_a2_b1_c1_time_series.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_270i_939solar/test_a2_b1_c1_270i_939solar_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_270i_939solar/test_a2_b1_c1_270i_939solar_time_series.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_270i_939solar_usurf/test_a2_b1_c1_270i_939solar_usurf_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_270i_939solar_usurf/test_a2_b1_c1_270i_939solar_usurf_time_series.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_zen_32/test_a2_b1_c1_zen_32_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_zen_32/test_a2_b1_c1_zen_32_time_series.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_zen_32_sol_320/test_a2_b1_c1_zen_32_sol_320_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_zen_32_sol_320/test_a2_b1_c1_zen_32_sol_320_time_series.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writeCSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/writeCSV.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/writeCSV.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="114" column="65" selection-start-line="114" selection-start-column="65" selection-end-line="114" selection-end-column="65" />
+            <state relative-caret-position="260">
+              <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
               <folding>
                 <element signature="e#223#241#0" expanded="true" />
               </folding>
@@ -37,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="92" column="63" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
+            <state relative-caret-position="600">
+              <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
             </state>
           </provider>
         </entry>
@@ -54,9 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>heat_capacity(</find>
-      <find>calc_moist</find>
-      <find>current_entha</find>
       <find>dry_con</find>
       <find>equili</find>
       <find>tau</find>
@@ -84,6 +90,9 @@
       <find>ocean_mixed_layer_thickness</find>
       <find>a</find>
       <find>sympl</find>
+      <find>getEQ</find>
+      <find>getEQVal</find>
+      <find>printWind</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,7 +150,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,7 +167,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -223,14 +232,8 @@
       <workItem from="1565982029036" duration="151000" />
       <workItem from="1566573153371" duration="141000" />
       <workItem from="1566842279491" duration="1174000" />
-      <workItem from="1566941823489" duration="1131000" />
-    </task>
-    <task id="LOCAL-00388" summary="new shit">
-      <created>1565296742400</created>
-      <option name="number" value="00388" />
-      <option name="presentableId" value="LOCAL-00388" />
-      <option name="project" value="LOCAL" />
-      <updated>1565296742400</updated>
+      <workItem from="1566941823489" duration="1345000" />
+      <workItem from="1567002245270" duration="1113000" />
     </task>
     <task id="LOCAL-00389" summary="new shit">
       <created>1565297043410</created>
@@ -568,17 +571,24 @@
       <option name="project" value="LOCAL" />
       <updated>1566944275678</updated>
     </task>
-    <option name="localTasksCounter" value="437" />
+    <task id="LOCAL-00437" summary="looking at no_season runs">
+      <created>1566944283552</created>
+      <option name="number" value="00437" />
+      <option name="presentableId" value="LOCAL-00437" />
+      <option name="project" value="LOCAL" />
+      <updated>1566944283553</updated>
+    </task>
+    <option name="localTasksCounter" value="438" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107952000" />
+    <option name="totallyTimeSpent" value="109279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-513" y="-1080" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11075612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.111821085" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -902,8 +912,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/writeCSV.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="114" column="65" selection-start-line="114" selection-start-column="65" selection-end-line="114" selection-end-column="65" />
+        <state relative-caret-position="260">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
           <folding>
             <element signature="e#223#241#0" expanded="true" />
           </folding>
@@ -912,8 +922,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="92" column="63" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
+        <state relative-caret-position="600">
+          <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
         </state>
       </provider>
     </entry>

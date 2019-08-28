@@ -5,6 +5,12 @@ import numpy as np
 #       match a time in the time_array of the simulation
 
 def getData(file_path, var_name):
+    """
+    Load the data from a csv file
+    :param file_path:
+    :param var_name: name of variable to load (check NC output)
+    :return: numpy array of data
+    """
     data = np.loadtxt("{0}_{1}.csv".format(file_path, var_name), delimiter = ',')
     print(var_name, ', arr length:', data.size)
     return data
@@ -25,16 +31,38 @@ def getTimeArray(file_path):
 
 
 def getTimeIndices(time_arr, start_time, end_time):
+    """
+    Find the indices in the time array that correspond to the start and end times identified
+    :param time_arr:
+    :param start_time:
+    :param end_time:
+    :return: indices, start and end
+    """
     start_i = np.where(time_arr == start_time)[0][0]
     end_i = np.where(time_arr == end_time)[0][0]
     return start_i, end_i
 
 
 def getWindow(data, start_i, end_i):
+    """
+    return the window of data between the time indices
+    :param data:
+    :param start_i:
+    :param end_i:
+    :return:
+    """
     return data[start_i:end_i + 1]
 
 
 def printWindowValues(file_path, var_name, start_time, end_time):
+    """
+    Print the values (Mean, Median, STD) of the chosen variable within the time window
+    :param file_path:
+    :param var_name:
+    :param start_time:
+    :param end_time:
+    :return:
+    """
     data = getData(file_path, var_name)
     time_arr = getTimeArray(file_path)
     start_i, end_i = getTimeIndices(time_arr, start_time, end_time)
@@ -48,8 +76,32 @@ def printWindowValues(file_path, var_name, start_time, end_time):
     print('STD:', np.std(data_window))
 
 
+def writeEQProfile(data, var_name, file_path):
+    """
+    Write the EQ profile of a chosen variable into a csv file as a numpy array
+    :param data: EQ profile
+    :param var_name:
+    :param file_path:
+    :return:
+    """
+    csv_name = '{0}_eqProfile_{1}.csv'.format(file_path, var_name)
+    np.savetxt(csv_name, data, delimiter=',')
+
+
 def writeEQTable1Values(file_path, start_time, end_time):
+    """
+    Write out the EQ values and profiles of the time window into various files
+    :param file_path:
+    :param start_time:
+    :param end_time:
+    :return:
+    """
     def getEQValue(var_name):
+        """
+        Get the EQ value or profile for a chosen variable
+        :param var_name:
+        :return:
+        """
         data = getData(file_path, var_name)
         time_arr = getTimeArray(file_path)
         start_i, end_i = getTimeIndices(time_arr, start_time, end_time)
@@ -71,11 +123,15 @@ def writeEQTable1Values(file_path, start_time, end_time):
     net_toa = net_rad[-1]
     net_surf = net_rad[0] + lh + sh
 
+    t_air = getEQValue('air_temperature')
+    writeEQProfile(t_air, 'air_temperature', file_path)
+    writeEQProfile(net_rad, 'net_radiation', file_path)
+
     str_list = ['STARTtime', 'ENDtime', 'NETtoa', 'NETsurf', 'SWtoa',
                 'LWtoa', 'SWsurf', 'LWsurf', 'LH', 'SH', 'Ts', 'Prec']
     val_list = [start_time, end_time, net_toa, net_surf, net_sw[-1],
                 net_lw[-1], net_sw[0], net_lw[0], lh, sh, t_surf, prec]
-    txt_file = open('{0}_EQTable1Values.txt'.format(file_path), 'w')
+    txt_file = open('{0}_eqTable1Values.txt'.format(file_path), 'w')
 
     assert len(str_list) == len(val_list), "Not the same length of strings and values."
     for i in range(len(str_list)):
