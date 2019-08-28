@@ -86,6 +86,7 @@ def writeEQProfile(data, var_name, file_path):
     """
     csv_name = '{0}_eqProfile_{1}.csv'.format(file_path, var_name)
     np.savetxt(csv_name, data, delimiter=',')
+    print("EQ Profile: ", var_name)
 
 
 def writeEQTable1Values(file_path, start_time, end_time):
@@ -146,11 +147,16 @@ def writeEQTable1Values(file_path, start_time, end_time):
 
 # Parameters
 base_path = '/home/haynes13/climt_files'
-job_name = 'test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason'
-print('JOB:', job_name)
-file_path = '{0}/{1}/{1}'.format(base_path, job_name)
-start_time = np.float(9950 * (24 * 60 * 60))
-end_time = np.float(10950 * (24 * 60 * 60))
 
-# Procedures
-writeEQTable1Values(file_path, start_time, end_time)
+short_job_list = ['test_a1_b1_c1', 'test_a2_b1_c1', 'test_a2_b1_c1_zen_32', 'test_a1_b1_c1_zen_32']
+for job_i in short_job_list:
+    job_name = job_i
+    print('JOB:', job_name)
+    file_path = '{0}/{1}/{1}'.format(base_path, job_name)
+    start_time = np.float(3000 * (24 * 60 * 60))
+    end_time = np.float(3800 * (24 * 60 * 60))
+# start_time = np.float(9950 * (24 * 60 * 60))
+# end_time = np.float(10950 * (24 * 60 * 60))
+
+    # Procedures
+    writeEQTable1Values(file_path, start_time, end_time)
