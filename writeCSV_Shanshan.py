@@ -88,10 +88,10 @@ store_quantities_0D =   ['time',
                         'precc',
                         'SrfSenFlx',
                         'SrfLatFlx',
-                         'LwToa',
-                         'SwToa',
-                         'SwSrf',
-                         'LwSrf']
+                        'LwToa',
+                        'SwToa',
+                        'SwSrf',
+                        'LwSrf']
 
 store_quantities_1D =   ['T',
                         'p',
