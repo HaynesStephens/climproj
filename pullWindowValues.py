@@ -24,6 +24,7 @@ def getTimeArray(file_path):
     We want a time array we can index.
     """
     time_step = 10 * (60)
+    """SAVE STEP IS KEY"""
     save_step = 36 * time_step
     time_arr = getData(file_path, 'time')
     time_arr = np.arange(0, time_arr.size*save_step, save_step)

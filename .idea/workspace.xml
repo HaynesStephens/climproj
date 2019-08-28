@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pullWindowValues_Shanshan.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writeCSV_Shanshan.py" beforeDir="false" afterPath="$PROJECT_DIR$/writeCSV_Shanshan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pullWindowValues.py" beforeDir="false" afterPath="$PROJECT_DIR$/pullWindowValues.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="-1555">
+              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -56,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pullWindowValues_Shanshan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="152" column="28" selection-start-line="152" selection-start-column="28" selection-end-line="152" selection-end-column="28" />
+            <state relative-caret-position="148">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -76,8 +75,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dry_con</find>
-      <find>equili</find>
       <find>tau</find>
       <find>old_enthalpy</find>
       <find>run_type</find>
@@ -106,6 +103,8 @@
       <find>getEQ</find>
       <find>getEQVal</find>
       <find>printWind</find>
+      <find>getTimeIndices</find>
+      <find>getTimeArray</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,9 +147,9 @@
         <option value="$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_dryconv_usurf_noseason.py" />
         <option value="$PROJECT_DIR$/writeCSV.py" />
-        <option value="$PROJECT_DIR$/pullWindowValues.py" />
         <option value="$PROJECT_DIR$/writeCSV_Shanshan.py" />
         <option value="$PROJECT_DIR$/pullWindowValues_Shanshan.py" />
+        <option value="$PROJECT_DIR$/pullWindowValues.py" />
       </list>
     </option>
   </component>
@@ -248,21 +247,7 @@
       <workItem from="1566573153371" duration="141000" />
       <workItem from="1566842279491" duration="1174000" />
       <workItem from="1566941823489" duration="1345000" />
-      <workItem from="1567002245270" duration="5693000" />
-    </task>
-    <task id="LOCAL-00394" summary="new shit">
-      <created>1565624147076</created>
-      <option name="number" value="00394" />
-      <option name="presentableId" value="LOCAL-00394" />
-      <option name="project" value="LOCAL" />
-      <updated>1565624147076</updated>
-    </task>
-    <task id="LOCAL-00395" summary="new shit">
-      <created>1565632234635</created>
-      <option name="number" value="00395" />
-      <option name="presentableId" value="LOCAL-00395" />
-      <option name="project" value="LOCAL" />
-      <updated>1565632234635</updated>
+      <workItem from="1567002245270" duration="6018000" />
     </task>
     <task id="LOCAL-00396" summary="new shit">
       <created>1565632420245</created>
@@ -593,11 +578,25 @@
       <option name="project" value="LOCAL" />
       <updated>1567024337678</updated>
     </task>
-    <option name="localTasksCounter" value="443" />
+    <task id="LOCAL-00443" summary="shanshan">
+      <created>1567027403334</created>
+      <option name="number" value="00443" />
+      <option name="presentableId" value="LOCAL-00443" />
+      <option name="project" value="LOCAL" />
+      <updated>1567027403334</updated>
+    </task>
+    <task id="LOCAL-00444" summary="fixing timestep issue">
+      <created>1567027682255</created>
+      <option name="number" value="00444" />
+      <option name="presentableId" value="LOCAL-00444" />
+      <option name="project" value="LOCAL" />
+      <updated>1567027682255</updated>
+    </task>
+    <option name="localTasksCounter" value="445" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113859000" />
+    <option name="totallyTimeSpent" value="114184000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-513" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -670,7 +669,9 @@
     <MESSAGE value="trying out nonseasonal rad methods" />
     <MESSAGE value="including dry convection" />
     <MESSAGE value="looking at no_season runs" />
-    <option name="LAST_COMMIT_MESSAGE" value="looking at no_season runs" />
+    <MESSAGE value="shanshan" />
+    <MESSAGE value="fixing timestep issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing timestep issue" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gmd_radiative_convective_example.py" />
@@ -935,13 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/writeCSV_Shanshan.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -954,8 +948,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pullWindowValues_Shanshan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="152" column="28" selection-start-line="152" selection-start-column="28" selection-end-line="152" selection-end-column="28" />
+        <state relative-caret-position="148">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1555">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
         </state>
       </provider>
     </entry>
