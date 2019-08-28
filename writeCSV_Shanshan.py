@@ -29,6 +29,10 @@ def openNC(file_path):
     return ds(nc_name, 'r+', format='NETCDF4')
 
 
+def cutDataForTimeMatch(data, save_step = 36):
+    return data[::save_step]
+
+
 def getTimeSeries0D(nc, var_name):
     """
     Return the time series of a zero-dimensional quantity
@@ -37,6 +41,7 @@ def getTimeSeries0D(nc, var_name):
     :return: time series numpy array
     """
     data = nc[var_name][:].flatten()
+    data = cutDataForTimeMatch(data)
     return data
 
 
@@ -53,6 +58,7 @@ def getTimeSeries1D(nc, var_name):
         data = np.reshape(data, (data.shape[0], data.shape[-1]))
     else:
         data = np.reshape(data, (data.shape[0], data.shape[1]))
+    data = cutDataForTimeMatch(data)
     return data
 
 
@@ -70,14 +76,19 @@ def calcMoistEnthalpySeries(nc):
     def heat_capacity(q):
         return Cpd * (1 - q) + Cvap * q
 
+    pressure    = cutDataForTimeMatch(getTimeSeries1D(nc, 'p'))
+    humidity    = cutDataForTimeMatch(getTimeSeries1D(nc, 'q'))
+    temperature = cutDataForTimeMatch(getTimeSeries1D(nc, 'T'))
     def calcMoistEnthalpy(nc, i):
-        dp = (nc['p'][i, :-1] - nc['p'][i, 1:])
-        specific_humidity_i = nc['q'][i, :-1]
+        pressure = cutDataForTimeMatch(getTimeSeries1D(nc, 'p'))
+        dp = (pressure[i, :-1] - pressure[i, 1:])
+        specific_humidity_i = humidity[i, :-1]
         C_tot = heat_capacity(specific_humidity_i)
-        return np.sum((C_tot * nc['T'][i, :-1] + Lv * specific_humidity_i) * dp / g) / 1000
+        return np.sum((C_tot * temperature[i, :-1] + Lv * specific_humidity_i) * dp / g) / 1000
 
     moist_enthalpy_arr = []
-    for i in range(nc['time'].size):
+    time = cutDataForTimeMatch(getTimeSeries1D(nc, 'time'))
+    for i in range(time.size):
         moist_enthalpy_arr.append(calcMoistEnthalpy(nc, i))
     return np.array(moist_enthalpy_arr)
 
