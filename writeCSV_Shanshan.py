@@ -79,7 +79,7 @@ def calcMoistEnthalpySeries(nc):
     pressure    = cutDataForTimeMatch(getTimeSeries1D(nc, 'p'))
     humidity    = cutDataForTimeMatch(getTimeSeries1D(nc, 'q'))
     temperature = cutDataForTimeMatch(getTimeSeries1D(nc, 'T'))
-    def calcMoistEnthalpy(nc, i):
+    def calcMoistEnthalpy(i):
         dp = (pressure[i, :-1] - pressure[i, 1:])
         specific_humidity_i = humidity[i, :-1]
         C_tot = heat_capacity(specific_humidity_i)
