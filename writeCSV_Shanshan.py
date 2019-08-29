@@ -42,6 +42,7 @@ def getTimeSeries0D(nc, var_name):
     """
     data = nc[var_name][:].flatten()
     data = cutDataForTimeMatch(data)
+    print(data.shape)
     return data
 
 
@@ -53,12 +54,12 @@ def getTimeSeries1D(nc, var_name):
     :return: time series numpy array
     """
     data = nc[var_name][:]
-    print(data.shape)
     if var_name == 'air_temperature_tendency_from_convection':
         data = np.reshape(data, (data.shape[0], data.shape[-1]))
     else:
         data = np.reshape(data, (data.shape[0], data.shape[1]))
     data = cutDataForTimeMatch(data)
+    print(data.shape)
     return data
 
 
@@ -76,9 +77,9 @@ def calcMoistEnthalpySeries(nc):
     def heat_capacity(q):
         return Cpd * (1 - q) + Cvap * q
 
-    pressure    = cutDataForTimeMatch(getTimeSeries1D(nc, 'p'))
-    humidity    = cutDataForTimeMatch(getTimeSeries1D(nc, 'q'))
-    temperature = cutDataForTimeMatch(getTimeSeries1D(nc, 'T'))
+    pressure    = getTimeSeries1D(nc, 'p')
+    humidity    = getTimeSeries1D(nc, 'q')
+    temperature = getTimeSeries1D(nc, 'T')
     def calcMoistEnthalpy(i):
         dp = (pressure[i, :-1] - pressure[i, 1:])
         specific_humidity_i = humidity[i, :-1]
@@ -86,7 +87,7 @@ def calcMoistEnthalpySeries(nc):
         return np.sum((C_tot * temperature[i, :-1] + Lv * specific_humidity_i) * dp / g) / 1000
 
     moist_enthalpy_arr = []
-    time = cutDataForTimeMatch(getTimeSeries0D(nc, 'time'))
+    time = getTimeSeries0D(nc, 'time')
     for i in range(time.size):
         moist_enthalpy_arr.append(calcMoistEnthalpy(i))
     return np.array(moist_enthalpy_arr)
