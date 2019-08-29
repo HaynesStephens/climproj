@@ -88,7 +88,7 @@ def calcMoistEnthalpySeries(nc):
     moist_enthalpy_arr = []
     time = cutDataForTimeMatch(getTimeSeries0D(nc, 'time'))
     for i in range(time.size):
-        moist_enthalpy_arr.append(calcMoistEnthalpy(nc, i))
+        moist_enthalpy_arr.append(calcMoistEnthalpy(i))
     return np.array(moist_enthalpy_arr)
 
 
