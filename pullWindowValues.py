@@ -149,16 +149,13 @@ def writeEQTable1Values(file_path, start_time, end_time):
 
 # Parameters
 base_path = '/home/haynes13/climt_files'
-job_list = ['test_a1_b1_c1_270i_939solar_usurf_noseason', 'test_a2_b1_c1_270i_939solar_usurf_noseason',
-            'test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason', 'test_a2_b1_c1_270i_939solar_dryconv_usurf_noseason']
-# job_name = 'test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason'
-for job_name in job_list:
-    print('JOB:', job_name)
-    file_path = '{0}/{1}/{1}'.format(base_path, job_name)
-    start_day = 9950
-    end_day = 10950 - 1
-    start_time = np.float(start_day * (24 * 60 * 60))
-    end_time = np.float(end_day * (24 * 60 * 60))
+job_name = 'test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason'
+print('JOB:', job_name)
+file_path = '{0}/{1}/{1}'.format(base_path, job_name)
+start_day = 9950
+end_day = 10950 - 1
+start_time = np.float(start_day * (24 * 60 * 60))
+end_time = np.float(end_day * (24 * 60 * 60))
 
-    # Procedures
-    writeEQTable1Values(file_path, start_time, end_time)
+# Procedures
+writeEQTable1Values(file_path, start_time, end_time)
