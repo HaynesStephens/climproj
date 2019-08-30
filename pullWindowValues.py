@@ -151,7 +151,7 @@ def writeEQTable1Values(file_path, start_time, end_time):
 base_path = '/home/haynes13/climt_files'
 job_list = ['test_a1_b1_c1_270i_939solar_usurf_noseason', 'test_a2_b1_c1_270i_939solar_usurf_noseason',
             'test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason', 'test_a2_b1_c1_270i_939solar_dryconv_usurf_noseason']
-# job_name = 'test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason'
+# job_name = 'test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason' daf
 for job_name in job_list:
     print('JOB:', job_name)
     file_path = '{0}/{1}/{1}'.format(base_path, job_name)
