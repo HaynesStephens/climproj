@@ -116,7 +116,8 @@ def writeEQTable1Values(file_path, start_time, end_time):
     sw_up = getEQValue('upwelling_shortwave_flux_in_air')
     sw_dn = getEQValue('downwelling_shortwave_flux_in_air')
     t_surf = getEQValue('surface_temperature')
-    prec = getEQValue('convective_precipitation_rate')
+    conv_prec = getEQValue('convective_precipitation_rate')
+    strat_prec = getEQValue('stratiform_precipitation_rate')
     lh = getEQValue('surface_upward_latent_heat_flux')
     sh = getEQValue('surface_upward_sensible_heat_flux')
 
@@ -131,9 +132,9 @@ def writeEQTable1Values(file_path, start_time, end_time):
     writeEQProfile(net_rad, 'net_radiation', file_path)
 
     str_list = ['STARTtime', 'ENDtime', 'NETtoa', 'NETsurf', 'SWtoa',
-                'LWtoa', 'SWsurf', 'LWsurf', 'LH', 'SH', 'Ts', 'Prec']
+                'LWtoa', 'SWsurf', 'LWsurf', 'LH', 'SH', 'Ts', 'ConvPrec', 'TotPrec']
     val_list = [start_time, end_time, net_toa, net_surf, net_sw[-1],
-                net_lw[-1], net_sw[0], net_lw[0], lh, sh, t_surf, prec]
+                net_lw[-1], net_sw[0], net_lw[0], lh, sh, t_surf, conv_prec, conv_prec+strat_prec]
     txt_file = open('{0}_eqTable1Values.txt'.format(file_path), 'w')
 
     assert len(str_list) == len(val_list), "Not the same length of strings and values."
