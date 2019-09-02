@@ -1,7 +1,7 @@
 import os
 
 home_dir = '/home/haynes13/climt_runs/'
-job_name = 'global_control_nodryconv_strat_prec'
+job_name = 'global_control_dryconv_strat_prec'
 
 def createJob(home_dir, job_name): #order input variables by use order, duh
     job_dir = home_dir + job_name
