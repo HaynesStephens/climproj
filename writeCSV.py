@@ -90,7 +90,7 @@ def calcMoistEnthalpySeries(nc):
 store_quantities_0D =   ['time',
                         'surface_temperature',
                         'convective_precipitation_rate',
-                        'stratiform_precipitation_rate'
+                        'stratiform_precipitation_rate',
                         'surface_upward_sensible_heat_flux',
                         'surface_upward_latent_heat_flux']
 
