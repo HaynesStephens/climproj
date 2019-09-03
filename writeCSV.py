@@ -108,7 +108,7 @@ store_quantities_1D =   ['air_temperature',
 
 
 # Parameters
-job_name    = 'test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason'
+job_name    = 'global_control_dryconv_strat_prec'
 print('Job:', job_name)
 nc_path     = '/home/haynes13/climt_runs/{0}/{0}'.format(job_name)
 save_path   = '/home/haynes13/climt_files/{0}/{0}'.format(job_name)
