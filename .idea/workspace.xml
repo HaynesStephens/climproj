@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/climt_scripts/i270_290solar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/plot_time_series-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/plot_time_series-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newSbatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/newSbatch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plot_time_series.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/plot_time_series.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pullWindowValues.py" beforeDir="false" afterPath="$PROJECT_DIR$/pullWindowValues.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_plots/test_a1_b1_c1/test_a1_b1_c1_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a1_b1_c1/test_a1_b1_c1_time_series.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1/test_a2_b1_c1_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1/test_a2_b1_c1_time_series.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_270i_939solar/test_a2_b1_c1_270i_939solar_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_270i_939solar/test_a2_b1_c1_270i_939solar_time_series.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_270i_939solar_usurf/test_a2_b1_c1_270i_939solar_usurf_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_270i_939solar_usurf/test_a2_b1_c1_270i_939solar_usurf_time_series.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_zen_32/test_a2_b1_c1_zen_32_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_zen_32/test_a2_b1_c1_zen_32_time_series.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_zen_32_sol_320/test_a2_b1_c1_zen_32_sol_320_time_series.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/saved_plots/test_a2_b1_c1_zen_32_sol_320/test_a2_b1_c1_zen_32_sol_320_time_series.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/writeCSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/writeCSV.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,17 +16,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newSbatch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="51">
+              <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/writeCSV.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
+            <state relative-caret-position="549">
+              <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
               <folding>
                 <element signature="e#223#241#0" expanded="true" />
               </folding>
@@ -48,29 +37,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="144" column="18" selection-start-line="144" selection-start-column="18" selection-end-line="144" selection-end-column="18" />
+            <state relative-caret-position="-12">
+              <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/global_control_dryconv_strat_prec.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="1" lean-forward="true" selection-end-line="139" />
-              <folding>
-                <element signature="e#0#94#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/climt_scripts/i270_290solar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-641">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="238">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="24" />
               <folding>
                 <element signature="e#0#94#0" expanded="true" />
               </folding>
@@ -163,11 +140,11 @@
         <option value="$PROJECT_DIR$/writeCSV_Shanshan.py" />
         <option value="$PROJECT_DIR$/climt_scripts/control_strat_prec.py" />
         <option value="$PROJECT_DIR$/climt_scripts/global_control_nodryconv_strat_prec.py" />
-        <option value="$PROJECT_DIR$/writeCSV.py" />
-        <option value="$PROJECT_DIR$/newSbatch.py" />
-        <option value="$PROJECT_DIR$/pullWindowValues.py" />
         <option value="$PROJECT_DIR$/climt_scripts/global_control_dryconv_strat_prec.py" />
         <option value="$PROJECT_DIR$/climt_scripts/i270_290solar.py" />
+        <option value="$PROJECT_DIR$/newSbatch.py" />
+        <option value="$PROJECT_DIR$/pullWindowValues.py" />
+        <option value="$PROJECT_DIR$/writeCSV.py" />
       </list>
     </option>
   </component>
@@ -271,21 +248,7 @@
       <workItem from="1567535632415" duration="783000" />
       <workItem from="1567613027765" duration="836000" />
       <workItem from="1568212934950" duration="193000" />
-      <workItem from="1568382241636" duration="1207000" />
-    </task>
-    <task id="LOCAL-00420" summary="including dry convection">
-      <created>1565980894862</created>
-      <option name="number" value="00420" />
-      <option name="presentableId" value="LOCAL-00420" />
-      <option name="project" value="LOCAL" />
-      <updated>1565980894862</updated>
-    </task>
-    <task id="LOCAL-00421" summary="including dry convection">
-      <created>1565980908161</created>
-      <option name="number" value="00421" />
-      <option name="presentableId" value="LOCAL-00421" />
-      <option name="project" value="LOCAL" />
-      <updated>1565980908161</updated>
+      <workItem from="1568382241636" duration="1462000" />
     </task>
     <task id="LOCAL-00422" summary="including dry convection">
       <created>1565981040087</created>
@@ -616,11 +579,25 @@
       <option name="project" value="LOCAL" />
       <updated>1567614829684</updated>
     </task>
-    <option name="localTasksCounter" value="469" />
+    <task id="LOCAL-00469" summary="control run setup">
+      <created>1568383487564</created>
+      <option name="number" value="00469" />
+      <option name="presentableId" value="LOCAL-00469" />
+      <option name="project" value="LOCAL" />
+      <updated>1568383487564</updated>
+    </task>
+    <task id="LOCAL-00470" summary="control run setup">
+      <created>1568383529311</created>
+      <option name="number" value="00470" />
+      <option name="presentableId" value="LOCAL-00470" />
+      <option name="project" value="LOCAL" />
+      <updated>1568383529311</updated>
+    </task>
+    <option name="localTasksCounter" value="471" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123321000" />
+    <option name="totallyTimeSpent" value="123576000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -685,7 +662,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test run" />
     <MESSAGE value="run climt longer" />
     <MESSAGE value="new climt run w T profile" />
     <MESSAGE value="longgggggg ass run, looking for EQ state" />
@@ -710,7 +686,8 @@
     <MESSAGE value="adding back normal runs" />
     <MESSAGE value="new runs with strat prec" />
     <MESSAGE value="getting files for strat prec" />
-    <option name="LAST_COMMIT_MESSAGE" value="getting files for strat prec" />
+    <MESSAGE value="control run setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="control run setup" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gmd_radiative_convective_example.py" />
@@ -986,27 +963,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
+    <entry file="file://$PROJECT_DIR$/climt_scripts/i270_290solar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="144" column="18" selection-start-line="144" selection-start-column="18" selection-end-line="144" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/writeCSV.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
+        <state relative-caret-position="238">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="24" />
           <folding>
-            <element signature="e#223#241#0" expanded="true" />
+            <element signature="e#0#94#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newSbatch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1020,12 +983,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/i270_290solar.py">
+    <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-641">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="-12">
+          <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newSbatch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writeCSV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
           <folding>
-            <element signature="e#0#94#0" expanded="true" />
+            <element signature="e#223#241#0" expanded="true" />
           </folding>
         </state>
       </provider>
