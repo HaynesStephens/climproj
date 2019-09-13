@@ -2,7 +2,8 @@ import os
 
 test_dir = 'control/' # Needs to end in an '/'
 home_dir = '/home/haynes13/climt_runs/' + test_dir
-job_name = 'global_control_dryconv_strat_prec'
+
+job_name = 'i270_290solar'
 
 def createJob(home_dir, job_name): #order input variables by use order, duh
     job_dir = home_dir + job_name

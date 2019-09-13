@@ -152,8 +152,10 @@ def writeEQTable1Values(file_path, start_time, end_time):
 test_dir = 'control/' # Needs to end in an '/'
 print('TEST:', test_dir)
 base_path = '/home/haynes13/climt_files' + test_dir
-job_name = 'global_control_nodryconv_strat_prec'
+
+job_name = 'i270_290solar'
 print('JOB:', job_name)
+
 file_path = '{0}/{1}/{1}'.format(base_path, job_name)
 start_day = 9950
 end_day = 10950 - 1
