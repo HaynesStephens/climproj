@@ -1,5 +1,5 @@
 co2_ppm = 660
-job_name = 'i{0}_290solar'
+job_name = 'i{0}_290solar'.format(co2_ppm)
 nc_name = job_name + '.nc'
 
 template_path = '/home/haynes13/code/python/climproj/climt_scripts/varying_co2_template.py'
