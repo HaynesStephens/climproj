@@ -12,6 +12,9 @@ from climt import (
 )
 
 import pickle
+import sys
+
+print "The arguments are: " , str(sys.argv)
 
 #############################
 # PARAMETERS/NAMES TO ALTER #
@@ -22,60 +25,6 @@ set_constant('stellar_irradiance', value=939, units='W m^-2')
 # Solar insolation set to 939 and zenith angle kept to default,
 #           to match the earlier 'solin' value of 290 that Shanshan used.
 #############################
-
-
-def plot_function(fig, state):
-    ax = fig.add_subplot(2, 2, 1)
-    ax.plot(
-        state['specific_humidity'].values.flatten(),
-        state['air_pressure'].to_units('mbar').values.flatten(), '-o')
-    ax.set_title('Humidity')
-    ax.set_xlabel('kg/kg')
-    ax.set_ylabel('millibar')
-    ax.grid()
-    ax.axes.invert_yaxis()
-
-    ax = fig.add_subplot(2, 2, 2)
-    ax.plot(
-        state['air_temperature'].values.flatten(),
-        state['air_pressure'].to_units('mbar').values.flatten(), '-o')
-    ax.set_title('Air temperature')
-    ax.axes.invert_yaxis()
-    ax.set_xlabel('K')
-    ax.grid()
-
-    ax = fig.add_subplot(2, 2, 3)
-    ax.plot(
-        state['air_temperature_tendency_from_longwave'].values.flatten(),
-        state['air_pressure'].to_units('mbar').values.flatten(), '-o',
-        label='LW')
-    ax.plot(
-        state['air_temperature_tendency_from_shortwave'].values.flatten(),
-        state['air_pressure'].to_units('mbar').values.flatten(), '-o',
-        label='SW')
-    ax.set_title('LW and SW Heating rates')
-    ax.legend()
-    ax.axes.invert_yaxis()
-    ax.set_xlabel('K/day')
-    ax.grid()
-    ax.set_ylabel('millibar')
-
-    ax = fig.add_subplot(2, 2, 4)
-    net_flux = (state['upwelling_longwave_flux_in_air'] +
-                state['upwelling_shortwave_flux_in_air'] -
-                state['downwelling_longwave_flux_in_air'] -
-                state['downwelling_shortwave_flux_in_air'])
-    ax.plot(
-        net_flux.values.flatten(),
-        state['air_pressure_on_interface_levels'].to_units(
-            'mbar').values.flatten(), '-o')
-    ax.set_title('Net Flux')
-    ax.axes.invert_yaxis()
-    ax.set_xlabel('W/m^2')
-    ax.grid()
-    plt.tight_layout()
-monitor = PlotFunctionMonitor(plot_function, interactive=True)
-
 
 store_quantities = ['air_temperature',
                     'surface_temperature',
@@ -173,8 +122,7 @@ for i in range(run_length):
     state.update(diagnostics)                                   # More realistic temperature profile
 
     if (i % 36 == 0):
-        monitor.store(state)
-        # netcdf_monitor.store(state)
+        netcdf_monitor.store(state)
 
     state.update(new_state)
     state['time'] += timestep
