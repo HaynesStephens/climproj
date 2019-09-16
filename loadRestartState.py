@@ -19,7 +19,7 @@ def loadTXT(restart_file, var_name):
     if last_state.size == 1:
         return last_state
     elif last_state.size > 1:
-        last_state.reshape(last_state.size, 1, 1)
+        return last_state.reshape(last_state.size, 1, 1)
     else:
         raise (AssertionError, "Initial Quantity Has a Size Less Than 1.")
 
