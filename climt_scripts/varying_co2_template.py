@@ -12,9 +12,6 @@ from climt import (
 )
 
 import pickle
-import sys
-
-print("The arguments are: ", str(sys.argv))
 
 #############################
 # PARAMETERS/NAMES TO ALTER #
