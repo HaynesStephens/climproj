@@ -9,7 +9,7 @@ from climt import (
     SlabSurface, SimplePhysics, get_default_state
 )
 
-import loadRestartState
+import pickle
 
 #############################
 # PARAMETERS/NAMES TO ALTER #
@@ -58,8 +58,8 @@ state = get_default_state([simple_physics, moist_convection, dry_convection,
                            radiation_lw, radiation_sw, slab])
 
 ### RESTART VALUES GIVEN FROM THE CONTROL RUN
-restart_file = '/home/haynes13/climt_files/control/i270_290solar/i270_290solar'
-restart_state = loadRestartState.loadRestartState(restart_file)
+restart_file = open('/home/haynes13/climt_files/control/i270_290solar/i270_290solar/'
+restart_state = pickle
 
 def setInitValues(state, restart_state, var):
     try:

@@ -1,10 +1,10 @@
 import numpy as np
 import pickle
 
-# base_path = '/home/haynes13/climt_files/'
-# restart_dir = 'control/'
-# job_name = 'i270_290solar'
-# restart_file = '{0}{1}{2}/{2}'.format(base_path, restart_dir, job_name)
+base_path = '/home/haynes13/climt_files/'
+restart_dir = 'control/'
+job_name = 'i270_290solar'
+restart_file = '{0}{1}{2}/{2}'.format(base_path, restart_dir, job_name)
 
 
 def loadTXT(restart_file, var_name):
@@ -60,10 +60,11 @@ def loadRestartState(restart_file):
     for var_i in state_names:
         setInstance(restart_file, restart_state, var_i)
 
-    f = open('file.pkl', 'wb')
+    file_name = restart_file + '_restart_state.pkl'
+    f = open(file_name, 'wb')
     pickle.dump(restart_state, f)
     f.close()
 
     return restart_state
 
-# restart_state = loadRestartState(restart_file)
+restart_state = loadRestartState(restart_file)
