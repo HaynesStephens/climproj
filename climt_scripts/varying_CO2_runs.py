@@ -97,8 +97,8 @@ store_quantities = ['air_temperature',
                     'downwelling_shortwave_flux_in_air']
 
 netcdf_monitor = NetCDFMonitor(nc_name,
-                               store_names=store_quantities,
-                               write_on_store=True)
+                               store_names=store_quantities)#
+                               # write_on_store=True)
 
 # Set timestep at 10 minutes
 dt_minutes = 10
