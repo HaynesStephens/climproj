@@ -113,7 +113,7 @@ test_dir = 'control/' # Needs to end in an '/'
 print('TEST:', test_dir)
 
 job_name    = 'i270_290solar'
-print('Job:', job_name)adf
+print('Job:', job_name)
 
 nc_path     = '/home/haynes13/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
 save_path   = '/home/haynes13/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
