@@ -13,7 +13,7 @@ def loadTXT(restart_file, var_name):
     :param var_name: name of state/diagnostic variable that you want to load
     :return: the last instance of that variable in the time series, as a numpy array
     """
-    csv_file = "{0}_{1}".format(restart_file, var_name)
+    csv_file = "{0}_{1}.csv".format(restart_file, var_name)
     return np.loadtxt(csv_file, delimiter = ',')[-1]
 
 
