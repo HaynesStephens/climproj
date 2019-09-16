@@ -27,10 +27,9 @@ set_constant('stellar_irradiance', value=939, units='W m^-2')
 def plot_function(fig, state):
     ax = fig.add_subplot(2, 2, 1)
     ax.plot(
-        state['air_temperature_tendency_from_convection'].to_units(
-            'degK day^-1').values.flatten(),
+        state['specific humidity'].values.flatten(),
         state['air_pressure'].to_units('mbar').values.flatten(), '-o')
-    ax.set_title('Conv. heating rate')
+    ax.set_title('Humidity')
     ax.set_xlabel('K/day')
     ax.set_ylabel('millibar')
     ax.grid()
