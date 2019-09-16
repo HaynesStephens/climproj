@@ -151,12 +151,12 @@ def writeEQTable1Values(file_path, start_time, end_time):
 # Parameters
 test_dir = 'control/' # Needs to end in an '/'
 print('TEST:', test_dir)
-base_path = '/home/haynes13/climt_files/' + test_dir
+base_path = '/home/haynes13/climt_files'
 
 job_name = 'i270_290solar'
 print('JOB:', job_name)
 
-file_path = '{0}{1}/{1}'.format(base_path, job_name)
+file_path = '{0}/{1}{2}'.format(base_path, test_dir, job_name)
 start_day = 9950
 end_day = 10950 - 1
 start_time = np.float(start_day * (24 * 60 * 60))
