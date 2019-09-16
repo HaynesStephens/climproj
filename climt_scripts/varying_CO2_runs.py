@@ -20,7 +20,8 @@ print("The arguments are: ", str(sys.argv))
 # PARAMETERS/NAMES TO ALTER #
 #############################
 nc_name = 'test.nc'
-co2_ppm = 270
+co2_ppm = np.float(sys.argv[1])
+print('CO2:', co2_ppm)
 set_constant('stellar_irradiance', value=939, units='W m^-2')
 # Solar insolation set to 939 and zenith angle kept to default,
 #           to match the earlier 'solin' value of 290 that Shanshan used.
