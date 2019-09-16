@@ -16,6 +16,9 @@ with open(template_path, 'r') as fin, open(job_path, 'w') as fout:
     for line in fin.readlines():
         fout.write(line)
 
+import newSbatch
+newSbatch
+
 
 
 
