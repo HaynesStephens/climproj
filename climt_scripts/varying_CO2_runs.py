@@ -62,13 +62,16 @@ restart_file = '/home/haynes13/climt_files/control/i270_290solar/i270_290solar'
 restart_state = loadRestartState.loadRestartState(restart_file)
 
 def setInitValues(state, restart_state, var):
-    init_val = restart_state[var]
-    if init_val.size == 1:
-        state[var].values[:] = init_val
-    elif init_val.size > 1:
-        state[var].values[:] = init_val.reshape(init_val.size, 1, 1)
-    else:
-        raise(AssertionError, "Initial Quantity Has a Size Less Than 1.")
+    try:
+        init_val = restart_state[var]
+        if init_val.size == 1:
+            state[var].values[:] = init_val
+        elif init_val.size > 1:
+            state[var].values[:] = init_val.reshape(init_val.size, 1, 1)
+        else:
+            raise(AssertionError, "Initial Quantity Has a Size Less Than 1.")
+    except:
+        print("No Dice:", var)
 
 
 
