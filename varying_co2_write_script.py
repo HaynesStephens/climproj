@@ -4,6 +4,7 @@ nc_name = job_name + '.nc'
 
 template_path = '/home/haynes13/code/python/climproj/climt_scripts/varying_co2_template.py'
 job_path = '/home/haynes13/code/python/climproj/climt_scripts/{0}.py'.format(job_name)
+print(job_path)
 
 
 with open(template_path, 'r') as fin, open(job_path, 'w') as fout:
