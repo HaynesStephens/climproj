@@ -1,4 +1,5 @@
 import numpy as np
+import pickle
 
 # base_path = '/home/haynes13/climt_files/'
 # restart_dir = 'control/'
@@ -58,6 +59,10 @@ def loadRestartState(restart_file):
 
     for var_i in state_names:
         setInstance(restart_file, restart_state, var_i)
+
+    f = open('file.pkl', 'wb')
+    pickle.dump(restart_state, f)
+    f.close()
 
     return restart_state
 
