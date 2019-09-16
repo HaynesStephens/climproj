@@ -1,9 +1,9 @@
 import numpy as np
 
-base_path = '/home/haynes13/climt_files/'
-restart_dir = 'control/'
-job_name = 'i270_290solar'
-restart_file = '{0}{1}{2}/{2}'.format(base_path, restart_dir, job_name)
+# base_path = '/home/haynes13/climt_files/'
+# restart_dir = 'control/'
+# job_name = 'i270_290solar'
+# restart_file = '{0}{1}{2}/{2}'.format(base_path, restart_dir, job_name)
 
 
 def loadTXT(restart_file, var_name):
@@ -56,4 +56,4 @@ def loadRestartState(restart_file):
 
     return restart_state
 
-restart_state = loadRestartState(restart_file)
+# restart_state = loadRestartState(restart_file)
