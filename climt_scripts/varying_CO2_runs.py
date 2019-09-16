@@ -172,6 +172,7 @@ for i in range(run_length):
     state.update(diagnostics)                                   # More realistic temperature profile
 
     if (i % 36 == 0):
+        monitor.store(state)
         netcdf_monitor.store(state)
 
     state.update(new_state)
