@@ -27,7 +27,7 @@ def setInstance(restart_file, restart_state, var_name):
     :return: Nothing, just change the dictionary
     """
     restart_state[var_name] = loadTXT(restart_file, var_name)
-    print(var_name)
+    print('Loaded:', var_name)
 
 
 def loadRestartState(restart_file):
