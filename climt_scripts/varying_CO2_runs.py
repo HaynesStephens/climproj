@@ -62,7 +62,7 @@ restart_file = '/home/haynes13/climt_files/control/i270_290solar/i270_290solar'
 restart_state = loadRestartState.loadRestartState(restart_file)
 
 # These values are set to match the default values that Shanshan included in her simulations
-state['air_temperature'].values[:]                          = restart_state['air_temperature']
+state['air_temperature'].values[:]                          = restart_state['air_temperature'].reshape(28, 1, 1)
 state['surface_albedo_for_direct_shortwave'].values[:]      = 0.07
 state['surface_albedo_for_direct_near_infrared'].values[:]  = 0.07
 state['surface_albedo_for_diffuse_shortwave'].values[:]     = 0.07
