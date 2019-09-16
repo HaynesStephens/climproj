@@ -62,13 +62,27 @@ restart_file_name = '/home/haynes13/climt_files/control/i270_290solar/i270_290so
 restart_file = open(restart_file_name, 'rb')
 restart_state = pickle.load(restart_file)
 
-def setInitValues(state, restart_state, var):
-    try:
-        init_val = restart_state[var]
-        state[var].values[:] = init_val
-    except:
-        print("No Dice:", var)
+restart_quantities =    ['air_temperature',
+                        'surface_temperature',
+                        'air_pressure',
+                        'specific_humidity',
+                        'air_pressure_on_interface_levels',
+                        'air_temperature_tendency_from_convection',
+                        'air_temperature_tendency_from_longwave',
+                        'air_temperature_tendency_from_shortwave',
+                        'mole_fraction_of_carbon_dioxide_in_air',
+                        'convective_precipitation_rate',
+                        'stratiform_precipitation_rate',
+                        'surface_upward_sensible_heat_flux',
+                        'surface_upward_latent_heat_flux',
+                        'upwelling_longwave_flux_in_air',
+                        'upwelling_shortwave_flux_in_air',
+                        'downwelling_longwave_flux_in_air',
+                        'downwelling_shortwave_flux_in_air']
 
+def setInitValues(state, restart_state, var):
+    init_val = restart_state[var]
+    state[var].values[:] = init_val
 
 
 # These values are set to match the default values that Shanshan included in her simulations
@@ -85,6 +99,6 @@ state['eastward_wind'].values[0]                            = 5.0
 
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10**(-6)
 
-for var in store_quantities:
+for var in restart_quantities:
     print('Setting', var)
     setInitValues(state, restart_state, var)
