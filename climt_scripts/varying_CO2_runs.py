@@ -21,6 +21,61 @@ set_constant('stellar_irradiance', value=939, units='W m^-2')
 #           to match the earlier 'solin' value of 290 that Shanshan used.
 #############################
 
+
+def plot_function(fig, state):
+    ax = fig.add_subplot(2, 2, 1)
+    ax.plot(
+        state['air_temperature_tendency_from_convection'].to_units(
+            'degK day^-1').values.flatten(),
+        state['air_pressure'].to_units('mbar').values.flatten(), '-o')
+    ax.set_title('Conv. heating rate')
+    ax.set_xlabel('K/day')
+    ax.set_ylabel('millibar')
+    ax.grid()
+    ax.axes.invert_yaxis()
+
+    ax = fig.add_subplot(2, 2, 2)
+    ax.plot(
+        state['air_temperature'].values.flatten(),
+        state['air_pressure'].to_units('mbar').values.flatten(), '-o')
+    ax.set_title('Air temperature')
+    ax.axes.invert_yaxis()
+    ax.set_xlabel('K')
+    ax.grid()
+
+    ax = fig.add_subplot(2, 2, 3)
+    ax.plot(
+        state['air_temperature_tendency_from_longwave'].values.flatten(),
+        state['air_pressure'].to_units('mbar').values.flatten(), '-o',
+        label='LW')
+    ax.plot(
+        state['air_temperature_tendency_from_shortwave'].values.flatten(),
+        state['air_pressure'].to_units('mbar').values.flatten(), '-o',
+        label='SW')
+    ax.set_title('LW and SW Heating rates')
+    ax.legend()
+    ax.axes.invert_yaxis()
+    ax.set_xlabel('K/day')
+    ax.grid()
+    ax.set_ylabel('millibar')
+
+    ax = fig.add_subplot(2, 2, 4)
+    net_flux = (state['upwelling_longwave_flux_in_air'] +
+                state['upwelling_shortwave_flux_in_air'] -
+                state['downwelling_longwave_flux_in_air'] -
+                state['downwelling_shortwave_flux_in_air'])
+    ax.plot(
+        net_flux.values.flatten(),
+        state['air_pressure_on_interface_levels'].to_units(
+            'mbar').values.flatten(), '-o')
+    ax.set_title('Net Flux')
+    ax.axes.invert_yaxis()
+    ax.set_xlabel('W/m^2')
+    ax.grid()
+    plt.tight_layout()
+monitor = PlotFunctionMonitor(plot_function, interactive=True)
+
+
 store_quantities = ['air_temperature',
                     'surface_temperature',
                     'air_pressure',
@@ -96,3 +151,29 @@ state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10
 for var in restart_quantities:
     print('Setting', var)
     setInitValues(state, restart_state, var)
+
+
+time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convection])
+
+# Day length to match Shanshan
+run_days = 10950
+run_length = int((run_days * 24 * 60) / dt_minutes)
+
+for i in range(run_length):
+    diagnostics, state = time_stepper(state, timestep)
+    state.update(diagnostics)
+
+    diagnostics, new_state = simple_physics(state, timestep)
+    state.update(diagnostics)
+
+    state.update(new_state)  #Update new simple_physics state   # These lines included w/
+                                                                # the Dry Convective Scheme,
+    diagnostics, new_state = dry_convection(state, timestep)    # Introduced for
+    state.update(diagnostics)                                   # More realistic temperature profile
+
+    if (i % 36 == 0):
+        netcdf_monitor.store(state)
+
+    state.update(new_state)
+    state['time'] += timestep
+    state['eastward_wind'].values[0] = 5.0 # default value of old climt turbulence that Shanshan didn't seem to change
