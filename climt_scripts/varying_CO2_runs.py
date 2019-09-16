@@ -30,7 +30,7 @@ def plot_function(fig, state):
         state['specific humidity'].values.flatten(),
         state['air_pressure'].to_units('mbar').values.flatten(), '-o')
     ax.set_title('Humidity')
-    ax.set_xlabel('K/day')
+    ax.set_xlabel('kg/kg')
     ax.set_ylabel('millibar')
     ax.grid()
     ax.axes.invert_yaxis()
