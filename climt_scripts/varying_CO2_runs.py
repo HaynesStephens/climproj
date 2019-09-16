@@ -1,6 +1,8 @@
 from sympl import (
     DataArray, AdamsBashforth, get_constant, set_constant, NetCDFMonitor, PlotFunctionMonitor
 )
+import matplotlib.pyplot as plt
+
 import numpy as np
 from datetime import timedelta
 
