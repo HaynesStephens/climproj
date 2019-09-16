@@ -14,7 +14,7 @@ with open(template_path, 'r') as fin, open(job_path, 'w') as fout:
     fout.write('#####################\n')
 
     for line in fin.readlines():
-        fout.write(line+'\n')
+        fout.write(line)
 
 
 

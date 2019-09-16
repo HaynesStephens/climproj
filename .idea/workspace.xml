@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i660_290solar.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/varying_co2_write_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/varying_co2_write_script.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#115#0" expanded="true" />
               </folding>
@@ -82,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/varying_co2_write_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+            <state relative-caret-position="272">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -190,8 +191,8 @@
         <option value="$PROJECT_DIR$/climt_scripts/i270_290solar.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_CO2_runs.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2_run.py" />
-        <option value="$PROJECT_DIR$/climt_scripts/varying_co2_template.py" />
         <option value="$PROJECT_DIR$/write_varying_co2_script.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/varying_co2_template.py" />
         <option value="$PROJECT_DIR$/varying_co2_write_script.py" />
       </list>
     </option>
@@ -326,21 +327,7 @@
       <workItem from="1567613027765" duration="836000" />
       <workItem from="1568212934950" duration="193000" />
       <workItem from="1568382241636" duration="1591000" />
-      <workItem from="1568659098846" duration="8139000" />
-    </task>
-    <task id="LOCAL-00470" summary="control run setup">
-      <created>1568383529311</created>
-      <option name="number" value="00470" />
-      <option name="presentableId" value="LOCAL-00470" />
-      <option name="project" value="LOCAL" />
-      <updated>1568383529311</updated>
-    </task>
-    <task id="LOCAL-00471" summary="control run setup">
-      <created>1568383976255</created>
-      <option name="number" value="00471" />
-      <option name="presentableId" value="LOCAL-00471" />
-      <option name="project" value="LOCAL" />
-      <updated>1568383976255</updated>
+      <workItem from="1568659098846" duration="8418000" />
     </task>
     <task id="LOCAL-00472" summary="control run setup">
       <created>1568659282555</created>
@@ -671,11 +658,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568671155850</updated>
     </task>
-    <option name="localTasksCounter" value="519" />
+    <task id="LOCAL-00519" summary="working on restart file laoding">
+      <created>1568671182388</created>
+      <option name="number" value="00519" />
+      <option name="presentableId" value="LOCAL-00519" />
+      <option name="project" value="LOCAL" />
+      <updated>1568671182388</updated>
+    </task>
+    <task id="LOCAL-00520" summary="working on restart file laoding">
+      <created>1568671317136</created>
+      <option name="number" value="00520" />
+      <option name="presentableId" value="LOCAL-00520" />
+      <option name="project" value="LOCAL" />
+      <updated>1568671317136</updated>
+    </task>
+    <option name="localTasksCounter" value="521" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131844000" />
+    <option name="totallyTimeSpent" value="132123000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1094,18 +1095,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_template.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#115#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/i660_290solar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/varying_co2_write_script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        <state relative-caret-position="272">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
         </state>
       </provider>
     </entry>
