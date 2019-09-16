@@ -46,20 +46,12 @@ def loadRestartState(restart_file):
                    'upwelling_longwave_flux_in_air',
                    'upwelling_shortwave_flux_in_air',
                    'specific_humidity',
-                   'surface_temperature']
+                   'surface_temperature',
+                   'surface_upward_latent_heat_flux',
+                   'surface_upward_sensible_heat_flux']
 
-    diag_names = ['air_temperature_tendency_from_convection',
-                  'air_temperature_tendency_from_longwave',
-                  'air_temperature_tendency_from_shortwave',
-                  'convective_precipitation_rate',
-                  'stratiform_precipitation_rate',
-                  'surface_upward_latent_heat_flux',
-                  'surface_upward_sensible_heat_flux']
 
     for var_i in state_names:
-        setInstance(restart_file, restart_state, var_i)
-
-    for var_i in diag_names:
         setInstance(restart_file, restart_state, var_i)
 
     return restart_state
