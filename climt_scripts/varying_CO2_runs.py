@@ -1,5 +1,5 @@
 from sympl import (
-    DataArray, AdamsBashforth, get_constant, set_constant, NetCDFMonitor
+    DataArray, AdamsBashforth, get_constant, set_constant, NetCDFMonitor, PlotFunctionMonitor
 )
 import numpy as np
 from datetime import timedelta
