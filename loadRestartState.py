@@ -14,8 +14,13 @@ def loadTXT(restart_file, var_name):
     :return: the last instance of that variable in the time series, as a numpy array
     """
     csv_file = "{0}_{1}.csv".format(restart_file, var_name)
-    return np.loadtxt(csv_file, delimiter = ',')[-1]
-
+    last_state = np.loadtxt(csv_file, delimiter = ',')[-1]
+    if last_state.size == 1:
+        return last_state
+    elif last_state.size > 1:
+        last_state.reshape(last_state.size, 1, 1)
+    else:
+        raise (AssertionError, "Initial Quantity Has a Size Less Than 1.")
 
 def setInstance(restart_file, restart_state, var_name):
     """

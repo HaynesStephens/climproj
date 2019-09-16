@@ -64,12 +64,7 @@ restart_state = loadRestartState.loadRestartState(restart_file)
 def setInitValues(state, restart_state, var):
     try:
         init_val = restart_state[var]
-        if init_val.size == 1:
-            state[var].values[:] = init_val
-        elif init_val.size > 1:
-            state[var].values[:] = init_val.reshape(init_val.size, 1, 1)
-        else:
-            raise(AssertionError, "Initial Quantity Has a Size Less Than 1.")
+        state[var].values[:] = init_val
     except:
         print("No Dice:", var)
 
