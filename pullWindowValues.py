@@ -151,7 +151,7 @@ def writeEQTable1Values(file_path, start_time, end_time):
 # Parameters
 test_dir = 'control/' # Needs to end in an '/'
 print('TEST:', test_dir)
-base_path = '/home/haynes13/climt_files' + test_dir
+base_path = '/home/haynes13/climt_files/' + test_dir
 
 job_name = 'i270_290solar'
 print('JOB:', job_name)
