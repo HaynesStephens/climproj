@@ -87,5 +87,5 @@ state['eastward_wind'].values[0]                            = 5.0
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10**(-6)
 
 for var in store_quantities:
-    print(var)
+    print('Setting', var)
     setInitValues(state, restart_state, var)
