@@ -38,14 +38,22 @@ def loadRestartState(restart_file):
     """
     restart_state = {} # initialize restart state as an empty dictionary
 
-    state_names = ['air_pressure', 'air_pressure_on_interface_levels', 'air_temperature',
-                   'downwelling_longwave_flux_in_air', 'downwelling_shortwave_flux_in_air',
-                   'upwelling_longwave_flux_in_air', 'upwelling_shortwave_flux_in_air',
-                   'specific_humidity', 'surface_temperature']
+    state_names = ['air_pressure',
+                   'air_pressure_on_interface_levels',
+                   'air_temperature',
+                   'downwelling_longwave_flux_in_air',
+                   'downwelling_shortwave_flux_in_air',
+                   'upwelling_longwave_flux_in_air',
+                   'upwelling_shortwave_flux_in_air',
+                   'specific_humidity',
+                   'surface_temperature']
 
-    diag_names = ['air_temperature_tendency_from_convection', 'air_temperature_tendency_from_longwave',
-                  'air_temperature_tendency_from_shortwave', 'convective_precipitation_rate',
-                  'stratiform_precipitation_rate', 'surface_upward_latent_heat_flux',
+    diag_names = ['air_temperature_tendency_from_convection',
+                  'air_temperature_tendency_from_longwave',
+                  'air_temperature_tendency_from_shortwave',
+                  'convective_precipitation_rate',
+                  'stratiform_precipitation_rate',
+                  'surface_upward_latent_heat_flux',
                   'surface_upward_sensible_heat_flux']
 
     for var_i in state_names:
