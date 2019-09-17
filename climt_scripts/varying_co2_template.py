@@ -63,11 +63,6 @@ restart_quantities =    ['air_temperature',
                         'downwelling_longwave_flux_in_air',
                         'downwelling_shortwave_flux_in_air']
 
-def setInitValues(state, restart_state, var):
-    init_val = restart_state[var]
-    state[var].values[:] = init_val
-
-
 # These values are set to match the default values that Shanshan included in her simulations
 # state['air_temperature'].values[:]                          = restart_state['air_temperature'].reshape(28, 1, 1)
 state['surface_albedo_for_direct_shortwave'].values[:]      = 0.07
@@ -79,13 +74,17 @@ state['zenith_angle'].values[:]                             = (2 * np.pi) / 5
 state['area_type'].values[:]                                = 'sea'
 # only the surface layer is given a zonal wind to spur convection
 state['eastward_wind'].values[0]                            = 5.0
-
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10**(-6)
+
+
+def setInitValues(state, restart_state, var):
+    init_val = restart_state[var]
+    state[var].values[:] = init_val
+
 
 for var in restart_quantities:
     print('Setting', var)
     setInitValues(state, restart_state, var)
-
 
 time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convection])
 
