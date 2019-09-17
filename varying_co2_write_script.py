@@ -19,9 +19,9 @@ with open(template_path, 'r') as fin, open(job_path, 'w') as fout:
     for line in fin.readlines():
         fout.write(line)
 
+base_dir = '/home/haynes13/climt_runs/'
 test_dir = 'varying_co2/' # Needs to end in an '/'
-home_dir = '/home/haynes13/climt_runs/' + test_dir
-newSbatch.newSbatch(home_dir, job_name)
+newSbatch.newSbatch(base_dir, test_dir, job_name)
 
 
 
