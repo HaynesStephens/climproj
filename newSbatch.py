@@ -30,5 +30,6 @@ def newSbatch(base_dir, test_dir, job_name): #order input variables by use order
     sbatch_file.write('python /home/haynes13/code/python/climproj/climt_scripts/{0}.py'.format(job_name))
 
     sbatch_file.close()
+    return sbatch_filename
 
 # createJob(base_dir, job_name)

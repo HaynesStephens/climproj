@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="working on restart file laoding">
+    <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/i330_290solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_co2_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/varying_co2_template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newSbatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/newSbatch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/varying_co2_write_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/varying_co2_write_script.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1513">
-              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="880">
+              <caret line="53" column="77" lean-forward="true" selection-start-line="53" selection-start-column="62" selection-end-line="53" selection-end-column="77" />
               <folding>
                 <element signature="e#0#115#0" expanded="true" />
               </folding>
@@ -63,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newSbatch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="408">
+              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -72,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/varying_co2_write_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+            <state relative-caret-position="425">
+              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -186,9 +185,9 @@
         <option value="$PROJECT_DIR$/climt_scripts/varying_CO2_runs.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2_run.py" />
         <option value="$PROJECT_DIR$/write_varying_co2_script.py" />
-        <option value="$PROJECT_DIR$/newSbatch.py" />
         <option value="$PROJECT_DIR$/climt_scripts/i330_290solar.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2_template.py" />
+        <option value="$PROJECT_DIR$/newSbatch.py" />
         <option value="$PROJECT_DIR$/varying_co2_write_script.py" />
       </list>
     </option>
@@ -323,21 +322,7 @@
       <workItem from="1567613027765" duration="836000" />
       <workItem from="1568212934950" duration="193000" />
       <workItem from="1568382241636" duration="1591000" />
-      <workItem from="1568659098846" duration="11729000" />
-    </task>
-    <task id="LOCAL-00484" summary="working on restart file laoding">
-      <created>1568664212913</created>
-      <option name="number" value="00484" />
-      <option name="presentableId" value="LOCAL-00484" />
-      <option name="project" value="LOCAL" />
-      <updated>1568664212913</updated>
-    </task>
-    <task id="LOCAL-00485" summary="working on restart file laoding">
-      <created>1568664440372</created>
-      <option name="number" value="00485" />
-      <option name="presentableId" value="LOCAL-00485" />
-      <option name="project" value="LOCAL" />
-      <updated>1568664440372</updated>
+      <workItem from="1568659098846" duration="12620000" />
     </task>
     <task id="LOCAL-00486" summary="working on restart file laoding">
       <created>1568664466046</created>
@@ -668,11 +653,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568743245736</updated>
     </task>
-    <option name="localTasksCounter" value="533" />
+    <task id="LOCAL-00533" summary="working on restart file laoding">
+      <created>1568752468471</created>
+      <option name="number" value="00533" />
+      <option name="presentableId" value="LOCAL-00533" />
+      <option name="project" value="LOCAL" />
+      <updated>1568752468471</updated>
+    </task>
+    <task id="LOCAL-00534" summary="working on restart file laoding">
+      <created>1568752570805</created>
+      <option name="number" value="00534" />
+      <option name="presentableId" value="LOCAL-00534" />
+      <option name="project" value="LOCAL" />
+      <updated>1568752570805</updated>
+    </task>
+    <option name="localTasksCounter" value="535" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135434000" />
+    <option name="totallyTimeSpent" value="136325000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1097,29 +1096,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newSbatch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/i270_290solar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
           <caret line="90" column="21" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
           <folding>
             <element signature="e#0#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="e#0#115#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1134,10 +1116,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/newSbatch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="53" column="77" lean-forward="true" selection-start-line="53" selection-start-column="62" selection-end-line="53" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/varying_co2_write_script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+        <state relative-caret-position="425">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
