@@ -1,26 +1,15 @@
 from sympl import (
     DataArray, AdamsBashforth, get_constant, set_constant, NetCDFMonitor, PlotFunctionMonitor
 )
-import matplotlib.pyplot as plt
-
 import numpy as np
 from datetime import timedelta
-
 from climt import (
     EmanuelConvection, DryConvectiveAdjustment, RRTMGShortwave, RRTMGLongwave,
     SlabSurface, SimplePhysics, get_default_state
 )
-
 import pickle
 
-#############################
-# PARAMETERS/NAMES TO ALTER #
-#############################
-set_constant('stellar_irradiance', value=939, units='W m^-2')
-# Solar insolation set to 939 and zenith angle kept to default,
-#           to match the earlier 'solin' value of 290 that Shanshan used.
-#############################
-
+set_constant('stellar_irradiance', value=insol, units='W m^-2')
 store_quantities = ['air_temperature',
                     'surface_temperature',
                     'air_pressure',

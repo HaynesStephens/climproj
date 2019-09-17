@@ -2,7 +2,8 @@ import os
 import newSbatch
 
 co2_ppm = 330
-job_name = 'i{0}_290solar'.format(co2_ppm)
+insol = 939
+job_name = 'i{0}_{1}solar'.format(co2_ppm, insol)
 nc_name = job_name + '.nc'
 
 template_path = '/home/haynes13/code/python/climproj/climt_scripts/varying_co2_template.py'
@@ -12,6 +13,7 @@ print(job_path)
 
 with open(template_path, 'r') as fin, open(job_path, 'w') as fout:
     fout.write('### UNIQUE VALUES ###\n')
+    fout.write('insol = {0}\n'.format(insol))
     fout.write('co2_ppm = {0}\n'.format(co2_ppm))
     fout.write("nc_name = '{0}.nc'\n".format(job_name))
     fout.write('#####################\n')
