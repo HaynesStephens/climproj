@@ -23,7 +23,7 @@ with open(template_path, 'r') as fin, open(job_path, 'w') as fout:
         fout.write(line)
 
 base_dir = '/home/haynes13/climt_runs/'
-test_dir = 'varying_co2/' # Needs to end in an '/'
+test_dir = 'varying_co2/{0}solar'.format(insol) # Needs to end in an '/'
 newSbatch.newSbatch(base_dir, test_dir, job_name)
 
 
