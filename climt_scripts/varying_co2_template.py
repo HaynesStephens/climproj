@@ -9,7 +9,7 @@ from climt import (
 )
 import pickle
 
-set_constant('stellar_irradiance', value=insol, units='W m^-2')
+set_constant('stellar_irradiance', value=irradiance, units='W m^-2')
 store_quantities = ['air_temperature',
                     'surface_temperature',
                     'air_pressure',
