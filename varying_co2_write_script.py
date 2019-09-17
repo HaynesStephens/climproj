@@ -1,7 +1,7 @@
 import os
 import newSbatch
 
-co2_ppm = 660
+co2_ppm = 330
 job_name = 'i{0}_290solar'.format(co2_ppm)
 nc_name = job_name + '.nc'
 
@@ -19,6 +19,9 @@ with open(template_path, 'r') as fin, open(job_path, 'w') as fout:
     for line in fin.readlines():
         fout.write(line)
 
+test_dir = 'varying_co2/' # Needs to end in an '/'
+home_dir = '/home/haynes13/climt_runs/' + test_dir
+newSbatch.newSbatch(home_dir, job_name)
 
 
 

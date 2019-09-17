@@ -1,9 +1,9 @@
 import os
 
-test_dir = 'control/' # Needs to end in an '/'
-home_dir = '/home/haynes13/climt_runs/' + test_dir
-
-job_name = 'i270_290solar'
+# test_dir = 'control/' # Needs to end in an '/'
+# home_dir = '/home/haynes13/climt_runs/' + test_dir
+#
+# job_name = 'i270_290solar'
 
 def newSbatch(home_dir, job_name): #order input variables by use order, duh
     job_dir = home_dir + job_name
