@@ -1,7 +1,7 @@
 import os
 import newSbatch
 
-co2_ppm = 330.0
+co2_ppm = 330
 job_name = 'i{0}_290solar'.format(co2_ppm)
 nc_name = job_name + '.nc'
 
