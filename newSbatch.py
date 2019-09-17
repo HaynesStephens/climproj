@@ -5,7 +5,7 @@ home_dir = '/home/haynes13/climt_runs/' + test_dir
 
 job_name = 'i270_290solar'
 
-def createJob(home_dir, job_name): #order input variables by use order, duh
+def newSbatch(home_dir, job_name): #order input variables by use order, duh
     job_dir = home_dir + job_name
     os.system('mkdir {0}'.format(job_dir))
     os.system('mkdir /home/haynes13/code/python/climproj/saved_plots/{0}'.format(job_name))
@@ -32,4 +32,4 @@ def createJob(home_dir, job_name): #order input variables by use order, duh
 
     sbatch_file.close()
 
-createJob(home_dir, job_name)
+# createJob(home_dir, job_name)

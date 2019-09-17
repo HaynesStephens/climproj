@@ -1,3 +1,6 @@
+import os
+import newSbatch
+
 co2_ppm = 660
 job_name = 'i{0}_290solar'.format(co2_ppm)
 nc_name = job_name + '.nc'
@@ -16,8 +19,7 @@ with open(template_path, 'r') as fin, open(job_path, 'w') as fout:
     for line in fin.readlines():
         fout.write(line)
 
-import newSbatch
-newSbatch
+
 
 
 
