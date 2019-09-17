@@ -37,6 +37,8 @@ for i in range(len(co2_ppm_list)):
         irradiance = irradiance_list[j]
         insol = insol_list[j]
 
+        createRun(co2_ppm, irradiance, insol)
+
 
 
 
