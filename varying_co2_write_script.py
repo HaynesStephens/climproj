@@ -1,7 +1,7 @@
 import os
 import newSbatch
 
-co2_ppm = 330
+co2_ppm = 330.0
 job_name = 'i{0}_290solar'.format(co2_ppm)
 nc_name = job_name + '.nc'
 
@@ -12,7 +12,7 @@ print(job_path)
 
 with open(template_path, 'r') as fin, open(job_path, 'w') as fout:
     fout.write('### UNIQUE VALUES ###\n')
-    fout.write('co2_ppm = np.float({0})\n'.format(co2_ppm))
+    fout.write('co2_ppm = {0}\n'.format(co2_ppm))
     fout.write("nc_name = '{0}.nc'\n".format(job_name))
     fout.write('#####################\n')
 
