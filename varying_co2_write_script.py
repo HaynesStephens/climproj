@@ -24,7 +24,7 @@ def createRun(co2_ppm, irradiance, insol):
     base_dir = '/home/haynes13/climt_runs/'
     test_dir = 'varying_co2/{0}solar/'.format(insol) # Needs to end in an '/'
     sbatch_filename = newSbatch.newSbatch(base_dir, test_dir, job_name)
-    os.system('sbatch {0}'.format(sbatch_filename))
+    return sbatch_filename
 
 # TRIAL RUN ONLY USING 2 PPM
 co2_ppm_list = [2]  # , 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
@@ -38,8 +38,8 @@ for i in range(len(co2_ppm_list)):
         irradiance = irradiance_list[j]
         insol = insol_list[j]
 
-        createRun(co2_ppm, irradiance, insol)
-
+        sbatch_filename = createRun(co2_ppm, irradiance, insol)
+        os.system('sbatch {0}'.format(sbatch_filename))
 
 
 

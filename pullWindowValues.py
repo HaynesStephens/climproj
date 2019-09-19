@@ -149,11 +149,11 @@ def writeEQTable1Values(file_path, start_time, end_time):
 
 
 # Parameters
-test_dir = 'control/' # Needs to end in an '/'
-print('TEST:', test_dir)
 base_path = '/home/haynes13/climt_files/'
+test_dir = 'varying_co2/290solar/' # Needs to end in an '/'
+print('TEST:', test_dir)
 
-job_name = 'i270_290solar'
+job_name = 'i2_290solar'
 print('JOB:', job_name)
 
 file_path = '{0}{1}{2}/{2}'.format(base_path, test_dir, job_name)
