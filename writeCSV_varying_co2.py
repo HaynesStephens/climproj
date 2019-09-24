@@ -10,7 +10,7 @@ insol_list = [290, 320]
 for i in range(len(co2_ppm_list)):
     co2_ppm = co2_ppm_list[i]
 
-    for j in range(len(irradiance_list)):
+    for j in range(len(insol_list)):
         insol = insol_list[j]
 
         # Parameters
