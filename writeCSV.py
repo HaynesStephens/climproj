@@ -86,27 +86,51 @@ def calcMoistEnthalpySeries(nc):
     return np.array(moist_enthalpy_arr)
 
 
+def load_quantities_0D():
+    return ['time',
+            'surface_temperature',
+            'convective_precipitation_rate',
+            'stratiform_precipitation_rate',
+            'surface_upward_sensible_heat_flux',
+            'surface_upward_latent_heat_flux']
+
+
+def load_quantities_1D():
+    return ['air_temperature',
+            'air_pressure',
+            'specific_humidity',
+            'air_pressure_on_interface_levels',
+            'air_temperature_tendency_from_convection',
+            'air_temperature_tendency_from_longwave',
+            'air_temperature_tendency_from_shortwave',
+            'mole_fraction_of_carbon_dioxide_in_air',
+            'upwelling_longwave_flux_in_air',
+            'upwelling_shortwave_flux_in_air',
+            'downwelling_longwave_flux_in_air',
+            'downwelling_shortwave_flux_in_air']
+
+
+def saveTimeSeriesDim(nc, var_name, save_path, dim):
+    if dim==0:
+        data = getTimeSeries0D(nc, var_name)
+    elif dim==1:
+        data = getTimeSeries1D(nc, var_name)
+    else:
+        raise(ValueError, "WRONG DIMENSION GIVEN")
+    saveData(data, save_path, var_name)
+    print('Saved:', var_name)
+
+
+def saveMoistEnthalpy(nc, save_path):
+    var_name = 'moist_enthalpy'
+    data = calcMoistEnthalpySeries(nc)
+    saveData(data, save_path, var_name)
+    print('Saved:', var_name)
+
+""" INDIVIDUAL EXECUTION. 
 # List of saved quantities, sorted by dimension
-store_quantities_0D =   ['time',
-                        'surface_temperature',
-                        'convective_precipitation_rate',
-                        'stratiform_precipitation_rate',
-                        'surface_upward_sensible_heat_flux',
-                        'surface_upward_latent_heat_flux']
-
-store_quantities_1D =   ['air_temperature',
-                        'air_pressure',
-                        'specific_humidity',
-                        'air_pressure_on_interface_levels',
-                        'air_temperature_tendency_from_convection',
-                        'air_temperature_tendency_from_longwave',
-                        'air_temperature_tendency_from_shortwave',
-                        'mole_fraction_of_carbon_dioxide_in_air',
-                        'upwelling_longwave_flux_in_air',
-                        'upwelling_shortwave_flux_in_air',
-                        'downwelling_longwave_flux_in_air',
-                        'downwelling_shortwave_flux_in_air']
-
+store_quantities_0D = load_quantities_0D()
+store_quantities_1D = load_quantities_1D()
 
 # Parameters
 test_dir = 'varying_co2/290solar/' # Needs to end in an '/'
@@ -116,22 +140,13 @@ job_name    = 'i2_290solar'
 print('Job:', job_name)
 
 nc_path     = '/home/haynes13/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
+nc = openNC(nc_path)
 save_path   = '/home/haynes13/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
 
 # Procedure
-nc = openNC(nc_path)
-
 for var_name in store_quantities_0D:
-    data = getTimeSeries0D(nc, var_name)
-    saveData(data, save_path, var_name)
-    print('Saved:', var_name)
-
+    saveTimeSeriesDim(nc, var_name, save_path, dim=0)
 for var_name in store_quantities_1D:
-    data = getTimeSeries1D(nc, var_name)
-    saveData(data, save_path, var_name)
-    print('Saved:', var_name)
-
-var_name = 'moist_enthalpy'
-data = calcMoistEnthalpySeries(nc)
-saveData(data, save_path, var_name)
-print('Saved:', var_name)
+    saveTimeSeriesDim(nc, var_name, save_path, dim=1)
+saveMoistEnthalpy(nc, save_path)
+"""
