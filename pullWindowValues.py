@@ -148,6 +148,7 @@ def writeEQTable1Values(file_path, start_time, end_time):
     return str_list, val_list
 
 
+""" INDIVIDUAL EXECUTION.
 # Parameters
 base_path = '/home/haynes13/climt_files/'
 test_dir = 'varying_co2/290solar/' # Needs to end in an '/'
@@ -164,3 +165,4 @@ end_time = np.float(end_day * (24 * 60 * 60))
 
 # Procedures
 writeEQTable1Values(file_path, start_time, end_time)
+"""
