@@ -1,4 +1,4 @@
-from PullWindowValues import *
+from pullWindowValues import *
 
 co2_ppm_list = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
 insol_list = [290, 320]
