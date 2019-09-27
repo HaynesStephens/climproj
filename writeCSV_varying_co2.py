@@ -22,9 +22,9 @@ for i in range(len(co2_ppm_list)):
         job_name    = 'i{0}_{1}solar'.format(co2_ppm, insol)
         print('Job:', job_name)
 
-        nc_path     = '/home/haynes13/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
+        nc_path     = '/project/moyer/haynes/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
         nc = openNC(nc_path)
-        save_path   = '/home/haynes13/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
+        save_path   = '/project/moyer/haynes/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
 
         # Procedure
         for var_name in store_quantities_0D:
