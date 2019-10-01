@@ -43,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
+            <state relative-caret-position="719">
+              <caret line="162" column="16" lean-forward="true" selection-start-line="162" selection-start-column="16" selection-end-line="162" selection-end-column="16" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -73,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pullWindowValues_varying_co2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -200,11 +200,11 @@
         <option value="$PROJECT_DIR$/writeCSV.py" />
         <option value="$PROJECT_DIR$/varying_co2_write_script.py" />
         <option value="$PROJECT_DIR$/writeCSV_varying_co2.py" />
-        <option value="$PROJECT_DIR$/pullWindowValues_varying_co2.py" />
         <option value="$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.LH.anomalies.py" />
         <option value="$PROJECT_DIR$/data_scripts/getControl.py" />
         <option value="$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.anomalies.py" />
         <option value="$PROJECT_DIR$/pullWindowValuesPandas.py" />
+        <option value="$PROJECT_DIR$/pullWindowValues_varying_co2.py" />
         <option value="$PROJECT_DIR$/pullWindowValues.py" />
       </list>
     </option>
@@ -349,21 +349,7 @@
       <workItem from="1569611419690" duration="10000" />
       <workItem from="1569872482725" duration="95000" />
       <workItem from="1569873865319" duration="836000" />
-      <workItem from="1569938810117" duration="4988000" />
-    </task>
-    <task id="LOCAL-00523" summary="working on restart file laoding">
-      <created>1568741326134</created>
-      <option name="number" value="00523" />
-      <option name="presentableId" value="LOCAL-00523" />
-      <option name="project" value="LOCAL" />
-      <updated>1568741326134</updated>
-    </task>
-    <task id="LOCAL-00524" summary="working on restart file laoding">
-      <created>1568741413794</created>
-      <option name="number" value="00524" />
-      <option name="presentableId" value="LOCAL-00524" />
-      <option name="project" value="LOCAL" />
-      <updated>1568741413794</updated>
+      <workItem from="1569938810117" duration="5201000" />
     </task>
     <task id="LOCAL-00525" summary="working on restart file laoding">
       <created>1568741651847</created>
@@ -694,11 +680,25 @@
       <option name="project" value="LOCAL" />
       <updated>1569945233974</updated>
     </task>
-    <option name="localTasksCounter" value="572" />
+    <task id="LOCAL-00572" summary="writing csv for vary_co2 files">
+      <created>1569945294365</created>
+      <option name="number" value="00572" />
+      <option name="presentableId" value="LOCAL-00572" />
+      <option name="project" value="LOCAL" />
+      <updated>1569945294365</updated>
+    </task>
+    <task id="LOCAL-00573" summary="writing csv for vary_co2 files">
+      <created>1569945471183</created>
+      <option name="number" value="00573" />
+      <option name="presentableId" value="LOCAL-00573" />
+      <option name="project" value="LOCAL" />
+      <updated>1569945471183</updated>
+    </task>
+    <option name="localTasksCounter" value="574" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147828000" />
+    <option name="totallyTimeSpent" value="148041000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1164,13 +1164,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_scripts/getControl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.anomalies.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1178,20 +1171,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pullWindowValues_varying_co2.py">
+    <entry file="file://$PROJECT_DIR$/data_scripts/getControl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="34" />
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
+        <state relative-caret-position="719">
+          <caret line="162" column="16" lean-forward="true" selection-start-line="162" selection-start-column="16" selection-end-line="162" selection-end-column="16" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pullWindowValues_varying_co2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

@@ -148,13 +148,15 @@ def writeEQTable1Values(file_path, start_time, end_time, extras=None):
     return df
 
 
-""" INDIVIDUAL EXECUTION.
+# """ INDIVIDUAL EXECUTION.
 # Parameters
 base_path = '/project/moyer/haynes/climt_files/'
-test_dir = 'varying_co2/290solar/' # Needs to end in an '/'
+test_dir = 'control/' # Needs to end in an '/'
 print('TEST:', test_dir)
 
-job_name = 'i2_290solar'
+ppm = 270
+insol = 290
+job_name = 'i{0}_{1}solar'.format(ppm, insol)
 print('JOB:', job_name)
 
 file_path = '{0}{1}{2}/{2}'.format(base_path, test_dir, job_name)
@@ -162,8 +164,8 @@ start_day = 9950
 end_day = 10950 - 1
 start_time = np.float(start_day * (24 * 60 * 60))
 end_time = np.float(end_day * (24 * 60 * 60))
-extras = {'ppm':2, 'insol':290}
+extras = {'ppm':ppm, 'insol':insol}
 
 # Procedures
 df = writeEQTable1Values(file_path, start_time, end_time, extras=extras)
-"""
+# """
