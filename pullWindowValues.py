@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 # Pulling Values from whichever window you want
 # Note: Make sure the time-ends (in seconds) of your window
@@ -90,7 +91,7 @@ def writeEQProfile(data, var_name, file_path):
     print("EQ Profile: ", var_name)
 
 
-def writeEQTable1Values(file_path, start_time, end_time):
+def writeEQTable1Values(file_path, start_time, end_time, extras=None):
     """
     Write out the EQ values and profiles of the time window into various files
     :param file_path:
@@ -135,20 +136,19 @@ def writeEQTable1Values(file_path, start_time, end_time):
                 'LWtoa', 'SWsurf', 'LWsurf', 'LH', 'SH', 'Ts', 'ConvPrec', 'StratPrec']
     val_list = [start_time, end_time, net_toa, net_surf, net_sw[-1],
                 net_lw[-1], net_sw[0], net_lw[0], lh, sh, t_surf, conv_prec, strat_prec]
-    txt_file = open('{0}_eqTable1Values.txt'.format(file_path), 'w')
-
     assert len(str_list) == len(val_list), "Not the same length of strings and values."
-    for i in range(len(str_list)):
-        str_i = str_list[i]
-        val_i = val_list[i]
-        out_statement = '{0}: {1}'.format(str_i, val_i)
-        print(out_statement)
-        txt_file.write(out_statement + '\n')
+    df = pd.DataFrame(columns = str_list, data = [val_list])
+
+    if extras != None:
+        df_ex = pd.DataFrame([extras], columns=extras.keys())
+        df = pd.concat([df, df_ex], axis =0).reset_index()
+
+    df.to_csv('{0}_eqTable1Values.csv'.format(file_path))
 
     return str_list, val_list
 
 
-""" INDIVIDUAL EXECUTION.
+# """ INDIVIDUAL EXECUTION.
 # Parameters
 base_path = '/home/haynes13/climt_files/'
 test_dir = 'varying_co2/290solar/' # Needs to end in an '/'
@@ -165,4 +165,4 @@ end_time = np.float(end_day * (24 * 60 * 60))
 
 # Procedures
 writeEQTable1Values(file_path, start_time, end_time)
-"""
+# """
