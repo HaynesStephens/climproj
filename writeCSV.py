@@ -142,7 +142,7 @@ print('Job:', job_name)
 nc_path     = '/project/moyer/haynes/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
 nc = openNC(nc_path)
 # save_path   = '/project/moyer/haynes/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
-save_path = '/home/haynes13'
+save_path = '/home/haynes13/{0}{1}/{1}'.format(test_dir, job_name)
 
 # Procedure
 for var_name in store_quantities_0D:

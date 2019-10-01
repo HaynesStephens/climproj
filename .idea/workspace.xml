@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/writeCSV.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="685">
-              <caret line="143" column="37" selection-start-line="143" selection-start-column="37" selection-end-line="143" selection-end-column="37" />
+            <state relative-caret-position="703">
+              <caret line="144" column="66" selection-start-line="144" selection-start-column="66" selection-end-line="144" selection-end-column="66" />
               <folding>
                 <element signature="e#223#241#0" expanded="true" />
               </folding>
@@ -349,21 +349,7 @@
       <workItem from="1569611419690" duration="10000" />
       <workItem from="1569872482725" duration="95000" />
       <workItem from="1569873865319" duration="836000" />
-      <workItem from="1569938810117" duration="5725000" />
-    </task>
-    <task id="LOCAL-00527" summary="working on restart file laoding">
-      <created>1568742224900</created>
-      <option name="number" value="00527" />
-      <option name="presentableId" value="LOCAL-00527" />
-      <option name="project" value="LOCAL" />
-      <updated>1568742224900</updated>
-    </task>
-    <task id="LOCAL-00528" summary="working on restart file laoding">
-      <created>1568742379708</created>
-      <option name="number" value="00528" />
-      <option name="presentableId" value="LOCAL-00528" />
-      <option name="project" value="LOCAL" />
-      <updated>1568742379708</updated>
+      <workItem from="1569938810117" duration="5881000" />
     </task>
     <task id="LOCAL-00529" summary="working on restart file laoding">
       <created>1568742437550</created>
@@ -694,11 +680,25 @@
       <option name="project" value="LOCAL" />
       <updated>1569945756949</updated>
     </task>
-    <option name="localTasksCounter" value="576" />
+    <task id="LOCAL-00576" summary="writing csv for vary_co2 files">
+      <created>1569946287131</created>
+      <option name="number" value="00576" />
+      <option name="presentableId" value="LOCAL-00576" />
+      <option name="project" value="LOCAL" />
+      <updated>1569946287131</updated>
+    </task>
+    <task id="LOCAL-00577" summary="writing csv for vary_co2 files">
+      <created>1569946448587</created>
+      <option name="number" value="00577" />
+      <option name="presentableId" value="LOCAL-00577" />
+      <option name="project" value="LOCAL" />
+      <updated>1569946448587</updated>
+    </task>
+    <option name="localTasksCounter" value="578" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148565000" />
+    <option name="totallyTimeSpent" value="148721000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1187,8 +1187,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/writeCSV.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="143" column="37" selection-start-line="143" selection-start-column="37" selection-end-line="143" selection-end-column="37" />
+        <state relative-caret-position="703">
+          <caret line="144" column="66" selection-start-line="144" selection-start-column="66" selection-end-line="144" selection-end-column="66" />
           <folding>
             <element signature="e#223#241#0" expanded="true" />
           </folding>
