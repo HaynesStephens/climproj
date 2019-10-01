@@ -13,14 +13,20 @@ def get_EQ_batch(filelist):
         df0 = pd.concat([df0, df_i])
     return df0
 
+print('Loading control.')
 control_eq_file = '/Users/haynesstephens1/uchi/research/climproj/climt_files/varying_co2/320solar/i270_320solar/i270_320solar_eqTable1Values.csv'
 control_df = pd.read_csv(control_eq_file)
 
+print('Loading & combining dataframes.')
 df = get_EQ_batch(eq_list)
 
 outpath = '/Users/haynesstephens1/uchi/research/climproj/climproj/data_calculated/EQ.varyco2.320solar.anomalies.csv'
 f = open(outpath, 'a')
-f.write('# This is a dataframe of the used to calculate anomalies for the 320solar varing-co2 group. Used for:\n')
-f.write('# - Shanshan EQ Fig 6.\n')
+comments = ['# This is a dataframe of the used to calculate anomalies for the 320solar varing-co2 group. Used for:\n',
+            '# - Shanshan EQ Fig 6.\n']
+print('Writing comments:')
+[print(comment) for comment in comments]
+[f.write(comment) for comment in comments]
+print('Writing dataframe to:\n' + outpath)
 df.to_csv(f)
 f.close()
