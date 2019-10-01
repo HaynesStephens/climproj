@@ -18,4 +18,4 @@ def get_EQ_batch(filelist, ppm_list):
 
 df = get_EQ_batch(eq_list, ppm_list)
 
-anomaly_df = df
+anomaly_df = df - control_df
