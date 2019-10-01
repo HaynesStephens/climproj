@@ -9,10 +9,12 @@ eq_list = ['{0}{1}/{1}_eqTable1Values.txt'.format(basepath, job) for job in job_
 
 control_df = get_EQ_file(control_eq_file)
 
-def get_EQ_batch(filelist):
+def get_EQ_batch(filelist, ppm_list):
     df0 = get_EQ_file(filelist[0])
+    df0['ppm'] = ppm_list[0]
     for i in range(1, len(filelist)):
         df_i = get_EQ_file(filelist[i])
+        df_i['ppm'] = ppm_list[i]
         df0 = pd.concat([df0, df_i])
     return df0
 
