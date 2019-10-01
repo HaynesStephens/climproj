@@ -14,7 +14,8 @@ def get_EQ_batch(filelist, ppm_list):
         df0 = pd.concat([df0, df_i])
     return df0
 
-control_df = get_EQ_file(control_eq_file, 270, 290)
+control_eq_file = '/project/moyer/haynes/climt_files/varying_co2/320solar/i270_320solar/i270_320solar_eqTable1Values.txt'
+control_df = get_EQ_file(control_eq_file, 270, 320)
 
 df = get_EQ_batch(eq_list, ppm_list)
 anomaly_df = df - control_df
