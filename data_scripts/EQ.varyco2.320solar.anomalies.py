@@ -17,11 +17,10 @@ control_eq_file = '/Users/haynesstephens1/uchi/research/climproj/climt_files/var
 control_df = pd.read_csv(control_eq_file)
 
 df = get_EQ_batch(eq_list)
-anomaly_df = df - control_df
 
 outpath = '/Users/haynesstephens1/uchi/research/climproj/climproj/data_calculated/EQ.varyco2.320solar.anomalies.csv'
 f = open(outpath, 'a')
-f.write('# This is a dataframe of the anomalies of the 320solar group. Used for:\n')
+f.write('# This is a dataframe of the used to calculate anomalies for the 320solar varing-co2 group. Used for:\n')
 f.write('# - Shanshan EQ Fig 6.\n')
-anomaly_df.to_csv(f)
+df.to_csv(f)
 f.close()
