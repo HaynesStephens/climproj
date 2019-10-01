@@ -150,7 +150,7 @@ def writeEQTable1Values(file_path, start_time, end_time, extras=None):
 
 # """ INDIVIDUAL EXECUTION.
 # Parameters
-base_path = '/home/haynes13/climt_files/'
+base_path = '/project/moyer/haynes/climt_files/'
 test_dir = 'varying_co2/290solar/' # Needs to end in an '/'
 print('TEST:', test_dir)
 
