@@ -164,5 +164,5 @@ start_time = np.float(start_day * (24 * 60 * 60))
 end_time = np.float(end_day * (24 * 60 * 60))
 
 # Procedures
-writeEQTable1Values(file_path, start_time, end_time)
+df = writeEQTable1Values(file_path, start_time, end_time)
 # """
