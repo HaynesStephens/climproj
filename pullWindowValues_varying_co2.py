@@ -22,6 +22,7 @@ for i in range(len(co2_ppm_list)):
         print('JOB:', job_name)
 
         file_path = '{0}{1}{2}/{2}'.format(base_path, test_dir, job_name)
+        extras = {'ppm': co2_ppm, 'insol': insol}
 
         # Procedures
-        writeEQTable1Values(file_path, start_time, end_time)
+        writeEQTable1Values(file_path, start_time, end_time, extras=extras)
