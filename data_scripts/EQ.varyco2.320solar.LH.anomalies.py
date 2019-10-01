@@ -17,4 +17,3 @@ def get_EQ_batch(filelist):
     return df0
 
 df = get_EQ_batch(eq_list)
-ugly
