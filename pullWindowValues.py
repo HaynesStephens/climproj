@@ -162,7 +162,8 @@ start_day = 9950
 end_day = 10950 - 1
 start_time = np.float(start_day * (24 * 60 * 60))
 end_time = np.float(end_day * (24 * 60 * 60))
+extras = {'ppm':2, 'insol':290}
 
 # Procedures
-df = writeEQTable1Values(file_path, start_time, end_time)
+df = writeEQTable1Values(file_path, start_time, end_time, extras=extras)
 # """
