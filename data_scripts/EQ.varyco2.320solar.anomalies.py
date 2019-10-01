@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-from data_scripts.getControl import *
 
 basepath = '/Users/haynesstephens1/uchi/research/climproj/climt_files/varying_co2/320solar/'
 ppm_list = np.sort(np.array([100, 1080, 150, 20, 2, 405, 5, 675, 10, 1215, 190, 220, 270, 50, 540, 756]))
