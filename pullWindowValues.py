@@ -148,7 +148,7 @@ def writeEQTable1Values(file_path, start_time, end_time, extras=None):
     return df
 
 
-# """ INDIVIDUAL EXECUTION.
+""" INDIVIDUAL EXECUTION.
 # Parameters
 base_path = '/Users/haynesstephens1/uchi/research/climproj/climt_files/'
 test_dir = 'control/' # Needs to end in an '/'
@@ -168,4 +168,4 @@ extras = {'ppm':ppm, 'insol':insol}
 
 # Procedures
 df = writeEQTable1Values(file_path, start_time, end_time, extras=extras)
-# """
+"""

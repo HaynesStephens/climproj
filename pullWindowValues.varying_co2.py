@@ -14,7 +14,7 @@ for i in range(len(co2_ppm_list)):
     for j in range(len(insol_list)):
         insol = insol_list[j]
         # Parameters
-        base_path = '/project/moyer/haynes/climt_files/'
+        base_path = '/Users/haynesstephens1/uchi/research/climproj/climt_files/'
         test_dir = 'varying_co2/{0}solar/'.format(insol)  # Needs to end in an '/'
         print('TEST:', test_dir)
 
