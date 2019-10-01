@@ -18,4 +18,4 @@ def get_EQ_batch(filelist, ppm_list):
         df0 = pd.concat([df0, df_i])
     return df0
 
-df = get_EQ_batch(eq_list)
+df = get_EQ_batch(eq_list, ppm_list)

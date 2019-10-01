@@ -55,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.LH.anomalies.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state relative-caret-position="340">
+              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -349,21 +349,7 @@
       <workItem from="1569611419690" duration="10000" />
       <workItem from="1569872482725" duration="95000" />
       <workItem from="1569873865319" duration="836000" />
-      <workItem from="1569938810117" duration="1944000" />
-    </task>
-    <task id="LOCAL-00505" summary="working on restart file laoding">
-      <created>1568668055480</created>
-      <option name="number" value="00505" />
-      <option name="presentableId" value="LOCAL-00505" />
-      <option name="project" value="LOCAL" />
-      <updated>1568668055480</updated>
-    </task>
-    <task id="LOCAL-00506" summary="working on restart file laoding">
-      <created>1568668074486</created>
-      <option name="number" value="00506" />
-      <option name="presentableId" value="LOCAL-00506" />
-      <option name="project" value="LOCAL" />
-      <updated>1568668074486</updated>
+      <workItem from="1569938810117" duration="2112000" />
     </task>
     <task id="LOCAL-00507" summary="working on restart file laoding">
       <created>1568668356255</created>
@@ -694,11 +680,25 @@
       <option name="project" value="LOCAL" />
       <updated>1569941040009</updated>
     </task>
-    <option name="localTasksCounter" value="554" />
+    <task id="LOCAL-00554" summary="writing csv for vary_co2 files">
+      <created>1569941047509</created>
+      <option name="number" value="00554" />
+      <option name="presentableId" value="LOCAL-00554" />
+      <option name="project" value="LOCAL" />
+      <updated>1569941047509</updated>
+    </task>
+    <task id="LOCAL-00555" summary="writing csv for vary_co2 files">
+      <created>1569941209176</created>
+      <option name="number" value="00555" />
+      <option name="presentableId" value="LOCAL-00555" />
+      <option name="project" value="LOCAL" />
+      <updated>1569941209176</updated>
+    </task>
+    <option name="localTasksCounter" value="556" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144784000" />
+    <option name="totallyTimeSpent" value="144952000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1181,8 +1181,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.LH.anomalies.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="340">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
