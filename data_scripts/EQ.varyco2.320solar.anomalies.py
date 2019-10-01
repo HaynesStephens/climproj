@@ -28,5 +28,6 @@ print('Writing comments:')
 [print(comment) for comment in comments]
 [f.write(comment) for comment in comments]
 print('Writing dataframe to:\n' + outpath)
+df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
 df.to_csv(f)
 f.close()
