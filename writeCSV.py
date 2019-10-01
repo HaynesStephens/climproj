@@ -127,21 +127,21 @@ def saveMoistEnthalpy(nc, save_path):
     saveData(data, save_path, var_name)
     print('Saved:', var_name)
 
-""" INDIVIDUAL EXECUTION. 
+# """ INDIVIDUAL EXECUTION.
 # List of saved quantities, sorted by dimension
 store_quantities_0D = load_quantities_0D()
 store_quantities_1D = load_quantities_1D()
 
 # Parameters
-test_dir = 'varying_co2/290solar/' # Needs to end in an '/'
+test_dir = 'control/' # Needs to end in an '/'
 print('TEST:', test_dir)
 
-job_name    = 'i2_290solar'
+job_name    = 'i270_290solar'
 print('Job:', job_name)
 
-nc_path     = '/home/haynes13/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
+nc_path     = '/project/moyer/haynes/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
 nc = openNC(nc_path)
-save_path   = '/home/haynes13/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
+save_path   = '/project/moyer/haynes/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
 
 # Procedure
 for var_name in store_quantities_0D:
@@ -149,4 +149,4 @@ for var_name in store_quantities_0D:
 for var_name in store_quantities_1D:
     saveTimeSeriesDim(nc, var_name, save_path, dim=1)
 saveMoistEnthalpy(nc, save_path)
-"""
+# """
