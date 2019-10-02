@@ -22,7 +22,7 @@ print('Loading & combining dataframes.')
 df = get_EQ_batch(eq_list)
 
 outpath = '/Users/haynesstephens1/uchi/research/climproj/climproj/data_calculated/EQ.varyco2.290solar.anomalies.csv'
-f = open(outpath, 'a')
+f = open(outpath, 'w')
 comments = ['# This is a dataframe of the used to calculate anomalies for the 290solar varing-co2 group. Used for:\n',
             '# - ??\n']
 print('Writing comments:')
