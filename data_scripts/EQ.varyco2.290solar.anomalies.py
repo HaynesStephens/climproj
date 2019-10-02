@@ -29,5 +29,5 @@ print('Writing comments:')
 [print(comment) for comment in comments]
 [f.write(comment) for comment in comments]
 print('Writing dataframe to:\n' + outpath)
-df.to_csv(f)
+df.to_csv(f, index=False)
 f.close()
