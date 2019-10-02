@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pullWindowValues.py" beforeDir="false" afterPath="$PROJECT_DIR$/pullWindowValues.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.anomalies.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.anomalies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.anomalies.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.anomalies.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +44,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="838">
@@ -67,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.anomalies.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+            <state relative-caret-position="272">
+              <caret line="16" column="80" lean-forward="true" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -76,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.anomalies.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="289">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -218,9 +219,9 @@
         <option value="$PROJECT_DIR$/pullWindowValues_varying_co2.py" />
         <option value="$PROJECT_DIR$/writeCSV.py" />
         <option value="$PROJECT_DIR$/pullWindowValues.varying_co2.py" />
-        <option value="$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.anomalies.py" />
-        <option value="$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.anomalies.py" />
         <option value="$PROJECT_DIR$/pullWindowValues.py" />
+        <option value="$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.anomalies.py" />
+        <option value="$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.anomalies.py" />
       </list>
     </option>
   </component>
@@ -365,21 +366,7 @@
       <workItem from="1569872482725" duration="95000" />
       <workItem from="1569873865319" duration="836000" />
       <workItem from="1569938810117" duration="7940000" />
-      <workItem from="1570025512460" duration="1034000" />
-    </task>
-    <task id="LOCAL-00541" summary="setting up runs for varying co2">
-      <created>1568900783839</created>
-      <option name="number" value="00541" />
-      <option name="presentableId" value="LOCAL-00541" />
-      <option name="project" value="LOCAL" />
-      <updated>1568900783839</updated>
-    </task>
-    <task id="LOCAL-00542" summary="setting up runs for varying co2">
-      <created>1568900883464</created>
-      <option name="number" value="00542" />
-      <option name="presentableId" value="LOCAL-00542" />
-      <option name="project" value="LOCAL" />
-      <updated>1568900883464</updated>
+      <workItem from="1570025512460" duration="1556000" />
     </task>
     <task id="LOCAL-00543" summary="writing csv for vary_co2 files">
       <created>1569334082877</created>
@@ -710,11 +697,25 @@
       <option name="project" value="LOCAL" />
       <updated>1570036203537</updated>
     </task>
-    <option name="localTasksCounter" value="590" />
+    <task id="LOCAL-00590" summary="writing csv for vary_co2 files">
+      <created>1570036693669</created>
+      <option name="number" value="00590" />
+      <option name="presentableId" value="LOCAL-00590" />
+      <option name="project" value="LOCAL" />
+      <updated>1570036693669</updated>
+    </task>
+    <task id="LOCAL-00591" summary="writing csv for vary_co2 files">
+      <created>1570041088383</created>
+      <option name="number" value="00591" />
+      <option name="presentableId" value="LOCAL-00591" />
+      <option name="project" value="LOCAL" />
+      <updated>1570041088383</updated>
+    </task>
+    <option name="localTasksCounter" value="592" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151814000" />
+    <option name="totallyTimeSpent" value="152336000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1180,22 +1181,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.anomalies.py">
+    <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="838">
+          <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.anomalies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1207,12 +1198,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
+    <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.anomalies.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="838">
-          <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
+        <state relative-caret-position="272">
+          <caret line="16" column="80" lean-forward="true" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.anomalies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

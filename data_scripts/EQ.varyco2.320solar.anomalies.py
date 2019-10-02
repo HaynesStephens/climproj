@@ -14,7 +14,8 @@ def get_EQ_batch(filelist):
     return df0
 
 print('Loading control.')
-control_eq_file = '/Users/haynesstephens1/uchi/research/climproj/climt_files/varying_co2/320solar/i270_320solar/i270_320solar_eqTable1Values.csv'
+control_eq_file = '/Users/haynesstephens1/uchi/research/climproj/climt_files/' \
+                  'varying_co2/320solar/i270_320solar/i270_320solar_eqTable1Values.csv'
 control_df = pd.read_csv(control_eq_file)
 
 print('Loading & combining dataframes.')
