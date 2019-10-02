@@ -143,7 +143,8 @@ def writeEQTable1Values(file_path, start_time, end_time, extras=None):
         df_ex = pd.DataFrame([extras], columns=extras.keys())
         df = pd.concat([df, df_ex], axis =1)
 
-    df.to_csv('{0}_eqTable1Values.csv'.format(file_path))
+    df.to_csv('{0}_eqTable1Values.csv'.format(file_path), index=False)
+    print('EQ Values written to csv.')
 
     return df
 
