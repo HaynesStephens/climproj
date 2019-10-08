@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/climt_scripts/varying_solar_template.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/varying_solar_write_script.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.anomalies.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.anomalies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.anomalies.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.anomalies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newSbatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/newSbatch.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,92 +18,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newSbatch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+            <state relative-caret-position="136">
+              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/writeCSV.py">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/varying_solar_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2380">
-              <caret line="141" column="61" selection-start-line="141" selection-start-column="15" selection-end-line="141" selection-end-column="61" />
-              <folding>
-                <element signature="e#223#241#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/writeCSV_varying_co2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="45" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="838">
-              <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pullWindowValues.varying_co2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.anomalies.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="80" lean-forward="true" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.anomalies.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_scripts/getControl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_template.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+            <state relative-caret-position="220">
+              <caret line="57" column="70" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="70" />
               <folding>
                 <element signature="e#0#115#0" expanded="true" />
               </folding>
@@ -110,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/varying_co2_write_script.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/varying_solar_write_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+            <state relative-caret-position="337">
+              <caret line="36" column="23" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="23" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -133,8 +59,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ocean_mixed_layer_thickness</find>
-      <find>a</find>
       <find>sympl</find>
       <find>getEQ</find>
       <find>getEQVal</find>
@@ -163,6 +87,8 @@
       <find>g</find>
       <find>co2_ppm</find>
       <find>320</find>
+      <find>co2</find>
+      <find>co2_</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -171,8 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/conservation_longTerm_MoistConvecting.py" />
-        <option value="$PROJECT_DIR$/longTerm_moistConvection_edit.py" />
         <option value="$PROJECT_DIR$/climt_scripts/rrtmg_emanuel_i270_290solar.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_d1.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1.py" />
@@ -210,7 +134,6 @@
         <option value="$PROJECT_DIR$/write_varying_co2_script.py" />
         <option value="$PROJECT_DIR$/climt_scripts/i330_290solar.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2_template.py" />
-        <option value="$PROJECT_DIR$/newSbatch.py" />
         <option value="$PROJECT_DIR$/varying_co2_write_script.py" />
         <option value="$PROJECT_DIR$/writeCSV_varying_co2.py" />
         <option value="$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.LH.anomalies.py" />
@@ -222,14 +145,15 @@
         <option value="$PROJECT_DIR$/pullWindowValues.py" />
         <option value="$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.anomalies.py" />
         <option value="$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.anomalies.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/varying_solar_template.py" />
+        <option value="$PROJECT_DIR$/varying_solar_write_script.py" />
+        <option value="$PROJECT_DIR$/newSbatch.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-513" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -237,6 +161,7 @@
     </navigator>
     <panes>
       <pane id="Course" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,13 +172,12 @@
             <path>
               <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
               <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="data_scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,14 +290,8 @@
       <workItem from="1569872482725" duration="95000" />
       <workItem from="1569873865319" duration="836000" />
       <workItem from="1569938810117" duration="7940000" />
-      <workItem from="1570025512460" duration="1556000" />
-    </task>
-    <task id="LOCAL-00543" summary="writing csv for vary_co2 files">
-      <created>1569334082877</created>
-      <option name="number" value="00543" />
-      <option name="presentableId" value="LOCAL-00543" />
-      <option name="project" value="LOCAL" />
-      <updated>1569334082878</updated>
+      <workItem from="1570025512460" duration="1756000" />
+      <workItem from="1570557503773" duration="1229000" />
     </task>
     <task id="LOCAL-00544" summary="writing csv for vary_co2 files">
       <created>1569334145624</created>
@@ -711,11 +629,18 @@
       <option name="project" value="LOCAL" />
       <updated>1570041088383</updated>
     </task>
-    <option name="localTasksCounter" value="592" />
+    <task id="LOCAL-00592" summary="writing csv for vary_co2 files">
+      <created>1570041180628</created>
+      <option name="number" value="00592" />
+      <option name="presentableId" value="LOCAL-00592" />
+      <option name="project" value="LOCAL" />
+      <updated>1570041180628</updated>
+    </task>
+    <option name="localTasksCounter" value="593" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152336000" />
+    <option name="totallyTimeSpent" value="153765000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -727,10 +652,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-513" y="-1080" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11235357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21243942" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -808,17 +733,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="writing csv for vary_co2 files" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dry_adj_270_1.txt" />
-    <entry file="file://$PROJECT_DIR$/gmd_radiative_convective.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/moistConv_rad_slab.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1130,13 +1044,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pullWindowValuesPandas.py" />
-    <entry file="file://$PROJECT_DIR$/newSbatch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/writeCSV.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2380">
@@ -1154,37 +1061,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_scripts/getControl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/varying_co2_write_script.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pullWindowValues.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="838">
-          <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
+        <state relative-caret-position="626">
+          <caret line="172" selection-start-line="172" selection-end-line="172" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -1194,14 +1074,14 @@
     <entry file="file://$PROJECT_DIR$/pullWindowValues.varying_co2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.anomalies.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="80" lean-forward="true" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
+          <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -1214,6 +1094,60 @@
           <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_scripts/getControl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="73" column="12" selection-end-line="108" />
+          <folding>
+            <element signature="e#0#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/varying_co2_write_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="15" column="36" selection-end-line="48" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_solar_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="57" column="70" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newSbatch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/varying_solar_write_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="36" column="23" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

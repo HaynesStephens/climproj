@@ -7,7 +7,7 @@ import os
 def newSbatch(base_dir, test_dir, job_name): #order input variables by use order, duh
     job_dir = base_dir + test_dir + job_name
     os.system('mkdir -p {0}'.format(job_dir))
-    os.system('mkdir -p /home/haynes13/code/python/climproj/saved_plots/{0}'.format(job_name))
+    # os.system('mkdir -p /home/haynes13/code/python/climproj/saved_plots/{0}'.format(job_name))
     os.system('mkdir -p /home/haynes13/climt_files/{0}{1}'.format(test_dir, job_name))
     sbatch_filename = job_dir + '/' + job_name + '.sbatch'
     sbatch_file = open(sbatch_filename, 'w')
