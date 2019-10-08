@@ -29,7 +29,7 @@ def newSbatch(base_dir, test_dir, job_name): #order input variables by use order
     sbatch_file.close()
     return job_dir, sbatch_filename
 
-base_dir = '/project2/moyer/old_project/haynes/climt_runs/'
-test_dir = 'varying_solar/' # Needs to end in an '/'
-job_name = 'i270_200solar'
-newSbatch(base_dir, test_dir, job_name)
+# base_dir = '/project2/moyer/old_project/haynes/climt_runs/'
+# test_dir = 'varying_solar/' # Needs to end in an '/'
+# job_name = 'i270_200solar'
+# newSbatch(base_dir, test_dir, job_name)
