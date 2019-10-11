@@ -1,8 +1,8 @@
 ### UNIQUE VALUES ###
-irradiance = 1036
-#insol = 320
+irradiance = 922
+#insol = 285
 co2_ppm = 270
-nc_name = 'i270_320solar.nc'
+nc_name = 'i270_285solar.nc'
 #####################
 from sympl import (
     DataArray, AdamsBashforth, get_constant, set_constant, NetCDFMonitor, PlotFunctionMonitor

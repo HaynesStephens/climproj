@@ -64,7 +64,8 @@ state['eastward_wind'].values[0]                            = 5.0
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10**(-6)
 
 ### RESTART VALUES GIVEN FROM THE CONTROL RUN
-restart_file_name = '/home/haynes13/climt_files/control/i270_290solar/i270_290solar_restart_state.pkl'
+restart_file_name = '/project2/moyer/old_project/haynes/climt_files/' \
+                    'control/i270_290solar/i270_290solar_restart_state.pkl'
 restart_file = open(restart_file_name, 'rb')
 restart_state = pickle.load(restart_file)
 
@@ -111,4 +112,5 @@ for i in range(run_length):
 
     state.update(new_state)
     state['time'] += timestep
-    state['eastward_wind'].values[0] = 5.0 # default value of old climt turbulence that Shanshan didn't seem to change
+    state['eastward_wind'].values[0] = 5.0
+    #^ default value of old climt turbulence that Shanshan didn't seem to change
