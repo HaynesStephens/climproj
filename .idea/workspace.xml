@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data_scripts/EQ.vary.solar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pullWindowValues.varying.solar.py" beforeDir="false" afterPath="$PROJECT_DIR$/pullWindowValues.varying.solar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writeCSV.varying.solar.py" beforeDir="false" afterPath="$PROJECT_DIR$/writeCSV.varying.solar.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/writeCSV.varying.solar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="90" />
             </state>
           </provider>
         </entry>
@@ -38,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pullWindowValues.varying.solar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            <state relative-caret-position="272">
+              <caret line="16" column="64" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -48,7 +47,19 @@
         <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.anomalies.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+              <caret line="8" column="27" lean-forward="true" selection-end-line="33" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data_scripts/EQ.vary.solar.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -67,7 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getEQ</find>
       <find>getEQVal</find>
       <find>printWind</find>
       <find>getTimeIndices</find>
@@ -97,6 +107,7 @@
       <find>co2</find>
       <find>co2_</find>
       <find>haynes</find>
+      <find>control_df</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -105,7 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/climt_scripts/test_a1_b2_c1.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a1_b1_c2.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a1_b2_c2.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a2_b1_c2.py" />
@@ -156,6 +166,7 @@
         <option value="$PROJECT_DIR$/pullWindowValues.varying_co2.py" />
         <option value="$PROJECT_DIR$/pullWindowValues.varying.solar.py" />
         <option value="$PROJECT_DIR$/writeCSV.varying.solar.py" />
+        <option value="$PROJECT_DIR$/data_scripts/EQ.vary.solar.py" />
       </list>
     </option>
   </component>
@@ -304,14 +315,7 @@
       <workItem from="1570557503773" duration="3146000" />
       <workItem from="1570629189624" duration="545000" />
       <workItem from="1570731237105" duration="1837000" />
-      <workItem from="1571062229551" duration="362000" />
-    </task>
-    <task id="LOCAL-00558" summary="writing csv for vary_co2 files">
-      <created>1569941576352</created>
-      <option name="number" value="00558" />
-      <option name="presentableId" value="LOCAL-00558" />
-      <option name="project" value="LOCAL" />
-      <updated>1569941576352</updated>
+      <workItem from="1571062229551" duration="908000" />
     </task>
     <task id="LOCAL-00559" summary="writing csv for vary_co2 files">
       <created>1569941589023</created>
@@ -649,11 +653,18 @@
       <option name="project" value="LOCAL" />
       <updated>1570808542153</updated>
     </task>
-    <option name="localTasksCounter" value="607" />
+    <task id="LOCAL-00607" summary="varying solar csvs">
+      <created>1571063167257</created>
+      <option name="number" value="00607" />
+      <option name="presentableId" value="LOCAL-00607" />
+      <option name="project" value="LOCAL" />
+      <updated>1571063167258</updated>
+    </task>
+    <option name="localTasksCounter" value="608" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158426000" />
+    <option name="totallyTimeSpent" value="158972000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -746,13 +757,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="varying solar csvs" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/climt_scripts/rrtmg_emanuel_i270_290solar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/test_a1_b1_c2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1683">
@@ -1137,23 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.anomalies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pullWindowValues.varying.solar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/varying.solar.write_script.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1164,10 +1151,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.anomalies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="27" lean-forward="true" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pullWindowValues.varying.solar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="64" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/writeCSV.varying.solar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_scripts/EQ.vary.solar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
