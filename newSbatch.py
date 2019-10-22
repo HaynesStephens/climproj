@@ -33,3 +33,4 @@ base_dir = '/project2/moyer/old_project/haynes/climt_runs/'
 test_dir = 'vary_co2_cst_q_rad/' # Needs to end in an '/'
 job_name = 'i270_320solar_q_rad_cst'
 newSbatch(base_dir, test_dir, job_name)
+print(base_dir+test_dir+job_name)
