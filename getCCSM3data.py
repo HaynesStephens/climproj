@@ -70,7 +70,7 @@ def EQAvgMaps():
     avg_var_dicts = [EQavg(var_dict, var) for var_dict,var in zip(var_dicts, control_vars)]
     avg_var_maps = [avg_var_dict[var+'_avg'] for avg_var_dict,var in zip(avg_var_dicts, control_vars)]
     save_path = '/project2/moyer/old_project/haynes/ccsm3_maps/'
-    save_filepaths = ['avgMap_' + save_path + name + '.csv' for name in control_filenames]
+    save_filepaths = ['avgMap.' + save_path + name + '.csv' for name in control_filenames]
     save_avg_var_maps = [np.savetxt(name, data, delimiter=',') for name,data in zip(save_filepaths, avg_var_maps)]
     print_names = [print(name) for name in save_filepaths]
     return avg_var_maps
