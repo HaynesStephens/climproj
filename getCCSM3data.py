@@ -26,7 +26,6 @@ def EQavg(var_dict, var):
 
     avg_since_day = time_last - days_back
     avg_index = np.where(time_array > avg_since_day)
-    print(avg_index)
 
     avg_var_dict = copy.deepcopy(var_dict)
     avg_var_dict['time'] = time_array[avg_index]
@@ -57,10 +56,12 @@ def getNCdict(filepath, var):
 rls_dict = getNCdict(rls_file, 'rlutcs')
 rls_avg_dict = EQavg(rls_dict, 'rlutcs')
 rls_avg = rls_avg_dict['rlutcs'+'_avg']
+print(rls_avg.shape)
 
 ts_dict = getNCdict(ts_file, 'ts')
 ts_avg_dict = EQavg(ts_dict, 'ts')
 ts_avg = ts_avg_dict['ts'+'_avg']
+print(ts_avg.shape)
 
 ts_flat = ts_avg.flatten()
 rls_flat = rls_avg.flatten()
