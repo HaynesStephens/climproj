@@ -51,7 +51,10 @@ def ShanshanEQFig4():
         return var_dict
 
     rls_dict = getNCdict(rls_file, 'rls')
+    rls_avg_dict = EQavg(rls_dict, 'rls')
+
     ts_dict = getNCdict(ts_file, 'ts')
+    ts_avg_dict = EQavg(ts_dict, 'ts')
 
 
 
