@@ -18,17 +18,17 @@ def EQavg(var_dict, var):
     :param var_dict:
     :return: a dictionary of the average values
     """
-    time = var_dict['time'].copy()
-    var = var_dict[var].copy()
+    time_array = var_dict['time'].copy()
+    var_array = var_dict[var].copy()
     years_back = 10
     days_back = years_back * 365.25
-    time_last = time[-1]
+    time_last = time_array[-1]
     avg_since_day = time_last - days_back
-    avg_index = np.where(time > avg_since_day)
+    avg_index = np.where(time_array > avg_since_day)
     print(avg_index)
     avg_var_dict = copy.deepcopy(var_dict)
-    avg_var_dict['time'] = time[avg_index]
-    avg_var_dict[var] = var[avg_index]
+    avg_var_dict['time'] = time_array[avg_index]
+    avg_var_dict[var] = var_array[avg_index]
     return avg_var_dict
 
 # def ShanshanEQFig4():
