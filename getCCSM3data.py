@@ -42,21 +42,21 @@ def EQavg(var_dict, var):
 def EQAvgMaps():
     base_path = '/project2/moyer/old_project/climate_data/RDCEP_CCSM3/'
     control_filenames = ['hfss_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                     'pr1_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                     'pr2_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                     'psl_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                     'rls_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                     'rlut_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                     'rlutcs_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                     'rsds_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                     'rsdt_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                     'rsus1_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                     'rsut1_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                     'rsutcs1_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                     'tas_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                     'ts_Amon_CCSM3_II_Control_LongRunMIP_3805']
+                         'pr1_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                         'pr2_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                         'psl_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                         'rls_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                         'rlut_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                         'rlutcs_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                         'rsds_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                         'rsdt_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                         'rsus1_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                         'rsut1_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                         'rsutcs1_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                         'tas_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                         'ts_Amon_CCSM3_II_Control_LongRunMIP_3805']
 
-    control_filepaths = [base_path + i for i in control_filenames]
+    control_filepaths = [base_path + name for name in control_filenames]
     control_vars = [name.split('_')[0] for name in control_filenames]
 
     def getNCdict(filepath, var):
@@ -67,7 +67,12 @@ def EQAvgMaps():
         return var_dict
 
     var_dicts = [getNCdict(filepath, var) for filepath,var in zip(control_filepaths,control_vars)]
-    print(var_dicts)
+    avg_var_dicts = [EQavg(var_dict, var) for var_dict,var in zip(var_dicts, control_vars)]
+    avg_var_maps = [avg_var_dict[var+'_avg'] for avg_var_dict,var in zip(avg_var_dicts, control_vars)]
+    save_path = '/project2/moyer/old_project/haynes/ccsm3_maps/'
+    save_filepaths = [save_path + name + '.csv' for name in control_filenames]
+    save_avg_var_maps = [np.savetxt(name, data, delimiter=',') for name,data in zip(save_filepaths, avg_var_maps)]
+    return avg_var_maps
 
 
 EQAvgMaps()
