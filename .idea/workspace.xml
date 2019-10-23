@@ -58,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/getCCSM3data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+            <state relative-caret-position="736">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -78,7 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>printWind</find>
       <find>getTimeIndices</find>
       <find>getTimeArray</find>
       <find>data</find>
@@ -108,6 +107,7 @@
       <find>haynes</find>
       <find>control_df</find>
       <find>290</find>
+      <find>time</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -312,28 +312,7 @@
       <workItem from="1570731237105" duration="1837000" />
       <workItem from="1571062229551" duration="1110000" />
       <workItem from="1571759107940" duration="4359000" />
-      <workItem from="1571839802525" duration="1842000" />
-    </task>
-    <task id="LOCAL-00566" summary="writing csv for vary_co2 files">
-      <created>1569943677591</created>
-      <option name="number" value="00566" />
-      <option name="presentableId" value="LOCAL-00566" />
-      <option name="project" value="LOCAL" />
-      <updated>1569943677591</updated>
-    </task>
-    <task id="LOCAL-00567" summary="writing csv for vary_co2 files">
-      <created>1569944368505</created>
-      <option name="number" value="00567" />
-      <option name="presentableId" value="LOCAL-00567" />
-      <option name="project" value="LOCAL" />
-      <updated>1569944368506</updated>
-    </task>
-    <task id="LOCAL-00568" summary="writing csv for vary_co2 files">
-      <created>1569944846273</created>
-      <option name="number" value="00568" />
-      <option name="presentableId" value="LOCAL-00568" />
-      <option name="project" value="LOCAL" />
-      <updated>1569944846273</updated>
+      <workItem from="1571839802525" duration="2416000" />
     </task>
     <task id="LOCAL-00569" summary="writing csv for vary_co2 files">
       <created>1569944897383</created>
@@ -657,11 +636,32 @@
       <option name="project" value="LOCAL" />
       <updated>1571842219860</updated>
     </task>
-    <option name="localTasksCounter" value="615" />
+    <task id="LOCAL-00615" summary="fixed q runs">
+      <created>1571842309431</created>
+      <option name="number" value="00615" />
+      <option name="presentableId" value="LOCAL-00615" />
+      <option name="project" value="LOCAL" />
+      <updated>1571842309431</updated>
+    </task>
+    <task id="LOCAL-00616" summary="fixed q runs">
+      <created>1571842436125</created>
+      <option name="number" value="00616" />
+      <option name="presentableId" value="LOCAL-00616" />
+      <option name="project" value="LOCAL" />
+      <updated>1571842436125</updated>
+    </task>
+    <task id="LOCAL-00617" summary="fixed q runs">
+      <created>1571842447190</created>
+      <option name="number" value="00617" />
+      <option name="presentableId" value="LOCAL-00617" />
+      <option name="project" value="LOCAL" />
+      <updated>1571842447190</updated>
+    </task>
+    <option name="localTasksCounter" value="618" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165375000" />
+    <option name="totallyTimeSpent" value="165949000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1168,8 +1168,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/getCCSM3data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        <state relative-caret-position="736">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

@@ -31,6 +31,7 @@ def EQavg(var_dict, var):
     avg_var_dict = copy.deepcopy(var_dict)
     avg_var_dict['time'] = time_array[avg_index]
     avg_var_dict[var] = var_array[avg_index]
+    avg_var_dict[var+'_avg_map'] = np.mean(avg_var_dict[var].copy(), axis=0)
     return avg_var_dict
 
 # def ShanshanEQFig4():
