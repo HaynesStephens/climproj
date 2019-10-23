@@ -71,10 +71,10 @@ rls_final = rls_flat[ts_above_285]
 import matplotlib.pyplot as plt
 plt.figure(figsize=(5,5))
 plt.scatter(ts_final, rls_final, c='k', s=4)
-plt.xlim(284, 304)
-plt.xticks(np.arange(284,305,4))
-plt.ylim(55, 125)
-plt.yticks(np.arange(60,121,20))
+# plt.xlim(284, 304)
+# plt.xticks(np.arange(284,305,4))
+# plt.ylim(55, 125)
+# plt.yticks(np.arange(60,121,20))
 plt.show()
 
 
