@@ -31,7 +31,7 @@ def EQavg(var_dict, var):
     avg_var_dict = copy.deepcopy(var_dict)
     avg_var_dict['time'] = time_array[avg_index]
     avg_var_dict[var] = var_array[avg_index]
-    avg_var_dict[var+'_avg_map'] = np.mean(avg_var_dict[var].copy(), axis=0)
+    avg_var_dict[var+'_avg'] = np.mean(avg_var_dict[var].copy(), axis=0)
     return avg_var_dict
 
 # def ShanshanEQFig4():
@@ -56,9 +56,22 @@ def getNCdict(filepath, var):
 
 rls_dict = getNCdict(rls_file, 'rls')
 rls_avg_dict = EQavg(rls_dict, 'rls')
+rls_avg = rls_avg_dict['rls_avg']
 
 ts_dict = getNCdict(ts_file, 'ts')
 ts_avg_dict = EQavg(ts_dict, 'ts')
+ts_avg = ts_avg_dict['ts_avg']
+
+ts_above_285 = np.where(ts_avg >= 285.0)
+ts_final = ts_avg[ts_above_285]
+rls_final = rls_avg[ts_above_285]
+
+import matplotlib.pyplot as plt
+plt.scatter(ts_final, rls_final, c='k')
+plt.xlim(284, 304)
+plt.ylim(55, 125)
+plt.show()
+
 
 
 
