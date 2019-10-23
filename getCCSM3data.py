@@ -35,7 +35,7 @@ def loadLatLonGrid():
     np.savetxt(save_path + 'Grid.lat.csv', lat, delimiter=',')
     np.savetxt(save_path + 'Grid.lon.csv', lon, delimiter=',')
 
-
+loadLatLonGrid()
 
 def openNC(filepath):
     """
