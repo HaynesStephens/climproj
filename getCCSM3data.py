@@ -62,9 +62,11 @@ ts_dict = getNCdict(ts_file, 'ts')
 ts_avg_dict = EQavg(ts_dict, 'ts')
 ts_avg = ts_avg_dict['ts_avg']
 
-ts_above_285 = np.where(ts_avg >= 285.0)
-ts_final = ts_avg[ts_above_285]
-rls_final = rls_avg[ts_above_285]
+ts_flat = ts_avg.flatten()
+rls_flat = rls_avg.flatten()
+ts_above_285 = np.where(ts_flat >= 285.0)
+ts_final = ts_flat[ts_above_285]
+rls_final = rls_flat[ts_above_285]
 
 import matplotlib.pyplot as plt
 plt.figure(figsize=(5,5))
