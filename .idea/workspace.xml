@@ -46,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/writeCSV.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="21" selection-start-line="21" selection-end-line="28" selection-end-column="46" />
+            <state relative-caret-position="304">
+              <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="45" />
               <folding>
                 <element signature="e#223#241#0" expanded="true" />
               </folding>
@@ -58,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/getCCSM3data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="69" column="19" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+            <state relative-caret-position="699">
+              <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -78,8 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getTimeArray</find>
-      <find>data</find>
       <find>nc</find>
       <find>nc['</find>
       <find>shape</find>
@@ -108,6 +106,8 @@
       <find>290</find>
       <find>time</find>
       <find>print(rls_avg.shape)</find>
+      <find>np.save</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -312,21 +312,7 @@
       <workItem from="1570731237105" duration="1837000" />
       <workItem from="1571062229551" duration="1110000" />
       <workItem from="1571759107940" duration="4359000" />
-      <workItem from="1571839802525" duration="4874000" />
-    </task>
-    <task id="LOCAL-00583" summary="writing csv for vary_co2 files">
-      <created>1569953108071</created>
-      <option name="number" value="00583" />
-      <option name="presentableId" value="LOCAL-00583" />
-      <option name="project" value="LOCAL" />
-      <updated>1569953108071</updated>
-    </task>
-    <task id="LOCAL-00584" summary="writing csv for vary_co2 files">
-      <created>1569953137017</created>
-      <option name="number" value="00584" />
-      <option name="presentableId" value="LOCAL-00584" />
-      <option name="project" value="LOCAL" />
-      <updated>1569953137017</updated>
+      <workItem from="1571839802525" duration="5610000" />
     </task>
     <task id="LOCAL-00585" summary="writing csv for vary_co2 files">
       <created>1569953557714</created>
@@ -657,11 +643,25 @@
       <option name="project" value="LOCAL" />
       <updated>1571851270527</updated>
     </task>
-    <option name="localTasksCounter" value="632" />
+    <task id="LOCAL-00632" summary="fixed q runs">
+      <created>1571851642929</created>
+      <option name="number" value="00632" />
+      <option name="presentableId" value="LOCAL-00632" />
+      <option name="project" value="LOCAL" />
+      <updated>1571851642929</updated>
+    </task>
+    <task id="LOCAL-00633" summary="fixed q runs">
+      <created>1571855483708</created>
+      <option name="number" value="00633" />
+      <option name="presentableId" value="LOCAL-00633" />
+      <option name="project" value="LOCAL" />
+      <updated>1571855483708</updated>
+    </task>
+    <option name="localTasksCounter" value="634" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168407000" />
+    <option name="totallyTimeSpent" value="169143000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1158,8 +1158,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/writeCSV.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="21" selection-start-line="21" selection-end-line="28" selection-end-column="46" />
+        <state relative-caret-position="304">
+          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="45" />
           <folding>
             <element signature="e#223#241#0" expanded="true" />
           </folding>
@@ -1168,8 +1168,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/getCCSM3data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="69" column="19" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+        <state relative-caret-position="699">
+          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

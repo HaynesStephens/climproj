@@ -31,10 +31,10 @@ def EQavg(var_dict, var):
 
     avg_var_dict = copy.deepcopy(var_dict)
     avg_var_dict['time'] = time_array[avg_index]
-    print(avg_var_dict['time'])
-    print(avg_var_dict['time'].shape)
+    print('AVERAGING: ', var)
+    print('TIME SHAPE: ', avg_var_dict['time'].shape)
     avg_var_dict[var] = var_array[avg_index]
-    print(avg_var_dict[var].shape)
+    print('VAR SHAPE: ', avg_var_dict[var].shape)
     avg_var_dict[var+'_avg'] = np.mean(avg_var_dict[var].copy(), axis=0)
     return avg_var_dict
 
@@ -72,6 +72,7 @@ def EQAvgMaps():
     save_path = '/project2/moyer/old_project/haynes/ccsm3_maps/'
     save_filepaths = [save_path + name + '.csv' for name in control_filenames]
     save_avg_var_maps = [np.savetxt(name, data, delimiter=',') for name,data in zip(save_filepaths, avg_var_maps)]
+    print_names = [print(name) for name in save_filepaths]
     return avg_var_maps
 
 
