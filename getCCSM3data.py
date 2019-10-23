@@ -105,6 +105,8 @@ def ShanshanEQFig4():
     plt.yticks(np.arange(60,121,20))
     plt.show()
 
+ShanshanEQFig4()
+
 
 
 
