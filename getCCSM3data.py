@@ -41,20 +41,21 @@ def EQavg(var_dict, var):
 
 def EQAvgMaps():
     base_path = '/project2/moyer/old_project/climate_data/RDCEP_CCSM3/'
-    control_filenames = ['hfss_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                         'pr1_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                         'pr2_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                         'psl_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                         'rls_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                         'rlut_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                         'rlutcs_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                         'rsds_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                         'rsdt_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                         'rsus1_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                         'rsut1_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                         'rsutcs1_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                         'tas_Amon_CCSM3_II_Control_LongRunMIP_3805',
-                         'ts_Amon_CCSM3_II_Control_LongRunMIP_3805']
+    control_filenames = ['hfls_Amon_CCSM3_II_Control_LongRunMIP_3805']#,
+                        # 'hfss_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        # 'pr1_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        # 'pr2_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        # 'psl_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        # 'rls_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        # 'rlut_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        # 'rlutcs_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        # 'rsds_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        # 'rsdt_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        # 'rsus1_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        # 'rsut1_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        # 'rsutcs1_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        # 'tas_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        # 'ts_Amon_CCSM3_II_Control_LongRunMIP_3805']
 
     control_filepaths = [base_path + name for name in control_filenames]
     control_vars = [name.split('_')[0] for name in control_filenames]
