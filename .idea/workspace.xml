@@ -59,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/getCCSM3data.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="665">
-              <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+              <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -312,21 +312,7 @@
       <workItem from="1570731237105" duration="1837000" />
       <workItem from="1571062229551" duration="1110000" />
       <workItem from="1571759107940" duration="4359000" />
-      <workItem from="1571839802525" duration="5721000" />
-    </task>
-    <task id="LOCAL-00587" summary="writing csv for vary_co2 files">
-      <created>1569953886699</created>
-      <option name="number" value="00587" />
-      <option name="presentableId" value="LOCAL-00587" />
-      <option name="project" value="LOCAL" />
-      <updated>1569953886699</updated>
-    </task>
-    <task id="LOCAL-00588" summary="writing csv for vary_co2 files">
-      <created>1570026278796</created>
-      <option name="number" value="00588" />
-      <option name="presentableId" value="LOCAL-00588" />
-      <option name="project" value="LOCAL" />
-      <updated>1570026278797</updated>
+      <workItem from="1571839802525" duration="5912000" />
     </task>
     <task id="LOCAL-00589" summary="writing csv for vary_co2 files">
       <created>1570036203537</created>
@@ -657,11 +643,25 @@
       <option name="project" value="LOCAL" />
       <updated>1571855775205</updated>
     </task>
-    <option name="localTasksCounter" value="636" />
+    <task id="LOCAL-00636" summary="fixed q runs">
+      <created>1571855790444</created>
+      <option name="number" value="00636" />
+      <option name="presentableId" value="LOCAL-00636" />
+      <option name="project" value="LOCAL" />
+      <updated>1571855790444</updated>
+    </task>
+    <task id="LOCAL-00637" summary="fixed q runs">
+      <created>1571855904846</created>
+      <option name="number" value="00637" />
+      <option name="presentableId" value="LOCAL-00637" />
+      <option name="project" value="LOCAL" />
+      <updated>1571855904846</updated>
+    </task>
+    <option name="localTasksCounter" value="638" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169254000" />
+    <option name="totallyTimeSpent" value="169445000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1169,7 +1169,7 @@
     <entry file="file://$PROJECT_DIR$/getCCSM3data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
-          <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+          <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
