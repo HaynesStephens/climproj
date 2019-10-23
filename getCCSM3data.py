@@ -53,9 +53,9 @@ def getNCdict(filepath, var):
     var_dict['time'] = var_nc['time'][:]
     return var_dict
 
-rls_dict = getNCdict(rls_file, 'rlutcs')
-rls_avg_dict = EQavg(rls_dict, 'rlutcs')
-rls_avg = rls_avg_dict['rlutcs'+'_avg']
+rls_dict = getNCdict(rls_file, 'rls')
+rls_avg_dict = EQavg(rls_dict, 'rls')
+rls_avg = rls_avg_dict['rls'+'_avg']
 print(rls_avg.shape)
 
 ts_dict = getNCdict(ts_file, 'ts')
