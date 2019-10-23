@@ -55,9 +55,22 @@ def EQAvgMaps():
                      'rsutcs1_Amon_CCSM3_II_Control_LongRunMIP_3805',
                      'tas_Amon_CCSM3_II_Control_LongRunMIP_3805',
                      'ts_Amon_CCSM3_II_Control_LongRunMIP_3805']
+
     control_filepaths = [base_path + i for i in control_filenames]
+    control_vars = [name.split('_')[0] for name in control_filenames]
+
+    def getNCdict(filepath, var):
+        var_dict = {}
+        var_nc = openNC(filepath)
+        var_dict[var] = var_nc[var][:]
+        var_dict['time'] = var_nc['time'][:]
+        return var_dict
+
+    var_dicts = [getNCdict(filepath, var) for filepath,var in zip(control_filepaths,control_vars)]
+    print(var_dicts)
 
 
+EQAvgMaps()
 
 
 def ShanshanEQFig4():
@@ -104,9 +117,6 @@ def ShanshanEQFig4():
     plt.ylim(55, 125)
     plt.yticks(np.arange(60,121,20))
     plt.show()
-
-ShanshanEQFig4()
-
 
 
 
