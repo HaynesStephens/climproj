@@ -42,7 +42,7 @@ Need to average over last 10 years.
 Net surface LW for both total and T>285 batches
 """
 base_path = '/project2/moyer/old_project/climate_data/RDCEP_CCSM3/'
-rls_file = base_path + 'rlutcs_Amon_CCSM3_II_Control_LongRunMIP_3805'
+rls_file = base_path + 'rls_Amon_CCSM3_II_Control_LongRunMIP_3805'
 ts_file = base_path + 'ts_Amon_CCSM3_II_Control_LongRunMIP_3805'
 
 def getNCdict(filepath, var):
