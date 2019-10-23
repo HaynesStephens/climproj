@@ -43,7 +43,7 @@ Need to average over last 10 years.
 Net surface LW for both total and T>285 batches
 """
 base_path = '/project2/moyer/old_project/climate_data/RDCEP_CCSM3/'
-rls_file = base_path + 'rls_Amon_CCSM3_II_Control_LongRunMIP_3805'
+rls_file = base_path + 'rlutcs_Amon_CCSM3_II_Control_LongRunMIP_3805'
 ts_file = base_path + 'ts_Amon_CCSM3_II_Control_LongRunMIP_3805'
 
 def getNCdict(filepath, var):
@@ -54,9 +54,9 @@ def getNCdict(filepath, var):
     var_dict['time'] = var_nc['time'][:]
     return var_dict
 
-rls_dict = getNCdict(rls_file, 'rls')
-rls_avg_dict = EQavg(rls_dict, 'rls')
-rls_avg = rls_avg_dict['rls_avg']
+rls_dict = getNCdict(rls_file, 'rlutcs')
+rls_avg_dict = EQavg(rls_dict, 'rlutcs')
+rls_avg = rls_avg_dict['rlutcs'+'avg']
 
 ts_dict = getNCdict(ts_file, 'ts')
 ts_avg_dict = EQavg(ts_dict, 'ts')
