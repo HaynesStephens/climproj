@@ -56,11 +56,11 @@ def getNCdict(filepath, var):
 
 rls_dict = getNCdict(rls_file, 'rlutcs')
 rls_avg_dict = EQavg(rls_dict, 'rlutcs')
-rls_avg = rls_avg_dict['rlutcs'+'avg']
+rls_avg = rls_avg_dict['rlutcs'+'_avg']
 
 ts_dict = getNCdict(ts_file, 'ts')
 ts_avg_dict = EQavg(ts_dict, 'ts')
-ts_avg = ts_avg_dict['ts_avg']
+ts_avg = ts_avg_dict['ts'+'_avg']
 
 ts_flat = ts_avg.flatten()
 rls_flat = rls_avg.flatten()
