@@ -156,8 +156,8 @@ test_dir = 'varying_co2_cst_q_rad/' # Needs to end in an '/'
 print('TEST:', test_dir)
 
 ppm = 270
-insol = 290
-job_name = 'i{0}_{1}solar'.format(ppm, insol)
+insol = 320
+job_name = 'i{0}_{1}solar_cst_q_rad'.format(ppm, insol)
 print('JOB:', job_name)
 
 file_path = '{0}{1}{2}/{2}'.format(base_path, test_dir, job_name)

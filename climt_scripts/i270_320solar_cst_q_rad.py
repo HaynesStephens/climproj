@@ -2,7 +2,7 @@
 irradiance = 1036
 #insol = 320
 co2_ppm = 270
-nc_name = 'i270_320solar_q_rad_cst.nc'
+nc_name = 'i270_320solar_cst_q_rad.nc'
 #####################
 import copy
 from sympl import (
