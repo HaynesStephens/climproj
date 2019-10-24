@@ -149,10 +149,10 @@ def writeEQTable1Values(file_path, start_time, end_time, extras=None):
     return df
 
 
-""" INDIVIDUAL EXECUTION.
+### INDIVIDUAL EXECUTION. ###
 # Parameters
-base_path = '/Users/haynesstephens1/uchi/research/climproj/climt_files/'
-test_dir = 'control/' # Needs to end in an '/'
+base_path = '/project2/moyer/old_project/haynes/climt_files/'
+test_dir = 'varying_co2_cst_q_rad/' # Needs to end in an '/'
 print('TEST:', test_dir)
 
 ppm = 270
@@ -169,4 +169,3 @@ extras = {'ppm':ppm, 'insol':insol}
 
 # Procedures
 df = writeEQTable1Values(file_path, start_time, end_time, extras=extras)
-"""
