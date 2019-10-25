@@ -24,7 +24,7 @@ def createRun(co2_ppm, irradiance, insol):
     base_dir = '/project2/moyer/old_project/haynes/climt_runs'
     test_dir = 'varying_co2_cst_q_rad/' # Needs to end in an '/'
     job_dir, sbatch_filename = newSbatch.newSbatch(base_dir, test_dir, job_name)
-    return job_dir, sbatch_filename fajlkj
+    return job_dir, sbatch_filename
 
 # TEMPLATE, ENTIRE LIST:
 co2_ppm_list = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
