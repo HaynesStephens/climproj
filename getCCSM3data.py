@@ -89,9 +89,40 @@ def EQAvgMaps():
                         'rsutcs1_Amon_CCSM3_II_Control_LongRunMIP_3805',
                         'tas_Amon_CCSM3_II_Control_LongRunMIP_3805',
                         'ts_Amon_CCSM3_II_Control_LongRunMIP_3805']
+    abrupt700_filenames = ['hfls_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
+                        'hfss_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
+                        'pr1_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
+                        'pr2_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
+                        'psl_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
+                        'rls_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
+                        'rlut_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
+                        'rlutcs_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
+                        'rsds_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
+                        'rsdt_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
+                        'rsus1_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
+                        'rsut1_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
+                        'rsutcs1_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
+                        'tas_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
+                        'ts_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701']
+    abrupt1400_filenames = ['hfls_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        'hfss_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        'pr1_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        'pr2_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        'psl_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        'rls_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        'rlut_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        'rlutcs_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        'rsds_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        'rsdt_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        'rsus1_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        'rsut1_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        'rsutcs1_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        'tas_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                        'ts_Amon_CCSM3_II_Control_LongRunMIP_3805']
 
-    control_filepaths = [base_path + name for name in control_filenames]
-    control_vars = [name.split('_')[0] for name in control_filenames]
+    filenames = control_filenames
+    filepaths = [base_path + name for name in filenames]
+    vars = [name.split('_')[0] for name in filenames]
 
     def getNCdict(filepath, var):
         var_dict = {}
@@ -100,14 +131,17 @@ def EQAvgMaps():
         var_dict['time'] = var_nc['time'][:]
         return var_dict
 
-    var_dicts = [getNCdict(filepath, var) for filepath,var in zip(control_filepaths,control_vars)]
-    avg_var_dicts = [EQavg(var_dict, var) for var_dict,var in zip(var_dicts, control_vars)]
-    avg_var_maps = [avg_var_dict[var+'_avg'] for avg_var_dict,var in zip(avg_var_dicts, control_vars)]
+    var_dicts = [getNCdict(filepath, var) for filepath,var in zip(filepaths,vars)]
+    avg_var_dicts = [EQavg(var_dict, var) for var_dict,var in zip(var_dicts, vars)]
+    avg_var_maps = [avg_var_dict[var+'_avg'] for avg_var_dict,var in zip(avg_var_dicts, vars)]
     save_path = '/project2/moyer/old_project/haynes/ccsm3_maps/'
-    save_filepaths = [save_path + name + '.avgMap.csv' for name in control_filenames]
+    save_filepaths = [save_path + name + '.avgMap.csv' for name in filenames]
     save_avg_var_maps = [np.savetxt(name, data, delimiter=',') for name,data in zip(save_filepaths, avg_var_maps)]
     print_names = [print(name) for name in save_filepaths]
     return avg_var_maps
+
+
+
 
 
 def ShanshanEQFig4():
