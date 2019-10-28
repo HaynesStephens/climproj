@@ -9,7 +9,7 @@ start_time = np.float(start_day * (24 * 60 * 60))
 end_time = np.float(end_day * (24 * 60 * 60))
 
 for i in range(len(co2_ppm_list)):
-    co2_ppm = co2_ppm_list[i]
+    co2_ppm = co2_ppm_list[i] s
 
     for j in range(len(insol_list)):
         insol = insol_list[j]
