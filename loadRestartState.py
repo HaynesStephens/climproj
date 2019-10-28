@@ -1,9 +1,9 @@
 import numpy as np
 import pickle
 
-base_path = '/home/haynes13/climt_files/'
-restart_dir = 'control/'
-job_name = 'i270_290solar'
+base_path = '/project2/moyer/old_project/haynes/climt_files/'
+restart_dir = 'varying_co2/320solar/'
+job_name = 'i270_320solar'
 restart_file = '{0}{1}{2}/{2}'.format(base_path, restart_dir, job_name)
 
 
