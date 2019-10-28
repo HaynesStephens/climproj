@@ -59,8 +59,8 @@ state['eastward_wind'].values[0]                            = 5.0
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10**(-6)
 
 ### RESTART VALUES GIVEN FROM THE CONTROL RUN
-restart_file_name = '/project2/moyer/old_project/haynes/climt_files/control/' \
-                    'i270_290solar/i270_290solar_restart_state.pkl'
+restart_file_name = '/project2/moyer/old_project/haynes/climt_files/varying_co2/320solar/' \
+                    'i270_320solar/i270_320solar_restart_state.pkl'
 restart_file = open(restart_file_name, 'rb')
 restart_state = pickle.load(restart_file)
 control_q = restart_state['specific_humidity'].copy()
@@ -98,6 +98,7 @@ for i in range(run_length):
     rad_state_fixed_q['specific_humidity'].values[:] = control_q.copy()
     diagnostics, state = time_stepper_rad(rad_state_fixed_q, timestep)
     state['specific_humidity'].values[:] = phys_unfixed_q.copy()
+
     state.update(diagnostics)
 
     diagnostics, state = time_stepper_phys(state, timestep)

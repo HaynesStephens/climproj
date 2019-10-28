@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pullWindowValues.varying.co2.cst_q_rad.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/plot_time_series-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/plot_time_series-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i100_320solar_cst_q_rad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i1080_320solar_cst_q_rad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i10_320solar_cst_q_rad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i1215_320solar_cst_q_rad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i150_320solar_cst_q_rad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i190_320solar_cst_q_rad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i20_320solar_cst_q_rad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i220_320solar_cst_q_rad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i270_320solar_cst_q_rad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i2_320solar_cst_q_rad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i405_320solar_cst_q_rad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i50_320solar_cst_q_rad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i540_320solar_cst_q_rad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i5_320solar_cst_q_rad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i675_320solar_cst_q_rad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/i756_320solar_cst_q_rad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/varying.co2.cst_q_rad.template.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/varying.co2.cst_q_rad.template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_time_series.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/plot_time_series.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,10 +44,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/varying.co2.cst_q_rad.template.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="726">
+              <caret line="98" column="70" selection-start-line="98" selection-start-column="70" selection-end-line="98" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pullWindowValues.varying.co2.cst_q_rad.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+            <state relative-caret-position="187">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -37,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.cst_q_rad.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -138,7 +165,6 @@
         <option value="$PROJECT_DIR$/getCCSM3data.py" />
         <option value="$PROJECT_DIR$/pullWindowValues.py" />
         <option value="$PROJECT_DIR$/writeCSV.py" />
-        <option value="$PROJECT_DIR$/climt_scripts/varying.co2.cst_q_rad.template.py" />
         <option value="$PROJECT_DIR$/loadRestartState.py" />
         <option value="$PROJECT_DIR$/writeCSV.varying.co2.cst_q_rad.py" />
         <option value="$PROJECT_DIR$/varying.co2.cst_q_rad.write_script.py" />
@@ -146,6 +172,7 @@
         <option value="$PROJECT_DIR$/data_scripts/EQ.varyco2.cst_q_rad.py" />
         <option value="$PROJECT_DIR$/pullWindowValues.varying.co2.py" />
         <option value="$PROJECT_DIR$/pullWindowValues.varying.co2.cst_q_rad.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/varying.co2.cst_q_rad.template.py" />
       </list>
     </option>
   </component>
@@ -170,12 +197,7 @@
             <path>
               <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
               <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="data_calculated" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="data_scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -302,35 +324,7 @@
       <workItem from="1571062229551" duration="1110000" />
       <workItem from="1571759107940" duration="4359000" />
       <workItem from="1571839802525" duration="9567000" />
-      <workItem from="1572272018405" duration="2241000" />
-    </task>
-    <task id="LOCAL-00604" summary="varying solar csvs">
-      <created>1570808268274</created>
-      <option name="number" value="00604" />
-      <option name="presentableId" value="LOCAL-00604" />
-      <option name="project" value="LOCAL" />
-      <updated>1570808268274</updated>
-    </task>
-    <task id="LOCAL-00605" summary="varying solar csvs">
-      <created>1570808344800</created>
-      <option name="number" value="00605" />
-      <option name="presentableId" value="LOCAL-00605" />
-      <option name="project" value="LOCAL" />
-      <updated>1570808344800</updated>
-    </task>
-    <task id="LOCAL-00606" summary="varying solar csvs">
-      <created>1570808542153</created>
-      <option name="number" value="00606" />
-      <option name="presentableId" value="LOCAL-00606" />
-      <option name="project" value="LOCAL" />
-      <updated>1570808542153</updated>
-    </task>
-    <task id="LOCAL-00607" summary="varying solar csvs">
-      <created>1571063167257</created>
-      <option name="number" value="00607" />
-      <option name="presentableId" value="LOCAL-00607" />
-      <option name="project" value="LOCAL" />
-      <updated>1571063167258</updated>
+      <workItem from="1572272018405" duration="2855000" />
     </task>
     <task id="LOCAL-00608" summary="varying solar csvs">
       <created>1571063982288</created>
@@ -647,11 +641,39 @@
       <option name="project" value="LOCAL" />
       <updated>1572274272046</updated>
     </task>
-    <option name="localTasksCounter" value="653" />
+    <task id="LOCAL-00653" summary="fixed q runs">
+      <created>1572275814851</created>
+      <option name="number" value="00653" />
+      <option name="presentableId" value="LOCAL-00653" />
+      <option name="project" value="LOCAL" />
+      <updated>1572275814851</updated>
+    </task>
+    <task id="LOCAL-00654" summary="fixed q runs">
+      <created>1572275916852</created>
+      <option name="number" value="00654" />
+      <option name="presentableId" value="LOCAL-00654" />
+      <option name="project" value="LOCAL" />
+      <updated>1572275916853</updated>
+    </task>
+    <task id="LOCAL-00655" summary="fixed q runs">
+      <created>1572275928274</created>
+      <option name="number" value="00655" />
+      <option name="presentableId" value="LOCAL-00655" />
+      <option name="project" value="LOCAL" />
+      <updated>1572275928274</updated>
+    </task>
+    <task id="LOCAL-00656" summary="fixed q runs">
+      <created>1572275936612</created>
+      <option name="number" value="00656" />
+      <option name="presentableId" value="LOCAL-00656" />
+      <option name="project" value="LOCAL" />
+      <updated>1572275936612</updated>
+    </task>
+    <option name="localTasksCounter" value="657" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175341000" />
+    <option name="totallyTimeSpent" value="175955000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1099,11 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/varying.co2.cst_q_rad.template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/getCCSM3data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -1118,16 +1135,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.cst_q_rad.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -1150,8 +1157,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pullWindowValues.varying.co2.cst_q_rad.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+        <state relative-caret-position="187">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.cst_q_rad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/varying.co2.cst_q_rad.template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="98" column="70" selection-start-line="98" selection-start-column="70" selection-end-line="98" selection-end-column="70" />
         </state>
       </provider>
     </entry>
