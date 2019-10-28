@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data_scripts/EQ.varyco2.cst_q_rad.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pullWindowValues.varying.co2.cst_q_rad.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,16 +25,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/writeCSV.varying.co2.cst_q_rad.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pullWindowValues.varying.co2.cst_q_rad.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="70" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="70" />
+            <state relative-caret-position="391">
+              <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.cst_q_rad.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -95,8 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_zen_32.py" />
-        <option value="$PROJECT_DIR$/pullEQ.py" />
         <option value="$PROJECT_DIR$/pullEQValues.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_zen_32_full.py" />
         <option value="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_zen_32_full.py" />
@@ -146,6 +144,8 @@
         <option value="$PROJECT_DIR$/varying.co2.cst_q_rad.write_script.py" />
         <option value="$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.anomalies.py" />
         <option value="$PROJECT_DIR$/data_scripts/EQ.varyco2.cst_q_rad.py" />
+        <option value="$PROJECT_DIR$/pullWindowValues.varying.co2.py" />
+        <option value="$PROJECT_DIR$/pullWindowValues.varying.co2.cst_q_rad.py" />
       </list>
     </option>
   </component>
@@ -302,14 +302,7 @@
       <workItem from="1571062229551" duration="1110000" />
       <workItem from="1571759107940" duration="4359000" />
       <workItem from="1571839802525" duration="9567000" />
-      <workItem from="1572272018405" duration="1788000" />
-    </task>
-    <task id="LOCAL-00603" summary="varying solar csvs">
-      <created>1570807608469</created>
-      <option name="number" value="00603" />
-      <option name="presentableId" value="LOCAL-00603" />
-      <option name="project" value="LOCAL" />
-      <updated>1570807608470</updated>
+      <workItem from="1572272018405" duration="2241000" />
     </task>
     <task id="LOCAL-00604" summary="varying solar csvs">
       <created>1570808268274</created>
@@ -647,11 +640,18 @@
       <option name="project" value="LOCAL" />
       <updated>1572273854853</updated>
     </task>
-    <option name="localTasksCounter" value="652" />
+    <task id="LOCAL-00652" summary="fixed q runs">
+      <created>1572274272045</created>
+      <option name="number" value="00652" />
+      <option name="presentableId" value="LOCAL-00652" />
+      <option name="project" value="LOCAL" />
+      <updated>1572274272046</updated>
+    </task>
+    <option name="localTasksCounter" value="653" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174888000" />
+    <option name="totallyTimeSpent" value="175341000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -744,16 +744,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="fixed q runs" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_zen_32_full.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="36" selection-end-line="129" />
-          <folding>
-            <element signature="e#0#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_zen_32_full.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -977,13 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pullWindowValues.varying.co2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/varying.solar.write_script.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1141,13 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writeCSV.varying.co2.cst_q_rad.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="70" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.cst_q_rad.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1155,6 +1131,27 @@
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writeCSV.varying.co2.cst_q_rad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="90" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pullWindowValues.varying.co2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" lean-forward="true" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pullWindowValues.varying.co2.cst_q_rad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
         </state>
       </provider>
     </entry>
