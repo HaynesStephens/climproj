@@ -14,15 +14,15 @@ for i in range(len(co2_ppm_list)):
         insol = insol_list[j]
 
         # Parameters
-        test_dir = 'varying_co2/{0}solar/'.format(insol) # Needs to end in an '/'
+        test_dir = 'varying_co2_cst_q_rad/'.format(insol) # Needs to end in an '/'
         print('TEST:', test_dir)
 
-        job_name    = 'i{0}_{1}solar'.format(co2_ppm, insol)
+        job_name    = 'i{0}_{1}solar_cst_q_rad'.format(co2_ppm, insol)
         print('Job:', job_name)
 
-        nc_path     = '/project/moyer/haynes/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
+        nc_path     = '/project2/moyer/old_project/haynes/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
         nc = openNC(nc_path)
-        save_path   = '/project/moyer/haynes/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
+        save_path   = '/project2/moyer/old_project/haynes/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
 
         # Procedure
         for var_name in store_quantities_0D:
