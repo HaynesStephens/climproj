@@ -12,7 +12,7 @@ def createRun(co2_ppm, irradiance, insol):
 
     with open(template_path, 'r') as fin, open(job_path, 'w') as fout:
         fout.write('### UNIQUE VALUES ###\n')
-        fout.write('irradiance = {0}\n'.format(irradiance)) love
+        fout.write('irradiance = {0}\n'.format(irradiance))
         fout.write('#insol = {0}\n'.format(insol))
         fout.write('co2_ppm = {0}\n'.format(co2_ppm))
         fout.write("nc_name = '{0}.nc'\n".format(job_name))
