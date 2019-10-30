@@ -23,7 +23,7 @@ for i in range(len(co2_ppm_list)):
         nc_path     = '/project2/moyer/old_project/haynes/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
         nc = openNC(nc_path)
         save_path   = '/project2/moyer/old_project/haynes/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
-love
+
         # Procedure
         for var_name in store_quantities_0D:
             saveTimeSeriesDim(nc, var_name, save_path, dim=0)
