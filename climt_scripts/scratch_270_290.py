@@ -44,8 +44,8 @@ state = get_default_state([simple_physics, moist_convection, dry_convection,
 # state['eastward_wind'].values[0]                            = 5.0
 #
 # state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10**(-6)
-state['solar_cycle_fraction'] = np.array([0.0])
-state['flux_adjustment_for_earth_sun_distance'] = np.array([1.0])
+state['solar_cycle_fraction'].values[:] = 0.0
+state['flux_adjustment_for_earth_sun_distance'].values[:] = 1.0
 
 
 time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convection])
