@@ -25,7 +25,7 @@ def makeRestartFile(control_file_path, restart_file_path):
         print(var)
         last_instance = restart_nc[var][-1].copy()
         last_instance = last_instance.reshape(tuple([1] + list(last_instance.shape)))
-        restart_nc[var][:] = last_instance
+        restart_nc[var] = last_instance
 
 
 def loadRestartFile(state, restart_file_path):
