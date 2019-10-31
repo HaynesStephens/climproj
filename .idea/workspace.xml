@@ -41,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/climt_scripts/scratch_270_290.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="555">
-              <caret line="47" column="63" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
+              <caret line="47" column="54" lean-forward="true" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
               <folding>
                 <element signature="e#127#242#0" expanded="true" />
               </folding>
@@ -306,21 +306,7 @@
       <workItem from="1571062229551" duration="1110000" />
       <workItem from="1571759107940" duration="4359000" />
       <workItem from="1571839802525" duration="9567000" />
-      <workItem from="1572272018405" duration="6779000" />
-    </task>
-    <task id="LOCAL-00621" summary="fixed q runs">
-      <created>1571844321251</created>
-      <option name="number" value="00621" />
-      <option name="presentableId" value="LOCAL-00621" />
-      <option name="project" value="LOCAL" />
-      <updated>1571844321251</updated>
-    </task>
-    <task id="LOCAL-00622" summary="fixed q runs">
-      <created>1571845145838</created>
-      <option name="number" value="00622" />
-      <option name="presentableId" value="LOCAL-00622" />
-      <option name="project" value="LOCAL" />
-      <updated>1571845145838</updated>
+      <workItem from="1572272018405" duration="6862000" />
     </task>
     <task id="LOCAL-00623" summary="fixed q runs">
       <created>1571845195281</created>
@@ -651,11 +637,25 @@
       <option name="project" value="LOCAL" />
       <updated>1572533723797</updated>
     </task>
-    <option name="localTasksCounter" value="670" />
+    <task id="LOCAL-00670" summary="trying new controls with everything stored. will run on scratch.">
+      <created>1572534559803</created>
+      <option name="number" value="00670" />
+      <option name="presentableId" value="LOCAL-00670" />
+      <option name="project" value="LOCAL" />
+      <updated>1572534559803</updated>
+    </task>
+    <task id="LOCAL-00671" summary="trying new controls with everything stored. will run on scratch.">
+      <created>1572534586007</created>
+      <option name="number" value="00671" />
+      <option name="presentableId" value="LOCAL-00671" />
+      <option name="project" value="LOCAL" />
+      <updated>1572534586007</updated>
+    </task>
+    <option name="localTasksCounter" value="672" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179879000" />
+    <option name="totallyTimeSpent" value="179962000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1157,7 +1157,7 @@
     <entry file="file://$PROJECT_DIR$/climt_scripts/scratch_270_290.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
-          <caret line="47" column="63" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
+          <caret line="47" column="54" lean-forward="true" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
           <folding>
             <element signature="e#127#242#0" expanded="true" />
           </folding>
