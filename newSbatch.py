@@ -4,7 +4,7 @@ def newSbatch(base_dir, test_dir, job_name): #order input variables by use order
     job_dir = base_dir + test_dir + job_name
     os.system('mkdir -p {0}'.format(job_dir))
     # os.system('mkdir -p /home/haynes13/code/python/climproj/saved_plots/{0}'.format(job_name))
-    os.system('mkdir -p /project2/moyer/old_project/haynes/climt_files/{0}{1}'.format(test_dir, job_name))
+    os.system('mkdir -p /home/haynes13/climt_files/{0}{1}'.format(test_dir, job_name))
     sbatch_filename = job_dir + '/' + job_name + '.sbatch'
     sbatch_file = open(sbatch_filename, 'w')
 
@@ -29,7 +29,7 @@ def newSbatch(base_dir, test_dir, job_name): #order input variables by use order
     sbatch_file.close()
     return job_dir, sbatch_filename
 
-base_dir = '/project2/moyer/old_project/haynes/climt_runs/'
+base_dir = '/home/haynes13/climt_runs/' # Needs to end in an '/'
 test_dir = 'control_fullstore/' # Needs to end in an '/'
 job_name = 'i270_290solar_fullstore'
 newSbatch(base_dir, test_dir, job_name)
