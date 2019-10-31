@@ -36,5 +36,5 @@ def loadRestartFile(state, restart_file_path):
 
 
 control_file_path = '/home/haynes13/code/python/climproj/climt_scripts/scratch_270_290.nc'
-restart_file_path = '/home/haynes13/code/python/climproj/climt_scripts/scratch_restart.nc'
+restart_file_path = '/home/haynes13/code/python/climproj/climt_scripts/restart.nc'
 makeRestartFile(control_file_path, restart_file_path)
