@@ -37,10 +37,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/restartState.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="425">
+              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#20#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -327,21 +327,7 @@
       <workItem from="1571062229551" duration="1110000" />
       <workItem from="1571759107940" duration="4359000" />
       <workItem from="1571839802525" duration="9567000" />
-      <workItem from="1572272018405" duration="10023000" />
-    </task>
-    <task id="LOCAL-00627" summary="fixed q runs">
-      <created>1571845608269</created>
-      <option name="number" value="00627" />
-      <option name="presentableId" value="LOCAL-00627" />
-      <option name="project" value="LOCAL" />
-      <updated>1571845608269</updated>
-    </task>
-    <task id="LOCAL-00628" summary="fixed q runs">
-      <created>1571845662688</created>
-      <option name="number" value="00628" />
-      <option name="presentableId" value="LOCAL-00628" />
-      <option name="project" value="LOCAL" />
-      <updated>1571845662688</updated>
+      <workItem from="1572272018405" duration="10658000" />
     </task>
     <task id="LOCAL-00629" summary="fixed q runs">
       <created>1571846087028</created>
@@ -672,11 +658,25 @@
       <option name="project" value="LOCAL" />
       <updated>1572538445281</updated>
     </task>
-    <option name="localTasksCounter" value="676" />
+    <task id="LOCAL-00676" summary="trying new controls with everything stored. will run on scratch.">
+      <created>1572538777823</created>
+      <option name="number" value="00676" />
+      <option name="presentableId" value="LOCAL-00676" />
+      <option name="project" value="LOCAL" />
+      <updated>1572538777823</updated>
+    </task>
+    <task id="LOCAL-00677" summary="trying new controls with everything stored. will run on scratch.">
+      <created>1572539019151</created>
+      <option name="number" value="00677" />
+      <option name="presentableId" value="LOCAL-00677" />
+      <option name="project" value="LOCAL" />
+      <updated>1572539019151</updated>
+    </task>
+    <option name="localTasksCounter" value="678" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183123000" />
+    <option name="totallyTimeSpent" value="183758000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1174,10 +1174,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/restartState.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="425">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
