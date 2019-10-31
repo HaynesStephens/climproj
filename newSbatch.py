@@ -24,13 +24,13 @@ def newSbatch(base_dir, test_dir, job_name): #order input variables by use order
     sbatch_file.write('module unload python\n')
     sbatch_file.write('module load python/3.5.2\n')
     sbatch_file.write('\n')
-    sbatch_file.write('python /home/haynes13/code/python/climproj/climt_scripts/{0}.py'.format(job_name))
+    sbatch_file.write('python /home/haynes13/code/python/climproj/climt_scripts/{0}{1}.py'.format(test_dir, job_name))
 
     sbatch_file.close()
     return job_dir, sbatch_filename
 
-# base_dir = '/project2/moyer/old_project/haynes/climt_runs/'
-# test_dir = 'varying_co2_cst_q_rad/' # Needs to end in an '/'
-# job_name = 'i270_320solar_cst_q_rad'
-# newSbatch(base_dir, test_dir, job_name)
-# print(base_dir+test_dir+job_name)
+base_dir = '/project2/moyer/old_project/haynes/climt_runs/'
+test_dir = 'control_fullstore/' # Needs to end in an '/'
+job_name = 'i270_290solar_fullstore'
+newSbatch(base_dir, test_dir, job_name)
+print(base_dir+test_dir+job_name)
