@@ -32,18 +32,18 @@ dry_convection = DryConvectiveAdjustment()
 state = get_default_state([simple_physics, moist_convection, dry_convection,
                            radiation_lw, radiation_sw, slab])
 
-# These values are set to match the default values that Shanshan included in her simulations
-state['air_temperature'].values[:]                          = 283.15
-state['surface_albedo_for_direct_shortwave'].values[:]      = 0.07
-state['surface_albedo_for_direct_near_infrared'].values[:]  = 0.07
-state['surface_albedo_for_diffuse_shortwave'].values[:]     = 0.07
-state['surface_albedo_for_diffuse_near_infrared'].values[:] = 0.07
-state['zenith_angle'].values[:]                             = (2 * np.pi) / 5
-state['surface_temperature'].values[:]                      = state['air_temperature'].values[0,0,0]
-state['area_type'].values[:]                                = 'sea'
-state['eastward_wind'].values[0]                            = 5.0
-
-state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10**(-6)
+# # These values are set to match the default values that Shanshan included in her simulations
+# state['air_temperature'].values[:]                          = 283.15
+# state['surface_albedo_for_direct_shortwave'].values[:]      = 0.07
+# state['surface_albedo_for_direct_near_infrared'].values[:]  = 0.07
+# state['surface_albedo_for_diffuse_shortwave'].values[:]     = 0.07
+# state['surface_albedo_for_diffuse_near_infrared'].values[:] = 0.07
+# state['zenith_angle'].values[:]                             = (2 * np.pi) / 5
+# state['surface_temperature'].values[:]                      = state['air_temperature'].values[0,0,0]
+# state['area_type'].values[:]                                = 'sea'
+# state['eastward_wind'].values[0]                            = 5.0
+#
+# state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10**(-6)
 
 
 time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convection])
