@@ -210,6 +210,7 @@ def saveMoistEnthalpy(nc, save_path):
 
 
 def saveEQpkl(save_path, nc, var_list, years_back = 3):
+    print('Saving the Pickle!')
     eq_pkl = {}
     seconds_back = years_back*365.25*24*60*60
     time_array = nc['time'][:].copy()
@@ -217,6 +218,7 @@ def saveEQpkl(save_path, nc, var_list, years_back = 3):
     eq_index = np.where(time_array > (t_final - seconds_back))
 
     for var in var_list:
+        print('pkl,', var)
         nc_var = nc[var][:].copy()
         var_eq_val = np.mean(nc_var[eq_index], axis=0)
         eq_pkl[var] = var_eq_val
@@ -225,6 +227,7 @@ def saveEQpkl(save_path, nc, var_list, years_back = 3):
     f = open(file_name, 'wb')
     pickle.dump(eq_pkl, f)
     f.close()
+    print('Pickle Saved!')
     return eq_pkl
 
 
@@ -248,10 +251,10 @@ nc = openNC(nc_path)
 save_path   = '/home/haynes13/climt_files/trial/{0}'.format(job_name)
 
 # Procedure
+saveEQpkl(save_path, nc, var_list)
 for var_name in store_quantities_0D:
     saveTimeSeriesDim(nc, var_name, save_path, dim=0)
 for var_name in store_quantities_1D:
     saveTimeSeriesDim(nc, var_name, save_path, dim=1)
-saveEQpkl(save_path, nc, var_list)
 
 
