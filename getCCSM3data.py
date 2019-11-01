@@ -1,6 +1,5 @@
 import numpy as np
 from netCDF4 import Dataset as ds
-import pandas as pd
 import copy
 
 
@@ -72,7 +71,7 @@ def EQavg(var_dict, var):
 
 
 def EQAvgMaps():
-    base_path = '/home/haynes13/RDCEP_CCSM3'
+    base_path = '/home/haynes13/RDCEP_CCSM3/'
     control_filenames = ['hfls_Amon_CCSM3_II_Control_LongRunMIP_3805',
                         'hfss_Amon_CCSM3_II_Control_LongRunMIP_3805',
                         'pr1_Amon_CCSM3_II_Control_LongRunMIP_3805',
@@ -143,8 +142,6 @@ def EQAvgMaps():
     return avg_var_maps
 
 
-EQAvgMaps()
-
 
 def ShanshanEQFig4():
     """
@@ -191,6 +188,9 @@ def ShanshanEQFig4():
     plt.yticks(np.arange(60,121,20))
     plt.show()
 
+
+
+EQAvgMaps()
 
 
 
