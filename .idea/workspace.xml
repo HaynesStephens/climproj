@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getCCSM3data.py" beforeDir="false" afterPath="$PROJECT_DIR$/getCCSM3data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/restartState.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="65" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -73,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/climt_scripts/scratch_270_290.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="97" selection-end-column="52" />
+            <state relative-caret-position="1683">
+              <caret line="99" column="79" selection-start-line="99" selection-end-line="100" />
               <folding>
                 <element signature="e#127#242#0" expanded="true" />
               </folding>
@@ -85,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/climt_scripts/control_fullstore/i270_290solar_fullstore.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
-              <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+            <state relative-caret-position="-1474">
+              <caret line="18" selection-start-line="18" selection-end-line="99" selection-end-column="90" />
               <folding>
                 <element signature="e#127#242#0" expanded="true" />
               </folding>
@@ -94,14 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/getCCSM3data.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/control_fullstore/i270_320solar_fullstore.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="119" column="24" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -155,8 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_270i_939solar_dryconv_usurf_noseason.py" />
-        <option value="$PROJECT_DIR$/climt_scripts/test_a2_b1_c1_270i_939solar_dryconv_usurf_noseason.py" />
         <option value="$PROJECT_DIR$/pullWindowValues_Shanshan.py" />
         <option value="$PROJECT_DIR$/writeCSV_Shanshan.py" />
         <option value="$PROJECT_DIR$/climt_scripts/control_strat_prec.py" />
@@ -206,6 +200,8 @@
         <option value="$PROJECT_DIR$/writeCSV.py" />
         <option value="$PROJECT_DIR$/writeCSVandPKL.py" />
         <option value="$PROJECT_DIR$/getCCSM3data.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/control_fullstore/i270_290solar_fullstore.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/control_fullstore/i270_320solar_fullstore.py" />
       </list>
     </option>
   </component>
@@ -363,21 +359,7 @@
       <workItem from="1571062229551" duration="1110000" />
       <workItem from="1571759107940" duration="4359000" />
       <workItem from="1571839802525" duration="9567000" />
-      <workItem from="1572272018405" duration="15382000" />
-    </task>
-    <task id="LOCAL-00641" summary="fixed q runs">
-      <created>1571857521248</created>
-      <option name="number" value="00641" />
-      <option name="presentableId" value="LOCAL-00641" />
-      <option name="project" value="LOCAL" />
-      <updated>1571857521248</updated>
-    </task>
-    <task id="LOCAL-00642" summary="fixed q runs">
-      <created>1571857612965</created>
-      <option name="number" value="00642" />
-      <option name="presentableId" value="LOCAL-00642" />
-      <option name="project" value="LOCAL" />
-      <updated>1571857612965</updated>
+      <workItem from="1572272018405" duration="15601000" />
     </task>
     <task id="LOCAL-00643" summary="fixed q runs">
       <created>1571956159202</created>
@@ -708,11 +690,25 @@
       <option name="project" value="LOCAL" />
       <updated>1572622668281</updated>
     </task>
-    <option name="localTasksCounter" value="690" />
+    <task id="LOCAL-00690" summary="trying new controls with everything stored. will run on scratch.">
+      <created>1572623892713</created>
+      <option name="number" value="00690" />
+      <option name="presentableId" value="LOCAL-00690" />
+      <option name="project" value="LOCAL" />
+      <updated>1572623892713</updated>
+    </task>
+    <task id="LOCAL-00691" summary="trying new controls with everything stored. will run on scratch.">
+      <created>1572624272941</created>
+      <option name="number" value="00691" />
+      <option name="presentableId" value="LOCAL-00691" />
+      <option name="project" value="LOCAL" />
+      <updated>1572624272941</updated>
+    </task>
+    <option name="localTasksCounter" value="692" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188482000" />
+    <option name="totallyTimeSpent" value="188701000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1079,13 +1075,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/control_fullstore/i270_320solar_fullstore.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/newSbatch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -1158,42 +1147,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/control_fullstore/i270_290solar_fullstore.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-          <folding>
-            <element signature="e#127#242#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/writeCSV.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
           <caret line="127" selection-start-line="127" selection-end-line="148" selection-end-column="34" />
           <folding>
             <element signature="e#223#241#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restartState.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="65" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/scratch_270_290.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="97" selection-end-column="52" />
-          <folding>
-            <element signature="e#127#242#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1210,8 +1169,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/getCCSM3data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
+        <state relative-caret-position="269">
           <caret line="119" column="24" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/scratch_270_290.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1683">
+          <caret line="99" column="79" selection-start-line="99" selection-end-line="100" />
+          <folding>
+            <element signature="e#127#242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/control_fullstore/i270_320solar_fullstore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/control_fullstore/i270_290solar_fullstore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1474">
+          <caret line="18" selection-start-line="18" selection-end-line="99" selection-end-column="90" />
+          <folding>
+            <element signature="e#127#242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restartState.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
