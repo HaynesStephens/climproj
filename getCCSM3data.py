@@ -35,7 +35,6 @@ def loadLatLonGrid():
     np.savetxt(save_path + 'Grid.lat.csv', lat, delimiter=',')
     np.savetxt(save_path + 'Grid.lon.csv', lon, delimiter=',')
 
-loadLatLonGrid()
 
 def openNC(filepath):
     """
@@ -120,7 +119,7 @@ def EQAvgMaps():
                         'tas_Amon_CCSM3_II_Control_LongRunMIP_3805',
                         'ts_Amon_CCSM3_II_Control_LongRunMIP_3805']
 
-    filenames = control_filenames
+    filenames = control_filenames + abrupt700_filenames + abrupt1400_filenames
     filepaths = [base_path + name for name in filenames]
     vars = [name.split('_')[0] for name in filenames]
 
@@ -134,7 +133,7 @@ def EQAvgMaps():
     var_dicts = [getNCdict(filepath, var) for filepath,var in zip(filepaths,vars)]
     avg_var_dicts = [EQavg(var_dict, var) for var_dict,var in zip(var_dicts, vars)]
     avg_var_maps = [avg_var_dict[var+'_avg'] for avg_var_dict,var in zip(avg_var_dicts, vars)]
-    save_path = '/project2/moyer/old_project/haynes/ccsm3_maps/'
+    save_path = '/home/haynes13/ccsm3_maps/'
     save_filepaths = [save_path + name + '.avgMap.csv' for name in filenames]
     save_avg_var_maps = [np.savetxt(name, data, delimiter=',') for name,data in zip(save_filepaths, avg_var_maps)]
     print_names = [print(name) for name in save_filepaths]
