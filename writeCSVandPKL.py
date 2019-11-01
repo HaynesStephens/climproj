@@ -237,7 +237,7 @@ def saveEQpkl(save_path, nc, var_list, years_back = 3):
 # List of saved quantities, sorted by dimension
 store_quantities_0D = load_quantities_0D()
 store_quantities_1D = load_quantities_1D()
-var_list = []
+var_list = load_var_list()
 
 # Parameters
 test_dir = 'varying_co2_cst_q_rad/' # Needs to end in an '/'
