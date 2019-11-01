@@ -40,11 +40,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="239" column="26" selection-start-line="239" selection-start-column="26" selection-end-line="239" selection-end-column="26" />
+            <state relative-caret-position="473">
+              <caret line="236" column="20" lean-forward="true" selection-start-line="236" selection-start-column="20" selection-end-line="236" selection-end-column="20" />
               <folding>
                 <element signature="e#223#241#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="35" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -242,7 +251,7 @@
               <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
               <item name="climproj" type="462c0819:PsiDirectoryNode" />
               <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="control_fullstore" type="462c0819:PsiDirectoryNode" />
+              <item name="varying_co2_cst_q_rad" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -369,21 +378,7 @@
       <workItem from="1571062229551" duration="1110000" />
       <workItem from="1571759107940" duration="4359000" />
       <workItem from="1571839802525" duration="9567000" />
-      <workItem from="1572272018405" duration="15910000" />
-    </task>
-    <task id="LOCAL-00649" summary="fixed q runs">
-      <created>1572273199623</created>
-      <option name="number" value="00649" />
-      <option name="presentableId" value="LOCAL-00649" />
-      <option name="project" value="LOCAL" />
-      <updated>1572273199623</updated>
-    </task>
-    <task id="LOCAL-00650" summary="fixed q runs">
-      <created>1572273843210</created>
-      <option name="number" value="00650" />
-      <option name="presentableId" value="LOCAL-00650" />
-      <option name="project" value="LOCAL" />
-      <updated>1572273843210</updated>
+      <workItem from="1572272018405" duration="16081000" />
     </task>
     <task id="LOCAL-00651" summary="fixed q runs">
       <created>1572273854853</created>
@@ -714,11 +709,25 @@
       <option name="project" value="LOCAL" />
       <updated>1572624517193</updated>
     </task>
-    <option name="localTasksCounter" value="698" />
+    <task id="LOCAL-00698" summary="trying new controls with everything stored. will run on scratch.">
+      <created>1572624641080</created>
+      <option name="number" value="00698" />
+      <option name="presentableId" value="LOCAL-00698" />
+      <option name="project" value="LOCAL" />
+      <updated>1572624641080</updated>
+    </task>
+    <task id="LOCAL-00699" summary="trying new controls with everything stored. will run on scratch.">
+      <created>1572624733790</created>
+      <option name="number" value="00699" />
+      <option name="presentableId" value="LOCAL-00699" />
+      <option name="project" value="LOCAL" />
+      <updated>1572624733790</updated>
+    </task>
+    <option name="localTasksCounter" value="700" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189010000" />
+    <option name="totallyTimeSpent" value="189181000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -811,7 +820,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="trying new controls with everything stored. will run on scratch." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/climt_scripts/control_strat_prec.py" />
     <entry file="file://$PROJECT_DIR$/climt_scripts/test_a1_b1_c1_270i_939solar_usurf_noseason.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
@@ -1214,10 +1222,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="35" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="239" column="26" selection-start-line="239" selection-start-column="26" selection-end-line="239" selection-end-column="26" />
+        <state relative-caret-position="473">
+          <caret line="236" column="20" lean-forward="true" selection-start-line="236" selection-start-column="20" selection-end-line="236" selection-end-column="20" />
           <folding>
             <element signature="e#223#241#0" expanded="true" />
           </folding>
