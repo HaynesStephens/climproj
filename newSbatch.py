@@ -31,6 +31,6 @@ def newSbatch(base_dir, test_dir, job_name): #order input variables by use order
 
 base_dir = '/home/haynes13/climt_runs/' # Needs to end in an '/'
 test_dir = 'control_fullstore/' # Needs to end in an '/'
-job_name = 'i270_290solar_fullstore'
+job_name = 'i270_320solar_fullstore'
 newSbatch(base_dir, test_dir, job_name)
 print(base_dir+test_dir+job_name)
