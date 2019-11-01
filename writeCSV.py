@@ -5,7 +5,7 @@
 import numpy as np
 from netCDF4 import Dataset as ds
 
-def saveData(data, file_path, var_name, eq_file = False):
+def saveData(data, file_path, var_name):
     """
     Save the data array to a csv file
     :param data: numpy array to be saved
@@ -13,8 +13,6 @@ def saveData(data, file_path, var_name, eq_file = False):
     :param var_name: name of var to be saved, usually the variable name or a calculated quantity
     :return: save the csv file
     """
-    if eq_file:
-        var_name = 'eq_'+var_name
     csv_name = '{0}_{1}.csv'.format(file_path, var_name)
     np.savetxt(csv_name, data, delimiter=',')
 

@@ -29,4 +29,4 @@ for j in range(len(insol_list)):
         saveTimeSeriesDim(nc, var_name, save_path, dim=0)
     for var_name in store_quantities_1D:
         saveTimeSeriesDim(nc, var_name, save_path, dim=1)
-    saveMoistEnthalpy(nc, save_path)
+    # saveMoistEnthalpy(nc, save_path)

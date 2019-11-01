@@ -72,7 +72,7 @@ def EQavg(var_dict, var):
 
 
 def EQAvgMaps():
-    base_path = '/project2/moyer/old_project/climate_data/RDCEP_CCSM3/'
+    base_path = '/home/haynes13/RDCEP_CCSM3'
     control_filenames = ['hfls_Amon_CCSM3_II_Control_LongRunMIP_3805',
                         'hfss_Amon_CCSM3_II_Control_LongRunMIP_3805',
                         'pr1_Amon_CCSM3_II_Control_LongRunMIP_3805',
@@ -118,8 +118,11 @@ def EQAvgMaps():
                         'rsutcs1_Amon_CCSM3_II_Control_LongRunMIP_3805',
                         'tas_Amon_CCSM3_II_Control_LongRunMIP_3805',
                         'ts_Amon_CCSM3_II_Control_LongRunMIP_3805']
+    FLNSC_filenames = ['FLNSC_Amon_CCSM3_II_Control_LongRunMIP_3805',
+                       'FLNSC_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
+                       'FLNSC_Amon_CCSM3_II_abrupt1400ppm_LongRunMIP_3132']
 
-    filenames = control_filenames + abrupt700_filenames + abrupt1400_filenames
+    filenames = FLNSC_filenames
     filepaths = [base_path + name for name in filenames]
     vars = [name.split('_')[0] for name in filenames]
 
@@ -140,7 +143,7 @@ def EQAvgMaps():
     return avg_var_maps
 
 
-
+EQAvgMaps()
 
 
 def ShanshanEQFig4():

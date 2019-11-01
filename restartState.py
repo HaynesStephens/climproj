@@ -1,42 +1,70 @@
-import netCDF4 as nc
-import copy
+import numpy as np
+import pickle
+
+base_path = '/project2/moyer/old_project/haynes/climt_files/'
+restart_dir = 'varying_co2/320solar/'
+job_name = 'i270_320solar'
+restart_file = '{0}{1}{2}/{2}'.format(base_path, restart_dir, job_name)
 
 
-def makeRestartFile(control_file_path, restart_file_path):
-    def create_file_from_source(src_file, trg_file):
-        src = nc.Dataset(src_file)
-        trg = nc.Dataset(trg_file, mode='w')
-        # Create the dimensions of the file
-        for name, dim in src.dimensions.items():
-            trg.createDimension(name, len(dim) if not dim.isunlimited() else None)
-        # Copy the global attributes
-        trg.setncatts({a: src.getncattr(a) for a in src.ncattrs()})
-        # Create the variables in the file
-        for name, var in src.variables.items():
-            trg.createVariable(name, var.dtype, var.dimensions)
-            # Copy the variable attributes
-            trg.variables[name].setncatts({a: var.getncattr(a) for a in var.ncattrs()})
-            # Copy the variables values (as 'f4' eventually)
-            trg.variables[name][:] = src.variables[name][:]
-        return trg
+def loadTXT(restart_file, var_name):
+    """
 
-    restart_nc = create_file_from_source(control_file_path, restart_file_path)
-    for var in list(restart_nc.variables):
-        print(var)
-        last_instance = restart_nc[var][:][-1].copy()
-        last_instance = last_instance.reshape(tuple([1] + list(last_instance.shape)))
-        restart_nc[var][:] = last_instance
+    :param restart_file:
+    :param var_name: name of state/diagnostic variable that you want to load
+    :return: the last instance of that variable in the time series, as a numpy array
+    """
+    csv_file = "{0}_{1}.csv".format(restart_file, var_name)
+    last_state = np.loadtxt(csv_file, delimiter = ',')[-1]
+    if last_state.size == 1:
+        return last_state
+    elif last_state.size > 1:
+        return last_state.reshape(last_state.size, 1, 1)
+    else:
+        raise (AssertionError, "Initial Quantity Has a Size Less Than 1.")
 
-
-def loadRestartFile(state, restart_file_path):
-    new_state = copy.deepcopy(state)
-    dset = Dataset(restart_file_path, mode='r', format="NETCDF4")
-    for var in list(dset.variables):
-        new_state[var].values = dset[var][:]
-    dset.close()
-    return new_state
+def setInstance(restart_file, restart_state, var_name):
+    """
+    Set the key of the state dictionary to the last instance in the restart file,
+        for a given variable
+    :param restart_file:
+    :param restart_state:
+    :param var_name:
+    :return: Nothing, just change the dictionary
+    """
+    print('Loading:', var_name)
+    restart_state[var_name] = loadTXT(restart_file, var_name)
 
 
-control_file_path = '/home/haynes13/code/python/climproj/climt_scripts/scratch_270_290.nc'
-restart_file_path = '/home/haynes13/code/python/climproj/climt_scripts/restart.nc'
-makeRestartFile(control_file_path, restart_file_path)
+def loadRestartState(restart_file):
+    """
+    Load quantities from the last instance in the restart file to make a restart state
+    :param restart_file:
+    :return: dictionary of the last instance for various variables
+    """
+    restart_state = {} # initialize restart state as an empty dictionary
+
+    state_names = ['air_pressure',
+                   'air_pressure_on_interface_levels',
+                   'air_temperature',
+                   'downwelling_longwave_flux_in_air',
+                   'downwelling_shortwave_flux_in_air',
+                   'upwelling_longwave_flux_in_air',
+                   'upwelling_shortwave_flux_in_air',
+                   'specific_humidity',
+                   'surface_temperature',
+                   'surface_upward_latent_heat_flux',
+                   'surface_upward_sensible_heat_flux']
+
+
+    for var_i in state_names:
+        setInstance(restart_file, restart_state, var_i)
+
+    file_name = restart_file + '_restart_state.pkl'
+    f = open(file_name, 'wb')
+    pickle.dump(restart_state, f)
+    f.close()
+
+    return restart_state
+
+restart_state = loadRestartState(restart_file)
