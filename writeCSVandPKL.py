@@ -237,7 +237,23 @@ def saveEQpkl(save_path, nc, var_list, years_back = 3):
 # List of saved quantities, sorted by dimension
 store_quantities_0D = load_quantities_0D()
 store_quantities_1D = load_quantities_1D()
-var_list = load_var_list()
+var_list = ['air_temperature',
+                    'surface_temperature',
+                    'air_pressure',
+                    'specific_humidity',
+                    'air_pressure_on_interface_levels',
+                    'air_temperature_tendency_from_convection',
+                    'air_temperature_tendency_from_longwave',
+                    'air_temperature_tendency_from_shortwave',
+                    'mole_fraction_of_carbon_dioxide_in_air',
+                    'convective_precipitation_rate',
+                    'stratiform_precipitation_rate',
+                    'surface_upward_sensible_heat_flux',
+                    'surface_upward_latent_heat_flux',
+                    'upwelling_longwave_flux_in_air',
+                    'upwelling_shortwave_flux_in_air',
+                    'downwelling_longwave_flux_in_air',
+                    'downwelling_shortwave_flux_in_air']
 
 # Parameters
 test_dir = 'varying_co2_cst_q_rad/' # Needs to end in an '/'
