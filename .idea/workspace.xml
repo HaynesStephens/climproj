@@ -40,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="250" column="35" lean-forward="true" selection-start-line="250" selection-start-column="35" selection-end-line="250" selection-end-column="35" />
+            <state relative-caret-position="337">
+              <caret line="245" column="23" selection-start-line="245" selection-start-column="23" selection-end-line="245" selection-end-column="23" />
               <folding>
                 <element signature="e#223#241#0" expanded="true" />
               </folding>
@@ -338,21 +338,7 @@
       <workItem from="1571759107940" duration="4359000" />
       <workItem from="1571839802525" duration="9567000" />
       <workItem from="1572272018405" duration="16464000" />
-      <workItem from="1572819853494" duration="270000" />
-    </task>
-    <task id="LOCAL-00654" summary="fixed q runs">
-      <created>1572275916852</created>
-      <option name="number" value="00654" />
-      <option name="presentableId" value="LOCAL-00654" />
-      <option name="project" value="LOCAL" />
-      <updated>1572275916853</updated>
-    </task>
-    <task id="LOCAL-00655" summary="fixed q runs">
-      <created>1572275928274</created>
-      <option name="number" value="00655" />
-      <option name="presentableId" value="LOCAL-00655" />
-      <option name="project" value="LOCAL" />
-      <updated>1572275928274</updated>
+      <workItem from="1572819853494" duration="587000" />
     </task>
     <task id="LOCAL-00656" summary="fixed q runs">
       <created>1572275936612</created>
@@ -683,11 +669,25 @@
       <option name="project" value="LOCAL" />
       <updated>1572625147818</updated>
     </task>
-    <option name="localTasksCounter" value="703" />
+    <task id="LOCAL-00703" summary="trying new controls with everything stored. will run on scratch.">
+      <created>1572821422449</created>
+      <option name="number" value="00703" />
+      <option name="presentableId" value="LOCAL-00703" />
+      <option name="project" value="LOCAL" />
+      <updated>1572821422450</updated>
+    </task>
+    <task id="LOCAL-00704" summary="trying new controls with everything stored. will run on scratch.">
+      <created>1572821830245</created>
+      <option name="number" value="00704" />
+      <option name="presentableId" value="LOCAL-00704" />
+      <option name="project" value="LOCAL" />
+      <updated>1572821830245</updated>
+    </task>
+    <option name="localTasksCounter" value="705" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189834000" />
+    <option name="totallyTimeSpent" value="190151000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1058,8 +1058,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="250" column="35" lean-forward="true" selection-start-line="250" selection-start-column="35" selection-end-line="250" selection-end-column="35" />
+        <state relative-caret-position="337">
+          <caret line="245" column="23" selection-start-line="245" selection-start-column="23" selection-end-line="245" selection-end-column="23" />
           <folding>
             <element signature="e#223#241#0" expanded="true" />
           </folding>

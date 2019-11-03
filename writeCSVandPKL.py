@@ -137,7 +137,7 @@ def load_var_list():
             'surface_material_density',
             'upward_heat_flux_at_ground_level_in_soil',
             'heat_flux_into_sea_water_due_to_sea_ice',
-            'area_type',
+            # 'area_type',
             'soil_layer_thickness',
             'ocean_mixed_layer_thickness',
             'heat_capacity_of_soil',
@@ -243,7 +243,7 @@ var_list = load_var_list()
 test_dir = 'control_fullstore/' # Needs to end in an '/'
 print('TEST:', test_dir)
 
-job_name    = 'i270_320solar_fullstore'
+job_name    = 'i270_290solar_fullstore'
 print('Job:', job_name)
 
 nc_path     = '/home/haynes13/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
