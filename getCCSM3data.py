@@ -117,7 +117,7 @@ def EQAvgMaps():
                         'rsutcs1_Amon_CCSM3_II_Control_LongRunMIP_3805',
                         'tas_Amon_CCSM3_II_Control_LongRunMIP_3805',
                         'ts_Amon_CCSM3_II_Control_LongRunMIP_3805']
-    FLNSC_filenames = [#'FLNSC_Amon_CCSM3_II_Control_LongRunMIP_3805',
+    FLNSC_filenames = ['FLNSC_Amon_CCSM3_II_Control_LongRunMIP_3805',
                        'FLNSC_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
                        'FLNSC_Amon_CCSM3_II_abrupt1400ppm_LongRunMIP_3132']
 
