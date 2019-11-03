@@ -38,36 +38,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2/320solar/i2_320solar_restart_test.py">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2/320solar/i1215_320solar_restart_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="65" lean-forward="true" selection-end-line="107" />
+            <state relative-caret-position="-762">
+              <caret line="4" column="38" selection-end-line="107" />
               <folding>
-                <element signature="e#114#229#0" expanded="true" />
+                <element signature="e#127#242#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2/320solar/i1215_320solar.py">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/varying_solar/i270_200solar.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret selection-end-line="5" selection-end-column="21" />
               <folding>
-                <element signature="e#120#235#0" expanded="true" />
+                <element signature="e#117#232#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2/320solar/i1215_320solar_restart_test.py">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/varying_solar/i270_200solar_restart_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1193">
-              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+            <state relative-caret-position="68">
+              <caret line="4" column="37" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="37" />
               <folding>
-                <element signature="e#127#242#0" expanded="true" />
+                <element signature="e#133#248#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/newSbatch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+            <state relative-caret-position="561">
+              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -131,7 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/climt_scripts/global_control_nodryconv_strat_prec.py" />
         <option value="$PROJECT_DIR$/climt_scripts/global_control_dryconv_strat_prec.py" />
         <option value="$PROJECT_DIR$/climt_scripts/i270_290solar.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_CO2_runs.py" />
@@ -181,6 +180,7 @@
         <option value="$PROJECT_DIR$/restartFile.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2/320solar/i2_320solar_restart_test.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2/320solar/i1215_320solar_restart_test.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/varying_solar/i270_200solar_restart_test.py" />
         <option value="$PROJECT_DIR$/newSbatch.py" />
       </list>
     </option>
@@ -206,19 +206,6 @@
               <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
               <item name="climproj" type="462c0819:PsiDirectoryNode" />
               <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="varying_co2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="varying_co2" type="462c0819:PsiDirectoryNode" />
-              <item name="320solar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
@@ -351,21 +338,7 @@
       <workItem from="1571759107940" duration="4359000" />
       <workItem from="1571839802525" duration="9567000" />
       <workItem from="1572272018405" duration="16464000" />
-      <workItem from="1572819853494" duration="2184000" />
-    </task>
-    <task id="LOCAL-00664" summary="trying new controls with everything stored. will run on scratch.">
-      <created>1572531083522</created>
-      <option name="number" value="00664" />
-      <option name="presentableId" value="LOCAL-00664" />
-      <option name="project" value="LOCAL" />
-      <updated>1572531083522</updated>
-    </task>
-    <task id="LOCAL-00665" summary="trying new controls with everything stored. will run on scratch.">
-      <created>1572531870631</created>
-      <option name="number" value="00665" />
-      <option name="presentableId" value="LOCAL-00665" />
-      <option name="project" value="LOCAL" />
-      <updated>1572531870631</updated>
+      <workItem from="1572819853494" duration="2356000" />
     </task>
     <task id="LOCAL-00666" summary="trying new controls with everything stored. will run on scratch.">
       <created>1572532385470</created>
@@ -696,11 +669,25 @@
       <option name="project" value="LOCAL" />
       <updated>1572824163023</updated>
     </task>
-    <option name="localTasksCounter" value="713" />
+    <task id="LOCAL-00713" summary="trying new controls with everything stored. will run on scratch.">
+      <created>1572824171870</created>
+      <option name="number" value="00713" />
+      <option name="presentableId" value="LOCAL-00713" />
+      <option name="project" value="LOCAL" />
+      <updated>1572824171870</updated>
+    </task>
+    <task id="LOCAL-00714" summary="trying new controls with everything stored. will run on scratch.">
+      <created>1572824331200</created>
+      <option name="number" value="00714" />
+      <option name="presentableId" value="LOCAL-00714" />
+      <option name="project" value="LOCAL" />
+      <updated>1572824331200</updated>
+    </task>
+    <option name="localTasksCounter" value="715" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191748000" />
+    <option name="totallyTimeSpent" value="191920000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -809,13 +796,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/conservation_longTerm_MoistConvecting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" selection-start-line="6" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/i660_290solar.py" />
     <entry file="file://$PROJECT_DIR$/climt_scripts/i330.0_290solar.py" />
     <entry file="file://$PROJECT_DIR$/climt_scripts/i330_939solar.py" />
@@ -1060,9 +1040,6 @@
     <entry file="file://$PROJECT_DIR$/climt_scripts/varying_solar/i270_335solar.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_solar/i270_200solar.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2/320solar/i2_320solar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1095,18 +1072,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2/320solar/i1215_320solar_restart_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1193">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        <state relative-caret-position="-762">
+          <caret line="4" column="38" selection-end-line="107" />
           <folding>
             <element signature="e#127#242#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_solar/i270_200solar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="21" />
+          <folding>
+            <element signature="e#117#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_solar/i270_200solar_restart_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="37" />
+          <folding>
+            <element signature="e#133#248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/newSbatch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        <state relative-caret-position="561">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
         </state>
       </provider>
     </entry>
