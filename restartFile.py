@@ -1,13 +1,13 @@
 import numpy as np
 import pickle
 
-base_path = '/project2/moyer/old_project/haynes/climt_files/'
-restart_dir = 'varying_co2/320solar/'
-job_name = 'i270_320solar'
-restart_file = '{0}{1}{2}/{2}'.format(base_path, restart_dir, job_name)
+# base_path = '/project2/moyer/old_project/haynes/climt_files/'
+# restart_dir = 'varying_co2/320solar/'
+# job_name = 'i270_320solar'
+# restart_file = '{0}{1}{2}/{2}'.format(base_path, restart_dir, job_name)
 
 
-def loadTXT(restart_file, var_name):
+def OLD_loadTXT(restart_file, var_name):
     """
 
     :param restart_file:
@@ -23,7 +23,7 @@ def loadTXT(restart_file, var_name):
     else:
         raise (AssertionError, "Initial Quantity Has a Size Less Than 1.")
 
-def setInstance(restart_file, restart_state, var_name):
+def OLD_setInstance(restart_file, restart_state, var_name):
     """
     Set the key of the state dictionary to the last instance in the restart file,
         for a given variable
@@ -36,7 +36,7 @@ def setInstance(restart_file, restart_state, var_name):
     restart_state[var_name] = loadTXT(restart_file, var_name)
 
 
-def loadRestartState(restart_file):
+def OLD_loadRestartState(restart_file):
     """
     Load quantities from the last instance in the restart file to make a restart state
     :param restart_file:
@@ -66,5 +66,3 @@ def loadRestartState(restart_file):
     f.close()
 
     return restart_state
-
-restart_state = loadRestartState(restart_file)
