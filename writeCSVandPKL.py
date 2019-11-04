@@ -246,9 +246,9 @@ print('TEST:', test_dir)
 job_name    = 'i270_290solar'
 print('Job:', job_name)
 
-nc_path     = '/home/haynes13/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
+nc_path     = '/project2/moyer/old_project/haynes/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
 nc = openNC(nc_path)
-save_path   = '/home/haynes13/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
+save_path   = '/project2/moyer/old_project/haynes/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
 
 # Procedure
 saveEQpkl(save_path, nc, var_list)
