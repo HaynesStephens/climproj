@@ -59,7 +59,6 @@ restart_file = open(restart_file_name, 'rb')
 restart_state = pickle.load(restart_file)
 
 restart_quantities =  list(restart_state.keys())
-print(restart_quantities)
 skip_quantities = ['convective_downdraft_specific_humidity_scale',
                    'time',
                    'upwelling_longwave_flux_in_air_assuming_clear_sky',
