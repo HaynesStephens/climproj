@@ -2,7 +2,7 @@
 irradiance = 1084
 #insol = 335
 co2_ppm = 270
-nc_name = 'i270_335solar_restart_state.nc'
+nc_name = 'i270_335solar_restart_test.nc'
 #####################
 from sympl import (
     DataArray, AdamsBashforth, get_constant, set_constant, NetCDFMonitor, PlotFunctionMonitor
