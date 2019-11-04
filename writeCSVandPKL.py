@@ -237,28 +237,28 @@ def saveEQpkl(save_path, nc, years_back = 3):
 
 
 
-### INDIVIDUAL EXECUTION. ###
-# List of saved quantities, sorted by dimension
-store_quantities_0D = load_quantities_0D()
-store_quantities_1D = load_quantities_1D()
-# var_list = load_var_list()
-
-# Parameters
-test_dir = 'control/' # Needs to end in an '/'
-print('TEST:', test_dir)
-
-job_name    = 'i270_290solar'
-print('Job:', job_name)
-
-nc_path     = '/project2/moyer/old_project/haynes/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
-nc = openNC(nc_path)
-save_path   = '/project2/moyer/old_project/haynes/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
-
-# Procedure
-saveEQpkl(save_path, nc)
-for var_name in store_quantities_0D:
-    saveTimeSeriesDim(nc, var_name, save_path, dim=0)
-for var_name in store_quantities_1D:
-    saveTimeSeriesDim(nc, var_name, save_path, dim=1)
+# ### INDIVIDUAL EXECUTION. ###
+# # List of saved quantities, sorted by dimension
+# store_quantities_0D = load_quantities_0D()
+# store_quantities_1D = load_quantities_1D()
+# # var_list = load_var_list()
+#
+# # Parameters
+# test_dir = 'control/' # Needs to end in an '/'
+# print('TEST:', test_dir)
+#
+# job_name    = 'i270_290solar'
+# print('Job:', job_name)
+#
+# nc_path     = '/project2/moyer/old_project/haynes/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
+# nc = openNC(nc_path)
+# save_path   = '/project2/moyer/old_project/haynes/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
+#
+# # Procedure
+# saveEQpkl(save_path, nc)
+# for var_name in store_quantities_0D:
+#     saveTimeSeriesDim(nc, var_name, save_path, dim=0)
+# for var_name in store_quantities_1D:
+#     saveTimeSeriesDim(nc, var_name, save_path, dim=1)
 
 
