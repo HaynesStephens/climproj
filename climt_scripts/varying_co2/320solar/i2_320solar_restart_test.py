@@ -60,7 +60,9 @@ restart_state = pickle.load(restart_file)
 
 restart_quantities =  list(restart_state.keys())
 print(restart_quantities)
-skip_quantities = ['convective_downdraft_specific_humidity_scale', 'time']
+skip_quantities = ['convective_downdraft_specific_humidity_scale',
+                   'time',
+                   'upwelling_longwave_flux_in_air_assuming_clear_sky']
 
 def setInitValues(state, restart_state, var):
     if var not in skip_quantities:

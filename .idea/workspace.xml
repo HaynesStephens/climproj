@@ -64,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2/320solar/i2_320solar_restart_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="66" column="18" lean-forward="true" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
+            <state relative-caret-position="259">
+              <caret line="64" column="69" selection-start-line="64" selection-start-column="69" selection-end-line="64" selection-end-column="69" />
               <folding>
                 <element signature="e#127#242#0" expanded="true" />
               </folding>
@@ -210,8 +210,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="x" value="-513" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -375,21 +377,7 @@
       <workItem from="1571759107940" duration="4359000" />
       <workItem from="1571839802525" duration="9567000" />
       <workItem from="1572272018405" duration="16464000" />
-      <workItem from="1572819853494" duration="3170000" />
-    </task>
-    <task id="LOCAL-00670" summary="trying new controls with everything stored. will run on scratch.">
-      <created>1572534559803</created>
-      <option name="number" value="00670" />
-      <option name="presentableId" value="LOCAL-00670" />
-      <option name="project" value="LOCAL" />
-      <updated>1572534559803</updated>
-    </task>
-    <task id="LOCAL-00671" summary="trying new controls with everything stored. will run on scratch.">
-      <created>1572534586007</created>
-      <option name="number" value="00671" />
-      <option name="presentableId" value="LOCAL-00671" />
-      <option name="project" value="LOCAL" />
-      <updated>1572534586007</updated>
+      <workItem from="1572819853494" duration="3486000" />
     </task>
     <task id="LOCAL-00672" summary="trying new controls with everything stored. will run on scratch.">
       <created>1572534664948</created>
@@ -720,11 +708,25 @@
       <option name="project" value="LOCAL" />
       <updated>1572879125339</updated>
     </task>
-    <option name="localTasksCounter" value="719" />
+    <task id="LOCAL-00719" summary="trying new controls with everything stored. will run on scratch.">
+      <created>1572879645991</created>
+      <option name="number" value="00719" />
+      <option name="presentableId" value="LOCAL-00719" />
+      <option name="project" value="LOCAL" />
+      <updated>1572879645991</updated>
+    </task>
+    <task id="LOCAL-00720" summary="trying new controls with everything stored. will run on scratch.">
+      <created>1572879986630</created>
+      <option name="number" value="00720" />
+      <option name="presentableId" value="LOCAL-00720" />
+      <option name="project" value="LOCAL" />
+      <updated>1572879986630</updated>
+    </task>
+    <option name="localTasksCounter" value="721" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192734000" />
+    <option name="totallyTimeSpent" value="193050000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -736,10 +738,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="-513" y="-1080" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1542811" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10170394" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1136,8 +1138,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2/320solar/i2_320solar_restart_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="66" column="18" lean-forward="true" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
+        <state relative-caret-position="259">
+          <caret line="64" column="69" selection-start-line="64" selection-start-column="69" selection-end-line="64" selection-end-column="69" />
           <folding>
             <element signature="e#127#242#0" expanded="true" />
           </folding>
