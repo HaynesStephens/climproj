@@ -125,8 +125,6 @@ def load_var_list():
             'aerosol_asymmetry_parameter',
             'single_scattering_albedo_due_to_aerosol',
             'aerosol_optical_depth_at_55_micron',
-            # 'solar_cycle_fraction',
-            # 'flux_adjustment_for_earth_sun_distance',
             'downwelling_longwave_flux_in_air',
             'downwelling_shortwave_flux_in_air',
             'upwelling_longwave_flux_in_air',
@@ -137,7 +135,6 @@ def load_var_list():
             'surface_material_density',
             'upward_heat_flux_at_ground_level_in_soil',
             'heat_flux_into_sea_water_due_to_sea_ice',
-            # 'area_type',
             'soil_layer_thickness',
             'ocean_mixed_layer_thickness',
             'heat_capacity_of_soil',
@@ -159,6 +156,11 @@ def load_var_list():
             'atmosphere_convective_available_potential_energy',
             'air_temperature_tendency_from_convection',
             'stratiform_precipitation_rate']
+
+def load_skip_list():
+    return ['solar_cycle_fraction',
+            'flux_adjustment_for_earth_sun_distance',
+            'area_type']
 
 
 def saveTimeSeriesDim(nc, var_name, save_path, dim):
@@ -209,7 +211,8 @@ def saveMoistEnthalpy(nc, save_path):
     print('Saved:', var_name)
 
 
-def saveEQpkl(save_path, nc, var_list, years_back = 3):
+def saveEQpkl(save_path, nc, years_back = 3):
+    skip_list = load_skip_list()
     print('Saving the Pickle!')
     eq_pkl = {}
     seconds_back = years_back*365.25*24*60*60
@@ -217,11 +220,12 @@ def saveEQpkl(save_path, nc, var_list, years_back = 3):
     t_final = time_array[-1]
     eq_index = np.where(time_array > (t_final - seconds_back))
 
-    for var in var_list:
-        print('pkl,', var)
-        nc_var = nc[var][:].copy()
-        var_eq_val = np.mean(nc_var[eq_index], axis=0)
-        eq_pkl[var] = var_eq_val
+    for var in list(nc.variables):
+        if var not in skip_list:
+            print('pkl,', var)
+            nc_var = nc[var][:].copy()
+            var_eq_val = np.mean(nc_var[eq_index], axis=0)
+            eq_pkl[var] = var_eq_val
 
     file_name = save_path + '_eq.pkl'
     f = open(file_name, 'wb')
@@ -237,7 +241,7 @@ def saveEQpkl(save_path, nc, var_list, years_back = 3):
 # List of saved quantities, sorted by dimension
 store_quantities_0D = load_quantities_0D()
 store_quantities_1D = load_quantities_1D()
-var_list = load_var_list()
+# var_list = load_var_list()
 
 # Parameters
 test_dir = 'control/' # Needs to end in an '/'
@@ -251,7 +255,7 @@ nc = openNC(nc_path)
 save_path   = '/project2/moyer/old_project/haynes/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
 
 # Procedure
-saveEQpkl(save_path, nc, var_list)
+saveEQpkl(save_path, nc)
 for var_name in store_quantities_0D:
     saveTimeSeriesDim(nc, var_name, save_path, dim=0)
 for var_name in store_quantities_1D:
