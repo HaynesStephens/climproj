@@ -59,10 +59,30 @@ restart_file = open(restart_file_name, 'rb')
 restart_state = pickle.load(restart_file)
 
 restart_quantities =  list(restart_state.keys())
+print(restart_quantities)
+skip_quantities = ['convective_downdraft_specific_humidity_scale',
+                   'time',
+                   'upwelling_longwave_flux_in_air_assuming_clear_sky',
+                   'downwelling_longwave_flux_in_air_assuming_clear_sky',
+                   'air_temperature_tendency_from_longwave_assuming_clear_sky',
+                   'air_temperature_tendency_from_longwave',
+                   'upwelling_shortwave_flux_in_air_assuming_clear_sky',
+                   'downwelling_shortwave_flux_in_air_assuming_clear_sky',
+                   'air_temperature_tendency_from_shortwave_assuming_clear_sky',
+                   'air_temperature_tendency_from_shortwave',
+                   'depth_of_slab_surface',
+                   'convective_state',
+                   'convective_precipitation_rate',
+                   'convective_downdraft_velocity_scale',
+                   'convective_downdraft_temperature_scale',
+                   'atmosphere_convective_available_potential_energy',
+                   'air_temperature_tendency_from_convection',
+                   'stratiform_precipitation_rate']
 
 def setInitValues(state, restart_state, var):
-    init_val = restart_state[var]
-    state[var].values[:] = init_val
+    if var not in skip_quantities:
+        init_val = restart_state[var]
+        state[var].values[:] = init_val
 
 for var in restart_quantities:
     print('Setting', var)
