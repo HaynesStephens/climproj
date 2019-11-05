@@ -1,8 +1,8 @@
 ### UNIQUE VALUES ###
 irradiance = 1036
 #insol = 320
-co2_ppm = 270
-nc_name = 'i270_320solar_cst_q_rad_expt.nc'
+co2_ppm = 1080
+nc_name = 'i1080_320solar_cst_q_rad_expt.nc'
 #####################
 import copy
 from FixedInputWrapper import FixedInputWrapper
