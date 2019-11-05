@@ -8,7 +8,7 @@ class FixedInputWrapper(object):
     def input_properties(self):
         return_dict = {}
         print(self._component)
-        print(self._component.input_properties.keys())
+        # print(self._component.input_properties.keys())
         for name, properties in self._component.input_properties:
             if name not in self._fixed_state:
                 return_dict[name] = properties
