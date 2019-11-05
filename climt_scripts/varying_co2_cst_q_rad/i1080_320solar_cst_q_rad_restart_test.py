@@ -58,6 +58,7 @@ restart_file_name = '/home/haynes13/climt_files/control_fullstore/' \
                     'i270_320solar_fullstore/i270_320solar_fullstore_eq.pkl'
 restart_file = open(restart_file_name, 'rb')
 restart_state = pickle.load(restart_file)
+control_q = restart_state['specific_humidity'].copy()
 
 restart_quantities =  list(restart_state.keys())
 print(restart_quantities)
