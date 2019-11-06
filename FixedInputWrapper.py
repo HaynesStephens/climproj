@@ -20,11 +20,4 @@ class FixedInputWrapper(object):
 
     def __call__(self, state, *args, **kwargs):
         state.update(self._fixed_state)
-        print('CALL')
-        self.checkQProf(state)
         return self._component(state, *args, **kwargs)
-
-    def checkQProf(self, state):
-        print(self._fixed_state['specific_humidity'].values[:] == state['specific_humidity'].values[:])
-        print(np.sum(self._fixed_state['specific_humidity'].values[:]))
-        print(np.sum(state['specific_humidity'].values[:]))
