@@ -6,7 +6,7 @@ nc_name = 'i270_320solar_cst_q_rad.nc'
 #####################
 import copy
 from sympl import (
-    DataArray, AdamsBashforth, get_constant, set_constant, NetCDFMonitor, PlotFunctionMonitor
+    DataArray, AdamsBashforth, get_constant, set_constant, NetCDFMonitor
 )
 import numpy as np
 from datetime import timedelta
