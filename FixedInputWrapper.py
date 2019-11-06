@@ -1,5 +1,3 @@
-import numpy as np
-
 class FixedInputWrapper(object):
 
     def __init__(self, wrapped_component, fixed_state):
