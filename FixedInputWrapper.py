@@ -20,8 +20,8 @@ class FixedInputWrapper(object):
 
     def __call__(self, state, *args, **kwargs):
         print('CALL')
-        self.checkQProf(state)
         state.update(self._fixed_state)
+        self.checkQProf(state)
         return self._component(state, *args, **kwargs)
 
     def checkQProf(self, state):
