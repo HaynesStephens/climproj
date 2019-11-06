@@ -14,8 +14,12 @@ class FixedInputWrapper(object):
         return return_dict
 
     def __getattr__(self, item):
+        print('GET_ATTR')
+        print(self._fixed_state)
         return getattr(self._component, item)
 
     def __call__(self, state, *args, **kwargs):
+        print('CALL')
+        print(self._fixed_state)
         state.update(self._fixed_state)
         return self._component(state, *args, **kwargs)

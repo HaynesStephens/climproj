@@ -104,7 +104,7 @@ time_stepper = AdamsBashforth([radiation_lw_fixed, radiation_sw_fixed, slab, moi
 dt_minutes = 10
 timestep = timedelta(minutes=dt_minutes)
 # Day length to match Shanshan
-run_days = 10950
+run_days = 10
 run_length = int((run_days * 24 * 60) / dt_minutes)
 
 for i in range(run_length):
