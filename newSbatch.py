@@ -20,9 +20,9 @@ def newSbatch(base_dir, test_dir, job_name): #order input variables by use order
     sbatch_file.write('#SBATCH --mem-per-cpu=32000\n')
     sbatch_file.write('#SBATCH --mail-type=ALL\n')
     sbatch_file.write('#SBATCH --mail-user=haynes13@uchicago.edu\n')
-    sbatch_file.write('\n')
-    sbatch_file.write('module unload python\n')
-    sbatch_file.write('module load python/3.5.2\n')
+    # sbatch_file.write('\n')
+    # sbatch_file.write('module unload python\n')
+    # sbatch_file.write('module load python/3.5.2\n')
     sbatch_file.write('\n')
     sbatch_file.write('python /home/haynes13/code/python/climproj/climt_scripts/{0}{1}.py'.format(test_dir, job_name))
 

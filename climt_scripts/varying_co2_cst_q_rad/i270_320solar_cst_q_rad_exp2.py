@@ -2,7 +2,7 @@
 irradiance = 1036
 #insol = 320
 co2_ppm = 270
-nc_name = 'i270_320solar_cst_q_rad_expt.nc'
+nc_name = 'i270_320solar_cst_q_rad_expt2.nc'
 #####################
 import copy
 from FixedInputWrapper import FixedInputWrapper
@@ -97,18 +97,21 @@ fixed_state['specific_humidity'].values[:] = control_q.copy()
 radiation_lw_fixed = FixedInputWrapper(radiation_lw, fixed_state)
 radiation_sw_fixed = FixedInputWrapper(radiation_sw, fixed_state)
 ######################################
-time_stepper = AdamsBashforth([radiation_lw_fixed, radiation_sw_fixed, slab, moist_convection])
-
+phys_stepper = AdamsBashforth([slab, moist_convection])
+rad_stepper = AdamsBashforth([radiation_lw_fixed, radiation_sw_fixed])
 
 # Set timestep at 10 minutes
 dt_minutes = 10
 timestep = timedelta(minutes=dt_minutes)
 # Day length to match Shanshan
-run_days = 10
+run_days = 10950
 run_length = int((run_days * 24 * 60) / dt_minutes)
 
 for i in range(run_length):
-    diagnostics, state = time_stepper(state, timestep)
+    diagnostics, state = rad_stepper(state, timestep)
+    state.update(diagnostics)
+
+    diagnostics, state = phys_stepper(state, timestep)
     state.update(diagnostics)
 
     diagnostics, new_state = simple_physics(state, timestep)
