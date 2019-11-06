@@ -19,9 +19,9 @@ class FixedInputWrapper(object):
         return getattr(self._component, item)
 
     def __call__(self, state, *args, **kwargs):
-        print('CALL')
         # state.update(self._fixed_state)
         state.update('love')
+        print('CALL')
         self.checkQProf(state)
         return self._component(state, *args, **kwargs)
 
