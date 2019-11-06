@@ -265,10 +265,10 @@ store_quantities_1D = load_quantities_1D()
 test_dir = 'varying_co2/320solar/' # Needs to end in an '/'
 print('TEST:', test_dir)
 
-job_name    = 'i1215_320solar_restart_test'
+job_name    = 'i1215_320solar'
 print('Job:', job_name)
 
-nc_path     = '/home/haynes13/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
+nc_path     = '/project2/moyer/old_project/haynes/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
 nc = openNC(nc_path)
 save_path   = '/home/haynes13/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
 
