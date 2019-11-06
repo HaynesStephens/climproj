@@ -97,8 +97,8 @@ fixed_state['specific_humidity'].values[:] = control_q.copy()
 radiation_lw_fixed = FixedInputWrapper(radiation_lw, fixed_state)
 radiation_sw_fixed = FixedInputWrapper(radiation_sw, fixed_state)
 ######################################
-phys_stepper = AdamsBashforth([slab, moist_convection])
 rad_stepper = AdamsBashforth([radiation_lw_fixed, radiation_sw_fixed])
+phys_stepper = AdamsBashforth([slab, moist_convection])
 
 # Set timestep at 10 minutes
 dt_minutes = 10
