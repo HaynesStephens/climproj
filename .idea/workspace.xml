@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writeCSVandPKL.py" beforeDir="false" afterPath="$PROJECT_DIR$/writeCSVandPKL.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
-              <caret line="267" column="28" selection-start-line="267" selection-start-column="28" selection-end-line="267" selection-end-column="28" />
+            <state relative-caret-position="634">
+              <caret line="267" column="21" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
               <folding>
                 <element signature="e#223#241#0" expanded="true" />
               </folding>
@@ -329,21 +330,7 @@
       <workItem from="1571759107940" duration="4359000" />
       <workItem from="1571839802525" duration="9567000" />
       <workItem from="1572272018405" duration="16464000" />
-      <workItem from="1572819853494" duration="16947000" />
-    </task>
-    <task id="LOCAL-00731" summary="trying new controls with everything stored. will run on scratch.">
-      <created>1572898082428</created>
-      <option name="number" value="00731" />
-      <option name="presentableId" value="LOCAL-00731" />
-      <option name="project" value="LOCAL" />
-      <updated>1572898082428</updated>
-    </task>
-    <task id="LOCAL-00732" summary="trying new controls with everything stored. will run on scratch.">
-      <created>1572898142561</created>
-      <option name="number" value="00732" />
-      <option name="presentableId" value="LOCAL-00732" />
-      <option name="project" value="LOCAL" />
-      <updated>1572898142561</updated>
+      <workItem from="1572819853494" duration="17081000" />
     </task>
     <task id="LOCAL-00733" summary="trying new controls with everything stored. will run on scratch.">
       <created>1572898158115</created>
@@ -674,11 +661,25 @@
       <option name="project" value="LOCAL" />
       <updated>1573071558138</updated>
     </task>
-    <option name="localTasksCounter" value="780" />
+    <task id="LOCAL-00780" summary="new restart test runs">
+      <created>1573071606995</created>
+      <option name="number" value="00780" />
+      <option name="presentableId" value="LOCAL-00780" />
+      <option name="project" value="LOCAL" />
+      <updated>1573071606995</updated>
+    </task>
+    <task id="LOCAL-00781" summary="new restart test runs">
+      <created>1573071724110</created>
+      <option name="number" value="00781" />
+      <option name="presentableId" value="LOCAL-00781" />
+      <option name="project" value="LOCAL" />
+      <updated>1573071724110</updated>
+    </task>
+    <option name="localTasksCounter" value="782" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206511000" />
+    <option name="totallyTimeSpent" value="206645000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1148,8 +1149,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="267" column="28" selection-start-line="267" selection-start-column="28" selection-end-line="267" selection-end-column="28" />
+        <state relative-caret-position="634">
+          <caret line="267" column="21" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
           <folding>
             <element signature="e#223#241#0" expanded="true" />
           </folding>
