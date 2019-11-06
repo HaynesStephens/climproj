@@ -1,3 +1,5 @@
+import numpy as np
+
 class FixedInputWrapper(object):
 
     def __init__(self, wrapped_component, fixed_state):
@@ -25,7 +27,7 @@ class FixedInputWrapper(object):
         return self._component(state, *args, **kwargs)
 
     def checkQProf(self, state):
-        validation = array([[[7.971684e-03]],
+        validation = np.array([[[7.971684e-03]],
                             [[7.495124e-03]],
                             [[6.208342e-03]],
                             [[5.659282e-03]],
