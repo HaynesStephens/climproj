@@ -91,8 +91,9 @@ for var in restart_quantities:
 
 ### FIXED STATE WRAPPER EXPERIMENT ###
 fixed_state = {
-    'specific_humidity': restart_state['specific_humidity'].copy(),
+    'specific_humidity': state['specific_humidity'],
 }
+fixed_state['specific_humidity'].values[:] = control_q.copy()
 radiation_lw_fixed = FixedInputWrapper(radiation_lw, fixed_state)
 radiation_sw_fixed = FixedInputWrapper(radiation_sw, fixed_state)
 ######################################
