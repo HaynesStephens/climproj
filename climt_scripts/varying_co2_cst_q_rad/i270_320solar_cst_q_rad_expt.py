@@ -7,7 +7,7 @@ nc_name = 'i270_320solar_cst_q_rad_expt.nc'
 import copy
 from FixedInputWrapper import FixedInputWrapper
 from sympl import (
-    DataArray, AdamsBashforth, get_constant, set_constant, NetCDFMonitor, PlotFunctionMonitor
+    DataArray, AdamsBashforth, get_constant, set_constant, NetCDFMonitor
 )
 import numpy as np
 from datetime import timedelta
@@ -39,10 +39,6 @@ store_quantities = ['air_temperature',
 netcdf_monitor = NetCDFMonitor(nc_name,
                                store_names=store_quantities,
                                write_on_store=True)
-
-# Set timestep at 10 minutes
-dt_minutes = 10
-timestep = timedelta(minutes=dt_minutes)
 
 radiation_sw = RRTMGShortwave(ignore_day_of_year=True)
 radiation_lw = RRTMGLongwave()
@@ -102,6 +98,10 @@ radiation_sw_fixed = FixedInputWrapper(radiation_sw, fixed_state)
 ######################################
 time_stepper = AdamsBashforth([radiation_lw_fixed, radiation_sw_fixed, slab, moist_convection])
 
+
+# Set timestep at 10 minutes
+dt_minutes = 10
+timestep = timedelta(minutes=dt_minutes)
 # Day length to match Shanshan
 run_days = 10950
 run_length = int((run_days * 24 * 60) / dt_minutes)
