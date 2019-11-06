@@ -213,7 +213,7 @@ def saveMoistEnthalpy(nc, save_path):
 
 def saveEQpkl(save_path, nc, years_back = 3):
     skip_list = load_skip_list()
-    print('Saving the Pickle!')
+    print('Saving EQ Pickle!')
     eq_pkl = {}
     seconds_back = years_back*365.25*24*60*60
     time_array = nc['time'][:].copy()
@@ -227,12 +227,31 @@ def saveEQpkl(save_path, nc, years_back = 3):
             var_eq_val = np.mean(nc_var[eq_index], axis=0)
             eq_pkl[var] = var_eq_val
 
-    file_name = save_path + '_eq.pkl'
+    file_name = save_path + '.eq.pkl'
     f = open(file_name, 'wb')
     pickle.dump(eq_pkl, f)
     f.close()
-    print('Pickle Saved!')
+    print('EQ Pickle Saved!')
     return eq_pkl
+
+def saveTranspkl(save_path, nc):
+    skip_list = load_skip_list()
+    print('Saving Transient Pickle!')
+    trans_pkl = {}
+
+    for var in list(nc.variables):
+        if var not in skip_list:
+            print('pkl,', var)
+            nc_var = nc[var][:].copy()
+            var_trans_arr = nc_var[:5]
+            trans_pkl[var] = var_trans_arr
+
+    file_name = save_path + '.trans.pkl'
+    f = open(file_name, 'wb')
+    pickle.dump(trans_pkl, f)
+    f.close()
+    print('Transient Pickle Saved!')
+    return trans_pkl
 
 
 
@@ -255,6 +274,7 @@ save_path   = '/home/haynes13/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
 
 # Procedure
 saveEQpkl(save_path, nc)
+saveTranspkl(save_path, nc)
 for var_name in store_quantities_0D:
     saveTimeSeriesDim(nc, var_name, save_path, dim=0)
 for var_name in store_quantities_1D:
