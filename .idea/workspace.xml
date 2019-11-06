@@ -50,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/FixedInputWrapper.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -302,14 +302,7 @@
       <workItem from="1571759107940" duration="4359000" />
       <workItem from="1571839802525" duration="9567000" />
       <workItem from="1572272018405" duration="16464000" />
-      <workItem from="1572819853494" duration="12953000" />
-    </task>
-    <task id="LOCAL-00710" summary="trying new controls with everything stored. will run on scratch.">
-      <created>1572823872940</created>
-      <option name="number" value="00710" />
-      <option name="presentableId" value="LOCAL-00710" />
-      <option name="project" value="LOCAL" />
-      <updated>1572823872940</updated>
+      <workItem from="1572819853494" duration="12978000" />
     </task>
     <task id="LOCAL-00711" summary="trying new controls with everything stored. will run on scratch.">
       <created>1572824008101</created>
@@ -647,11 +640,18 @@
       <option name="project" value="LOCAL" />
       <updated>1573055360007</updated>
     </task>
-    <option name="localTasksCounter" value="759" />
+    <task id="LOCAL-00759" summary="new restart test runs">
+      <created>1573055520017</created>
+      <option name="number" value="00759" />
+      <option name="presentableId" value="LOCAL-00759" />
+      <option name="project" value="LOCAL" />
+      <updated>1573055520018</updated>
+    </task>
+    <option name="localTasksCounter" value="760" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202517000" />
+    <option name="totallyTimeSpent" value="202542000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1129,7 +1129,7 @@
     <entry file="file://$PROJECT_DIR$/FixedInputWrapper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
         </state>
       </provider>
     </entry>
