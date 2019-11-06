@@ -262,7 +262,7 @@ store_quantities_0D = load_quantities_0D()
 store_quantities_1D = load_quantities_1D()
 
 # Parameters
-test_dir = 'varying_co2/' # Needs to end in an '/'
+test_dir = 'varying_co2/320solar/' # Needs to end in an '/'
 print('TEST:', test_dir)
 
 job_name    = 'i2_320solar_restart_test'
