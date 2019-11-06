@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="634">
-              <caret line="267" column="17" selection-start-line="267" selection-start-column="17" selection-end-line="267" selection-end-column="17" />
+              <caret line="267" column="23" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
               <folding>
                 <element signature="e#223#241#0" expanded="true" />
               </folding>
@@ -330,21 +330,7 @@
       <workItem from="1571759107940" duration="4359000" />
       <workItem from="1571839802525" duration="9567000" />
       <workItem from="1572272018405" duration="16464000" />
-      <workItem from="1572819853494" duration="17374000" />
-    </task>
-    <task id="LOCAL-00738" summary="new restart test runs">
-      <created>1572975887082</created>
-      <option name="number" value="00738" />
-      <option name="presentableId" value="LOCAL-00738" />
-      <option name="project" value="LOCAL" />
-      <updated>1572975887082</updated>
-    </task>
-    <task id="LOCAL-00739" summary="new restart test runs">
-      <created>1572976036841</created>
-      <option name="number" value="00739" />
-      <option name="presentableId" value="LOCAL-00739" />
-      <option name="project" value="LOCAL" />
-      <updated>1572976036841</updated>
+      <workItem from="1572819853494" duration="17469000" />
     </task>
     <task id="LOCAL-00740" summary="new restart test runs">
       <created>1572976091010</created>
@@ -675,11 +661,25 @@
       <option name="project" value="LOCAL" />
       <updated>1573072084693</updated>
     </task>
-    <option name="localTasksCounter" value="787" />
+    <task id="LOCAL-00787" summary="new restart test runs">
+      <created>1573072184699</created>
+      <option name="number" value="00787" />
+      <option name="presentableId" value="LOCAL-00787" />
+      <option name="project" value="LOCAL" />
+      <updated>1573072184699</updated>
+    </task>
+    <task id="LOCAL-00788" summary="new restart test runs">
+      <created>1573072227797</created>
+      <option name="number" value="00788" />
+      <option name="presentableId" value="LOCAL-00788" />
+      <option name="project" value="LOCAL" />
+      <updated>1573072227797</updated>
+    </task>
+    <option name="localTasksCounter" value="789" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206938000" />
+    <option name="totallyTimeSpent" value="207033000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1150,7 +1150,7 @@
     <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="634">
-          <caret line="267" column="17" selection-start-line="267" selection-start-column="17" selection-end-line="267" selection-end-column="17" />
+          <caret line="267" column="23" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
           <folding>
             <element signature="e#223#241#0" expanded="true" />
           </folding>
