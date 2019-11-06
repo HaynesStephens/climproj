@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newSbatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/newSbatch.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +12,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newSbatch.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="561">
@@ -25,10 +24,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_expt1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
+            <state relative-caret-position="5">
               <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
               <folding>
                 <element signature="e#133#144#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="749">
+              <caret line="267" column="28" selection-start-line="267" selection-start-column="28" selection-end-line="267" selection-end-column="28" />
+              <folding>
+                <element signature="e#223#241#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,7 +98,6 @@
       <find>eq_file</find>
       <find>loadTXT</find>
       <find>res</find>
-      <find>var_list</find>
       <find>eq</find>
       <find>pr</find>
       <find>profile</find>
@@ -101,6 +111,7 @@
       <find>dt_</find>
       <find>timestep</find>
       <find>mole</find>
+      <find>var_list</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,7 +162,6 @@
         <option value="$PROJECT_DIR$/climt_scripts/varying_solar/i270_200solar_restart_test.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_solar/i270_335solar_restart_test.py" />
         <option value="$PROJECT_DIR$/writeCSV.py" />
-        <option value="$PROJECT_DIR$/writeCSVandPKL.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i1080_320solar_cst_q_rad_expt.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_restart_test.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i1080_320solar_cst_q_rad_restart_test.py" />
@@ -160,6 +170,7 @@
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_exp2.py" />
         <option value="$PROJECT_DIR$/newSbatch.py" />
+        <option value="$PROJECT_DIR$/writeCSVandPKL.py" />
       </list>
     </option>
   </component>
@@ -318,28 +329,7 @@
       <workItem from="1571759107940" duration="4359000" />
       <workItem from="1571839802525" duration="9567000" />
       <workItem from="1572272018405" duration="16464000" />
-      <workItem from="1572819853494" duration="16494000" />
-    </task>
-    <task id="LOCAL-00728" summary="trying new controls with everything stored. will run on scratch.">
-      <created>1572883198828</created>
-      <option name="number" value="00728" />
-      <option name="presentableId" value="LOCAL-00728" />
-      <option name="project" value="LOCAL" />
-      <updated>1572883198828</updated>
-    </task>
-    <task id="LOCAL-00729" summary="trying new controls with everything stored. will run on scratch.">
-      <created>1572883207611</created>
-      <option name="number" value="00729" />
-      <option name="presentableId" value="LOCAL-00729" />
-      <option name="project" value="LOCAL" />
-      <updated>1572883207611</updated>
-    </task>
-    <task id="LOCAL-00730" summary="trying new controls with everything stored. will run on scratch.">
-      <created>1572897849880</created>
-      <option name="number" value="00730" />
-      <option name="presentableId" value="LOCAL-00730" />
-      <option name="project" value="LOCAL" />
-      <updated>1572897849880</updated>
+      <workItem from="1572819853494" duration="16947000" />
     </task>
     <task id="LOCAL-00731" summary="trying new controls with everything stored. will run on scratch.">
       <created>1572898082428</created>
@@ -663,11 +653,32 @@
       <option name="project" value="LOCAL" />
       <updated>1573071071035</updated>
     </task>
-    <option name="localTasksCounter" value="777" />
+    <task id="LOCAL-00777" summary="new restart test runs">
+      <created>1573071142806</created>
+      <option name="number" value="00777" />
+      <option name="presentableId" value="LOCAL-00777" />
+      <option name="project" value="LOCAL" />
+      <updated>1573071142807</updated>
+    </task>
+    <task id="LOCAL-00778" summary="new restart test runs">
+      <created>1573071367589</created>
+      <option name="number" value="00778" />
+      <option name="presentableId" value="LOCAL-00778" />
+      <option name="project" value="LOCAL" />
+      <updated>1573071367589</updated>
+    </task>
+    <task id="LOCAL-00779" summary="new restart test runs">
+      <created>1573071558138</created>
+      <option name="number" value="00779" />
+      <option name="presentableId" value="LOCAL-00779" />
+      <option name="project" value="LOCAL" />
+      <updated>1573071558138</updated>
+    </task>
+    <option name="localTasksCounter" value="780" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206058000" />
+    <option name="totallyTimeSpent" value="206511000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1043,16 +1054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="221" lean-forward="true" selection-start-line="221" selection-end-line="221" />
-          <folding>
-            <element signature="e#223#241#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/restartFile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1139">
@@ -1118,16 +1119,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_expt1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
-          <folding>
-            <element signature="e#133#144#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_exp2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
@@ -1142,6 +1133,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_expt1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+          <folding>
+            <element signature="e#133#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="267" column="28" selection-start-line="267" selection-start-column="28" selection-end-line="267" selection-end-column="28" />
+          <folding>
+            <element signature="e#223#241#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
