@@ -27,3 +27,4 @@ class FixedInputWrapper(object):
     def checkQProf(self, state):
         print(self._fixed_state['specific_humidity'].values[:] == state['specific_humidity'].values[:])
         print(np.sum(self._fixed_state['specific_humidity'].values[:]))
+        print(np.sum(state['specific_humidity'].values[:]))
