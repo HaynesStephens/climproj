@@ -27,9 +27,7 @@ def createRun(co2_ppm, irradiance, insol, template_py):
     return job_dir, sbatch_filename
 
 # TRIAL RUN ONLY USING 2 PPM
-co2_ppm_list = [10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-# TEMPLATE, ENTIRE LIST: co2_ppm_list = [2, 5, 10, 20, 50, 100, 150, 190, 220,
-#                                        270, 405, 540, 675, 756, 1080, 1215]
+co2_ppm_list = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
 irradiance_list = [939, 1036]
 insol_list = [290, 320]
 insol_template_list = ['varying_co2_template_290solar.py', 'varying_co2_template_320solar.py']
