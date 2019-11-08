@@ -2,10 +2,10 @@ import os
 import newSbatch
 
 
-def createRun(co2_ppm, irradiance, insol):
+def createRun(co2_ppm, irradiance, insol, template_py):
     job_name = 'i{0}_{1}solar'.format(co2_ppm, insol)
 
-    template_path = '/home/haynes13/code/python/climproj/climt_scripts/varying_co2_template_320solar.py'
+    template_path = '/home/haynes13/code/python/climproj/climt_scripts/varying_co2/' + template_py
     job_path = '/home/haynes13/code/python/climproj/climt_scripts/{0}.py'.format(job_name)
     print(job_path)
 
@@ -21,7 +21,7 @@ def createRun(co2_ppm, irradiance, insol):
         for line in fin.readlines():
             fout.write(line)
 
-    base_dir = '/home/haynes13/climt_runs/'
+    base_dir = '/project2/moyer/old_project/haynes/'
     test_dir = 'varying_co2/{0}solar/'.format(insol) # Needs to end in an '/'
     job_dir, sbatch_filename = newSbatch.newSbatch(base_dir, test_dir, job_name)
     return job_dir, sbatch_filename
@@ -32,6 +32,7 @@ co2_ppm_list = [10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1
 #                                        270, 405, 540, 675, 756, 1080, 1215]
 irradiance_list = [939, 1036]
 insol_list = [290, 320]
+insol_template_list = ['varying_co2_template_290solar.py', 'varying_co2_template_320solar.py']
 
 for i in range(len(co2_ppm_list)):
     co2_ppm = co2_ppm_list[i]
@@ -39,8 +40,9 @@ for i in range(len(co2_ppm_list)):
     for j in range(len(irradiance_list)):
         irradiance = irradiance_list[j]
         insol = insol_list[j]
+        template_py = insol_template_list[j]
 
-        job_dir, sbatch_filename = createRun(co2_ppm, irradiance, insol)
+        job_dir, sbatch_filename = createRun(co2_ppm, irradiance, insol, template_py)
         os.chdir(job_dir)
         os.system('sbatch {0}'.format(sbatch_filename))
 

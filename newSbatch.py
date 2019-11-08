@@ -1,10 +1,10 @@
 import os
 
 def newSbatch(base_dir, test_dir, job_name): #order input variables by use order, duh
-    job_dir = base_dir + test_dir + job_name
+    job_dir = '{0}climt_runs/{1}{2}'.format(base_dir, test_dir, job_name)
     os.system('mkdir -p {0}'.format(job_dir))
     # os.system('mkdir -p /home/haynes13/code/python/climproj/saved_plots/{0}'.format(job_name))
-    os.system('mkdir -p /home/haynes13/climt_files/{0}{1}'.format(test_dir, job_name))
+    os.system('mkdir -p {0}climt_files/{1}{2}'.format(base_dir, test_dir, job_name))
     sbatch_filename = job_dir + '/' + job_name + '.sbatch'
     sbatch_file = open(sbatch_filename, 'w')
 
@@ -29,8 +29,8 @@ def newSbatch(base_dir, test_dir, job_name): #order input variables by use order
     sbatch_file.close()
     return job_dir, sbatch_filename
 
-base_dir = '/home/haynes13/climt_runs/' # Needs to end in an '/'
-test_dir = 'varying_co2_cst_q_rad/' # Needs to end in an '/'
-job_name = 'i270_320solar_cst_q_rad_expt2'
-newSbatch(base_dir, test_dir, job_name)
-print(base_dir+test_dir+job_name)
+# base_dir = '/home/haynes13/' # Needs to end in an '/'
+# test_dir = 'varying_co2_cst_q_rad/' # Needs to end in an '/'
+# job_name = 'i270_320solar_cst_q_rad_expt2'
+# newSbatch(base_dir, test_dir, job_name)
+# print(base_dir+test_dir+job_name)
