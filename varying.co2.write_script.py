@@ -5,7 +5,7 @@ import newSbatch
 def createRun(co2_ppm, irradiance, insol, template_py):
     job_name = 'i{0}_{1}solar'.format(co2_ppm, insol)
 
-    template_path = '/home/haynes13/code/python/climproj/climt_scripts/varying_co2/' + template_py
+    template_path = '/home/haynes13/code/python/climproj/climt_scripts/varying_co2/{0}solar/'.format(insol) + template_py
     job_path = '/home/haynes13/code/python/climproj/climt_scripts/{0}.py'.format(job_name)
     print(job_path)
 
@@ -26,6 +26,8 @@ def createRun(co2_ppm, irradiance, insol, template_py):
     job_dir, sbatch_filename = newSbatch.newSbatch(base_dir, test_dir, job_name)
     return job_dir, sbatch_filename
 
+os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/varying_co2/290solar')
+os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/varying_co2/320solar')
 # TRIAL RUN ONLY USING 2 PPM
 co2_ppm_list = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
 irradiance_list = [939, 1036]
