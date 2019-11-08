@@ -268,7 +268,7 @@ print('TEST:', test_dir)
 job_name    = 'i270_290solar_fullstore'
 print('Job:', job_name)
 
-nc_path     = '/home/haynes13/climt_runs/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
+nc_path     = '/home/haynes13/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
 nc = openNC(nc_path)
 save_path   = '/home/haynes13/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
 
