@@ -5,7 +5,7 @@ import newSbatch
 def createRun(co2_ppm, irradiance, insol, template_py):
     job_name = 'i{0}_{1}solar'.format(co2_ppm, insol)
 
-    template_path = '/home/haynes13/code/python/climproj/climt_scripts/varying_co2/{0}solar/'.format(insol) + template_py
+    template_path = '/home/haynes13/code/python/climproj/climt_scripts/varying_co2/' + template_py
     job_path = '/home/haynes13/code/python/climproj/climt_scripts/{0}.py'.format(job_name)
     print(job_path)
 
