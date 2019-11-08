@@ -265,7 +265,7 @@ store_quantities_1D = load_quantities_1D()
 test_dir = 'control_fullstore/' # Needs to end in an '/'
 print('TEST:', test_dir)
 
-job_name    = 'i270_290solar'
+job_name    = 'i270_290solar_fullstore'
 print('Job:', job_name)
 
 nc_path     = '/home/haynes13/climt_runs/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
