@@ -262,13 +262,13 @@ store_quantities_0D = load_quantities_0D()
 store_quantities_1D = load_quantities_1D()
 
 # Parameters
-test_dir = 'varying_solar/' # Needs to end in an '/'
+test_dir = 'control_fullstore/' # Needs to end in an '/'
 print('TEST:', test_dir)
 
-job_name    = 'i270_335solar'
+job_name    = 'i270_290solar'
 print('Job:', job_name)
 
-nc_path     = '/project2/moyer/old_project/haynes/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
+nc_path     = '/home/haynes13/climt_runs/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
 nc = openNC(nc_path)
 save_path   = '/home/haynes13/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
 
