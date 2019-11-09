@@ -26,7 +26,7 @@ def createRun(co2_ppm, irradiance, insol):
     job_dir, sbatch_filename = newSbatch.newSbatch(base_dir, test_dir, job_name)
     return job_dir, sbatch_filename
 
-os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/varying_solar/')
+os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/varying_solar')
 
 co2_ppm_list = [270]
 insol_list      = [200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265,
