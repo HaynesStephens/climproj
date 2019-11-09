@@ -3,34 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_205solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_210solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_215solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_220solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_225solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_230solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_235solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_240solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_245solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_250solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_255solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_260solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_265solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_270solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_275solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_280solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_285solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_295solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_300solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_305solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_310solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_315solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_325solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_330solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_335solar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/varying_solar_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/varying_solar/varying_solar_template.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/varying.solar.write_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/varying.solar.write_script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writeCSV.varying.solar.py" beforeDir="false" afterPath="$PROJECT_DIR$/writeCSV.varying.solar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_200solar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_200solar_restart_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_solar/i270_335solar_restart_test.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,23 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/varying_solar/i270_200solar_restart_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-              <folding>
-                <element signature="e#130#245#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/climt_scripts/varying_solar/varying_solar_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+            <state relative-caret-position="151">
+              <caret line="89" column="15" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
               <folding>
                 <element signature="e#0#94#0" expanded="true" />
               </folding>
@@ -73,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/varying.solar.write_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-114">
-              <caret line="8" column="80" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
+            <state relative-caret-position="476">
+              <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -194,9 +157,9 @@
         <option value="$PROJECT_DIR$/varying.co2.write_script.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2/varying_co2_template_320solar.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2/varying_co2_template_290solar.py" />
-        <option value="$PROJECT_DIR$/climt_scripts/varying_solar/varying_solar_template.py" />
         <option value="$PROJECT_DIR$/writeCSV.varying.solar.py" />
         <option value="$PROJECT_DIR$/varying.solar.write_script.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/varying_solar/varying_solar_template.py" />
       </list>
     </option>
   </component>
@@ -221,12 +184,6 @@
               <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
               <item name="climproj" type="462c0819:PsiDirectoryNode" />
               <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="varying_solar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -353,21 +310,7 @@
       <workItem from="1571759107940" duration="4359000" />
       <workItem from="1571839802525" duration="9567000" />
       <workItem from="1572272018405" duration="16464000" />
-      <workItem from="1572819853494" duration="22792000" />
-    </task>
-    <task id="LOCAL-00759" summary="new restart test runs">
-      <created>1573055520017</created>
-      <option name="number" value="00759" />
-      <option name="presentableId" value="LOCAL-00759" />
-      <option name="project" value="LOCAL" />
-      <updated>1573055520018</updated>
-    </task>
-    <task id="LOCAL-00760" summary="new restart test runs">
-      <created>1573055546413</created>
-      <option name="number" value="00760" />
-      <option name="presentableId" value="LOCAL-00760" />
-      <option name="project" value="LOCAL" />
-      <updated>1573055546413</updated>
+      <workItem from="1572819853494" duration="23026000" />
     </task>
     <task id="LOCAL-00761" summary="new restart test runs">
       <created>1573055551687</created>
@@ -698,11 +641,25 @@
       <option name="project" value="LOCAL" />
       <updated>1573257588347</updated>
     </task>
-    <option name="localTasksCounter" value="808" />
+    <task id="LOCAL-00808" summary="new restart test runs">
+      <created>1573314597368</created>
+      <option name="number" value="00808" />
+      <option name="presentableId" value="LOCAL-00808" />
+      <option name="project" value="LOCAL" />
+      <updated>1573314597368</updated>
+    </task>
+    <task id="LOCAL-00809" summary="new restart test runs">
+      <created>1573314805289</created>
+      <option name="number" value="00809" />
+      <option name="presentableId" value="LOCAL-00809" />
+      <option name="project" value="LOCAL" />
+      <updated>1573314805289</updated>
+    </task>
+    <option name="localTasksCounter" value="810" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212356000" />
+    <option name="totallyTimeSpent" value="212590000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -717,7 +674,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27382874" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27382874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1123,16 +1080,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_solar/i270_200solar_restart_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding>
-            <element signature="e#130#245#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/newSbatch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -1157,16 +1104,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_solar/varying_solar_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
-          <folding>
-            <element signature="e#0#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/varying.co2.write_script.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1179,10 +1116,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/varying.solar.write_script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="8" column="80" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
+        <state relative-caret-position="476">
+          <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_solar/i270_200solar_restart_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1124">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+          <folding>
+            <element signature="e#130#245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_solar/varying_solar_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="89" column="15" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#94#0" expanded="true" />
           </folding>
         </state>
       </provider>
