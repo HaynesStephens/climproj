@@ -26,19 +26,19 @@ def get_EQ_df(fname):
     conv_prec   = pkl['convective_precipitation_rate'][0, 0]
     strat_prec  = pkl['stratiform_precipitation_rate'][0, 0]
     ppm         = np.round(pkl['mole_fraction_of_carbon_dioxide_in_air'][0,0,0]*10**6)
-    df = pd.Dataframe({'NETsurf'    : net_surf,
-                       'NETtoa'     : net_toa,
-                       'SWsurf'     : sw_surf,
-                       'SWtoa'      : sw_toa,
-                       'LWsurf'     : lw_surf,
-                       'LWtoa'      : lw_toa,
-                       'LH'         : lh,
-                       'SH'         : sh,
-                       'Ts'         : t_surf,
-                       'ConvPrec'   : conv_prec,
-                       'StratPrec'  : strat_prec,
-                       'ppm'        : ppm,
-                       'insol'      : 290})
+    df          = pd.DataFrame({'NETsurf'    : net_surf,
+                                'NETtoa'     : net_toa,
+                                'SWsurf'     : sw_surf,
+                                'SWtoa'      : sw_toa,
+                                'LWsurf'     : lw_surf,
+                                'LWtoa'      : lw_toa,
+                                'LH'         : lh,
+                                'SH'         : sh,
+                                'Ts'         : t_surf,
+                                'ConvPrec'   : conv_prec,
+                                'StratPrec'  : strat_prec,
+                                'ppm'        : ppm,
+                                'insol'      : 290})
     return df
 
 
