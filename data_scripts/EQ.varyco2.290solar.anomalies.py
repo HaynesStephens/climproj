@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 
 basepath = '/project2/moyer/old_project/haynes/climt_files/varying_co2/290solar/'
-ppm_list = np.sort(np.array([100, 1080, 150, 20, 2, 405, 5, 675, 10, 1215, 190, 220, 270, 50, 540, 756]))
+ppm_list = np.array([2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215])
 job_list = ['i{0}_290solar'.format(ppm) for ppm in ppm_list]
 eq_list = ['{0}{1}/{1}.eq.pkl'.format(basepath, job) for job in job_list]
 
