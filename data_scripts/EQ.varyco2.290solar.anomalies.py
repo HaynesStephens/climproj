@@ -49,11 +49,6 @@ def get_EQ_batch(filelist):
         df0 = pd.concat([df0, df_i])
     return df0
 
-# print('Loading control.')
-# control_eq_name= '/project2/moyer/old_project/haynes/climt_files/control_fullstore/' \
-#                   'i270_290solar_fullstore/i270_290solar_fullstore.eq.pkl'
-# control_file = open(control_eq_name, 'rb')
-# control_state = pickle.load(control_file)
 
 print('Loading & combining dataframes.')
 df = get_EQ_batch(eq_list)
