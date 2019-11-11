@@ -21,10 +21,12 @@ def createRun(co2_ppm, irradiance, insol):
         for line in fin.readlines():
             fout.write(line)
 
-    base_dir = '/project2/moyer/old_project/haynes/climt_runs/' # Needs to end in an '/'
+    base_dir = '/project2/moyer/old_project/haynes/' # Needs to end in an '/'
     test_dir = 'varying_co2_cst_q_rad/fixed_stepper/' # Needs to end in an '/'
     job_dir, sbatch_filename = newSbatch.newSbatch(base_dir, test_dir, job_name)
     return job_dir, sbatch_filename
+
+os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/varying_co2_cst_q_rad/fixed_stepper/')
 
 # TEMPLATE, ENTIRE LIST:
 co2_ppm_list = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
