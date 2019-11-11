@@ -256,28 +256,28 @@ def saveTranspkl(save_path, nc):
 
 
 
-# ### INDIVIDUAL EXECUTION. ###
-# # List of saved quantities, sorted by dimension
-# store_quantities_0D = load_quantities_0D()
-# store_quantities_1D = load_quantities_1D()
-#
-# # Parameters
-# test_dir = 'control_fullstore/' # Needs to end in an '/'
-# print('TEST:', test_dir)
-#
-# job_name    = 'i270_320solar_fullstore'
-# print('Job:', job_name)
-#
-# nc_path     = '/home/haynes13/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
-# nc = openNC(nc_path)
-# save_path   = '/home/haynes13/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
-#
-# # Procedure
-# saveEQpkl(save_path, nc)
-# saveTranspkl(save_path, nc)
-# for var_name in store_quantities_0D:
-#     saveTimeSeriesDim(nc, var_name, save_path, dim=0)
-# for var_name in store_quantities_1D:
-#     saveTimeSeriesDim(nc, var_name, save_path, dim=1)
+### INDIVIDUAL EXECUTION. ###
+# List of saved quantities, sorted by dimension
+store_quantities_0D = load_quantities_0D()
+store_quantities_1D = load_quantities_1D()
+
+# Parameters
+test_dir = 'varying_co2_cst_q_rad/' # Needs to end in an '/'
+print('TEST:', test_dir)
+
+job_name    = 'i1080_320solar_cst_q_rad_restart_test'
+print('Job:', job_name)
+
+nc_path     = '/home/haynes13/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
+nc = openNC(nc_path)
+save_path   = '/home/haynes13/climt_files/{0}{1}/{1}'.format(test_dir, job_name)
+
+# Procedure
+saveEQpkl(save_path, nc)
+saveTranspkl(save_path, nc)
+for var_name in store_quantities_0D:
+    saveTimeSeriesDim(nc, var_name, save_path, dim=0)
+for var_name in store_quantities_1D:
+    saveTimeSeriesDim(nc, var_name, save_path, dim=1)
 
 
