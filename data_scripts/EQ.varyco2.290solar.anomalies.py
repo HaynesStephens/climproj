@@ -12,20 +12,20 @@ def get_EQ_df(fname):
     pkl         = pickle.load(open(fname, 'rb'))
     sw_up       = pkl['upwelling_shortwave_flux_in_air']
     sw_dn       = pkl['downwelling_shortwave_flux_in_air']
-    sw_surf     = (sw_up - sw_dn)[0, 0, 0]
-    sw_toa      = (sw_up - sw_dn)[-1, 0, 0]
+    sw_surf     = (sw_up - sw_dn)[0, 0]
+    sw_toa      = (sw_up - sw_dn)[-1, 0]
     lw_up       = pkl['upwelling_longwave_flux_in_air']
     lw_dn       = pkl['downwelling_longwave_flux_in_air']
-    lw_surf     = (lw_up - lw_dn)[0, 0, 0]
-    lw_toa      = (lw_up - lw_dn)[-1, 0, 0]
+    lw_surf     = (lw_up - lw_dn)[0, 0]
+    lw_toa      = (lw_up - lw_dn)[-1, 0]
     net_surf    = lw_surf + sw_surf
     net_toa     = lw_toa + sw_toa
-    t_surf      = pkl['surface_temperature'][0, 0]
-    lh          = pkl['surface_upward_latent_heat_flux'][0, 0]
-    sh          = pkl['surface_upward_sensible_heat_flux'][0, 0]
-    conv_prec   = pkl['convective_precipitation_rate'][0, 0]
-    strat_prec  = pkl['stratiform_precipitation_rate'][0, 0]
-    ppm         = np.round(pkl['mole_fraction_of_carbon_dioxide_in_air'][0,0,0]*10**6)
+    t_surf      = pkl['surface_temperature'][0]
+    lh          = pkl['surface_upward_latent_heat_flux'][0]
+    sh          = pkl['surface_upward_sensible_heat_flux'][0]
+    conv_prec   = pkl['convective_precipitation_rate'][0]
+    strat_prec  = pkl['stratiform_precipitation_rate'][0]
+    ppm         = np.round(pkl['mole_fraction_of_carbon_dioxide_in_air'][0,0]*10**6)
     df          = pd.DataFrame({'NETsurf'    : net_surf,
                                 'NETtoa'     : net_toa,
                                 'SWsurf'     : sw_surf,
@@ -38,7 +38,7 @@ def get_EQ_df(fname):
                                 'ConvPrec'   : conv_prec,
                                 'StratPrec'  : strat_prec,
                                 'ppm'        : ppm,
-                                'insol'      : 290})
+                                'insol'      : [290]})
     return df
 
 
