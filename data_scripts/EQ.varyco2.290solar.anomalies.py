@@ -1,22 +1,59 @@
 import pandas as pd
 import numpy as np
+import pickle
 
-basepath = '/Users/haynesstephens1/uchi/research/climproj/climt_files/varying_co2/290solar/'
+basepath = '/project2/moyer/old_project/haynes/climt_files/varying_co2/290solar/'
 ppm_list = np.sort(np.array([100, 1080, 150, 20, 2, 405, 5, 675, 10, 1215, 190, 220, 270, 50, 540, 756]))
 job_list = ['i{0}_290solar'.format(ppm) for ppm in ppm_list]
-eq_list = ['{0}{1}/{1}_eqTable1Values.csv'.format(basepath, job) for job in job_list]
+eq_list = ['{0}{1}/{1}.eq.pkl'.format(basepath, job) for job in job_list]
+
+
+def get_EQ_df(fname):
+    pkl         = pickle.load(open(fname, 'rb'))
+    sw_up       = pkl['upwelling_shortwave_flux_in_air']
+    sw_dn       = pkl['downwelling_shortwave_flux_in_air']
+    sw_surf     = (sw_up - sw_dn)[0, 0, 0]
+    sw_toa      = (sw_up - sw_dn)[-1, 0, 0]
+    lw_up       = pkl['upwelling_longwave_flux_in_air']
+    lw_dn       = pkl['downwelling_longwave_flux_in_air']
+    lw_surf     = (lw_up - lw_dn)[0, 0, 0]
+    lw_toa      = (lw_up - lw_dn)[-1, 0, 0]
+    net_surf    = lw_surf + sw_surf
+    net_toa     = lw_toa + sw_toa
+    t_surf      = pkl['surface_temperature'][0, 0]
+    lh          = pkl['surface_upward_latent_heat_flux'][0, 0]
+    sh          = pkl['surface_upward_sensible_heat_flux'][0, 0]
+    conv_prec   = pkl['convective_precipitation_rate'][0, 0]
+    strat_prec  = pkl['stratiform_precipitation_rate'][0, 0]
+    ppm         = np.round(pkl['mole_fraction_of_carbon_dioxide_in_air'][0,0,0]*10**6)
+    df = pd.Dataframe({'NETsurf'    : net_surf,
+                       'NETtoa'     : net_toa,
+                       'SWsurf'     : sw_surf,
+                       'SWtoa'      : sw_toa,
+                       'LWsurf'     : lw_surf,
+                       'LWtoa'      : lw_toa,
+                       'LH'         : lh,
+                       'SH'         : sh,
+                       'Ts'         : t_surf,
+                       'ConvPrec'   : conv_prec,
+                       'StratPrec'  : strat_prec,
+                       'ppm'        : ppm,
+                       'insol'      : 290})
+    return df
+
 
 def get_EQ_batch(filelist):
-    df0 = pd.read_csv(filelist[0])
+    df0 = get_EQ_df(filelist[0])
     for i in range(1, len(filelist)):
-        df_i = pd.read_csv(filelist[i])
+        df_i = get_EQ_df(filelist[i])
         df0 = pd.concat([df0, df_i])
     return df0
 
-print('Loading control.')
-control_eq_file = '/Users/haynesstephens1/uchi/research/climproj/climt_files/' \
-                  'varying_co2/290solar/i270_290solar/i270_290solar_eqTable1Values.csv'
-control_df = pd.read_csv(control_eq_file)
+# print('Loading control.')
+# control_eq_name= '/project2/moyer/old_project/haynes/climt_files/control_fullstore/' \
+#                   'i270_290solar_fullstore/i270_290solar_fullstore.eq.pkl'
+# control_file = open(control_eq_name, 'rb')
+# control_state = pickle.load(control_file)
 
 print('Loading & combining dataframes.')
 df = get_EQ_batch(eq_list)
