@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import pickle
 
 basepath    = '/project2/moyer/old_project/haynes/climt_files/varying_solar/'
 insol_list  = np.sort(np.array([200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265,
