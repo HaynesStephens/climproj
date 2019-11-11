@@ -265,7 +265,7 @@ store_quantities_1D = load_quantities_1D()
 test_dir = 'varying_co2_cst_q_rad/' # Needs to end in an '/'
 print('TEST:', test_dir)
 
-job_name    = 'i1080_320solar_cst_q_rad_restart_test'
+job_name    = 'i270_320solar_cst_q_rad_expt2'
 print('Job:', job_name)
 
 nc_path     = '/home/haynes13/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
