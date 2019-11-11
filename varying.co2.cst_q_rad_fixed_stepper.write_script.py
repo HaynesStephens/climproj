@@ -3,10 +3,10 @@ import newSbatch
 
 
 def createRun(co2_ppm, irradiance, insol):
-    job_name = 'i{0}_{1}solar_cst_q_rad'.format(co2_ppm, insol)
+    job_name = 'i{0}_{1}solar_cst_q_rad_fixed_stepper'.format(co2_ppm, insol)
 
-    template_path = '/home/haynes13/code/python/climproj/climt_scripts/varying.co2.cst_q_rad_OLD.template.py'
-    job_path = '/home/haynes13/code/python/climproj/climt_scripts/{0}.py'.format(job_name)
+    template_path = '/home/haynes13/code/python/climproj/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad_fixed_stepper.template.py'
+    job_path = '/home/haynes13/code/python/climproj/climt_scripts/varying_co2_cst_q_rad/fixed_stepper/{0}.py'.format(job_name)
     print(job_path)
 
 
@@ -22,7 +22,7 @@ def createRun(co2_ppm, irradiance, insol):
             fout.write(line)
 
     base_dir = '/project2/moyer/old_project/haynes/climt_runs/' # Needs to end in an '/'
-    test_dir = 'varying_co2_cst_q_rad/' # Needs to end in an '/'
+    test_dir = 'varying_co2_cst_q_rad/fixed_stepper/' # Needs to end in an '/'
     job_dir, sbatch_filename = newSbatch.newSbatch(base_dir, test_dir, job_name)
     return job_dir, sbatch_filename
 
@@ -41,6 +41,3 @@ for i in range(len(co2_ppm_list)):
         job_dir, sbatch_filename = createRun(co2_ppm, irradiance, insol)
         os.chdir(job_dir)
         os.system('sbatch {0}'.format(sbatch_filename))
-
-
-
