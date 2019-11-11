@@ -1,9 +1,3 @@
-### UNIQUE VALUES ###
-irradiance = 1036
-#insol = 320
-co2_ppm = 270
-nc_name = 'i270_320solar_cst_q_rad_restart_test.nc'
-#####################
 import copy
 from sympl import (
     DataArray, AdamsBashforth, get_constant, set_constant, NetCDFMonitor, PlotFunctionMonitor

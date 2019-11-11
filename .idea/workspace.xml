@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad.template_OLD.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad_multi_stepper.template.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad.template.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad.template.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plot_time_series.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/plot_time_series.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/varying.co2.cst_q_rad.write_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/varying.co2.cst_q_rad.write_script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_restart_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_restart_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad.template.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad_fixed_stepper.template.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_expt1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="17" selection-end-column="13" />
               <folding>
                 <element signature="e#134#145#0" expanded="true" />
               </folding>
@@ -52,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_restart_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="136" selection-end-column="80" />
+            <state relative-caret-position="167">
+              <caret line="88" lean-forward="true" selection-end-line="136" />
               <folding>
                 <element signature="e#141#152#0" expanded="true" />
               </folding>
@@ -62,21 +61,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad.template.py">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad_multi_stepper.template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2210">
-              <caret line="130" column="80" selection-start-line="130" selection-start-column="80" selection-end-line="130" selection-end-column="80" />
+            <state relative-caret-position="-1367">
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#141#152#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad.template_OLD.py">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad_fixed_stepper.template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="2022">
+              <caret line="131" column="118" selection-start-line="131" selection-start-column="118" selection-end-line="131" selection-end-column="118" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -95,7 +94,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>print</find>
       <find>control_eq_file</find>
       <find>control_df</find>
       <find>aerosol</find>
@@ -118,13 +116,14 @@
       <find>var_list</find>
       <find>saveTimeSeriesDim</find>
       <find>time</find>
-      <find>timestep</find>
       <find>dt_</find>
       <find>template_path</find>
       <find>control</find>
       <find>data</find>
       <find>290</find>
       <find>320</find>
+      <find>timestep</find>
+      <find>dt_minu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,7 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pullWindowValues.varying_co2.py" />
         <option value="$PROJECT_DIR$/pullWindowValues.varying.solar.py" />
         <option value="$PROJECT_DIR$/climt_scripts/i270_290solar_q_rad_cst.py" />
         <option value="$PROJECT_DIR$/climt_scripts/i270_320solar_q_rad_cst.py" />
@@ -164,7 +162,6 @@
         <option value="$PROJECT_DIR$/climt_scripts/varying_solar/i270_335solar_restart_test.py" />
         <option value="$PROJECT_DIR$/writeCSV.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i1080_320solar_cst_q_rad_expt.py" />
-        <option value="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_restart_test.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i1080_320solar_cst_q_rad_restart_test.py" />
         <option value="$PROJECT_DIR$/FixedInputWrapper.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_expt.py" />
@@ -184,6 +181,8 @@
         <option value="$PROJECT_DIR$/data_scripts/EQ.vary.solar.py" />
         <option value="$PROJECT_DIR$/writeCSVandPKL.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad.template.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_restart_test.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad_multi_stepper.template.py" />
       </list>
     </option>
   </component>
@@ -343,14 +342,7 @@
       <workItem from="1571839802525" duration="9567000" />
       <workItem from="1572272018405" duration="16464000" />
       <workItem from="1572819853494" duration="23308000" />
-      <workItem from="1573483881975" duration="6246000" />
-    </task>
-    <task id="LOCAL-00778" summary="new restart test runs">
-      <created>1573071367589</created>
-      <option name="number" value="00778" />
-      <option name="presentableId" value="LOCAL-00778" />
-      <option name="project" value="LOCAL" />
-      <updated>1573071367589</updated>
+      <workItem from="1573483881975" duration="6710000" />
     </task>
     <task id="LOCAL-00779" summary="new restart test runs">
       <created>1573071558138</created>
@@ -688,11 +680,18 @@
       <option name="project" value="LOCAL" />
       <updated>1573492062158</updated>
     </task>
-    <option name="localTasksCounter" value="827" />
+    <task id="LOCAL-00827" summary="new runs being analyzed">
+      <created>1573493261448</created>
+      <option name="number" value="00827" />
+      <option name="presentableId" value="LOCAL-00827" />
+      <option name="project" value="LOCAL" />
+      <updated>1573493261449</updated>
+    </task>
+    <option name="localTasksCounter" value="828" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219118000" />
+    <option name="totallyTimeSpent" value="219582000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -801,7 +800,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/climt_scripts/i675_320solar.py" />
     <entry file="file://$PROJECT_DIR$/climt_scripts/i270_320solar_fullstore.py" />
     <entry file="file://$PROJECT_DIR$/climt_scripts/i270_290solar_fullstore.py" />
     <entry file="file://$PROJECT_DIR$/climt_scripts/old_tests/test_a1_b1_c1.py">
@@ -1106,30 +1104,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_expt1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
-          <folding>
-            <element signature="e#134#145#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_expt2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_restart_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="136" selection-end-column="80" />
-          <folding>
-            <element signature="e#141#152#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1142,12 +1120,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad.template.py">
+    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_expt1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
-          <caret line="130" column="80" selection-start-line="130" selection-start-column="80" selection-end-line="130" selection-end-column="80" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="e#134#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/i270_320solar_cst_q_rad_restart_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="88" lean-forward="true" selection-end-line="136" />
+          <folding>
+            <element signature="e#141#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad_fixed_stepper.template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2022">
+          <caret line="131" column="118" selection-start-line="131" selection-start-column="118" selection-end-line="131" selection-end-column="118" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad_multi_stepper.template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1367">
+          <folding>
+            <element signature="e#141#152#0" expanded="true" />
           </folding>
         </state>
       </provider>

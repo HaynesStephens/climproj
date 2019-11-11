@@ -1,6 +1,7 @@
 import copy
+from FixedInputWrapper import FixedInputWrapper
 from sympl import (
-    DataArray, AdamsBashforth, get_constant, set_constant, NetCDFMonitor, PlotFunctionMonitor
+    DataArray, AdamsBashforth, get_constant, set_constant, NetCDFMonitor
 )
 import numpy as np
 from datetime import timedelta
@@ -32,10 +33,6 @@ store_quantities = ['air_temperature',
 netcdf_monitor = NetCDFMonitor(nc_name,
                                store_names=store_quantities,
                                write_on_store=True)
-
-# Set timestep at 10 minutes
-dt_minutes = 10
-timestep = timedelta(minutes=dt_minutes)
 
 radiation_sw = RRTMGShortwave(ignore_day_of_year=True)
 radiation_lw = RRTMGLongwave()
@@ -96,27 +93,32 @@ state['area_type'].values[:]                                = 'sea'
 state['eastward_wind'].values[0]                            = 5.0
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10**(-6)
 
-time_stepper_phys = AdamsBashforth([slab, moist_convection])
-time_stepper_rad = AdamsBashforth([radiation_lw, radiation_sw])
 
+### FIXED STATE WRAPPER EXPERIMENT ###
+fixed_state = {
+    'specific_humidity': copy.deepcopy(state['specific_humidity']),
+}
+fixed_state['specific_humidity'].values[:] = control_q.copy()
+radiation_lw_fixed = FixedInputWrapper(radiation_lw, fixed_state)
+radiation_sw_fixed = FixedInputWrapper(radiation_sw, fixed_state)
+######################################
+time_stepper = AdamsBashforth([radiation_lw_fixed, radiation_sw_fixed, slab, moist_convection])
+
+
+# Set timestep at 10 minutes
+dt_minutes = 10
+timestep = timedelta(minutes=dt_minutes)
 # Day length to match Shanshan
 run_days = 10950
 run_length = int((run_days * 24 * 60) / dt_minutes)
 
 for i in range(run_length):
-    rad_state_fixed_q = copy.deepcopy(state)
-    phys_unfixed_q = rad_state_fixed_q['specific_humidity'].values[:].copy()
-    rad_state_fixed_q['specific_humidity'].values[:] = control_q.copy()
-    diagnostics, state = time_stepper_rad(rad_state_fixed_q, timestep)
-    state['specific_humidity'].values[:] = phys_unfixed_q.copy()
-
-    state.update(diagnostics)
-
-    diagnostics, state = time_stepper_phys(state, timestep)
+    diagnostics, state = time_stepper(state, timestep)
     state.update(diagnostics)
 
     diagnostics, new_state = simple_physics(state, timestep)
     state.update(diagnostics)
+
     state.update(new_state)  #Update new simple_physics state   # These lines included w/
                                                                 # the Dry Convective Scheme,
     diagnostics, new_state = dry_convection(state, timestep)    # Introduced for
@@ -127,5 +129,4 @@ for i in range(run_length):
 
     state.update(new_state)
     state['time'] += timestep
-    state['eastward_wind'].values[0] = 5.0
-    #^ default value of old climt turbulence that Shanshan didn't seem to change
+    state['eastward_wind'].values[0] = 5.0 # default value of old climt turbulence that Shanshan didn't seem to change
