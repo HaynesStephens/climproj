@@ -1,6 +1,3 @@
-# In[89]:
-
-
 import numpy as np
 from netCDF4 import Dataset as ds
 import matplotlib.pyplot as plt
@@ -156,13 +153,14 @@ def plotFluxes(ax, time_adj, net_flux_surface, sh_flux, lh_flux, net_flux_toa, t
     ax3.grid()
 
 
-# In[183]:
+# In[342]:
 
 
 def plotEQResponse(job_name, test_dir='', save_step=36):
     base_name = '/project2/moyer/old_project/haynes/climt_files/'
     #     file_name = '{0}/{1}/{1}'.format(base_name, job_name)
     file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
+    print(file_name)
     plot_base = '/home/haynes13/code/python/climproj/figures/'
     #     plot_name = '{0}/{1}/{1}_time_series.pdf'.format(plot_base, job_name)
     plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'EQandTransResponses/', test_dir, job_name)
@@ -235,7 +233,7 @@ def plotEQResponse(job_name, test_dir='', save_step=36):
 #     plt.show()
 
 
-# In[185]:
+# In[343]:
 
 
 def plotEQResponseShanshan(job_name):
@@ -306,7 +304,7 @@ def plotEQResponseShanshan(job_name):
 
 # # Transient Response Plotting
 
-# In[192]:
+# In[344]:
 
 
 def plotTransvals(ax, trans_pkl, control_pkl, response_index=0):
@@ -368,13 +366,14 @@ def plotTransvals(ax, trans_pkl, control_pkl, response_index=0):
     ax1.table(cellText=celltext, cellLoc='center', loc='center', fontsize=1)
 
 
-# In[296]:
+# In[345]:
 
 
 def plotTransResponse(job_name, test_dir='', save_step=36):
     base_name = '/project2/moyer/old_project/haynes/climt_files/'
     #     file_name = '{0}/{1}/{1}'.format(base_name, job_name)
     file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
+    print(file_name)
     plot_base = '/home/haynes13/code/python/climproj/figures/'
     #     plot_name = '{0}/{1}/{1}_time_series.pdf'.format(plot_base, job_name)
     plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'EQandTransResponses/', test_dir, job_name)
@@ -390,7 +389,12 @@ def plotTransResponse(job_name, test_dir='', save_step=36):
         return pkl_dict
 
     control_type = job_name.split('_')[1]
-    control_job = 'i270_{0}_fullstore'.format(control_type)
+
+    if test_dir == 'varying_solar/':
+        control_job = 'i270_320solar_fullstore'
+    else:
+        control_job = 'i270_{0}_fullstore'.format(control_type)
+
     control_filename = '{0}{1}{2}/{2}'.format(base_name, 'control_fullstore/', control_job)
     control_pkl = loadPKL(control_filename, 'eq')
     trans_pkl = loadPKL(file_name, 'trans')
@@ -425,7 +429,7 @@ def plotTransResponse(job_name, test_dir='', save_step=36):
 #     plt.show()
 
 
-# In[297]:
+# In[346]:
 
 
 def plotTempProfChange(ax, trans_pkl, control_pkl, response_index=0):
@@ -464,7 +468,7 @@ def plotTempProfChange(ax, trans_pkl, control_pkl, response_index=0):
     ax0b.legend(lns, labs, loc=2)
 
 
-# In[306]:
+# In[347]:
 
 
 def plotTransFluxSeries(ax, file_name, control_pkl):
@@ -527,11 +531,11 @@ def plotTransFluxSeries(ax, file_name, control_pkl):
     ax.set_ylabel('%')
     ax.set_xlim(0, 1)
     ax.set_ylim(0.95, 1.2)
-    ax.legend()
+    ax.legend(loc=2)
     ax.grid()
 
 
-# In[321]:
+# In[348]:
 
 
 def plotTransTempHumSeries(ax, file_name, control_pkl):
@@ -566,7 +570,6 @@ def plotTransTempHumSeries(ax, file_name, control_pkl):
     ax.set_xlabel(time_title)
     ax.set_ylabel('%')
     ax.set_xlim(0, 1)
-    ax.set_ylim(0.95, 1.2)
-    ax.legend()
+    ax.set_ylim(0.95, 1.05)
+    ax.legend(loc=2)
     ax.grid()
-
