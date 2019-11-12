@@ -160,10 +160,10 @@ def plotFluxes(ax, time_adj, net_flux_surface, sh_flux, lh_flux, net_flux_toa, t
 
 
 def plotEQResponse(job_name, test_dir='', save_step=36):
-    base_name = '/Users/haynesstephens1/uchi/research/climproj/climt_files/'
+    base_name = '/project2/moyer/old_project/haynes/climt_files/'
     #     file_name = '{0}/{1}/{1}'.format(base_name, job_name)
     file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
-    plot_base = '/Users/haynesstephens1/uchi/research/climproj/climproj/figures/'
+    plot_base = '/home/haynes13/code/python/climproj/figures/'
     #     plot_name = '{0}/{1}/{1}_time_series.pdf'.format(plot_base, job_name)
     plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'EQandTransResponses/', test_dir, job_name)
     os.system('mkdir -p {0}'.format(plot_dir))
@@ -239,9 +239,9 @@ def plotEQResponse(job_name, test_dir='', save_step=36):
 
 
 def plotEQResponseShanshan(job_name):
-    base_name = '/Users/haynesstephens1/uchi/research/climproj/climt_files/'
+    base_name = '/project2/moyer/old_project/haynes/climt_files/'
     file_name = '{0}{1}/{1}'.format(base_name, job_name)
-    plot_base = '/Users/haynesstephens1/uchi/research/climproj/climproj/figures/'
+    plot_base = '/home/haynes13/code/python/climproj/figures/'
     plot_dir = '{0}{1}{2}'.format(plot_base, 'EQandTransResponses/', job_name)
     os.system('mkdir -p {0}'.format(plot_dir))
     plot_name = '{0}/{1}_eq.pdf'.format(plot_dir, job_name)
@@ -372,10 +372,10 @@ def plotTransvals(ax, trans_pkl, control_pkl, response_index=0):
 
 
 def plotTransResponse(job_name, test_dir='', save_step=36):
-    base_name = '/Users/haynesstephens1/uchi/research/climproj/climt_files/'
+    base_name = '/project2/moyer/old_project/haynes/climt_files/'
     #     file_name = '{0}/{1}/{1}'.format(base_name, job_name)
     file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
-    plot_base = '/Users/haynesstephens1/uchi/research/climproj/climproj/figures/'
+    plot_base = '/home/haynes13/code/python/climproj/figures/'
     #     plot_name = '{0}/{1}/{1}_time_series.pdf'.format(plot_base, job_name)
     plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'EQandTransResponses/', test_dir, job_name)
     os.system('mkdir -p {0}'.format(plot_dir))
