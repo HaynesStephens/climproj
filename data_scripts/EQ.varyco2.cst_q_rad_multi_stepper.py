@@ -2,9 +2,9 @@ import pandas as pd
 import numpy as np
 import pickle
 
-basepath = '/project2/moyer/old_project/haynes/climt_files/varying_co2_cst_q_rad/fixed_stepper/'
+basepath = '/project2/moyer/old_project/haynes/climt_files/varying_co2_cst_q_rad/multi_stepper/'
 ppm_list = np.array([2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215])
-job_list = ['i{0}_320solar_cst_q_rad_fixed_stepper'.format(ppm) for ppm in ppm_list]
+job_list = ['i{0}_320solar_cst_q_rad_multi_stepper'.format(ppm) for ppm in ppm_list]
 eq_list = ['{0}{1}/{1}.eq.pkl'.format(basepath, job) for job in job_list]
 
 
@@ -53,11 +53,11 @@ def get_EQ_batch(filelist):
 print('Loading & combining dataframes.')
 df = get_EQ_batch(eq_list)
 
-outpath = '/home/haynes13/code/python/climproj/data_calculated/EQ.varyco2.cst_q_rad.fixed_stepper.csv'
+outpath = '/home/haynes13/code/python/climproj/data_calculated/EQ.varyco2.cst_q_rad.multi_stepper.csv'
 f = open(outpath, 'w')
 comments = ['# This is a dataframe of the used to calculate anomalies \n',
             'for the 320solar varing-co2 cst-q-rad group,\n',
-            'using a single fixed timestepper. Used for:\n',
+            'using a multiple timesteppers. Used for:\n',
             '# - ??\n']
 print('Writing comments:')
 [print(comment) for comment in comments]
