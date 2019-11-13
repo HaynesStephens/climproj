@@ -54,7 +54,7 @@ def get_EQ_batch(filelist, insol_list):
 print('Loading & combining dataframes.')
 df = get_EQ_batch(eq_list, insol_list)
 
-outpath = '/home/haynes13/code/python/climproj/data_calculated/EQ.vary.solar.csv'
+outpath = '/home/haynes13/code/python/climproj/data_calculated/EQ_varysolar.csv'
 f = open(outpath, 'w')
 comments = ['# This is a dataframe of the used to calculate anomalies\n',
             '# for the varying-solar group. Used for:\n',
