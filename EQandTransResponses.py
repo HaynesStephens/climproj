@@ -1,7 +1,5 @@
 import numpy as np
-from netCDF4 import Dataset as ds
 import matplotlib.pyplot as plt
-import matplotlib.table as tbl
 from metpy.calc import moist_lapse, relative_humidity_from_specific_humidity
 from metpy.units import units
 import os
@@ -584,6 +582,7 @@ for insol in insol_list:
         job_name = 'i{0}_{1}solar'.format(ppm, insol)
         plotEQResponse(job_name, test_dir=test_dir)
         plotTransResponse(job_name, test_dir=test_dir)
+        print('DONE.', job_name)
 
 #RUN 2
 insol_list      = [200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265,
@@ -593,4 +592,5 @@ for insol in insol_list:
     job_name = 'i270_{0}solar'.format(insol)
     plotEQResponse(job_name, test_dir=test_dir)
     plotTransResponse(job_name, test_dir=test_dir)
+    print('DONE.', job_name)
 
