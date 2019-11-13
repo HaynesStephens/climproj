@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_scripts/EQ.vary.solar.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_scripts/EQ.vary.solar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_scripts/EQ.varyco2.290solar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_scripts/EQ.varyco2.cst_q_rad_fixed_stepper.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_scripts/EQ.varyco2.cst_q_rad_fixed_stepper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_scripts/EQ.varyco2.cst_q_rad_multi_stepper.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_scripts/EQ.varyco2.cst_q_rad_multi_stepper.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="58" column="15" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
+            <state relative-caret-position="719">
+              <caret line="59" column="23" lean-forward="true" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -330,14 +325,7 @@
       <workItem from="1571839802525" duration="9567000" />
       <workItem from="1572272018405" duration="16464000" />
       <workItem from="1572819853494" duration="23308000" />
-      <workItem from="1573483881975" duration="12313000" />
-    </task>
-    <task id="LOCAL-00804" summary="new restart test runs">
-      <created>1573256885199</created>
-      <option name="number" value="00804" />
-      <option name="presentableId" value="LOCAL-00804" />
-      <option name="project" value="LOCAL" />
-      <updated>1573256885199</updated>
+      <workItem from="1573483881975" duration="12326000" />
     </task>
     <task id="LOCAL-00805" summary="new restart test runs">
       <created>1573257396022</created>
@@ -675,11 +663,18 @@
       <option name="project" value="LOCAL" />
       <updated>1573663098247</updated>
     </task>
-    <option name="localTasksCounter" value="853" />
+    <task id="LOCAL-00853" summary="new runs being analyzed">
+      <created>1573667709454</created>
+      <option name="number" value="00853" />
+      <option name="presentableId" value="LOCAL-00853" />
+      <option name="project" value="LOCAL" />
+      <updated>1573667709455</updated>
+    </task>
+    <option name="localTasksCounter" value="854" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225185000" />
+    <option name="totallyTimeSpent" value="225198000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1158,8 +1153,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_scripts/EQ.varyco2.320solar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="58" column="15" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
+        <state relative-caret-position="719">
+          <caret line="59" column="23" lean-forward="true" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
