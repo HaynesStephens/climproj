@@ -1,4 +1,5 @@
-# This is a dataframe of the used to calculate anomalies for the varying-solar group. Used for:
+# This is a dataframe of the used to calculate anomalies
+for the varying-solar group. Used for:
 # - ??
 NETsurf,NETtoa,SWsurf,SWtoa,LWsurf,LWtoa,LH,SH,Ts,ConvPrec,StratPrec,ppm,insol
 -16.700652425864007,0.09642940861186844,-154.42823550146466,-169.26750760068956,137.72758307560065,169.36393700930142,5.4286356201054735,11.28162028221743,244.67745599258288,0.0,2.1714541608211102e-09,270,200

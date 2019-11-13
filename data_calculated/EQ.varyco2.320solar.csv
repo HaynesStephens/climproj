@@ -1,4 +1,5 @@
-# This is a dataframe of the used to calculate anomalies for the 320solar varing-co2 group. Used for:
+# This is a dataframe of the used to calculate anomalies
+for the 320solar varing-co2 group. Used for:
 # - ??
 NETsurf,NETtoa,SWsurf,SWtoa,LWsurf,LWtoa,LH,SH,Ts,ConvPrec,StratPrec,ppm,insol
 -76.6273404918997,-0.10071977585596414,-217.4391704033443,-273.6976780466528,140.8118299114446,273.59695827079685,62.95170312210417,13.682868904139132,280.61164991208466,2.1835872311621025,0.0,2.0,320
