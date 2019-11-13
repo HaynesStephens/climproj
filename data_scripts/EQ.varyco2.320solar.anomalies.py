@@ -53,7 +53,7 @@ def get_EQ_batch(filelist):
 print('Loading & combining dataframes.')
 df = get_EQ_batch(eq_list)
 
-outpath = '/home/haynes13/code/python/climproj/data_calculated/EQ.varyco2.320solar.anomalies.csv'
+outpath = '/home/haynes13/code/python/climproj/data_calculated/EQ.varyco2.320solar.csv'
 f = open(outpath, 'w')
 comments = ['# This is a dataframe of the used to calculate anomalies for the 320solar varing-co2 group. Used for:\n',
             '# - ??\n']
