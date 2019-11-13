@@ -57,7 +57,7 @@ outpath = '/home/haynes13/code/python/climproj/data_calculated/EQ.varyco2.cst_q_
 f = open(outpath, 'w')
 comments = ['# This is a dataframe of the used to calculate anomalies \n',
             'for the 320solar varing-co2 cst-q-rad group,\n',
-            'using a single fixed timestepper. Used for:\n',
+            'using a multiple timesteppers. Used for:\n',
             '# - ??\n']
 print('Writing comments:')
 [print(comment) for comment in comments]
