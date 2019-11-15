@@ -2,11 +2,13 @@ import os
 import newSbatch
 
 
-def createRun(co2_ppm, irradiance, insol):
-    job_name = 'i{0}_{1}solar_cst_q_rad_multi_stepper'.format(co2_ppm, insol)
+def createRun(input_ppm):
+    irradiance = 1036
+    insol = 320
+    job_name = 'diagnostic_T_input{0}'.format(input_ppm)
 
-    template_path = '/home/haynes13/code/python/climproj/climt_scripts/varying_co2_cst_q_rad/varying.co2.cst_q_rad_multi_stepper.template.py'
-    job_path = '/home/haynes13/code/python/climproj/climt_scripts/varying_co2_cst_q_rad/multi_stepper/{0}.py'.format(job_name)
+    template_path = '/home/haynes13/code/python/climproj/climt_scripts/diagnostic/diagnostic_T_template.py'
+    job_path = '/home/haynes13/code/python/climproj/climt_scripts/diagnostic/T/{0}.py'.format(job_name)
     print(job_path)
 
 
@@ -14,7 +16,7 @@ def createRun(co2_ppm, irradiance, insol):
         fout.write('### UNIQUE VALUES ###\n')
         fout.write('irradiance = {0}\n'.format(irradiance))
         fout.write('#insol = {0}\n'.format(insol))
-        fout.write('co2_ppm = {0}\n'.format(co2_ppm))
+        fout.write('input_ppm = {0}\n'.format(input_ppm))
         fout.write("nc_name = '{0}.nc'\n".format(job_name))
         fout.write('#####################\n')
 
@@ -22,24 +24,16 @@ def createRun(co2_ppm, irradiance, insol):
             fout.write(line)
 
     base_dir = '/project2/moyer/old_project/haynes/' # Needs to end in an '/'
-    test_dir = 'varying_co2_cst_q_rad/multi_stepper/' # Needs to end in an '/'
+    test_dir = 'diagnostic/T/' # Needs to end in an '/'
     job_dir, sbatch_filename = newSbatch.newSbatch(base_dir, test_dir, job_name)
     return job_dir, sbatch_filename
 
-os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/varying_co2_cst_q_rad/multi_stepper/')
+os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/diagnostic/T/')
 
 # TEMPLATE, ENTIRE LIST:
-co2_ppm_list = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-irradiance_list = [1036]
-insol_list = [320]
+input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
 
-for i in range(len(co2_ppm_list)):
-    co2_ppm = co2_ppm_list[i]
-
-    for j in range(len(irradiance_list)):
-        irradiance = irradiance_list[j]
-        insol = insol_list[j]
-
-        job_dir, sbatch_filename = createRun(co2_ppm, irradiance, insol)
-        os.chdir(job_dir)
-        os.system('sbatch {0}'.format(sbatch_filename))
+for input_ppm in input_ppm_list:
+    job_dir, sbatch_filename = createRun(input_ppm)
+    os.chdir(job_dir)
+    os.system('sbatch {0}'.format(sbatch_filename))

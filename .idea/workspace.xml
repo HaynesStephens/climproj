@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/diagnostic_T_write_script.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/diagnostic/diagnostic_T_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/diagnostic/diagnostic_T_template.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/diagnostic/diagnostic_co2_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/diagnostic/diagnostic_co2_template.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/diagnostic/diagnostic_q_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/diagnostic/diagnostic_q_template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagnostic_T_write_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic_T_write_script.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/diagnostic_T_template.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="332">
@@ -76,23 +73,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FixedInputWrapper.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/diagnostic_T_write_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="89" selection-start-line="13" selection-start-column="89" selection-end-line="13" selection-end-column="89" />
+            <state relative-caret-position="578">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diagnostic_T_write_script.py">
+        <entry file="file://$PROJECT_DIR$/FixedInputWrapper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="13" column="89" selection-start-line="13" selection-start-column="89" selection-end-line="13" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -193,10 +190,10 @@
         <option value="$PROJECT_DIR$/EQandTransResponses.py" />
         <option value="$PROJECT_DIR$/timeSeries.py" />
         <option value="$PROJECT_DIR$/FixedInputWrapper.py" />
-        <option value="$PROJECT_DIR$/diagnostic_T_write_script.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/diagnostic_T_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/diagnostic_co2_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/diagnostic_q_template.py" />
+        <option value="$PROJECT_DIR$/diagnostic_T_write_script.py" />
       </list>
     </option>
   </component>
@@ -227,7 +224,7 @@
               <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
               <item name="climproj" type="462c0819:PsiDirectoryNode" />
               <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="varying_co2_cst_q_rad" type="462c0819:PsiDirectoryNode" />
+              <item name="diagnostic" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -363,14 +360,7 @@
       <workItem from="1572819853494" duration="23308000" />
       <workItem from="1573483881975" duration="12698000" />
       <workItem from="1573747253196" duration="618000" />
-      <workItem from="1573832753957" duration="4445000" />
-    </task>
-    <task id="LOCAL-00822" summary="new runs being analyzed">
-      <created>1573490850320</created>
-      <option name="number" value="00822" />
-      <option name="presentableId" value="LOCAL-00822" />
-      <option name="project" value="LOCAL" />
-      <updated>1573490850320</updated>
+      <workItem from="1573832753957" duration="4771000" />
     </task>
     <task id="LOCAL-00823" summary="new runs being analyzed">
       <created>1573491717214</created>
@@ -708,11 +698,18 @@
       <option name="project" value="LOCAL" />
       <updated>1573859577082</updated>
     </task>
-    <option name="localTasksCounter" value="871" />
+    <task id="LOCAL-00871" summary="new runs being analyzed">
+      <created>1573859891181</created>
+      <option name="number" value="00871" />
+      <option name="presentableId" value="LOCAL-00871" />
+      <option name="project" value="LOCAL" />
+      <updated>1573859891181</updated>
+    </task>
+    <option name="localTasksCounter" value="872" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230633000" />
+    <option name="totallyTimeSpent" value="230959000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1133,16 +1130,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diagnostic_T_write_script.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/diagnostic_q_template.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1169,6 +1156,16 @@
           <caret line="97" column="89" selection-start-line="97" selection-start-column="89" selection-end-line="97" selection-end-column="89" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnostic_T_write_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
