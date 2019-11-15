@@ -77,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/diagnostic_co2_write_script.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="646">
-              <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+              <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -360,14 +360,7 @@
       <workItem from="1572819853494" duration="23308000" />
       <workItem from="1573483881975" duration="12698000" />
       <workItem from="1573747253196" duration="618000" />
-      <workItem from="1573832753957" duration="5129000" />
-    </task>
-    <task id="LOCAL-00829" summary="new runs being analyzed">
-      <created>1573493877810</created>
-      <option name="number" value="00829" />
-      <option name="presentableId" value="LOCAL-00829" />
-      <option name="project" value="LOCAL" />
-      <updated>1573493877810</updated>
+      <workItem from="1573832753957" duration="5133000" />
     </task>
     <task id="LOCAL-00830" summary="new runs being analyzed">
       <created>1573493882036</created>
@@ -705,11 +698,18 @@
       <option name="project" value="LOCAL" />
       <updated>1573860586469</updated>
     </task>
-    <option name="localTasksCounter" value="878" />
+    <task id="LOCAL-00878" summary="new runs being analyzed">
+      <created>1573860599996</created>
+      <option name="number" value="00878" />
+      <option name="presentableId" value="LOCAL-00878" />
+      <option name="project" value="LOCAL" />
+      <updated>1573860599996</updated>
+    </task>
+    <option name="localTasksCounter" value="879" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231317000" />
+    <option name="totallyTimeSpent" value="231321000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1163,7 +1163,7 @@
     <entry file="file://$PROJECT_DIR$/diagnostic_co2_write_script.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
-          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

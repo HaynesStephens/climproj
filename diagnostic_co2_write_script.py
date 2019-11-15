@@ -36,4 +36,4 @@ input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
 for input_ppm in input_ppm_list:
     job_dir, sbatch_filename = createRun(input_ppm)
     os.chdir(job_dir)
-    os.system('sbatch {0}'.format(sbatch_filename)) lv
+    os.system('sbatch {0}'.format(sbatch_filename))
