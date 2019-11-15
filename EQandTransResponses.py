@@ -163,7 +163,7 @@ def plotEQResponse(job_name, test_dir='', save_step=36):
     #     plot_name = '{0}/{1}/{1}_time_series.pdf'.format(plot_base, job_name)
     plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'EQandTransResponses/', test_dir, job_name)
     os.system('mkdir -p {0}'.format(plot_dir))
-    plot_name = '{0}/{1}.eq.jpg'.format(plot_dir, job_name)
+    plot_name = '{0}/{1}.eq.png'.format(plot_dir, job_name)
 
     def loadData(file_name, var):
         return np.loadtxt('{0}_{1}.csv'.format(file_name, var), delimiter=',')
@@ -240,7 +240,7 @@ def plotEQResponseShanshan(job_name):
     plot_base = '/home/haynes13/code/python/climproj/figures/'
     plot_dir = '{0}{1}{2}'.format(plot_base, 'EQandTransResponses/', job_name)
     os.system('mkdir -p {0}'.format(plot_dir))
-    plot_name = '{0}/{1}_eq.jpg'.format(plot_dir, job_name)
+    plot_name = '{0}/{1}_eq.png'.format(plot_dir, job_name)
 
     def loadData(file_name, var):
         return np.loadtxt('{0}_{1}.csv'.format(file_name, var), delimiter=',')
@@ -376,7 +376,7 @@ def plotTransResponse(job_name, test_dir='', save_step=36):
     #     plot_name = '{0}/{1}/{1}_time_series.pdf'.format(plot_base, job_name)
     plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'EQandTransResponses/', test_dir, job_name)
     os.system('mkdir -p {0}'.format(plot_dir))
-    plot_name = '{0}/{1}.trans.jpg'.format(plot_dir, job_name)
+    plot_name = '{0}/{1}.trans.png'.format(plot_dir, job_name)
 
     def loadData(file_name, var):
         return np.loadtxt('{0}_{1}.csv'.format(file_name, var), delimiter=',')
