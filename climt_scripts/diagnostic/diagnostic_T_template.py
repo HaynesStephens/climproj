@@ -91,12 +91,21 @@ state['zenith_angle'].values[:]                             = (2 * np.pi) / 5
 state['area_type'].values[:]                                = 'sea'
 # only the surface layer is given a zonal wind to spur convection
 state['eastward_wind'].values[0]                            = 5.0
-state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10**(-6)
+state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(270) * 10**(-6)
 
+### FIXED TEMPERATURE PROFILE TO INPUT ###
+fixed_T_file_name = '/project2/moyer/old_project/haynes/climt_files/' \
+               'varying_co2/320solar/i{0}_320solar/i{0}_320solar.eq.pkl'.format(T_ppm)
+fixed_T_file = open(fixed_T_file_name, 'rb')
+fixed_T_state = pickle.load((fixed_T_file))
+fixed_T = fixed_T_state['air_temperature'].copy()
+state['air_temperature'].values[:] = fixed_T
+##########################################
 
 ### FIXED STATE WRAPPER EXPERIMENT ###
 fixed_state = {
     'specific_humidity': copy.deepcopy(state['specific_humidity']),
+    'air_temperature': copy.deepcopy(state['air_temperature'])
 }
 fixed_state['specific_humidity'].values[:] = control_q.copy()
 radiation_lw_fixed = FixedInputWrapper(radiation_lw, fixed_state)
