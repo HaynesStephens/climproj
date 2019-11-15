@@ -98,7 +98,8 @@ fixed_state = {
     'specific_humidity': copy.deepcopy(state['specific_humidity']),
     'air_temperature': copy.deepcopy(state['air_temperature'])
 }
-fixed_state['specific_humidity'].values[:] = control_q.copy()
+??? fixed_state['specific_humidity'].values[:] = control_q.copy()
+??? fixed_state['air_temperature'].values[:] = state['air_temperature'].values[:].copy()
 radiation_lw_fixed = FixedInputWrapper(radiation_lw, fixed_state)
 radiation_sw_fixed = FixedInputWrapper(radiation_sw, fixed_state)
 ######################################
