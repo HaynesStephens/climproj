@@ -93,13 +93,13 @@ state['area_type'].values[:]                                = 'sea'
 state['eastward_wind'].values[0]                            = 5.0
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(270) * 10**(-6)
 
-### FIXED TEMPERATURE PROFILE TO INPUT ###
-fixed_T_file_name = '/project2/moyer/old_project/haynes/climt_files/' \
-               'varying_co2/320solar/i{0}_320solar/i{0}_320solar.eq.pkl'.format(T_ppm)
-fixed_T_file = open(fixed_T_file_name, 'rb')
-fixed_T_state = pickle.load((fixed_T_file))
-fixed_T = fixed_T_state['air_temperature'].copy()
-state['air_temperature'].values[:] = fixed_T
+### FIXED HUMIDITY PROFILE TO INPUT ###
+fixed_q_file_name = '/project2/moyer/old_project/haynes/climt_files/' \
+               'varying_co2/320solar/i{0}_320solar/i{0}_320solar.eq.pkl'.format(q_ppm)
+fixed_q_file = open(fixed_q_file_name, 'rb')
+fixed_q_state = pickle.load((fixed_q_file))
+fixed_q = fixed_q_state['specific_humidity'].copy()
+state['specific_humidity'].values[:] = fixed_q
 ##########################################
 
 ### FIXED STATE WRAPPER EXPERIMENT ###
@@ -107,7 +107,8 @@ fixed_state = {
     'specific_humidity': copy.deepcopy(state['specific_humidity']),
     'air_temperature': copy.deepcopy(state['air_temperature'])
 }
-fixed_state['specific_humidity'].values[:] = control_q.copy()
+??? fixed_state['specific_humidity'].values[:] = fixed_q.copy()
+??? fixed_state['air_temperature'].values[:] = state['air_temperature'].values[:].copy()
 radiation_lw_fixed = FixedInputWrapper(radiation_lw, fixed_state)
 radiation_sw_fixed = FixedInputWrapper(radiation_sw, fixed_state)
 ######################################
