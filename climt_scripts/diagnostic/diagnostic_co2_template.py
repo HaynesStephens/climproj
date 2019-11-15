@@ -91,7 +91,7 @@ state['zenith_angle'].values[:]                             = (2 * np.pi) / 5
 state['area_type'].values[:]                                = 'sea'
 # only the surface layer is given a zonal wind to spur convection
 state['eastward_wind'].values[0]                            = 5.0
-state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(co2_ppm) * 10**(-6)
+state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(input_ppm) * 10**(-6)
 
 ### FIXED STATE WRAPPER EXPERIMENT ###
 fixed_state = {

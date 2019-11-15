@@ -95,7 +95,7 @@ state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(270) * 10**(-
 
 ### FIXED HUMIDITY PROFILE TO INPUT ###
 fixed_q_file_name = '/project2/moyer/old_project/haynes/climt_files/' \
-               'varying_co2/320solar/i{0}_320solar/i{0}_320solar.eq.pkl'.format(q_ppm)
+               'varying_co2/320solar/i{0}_320solar/i{0}_320solar.eq.pkl'.format(input_ppm)
 fixed_q_file = open(fixed_q_file_name, 'rb')
 fixed_q_state = pickle.load((fixed_q_file))
 fixed_q = fixed_q_state['specific_humidity'].copy()
