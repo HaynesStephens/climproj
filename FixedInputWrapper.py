@@ -11,7 +11,7 @@ class FixedInputWrapper(object):
             if name not in self._fixed_state:
                 properties = self._component.input_properties[name]
                 return_dict[name] = properties
-                # Should we be adding the fixed state properties to return_dict as well?? fea
+                # Should we be adding the fixed state properties to return_dict as well??
         return return_dict
 
     def __getattr__(self, item):
