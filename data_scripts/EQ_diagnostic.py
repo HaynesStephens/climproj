@@ -58,7 +58,7 @@ outpath = '/home/haynes13/code/python/climproj/data_calculated/diagnostic_T.csv'
 f = open(outpath, 'w')
 comments = ['# This is a dataframe of the used to calculate anomalies \n',
             '# for the 320solar diagnostic group,\n',
-            '# for varying {0} profiles. Used for:\n'.format('T'),
+            '# for varying {0} profiles. Used for:\n'.format(diag_var),
             '# - ??\n']
 print('Writing comments:')
 [print(comment) for comment in comments]
