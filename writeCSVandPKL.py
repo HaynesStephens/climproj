@@ -227,7 +227,7 @@ def saveEQpkl(save_path, nc, years_back = 3):
             var_eq_val = np.mean(nc_var[eq_index], axis=0)
             eq_pkl[var] = var_eq_val
 
-    file_name = save_path + '.eq.pkl'
+    file_name = save_path + '_pkl_eq.pkl'
     f = open(file_name, 'wb')
     pickle.dump(eq_pkl, f)
     f.close()
@@ -246,7 +246,7 @@ def saveTranspkl(save_path, nc):
             var_trans_arr = nc_var[:5]
             trans_pkl[var] = var_trans_arr
 
-    file_name = save_path + '.trans.pkl'
+    file_name = save_path + '_pkl_trans.pkl'
     f = open(file_name, 'wb')
     pickle.dump(trans_pkl, f)
     f.close()
