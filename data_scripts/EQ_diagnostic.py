@@ -5,7 +5,7 @@ import pickle
 diag_var = 'co2'
 basepath = '/project2/moyer/old_project/haynes/climt_files/diagnostic/{0}/'.format(diag_var)
 input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
-job_list = ['diagnostic_{0}_input{1}'.format(diag_var, ppm) for ppm in input_ppm_list]
+job_list = ['EQ_diagnostic_{0}_input{1}'.format(diag_var, ppm) for ppm in input_ppm_list]
 eq_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(basepath, job) for job in job_list]
 
 

@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_calculated/diagnostic_T.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_calculated/diagnostic_co2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_calculated/diagnostic_q.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data_scripts/EQ_diagnostic.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_scripts/EQ_diagnostic.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/writeCSVandPKL_diagnostic.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -46,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_scripts/EQ_diagnostic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="119">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -314,21 +317,7 @@
       <workItem from="1573483881975" duration="12698000" />
       <workItem from="1573747253196" duration="618000" />
       <workItem from="1573832753957" duration="5268000" />
-      <workItem from="1574015200701" duration="1669000" />
-    </task>
-    <task id="LOCAL-00840" summary="new runs being analyzed">
-      <created>1573656384587</created>
-      <option name="number" value="00840" />
-      <option name="presentableId" value="LOCAL-00840" />
-      <option name="project" value="LOCAL" />
-      <updated>1573656384587</updated>
-    </task>
-    <task id="LOCAL-00841" summary="new runs being analyzed">
-      <created>1573656786380</created>
-      <option name="number" value="00841" />
-      <option name="presentableId" value="LOCAL-00841" />
-      <option name="project" value="LOCAL" />
-      <updated>1573656786380</updated>
+      <workItem from="1574015200701" duration="1993000" />
     </task>
     <task id="LOCAL-00842" summary="new runs being analyzed">
       <created>1573656814170</created>
@@ -659,11 +648,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574018815338</updated>
     </task>
-    <option name="localTasksCounter" value="889" />
+    <task id="LOCAL-00889" summary="new runs being analyzed">
+      <created>1574019678371</created>
+      <option name="number" value="00889" />
+      <option name="presentableId" value="LOCAL-00889" />
+      <option name="project" value="LOCAL" />
+      <updated>1574019678371</updated>
+    </task>
+    <task id="LOCAL-00890" summary="new runs being analyzed">
+      <created>1574019719354</created>
+      <option name="number" value="00890" />
+      <option name="presentableId" value="LOCAL-00890" />
+      <option name="project" value="LOCAL" />
+      <updated>1574019719354</updated>
+    </task>
+    <option name="localTasksCounter" value="891" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="233125000" />
+    <option name="totallyTimeSpent" value="233449000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1115,7 +1118,7 @@
     <entry file="file://$PROJECT_DIR$/writeCSVandPKL_diagnostic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -1131,8 +1134,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_scripts/EQ_diagnostic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
