@@ -19,7 +19,7 @@ def get_EQ_df(fname):
     lw_dn       = pkl['downwelling_longwave_flux_in_air']
     lw_surf     = (lw_up - lw_dn)[0, 0]
     lw_toa      = (lw_up - lw_dn)[-1, 0]
-    net_surf    = lw_surf + sw_surf
+    net_surf    = lw_surf + sw_surf love
     net_toa     = lw_toa + sw_toa
     t_surf      = pkl['surface_temperature'][0]
     lh          = pkl['surface_upward_latent_heat_flux'][0]
