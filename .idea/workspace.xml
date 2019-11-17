@@ -46,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_scripts/EQ_diagnostic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="60" column="23" lean-forward="true" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -94,8 +94,8 @@
       <find>eq.p</find>
       <find>.pkl</find>
       <find>mkdir</find>
-      <find>T</find>
       <find>'T'</find>
+      <find>T</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -314,21 +314,7 @@
       <workItem from="1573483881975" duration="12698000" />
       <workItem from="1573747253196" duration="618000" />
       <workItem from="1573832753957" duration="5268000" />
-      <workItem from="1574015200701" duration="1325000" />
-    </task>
-    <task id="LOCAL-00838" summary="new runs being analyzed">
-      <created>1573587611266</created>
-      <option name="number" value="00838" />
-      <option name="presentableId" value="LOCAL-00838" />
-      <option name="project" value="LOCAL" />
-      <updated>1573587611266</updated>
-    </task>
-    <task id="LOCAL-00839" summary="new runs being analyzed">
-      <created>1573587936110</created>
-      <option name="number" value="00839" />
-      <option name="presentableId" value="LOCAL-00839" />
-      <option name="project" value="LOCAL" />
-      <updated>1573587936110</updated>
+      <workItem from="1574015200701" duration="1669000" />
     </task>
     <task id="LOCAL-00840" summary="new runs being analyzed">
       <created>1573656384587</created>
@@ -659,11 +645,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574018717990</updated>
     </task>
-    <option name="localTasksCounter" value="887" />
+    <task id="LOCAL-00887" summary="new runs being analyzed">
+      <created>1574018753454</created>
+      <option name="number" value="00887" />
+      <option name="presentableId" value="LOCAL-00887" />
+      <option name="project" value="LOCAL" />
+      <updated>1574018753454</updated>
+    </task>
+    <task id="LOCAL-00888" summary="new runs being analyzed">
+      <created>1574018815338</created>
+      <option name="number" value="00888" />
+      <option name="presentableId" value="LOCAL-00888" />
+      <option name="project" value="LOCAL" />
+      <updated>1574018815338</updated>
+    </task>
+    <option name="localTasksCounter" value="889" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232781000" />
+    <option name="totallyTimeSpent" value="233125000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1131,8 +1131,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_scripts/EQ_diagnostic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="60" column="23" lean-forward="true" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
