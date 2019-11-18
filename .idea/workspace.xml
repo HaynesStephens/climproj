@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/varying_co2_qRadCst_writeScript.py" beforeDir="false" afterPath="$PROJECT_DIR$/varying_co2_qRadCst_writeScript.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagnostic_T_write_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic_T_writeScript.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagnostic_co2_write_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic_co2_writeScript.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagnostic_q_write_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic_q_writeScript.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/varying_co2_qRadCst_writeScript.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -335,14 +337,7 @@
       <workItem from="1573747253196" duration="618000" />
       <workItem from="1573832753957" duration="5268000" />
       <workItem from="1574015200701" duration="2654000" />
-      <workItem from="1574089600941" duration="5330000" />
-    </task>
-    <task id="LOCAL-00869" summary="new runs being analyzed">
-      <created>1573856560012</created>
-      <option name="number" value="00869" />
-      <option name="presentableId" value="LOCAL-00869" />
-      <option name="project" value="LOCAL" />
-      <updated>1573856560012</updated>
+      <workItem from="1574089600941" duration="5429000" />
     </task>
     <task id="LOCAL-00870" summary="new runs being analyzed">
       <created>1573859577082</created>
@@ -680,11 +675,18 @@
       <option name="project" value="LOCAL" />
       <updated>1574107276125</updated>
     </task>
-    <option name="localTasksCounter" value="918" />
+    <task id="LOCAL-00918" summary="new version for constant water radiation experiments">
+      <created>1574107296632</created>
+      <option name="number" value="00918" />
+      <option name="presentableId" value="LOCAL-00918" />
+      <option name="project" value="LOCAL" />
+      <updated>1574107296632</updated>
+    </task>
+    <option name="localTasksCounter" value="919" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239440000" />
+    <option name="totallyTimeSpent" value="239539000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -697,7 +699,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-513" y="-1080" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18423855" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -749,7 +750,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="270i and 939 solar with usurf" />
     <MESSAGE value="270i and 939 solar with constant u" />
     <MESSAGE value="writing out EQ values" />
     <MESSAGE value="trying out nonseasonal rad methods" />
@@ -774,7 +774,8 @@
     <MESSAGE value="trying new controls with everything stored. will run on scratch." />
     <MESSAGE value="new restart test runs" />
     <MESSAGE value="new runs being analyzed" />
-    <option name="LAST_COMMIT_MESSAGE" value="new runs being analyzed" />
+    <MESSAGE value="new version for constant water radiation experiments" />
+    <option name="LAST_COMMIT_MESSAGE" value="new version for constant water radiation experiments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -992,7 +993,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diagnostic_T_write_script.py">
+    <entry file="file://$PROJECT_DIR$/diagnostic_T_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" lean-forward="true" selection-end-line="39" />
@@ -1052,7 +1053,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diagnostic_co2_write_script.py">
+    <entry file="file://$PROJECT_DIR$/diagnostic_co2_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="626">
           <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
@@ -1062,7 +1063,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diagnostic_q_write_script.py">
+    <entry file="file://$PROJECT_DIR$/diagnostic_q_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="54" />
@@ -1172,8 +1173,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/varying_co2_qRadCst_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
