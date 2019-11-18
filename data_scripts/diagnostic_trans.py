@@ -9,7 +9,7 @@ job_list = ['diagnostic_{0}_input{1}'.format(diag_var, ppm) for ppm in input_ppm
 file_list = ['{0}{1}/{1}_pkl_trans.pkl'.format(basepath, job) for job in job_list]
 
 
-def get_df(fname):
+def get_df(fname, input_ppm):
     pkl         = pickle.load(open(fname, 'rb'))
     sw_up       = pkl['upwelling_shortwave_flux_in_air'][0]
     sw_dn       = pkl['downwelling_shortwave_flux_in_air'][0]
@@ -38,15 +38,15 @@ def get_df(fname):
                                 'Ts'         : t_surf,
                                 'ConvPrec'   : conv_prec,
                                 'StratPrec'  : strat_prec,
-                                'ppm'        : ppm,
+                                'ppm'        : [input_ppm],
                                 'insol'      : [320]})
     return df
 
 
 def get_ds_batch(filelist):
-    df0 = get_df(filelist[0])
+    df0 = get_df(filelist[0], input_ppm_list[0])
     for i in range(1, len(filelist)):
-        df_i = get_df(filelist[i])
+        df_i = get_df(filelist[i], input_ppm_list[i])
         df0 = pd.concat([df0, df_i])
     return df0
 
