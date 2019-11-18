@@ -22,7 +22,7 @@ def createRun(co2_ppm, irradiance, insol):
             fout.write(line)
 
     base_dir = '/project2/moyer/old_project/haynes/' # Needs to end in an '/'
-    test_dir = 'varying_co2_qRadCst/' # Needs to end in an '/' love
+    test_dir = 'varying_co2_qRadCst/' # Needs to end in an '/'
     job_dir, sbatch_filename = newSbatch.newSbatch(base_dir, test_dir, job_name)
     return job_dir, sbatch_filename
 
