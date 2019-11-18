@@ -2,13 +2,14 @@ import pandas as pd
 import numpy as np
 import pickle
 
-diag_var = 'co2'
+diag_var = 'T'
 basepath = '/project2/moyer/old_project/haynes/climt_files/diagnostic/{0}/'.format(diag_var)
 input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
 job_list = ['Trans_diagnostic_{0}_input{1}'.format(diag_var, ppm) for ppm in input_ppm_list]
-eq_list = ['{0}{1}/{1}_pkl_trans.pkl'.format(basepath, job) for job in job_list]
+file_list = ['{0}{1}/{1}_pkl_trans.pkl'.format(basepath, job) for job in job_list]
 
-def get_EQ_df(fname):
+
+def get_df(fname):
     pkl         = pickle.load(open(fname, 'rb'))
     sw_up       = pkl['upwelling_shortwave_flux_in_air'][0]
     sw_dn       = pkl['downwelling_shortwave_flux_in_air'][0]
@@ -42,16 +43,16 @@ def get_EQ_df(fname):
     return df
 
 
-def get_EQ_batch(filelist):
-    df0 = get_EQ_df(filelist[0])
+def get_ds_batch(filelist):
+    df0 = get_df(filelist[0])
     for i in range(1, len(filelist)):
-        df_i = get_EQ_df(filelist[i])
+        df_i = get_df(filelist[i])
         df0 = pd.concat([df0, df_i])
     return df0
 
 
 print('Loading & combining dataframes.')
-df = get_EQ_batch(eq_list)
+df = get_ds_batch(file_list)
 
 outpath = '/home/haynes13/code/python/climproj/' \
           'data_calculated/diagnostic_{0}_trans.csv'.format(diag_var)
