@@ -58,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_trans.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="734">
-              <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+            <state relative-caret-position="394">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -111,7 +111,6 @@
       <find>print(</find>
       <find>control_q</find>
       <find>specific_humidity</find>
-      <find>ppm</find>
       <find>pm</find>
       <find>q</find>
       <find>eq.p</find>
@@ -120,6 +119,7 @@
       <find>'T'</find>
       <find>T</find>
       <find>eq</find>
+      <find>ppm</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -341,21 +341,7 @@
       <workItem from="1573747253196" duration="618000" />
       <workItem from="1573832753957" duration="5268000" />
       <workItem from="1574015200701" duration="2654000" />
-      <workItem from="1574089600941" duration="972000" />
-    </task>
-    <task id="LOCAL-00853" summary="new runs being analyzed">
-      <created>1573667709454</created>
-      <option name="number" value="00853" />
-      <option name="presentableId" value="LOCAL-00853" />
-      <option name="project" value="LOCAL" />
-      <updated>1573667709455</updated>
-    </task>
-    <task id="LOCAL-00854" summary="new runs being analyzed">
-      <created>1573667725140</created>
-      <option name="number" value="00854" />
-      <option name="presentableId" value="LOCAL-00854" />
-      <option name="project" value="LOCAL" />
-      <updated>1573667725140</updated>
+      <workItem from="1574089600941" duration="1027000" />
     </task>
     <task id="LOCAL-00855" summary="new runs being analyzed">
       <created>1573668213039</created>
@@ -686,11 +672,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574090382784</updated>
     </task>
-    <option name="localTasksCounter" value="902" />
+    <task id="LOCAL-00902" summary="new runs being analyzed">
+      <created>1574090927690</created>
+      <option name="number" value="00902" />
+      <option name="presentableId" value="LOCAL-00902" />
+      <option name="project" value="LOCAL" />
+      <updated>1574090927690</updated>
+    </task>
+    <task id="LOCAL-00903" summary="new runs being analyzed">
+      <created>1574090958377</created>
+      <option name="number" value="00903" />
+      <option name="presentableId" value="LOCAL-00903" />
+      <option name="project" value="LOCAL" />
+      <updated>1574090958378</updated>
+    </task>
+    <option name="localTasksCounter" value="904" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235082000" />
+    <option name="totallyTimeSpent" value="235137000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1167,8 +1167,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_trans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
-          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+        <state relative-caret-position="394">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

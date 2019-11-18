@@ -43,10 +43,10 @@ def get_df(fname, input_ppm):
     return df
 
 
-def get_ds_batch(filelist):
-    df0 = get_df(filelist[0], input_ppm_list[0])
-    for i in range(1, len(filelist)):
-        df_i = get_df(filelist[i], input_ppm_list[i])
+def get_ds_batch(file_list):
+    df0 = get_df(file_list[0], input_ppm_list[0])
+    for i in range(1, len(file_list)):
+        df_i = get_df(file_list[i], input_ppm_list[i])
         df0 = pd.concat([df0, df_i])
     return df0
 
