@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_scripts/diagnostic_trans.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_scripts/diagnostic_trans.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -58,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_trans.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -90,10 +91,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>data</find>
-      <find>timestep</find>
-      <find>dt_minu</find>
-      <find>system</find>
       <find>import os</find>
       <find>haynes</find>
       <find>datetime</find>
@@ -118,8 +115,12 @@
       <find>mkdir</find>
       <find>'T'</find>
       <find>T</find>
-      <find>eq</find>
       <find>ppm</find>
+      <find>eq_li</find>
+      <find>np</find>
+      <find>np.</find>
+      <find>eq</find>
+      <find>trans</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -341,21 +342,7 @@
       <workItem from="1573747253196" duration="618000" />
       <workItem from="1573832753957" duration="5268000" />
       <workItem from="1574015200701" duration="2654000" />
-      <workItem from="1574089600941" duration="1027000" />
-    </task>
-    <task id="LOCAL-00855" summary="new runs being analyzed">
-      <created>1573668213039</created>
-      <option name="number" value="00855" />
-      <option name="presentableId" value="LOCAL-00855" />
-      <option name="project" value="LOCAL" />
-      <updated>1573668213039</updated>
-    </task>
-    <task id="LOCAL-00856" summary="new runs being analyzed">
-      <created>1573760589386</created>
-      <option name="number" value="00856" />
-      <option name="presentableId" value="LOCAL-00856" />
-      <option name="project" value="LOCAL" />
-      <updated>1573760589387</updated>
+      <workItem from="1574089600941" duration="1203000" />
     </task>
     <task id="LOCAL-00857" summary="new runs being analyzed">
       <created>1573832947528</created>
@@ -686,11 +673,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574090958378</updated>
     </task>
-    <option name="localTasksCounter" value="904" />
+    <task id="LOCAL-00904" summary="new runs being analyzed">
+      <created>1574090982566</created>
+      <option name="number" value="00904" />
+      <option name="presentableId" value="LOCAL-00904" />
+      <option name="project" value="LOCAL" />
+      <updated>1574090982566</updated>
+    </task>
+    <task id="LOCAL-00905" summary="new runs being analyzed">
+      <created>1574091093153</created>
+      <option name="number" value="00905" />
+      <option name="presentableId" value="LOCAL-00905" />
+      <option name="project" value="LOCAL" />
+      <updated>1574091093153</updated>
+    </task>
+    <option name="localTasksCounter" value="906" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235137000" />
+    <option name="totallyTimeSpent" value="235313000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -728,7 +729,7 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27382874" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18423855" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1157,8 +1158,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -1167,8 +1168,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_trans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
