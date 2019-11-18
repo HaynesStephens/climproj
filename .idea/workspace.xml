@@ -44,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="719">
+              <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -56,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_trans.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="723">
+              <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -178,8 +178,8 @@
         <option value="$PROJECT_DIR$/writeCSVandPKL.py" />
         <option value="$PROJECT_DIR$/data_scripts/Trans_diagnostic.py" />
         <option value="$PROJECT_DIR$/data_scripts/EQ_diagnostic.py" />
-        <option value="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" />
         <option value="$PROJECT_DIR$/data_scripts/diagnostic_trans.py" />
+        <option value="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" />
       </list>
     </option>
   </component>
@@ -342,21 +342,7 @@
       <workItem from="1573747253196" duration="618000" />
       <workItem from="1573832753957" duration="5268000" />
       <workItem from="1574015200701" duration="2654000" />
-      <workItem from="1574089600941" duration="1203000" />
-    </task>
-    <task id="LOCAL-00857" summary="new runs being analyzed">
-      <created>1573832947528</created>
-      <option name="number" value="00857" />
-      <option name="presentableId" value="LOCAL-00857" />
-      <option name="project" value="LOCAL" />
-      <updated>1573832947529</updated>
-    </task>
-    <task id="LOCAL-00858" summary="new runs being analyzed">
-      <created>1573835048402</created>
-      <option name="number" value="00858" />
-      <option name="presentableId" value="LOCAL-00858" />
-      <option name="project" value="LOCAL" />
-      <updated>1573835048403</updated>
+      <workItem from="1574089600941" duration="1414000" />
     </task>
     <task id="LOCAL-00859" summary="new runs being analyzed">
       <created>1573835156159</created>
@@ -687,11 +673,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574091093153</updated>
     </task>
-    <option name="localTasksCounter" value="906" />
+    <task id="LOCAL-00906" summary="new runs being analyzed">
+      <created>1574091158253</created>
+      <option name="number" value="00906" />
+      <option name="presentableId" value="LOCAL-00906" />
+      <option name="project" value="LOCAL" />
+      <updated>1574091158253</updated>
+    </task>
+    <task id="LOCAL-00907" summary="new runs being analyzed">
+      <created>1574091186986</created>
+      <option name="number" value="00907" />
+      <option name="presentableId" value="LOCAL-00907" />
+      <option name="project" value="LOCAL" />
+      <updated>1574091186986</updated>
+    </task>
+    <option name="localTasksCounter" value="908" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235313000" />
+    <option name="totallyTimeSpent" value="235524000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1156,20 +1156,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
+    <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_trans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="723">
+          <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_trans.py">
+    <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="719">
+          <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

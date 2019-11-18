@@ -58,7 +58,7 @@ f = open(outpath, 'w')
 comments = ['# This is a dataframe of the used to calculate anomalies \n',
             '# for the diagnostic group,\n',
             '# for varying {0} profiles. Used for:\n'.format(diag_var),
-            '# - ??\n']
+            '# \n']
 print('Writing comments:')
 [print(comment) for comment in comments]
 [f.write(comment) for comment in comments]
