@@ -26,7 +26,7 @@ def get_df(fname, input_ppm):
     sh          = pkl['surface_upward_sensible_heat_flux'][0][0]
     conv_prec   = pkl['convective_precipitation_rate'][0][0]
     strat_prec  = pkl['stratiform_precipitation_rate'][0][0]
-    ppm         = np.round(pkl['mole_fraction_of_carbon_dioxide_in_air'][0][0,0]*10**6)
+    # ppm         = np.round(pkl['mole_fraction_of_carbon_dioxide_in_air'][0][0,0]*10**6)
     df          = pd.DataFrame({'NETsurf'    : net_surf,
                                 'NETtoa'     : net_toa,
                                 'SWsurf'     : sw_surf,
