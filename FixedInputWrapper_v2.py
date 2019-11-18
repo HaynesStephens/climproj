@@ -1,4 +1,5 @@
-class FixedInputWrapper(object):
+import copy
+class FixedInputWrapper_v2(object):
 
     def __init__(self, wrapped_component, fixed_state):
         self._component = wrapped_component
@@ -17,5 +18,6 @@ class FixedInputWrapper(object):
         return getattr(self._component, item)
 
     def __call__(self, state, *args, **kwargs):
-        state.update(self._fixed_state)
-        return self._component(state, *args, **kwargs)
+        copied_state = copy.deepcopy(state)
+        copied_state.update(self._fixed_state)
+        return self._component(copied_state, *args, **kwargs)
