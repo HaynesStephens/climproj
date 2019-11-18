@@ -5,7 +5,7 @@ import pickle
 diag_var = 'T'
 basepath = '/project2/moyer/old_project/haynes/climt_files/diagnostic/{0}/'.format(diag_var)
 input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
-job_list = ['Trans_diagnostic_{0}_input{1}'.format(diag_var, ppm) for ppm in input_ppm_list]
+job_list = ['diagnostic_{0}_input{1}'.format(diag_var, ppm) for ppm in input_ppm_list]
 file_list = ['{0}{1}/{1}_pkl_trans.pkl'.format(basepath, job) for job in job_list]
 
 
