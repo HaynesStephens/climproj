@@ -21,3 +21,4 @@ class FixedInputWrapper_v2(object):
         copied_state = copy.deepcopy(state)
         copied_state.update(self._fixed_state)
         return self._component(copied_state, *args, **kwargs)
+ljoa
