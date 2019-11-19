@@ -1,5 +1,5 @@
 import copy
-from FixedInputWrapper import FixedInputWrapper
+from FixedInputWrapper_v2 import FixedInputWrapper_v2
 from sympl import (
     DataArray, AdamsBashforth, get_constant, set_constant, NetCDFMonitor
 )
@@ -109,8 +109,8 @@ fixed_state = {
 }
 fixed_state['specific_humidity'].values[:] = control_q.copy()
 fixed_state['air_temperature'].values[:] = fixed_T.copy()
-radiation_lw_fixed = FixedInputWrapper(radiation_lw, fixed_state)
-radiation_sw_fixed = FixedInputWrapper(radiation_sw, fixed_state)
+radiation_lw_fixed = FixedInputWrapper_v2(radiation_lw, fixed_state)
+radiation_sw_fixed = FixedInputWrapper_v2(radiation_sw, fixed_state)
 ######################################
 time_stepper = AdamsBashforth([radiation_lw_fixed, radiation_sw_fixed, slab, moist_convection])
 
