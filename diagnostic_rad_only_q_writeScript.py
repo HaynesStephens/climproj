@@ -5,10 +5,10 @@ import newSbatch
 def createRun(input_ppm):
     irradiance = 1036
     insol = 320
-    job_name = 'diagnostic_T_input{0}'.format(input_ppm)
+    job_name = 'diagnostic_q_input{0}'.format(input_ppm)
 
-    template_path = '/home/haynes13/code/python/climproj/climt_scripts/diagnostic/diagnostic_T_template.py'
-    job_path = '/home/haynes13/code/python/climproj/climt_scripts/diagnostic/T/{0}.py'.format(job_name)
+    template_path = '/home/haynes13/code/python/climproj/climt_scripts/diagnostic/diagnostic_rad_only_q_template.py'
+    job_path = '/home/haynes13/code/python/climproj/climt_scripts/diagnostic/q/{0}.py'.format(job_name)
     print(job_path)
 
 
@@ -24,11 +24,11 @@ def createRun(input_ppm):
             fout.write(line)
 
     base_dir = '/project2/moyer/old_project/haynes/' # Needs to end in an '/'
-    test_dir = 'diagnostic/T/' # Needs to end in an '/'
+    test_dir = 'diagnostic/q/' # Needs to end in an '/'
     job_dir, sbatch_filename = newSbatch.newSbatch(base_dir, test_dir, job_name)
     return job_dir, sbatch_filename
 
-os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/diagnostic/T/')
+os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/diagnostic/q/')
 
 # TEMPLATE, ENTIRE LIST:
 input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
