@@ -1,5 +1,4 @@
 import copy
-from FixedInputWrapper_v2 import FixedInputWrapper_v2
 from sympl import (
     DataArray, AdamsBashforth, get_constant, set_constant, NetCDFMonitor
 )
