@@ -49,7 +49,7 @@ restart_file_name = '/home/haynes13/climt_files/control_fullstore/' \
                     'i270_320solar_fullstore/i270_320solar_fullstore.eq.pkl'
 restart_file = open(restart_file_name, 'rb')
 restart_state = pickle.load(restart_file)
-control_T = restart_state['air_temperature'].copy()
+control_q = restart_state['specific_humidity'].copy()
 
 restart_quantities =  list(restart_state.keys())
 print(restart_quantities)
@@ -93,12 +93,13 @@ state['area_type'].values[:]                                = 'sea'
 state['eastward_wind'].values[0]                            = 5.0
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(270) * 10**(-6)
 
-### FIXED HUMIDITY PROFILE TO INPUT ###
-fixed_q_file_name = '/project2/moyer/old_project/haynes/climt_files/' \
+### FIXED TEMPERATURE PROFILE TO INPUT ###
+fixed_T_file_name = '/project2/moyer/old_project/haynes/climt_files/' \
                'varying_co2/320solar/i{0}_320solar/i{0}_320solar.eq.pkl'.format(input_ppm)
-fixed_q_file = open(fixed_q_file_name, 'rb')
-fixed_q_state = pickle.load(fixed_q_file)
-fixed_q = fixed_q_state['specific_humidity'].copy()
+fixed_T_file = open(fixed_T_file_name, 'rb')
+fixed_T_state = pickle.load(fixed_T_file)
+fixed_T = fixed_T_state['air_temperature'].copy()
+state['air_temperature'].values[:] = fixed_T
 ##########################################
 
 ### FIXED STATE TO HOLD PROFILES CONSTANT ###
@@ -106,8 +107,8 @@ fixed_state = {
     'specific_humidity': copy.deepcopy(state['specific_humidity']),
     'air_temperature': copy.deepcopy(state['air_temperature'])
 }
-fixed_state['specific_humidity'].values[:] = fixed_q.copy()
-fixed_state['air_temperature'].values[:] = control_T.copy()
+fixed_state['specific_humidity'].values[:] = control_q.copy()
+fixed_state['air_temperature'].values[:] = fixed_T.copy()
 state.update(copy.deepcopy(fixed_state))
 ######################################
 time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convection])
