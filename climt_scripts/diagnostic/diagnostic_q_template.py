@@ -1,5 +1,5 @@
 import copy
-from FixedInputWrapper import FixedInputWrapper
+from FixedInputWrapper_v2 import FixedInputWrapper_v2
 from sympl import (
     DataArray, AdamsBashforth, get_constant, set_constant, NetCDFMonitor
 )
@@ -49,7 +49,7 @@ restart_file_name = '/home/haynes13/climt_files/control_fullstore/' \
                     'i270_320solar_fullstore/i270_320solar_fullstore.eq.pkl'
 restart_file = open(restart_file_name, 'rb')
 restart_state = pickle.load(restart_file)
-control_q = restart_state['specific_humidity'].copy()
+control_T = restart_state['air_temperature'].copy()
 
 restart_quantities =  list(restart_state.keys())
 print(restart_quantities)
@@ -97,9 +97,8 @@ state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(270) * 10**(-
 fixed_q_file_name = '/project2/moyer/old_project/haynes/climt_files/' \
                'varying_co2/320solar/i{0}_320solar/i{0}_320solar.eq.pkl'.format(input_ppm)
 fixed_q_file = open(fixed_q_file_name, 'rb')
-fixed_q_state = pickle.load((fixed_q_file))
+fixed_q_state = pickle.load(fixed_q_file)
 fixed_q = fixed_q_state['specific_humidity'].copy()
-state['specific_humidity'].values[:] = fixed_q
 ##########################################
 
 ### FIXED STATE WRAPPER EXPERIMENT ###
@@ -108,9 +107,9 @@ fixed_state = {
     'air_temperature': copy.deepcopy(state['air_temperature'])
 }
 fixed_state['specific_humidity'].values[:] = fixed_q.copy()
-fixed_state['air_temperature'].values[:] = restart_state['air_temperature'].copy()
-radiation_lw_fixed = FixedInputWrapper(radiation_lw, fixed_state)
-radiation_sw_fixed = FixedInputWrapper(radiation_sw, fixed_state)
+fixed_state['air_temperature'].values[:] = control_T.copy()
+radiation_lw_fixed = FixedInputWrapper_v2(radiation_lw, fixed_state)
+radiation_sw_fixed = FixedInputWrapper_v2(radiation_sw, fixed_state)
 ######################################
 time_stepper = AdamsBashforth([radiation_lw_fixed, radiation_sw_fixed, slab, moist_convection])
 
