@@ -99,7 +99,6 @@ fixed_T_file_name = '/project2/moyer/old_project/haynes/climt_files/' \
 fixed_T_file = open(fixed_T_file_name, 'rb')
 fixed_T_state = pickle.load(fixed_T_file)
 fixed_T = fixed_T_state['air_temperature'].copy()
-state['air_temperature'].values[:] = fixed_T
 ##########################################
 
 ### FIXED STATE TO HOLD PROFILES CONSTANT ###
