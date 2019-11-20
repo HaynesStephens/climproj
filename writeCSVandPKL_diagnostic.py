@@ -10,10 +10,10 @@ fixed_list = ['q', 'T', 'co2']
 for input_ppm in input_ppm_list:
     for fixed_prof in fixed_list:
         # Parameters
-        test_dir = 'diagnostic/{0}/'.format(fixed_prof) # Needs to end in an '/'
+        test_dir = 'diagnostic/rad/{0}/'.format(fixed_prof) # Needs to end in an '/'
         print('TEST:', test_dir)
 
-        job_name    = 'diagnostic_{0}_input{1}'.format(fixed_prof, input_ppm)
+        job_name    = 'diagnostic_rad_{0}_input{1}'.format(fixed_prof, input_ppm)
         print('Job:', job_name)
 
         nc_path     = '/project2/moyer/old_project/haynes/climt_runs/{0}{1}/{1}'.format(test_dir, job_name)
