@@ -53,12 +53,12 @@ def get_EQ_batch(filelist):
 print('Loading & combining dataframes.')
 df = get_EQ_batch(eq_list)
 
-outpath = '/home/haynes13/code/python/climproj/data_calculated/EQ_varyco2_cst_q_rad_fixed_stepper.csv'
+outpath = '/home/haynes13/code/python/climproj/data_calculated/eq_varying_co2_qRadCst.csv'
 f = open(outpath, 'w')
 comments = ['# This is a dataframe of the used to calculate anomalies \n',
-            '# for the 320solar varing-co2 cst-q-rad group,\n',
-            '# using a single fixed timestepper. Used for:\n',
-            '# - ??\n']
+            '# for the 320solar varing-co2 qRadCst group,\n',
+            '# Used for:\n',
+            '# \n']
 print('Writing comments:')
 [print(comment) for comment in comments]
 [f.write(comment) for comment in comments]
