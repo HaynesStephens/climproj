@@ -5,10 +5,10 @@ import pickle
 basepath = '/project2/moyer/old_project/haynes/climt_files/varying_co2_qRadCst/'
 ppm_list = np.array([2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215])
 job_list = ['i{0}_320solar_qRadCst'.format(ppm) for ppm in ppm_list]
-eq_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(basepath, job) for job in job_list]
+pkl_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(basepath, job) for job in job_list]
 
 
-def get_EQ_df(fname):
+def get_df(fname):
     pkl         = pickle.load(open(fname, 'rb'))
     sw_up       = pkl['upwelling_shortwave_flux_in_air']
     sw_dn       = pkl['downwelling_shortwave_flux_in_air']
@@ -42,16 +42,16 @@ def get_EQ_df(fname):
     return df
 
 
-def get_EQ_batch(filelist):
-    df0 = get_EQ_df(filelist[0])
-    for i in range(1, len(filelist)):
-        df_i = get_EQ_df(filelist[i])
+def get_batch(file_list):
+    df0 = get_df(file_list[0])
+    for i in range(1, len(file_list)):
+        df_i = get_df(file_list[i])
         df0 = pd.concat([df0, df_i])
     return df0
 
 
 print('Loading & combining dataframes.')
-df = get_EQ_batch(eq_list)
+df = get_batch(pkl_list)
 
 outpath = '/home/haynes13/code/python/climproj/data_calculated/eq_varying_co2_qRadCst.csv'
 f = open(outpath, 'w')
