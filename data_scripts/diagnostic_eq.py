@@ -1,8 +1,8 @@
 import pandas as pd
 import pickle
 
-diag_var = 'q'
 run_type = 'rad'
+diag_var = 'q'
 basepath = '/project2/moyer/old_project/haynes/climt_files/diagnostic/{0}/{1}/'.format(run_type, diag_var)
 input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
 job_list = ['diagnostic_{0}_{1}_input{2}'.format(run_type, diag_var, ppm) for ppm in input_ppm_list]
