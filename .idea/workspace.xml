@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="53" column="28" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -311,21 +311,7 @@
       <workItem from="1574015200701" duration="2654000" />
       <workItem from="1574089600941" duration="11365000" />
       <workItem from="1574265959834" duration="28000" />
-      <workItem from="1574266361078" duration="1138000" />
-    </task>
-    <task id="LOCAL-00890" summary="new runs being analyzed">
-      <created>1574019719354</created>
-      <option name="number" value="00890" />
-      <option name="presentableId" value="LOCAL-00890" />
-      <option name="project" value="LOCAL" />
-      <updated>1574019719354</updated>
-    </task>
-    <task id="LOCAL-00891" summary="new runs being analyzed">
-      <created>1574020169304</created>
-      <option name="number" value="00891" />
-      <option name="presentableId" value="LOCAL-00891" />
-      <option name="project" value="LOCAL" />
-      <updated>1574020169304</updated>
+      <workItem from="1574266361078" duration="1905000" />
     </task>
     <task id="LOCAL-00892" summary="new runs being analyzed">
       <created>1574020178064</created>
@@ -656,11 +642,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574349263959</updated>
     </task>
-    <option name="localTasksCounter" value="939" />
+    <task id="LOCAL-00939" summary="new version for constant water radiation experiments">
+      <created>1574354596418</created>
+      <option name="number" value="00939" />
+      <option name="presentableId" value="LOCAL-00939" />
+      <option name="project" value="LOCAL" />
+      <updated>1574354596419</updated>
+    </task>
+    <task id="LOCAL-00940" summary="new version for constant water radiation experiments">
+      <created>1574354621164</created>
+      <option name="number" value="00940" />
+      <option name="presentableId" value="LOCAL-00940" />
+      <option name="project" value="LOCAL" />
+      <updated>1574354621164</updated>
+    </task>
+    <option name="localTasksCounter" value="941" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246641000" />
+    <option name="totallyTimeSpent" value="247408000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1182,8 +1182,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="53" column="28" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
