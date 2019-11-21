@@ -2,9 +2,10 @@ import pandas as pd
 import pickle
 
 diag_var = 'q'
-basepath = '/project2/moyer/old_project/haynes/climt_files/diagnostic/{0}/'.format(diag_var)
+run_type = 'rad'
+basepath = '/project2/moyer/old_project/haynes/climt_files/diagnostic/{0}/{1}/'.format(run_type, diag_var)
 input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
-job_list = ['diagnostic_{0}_input{1}'.format(diag_var, ppm) for ppm in input_ppm_list]
+job_list = ['diagnostic_{0}_{1}_input{2}'.format(run_type, diag_var, ppm) for ppm in input_ppm_list]
 file_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(basepath, job) for job in job_list]
 
 
@@ -53,7 +54,7 @@ print('Loading & combining dataframes.')
 df = get_ds_batch(file_list)
 
 outpath = '/home/haynes13/code/python/climproj/' \
-          'data_calculated/diagnostic_{0}_eq.csv'.format(diag_var)
+          'data_calculated/diagnostic_{0}_{1}_eq.csv'.format(run_type, diag_var)
 f = open(outpath, 'w')
 comments = ['# This is a dataframe of the used to calculate anomalies \n',
             '# for the diagnostic group,\n',

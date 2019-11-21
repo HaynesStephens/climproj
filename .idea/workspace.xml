@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writeCSVandPKL_diagnostic.py" beforeDir="false" afterPath="$PROJECT_DIR$/writeCSVandPKL_diagnostic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +13,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/writeCSVandPKL_diagnostic.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+              <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="583">
+              <caret line="53" column="28" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_trans.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,7 +125,6 @@
         <option value="$PROJECT_DIR$/data_scripts/Trans_diagnostic.py" />
         <option value="$PROJECT_DIR$/data_scripts/EQ_diagnostic.py" />
         <option value="$PROJECT_DIR$/data_scripts/diagnostic_trans.py" />
-        <option value="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" />
         <option value="$PROJECT_DIR$/FixedInputWrapper.py" />
         <option value="$PROJECT_DIR$/FixedInputWrapper_v2.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2_qRadCst/varying_co2_qRadCst_template.py" />
@@ -122,6 +145,7 @@
         <option value="$PROJECT_DIR$/writeCSVandPKL_varing_co2_qRadCst.py" />
         <option value="$PROJECT_DIR$/data_scripts/varying_co2_qRadCst_eq.py" />
         <option value="$PROJECT_DIR$/writeCSVandPKL_diagnostic.py" />
+        <option value="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" />
       </list>
     </option>
   </component>
@@ -146,28 +170,7 @@
             <path>
               <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
               <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="diagnostic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="diagnostic" type="462c0819:PsiDirectoryNode" />
-              <item name="rad" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="diagnostic" type="462c0819:PsiDirectoryNode" />
-              <item name="rad" type="462c0819:PsiDirectoryNode" />
-              <item name="co2" type="462c0819:PsiDirectoryNode" />
+              <item name="data_scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -308,21 +311,7 @@
       <workItem from="1574015200701" duration="2654000" />
       <workItem from="1574089600941" duration="11365000" />
       <workItem from="1574265959834" duration="28000" />
-      <workItem from="1574266361078" duration="469000" />
-    </task>
-    <task id="LOCAL-00888" summary="new runs being analyzed">
-      <created>1574018815338</created>
-      <option name="number" value="00888" />
-      <option name="presentableId" value="LOCAL-00888" />
-      <option name="project" value="LOCAL" />
-      <updated>1574018815338</updated>
-    </task>
-    <task id="LOCAL-00889" summary="new runs being analyzed">
-      <created>1574019678371</created>
-      <option name="number" value="00889" />
-      <option name="presentableId" value="LOCAL-00889" />
-      <option name="project" value="LOCAL" />
-      <updated>1574019678371</updated>
+      <workItem from="1574266361078" duration="1138000" />
     </task>
     <task id="LOCAL-00890" summary="new runs being analyzed">
       <created>1574019719354</created>
@@ -653,11 +642,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574263215859</updated>
     </task>
-    <option name="localTasksCounter" value="937" />
+    <task id="LOCAL-00937" summary="new version for constant water radiation experiments">
+      <created>1574292748535</created>
+      <option name="number" value="00937" />
+      <option name="presentableId" value="LOCAL-00937" />
+      <option name="project" value="LOCAL" />
+      <updated>1574292748535</updated>
+    </task>
+    <task id="LOCAL-00938" summary="new version for constant water radiation experiments">
+      <created>1574349263959</created>
+      <option name="number" value="00938" />
+      <option name="presentableId" value="LOCAL-00938" />
+      <option name="project" value="LOCAL" />
+      <updated>1574349263959</updated>
+    </task>
+    <option name="localTasksCounter" value="939" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245972000" />
+    <option name="totallyTimeSpent" value="246641000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -913,16 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FixedInputWrapper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1112,16 +1105,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_trans.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
@@ -1183,7 +1166,27 @@
     <entry file="file://$PROJECT_DIR$/writeCSVandPKL_diagnostic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_trans.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="53" column="28" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
