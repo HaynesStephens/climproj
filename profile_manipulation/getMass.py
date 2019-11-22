@@ -39,7 +39,7 @@ mole_list = ['mole_fraction_of_ozone_in_air',
             'mole_fraction_of_carbon_tetrachloride_in_air']
 
 for mole in mole_list:
-    print(mole_list)
+    print(mole)
     print(pkl[mole].flatten())
 
 
