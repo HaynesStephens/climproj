@@ -160,7 +160,7 @@ def plotEQResponse(job_name, test_dir='', save_step=36):
     file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
     plot_base = '/home/haynes13/code/python/climproj/figures/'
     #     plot_name = '{0}/{1}/{1}_time_series.pdf'.format(plot_base, job_name)
-    plot_dir = '{0}{1}{2}'.format(plot_base, 'EQandTransResponses/', test_dir)
+    plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'EQandTransResponses/', test_dir, 'eq/')
     os.system('mkdir -p {0}'.format(plot_dir))
     plot_name = '{0}/{1}_eq.png'.format(plot_dir, job_name)
     print(plot_name)
