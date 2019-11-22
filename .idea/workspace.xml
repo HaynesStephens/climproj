@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/profile_manipulation/getProfile.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_manipulation/getProfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/profile_manipulation/getProfile.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,10 +16,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile_manipulation/getProfile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="306">
+              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
               <folding>
-                <element signature="e#0#76#0" expanded="true" />
+                <element signature="e#0#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -287,21 +287,7 @@
       <workItem from="1574265959834" duration="28000" />
       <workItem from="1574266361078" duration="2202000" />
       <workItem from="1574436146135" duration="2744000" />
-      <workItem from="1574448673380" duration="774000" />
-    </task>
-    <task id="LOCAL-00914" summary="new runs being analyzed">
-      <created>1574106913243</created>
-      <option name="number" value="00914" />
-      <option name="presentableId" value="LOCAL-00914" />
-      <option name="project" value="LOCAL" />
-      <updated>1574106913243</updated>
-    </task>
-    <task id="LOCAL-00915" summary="new runs being analyzed">
-      <created>1574107169431</created>
-      <option name="number" value="00915" />
-      <option name="presentableId" value="LOCAL-00915" />
-      <option name="project" value="LOCAL" />
-      <updated>1574107169431</updated>
+      <workItem from="1574448673380" duration="1768000" />
     </task>
     <task id="LOCAL-00916" summary="new runs being analyzed">
       <created>1574107270634</created>
@@ -632,11 +618,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574442483788</updated>
     </task>
-    <option name="localTasksCounter" value="963" />
+    <task id="LOCAL-00963" summary="profile manipulation">
+      <created>1574451831497</created>
+      <option name="number" value="00963" />
+      <option name="presentableId" value="LOCAL-00963" />
+      <option name="project" value="LOCAL" />
+      <updated>1574451831498</updated>
+    </task>
+    <task id="LOCAL-00964" summary="profile manipulation">
+      <created>1574451919468</created>
+      <option name="number" value="00964" />
+      <option name="presentableId" value="LOCAL-00964" />
+      <option name="project" value="LOCAL" />
+      <updated>1574451919468</updated>
+    </task>
+    <option name="localTasksCounter" value="965" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="251223000" />
+    <option name="totallyTimeSpent" value="252217000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -701,7 +701,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="270i and 939 solar with constant u" />
     <MESSAGE value="writing out EQ values" />
     <MESSAGE value="trying out nonseasonal rad methods" />
     <MESSAGE value="including dry convection" />
@@ -726,7 +725,8 @@
     <MESSAGE value="new restart test runs" />
     <MESSAGE value="new runs being analyzed" />
     <MESSAGE value="new version for constant water radiation experiments" />
-    <option name="LAST_COMMIT_MESSAGE" value="new version for constant water radiation experiments" />
+    <MESSAGE value="profile manipulation" />
+    <option name="LAST_COMMIT_MESSAGE" value="profile manipulation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -896,16 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="54" lean-forward="true" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2/varying_co2_template_290solar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-386">
-          <caret line="48" column="28" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1156,12 +1146,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2/varying_co2_template_290solar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="45" selection-start-line="45" selection-end-line="48" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/profile_manipulation/getProfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="306">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
           <folding>
-            <element signature="e#0#76#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
