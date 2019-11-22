@@ -16,10 +16,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile_manipulation/getProfile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+            <state>
               <folding>
-                <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#1#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -287,14 +286,7 @@
       <workItem from="1574265959834" duration="28000" />
       <workItem from="1574266361078" duration="2202000" />
       <workItem from="1574436146135" duration="2744000" />
-      <workItem from="1574448673380" duration="1768000" />
-    </task>
-    <task id="LOCAL-00916" summary="new runs being analyzed">
-      <created>1574107270634</created>
-      <option name="number" value="00916" />
-      <option name="presentableId" value="LOCAL-00916" />
-      <option name="project" value="LOCAL" />
-      <updated>1574107270634</updated>
+      <workItem from="1574448673380" duration="1779000" />
     </task>
     <task id="LOCAL-00917" summary="new runs being analyzed">
       <created>1574107276125</created>
@@ -632,11 +624,18 @@
       <option name="project" value="LOCAL" />
       <updated>1574451919468</updated>
     </task>
-    <option name="localTasksCounter" value="965" />
+    <task id="LOCAL-00965" summary="profile manipulation">
+      <created>1574457067532</created>
+      <option name="number" value="00965" />
+      <option name="presentableId" value="LOCAL-00965" />
+      <option name="project" value="LOCAL" />
+      <updated>1574457067532</updated>
+    </task>
+    <option name="localTasksCounter" value="966" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="252217000" />
+    <option name="totallyTimeSpent" value="252228000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1158,10 +1157,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile_manipulation/getProfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        <state>
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#1#14#0" expanded="true" />
           </folding>
         </state>
       </provider>

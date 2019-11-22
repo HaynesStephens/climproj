@@ -1,5 +1,3 @@
-from metpy.calc import pressure_to_height_std
-from metpy.units import units
 import pickle
 import numpy as np
 
