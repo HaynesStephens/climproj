@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 
 
-def getMassH2O(pkl):
+def H2O(pkl):
     g = 9.8
     q = pkl['specific_humidity'].flatten()
     p_diff = np.abs(np.diff(pkl['air_pressure_on_interface_levels'].flatten()))
@@ -11,7 +11,7 @@ def getMassH2O(pkl):
     return np.sum(mass)
 
 
-def getMassCO2(pkl):
+def CO2(pkl):
     g = 9.8
     co2 = pkl['mole_fraction_of_carbon_dioxide_in_air'].flatten()
     o3 = pkl['mole_fraction_of_ozone_in_air'].flatten()
