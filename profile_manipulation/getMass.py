@@ -1,4 +1,4 @@
-cimport pickle
+import pickle
 import numpy as np
 
 def getMassH2O(pkl):
