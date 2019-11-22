@@ -5,6 +5,7 @@ def getMassH2O(pkl):
     g = 9.8
     q = pkl['specific_humidity'].copy().flatten()
     p_diff = np.diff(pkl['air_pressure_on_interface_levels'].copy().flatten())
+    print(pkl['specific_humidity'])
     print(pkl['air_pressure_on_interface_levels'])
     mass = (q * p_diff) / g
     print(q)
