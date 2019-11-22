@@ -29,5 +29,5 @@ file_name = '/project2/moyer/old_project/haynes/climt_files/varying_co2/320solar
 file_load = open(file_name, 'rb')
 pkl = pickle.load(file_load)
 
-getMassH2O(pkl)
-getMassCO2(pkl)
+H2O(pkl)
+CO2(pkl)
