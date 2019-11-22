@@ -36,6 +36,7 @@ def getMass_CO2(pkl):
     column_mass = p0 / g
 
     total_mass_co2 = column_mass * (m_co2 / m_air_mean) * ppm
+    return total_mass_co2
 
 
 
