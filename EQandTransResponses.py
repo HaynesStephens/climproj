@@ -595,15 +595,29 @@ def plotTransTempHumSeries(ax, file_name, control_pkl):
 #     print('DONE.', job_name)
 
 
-#RUN 3
-co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-stepper_list    = ['fixed_stepper', 'multi_stepper']
-insol           = 320
-for stepper in stepper_list:
-    test_dir = 'varying_co2_cst_q_rad/{0}/'.format(stepper)
-    for ppm in co2_ppm_list:
-        job_name = 'i{0}_{1}solar_cst_q_rad_{2}'.format(ppm, insol, stepper)
-        plotEQResponse(job_name, test_dir=test_dir)
-        plotTransResponse(job_name, test_dir=test_dir)
-        print('DONE.', job_name)
+# #RUN 3
+# co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
+# stepper_list    = ['fixed_stepper', 'multi_stepper']
+# insol           = 320
+# for stepper in stepper_list:
+#     test_dir = 'varying_co2_cst_q_rad/{0}/'.format(stepper)
+#     for ppm in co2_ppm_list:
+#         job_name = 'i{0}_{1}solar_cst_q_rad_{2}'.format(ppm, insol, stepper)
+#         plotEQResponse(job_name, test_dir=test_dir)
+#         plotTransResponse(job_name, test_dir=test_dir)
+#         print('DONE.', job_name)
+
+
+#RUN 4
+input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
+run_type_list  = ['rad', 'tot']
+var_list       = ['q', 'T', 'co2']
+for input_ppm in input_ppm_list:
+    for run_type in run_type_list:
+        for var in var_list:
+            test_dir = 'diagnostic/{0}/{1}/'.format(run_type, var)
+            job_name = 'diagnostic_{0}_{1}_input{2}'.format(run_type, var, input_ppm)
+            plotEQResponse(job_name, test_dir=test_dir)
+            plotTransResponse(job_name, test_dir=test_dir)
+            print('DONE.', job_name)
 
