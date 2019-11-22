@@ -619,7 +619,7 @@ for input_ppm in input_ppm_list:
             test_dir = 'diagnostic/{0}/{1}/'.format(run_type, var)
             job_name = 'diagnostic_{0}_{1}_input{2}'.format(run_type, var, input_ppm)
             print(job_name)
-            plotEQResponse(job_name, insol=insol, test_dir=test_dir)
+            plotEQResponse(job_name, test_dir=test_dir)
             plotTransResponse(job_name, insol=insol, test_dir=test_dir)
             print('DONE.', job_name)
 
