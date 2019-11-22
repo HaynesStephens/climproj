@@ -367,7 +367,7 @@ def plotTransvals(ax, trans_pkl, control_pkl, response_index=0):
 # In[345]:
 
 
-def plotTransResponse(job_name, test_dir=''):
+def plotTransResponse(job_name, test_dir='', insol=320):
     base_name = '/project2/moyer/old_project/haynes/climt_files/'
     #     file_name = '{0}/{1}/{1}'.format(base_name, job_name)
     file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
@@ -386,7 +386,7 @@ def plotTransResponse(job_name, test_dir=''):
         pkl_dict = pickle.load(pkl_file)
         return pkl_dict
 
-    control_type = job_name.split('_')[1]
+    control_type = '{0}solar'.format(insol)
 
     if test_dir == 'varying_solar/':
         control_job = 'i270_320solar_fullstore'
