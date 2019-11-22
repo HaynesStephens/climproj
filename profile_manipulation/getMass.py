@@ -35,6 +35,7 @@ def getMass_CO2(pkl):
     p0 = p[0]
     column_mass = p0 / g
     total_mass_co2 = column_mass * (m_co2 / m_air_mean) * ppm
+    print('CO2 Mass (kg)', np.sum(total_mass_co2))
     return total_mass_co2
 
 
