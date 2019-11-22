@@ -162,14 +162,14 @@ def plotEQResponse(job_name, test_dir='', save_step=36):
     #     plot_name = '{0}/{1}/{1}_time_series.pdf'.format(plot_base, job_name)
     plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'EQandTransResponses/', test_dir, job_name)
     os.system('mkdir -p {0}'.format(plot_dir))
-    plot_name = '{0}/{1}.eq.png'.format(plot_dir, job_name)
+    plot_name = '{0}/{1}_eq.png'.format(plot_dir, job_name)
     print(plot_name)
 
     def loadData(file_name, var):
         return np.loadtxt('{0}_{1}.csv'.format(file_name, var), delimiter=',')
 
     def loadPKL(filename, pkl_type):
-        pkl_file = open('{0}.{1}.pkl'.format(filename, pkl_type), 'rb')
+        pkl_file = open('{0}_pkl_{1}.pkl'.format(filename, pkl_type), 'rb')
         pkl_dict = pickle.load(pkl_file)
         return pkl_dict
 
@@ -382,7 +382,7 @@ def plotTransResponse(job_name, test_dir='', save_step=36):
         return np.loadtxt('{0}_{1}.csv'.format(file_name, var), delimiter=',')
 
     def loadPKL(filename, pkl_type):
-        pkl_file = open('{0}.{1}.pkl'.format(filename, pkl_type), 'rb')
+        pkl_file = open('{0}_pkl_{1}.pkl'.format(filename, pkl_type), 'rb')
         pkl_dict = pickle.load(pkl_file)
         return pkl_dict
 
