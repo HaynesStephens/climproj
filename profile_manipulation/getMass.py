@@ -1,14 +1,14 @@
 import pickle
 import numpy as np
 
-def getMassProfileH2O(pkl):
+def getMassH2O(pkl):
     g = 9.8
     q = pkl['specific_humidity'].copy().flatten()
     p_diff = np.abs(np.diff(pkl['air_pressure_on_interface_levels'].copy().flatten()))
     print(pkl['specific_humidity'])
     print(pkl['air_pressure_on_interface_levels'])
     mass = (q * p_diff) / g
-    return mass
+    return np.sum(mass)
 
 
 file_name = '/project2/moyer/old_project/haynes/climt_files/control_fullstore/' \
