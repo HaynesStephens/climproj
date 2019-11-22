@@ -1,16 +1,13 @@
 import pickle
 import numpy as np
 
-def getMassH2O(pkl):
+def getMassProfileH2O(pkl):
     g = 9.8
     q = pkl['specific_humidity'].copy().flatten()
     p_diff = np.abs(np.diff(pkl['air_pressure_on_interface_levels'].copy().flatten()))
     print(pkl['specific_humidity'])
     print(pkl['air_pressure_on_interface_levels'])
     mass = (q * p_diff) / g
-    print(q)
-    print(p_diff)
-    print(mass)
     return mass
 
 
