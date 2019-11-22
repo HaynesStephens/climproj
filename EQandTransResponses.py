@@ -127,7 +127,7 @@ def plotTsurfPrecipLH(ax, time_adj, tsurf, precip, time_title, lh_flux, strat_pr
         lns = ln1 + ln2 + ln3
     else:
         strat_prec_flux = strat_prec * (1 / 86400) * (2556) * (10 ** 3)
-        ln4 = ax2.plot(time_adj, strat_prec, '-', c='r', label='StratPrec', linewidth=2)
+        ln4 = ax2.plot(time_adj, strat_prec_flux, '-', c='r', label='StratPrec', linewidth=2)
         lns = ln1 + ln2 + ln3 + ln4
     labs = [l.get_label() for l in lns]
     ax2.legend(lns, labs, loc=1)
