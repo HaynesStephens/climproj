@@ -19,6 +19,9 @@ def getMass_CO2(pkl):
     ppm = co2[0]
     p = pkl['air_pressure_on_interface_levels'].flatten()
     p0 = p[0]
+    print(co2)
+    print(o3)
+    print(o2)
     column_mass = p0 / g
 
 
