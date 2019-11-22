@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 
 
-def H2O(pkl):
+def getMass_H2O(pkl):
     g = 9.8
     q = pkl['specific_humidity'].flatten()
     p_diff = np.abs(np.diff(pkl['air_pressure_on_interface_levels'].flatten()))
@@ -11,7 +11,7 @@ def H2O(pkl):
     return np.sum(mass)
 
 
-def CO2(pkl):
+def getMass_CO2(pkl):
     g = 9.8
     co2 = pkl['mole_fraction_of_carbon_dioxide_in_air'].flatten()
     o3 = pkl['mole_fraction_of_ozone_in_air'].flatten()
@@ -29,5 +29,5 @@ file_name = '/project2/moyer/old_project/haynes/climt_files/varying_co2/320solar
 file_load = open(file_name, 'rb')
 pkl = pickle.load(file_load)
 
-H2O(pkl)
-CO2(pkl)
+getMass_H2O(pkl)
+getMass_CO2(pkl)
