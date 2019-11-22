@@ -367,7 +367,7 @@ def plotTransvals(ax, trans_pkl, control_pkl, response_index=0):
 # In[345]:
 
 
-def plotTransResponse(job_name, test_dir='', save_step=36):
+def plotTransResponse(job_name, test_dir=''):
     base_name = '/project2/moyer/old_project/haynes/climt_files/'
     #     file_name = '{0}/{1}/{1}'.format(base_name, job_name)
     file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
