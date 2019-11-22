@@ -26,7 +26,7 @@ def getMass_CO2(pkl):
     o2 = np.ones(28) * 0.21000000000001118
     m_o2 = 32.0
     n2 = np.ones(28) - co2 - o3 - o2
-    m_n2 = 14.0
+    m_n2 = 28.0
     m_air = (co2 * m_co2) + (o3 * m_o3) + (o2 * m_o2) + (n2 * m_n2)
     print(m_air)
     p = pkl['air_pressure_on_interface_levels'].flatten()
