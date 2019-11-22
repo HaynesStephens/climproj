@@ -19,4 +19,6 @@ getMassH2O(pkl)
 
 
 def getMassCO2(pkl):
-    co2 = pkl['mole_fraction_of_carbon_dioxide_in_air']
+    co2 = pkl['mole_fraction_of_carbon_dioxide_in_air'].copy().flatten()
+    p = pkl['air_pressure_on_interface_levels'].copy().flatten()
+    p0 = p[0]
