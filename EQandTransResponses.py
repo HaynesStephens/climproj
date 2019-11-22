@@ -373,7 +373,7 @@ def plotTransResponse(job_name, insol=320, test_dir=''):
     file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
     plot_base = '/home/haynes13/code/python/climproj/figures/'
     #     plot_name = '{0}/{1}/{1}_time_series.pdf'.format(plot_base, job_name)
-    plot_dir = '{0}{1}{2}'.format(plot_base, 'EQandTransResponses/', test_dir)
+    plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'EQandTransResponses/', test_dir, 'trans/')
     os.system('mkdir -p {0}'.format(plot_dir))
     plot_name = '{0}/{1}.trans.png'.format(plot_dir, job_name)
     print(plot_name)
@@ -598,7 +598,7 @@ def plotTransTempHumSeries(ax, file_name, control_pkl):
 # # Vary co2 qRadCst run
 # co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
 # insol           = 320
-# test_dir = 'varying_co2_qRadCst/'.format(stepper)
+# test_dir = 'varying_co2_qRadCst/'
 # for ppm in co2_ppm_list:
 #     job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
 #     plotEQResponse(job_name, test_dir=test_dir)
