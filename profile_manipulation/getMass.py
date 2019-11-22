@@ -30,4 +30,4 @@ file_load = open(file_name, 'rb')
 pkl = pickle.load(file_load)
 
 getMassH2O(pkl)
-
+getMassCO2(pkl)
