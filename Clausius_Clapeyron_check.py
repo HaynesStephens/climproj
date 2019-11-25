@@ -18,6 +18,6 @@ file_name_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(test_dir, job_name) for job_nam
 
 file_load_list = [open(file_name, 'rb') for file_name in file_name_list]
 pkl_list = [pickle.load(file_load) for file_load in file_load_list]
-pw_list = [getMass_H2O(pkl) for pkl in pkl_list]
-tsurf_list = [pkl['surface_temperature'].flatten() for pkl in pkl_list]
+pw_list = np.array([getMass_H2O(pkl) for pkl in pkl_list])
+tsurf_list = np.array([pkl['surface_temperature'].flatten() for pkl in pkl_list])
 
