@@ -69,7 +69,7 @@ def EQavg(var_dict, var, years_back):
     return avg_var_dict
 
 
-def EQAvgMaps(years_back = 30):
+def EQAvgMaps(years_back):
     base_path = '/home/haynes13/RDCEP_CCSM3/'
     control_filenames = ['hfls_Amon_CCSM3_II_Control_LongRunMIP_3805',
                         'hfss_Amon_CCSM3_II_Control_LongRunMIP_3805',
