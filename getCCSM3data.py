@@ -188,7 +188,7 @@ def ShanshanEQFig4():
     plt.show()
 
 ### PROCEDURE ###
-EQAvgMaps(years_back=10)
+EQAvgMaps(years_back=100)
 
 
 
