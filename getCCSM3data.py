@@ -31,8 +31,8 @@ def loadLatLonGrid():
     356.25])
 
     save_path = '/project2/moyer/old_project/haynes/ccsm3_maps/'
-    np.savetxt(save_path + 'Grid.lat.csv', lat, delimiter=',')
-    np.savetxt(save_path + 'Grid.lon.csv', lon, delimiter=',')
+    # np.savetxt(save_path + 'Grid_lat.csv', lat, delimiter=',')
+    # np.savetxt(save_path + 'Grid_lon.csv', lon, delimiter=',')
 
 
 def openNC(filepath):
