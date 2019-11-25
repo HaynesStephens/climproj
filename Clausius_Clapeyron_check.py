@@ -15,6 +15,7 @@ def getPKLvals(file_name):
     pkl = pickle.load(file_load)
     pw = getMass_H2O(pkl)
     tsurf = pkl['surface_temperature'][0]
+    print('Tsurf (K)', tsurf)
     return pw, tsurf
 
 insol=320
