@@ -45,7 +45,7 @@ pw_fit = (t_anom * pw_slope) + pw_int
 
 plt.plot(t_anom, pw_pct, 'o')
 plt.plot(t_anom, pw_fit, label = '{0} %/K'.format(pw_slope))
-plt.plot(outlier_t_anom, outlier_pw_pct, c='k')
+plt.plot(outlier_t_anom, outlier_pw_pct, 'x', c='k')
 plt.plot()
 print('{0} %/K'.format(pw_slope))
 plt.legend()
