@@ -14,7 +14,7 @@ def getPKLvals(file_name):
     file_load = open(file_name, 'rb')
     pkl = pickle.load(file_load)
     pw = getMass_H2O(pkl)
-    tsurf = pkl['surface_temperature'][0]
+    tsurf = pkl['surface_temperature'].flatten()[0]
     print('Tsurf (K)', tsurf)
     return pw, tsurf
 
