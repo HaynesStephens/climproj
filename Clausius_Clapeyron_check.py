@@ -29,7 +29,12 @@ pkl_vals = [getPKLvals(file_name) for file_name in file_name_list]
 pw_vals, tsurf_vals = list(zip(*pkl_vals))
 pw_vals, tsurf_vals = np.array(pw_vals), np.array(tsurf_vals)
 
-control_i = np.where(ppm_list==270)
+control_i = np.where(ppm_list==270)[0][0]
+control_pw = pw_vals[control_i]
+control_tsurf = tsurf_vals[control_i]
 
-plt.plot(tsurf_vals, pw_vals)
+t_anom = tsurf_vals - control_tsurf
+pw_pct = (pw_vals / control_pw) * 100
+
+plt.plot(t_anom, pw_pct)
 plt.show()
