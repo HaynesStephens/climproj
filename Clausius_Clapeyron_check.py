@@ -25,4 +25,5 @@ job_list = ['i{0}_{1}solar'.format(ppm, insol) for ppm in ppm_list]
 file_name_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(test_dir, job_name) for job_name in job_list]
 
 pkl_vals = [getPKLvals(file_name) for file_name in file_name_list]
+pw_vals, tsurf_vals = list(zip(*pkl_vals))
 
