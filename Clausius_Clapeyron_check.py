@@ -21,13 +21,15 @@ def getPKLvals(file_name):
 
 insol=320
 test_dir = '/project2/moyer/old_project/haynes/climt_files/varying_co2/{0}solar/'.format(insol)
-ppm_list = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
+ppm_list = np.array([2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215])
 job_list = ['i{0}_{1}solar'.format(ppm, insol) for ppm in ppm_list]
 file_name_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(test_dir, job_name) for job_name in job_list]
 
 pkl_vals = [getPKLvals(file_name) for file_name in file_name_list]
 pw_vals, tsurf_vals = list(zip(*pkl_vals))
 pw_vals, tsurf_vals = np.array(pw_vals), np.array(tsurf_vals)
+
+control_i = np.where(ppm_list==270)
 
 plt.plot(tsurf_vals, pw_vals)
 plt.show()
