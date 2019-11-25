@@ -40,5 +40,6 @@ pw_slope, pw_int = np.polyfit(t_anom, pw_pct, 1)
 pw_fit = (t_anom * pw_slope) + pw_int
 
 plt.plot(t_anom, pw_pct, 'o')
-plt.plot(t_anom, pw_fit)
+plt.plot(t_anom, pw_fit, label = '{0} %/K'.format(pw_slope))
+plt.legend()
 plt.show()
