@@ -39,5 +39,6 @@ pw_pct = (pw_vals / control_pw) * 100
 pw_slope, pw_int = np.polyfit(t_anom, pw_pct, 1)
 pw_fit = (t_anom * pw_slope) + pw_fit
 
-plt.plot(t_anom, pw_pct)
+plt.plot(t_anom, pw_pct, 'o')
+plt.plot(t_anom, pw_fit)
 plt.show()
