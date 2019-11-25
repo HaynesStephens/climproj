@@ -1,5 +1,6 @@
 import pickle
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 def getMass_H2O(pkl):
@@ -28,3 +29,5 @@ pkl_vals = [getPKLvals(file_name) for file_name in file_name_list]
 pw_vals, tsurf_vals = list(zip(*pkl_vals))
 pw_vals, tsurf_vals = np.array(pw_vals), np.array(tsurf_vals)
 
+plt.plot(tsurf_vals, pw_vals)
+plt.show()
