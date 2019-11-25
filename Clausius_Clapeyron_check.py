@@ -27,7 +27,7 @@ file_name_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(test_dir, job_name) for job_nam
 
 pkl_vals = [getPKLvals(file_name) for file_name in file_name_list]
 pw_vals, tsurf_vals = list(zip(*pkl_vals))
-pw_vals, tsurf_vals = np.array(pw_vals), np.array(tsurf_vals)
+pw_vals, tsurf_vals = np.array(pw_vals)[:-2], np.array(tsurf_vals)[:-2]
 
 control_i = np.where(ppm_list==270)[0][0]
 control_pw = pw_vals[control_i]
