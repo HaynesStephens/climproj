@@ -34,7 +34,7 @@ control_pw = pw_vals[control_i]
 control_tsurf = tsurf_vals[control_i]
 
 t_anom = tsurf_vals - control_tsurf
-pw_pct = (pw_vals / control_pw) * 100
+pw_pct = ((pw_vals / control_pw) * 100) - 100
 
 outlier_index = -2
 outlier_t_anom, outlier_pw_pct = t_anom[outlier_index:], pw_pct[outlier_index:]
@@ -46,7 +46,8 @@ pw_fit = (t_anom * pw_slope) + pw_int
 plt.plot(t_anom, pw_pct, 'o')
 plt.plot(t_anom, pw_fit, label = '{0} %/K'.format(pw_slope))
 plt.plot(outlier_t_anom, outlier_pw_pct, 'x', c='k')
-plt.plot()
+plt.xlabel('Tsurf Anomaly (K)')
+plt.ylabel('PW Anomaly (%)')
 print('{0} %/K'.format(pw_slope))
 plt.legend()
 plt.savefig('/home/haynes13/code/python/climproj/figures/Clausius_Clapeyron_check/check.png')
