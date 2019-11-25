@@ -45,7 +45,7 @@ def openNC(filepath):
     return ds(nc_name, 'r+', format='NETCDF4')
 
 
-def EQavg(var_dict, var):
+def EQavg(var_dict, var, years_back):
     """
     Average over the past 10 years
     :param var_dict:
@@ -53,7 +53,6 @@ def EQavg(var_dict, var):
     """
     time_array = var_dict['time'].copy()
     var_array = var_dict[var].copy()
-    years_back = 10
     days_back = years_back * 365.25
     time_last = time_array[-1]
 
@@ -70,7 +69,7 @@ def EQavg(var_dict, var):
     return avg_var_dict
 
 
-def EQAvgMaps():
+def EQAvgMaps(years_back = 30):
     base_path = '/home/haynes13/RDCEP_CCSM3/'
     control_filenames = ['hfls_Amon_CCSM3_II_Control_LongRunMIP_3805',
                         'hfss_Amon_CCSM3_II_Control_LongRunMIP_3805',
@@ -133,10 +132,10 @@ def EQAvgMaps():
         return var_dict
 
     var_dicts = [getNCdict(filepath, var) for filepath,var in zip(filepaths,vars)]
-    avg_var_dicts = [EQavg(var_dict, var) for var_dict,var in zip(var_dicts, vars)]
+    avg_var_dicts = [EQavg(var_dict, var, years_back) for var_dict,var in zip(var_dicts, vars)]
     avg_var_maps = [avg_var_dict[var+'_avg'] for avg_var_dict,var in zip(avg_var_dicts, vars)]
     save_path = '/home/haynes13/ccsm3_maps/'
-    save_filepaths = [save_path + name + '.avgMap.csv' for name in filenames]
+    save_filepaths = [save_path + name + '_avgMap_{0}yr.csv'.format(years_back) for name in filenames]
     save_avg_var_maps = [np.savetxt(name, data, delimiter=',') for name,data in zip(save_filepaths, avg_var_maps)]
     print_names = [print(name) for name in save_filepaths]
     return avg_var_maps
