@@ -120,7 +120,7 @@ def EQAvgMaps(years_back):
                        'FLNSC_Amon_CCSM3_II_abrupt700ppm_LongRunMIP_3701',
                        'FLNSC_Amon_CCSM3_II_abrupt1400ppm_LongRunMIP_3132']
 
-    filenames = FLNSC_filenames
+    filenames = control_filenames
     filepaths = [base_path + name for name in filenames]
     vars = [name.split('_')[0] for name in filenames]
 
