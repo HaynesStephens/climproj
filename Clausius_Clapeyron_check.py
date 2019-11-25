@@ -10,10 +10,11 @@ def getMass_H2O(pkl):
     print('PW Mass (kg)', np.sum(mass))
     return np.sum(mass)
 
-test_dir = 'varying_co2/'
-insol = 320
+insol=320
+test_dir = 'varying_co2/{0}solar/'.format(insol)
 ppm_list = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-file_name_list = []
+job_list = ['i{0}_{1}solar'.format(ppm, insol) for ppm in ppm_list]
+file_name_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(test_dir, job_name) for job_name in job_list]
 
 for file_name in file_name_list:
     file_load = open(file_name, 'rb')
