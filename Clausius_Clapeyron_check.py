@@ -27,7 +27,7 @@ file_name_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(test_dir, job_name) for job_nam
 
 pkl_vals = [getPKLvals(file_name) for file_name in file_name_list]
 pw_vals, tsurf_vals = list(zip(*pkl_vals))
-pw_vals, tsurf_vals = np.array(pw_vals)[:-2], np.array(tsurf_vals)[:-2]
+pw_vals, tsurf_vals = np.array(pw_vals), np.array(tsurf_vals)
 
 control_i = np.where(ppm_list==270)[0][0]
 control_pw = pw_vals[control_i]
@@ -36,11 +36,17 @@ control_tsurf = tsurf_vals[control_i]
 t_anom = tsurf_vals - control_tsurf
 pw_pct = (pw_vals / control_pw) * 100
 
+outlier_index = -2
+outlier_t_anom, outlier_pw_pct = t_anom[outlier_index:], pw_pct[outlier_index:]
+t_anom, pw_pct = t_anom[:outlier_index], pw_pct[:outlier_index]
+
 pw_slope, pw_int = np.polyfit(t_anom, pw_pct, 1)
 pw_fit = (t_anom * pw_slope) + pw_int
 
 plt.plot(t_anom, pw_pct, 'o')
 plt.plot(t_anom, pw_fit, label = '{0} %/K'.format(pw_slope))
+plt.plot(outlier_t_anom, outlier_pw_pct, c='k')
+plt.plot()
 print('{0} %/K'.format(pw_slope))
 plt.legend()
 plt.savefig('/home/haynes13/code/python/climproj/figures/Clausius_Clapeyron_check/check.png')
