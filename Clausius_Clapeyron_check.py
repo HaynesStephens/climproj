@@ -41,5 +41,6 @@ pw_fit = (t_anom * pw_slope) + pw_int
 
 plt.plot(t_anom, pw_pct, 'o')
 plt.plot(t_anom, pw_fit, label = '{0} %/K'.format(pw_slope))
+print('{0} %/K'.format(pw_slope))
 plt.legend()
 plt.savefig('/home/haynes13/code/python/climproj/figures/Clausius_Clapeyron_check/check.png')
