@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile_manipulation/getMass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="134" column="72" selection-start-line="134" selection-start-column="72" selection-end-line="134" selection-end-column="72" />
+            <state relative-caret-position="744">
+              <caret line="139" column="84" selection-start-line="139" selection-start-column="84" selection-end-line="139" selection-end-column="84" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -160,6 +160,11 @@
               <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
               <item name="climproj" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="climproj" type="462c0819:PsiDirectoryNode" />
+              <item name="profile_manipulation" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -300,21 +305,7 @@
       <workItem from="1574266361078" duration="2202000" />
       <workItem from="1574436146135" duration="2744000" />
       <workItem from="1574448673380" duration="5229000" />
-      <workItem from="1574714782006" duration="11629000" />
-    </task>
-    <task id="LOCAL-01047" summary="ccsm3 avg timespans">
-      <created>1574784864498</created>
-      <option name="number" value="01047" />
-      <option name="presentableId" value="LOCAL-01047" />
-      <option name="project" value="LOCAL" />
-      <updated>1574784864498</updated>
-    </task>
-    <task id="LOCAL-01048" summary="ccsm3 avg timespans">
-      <created>1574784890414</created>
-      <option name="number" value="01048" />
-      <option name="presentableId" value="LOCAL-01048" />
-      <option name="project" value="LOCAL" />
-      <updated>1574784890414</updated>
+      <workItem from="1574714782006" duration="12053000" />
     </task>
     <task id="LOCAL-01049" summary="ccsm3 avg timespans">
       <created>1574784953709</created>
@@ -645,11 +636,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574804816597</updated>
     </task>
-    <option name="localTasksCounter" value="1096" />
+    <task id="LOCAL-01096" summary="ccsm3 avg timespans">
+      <created>1574805056750</created>
+      <option name="number" value="01096" />
+      <option name="presentableId" value="LOCAL-01096" />
+      <option name="project" value="LOCAL" />
+      <updated>1574805056750</updated>
+    </task>
+    <task id="LOCAL-01097" summary="ccsm3 avg timespans">
+      <created>1574805160233</created>
+      <option name="number" value="01097" />
+      <option name="presentableId" value="LOCAL-01097" />
+      <option name="project" value="LOCAL" />
+      <updated>1574805160233</updated>
+    </task>
+    <option name="localTasksCounter" value="1098" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267307000" />
+    <option name="totallyTimeSpent" value="267731000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1185,8 +1190,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile_manipulation/getMass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="134" column="72" selection-start-line="134" selection-start-column="72" selection-end-line="134" selection-end-column="72" />
+        <state relative-caret-position="744">
+          <caret line="139" column="84" selection-start-line="139" selection-start-column="84" selection-end-line="139" selection-end-column="84" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

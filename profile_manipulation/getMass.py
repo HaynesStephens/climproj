@@ -134,6 +134,11 @@ q_and_mass = [getQProfile(file_name) for file_name in file_list]
 q_profiles, q_masses = list(zip(*q_and_mass))
 [print(q_profiles[i].flatten(), q_masses[i]) for i in range(len(q_masses))]
 assert (len(co2_ppm_list) == len(q_profiles)) and (len(co2_ppm_list) == len(q_profiles)), "ERROR! LENGTHS DON'T MATCH!"
+
+save_dir = '/home/haynes13/code/python/climproj/profile_manipulation/cst_q_profiles/'
+save_list = ['{0}i{1}_320solar_cst_q_profile.csv'.format(save_dir, ppm) for ppm in co2_ppm_list]
+[np.savetxt(save_list[i], q_profiles[i], delimiter=',') for i in range(len(save_list))]
+
 #
 # print(q.flatten())
 # print(test_q.flatten())
