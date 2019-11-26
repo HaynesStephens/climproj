@@ -3,15 +3,28 @@ import numpy as np
 
 
 def getMass_H2O(pkl):
+    """
+    Get the column mass of precipitable water given the pickle file
+    which has a specific humidity profile and the interface pressure values
+    :param pkl:
+    :return: column mass of PW
+    """
     g = 9.8
     q = pkl['specific_humidity'].flatten()
     p_diff = np.abs(np.diff(pkl['air_pressure_on_interface_levels'].flatten()))
+    print(pkl['air_pressure_on_interface_levels'].flatten())
     mass = (q * p_diff) / g
     print('PW Mass (kg)', np.sum(mass))
     return np.sum(mass)
 
 
 def getMass_CO2(pkl):
+    """
+    Get the column mass of CO2 given the pickle file
+    which has gas profiles and the interface pressure levels needed for surface pressure
+    :param pkl:
+    :return:
+    """
     g = 9.8
     co2 = pkl['mole_fraction_of_carbon_dioxide_in_air'].flatten()
     print('Is CO2 distribution constant? STD:', np.std(co2))
@@ -37,6 +50,10 @@ def getMass_CO2(pkl):
     total_mass_co2 = column_mass * (m_co2 / m_air_mean) * ppm
     print('CO2 Mass (kg)', np.sum(total_mass_co2))
     return total_mass_co2
+
+
+def fitCstProfileH20(mass):
+    q_profile = np.zeros(28)
 
 
 
