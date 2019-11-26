@@ -125,7 +125,7 @@ def getQProfile(file_name):
     test_q, test_mass = fitCstProfile_H20(q_mass, pressure)
     return test_q, test_mass
 
-file_dir = '/project2/moyer/old_project/haynes/climt_files/varying_co2/320solar/
+file_dir = '/project2/moyer/old_project/haynes/climt_files/varying_co2/320solar/'
 co2_ppm_list = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
 job_list = ['i{0}_320solar'.format(ppm) for ppm in co2_ppm_list]
 file_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(file_dir, job_name) for job_name in job_list]
