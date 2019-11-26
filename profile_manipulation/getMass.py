@@ -81,7 +81,7 @@ def fitCstProfile_H20(q_mass, interface_pressure):
 
 
 def shapeProfile(x, a, b, c):
-    return a * np.exp(-b * x) + c
+    return a * np.exp(-b * x)
 
 def fitCstProfile_CO2(co2_mass, interface_pressure, air_pressure, q):
     air_pressure = air_pressure.flatten()
