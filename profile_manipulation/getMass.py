@@ -91,6 +91,7 @@ def fitCstProfile_CO2(co2_mass, interface_pressure, air_pressure, q):
     popt, pcov = curve_fit(shape, air_pressure, q)
     print(popt)
     a, b, c = popt
+    print(a, b, c)
 
     test_co2 = shape(air_pressure, a, b, c)
     test_mass = getMass_CO2(test_co2, interface_pressure)
