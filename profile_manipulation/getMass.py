@@ -131,7 +131,7 @@ job_list = ['i{0}_320solar'.format(ppm) for ppm in co2_ppm_list]
 file_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(file_dir, job_name) for job_name in job_list]
 q_and_mass = [getQProfile(file_name) for file_name in file_list]
 q_profiles, q_masses = list(zip(*q_and_mass))
-[print(q.flatten(), mass) for q in q_profiles, mass in q_masses]
+[print(q.flatten(), mass) for q in q_profiles for mass in q_masses]
 #
 # print(q.flatten())
 # print(test_q.flatten())
