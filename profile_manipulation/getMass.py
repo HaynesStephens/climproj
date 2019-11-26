@@ -89,6 +89,7 @@ def fitCstProfile_CO2(co2_mass, interface_pressure, air_pressure, q):
         return a * np.exp(-b * x) + c
 
     popt, pcov = curve_fit(shape, air_pressure, q)
+    print(popt)
     a, b, c = popt
 
     test_co2 = shape(air_pressure, a, b, c)
