@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile_manipulation/getMass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="91" column="39" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
+            <state relative-caret-position="711">
+              <caret line="109" column="57" selection-start-line="109" selection-start-column="57" selection-end-line="109" selection-end-column="57" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -288,21 +288,7 @@
       <workItem from="1574266361078" duration="2202000" />
       <workItem from="1574436146135" duration="2744000" />
       <workItem from="1574448673380" duration="5229000" />
-      <workItem from="1574714782006" duration="9534000" />
-    </task>
-    <task id="LOCAL-01034" summary="profile manipulation">
-      <created>1574723979613</created>
-      <option name="number" value="01034" />
-      <option name="presentableId" value="LOCAL-01034" />
-      <option name="project" value="LOCAL" />
-      <updated>1574723979613</updated>
-    </task>
-    <task id="LOCAL-01035" summary="profile manipulation">
-      <created>1574724430845</created>
-      <option name="number" value="01035" />
-      <option name="presentableId" value="LOCAL-01035" />
-      <option name="project" value="LOCAL" />
-      <updated>1574724430845</updated>
+      <workItem from="1574714782006" duration="9922000" />
     </task>
     <task id="LOCAL-01036" summary="profile manipulation">
       <created>1574724652816</created>
@@ -633,11 +619,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574791306833</updated>
     </task>
-    <option name="localTasksCounter" value="1083" />
+    <task id="LOCAL-01083" summary="ccsm3 avg timespans">
+      <created>1574791344354</created>
+      <option name="number" value="01083" />
+      <option name="presentableId" value="LOCAL-01083" />
+      <option name="project" value="LOCAL" />
+      <updated>1574791344354</updated>
+    </task>
+    <task id="LOCAL-01084" summary="ccsm3 avg timespans">
+      <created>1574791535476</created>
+      <option name="number" value="01084" />
+      <option name="presentableId" value="LOCAL-01084" />
+      <option name="project" value="LOCAL" />
+      <updated>1574791535476</updated>
+    </task>
+    <option name="localTasksCounter" value="1085" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265212000" />
+    <option name="totallyTimeSpent" value="265600000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1173,8 +1173,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile_manipulation/getMass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="91" column="39" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
+        <state relative-caret-position="711">
+          <caret line="109" column="57" selection-start-line="109" selection-start-column="57" selection-end-line="109" selection-end-column="57" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
