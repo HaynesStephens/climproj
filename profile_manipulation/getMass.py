@@ -139,9 +139,6 @@ save_dir = '/home/haynes13/code/python/climproj/profile_manipulation/cst_q_profi
 save_list = ['{0}i{1}_320solar_cst_q_profile.csv'.format(save_dir, ppm) for ppm in co2_ppm_list]
 [np.savetxt(save_list[i], q_profiles[i], delimiter=',') for i in range(len(save_list))]
 
-#
-# print(q.flatten())
-# print(test_q.flatten())
 
 
 
