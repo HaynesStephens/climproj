@@ -95,8 +95,8 @@ def fitCstProfile_CO2(co2_mass, interface_pressure, air_pressure, q):
     test_mass = getMass_CO2(test_co2, interface_pressure)
     i = 0
     while (np.abs(test_mass - co2_mass) / co2_mass) > 0.10:
-        print(test_co2)
-        print(test_mass)
+        print('PROFILE:', test_co2)
+        print('MASS:', test_mass)
         test_co2 = test_co2 * 2
         test_mass = getMass_CO2(test_co2, interface_pressure)
         i += 1
