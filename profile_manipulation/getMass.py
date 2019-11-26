@@ -75,6 +75,7 @@ def fitCstProfile_H20(q_mass, pressure):
         j += 1
         if j > 50:
             raise ArithmeticError('Profile with matching mass not found.')
+    test_q = np.reshape(test_q, (28, 1, 1))
     return test_q, test_mass
 
 
