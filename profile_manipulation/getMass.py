@@ -1,5 +1,6 @@
 import pickle
 import numpy as np
+from scipy.optimize import curve_fit
 
 
 def getMass_H2O(q, pressure):
@@ -53,14 +54,14 @@ def getMass_CO2(co2, pressure):
     return total_mass_co2
 
 
-def fitCstProfile_H20(q_mass, pressure):
+def fitCstProfile_H20(q_mass, interface_pressure):
     print('FITTING Q PROFILE')
     test_q = np.zeros(28)
     test_mass = 0
     i = 0
     while (np.abs(test_mass - q_mass) / q_mass) > 0.10:
         test_q = test_q + 0.0001
-        test_mass = getMass_H2O(test_q, pressure)
+        test_mass = getMass_H2O(test_q, interface_pressure)
         i += 1
         if i > 50:
             raise ArithmeticError('Profile with matching mass not found.')
@@ -68,10 +69,10 @@ def fitCstProfile_H20(q_mass, pressure):
     while (np.abs(test_mass - q_mass) / q_mass) > 0.01:
         if ((test_mass - q_mass) / q_mass) < 0:
             test_q = test_q + 0.00001
-            test_mass = getMass_H2O(test_q, pressure)
+            test_mass = getMass_H2O(test_q, interface_pressure)
         else:
             test_q = test_q - 0.00001
-            test_mass = getMass_H2O(test_q, pressure)
+            test_mass = getMass_H2O(test_q, interface_pressure)
         j += 1
         if j > 50:
             raise ArithmeticError('Profile with matching mass not found.')
@@ -79,28 +80,40 @@ def fitCstProfile_H20(q_mass, pressure):
     return test_q, test_mass
 
 
-def fitCstProfile_CO2(co2_mass, pressure):
+def fitCstProfile_CO2(co2_mass, interface_pressure, air_pressure, q):
+    air_pressure = air_pressure.flatten()
+    q = q.flatten()
+
     print('FITTING CO2 PROFILE')
-    test_co2 = np.zeros(28)
-    test_mass = 0
+    def shape(x, a, b, c):
+        return a * np.exp(-b * x) + c
+
+    popt, pcov = curve_fit(shape, air_pressure, q)
+    a, b, c = popt
+
+    test_co2 = shape(np.linspace(0.001, 0.01, 28), a, b, c)
+    test_mass = getMass_CO2(test_co2, interface_pressure)
     i = 0
     while (np.abs(test_mass - co2_mass) / co2_mass) > 0.10:
-        test_co2 = test_co2 + 0.0001
-        test_mass = getMass_CO2(test_co2, pressure)
+        print(test_co2)
+        print(test_mass)
+        test_co2 = test_co2 * 2
+        test_mass = getMass_CO2(test_co2, interface_pressure)
         i += 1
         if i > 50:
             raise ArithmeticError('Profile with matching mass not found.')
     j = 0
     while (np.abs(test_mass - co2_mass) / co2_mass) > 0.01:
         if ((test_mass - co2_mass) / co2_mass) < 0:
-            test_co2 = test_co2 + 0.00001
-            test_mass = getMass_CO2(test_co2, pressure)
+            test_co2 = test_co2 * 2
+            test_mass = getMass_CO2(test_co2, interface_pressure)
         else:
-            test_co2 = test_co2 - 0.00001
-            test_mass = getMass_CO2(test_co2, pressure)
+            test_co2 = test_co2 / 2
+            test_mass = getMass_CO2(test_co2, interface_pressure)
         j += 1
         if j > 50:
             raise ArithmeticError('Profile with matching mass not found.')
+        test_co2 = np.reshape(test_co2, (28, 1, 1))
     return test_co2, test_mass
 
 
@@ -113,6 +126,7 @@ file_load = open(file_name, 'rb')
 pkl = pickle.load(file_load)
 q = pkl['specific_humidity']
 pressure = pkl['air_pressure_on_interface_levels']
+air_pressure = pkl['air_pressure']
 co2 = pkl['mole_fraction_of_carbon_dioxide_in_air']
 
 q_mass      = getMass_H2O(q, pressure)
@@ -121,4 +135,6 @@ co2_mass    = getMass_CO2(co2, pressure)
 test_q, test_mass = fitCstProfile_H20(q_mass, pressure)
 
 print(q.flatten())
-print(test_q)
+print(test_q.flatten())
+
+fitCstProfile_CO2(co2_mass, pressure, air_pressure, q)
