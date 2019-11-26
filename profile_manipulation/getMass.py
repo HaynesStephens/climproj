@@ -93,7 +93,6 @@ def fitCstProfile_CO2(co2_mass, interface_pressure, air_pressure, q):
         print("A:", a)
         a = a / 10
         print('PROFILE:', test_co2)
-        print('MASS:', test_mass)
         test_co2 = np.exp((-a * np.linspace(0,1,28)))
         test_mass = getMass_CO2(test_co2, interface_pressure)
         i += 1
