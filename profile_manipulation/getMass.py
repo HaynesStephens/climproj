@@ -132,9 +132,9 @@ co2 = pkl['mole_fraction_of_carbon_dioxide_in_air']
 q_mass      = getMass_H2O(q, pressure)
 co2_mass    = getMass_CO2(co2, pressure)
 
-test_q, test_mass = fitCstProfile_H20(q_mass, pressure)
-
-print(q.flatten())
-print(test_q.flatten())
+# test_q, test_mass = fitCstProfile_H20(q_mass, pressure)
+#
+# print(q.flatten())
+# print(test_q.flatten())
 
 fitCstProfile_CO2(co2_mass, pressure, air_pressure, q)
