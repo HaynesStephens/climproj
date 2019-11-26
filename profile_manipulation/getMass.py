@@ -17,7 +17,7 @@ def getMass_H2O(pkl):
 def getMass_CO2(pkl):
     g = 9.8
     co2 = pkl['mole_fraction_of_carbon_dioxide_in_air'].flatten()
-    print('Is distribution constant? STD:', np.std(co2))
+    print('Is CO2 distribution constant? STD:', np.std(co2))
     ppm = co2[0]
     m_co2 = 0.044
     o3 = np.array([[3.113259024899186e-08, 3.133811056573404e-08, 3.170203478522222e-08, 3.224090896787597e-08,
