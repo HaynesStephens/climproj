@@ -54,6 +54,7 @@ def getMass_CO2(co2, pressure):
 
 
 def fitCstProfile_H20(q_mass, pressure):
+    print('FITTING Q PROFILE')
     test_q = np.zeros(28)
     test_mass = 0
     i = 0
@@ -78,27 +79,28 @@ def fitCstProfile_H20(q_mass, pressure):
 
 
 def fitCstProfile_CO2(co2_mass, pressure):
-    test_q = np.zeros(28)
+    print('FITTING CO2 PROFILE')
+    test_co2 = np.zeros(28)
     test_mass = 0
     i = 0
-    while (np.abs(test_mass - q_mass) / q_mass) > 0.10:
-        test_q = test_q + 0.0001
-        test_mass = getMass_H2O(test_q, pressure)
+    while (np.abs(test_mass - co2_mass) / co2_mass) > 0.10:
+        test_co2 = test_co2 + 0.0001
+        test_mass = getMass_CO2(test_co2, pressure)
         i += 1
         if i > 50:
             raise ArithmeticError('Profile with matching mass not found.')
     j = 0
-    while (np.abs(test_mass - q_mass) / q_mass) > 0.01:
-        if ((test_mass - q_mass) / q_mass) < 0:
-            test_q = test_q + 0.00001
-            test_mass = getMass_H2O(test_q, pressure)
+    while (np.abs(test_mass - co2_mass) / co2_mass) > 0.01:
+        if ((test_mass - co2_mass) / co2_mass) < 0:
+            test_co2 = test_co2 + 0.00001
+            test_mass = getMass_CO2(test_co2, pressure)
         else:
-            test_q = test_q - 0.00001
-            test_mass = getMass_H2O(test_q, pressure)
+            test_co2 = test_co2 - 0.00001
+            test_mass = getMass_CO2(test_co2, pressure)
         j += 1
         if j > 50:
             raise ArithmeticError('Profile with matching mass not found.')
-    return test_q, test_mass
+    return test_co2, test_mass
 
 
 ### PROCEDURE ###
@@ -116,3 +118,5 @@ q_mass      = getMass_H2O(q, pressure)
 co2_mass    = getMass_CO2(co2, pressure)
 
 test_q, test_mass = fitCstProfile_H20(q_mass, pressure)
+
+print(q, test_q)
