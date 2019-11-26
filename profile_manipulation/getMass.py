@@ -80,20 +80,20 @@ def fitCstProfile_H20(q_mass, interface_pressure):
     return test_q, test_mass
 
 
-def fitCstProfile_CO2(co2_mass, interface_pressure, air_pressure, q):
-    air_pressure = air_pressure.flatten()
-
+def fitCstProfile_CO2(co2_mass, interface_pressure):
     print('FITTING CO2 PROFILE')
+    def getProfile(a):
+        return np.exp((-a * np.linspace(0,1,28)))
 
     a = 1
-    test_co2 = np.exp((-a * np.linspace(0,1,28)))
+    test_co2 = getProfile(a)
     test_mass = getMass_CO2(test_co2, interface_pressure)
     i = 0
     while (np.abs(test_mass - co2_mass) / co2_mass) > 0.10:
         print("A:", a)
         a = a / 10
         print('PROFILE:', test_co2)
-        test_co2 = np.exp((-a * np.linspace(0,1,28)))
+        test_co2 = getProfile(a)
         test_mass = getMass_CO2(test_co2, interface_pressure)
         i += 1
         if i > 50:
@@ -102,11 +102,11 @@ def fitCstProfile_CO2(co2_mass, interface_pressure, air_pressure, q):
     while (np.abs(test_mass - co2_mass) / co2_mass) > 0.01:
         if ((test_mass - co2_mass) / co2_mass) > 0:
             a = a / 2
-            test_co2 = np.exp((-a * np.linspace(0,1,28)))
+            test_co2 = getProfile(a)
             test_mass = getMass_CO2(test_co2, interface_pressure)
         else:
             a = a * 2
-            test_co2 = np.exp((-a * np.linspace(0,1,28)))
+            test_co2 = getProfile(a)
             test_mass = getMass_CO2(test_co2, interface_pressure)
         j += 1
         if j > 50:
@@ -135,4 +135,4 @@ co2_mass    = getMass_CO2(co2, pressure)
 # print(q.flatten())
 # print(test_q.flatten())
 
-fitCstProfile_CO2(co2_mass, pressure, air_pressure, q)
+fitCstProfile_CO2(co2_mass, pressure)
