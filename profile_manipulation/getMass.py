@@ -57,7 +57,7 @@ def fitCstProfileH20(q_mass, pressure):
     test_q = np.zeros(28)
     test_mass = 0
     i = 0
-    while (np.abs(test_mass - q_mass) / q_mass) < 0.10:
+    while (np.abs(test_mass - q_mass) / q_mass) > 0.10:
         test_q = test_q + 0.01
         test_mass = getMass_H2O(test_q, pressure)
         i += 1
