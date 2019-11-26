@@ -63,6 +63,17 @@ def fitCstProfileH20(q_mass, pressure):
         i += 1
         if i > 50:
             raise ArithmeticError('Profile with matching mass not found.')
+    j = 0
+    while (np.abs(test_mass - q_mass) / q_mass) > 0.01:
+        if ((test_mass - q_mass) / q_mass) < 0:
+            test_q = test_q + 0.00001
+            test_mass = getMass_H2O(test_q, pressure)
+        else:
+            test_q = test_q - 0.00001
+            test_mass = getMass_H2O(test_q, pressure)
+        j += 1
+        if j > 50:
+            raise ArithmeticError('Profile with matching mass not found.')
     return test_q, test_mass
 
 ### PROCEDURE ###
