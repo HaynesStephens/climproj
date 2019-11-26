@@ -53,7 +53,7 @@ def getMass_CO2(co2, pressure):
     return total_mass_co2
 
 
-def fitCstProfileH20(q_mass, pressure):
+def fitCstProfile_H20(q_mass, pressure):
     test_q = np.zeros(28)
     test_mass = 0
     i = 0
@@ -76,6 +76,31 @@ def fitCstProfileH20(q_mass, pressure):
             raise ArithmeticError('Profile with matching mass not found.')
     return test_q, test_mass
 
+
+def fitCstProfile_CO2(co2_mass, pressure):
+    test_q = np.zeros(28)
+    test_mass = 0
+    i = 0
+    while (np.abs(test_mass - q_mass) / q_mass) > 0.10:
+        test_q = test_q + 0.0001
+        test_mass = getMass_H2O(test_q, pressure)
+        i += 1
+        if i > 50:
+            raise ArithmeticError('Profile with matching mass not found.')
+    j = 0
+    while (np.abs(test_mass - q_mass) / q_mass) > 0.01:
+        if ((test_mass - q_mass) / q_mass) < 0:
+            test_q = test_q + 0.00001
+            test_mass = getMass_H2O(test_q, pressure)
+        else:
+            test_q = test_q - 0.00001
+            test_mass = getMass_H2O(test_q, pressure)
+        j += 1
+        if j > 50:
+            raise ArithmeticError('Profile with matching mass not found.')
+    return test_q, test_mass
+
+
 ### PROCEDURE ###
 file_name = '/project2/moyer/old_project/haynes/climt_files/control_fullstore/' \
                     'i270_290solar_fullstore/i270_290solar_fullstore_pkl_eq.pkl'
@@ -90,4 +115,4 @@ co2 = pkl['mole_fraction_of_carbon_dioxide_in_air']
 q_mass      = getMass_H2O(q, pressure)
 co2_mass    = getMass_CO2(co2, pressure)
 
-test_q, test_mass = fitCstProfileH20(q_mass, pressure)
+test_q, test_mass = fitCstProfile_H20(q_mass, pressure)
