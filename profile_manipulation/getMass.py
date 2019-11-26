@@ -91,13 +91,14 @@ def fitCstProfile_CO2(co2_mass, interface_pressure, air_pressure, q):
     popt, pcov = curve_fit(shape, air_pressure, q)
     a, b, c = popt
 
-    test_co2 = shape(np.linspace(0.001, 0.01, 28), a, b, c)
+    test_co2 = shape(air_pressure, a, b, c)
     test_mass = getMass_CO2(test_co2, interface_pressure)
     i = 0
     while (np.abs(test_mass - co2_mass) / co2_mass) > 0.10:
+        a = a / 10
         print('PROFILE:', test_co2)
         print('MASS:', test_mass)
-        test_co2 = test_co2 * 2
+        test_co2 = shape(air_pressure, a, b, c)
         test_mass = getMass_CO2(test_co2, interface_pressure)
         i += 1
         if i > 50:
@@ -105,10 +106,12 @@ def fitCstProfile_CO2(co2_mass, interface_pressure, air_pressure, q):
     j = 0
     while (np.abs(test_mass - co2_mass) / co2_mass) > 0.01:
         if ((test_mass - co2_mass) / co2_mass) < 0:
-            test_co2 = test_co2 * 2
+            a = a * 2
+            test_co2 = shape(air_pressure, a, b, c)
             test_mass = getMass_CO2(test_co2, interface_pressure)
         else:
-            test_co2 = test_co2 / 2
+            a = a / 2
+            test_co2 = shape(air_pressure, a, b, c)
             test_mass = getMass_CO2(test_co2, interface_pressure)
         j += 1
         if j > 50:
