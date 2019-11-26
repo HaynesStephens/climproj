@@ -119,5 +119,5 @@ co2_mass    = getMass_CO2(co2, pressure)
 
 test_q, test_mass = fitCstProfile_H20(q_mass, pressure)
 
-print(q)
+print(q.flatten())
 print(test_q)
