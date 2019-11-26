@@ -13,6 +13,7 @@ def getMass_H2O(pkl):
     q = pkl['specific_humidity'].flatten()
     p_diff = np.abs(np.diff(pkl['air_pressure_on_interface_levels'].flatten()))
     print(pkl['air_pressure_on_interface_levels'].flatten())
+    print(pkl['surface_pressure'])
     mass = (q * p_diff) / g
     print('PW Mass (kg)', np.sum(mass))
     return np.sum(mass)
