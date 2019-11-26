@@ -57,8 +57,7 @@ def fitCstProfileH20(mass):
     q_profile = np.zeros(28)
 
 
-
-
+### PROCEDURE ###
 file_name = '/project2/moyer/old_project/haynes/climt_files/control_fullstore/' \
                     'i270_290solar_fullstore/i270_290solar_fullstore_pkl_eq.pkl'
 # file_name = '/project2/moyer/old_project/haynes/climt_files/varying_co2/290solar/' \
