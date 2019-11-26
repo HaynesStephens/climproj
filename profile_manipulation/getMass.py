@@ -77,6 +77,7 @@ def fitCstProfile_H20(q_mass, interface_pressure):
         if j > 50:
             raise ArithmeticError('Profile with matching mass not found.')
     test_q = np.reshape(test_q, (28, 1, 1))
+    print("It's a match! {0}, {1}, {2}%".format(q_mass, test_mass, (np.abs(test_mass - q_mass) / q_mass)*100))
     return test_q, test_mass
 
 
