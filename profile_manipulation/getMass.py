@@ -58,10 +58,10 @@ def fitCstProfileH20(mass):
 
 
 
-# file_name = '/project2/moyer/old_project/haynes/climt_files/control_fullstore/' \
-#                     'i270_290solar_fullstore/i270_290solar_fullstore_pkl_eq.pkl'
-file_name = '/project2/moyer/old_project/haynes/climt_files/varying_co2/290solar/' \
-            'i270_290solar/i270_290solar_pkl_eq.pkl'
+file_name = '/project2/moyer/old_project/haynes/climt_files/control_fullstore/' \
+                    'i270_290solar_fullstore/i270_290solar_fullstore_pkl_eq.pkl'
+# file_name = '/project2/moyer/old_project/haynes/climt_files/varying_co2/290solar/' \
+#             'i270_290solar/i270_290solar_pkl_eq.pkl'
 file_load = open(file_name, 'rb')
 pkl = pickle.load(file_load)
 
