@@ -16,10 +16,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile_manipulation/getMass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
+            <state relative-caret-position="882">
+              <caret line="71" column="25" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="98" column="51" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="51" />
+              <folding>
+                <element signature="e#223#241#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -300,21 +312,7 @@
       <workItem from="1574266361078" duration="2202000" />
       <workItem from="1574436146135" duration="2744000" />
       <workItem from="1574448673380" duration="5229000" />
-      <workItem from="1574714782006" duration="6177000" />
-    </task>
-    <task id="LOCAL-01011" summary="profile manipulation">
-      <created>1574720052255</created>
-      <option name="number" value="01011" />
-      <option name="presentableId" value="LOCAL-01011" />
-      <option name="project" value="LOCAL" />
-      <updated>1574720052255</updated>
-    </task>
-    <task id="LOCAL-01012" summary="profile manipulation">
-      <created>1574720116559</created>
-      <option name="number" value="01012" />
-      <option name="presentableId" value="LOCAL-01012" />
-      <option name="project" value="LOCAL" />
-      <updated>1574720116559</updated>
+      <workItem from="1574714782006" duration="6530000" />
     </task>
     <task id="LOCAL-01013" summary="profile manipulation">
       <created>1574720277870</created>
@@ -645,11 +643,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574787122253</updated>
     </task>
-    <option name="localTasksCounter" value="1060" />
+    <task id="LOCAL-01060" summary="ccsm3 avg timespans">
+      <created>1574787133653</created>
+      <option name="number" value="01060" />
+      <option name="presentableId" value="LOCAL-01060" />
+      <option name="project" value="LOCAL" />
+      <updated>1574787133653</updated>
+    </task>
+    <task id="LOCAL-01061" summary="ccsm3 avg timespans">
+      <created>1574787171160</created>
+      <option name="number" value="01061" />
+      <option name="presentableId" value="LOCAL-01061" />
+      <option name="project" value="LOCAL" />
+      <updated>1574787171160</updated>
+    </task>
+    <option name="localTasksCounter" value="1062" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261855000" />
+    <option name="totallyTimeSpent" value="262208000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1143,16 +1155,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="105" selection-end-column="59" />
-          <folding>
-            <element signature="e#223#241#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/varying.co2.write_script.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -1183,10 +1185,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="98" column="51" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="51" />
+          <folding>
+            <element signature="e#223#241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/profile_manipulation/getMass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
+        <state relative-caret-position="882">
+          <caret line="71" column="25" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

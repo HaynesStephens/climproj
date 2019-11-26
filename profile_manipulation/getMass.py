@@ -2,22 +2,24 @@ import pickle
 import numpy as np
 
 
-def getMass_H2O(pkl):
+def getMass_H2O(q, pressure):
     """
-    Get the column mass of precipitable water given the pickle file
-    which has a specific humidity profile and the interface pressure values
-    :param pkl:
+    Get the column mass of precipitable water given the
+    specific humidity profile and the interface pressure values
+    :param q_flat:
+    :param p_flat:
     :return: column mass of PW
     """
     g = 9.8
-    q = pkl['specific_humidity'].flatten()
-    p_diff = np.abs(np.diff(pkl['air_pressure_on_interface_levels'].flatten()))
+    q = q.flatten()
+    pressure = pressure.flatten()
+    p_diff = np.abs(np.diff(pressure))
     mass = (q * p_diff) / g
     print('PW Mass (kg)', np.sum(mass))
     return np.sum(mass)
 
 
-def getMass_CO2(pkl):
+def getMass_CO2(co2, pressure):
     """
     Get the column mass of CO2 given the pickle file
     which has gas profiles and the interface pressure levels needed for surface pressure
@@ -25,7 +27,7 @@ def getMass_CO2(pkl):
     :return:
     """
     g = 9.8
-    co2 = pkl['mole_fraction_of_carbon_dioxide_in_air'].flatten()
+    co2 = co2.flatten()
     print('Is CO2 distribution constant? STD:', np.std(co2))
     ppm = co2[0]
     m_co2 = 0.044
@@ -43,8 +45,8 @@ def getMass_CO2(pkl):
     m_n2 = 0.028
     m_air = (co2 * m_co2) + (o3 * m_o3) + (o2 * m_o2) + (n2 * m_n2)
     m_air_mean = np.mean(m_air)
-    p = pkl['air_pressure_on_interface_levels'].flatten()
-    p0 = p[0]
+    pressure = pressure.flatten()
+    p0 = pressure[0]
     column_mass = p0 / g
     total_mass_co2 = column_mass * (m_co2 / m_air_mean) * ppm
     print('CO2 Mass (kg)', np.sum(total_mass_co2))
@@ -56,12 +58,15 @@ def fitCstProfileH20(mass):
 
 
 
+
 file_name = '/project2/moyer/old_project/haynes/climt_files/control_fullstore/' \
                     'i270_290solar_fullstore/i270_290solar_fullstore_pkl_eq.pkl'
 # file_name = '/project2/moyer/old_project/haynes/climt_files/varying_co2/290solar/' \
 #             'i270_290solar/i270_290solar_pkl_eq.pkl'
 file_load = open(file_name, 'rb')
 pkl = pickle.load(file_load)
-
-getMass_H2O(pkl)
-getMass_CO2(pkl)
+q = pkl['specific_humidity']
+pressure = pkl['air_pressure_on_interface_levels']
+co2 = pkl['mole_fraction_of_carbon_dioxide_in_air']
+getMass_H2O(q, pressure)
+getMass_CO2(co2, pressure)
