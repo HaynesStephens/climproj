@@ -103,7 +103,7 @@ def fitExpProfile_CO2(co2_mass, interface_pressure):
     print('\n \n WITHIN TWENTY PERCENT \n \n ')
     j = 0
     while (np.abs(test_mass - co2_mass) / co2_mass) > 0.01:
-        if ((test_mass - co2_mass) / co2_mass) > 0:
+        if (test_mass - co2_mass) > 0:
             a = a / 1.5
             print("A:", a)
             print('PROFILE:', test_co2)
