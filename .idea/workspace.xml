@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_template.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_manipulation/getMass.py" beforeDir="false" afterPath="$PROJECT_DIR$/profile_manipulation/getMass.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,49 +13,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_template.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-654">
-              <caret line="48" column="39" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_writeScript.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_writeScript.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_template.py">
+        <entry file="file://$PROJECT_DIR$/profile_manipulation/getMass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="48" column="39" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
+            <state relative-caret-position="173">
+              <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,7 +51,6 @@
       <find>pressure</find>
       <find>shape</find>
       <find>np.exp</find>
-      <find>print</find>
       <find>unzip</find>
       <find>zip</find>
       <find>humidit</find>
@@ -103,6 +65,7 @@
       <find>tot</find>
       <find>pkl</find>
       <find>haynes</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,7 +111,6 @@
         <option value="$PROJECT_DIR$/profile_manipulation/getProfile.py" />
         <option value="$PROJECT_DIR$/Clausius_Clapeyron_check.py" />
         <option value="$PROJECT_DIR$/getCCSM3data.py" />
-        <option value="$PROJECT_DIR$/profile_manipulation/getMass.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/cst_q_profile/q.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/cst_q_profile/diagnostic_cst_q_profile_co2_writeScript.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/cst_q_profile/diagnostic_cst_q_profile_T_writeScript.py" />
@@ -162,6 +124,7 @@
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_writeScript.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_template.py" />
+        <option value="$PROJECT_DIR$/profile_manipulation/getMass.py" />
       </list>
     </option>
   </component>
@@ -186,27 +149,7 @@
             <path>
               <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
               <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="diagnostic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="diagnostic" type="462c0819:PsiDirectoryNode" />
-              <item name="dry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="diagnostic" type="462c0819:PsiDirectoryNode" />
-              <item name="tot" type="462c0819:PsiDirectoryNode" />
+              <item name="profile_manipulation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -355,21 +298,7 @@
       <workItem from="1574807669946" duration="175000" />
       <workItem from="1575051970660" duration="792000" />
       <workItem from="1575241593323" duration="168000" />
-      <workItem from="1575313165228" duration="1413000" />
-    </task>
-    <task id="LOCAL-01078" summary="ccsm3 avg timespans">
-      <created>1574791039268</created>
-      <option name="number" value="01078" />
-      <option name="presentableId" value="LOCAL-01078" />
-      <option name="project" value="LOCAL" />
-      <updated>1574791039268</updated>
-    </task>
-    <task id="LOCAL-01079" summary="ccsm3 avg timespans">
-      <created>1574791058670</created>
-      <option name="number" value="01079" />
-      <option name="presentableId" value="LOCAL-01079" />
-      <option name="project" value="LOCAL" />
-      <updated>1574791058670</updated>
+      <workItem from="1575313165228" duration="1732000" />
     </task>
     <task id="LOCAL-01080" summary="ccsm3 avg timespans">
       <created>1574791130864</created>
@@ -700,11 +629,25 @@
       <option name="project" value="LOCAL" />
       <updated>1575314746109</updated>
     </task>
-    <option name="localTasksCounter" value="1127" />
+    <task id="LOCAL-01127" summary="different diagnostic experiments">
+      <created>1575315043112</created>
+      <option name="number" value="01127" />
+      <option name="presentableId" value="LOCAL-01127" />
+      <option name="project" value="LOCAL" />
+      <updated>1575315043112</updated>
+    </task>
+    <task id="LOCAL-01128" summary="different diagnostic experiments">
+      <created>1575323240146</created>
+      <option name="number" value="01128" />
+      <option name="presentableId" value="LOCAL-01128" />
+      <option name="project" value="LOCAL" />
+      <updated>1575323240146</updated>
+    </task>
+    <option name="localTasksCounter" value="1129" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271961000" />
+    <option name="totallyTimeSpent" value="272280000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1067,16 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profile_manipulation/getMass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="139" column="36" selection-start-line="139" selection-start-column="36" selection-end-line="139" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/rad/diagnostic_rad_co2_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1250,7 +1183,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_template.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-654">
+        <state relative-caret-position="197">
           <caret line="48" column="39" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -1260,10 +1193,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_template.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="48" column="39" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
+        <state relative-caret-position="272">
+          <caret line="49" column="44" lean-forward="true" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile_manipulation/getMass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
