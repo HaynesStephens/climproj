@@ -86,7 +86,7 @@ def fitExpProfile_CO2(co2_mass, interface_pressure):
         return a * np.exp((-np.linspace(0,0.1,28)))
 
     a = 1
-    print("A:", a)
+    # print("A:", a)
     test_co2 = getProfile(a)
     test_mass = getMass_CO2(test_co2, interface_pressure)
     i = 0
