@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_writeScript.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/diagnostic/tot/diagnostic_tot_T_writeScripty.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/diagnostic/tot/diagnostic_tot_T_writeScript.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_template.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,20 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_template.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1524">
-              <caret line="1" column="24" selection-start-line="1" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="119" column="44" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
+            <state relative-caret-position="158">
+              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -38,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_writeScript.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+            <state relative-caret-position="337">
+              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -48,10 +39,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/tot/diagnostic_tot_T_writeScript.py">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_writeScript.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" lean-forward="true" selection-end-line="39" />
+            <state relative-caret-position="337">
+              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -59,13 +50,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_writeScript.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+            <state relative-caret-position="210">
+              <caret line="48" column="79" selection-start-line="48" selection-start-column="76" selection-end-line="48" selection-end-column="79" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,10 +99,10 @@
       <find>control_q</find>
       <find>specific</find>
       <find>control_T</find>
-      <find>pkl</find>
       <find>.pkl</find>
-      <find>tot</find>
       <find>dry</find>
+      <find>tot</find>
+      <find>pkl</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,10 +158,10 @@
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/cst_q_profile/diagnostic_cst_q_profile_T_template.py" />
         <option value="$PROJECT_DIR$/writeCSVandPKL_diagnostic.py" />
         <option value="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" />
-        <option value="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_template.py" />
-        <option value="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_writeScript.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_writeScript.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_template.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_template.py" />
       </list>
     </option>
   </component>
@@ -364,21 +355,7 @@
       <workItem from="1574807669946" duration="175000" />
       <workItem from="1575051970660" duration="792000" />
       <workItem from="1575241593323" duration="168000" />
-      <workItem from="1575313165228" duration="742000" />
-    </task>
-    <task id="LOCAL-01074" summary="ccsm3 avg timespans">
-      <created>1574790760551</created>
-      <option name="number" value="01074" />
-      <option name="presentableId" value="LOCAL-01074" />
-      <option name="project" value="LOCAL" />
-      <updated>1574790760551</updated>
-    </task>
-    <task id="LOCAL-01075" summary="ccsm3 avg timespans">
-      <created>1574790771325</created>
-      <option name="number" value="01075" />
-      <option name="presentableId" value="LOCAL-01075" />
-      <option name="project" value="LOCAL" />
-      <updated>1574790771325</updated>
+      <workItem from="1575313165228" duration="1165000" />
     </task>
     <task id="LOCAL-01076" summary="ccsm3 avg timespans">
       <created>1574790980903</created>
@@ -709,11 +686,25 @@
       <option name="project" value="LOCAL" />
       <updated>1575314030835</updated>
     </task>
-    <option name="localTasksCounter" value="1123" />
+    <task id="LOCAL-01123" summary="different diagnostic experiments">
+      <created>1575314100728</created>
+      <option name="number" value="01123" />
+      <option name="presentableId" value="LOCAL-01123" />
+      <option name="project" value="LOCAL" />
+      <updated>1575314100728</updated>
+    </task>
+    <task id="LOCAL-01124" summary="different diagnostic experiments">
+      <created>1575314184939</created>
+      <option name="number" value="01124" />
+      <option name="presentableId" value="LOCAL-01124" />
+      <option name="project" value="LOCAL" />
+      <updated>1575314184939</updated>
+    </task>
+    <option name="localTasksCounter" value="1125" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271290000" />
+    <option name="totallyTimeSpent" value="271713000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1217,37 +1208,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1524">
-          <caret line="1" column="24" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="119" column="44" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/tot/diagnostic_tot_co2_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="16" column="52" selection-end-line="39" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_writeScript.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -1266,10 +1230,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+        <state relative-caret-position="337">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_writeScript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="48" column="79" selection-start-line="48" selection-start-column="76" selection-end-line="48" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
