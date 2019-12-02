@@ -82,6 +82,7 @@ def fitCstProfile_H20(q_mass, interface_pressure):
 
 def fitExpProfile_CO2(co2_mass, interface_pressure):
     print('FITTING CO2 PROFILE')
+    print(co2_mass)
     def getProfile(a):
         return a * np.exp((-np.linspace(0,0.1,28)))
 
@@ -117,6 +118,8 @@ def fitExpProfile_CO2(co2_mass, interface_pressure):
         if j > 50:
             raise ArithmeticError('Profile with matching mass not found.')
     test_co2 = np.reshape(test_co2, (28, 1, 1))
+    print(test_mass)
+    print((np.abs(test_mass - co2_mass) / co2_mass))
     return test_co2, test_mass
 
 
