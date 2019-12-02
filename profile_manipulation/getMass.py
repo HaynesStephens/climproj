@@ -126,7 +126,9 @@ def getCO2Profile(file_name):
     co2_mass      = getMass_CO2(co2, pressure)
     test_co2, test_mass = fitExpProfile_CO2(co2_mass, interface_pressure)
     return test_co2, test_mass
-
+file_name = '/project2/moyer/old_project/haynes/climt_files/varying_co2/320solar/' \
+            'i270_320solar/i270_320solar_pkl_eq.pkl'
+getCO2Profile(file_name)
 
 
 # ### Q PROFILE PROCEDURE ###
