@@ -118,7 +118,7 @@ def fitExpProfile_CO2(co2_mass, interface_pressure):
         j += 1
         if j > 50:
             raise ArithmeticError('Profile with matching mass not found.')
-        test_co2 = np.reshape(test_co2, (28, 1, 1))
+    test_co2 = np.reshape(test_co2, (28, 1, 1))
     return test_co2, test_mass
 
 
