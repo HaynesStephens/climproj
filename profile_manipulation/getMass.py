@@ -138,7 +138,7 @@ job_list = ['i{0}_320solar'.format(ppm) for ppm in co2_ppm_list]
 file_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(file_dir, job_name) for job_name in job_list]
 co2_and_mass = [getCO2Profile(file_name) for file_name in file_list]
 co2_profiles, co2_masses = list(zip(*co2_and_mass))
-[print(co2_profiles[i].flatten(), co2_masses[i]) for i in range(len(co2_masses))]
+[print('\n {0}\n{1}\n{2}\n'.format(co2_ppm_list[i], co2_profiles[i].flatten(), co2_masses[i])) for i in range(len(co2_masses))]
 assert (len(co2_ppm_list) == len(co2_profiles)) and (len(co2_ppm_list) == len(co2_masses)), "ERROR! LENGTHS DON'T MATCH!"
 
 save_dir = '/home/haynes13/code/python/climproj/profile_manipulation/exp_co2_profiles/'
