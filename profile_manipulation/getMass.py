@@ -1,6 +1,5 @@
 import pickle
 import numpy as np
-from scipy.optimize import curve_fit
 
 
 def getMass_H2O(q, pressure):
