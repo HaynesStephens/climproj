@@ -131,9 +131,19 @@ def getCO2Profile(file_name):
     co2_mass      = getMass_CO2(co2, interface_pressure)
     test_co2, test_mass = fitExpProfile_CO2(co2_mass, interface_pressure)
     return test_co2, test_mass
-file_name = '/project2/moyer/old_project/haynes/climt_files/varying_co2/320solar/' \
-            'i1215_320solar/i1215_320solar_pkl_eq.pkl'
-getCO2Profile(file_name)
+
+file_dir = '/project2/moyer/old_project/haynes/climt_files/varying_co2/320solar/'
+co2_ppm_list = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
+job_list = ['i{0}_320solar'.format(ppm) for ppm in co2_ppm_list]
+file_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(file_dir, job_name) for job_name in job_list]
+co2_and_mass = [getCO2Profile(file_name) for file_name in file_list]
+co2_profiles, co2_masses = list(zip(*co2_and_mass))
+[print(co2_profiles[i].flatten(), co2_masses[i]) for i in range(len(co2_masses))]
+assert (len(co2_ppm_list) == len(co2_profiles)) and (len(co2_ppm_list) == len(co2_profiles)), "ERROR! LENGTHS DON'T MATCH!"
+
+save_dir = '/home/haynes13/code/python/climproj/profile_manipulation/exp_co2_profiles/'
+save_list = ['{0}i{1}_320solar_exp_co2_profile.npy'.format(save_dir, ppm) for ppm in co2_ppm_list]
+[np.save(save_list[i], co2_profiles[i]) for i in range(len(save_list))]
 
 
 # ### Q PROFILE PROCEDURE ###
