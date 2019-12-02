@@ -94,7 +94,7 @@ state['area_type'].values[:]                                = 'sea'
 state['eastward_wind'].values[0]                            = 5.0
 state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(input_ppm) * 10**(-6)
 
-### FIXED STATE TO UPDATE CONSTANT PROFILES ###
+### FIXED STATE TO HOLD PROFILES CONSTANT ###
 fixed_state = {
     'specific_humidity': copy.deepcopy(state['specific_humidity']),
     'air_temperature': copy.deepcopy(state['air_temperature'])
@@ -104,7 +104,7 @@ fixed_state['air_temperature'].values[:] = control_T.copy()
 state.update(copy.deepcopy(fixed_state))
 ######################################
 
-### DRY STATE TO UPDATE CONSTANT PROFILES ###
+### DRY STATE FOR ZERO WATER RADIATION ###
 dry_state = {
     'specific_humidity': copy.deepcopy(state['specific_humidity'])
 }

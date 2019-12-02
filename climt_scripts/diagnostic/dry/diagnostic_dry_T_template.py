@@ -111,7 +111,7 @@ fixed_state['air_temperature'].values[:] = fixed_T.copy()
 state.update(copy.deepcopy(fixed_state))
 ######################################
 
-### DRY STATE TO UPDATE CONSTANT PROFILES ###
+### DRY STATE FOR ZERO WATER RADIATION ###
 dry_state = {
     'specific_humidity': copy.deepcopy(state['specific_humidity'])
 }
