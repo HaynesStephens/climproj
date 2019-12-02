@@ -100,7 +100,7 @@ def fitExpProfile_CO2(co2_mass, interface_pressure):
         i += 1
         if i > 50:
             raise ArithmeticError('Profile with matching mass not found.')
-        print('\n \n WITHIN TWENTY PERCENT \n \n ')
+    print('\n \n WITHIN TWENTY PERCENT \n \n ')
     j = 0
     while (np.abs(test_mass - co2_mass) / co2_mass) > 0.01:
         if ((test_mass - co2_mass) / co2_mass) > 0:
