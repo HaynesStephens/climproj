@@ -46,7 +46,7 @@ state = get_default_state([simple_physics, moist_convection, dry_convection,
 
 ### RESTART VALUES GIVEN FROM THE CONTROL RUN
 restart_file_name = '/project2/moyer/old_project/haynes/climt_files/' \
-                    'i270_320solar_fullstore/i270_320solar_fullstore_pkl_eq.pkl'
+                    'control_fullstore/i270_320solar_fullstore/i270_320solar_fullstore_pkl_eq.pkl'
 restart_file = open(restart_file_name, 'rb')
 restart_state = pickle.load(restart_file)
 control_q = restart_state['specific_humidity'].copy()
