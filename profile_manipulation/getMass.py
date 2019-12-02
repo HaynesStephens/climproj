@@ -116,28 +116,28 @@ def fitCstProfile_CO2(co2_mass, interface_pressure):
     return test_co2, test_mass
 
 
-### PROCEDURE ###
-def getQProfile(file_name):
-    file_load = open(file_name, 'rb')
-    pkl = pickle.load(file_load)
-    q = pkl['specific_humidity']
-    pressure = pkl['air_pressure_on_interface_levels']
-    q_mass      = getMass_H2O(q, pressure)
-    test_q, test_mass = fitCstProfile_H20(q_mass, pressure)
-    return test_q, test_mass
-
-file_dir = '/project2/moyer/old_project/haynes/climt_files/varying_co2/320solar/'
-co2_ppm_list = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-job_list = ['i{0}_320solar'.format(ppm) for ppm in co2_ppm_list]
-file_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(file_dir, job_name) for job_name in job_list]
-q_and_mass = [getQProfile(file_name) for file_name in file_list]
-q_profiles, q_masses = list(zip(*q_and_mass))
-[print(q_profiles[i].flatten(), q_masses[i]) for i in range(len(q_masses))]
-assert (len(co2_ppm_list) == len(q_profiles)) and (len(co2_ppm_list) == len(q_profiles)), "ERROR! LENGTHS DON'T MATCH!"
-
-save_dir = '/home/haynes13/code/python/climproj/profile_manipulation/cst_q_profiles/'
-save_list = ['{0}i{1}_320solar_cst_q_profile.npy'.format(save_dir, ppm) for ppm in co2_ppm_list]
-[np.save(save_list[i], q_profiles[i]) for i in range(len(save_list))]
+# ### Q PROFILE PROCEDURE ###
+# def getQProfile(file_name):
+#     file_load = open(file_name, 'rb')
+#     pkl = pickle.load(file_load)
+#     q = pkl['specific_humidity']
+#     pressure = pkl['air_pressure_on_interface_levels']
+#     q_mass      = getMass_H2O(q, pressure)
+#     test_q, test_mass = fitCstProfile_H20(q_mass, pressure)
+#     return test_q, test_mass
+#
+# file_dir = '/project2/moyer/old_project/haynes/climt_files/varying_co2/320solar/'
+# co2_ppm_list = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
+# job_list = ['i{0}_320solar'.format(ppm) for ppm in co2_ppm_list]
+# file_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(file_dir, job_name) for job_name in job_list]
+# q_and_mass = [getQProfile(file_name) for file_name in file_list]
+# q_profiles, q_masses = list(zip(*q_and_mass))
+# [print(q_profiles[i].flatten(), q_masses[i]) for i in range(len(q_masses))]
+# assert (len(co2_ppm_list) == len(q_profiles)) and (len(co2_ppm_list) == len(q_profiles)), "ERROR! LENGTHS DON'T MATCH!"
+#
+# save_dir = '/home/haynes13/code/python/climproj/profile_manipulation/cst_q_profiles/'
+# save_list = ['{0}i{1}_320solar_cst_q_profile.npy'.format(save_dir, ppm) for ppm in co2_ppm_list]
+# [np.save(save_list[i], q_profiles[i]) for i in range(len(save_list))]
 
 
 
