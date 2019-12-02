@@ -123,7 +123,7 @@ def getCO2Profile(file_name):
     pkl = pickle.load(file_load)
     co2 = pkl['mole_fraction_of_carbon_dioxide_in_air']
     interface_pressure = pkl['air_pressure_on_interface_levels']
-    co2_mass      = getMass_CO2(co2, pressure)
+    co2_mass      = getMass_CO2(co2, interface_pressure)
     test_co2, test_mass = fitExpProfile_CO2(co2_mass, interface_pressure)
     return test_co2, test_mass
 file_name = '/project2/moyer/old_project/haynes/climt_files/varying_co2/320solar/' \
