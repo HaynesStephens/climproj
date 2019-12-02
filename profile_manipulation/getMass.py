@@ -84,7 +84,7 @@ def fitCstProfile_H20(q_mass, interface_pressure):
 def fitExpProfile_CO2(co2_mass, interface_pressure):
     print('FITTING CO2 PROFILE')
     def getProfile(a):
-        return a * np.exp((-np.linspace(100,200,28)))
+        return a * np.exp((-np.linspace(0,0.01,28)))
 
     a = 1
     test_co2 = getProfile(a)
