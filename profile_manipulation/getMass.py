@@ -120,6 +120,7 @@ def fitExpProfile_CO2(co2_mass, interface_pressure):
     test_co2 = np.reshape(test_co2, (28, 1, 1))
     print(test_mass)
     print((np.abs(test_mass - co2_mass) / co2_mass))
+    print('\n')
     return test_co2, test_mass
 
 
