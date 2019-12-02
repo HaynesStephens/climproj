@@ -117,6 +117,16 @@ def fitExpProfile_CO2(co2_mass, interface_pressure):
 
 
 
+### CO2 PROFILE PROCEDURE ###
+def getCO2Profile(file_name):
+    file_load = open(file_name, 'rb')
+    pkl = pickle.load(file_load)
+    co2 = pkl['mole_fraction_of_carbon_dioxide_in_air']
+    interface_pressure = pkl['air_pressure_on_interface_levels']
+    co2_mass      = getMass_CO2(co2, pressure)
+    test_co2, test_mass = fitExpProfile_CO2(co2_mass, interface_pressure)
+    return test_co2, test_mass
+
 
 
 # ### Q PROFILE PROCEDURE ###
