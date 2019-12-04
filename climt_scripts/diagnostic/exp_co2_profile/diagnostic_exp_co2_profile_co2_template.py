@@ -90,7 +90,7 @@ state['zenith_angle'].values[:]                             = (2 * np.pi) / 5
 state['area_type'].values[:]                                = 'sea'
 # only the surface layer is given a zonal wind to spur convection
 state['eastward_wind'].values[0]                            = 5.0
-state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(input_ppm) * 10**(-6)
+# state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(input_ppm) * 10**(-6)
 
 ### FIXED STATE TO UPDATE CONSTANT PROFILES ###
 fixed_state = {
@@ -99,7 +99,7 @@ fixed_state = {
 }
 ### PULLING CST Q PROFILE
 exp_co2_profile_name = '/home/haynes13/code/python/climproj/profile_manipulation/' \
-                     'cst_q_profiles/i270_320solar_cst_q_profile.npy'
+                     'cst_q_profiles/i{0}_320solar_cst_q_profile.npy'.format(input_ppm)
 fixed_state['specific_humidity'].values[:] = np.load(exp_co2_profile_name).copy()
 fixed_state['air_temperature'].values[:] = control_T.copy()
 state.update(copy.deepcopy(fixed_state))
