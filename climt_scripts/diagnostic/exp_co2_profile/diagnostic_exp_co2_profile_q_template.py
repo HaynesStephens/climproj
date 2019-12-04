@@ -111,7 +111,7 @@ exp_co2_profile_name = '/home/haynes13/code/python/climproj/profile_manipulation
                      'exp_co2_profiles/i270_320solar_exp_co2_profile.npy'
 fixed_state['mole_fraction_of_carbon_dioxide_in_air'].values[:] = np.load(exp_co2_profile_name).copy()
 fixed_state['air_temperature'].values[:] = control_T
-fixed_state['specific_humidity'].values[:] = control_q
+fixed_state['specific_humidity'].values[:] = fixed_q
 state.update(copy.deepcopy(fixed_state))
 ######################################
 time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convection])
