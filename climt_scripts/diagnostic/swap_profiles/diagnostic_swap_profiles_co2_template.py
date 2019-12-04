@@ -49,7 +49,6 @@ restart_file_name = '/project2/moyer/old_project/haynes/climt_files/control_full
 restart_file = open(restart_file_name, 'rb')
 restart_state = pickle.load(restart_file)
 control_T = restart_state['air_temperature'].copy()
-control_q = restart_state['specific_humidity'].copy()
 
 restart_quantities =  list(restart_state.keys())
 print(restart_quantities)
