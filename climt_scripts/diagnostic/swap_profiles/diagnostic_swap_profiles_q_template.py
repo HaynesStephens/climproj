@@ -92,14 +92,6 @@ state['area_type'].values[:]                                = 'sea'
 state['eastward_wind'].values[0]                            = 5.0
 # state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(270) * 10**(-6)
 
-### FIXED HUMIDITY PROFILE TO INPUT ###
-fixed_q_file_name = '/project2/moyer/old_project/haynes/climt_files/' \
-               'varying_co2/320solar/i{0}_320solar/i{0}_320solar.eq.pkl'.format(input_ppm)
-fixed_q_file = open(fixed_q_file_name, 'rb')
-fixed_q_state = pickle.load(fixed_q_file)
-fixed_q = fixed_q_state['specific_humidity'].copy()
-##########################################
-
 ### FIXED STATE TO UPDATE CONSTANT PROFILES ###
 fixed_state = {
     'specific_humidity': copy.deepcopy(state['specific_humidity']),
@@ -110,8 +102,12 @@ fixed_state = {
 exp_co2_profile_name = '/home/haynes13/code/python/climproj/profile_manipulation/' \
                      'exp_co2_profiles/i270_320solar_exp_co2_profile.npy'
 fixed_state['mole_fraction_of_carbon_dioxide_in_air'].values[:] = np.load(exp_co2_profile_name).copy()
+### PULLING CST Q PROFILE
+cst_q_profile_name = '/home/haynes13/code/python/climproj/profile_manipulation/' \
+                     'cst_q_profiles/i{0}_320solar_cst_q_profile.npy'.format(input_ppm)
+fixed_state['specific_humidity'].values[:] = np.load(cst_q_profile_name).copy()
+### SETTING CONTROL T PROFILE
 fixed_state['air_temperature'].values[:] = control_T
-fixed_state['specific_humidity'].values[:] = fixed_q
 state.update(copy.deepcopy(fixed_state))
 ######################################
 time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convection])
