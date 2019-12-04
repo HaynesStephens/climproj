@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_q_writeScript.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_q_writeScript.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,37 +36,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/swap_profiles/diagnostic_swap_profiles_T_template.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="332">
               <caret line="95" column="68" selection-start-line="95" selection-start-column="65" selection-end-line="95" selection-end-column="68" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_co2_writeScript.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_q_writeScript.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,7 +59,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mixi</find>
       <find>plotTra</find>
       <find>plot_dir</find>
       <find>mole</find>
@@ -113,6 +87,7 @@
       <find>q</find>
       <find>cst</find>
       <find>pkl</find>
+      <find>swapp</find>
       <find>swap</find>
     </findStrings>
   </component>
@@ -122,7 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data_scripts/Trans_diagnostic.py" />
         <option value="$PROJECT_DIR$/data_scripts/EQ_diagnostic.py" />
         <option value="$PROJECT_DIR$/data_scripts/diagnostic_trans.py" />
         <option value="$PROJECT_DIR$/FixedInputWrapper.py" />
@@ -173,6 +147,7 @@
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_q_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_co2_writeScript.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_q_writeScript.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_T_writeScript.py" />
       </list>
     </option>
   </component>
@@ -369,21 +344,7 @@
       <workItem from="1575051970660" duration="792000" />
       <workItem from="1575241593323" duration="168000" />
       <workItem from="1575313165228" duration="4973000" />
-      <workItem from="1575480857057" duration="2787000" />
-    </task>
-    <task id="LOCAL-01143" summary="different diagnostic experiments">
-      <created>1575326903873</created>
-      <option name="number" value="01143" />
-      <option name="presentableId" value="LOCAL-01143" />
-      <option name="project" value="LOCAL" />
-      <updated>1575326903873</updated>
-    </task>
-    <task id="LOCAL-01144" summary="different diagnostic experiments">
-      <created>1575326971879</created>
-      <option name="number" value="01144" />
-      <option name="presentableId" value="LOCAL-01144" />
-      <option name="project" value="LOCAL" />
-      <updated>1575326971879</updated>
+      <workItem from="1575480857057" duration="2817000" />
     </task>
     <task id="LOCAL-01145" summary="different diagnostic experiments">
       <created>1575327013122</created>
@@ -714,11 +675,25 @@
       <option name="project" value="LOCAL" />
       <updated>1575484376009</updated>
     </task>
-    <option name="localTasksCounter" value="1192" />
+    <task id="LOCAL-01192" summary="adding exponential carbon dioxide">
+      <created>1575484388507</created>
+      <option name="number" value="01192" />
+      <option name="presentableId" value="LOCAL-01192" />
+      <option name="project" value="LOCAL" />
+      <updated>1575484388507</updated>
+    </task>
+    <task id="LOCAL-01193" summary="adding exponential carbon dioxide">
+      <created>1575484399200</created>
+      <option name="number" value="01193" />
+      <option name="presentableId" value="LOCAL-01193" />
+      <option name="project" value="LOCAL" />
+      <updated>1575484399200</updated>
+    </task>
+    <option name="localTasksCounter" value="1194" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278308000" />
+    <option name="totallyTimeSpent" value="278338000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -731,7 +706,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-513" y="-1080" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2087327" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1138,16 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_T_writeScript.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="96" selection-start-line="31" selection-start-column="81" selection-end-line="31" selection-end-column="96" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/cst_q_profile/diagnostic_cst_q_profile_T_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1278,7 +1242,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_co2_writeScript.py">
+    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_q_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
@@ -1288,10 +1252,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_q_writeScript.py">
+    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_T_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+        <state relative-caret-position="187">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_co2_writeScript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
