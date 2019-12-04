@@ -101,7 +101,7 @@ fixed_state = {
 }
 ### PULLING EXP CO2 PROFILE
 exp_co2_profile_name = '/home/haynes13/code/python/climproj/profile_manipulation/' \
-                     'cst_q_profiles/i{0}_320solar_cst_q_profile.npy'.format(input_ppm)
+                     'exp_co2_profiles/i{0}_320solar_exp_co2_profile.npy'.format(input_ppm)
 fixed_state['mole_fraction_of_carbon_dioxide_in_air'].values[:] = np.load(exp_co2_profile_name).copy()
 fixed_state['air_temperature'].values[:] = control_T
 fixed_state['specific_humidity'].values[:] = control_q
