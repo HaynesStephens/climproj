@@ -40,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_T_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="553">
+              <caret line="108" selection-start-line="108" selection-end-line="114" selection-end-column="40" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -52,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_q_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="410">
+              <caret line="103" column="80" lean-forward="true" selection-start-line="103" selection-start-column="80" selection-end-line="103" selection-end-column="80" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -357,14 +357,7 @@
       <workItem from="1575051970660" duration="792000" />
       <workItem from="1575241593323" duration="168000" />
       <workItem from="1575313165228" duration="4973000" />
-      <workItem from="1575480857057" duration="1708000" />
-    </task>
-    <task id="LOCAL-01128" summary="different diagnostic experiments">
-      <created>1575323240146</created>
-      <option name="number" value="01128" />
-      <option name="presentableId" value="LOCAL-01128" />
-      <option name="project" value="LOCAL" />
-      <updated>1575323240146</updated>
+      <workItem from="1575480857057" duration="1748000" />
     </task>
     <task id="LOCAL-01129" summary="different diagnostic experiments">
       <created>1575323369326</created>
@@ -702,11 +695,18 @@
       <option name="project" value="LOCAL" />
       <updated>1575483212612</updated>
     </task>
-    <option name="localTasksCounter" value="1177" />
+    <task id="LOCAL-01177" summary="adding exponential carbon dioxide">
+      <created>1575483236957</created>
+      <option name="number" value="01177" />
+      <option name="presentableId" value="LOCAL-01177" />
+      <option name="project" value="LOCAL" />
+      <updated>1575483236957</updated>
+    </task>
+    <option name="localTasksCounter" value="1178" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277229000" />
+    <option name="totallyTimeSpent" value="277269000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1262,8 +1262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_T_template.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="553">
+          <caret line="108" selection-start-line="108" selection-end-line="114" selection-end-column="40" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -1272,8 +1272,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_q_template.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="410">
+          <caret line="103" column="80" lean-forward="true" selection-start-line="103" selection-start-column="80" selection-end-line="103" selection-end-column="80" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
