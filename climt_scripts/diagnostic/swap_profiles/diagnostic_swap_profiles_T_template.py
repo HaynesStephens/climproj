@@ -110,8 +110,12 @@ fixed_state = {
 exp_co2_profile_name = '/home/haynes13/code/python/climproj/profile_manipulation/' \
                      'exp_co2_profiles/i270_320solar_exp_co2_profile.npy'
 fixed_state['mole_fraction_of_carbon_dioxide_in_air'].values[:] = np.load(exp_co2_profile_name).copy()
+### PULLING CST Q PROFILE
+cst_q_profile_name = '/home/haynes13/code/python/climproj/profile_manipulation/' \
+                     'cst_q_profiles/i270_320solar_cst_q_profile.npy'
+fixed_state['specific_humidity'].values[:] = np.load(cst_q_profile_name).copy()
+### SETTING FIXED T PROFILE
 fixed_state['air_temperature'].values[:] = fixed_T
-fixed_state['specific_humidity'].values[:] = control_q
 state.update(copy.deepcopy(fixed_state))
 ######################################
 time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convection])
