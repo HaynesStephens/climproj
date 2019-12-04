@@ -92,6 +92,14 @@ state['area_type'].values[:]                                = 'sea'
 state['eastward_wind'].values[0]                            = 5.0
 # state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(270) * 10**(-6)
 
+### FIXED HUMIDITY PROFILE TO INPUT ###
+fixed_q_file_name = '/project2/moyer/old_project/haynes/climt_files/' \
+               'varying_co2/320solar/i{0}_320solar/i{0}_320solar.eq.pkl'.format(input_ppm)
+fixed_q_file = open(fixed_q_file_name, 'rb')
+fixed_q_state = pickle.load(fixed_q_file)
+fixed_q = fixed_q_state['specific_humidity'].copy()
+##########################################
+
 ### FIXED STATE TO UPDATE CONSTANT PROFILES ###
 fixed_state = {
     'specific_humidity': copy.deepcopy(state['specific_humidity']),
