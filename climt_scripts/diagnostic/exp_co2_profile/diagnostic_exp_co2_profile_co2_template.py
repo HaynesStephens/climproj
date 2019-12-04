@@ -96,7 +96,8 @@ state['eastward_wind'].values[0]                            = 5.0
 ### FIXED STATE TO UPDATE CONSTANT PROFILES ###
 fixed_state = {
     'specific_humidity': copy.deepcopy(state['specific_humidity']),
-    'air_temperature': copy.deepcopy(state['air_temperature'])
+    'air_temperature': copy.deepcopy(state['air_temperature']),
+    'mole_fraction_of_carbon_dioxide_in_air': copy.deepcopy(state['mole_fraction_of_carbon_dioxide_in_air'])
 }
 ### PULLING EXP CO2 PROFILE
 exp_co2_profile_name = '/home/haynes13/code/python/climproj/profile_manipulation/' \
