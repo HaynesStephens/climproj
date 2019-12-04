@@ -8,7 +8,7 @@ def createRun(input_ppm):
     job_name = 'diagnostic_cst_q_profile_q_input{0}'.format(input_ppm)
 
     template_path = '/home/haynes13/code/python/climproj/climt_scripts/diagnostic/' \
-                    'cst_q_profile/diagnostic_exp_co2_profile_q_template.py'
+                    'cst_q_profile/diagnostic_swap_profiles_q_template.py'
     job_path = '/home/haynes13/code/python/climproj/climt_scripts/diagnostic/cst_q_profile/q/{0}.py'.format(job_name)
     print(job_path)
 
