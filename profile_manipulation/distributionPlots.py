@@ -48,5 +48,5 @@ for param in distribution_names.keys():
     print(expt_file_name)
     distribution_expt[param] = loadProfile(expt_file_name, key_name)
 
-fig, subplots = plt.subplots(2, 3, figsize=(21,8), sharey=True)
+# fig, subplots = plt.subplots(2, 3, figsize=(21,8), sharey=True)
 
