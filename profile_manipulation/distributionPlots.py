@@ -11,4 +11,3 @@ os.system('mkdir -p /home/haynes13/code/python/climproj/figures/distributionPlot
 
 control_file = '/project2/moyer/old_project/haynes/climt_files/control_fullstore/i{0}_320solar_fullstore'.format(control_ppm)
 expt_dir = ''
-kl
