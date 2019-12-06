@@ -44,7 +44,7 @@ for param in distribution_names.keys():
     profile = loadProfile(file_name, key_name)
     distribution_reference[param] = profile
 
-    expt_file_name = '{0}{1}/diagnostic_{2}_{1}_input{3}'.format(expt_dir, param, expt_name, input_ppm)
+    expt_file_name = '{0}{1}/diagnostic_{2}_{1}_input{3}_pkl_eq.pkl'.format(expt_dir, param, expt_name, input_ppm)
     print(expt_file_name)
     distribution_expt[param] = loadProfile(expt_file_name, key_name)
 
