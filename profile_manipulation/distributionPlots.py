@@ -39,11 +39,12 @@ for param in distribution_names.keys():
         file_name = '{0}_pkl_eq.pkl'.format(input_base)
     else:
         file_name = '{0}_pkl_eq.pkl'.format(control_base)
+    print(file_name)
     profile = loadProfile(file_name, distribution_names[param])
     distribution_reference[param] = profile
 
-    exp_file_name =
-
+    expt_file_name = '{0}{1}/diagnostic_{2}_{1}_input{3}'.format(expt_dir, param, expt_name, input_ppm)
+    print(expt_file_name)
 
 
 fig, subplots = plt.subplots(2, 3, figsize=(21,8), sharey=True)
