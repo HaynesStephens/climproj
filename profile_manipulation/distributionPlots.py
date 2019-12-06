@@ -56,14 +56,16 @@ fig, subplots = plt.subplots(2, 3, figsize=(21,8), sharey=True)
 for i in range(len(plot_order)):
     param = plot_order[i]
     ref_axis = subplots[0, i]
+    ref_axis.plot(distribution_reference[param].flatten(), air_pressure)
     ref_axis.set_title(param)
     ref_axis.set_ylabel('Pa')
+    ref_axis.grid()
 
     expt_axis = subplots[1, i]
+    expt_axis.plot(distribution_expt[param].flatten(), air_pressure)
     expt_axis.set_ylabel('Pa')
     expt_axis.set_xlabel(units[param])
-    ref_axis.plot(distribution_reference[param].flatten(), air_pressure)
-    expt_axis.plot(distribution_expt[param].flatten(), air_pressure)
+    expt_axis.grid()
 plt.show()
 
 
