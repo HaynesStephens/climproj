@@ -49,5 +49,15 @@ for param in distribution_names.keys():
     print(expt_file_name)
     distribution_expt[param] = loadProfile(expt_file_name, key_name)
 
-# fig, subplots = plt.subplots(2, 3, figsize=(21,8), sharey=True)
+
+plot_order = ['T', 'q', 'co2']
+fig, subplots = plt.subplots(2, 3, figsize=(21,8), sharey=True)
+for i in range(len(plot_order)):
+    param = plot_order[i]
+    ref_axis = subplots[0, i]
+    expt_axis = subplots[1, i]
+    ref_axis.plot(distribution_reference[param].flatten(), air_pressure)
+    expt_axis.plot(distribution_expt[param].flatten(), air_pressure)
+plt.show()
+
 
