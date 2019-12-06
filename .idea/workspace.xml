@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile_manipulation/distributionPlots.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+            <state relative-caret-position="219">
+              <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -309,21 +309,7 @@
       <workItem from="1575313165228" duration="4973000" />
       <workItem from="1575480857057" duration="3960000" />
       <workItem from="1575653459934" duration="1277000" />
-      <workItem from="1575673322721" duration="2659000" />
-    </task>
-    <task id="LOCAL-01171" summary="adding exponential carbon dioxide">
-      <created>1575482476131</created>
-      <option name="number" value="01171" />
-      <option name="presentableId" value="LOCAL-01171" />
-      <option name="project" value="LOCAL" />
-      <updated>1575482476132</updated>
-    </task>
-    <task id="LOCAL-01172" summary="adding exponential carbon dioxide">
-      <created>1575482534022</created>
-      <option name="number" value="01172" />
-      <option name="presentableId" value="LOCAL-01172" />
-      <option name="project" value="LOCAL" />
-      <updated>1575482534022</updated>
+      <workItem from="1575673322721" duration="3130000" />
     </task>
     <task id="LOCAL-01173" summary="adding exponential carbon dioxide">
       <created>1575482738457</created>
@@ -654,11 +640,25 @@
       <option name="project" value="LOCAL" />
       <updated>1575675966861</updated>
     </task>
-    <option name="localTasksCounter" value="1220" />
+    <task id="LOCAL-01220" summary="checking profile">
+      <created>1575676100933</created>
+      <option name="number" value="01220" />
+      <option name="presentableId" value="LOCAL-01220" />
+      <option name="project" value="LOCAL" />
+      <updated>1575676100933</updated>
+    </task>
+    <task id="LOCAL-01221" summary="checking profile">
+      <created>1575676442389</created>
+      <option name="number" value="01221" />
+      <option name="presentableId" value="LOCAL-01221" />
+      <option name="project" value="LOCAL" />
+      <updated>1575676442389</updated>
+    </task>
+    <option name="localTasksCounter" value="1222" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="283417000" />
+    <option name="totallyTimeSpent" value="283888000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1236,8 +1236,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile_manipulation/distributionPlots.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        <state relative-caret-position="219">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
