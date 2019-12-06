@@ -17,19 +17,7 @@
         <entry file="file://$PROJECT_DIR$/writeCSVandPKL_diagnostic.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1242">
-              <caret line="248" column="43" selection-start-line="248" selection-start-column="39" selection-end-line="248" selection-end-column="43" />
-              <folding>
-                <element signature="e#223#241#0" expanded="true" />
-              </folding>
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -37,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -143,8 +131,8 @@
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/swap_profiles/diagnostic_exp_co2_profile_q_writeScript.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/swap_profiles/diagnostic_exp_co2_profile_co2_writeScript.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/swap_profiles/diagnostic_exp_co2_profile_T_writeScript.py" />
-        <option value="$PROJECT_DIR$/writeCSVandPKL_diagnostic.py" />
         <option value="$PROJECT_DIR$/data_scripts/diagnostic_trans.py" />
+        <option value="$PROJECT_DIR$/writeCSVandPKL_diagnostic.py" />
         <option value="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" />
       </list>
     </option>
@@ -318,21 +306,7 @@
       <workItem from="1575241593323" duration="168000" />
       <workItem from="1575313165228" duration="4973000" />
       <workItem from="1575480857057" duration="3960000" />
-      <workItem from="1575653459934" duration="916000" />
-    </task>
-    <task id="LOCAL-01155" summary="different diagnostic experiments">
-      <created>1575327679474</created>
-      <option name="number" value="01155" />
-      <option name="presentableId" value="LOCAL-01155" />
-      <option name="project" value="LOCAL" />
-      <updated>1575327679474</updated>
-    </task>
-    <task id="LOCAL-01156" summary="different diagnostic experiments">
-      <created>1575327687026</created>
-      <option name="number" value="01156" />
-      <option name="presentableId" value="LOCAL-01156" />
-      <option name="project" value="LOCAL" />
-      <updated>1575327687026</updated>
+      <workItem from="1575653459934" duration="1015000" />
     </task>
     <task id="LOCAL-01157" summary="different diagnostic experiments">
       <created>1575327718900</created>
@@ -663,11 +637,25 @@
       <option name="project" value="LOCAL" />
       <updated>1575655812131</updated>
     </task>
-    <option name="localTasksCounter" value="1204" />
+    <task id="LOCAL-01204" summary="adding exponential carbon dioxide">
+      <created>1575655834916</created>
+      <option name="number" value="01204" />
+      <option name="presentableId" value="LOCAL-01204" />
+      <option name="project" value="LOCAL" />
+      <updated>1575655834916</updated>
+    </task>
+    <task id="LOCAL-01205" summary="adding exponential carbon dioxide">
+      <created>1575655937130</created>
+      <option name="number" value="01205" />
+      <option name="presentableId" value="LOCAL-01205" />
+      <option name="project" value="LOCAL" />
+      <updated>1575655937130</updated>
+    </task>
+    <option name="localTasksCounter" value="1206" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="280397000" />
+    <option name="totallyTimeSpent" value="280496000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1223,16 +1211,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writeCSVandPKL_diagnostic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
+        <state relative-caret-position="2709">
           <caret line="248" column="43" selection-start-line="248" selection-start-column="39" selection-end-line="248" selection-end-column="43" />
           <folding>
             <element signature="e#223#241#0" expanded="true" />
@@ -1240,10 +1221,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/writeCSVandPKL_diagnostic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="68">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

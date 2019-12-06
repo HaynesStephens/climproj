@@ -2,7 +2,7 @@ import pandas as pd
 import pickle
 
 
-run_type = 'exp_co2_profile'
+run_type = 'swap_profiles'
 diag_var = 'T'
 basepath = '/project2/moyer/old_project/haynes/climt_files/diagnostic/{0}/{1}/'.format(run_type, diag_var)
 input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
