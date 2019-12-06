@@ -8,8 +8,8 @@ input_ppm = 1080
 expt_name = 'swap_profiles'
 
 control_ppm = 270
-distribution_reference  = {'T':'', 'q':'', 'co2':''}
-distribution_expt       = {'T':'', 'q':'', 'co2':''}
+distribution_reference  = {}
+distribution_expt       = {}
 distribution_names      = {'T':'air_temperature',
                            'q':'specific_humidity',
                            'co2':'mole_fraction_of_carbon_dioxide_in_air'}
@@ -35,17 +35,18 @@ def loadProfile(file_name, dict_key):
     return profile
 
 for param in distribution_names.keys():
+    key_name = distribution_names[param]
     if param == input_param:
         file_name = '{0}_pkl_eq.pkl'.format(input_base)
     else:
         file_name = '{0}_pkl_eq.pkl'.format(control_base)
     print(file_name)
-    profile = loadProfile(file_name, distribution_names[param])
+    profile = loadProfile(file_name, key_name)
     distribution_reference[param] = profile
 
     expt_file_name = '{0}{1}/diagnostic_{2}_{1}_input{3}'.format(expt_dir, param, expt_name, input_ppm)
     print(expt_file_name)
-
+    distribution_expt[param] = loadProfile(expt_file_name, key_name)
 
 fig, subplots = plt.subplots(2, 3, figsize=(21,8), sharey=True)
 
