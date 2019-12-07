@@ -61,11 +61,13 @@ for i in range(len(plot_order)):
         title_ppm = str(control_ppm)
     ref_axis = subplots[0, i]
     ref_axis.plot(distribution_reference[param].flatten(), air_pressure)
+    plt.setp(ref_axis.get_xticklabels(), rotation=30, horizontalalignment='right')
     ref_axis.set_title('{0} ({1} ppm)'.format(param, title_ppm))
     ref_axis.grid()
 
     expt_axis = subplots[1, i]
     expt_axis.plot(distribution_expt[param].flatten(), air_pressure)
+    plt.setp(expt_axis.get_xticklabels(), rotation=30, horizontalalignment='right')
     expt_axis.set_xlabel(units[param])
     expt_axis.grid()
 for j in range(2):
