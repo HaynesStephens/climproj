@@ -160,7 +160,7 @@ def plotEQResponse(job_name, test_dir='', save_step=36):
     file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
     plot_base = '/home/haynes13/code/python/climproj/figures/'
     #     plot_name = '{0}/{1}/{1}_time_series.pdf'.format(plot_base, job_name)
-    plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'EQandTransResponses/', test_dir, 'eq/')
+    plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'EQandTransResponses/', test_dir, 'eq')
     os.system('mkdir -p {0}'.format(plot_dir))
     plot_name = '{0}/{1}_eq.png'.format(plot_dir, job_name)
     print(plot_name)
@@ -373,7 +373,7 @@ def plotTransResponse(job_name, insol=320, test_dir=''):
     file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
     plot_base = '/home/haynes13/code/python/climproj/figures/'
     #     plot_name = '{0}/{1}/{1}_time_series.pdf'.format(plot_base, job_name)
-    plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'EQandTransResponses/', test_dir, 'trans/')
+    plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'EQandTransResponses/', test_dir, 'trans')
     os.system('mkdir -p {0}'.format(plot_dir))
     plot_name = '{0}/{1}.trans.png'.format(plot_dir, job_name)
     print(plot_name)
@@ -584,7 +584,7 @@ for insol in insol_list:
         plotTransResponse(job_name, insol=insol, test_dir=test_dir)
         print('DONE.', job_name)
 
-        
+
 # # Vary insol run
 # insol_list = [200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265,
 #               270, 275, 280, 285, 290, 295, 300, 305, 310, 315, 320, 325, 330, 335]
