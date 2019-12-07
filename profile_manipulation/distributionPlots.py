@@ -69,8 +69,8 @@ for i in range(len(plot_order)):
     expt_axis.set_xlabel(units[param])
     expt_axis.grid()
 for j in range(2):
-    subplots[0, j].set_ylabel('Pa')
-    subplots[0, j].set_yscale('log')
+    subplots[j, 0].set_ylabel('Pa')
+    subplots[j, 0].set_yscale('log')
 plt.tight_layout()
 plt.show()
 
