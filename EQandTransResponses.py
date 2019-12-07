@@ -573,17 +573,18 @@ def plotTransTempHumSeries(ax, file_name, control_pkl):
     ax.grid()
 
 
-# # Vary co2 run
-# co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-# insol_list      = [290, 320]
-# for insol in insol_list:
-#     test_dir = 'varying_co2/{0}solar/'.format(insol)
-#     for ppm in co2_ppm_list:
-#         job_name = 'i{0}_{1}solar'.format(ppm, insol)
-#         plotEQResponse(job_name, test_dir=test_dir)
-#         plotTransResponse(job_name, insol=insol, test_dir=test_dir)
-#         print('DONE.', job_name)
-#
+# Vary co2 run
+co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
+insol_list      = [290, 320]
+for insol in insol_list:
+    test_dir = 'varying_co2/{0}solar/'.format(insol)
+    for ppm in co2_ppm_list:
+        job_name = 'i{0}_{1}solar'.format(ppm, insol)
+        plotEQResponse(job_name, test_dir=test_dir)
+        plotTransResponse(job_name, insol=insol, test_dir=test_dir)
+        print('DONE.', job_name)
+
+        
 # # Vary insol run
 # insol_list = [200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265,
 #               270, 275, 280, 285, 290, 295, 300, 305, 310, 315, 320, 325, 330, 335]
@@ -593,8 +594,8 @@ def plotTransTempHumSeries(ax, file_name, control_pkl):
 #     plotEQResponse(job_name, test_dir=test_dir)
 #     plotTransResponse(job_name, test_dir=test_dir)
 #     print('DONE.', job_name)
-#
-#
+
+
 # # Vary co2 qRadCst run
 # co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
 # insol           = 320
@@ -606,18 +607,18 @@ def plotTransTempHumSeries(ax, file_name, control_pkl):
 #     print('DONE.', job_name)
 
 
-# Diagnostics run
-input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
-run_type_list  = ['rad', 'tot']
-var_list       = ['q', 'T', 'co2']
-insol = 320
-for input_ppm in input_ppm_list:
-    for run_type in run_type_list:
-        for var in var_list:
-            test_dir = 'diagnostic/{0}/{1}/'.format(run_type, var)
-            job_name = 'diagnostic_{0}_{1}_input{2}'.format(run_type, var, input_ppm)
-            print(job_name)
-            plotEQResponse(job_name, test_dir=test_dir)
-            plotTransResponse(job_name, insol=insol, test_dir=test_dir)
-            print('DONE.', job_name)
+# # Diagnostics run
+# input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
+# run_type_list  = ['rad', 'tot']
+# var_list       = ['q', 'T', 'co2']
+# insol = 320
+# for input_ppm in input_ppm_list:
+#     for run_type in run_type_list:
+#         for var in var_list:
+#             test_dir = 'diagnostic/{0}/{1}/'.format(run_type, var)
+#             job_name = 'diagnostic_{0}_{1}_input{2}'.format(run_type, var, input_ppm)
+#             print(job_name)
+#             plotEQResponse(job_name, test_dir=test_dir)
+#             plotTransResponse(job_name, insol=insol, test_dir=test_dir)
+#             print('DONE.', job_name)
 
