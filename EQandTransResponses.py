@@ -375,7 +375,7 @@ def plotTransResponse(job_name, insol=320, test_dir=''):
     #     plot_name = '{0}/{1}/{1}_time_series.pdf'.format(plot_base, job_name)
     plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'EQandTransResponses/', test_dir, 'trans')
     os.system('mkdir -p {0}'.format(plot_dir))
-    plot_name = '{0}/{1}.trans.png'.format(plot_dir, job_name)
+    plot_name = '{0}/{1}_trans.png'.format(plot_dir, job_name)
     print(plot_name)
 
     def loadData(file_name, var):

@@ -4,7 +4,6 @@
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EQandTransResponses.py" beforeDir="false" afterPath="$PROJECT_DIR$/EQandTransResponses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile_manipulation/distributionPlots.py" beforeDir="false" afterPath="$PROJECT_DIR$/profile_manipulation/distributionPlots.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EQandTransResponses.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="586" column="8" selection-start-line="586" selection-start-column="8" selection-end-line="586" selection-end-column="8" />
+            <state relative-caret-position="261">
+              <caret line="377" column="25" selection-start-line="377" selection-start-column="25" selection-end-line="377" selection-end-column="25" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -70,9 +69,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mole</find>
-      <find>EQavg</find>
-      <find>test_q</find>
       <find>q_mass</find>
       <find>pressure</find>
       <find>np.exp</find>
@@ -100,6 +96,9 @@
       <find>exp</find>
       <find>!</find>
       <find>shape</find>
+      <find>job_name</find>
+      <find>/</find>
+      <find>plot_name</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -330,21 +329,7 @@
       <workItem from="1575313165228" duration="4973000" />
       <workItem from="1575480857057" duration="3960000" />
       <workItem from="1575653459934" duration="1277000" />
-      <workItem from="1575673322721" duration="4659000" />
-    </task>
-    <task id="LOCAL-01187" summary="adding exponential carbon dioxide">
-      <created>1575483916606</created>
-      <option name="number" value="01187" />
-      <option name="presentableId" value="LOCAL-01187" />
-      <option name="project" value="LOCAL" />
-      <updated>1575483916606</updated>
-    </task>
-    <task id="LOCAL-01188" summary="adding exponential carbon dioxide">
-      <created>1575483950072</created>
-      <option name="number" value="01188" />
-      <option name="presentableId" value="LOCAL-01188" />
-      <option name="project" value="LOCAL" />
-      <updated>1575483950072</updated>
+      <workItem from="1575673322721" duration="4893000" />
     </task>
     <task id="LOCAL-01189" summary="adding exponential carbon dioxide">
       <created>1575483973840</created>
@@ -675,11 +660,25 @@
       <option name="project" value="LOCAL" />
       <updated>1575677818458</updated>
     </task>
-    <option name="localTasksCounter" value="1236" />
+    <task id="LOCAL-01236" summary="checking profile">
+      <created>1575739119075</created>
+      <option name="number" value="01236" />
+      <option name="presentableId" value="LOCAL-01236" />
+      <option name="project" value="LOCAL" />
+      <updated>1575739119078</updated>
+    </task>
+    <task id="LOCAL-01237" summary="checking profile">
+      <created>1575739329865</created>
+      <option name="number" value="01237" />
+      <option name="presentableId" value="LOCAL-01237" />
+      <option name="project" value="LOCAL" />
+      <updated>1575739329865</updated>
+    </task>
+    <option name="localTasksCounter" value="1238" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285417000" />
+    <option name="totallyTimeSpent" value="285651000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -694,7 +693,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3231018" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19789983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1260,8 +1259,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EQandTransResponses.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="586" column="8" selection-start-line="586" selection-start-column="8" selection-end-line="586" selection-end-column="8" />
+        <state relative-caret-position="261">
+          <caret line="377" column="25" selection-start-line="377" selection-start-column="25" selection-end-line="377" selection-end-column="25" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
