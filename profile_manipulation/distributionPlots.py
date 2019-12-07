@@ -62,16 +62,15 @@ for i in range(len(plot_order)):
     ref_axis = subplots[0, i]
     ref_axis.plot(distribution_reference[param].flatten(), air_pressure)
     ref_axis.set_title('{0} ({1} ppm)'.format(param, title_ppm))
-    ref_axis.set_ylabel('Pa')
-    ref_axis.set_yscale('log')
     ref_axis.grid()
 
     expt_axis = subplots[1, i]
     expt_axis.plot(distribution_expt[param].flatten(), air_pressure)
-    expt_axis.set_ylabel('Pa')
-    expt_axis.set_yscale('log')
     expt_axis.set_xlabel(units[param])
     expt_axis.grid()
+for j in range(2):
+    subplots[0, j].set_ylabel('Pa')
+    subplots[0, j].set_yscale('log')
 plt.tight_layout()
 plt.show()
 

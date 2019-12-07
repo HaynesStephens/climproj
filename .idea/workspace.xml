@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile_manipulation/distributionPlots.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+            <state relative-caret-position="804">
+              <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -309,28 +309,7 @@
       <workItem from="1575313165228" duration="4973000" />
       <workItem from="1575480857057" duration="3960000" />
       <workItem from="1575653459934" duration="1277000" />
-      <workItem from="1575673322721" duration="3377000" />
-    </task>
-    <task id="LOCAL-01176" summary="adding exponential carbon dioxide">
-      <created>1575483212612</created>
-      <option name="number" value="01176" />
-      <option name="presentableId" value="LOCAL-01176" />
-      <option name="project" value="LOCAL" />
-      <updated>1575483212612</updated>
-    </task>
-    <task id="LOCAL-01177" summary="adding exponential carbon dioxide">
-      <created>1575483236957</created>
-      <option name="number" value="01177" />
-      <option name="presentableId" value="LOCAL-01177" />
-      <option name="project" value="LOCAL" />
-      <updated>1575483236957</updated>
-    </task>
-    <task id="LOCAL-01178" summary="adding exponential carbon dioxide">
-      <created>1575483276154</created>
-      <option name="number" value="01178" />
-      <option name="presentableId" value="LOCAL-01178" />
-      <option name="project" value="LOCAL" />
-      <updated>1575483276154</updated>
+      <workItem from="1575673322721" duration="3692000" />
     </task>
     <task id="LOCAL-01179" summary="adding exponential carbon dioxide">
       <created>1575483323393</created>
@@ -654,11 +633,32 @@
       <option name="project" value="LOCAL" />
       <updated>1575676769994</updated>
     </task>
-    <option name="localTasksCounter" value="1225" />
+    <task id="LOCAL-01225" summary="checking profile">
+      <created>1575676837489</created>
+      <option name="number" value="01225" />
+      <option name="presentableId" value="LOCAL-01225" />
+      <option name="project" value="LOCAL" />
+      <updated>1575676837489</updated>
+    </task>
+    <task id="LOCAL-01226" summary="checking profile">
+      <created>1575677033271</created>
+      <option name="number" value="01226" />
+      <option name="presentableId" value="LOCAL-01226" />
+      <option name="project" value="LOCAL" />
+      <updated>1575677033271</updated>
+    </task>
+    <task id="LOCAL-01227" summary="checking profile">
+      <created>1575677044948</created>
+      <option name="number" value="01227" />
+      <option name="presentableId" value="LOCAL-01227" />
+      <option name="project" value="LOCAL" />
+      <updated>1575677044948</updated>
+    </task>
+    <option name="localTasksCounter" value="1228" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284135000" />
+    <option name="totallyTimeSpent" value="284450000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1236,8 +1236,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile_manipulation/distributionPlots.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+        <state relative-caret-position="804">
+          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
