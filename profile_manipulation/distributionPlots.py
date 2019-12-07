@@ -72,6 +72,7 @@ for i in range(len(plot_order)):
     expt_axis.set_yscale('log')
     expt_axis.set_xlabel(units[param])
     expt_axis.grid()
+plt.tight_layout()
 plt.show()
 
 
