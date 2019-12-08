@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_T_writeScript.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW_uniform/diagnostic_gray_rrtmgSW_uniform_q_template.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,24 +26,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/tot/diagnostic_tot_T_writeScript.py">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/cst_q_profile/diagnostic_cst_q_profile_q_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="2" lean-forward="true" selection-end-line="39" />
+            <state relative-caret-position="324">
+              <caret line="99" selection-end-line="138" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_T_writeScript.py">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW_uniform/diagnostic_gray_rrtmgSW_uniform_q_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+            <state relative-caret-position="612">
+              <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,8 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/diagnostic_tot_q_writeScript.py" />
-        <option value="$PROJECT_DIR$/diagnostic_tot_T_writeScripty.py" />
         <option value="$PROJECT_DIR$/writeCSVandPKL_varing_co2_qRadCst.py" />
         <option value="$PROJECT_DIR$/data_scripts/varying_co2_qRadCst_eq.py" />
         <option value="$PROJECT_DIR$/profile_manipulation/getMassProfile.py" />
@@ -149,6 +147,8 @@
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_co2_writeScript.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_q_writeScript.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_T_writeScript.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW_uniform/diagnostic_gray_rrtmgSW_uniform_co2_template.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW_uniform/diagnostic_gray_rrtmgSW_uniform_q_template.py" />
       </list>
     </option>
   </component>
@@ -184,14 +184,14 @@
               <item name="climproj" type="462c0819:PsiDirectoryNode" />
               <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
               <item name="diagnostic" type="462c0819:PsiDirectoryNode" />
-              <item name="gray_rrtmgSW" type="462c0819:PsiDirectoryNode" />
+              <item name="cst_q_profile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
               <item name="climproj" type="462c0819:PsiDirectoryNode" />
               <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
               <item name="diagnostic" type="462c0819:PsiDirectoryNode" />
-              <item name="tot" type="462c0819:PsiDirectoryNode" />
+              <item name="gray_rrtmgSW_uniform" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -346,21 +346,7 @@
       <workItem from="1575480857057" duration="3960000" />
       <workItem from="1575653459934" duration="1277000" />
       <workItem from="1575673322721" duration="5074000" />
-      <workItem from="1575834714548" duration="1399000" />
-    </task>
-    <task id="LOCAL-01206" summary="adding exponential carbon dioxide">
-      <created>1575655953573</created>
-      <option name="number" value="01206" />
-      <option name="presentableId" value="LOCAL-01206" />
-      <option name="project" value="LOCAL" />
-      <updated>1575655953575</updated>
-    </task>
-    <task id="LOCAL-01207" summary="adding exponential carbon dioxide">
-      <created>1575657066568</created>
-      <option name="number" value="01207" />
-      <option name="presentableId" value="LOCAL-01207" />
-      <option name="project" value="LOCAL" />
-      <updated>1575657066569</updated>
+      <workItem from="1575834714548" duration="1522000" />
     </task>
     <task id="LOCAL-01208" summary="adding exponential carbon dioxide">
       <created>1575657133641</created>
@@ -691,11 +677,25 @@
       <option name="project" value="LOCAL" />
       <updated>1575836242100</updated>
     </task>
-    <option name="localTasksCounter" value="1255" />
+    <task id="LOCAL-01255" summary="grey simulations">
+      <created>1575836307086</created>
+      <option name="number" value="01255" />
+      <option name="presentableId" value="LOCAL-01255" />
+      <option name="project" value="LOCAL" />
+      <updated>1575836307086</updated>
+    </task>
+    <task id="LOCAL-01256" summary="grey simulations">
+      <created>1575836368296</created>
+      <option name="number" value="01256" />
+      <option name="presentableId" value="LOCAL-01256" />
+      <option name="project" value="LOCAL" />
+      <updated>1575836368296</updated>
+    </task>
+    <option name="localTasksCounter" value="1257" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="287231000" />
+    <option name="totallyTimeSpent" value="287354000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -804,26 +804,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/rad/diagnostic_rad_co2_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="103" selection-start-line="103" selection-end-line="104" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_T_writeScript.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
@@ -904,30 +884,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/cst_q_profile/diagnostic_cst_q_profile_co2_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="98" column="1" lean-forward="true" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/cst_q_profile/diagnostic_cst_q_profile_T_template.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
           <caret line="47" column="72" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/cst_q_profile/diagnostic_cst_q_profile_q_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="99" selection-start-line="99" selection-end-line="102" selection-end-column="79" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -1266,16 +1226,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profile_manipulation/distributionPlots.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/tot/diagnostic_tot_T_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1292,6 +1242,56 @@
           <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/cst_q_profile/diagnostic_cst_q_profile_co2_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="98" selection-end-line="138" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW_uniform/diagnostic_gray_rrtmgSW_uniform_co2_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile_manipulation/distributionPlots.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/cst_q_profile/diagnostic_cst_q_profile_q_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="99" selection-end-line="138" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW_uniform/diagnostic_gray_rrtmgSW_uniform_q_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
