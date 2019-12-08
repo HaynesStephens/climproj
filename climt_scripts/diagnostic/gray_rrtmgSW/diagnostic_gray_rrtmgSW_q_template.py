@@ -34,7 +34,7 @@ netcdf_monitor = NetCDFMonitor(nc_name,
                                write_on_store=True)
 
 radiation_sw = RRTMGShortwave(ignore_day_of_year=True)
-radiation_lw = RRTMGLongwave()
+radiation_lw = GrayLongwaveRadiation()
 slab = SlabSurface()
 simple_physics = SimplePhysics()
 moist_convection = EmanuelConvection()
