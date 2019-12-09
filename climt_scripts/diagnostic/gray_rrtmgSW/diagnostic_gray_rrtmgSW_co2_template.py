@@ -82,10 +82,7 @@ skip_quantities = ['convective_downdraft_specific_humidity_scale',
 def setInitValues(state, restart_state, var):
     if var not in skip_quantities:
         init_val = restart_state[var]
-        try:
-            state[var].values[:] = init_val
-        except:
-            print(var)
+        state[var].values[:] = init_val
 
 for var in restart_quantities:
     # print('Setting', var)
