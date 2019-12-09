@@ -85,7 +85,7 @@ def setInitValues(state, restart_state, var):
         state[var].values[:] = init_val
 
 for var in restart_quantities:
-    # print('Setting', var)
+    print('Setting', var)
     setInitValues(state, restart_state, var)
 ############################################
 
