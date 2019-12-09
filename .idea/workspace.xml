@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/diagnostic/gray_EXP/diagnostic_gray_T_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/diagnostic/gray_EXP/diagnostic_gray_T_template.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/climt_scripts/diagnostic/gray_EXP/diagnostic_gray_q_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/diagnostic/gray_EXP/diagnostic_gray_q_template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_T_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_T_template.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,34 +26,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_co2_writeScript.py">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_q_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_co2_template.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="55" selection-start-line="55" selection-end-line="79" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_EXP/diagnostic_gray_q_template.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
+            <state relative-caret-position="-241">
+              <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -63,10 +38,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_EXP/diagnostic_gray_T_template.py">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_T_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
+            <state relative-caret-position="522">
+              <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -158,7 +133,6 @@
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray/diagnostic_gray_T_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray/diagnostic_gray_q_writeScript.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray/diagnostic_gray_T_writeScript.py" />
-        <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_T_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_q_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_q_writeScript.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_T_writeScript.py" />
@@ -174,6 +148,7 @@
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_co2_writeScript.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_EXP/diagnostic_gray_q_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_EXP/diagnostic_gray_T_template.py" />
+        <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_T_template.py" />
       </list>
     </option>
   </component>
@@ -204,13 +179,6 @@
               <item name="climproj" type="462c0819:PsiDirectoryNode" />
               <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
               <item name="diagnostic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="diagnostic" type="462c0819:PsiDirectoryNode" />
-              <item name="gray_EXP" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
@@ -373,14 +341,7 @@
       <workItem from="1575673322721" duration="5074000" />
       <workItem from="1575834714548" duration="1856000" />
       <workItem from="1575836914947" duration="71000" />
-      <workItem from="1575859528021" duration="1702000" />
-    </task>
-    <task id="LOCAL-01228" summary="checking profile">
-      <created>1575677169332</created>
-      <option name="number" value="01228" />
-      <option name="presentableId" value="LOCAL-01228" />
-      <option name="project" value="LOCAL" />
-      <updated>1575677169332</updated>
+      <workItem from="1575859528021" duration="1755000" />
     </task>
     <task id="LOCAL-01229" summary="checking profile">
       <created>1575677182531</created>
@@ -718,11 +679,18 @@
       <option name="project" value="LOCAL" />
       <updated>1575875917434</updated>
     </task>
-    <option name="localTasksCounter" value="1277" />
+    <task id="LOCAL-01277" summary="grey simulations">
+      <created>1575875986468</created>
+      <option name="number" value="01277" />
+      <option name="presentableId" value="LOCAL-01277" />
+      <option name="project" value="LOCAL" />
+      <updated>1575875986468</updated>
+    </task>
+    <option name="localTasksCounter" value="1278" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289461000" />
+    <option name="totallyTimeSpent" value="289514000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1045,16 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_EXP/diagnostic_gray_q_writeScript.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_EXP/diagnostic_gray_T_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -1076,26 +1034,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="89" column="14" selection-end-line="143" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_q_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_T_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -1269,42 +1207,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profile_manipulation/distributionPlots.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_EXP/diagnostic_gray_co2_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_co2_writeScript.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_co2_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" selection-start-line="55" selection-end-line="79" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1319,10 +1227,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_EXP/diagnostic_gray_q_writeScript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_co2_writeScript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_co2_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="74" column="12" lean-forward="true" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile_manipulation/distributionPlots.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_q_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-241">
+          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_EXP/diagnostic_gray_T_template.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_T_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
