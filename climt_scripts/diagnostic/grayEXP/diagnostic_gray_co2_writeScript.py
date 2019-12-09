@@ -5,10 +5,10 @@ import newSbatch
 def createRun(input_ppm):
     irradiance = 1036
     insol = 320
-    job_name = 'diagnostic_gray_T_input{0}'.format(input_ppm)
+    job_name = 'diagnostic_gray_co2_input{0}'.format(input_ppm)
 
-    template_path = '/home/haynes13/code/python/climproj/climt_scripts/diagnostic/gray_EXP/diagnostic_gray_T_template.py'
-    job_path = '/home/haynes13/code/python/climproj/climt_scripts/diagnostic/gray_EXP/T/{0}.py'.format(job_name)
+    template_path = '/home/haynes13/code/python/climproj/climt_scripts/diagnostic/grayEXP/diagnostic_gray_co2_template.py'
+    job_path = '/home/haynes13/code/python/climproj/climt_scripts/diagnostic/grayEXP/co2/{0}.py'.format(job_name)
     print(job_path)
 
 
@@ -24,16 +24,16 @@ def createRun(input_ppm):
             fout.write(line)
 
     base_dir = '/project2/moyer/old_project/haynes/' # Needs to end in an '/'
-    test_dir = 'diagnostic/gray_EXP/T/' # Needs to end in an '/'
+    test_dir = 'diagnostic/grayEXP/co2/' # Needs to end in an '/'
     job_dir, sbatch_filename = newSbatch.newSbatch(base_dir, test_dir, job_name)
     return job_dir, sbatch_filename
 
-os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/diagnostic/gray_EXP/T/')
+os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/diagnostic/grayEXP/co2/')
 
 # TEMPLATE, ENTIRE LIST:
-input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
+input_ppm_list = [100]#, 150, 220, 270, 540, 1080, 1215]
 
 for input_ppm in input_ppm_list:
     job_dir, sbatch_filename = createRun(input_ppm)
     os.chdir(job_dir)
-    os.system('sbatch {0}'.format(sbatch_filename))
+    # os.system('sbatch {0}'.format(sbatch_filename))
