@@ -52,7 +52,7 @@ control_q = restart_state['specific_humidity'].copy()
 control_T = restart_state['air_temperature'].copy()
 
 restart_quantities =  list(restart_state.keys())
-print(restart_quantities)
+# print(restart_quantities)
 skip_quantities = ['convective_downdraft_specific_humidity_scale',
                    'time',
                    'upwelling_longwave_flux_in_air_assuming_clear_sky',
@@ -75,10 +75,13 @@ skip_quantities = ['convective_downdraft_specific_humidity_scale',
 def setInitValues(state, restart_state, var):
     if var not in skip_quantities:
         init_val = restart_state[var]
-        state[var].values[:] = init_val
+        try:
+            state[var].values[:] = init_val
+        except:
+            print(var)
 
 for var in restart_quantities:
-    print('Setting', var)
+    # print('Setting', var)
     setInitValues(state, restart_state, var)
 ############################################
 
