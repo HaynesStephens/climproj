@@ -91,7 +91,7 @@ for var in restart_quantities:
 # state['surface_albedo_for_direct_near_infrared'].values[:]  = 0.07
 # state['surface_albedo_for_diffuse_shortwave'].values[:]     = 0.07
 # state['surface_albedo_for_diffuse_near_infrared'].values[:] = 0.07
-state['zenith_angle'].values[:]                             = (2 * np.pi) / 5
+# state['zenith_angle'].values[:]                             = (2 * np.pi) / 5
 state['area_type'].values[:]                                = 'sea'
 # only the surface layer is given a zonal wind to spur convection
 state['eastward_wind'].values[0]                            = 5.0
