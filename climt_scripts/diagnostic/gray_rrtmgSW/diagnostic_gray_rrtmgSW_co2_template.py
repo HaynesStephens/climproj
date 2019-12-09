@@ -52,7 +52,7 @@ control_q = restart_state['specific_humidity'].copy()
 control_T = restart_state['air_temperature'].copy()
 
 restart_quantities =  list(restart_state.keys())
-# print(restart_quantities)
+print(restart_quantities)
 skip_quantities = ['convective_downdraft_specific_humidity_scale',
                    'time',
                    'upwelling_longwave_flux_in_air_assuming_clear_sky',
