@@ -26,7 +26,7 @@ def createRun(co2_ppm, irradiance, insol, template_py):
     job_dir, sbatch_filename = newSbatch.newSbatch(base_dir, test_dir, job_name)
     return job_dir, sbatch_filename
 
-os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/varying_co2_gray_rrtmgSW/290solar')
+# os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/varying_co2_gray_rrtmgSW/290solar')
 os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/varying_co2_gray_rrtmgSW/320solar')
 # TRIAL RUN ONLY USING 2 PPM
 co2_ppm_list = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
