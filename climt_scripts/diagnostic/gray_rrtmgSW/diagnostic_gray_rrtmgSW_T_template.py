@@ -44,7 +44,7 @@ state = get_default_state([simple_physics, moist_convection, dry_convection,
                            radiation_lw, radiation_sw, slab])
 
 ### RESTART VALUES GIVEN FROM THE CONTROL RUN
-restart_file_name = '/home/haynes13/climt_files/control_fullstore/' \
+restart_file_name = '/project2/moyer/old_project/haynes/climt_files/control_fullstore/' \
                     'i270_320solar_fullstore/i270_320solar_fullstore.eq.pkl'
 restart_file = open(restart_file_name, 'rb')
 restart_state = pickle.load(restart_file)
