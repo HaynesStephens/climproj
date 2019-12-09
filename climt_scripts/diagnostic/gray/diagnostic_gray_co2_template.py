@@ -52,30 +52,11 @@ control_T = restart_state['air_temperature'].copy()
 
 restart_quantities =  list(restart_state.keys())
 print(restart_quantities)
-skip_quantities = ['convective_downdraft_specific_humidity_scale',
-                   'time',
-                   'upwelling_longwave_flux_in_air_assuming_clear_sky',
-                   'downwelling_longwave_flux_in_air_assuming_clear_sky',
-                   'air_temperature_tendency_from_longwave_assuming_clear_sky',
-                   'air_temperature_tendency_from_longwave',
-                   'upwelling_shortwave_flux_in_air_assuming_clear_sky',
-                   'downwelling_shortwave_flux_in_air_assuming_clear_sky',
-                   'air_temperature_tendency_from_shortwave_assuming_clear_sky',
-                   'air_temperature_tendency_from_shortwave',
-                   'depth_of_slab_surface',
-                   'convective_state',
-                   'convective_precipitation_rate',
-                   'convective_downdraft_velocity_scale',
-                   'convective_downdraft_temperature_scale',
-                   'atmosphere_convective_available_potential_energy',
-                   'air_temperature_tendency_from_convection',
-                   'stratiform_precipitation_rate',
-                   'cloud_ice_particle_size',
-                   'cloud_area_fraction_in_atmosphere_layer',
-                   'mole_fraction_of_methane_in_air']
 
+# BECAUSE GRAY RADIATION NEEDS AND DOESN'T ACCEPT DIFFERENT PARAMETERS THAN RRTMG,
+# SWITCHING FROM SKIPPING QUANTITIES TO EXCLUSIVELY ADDING THEM BASED ON STORE_QUANTITIES
 def setInitValues(state, restart_state, var):
-    if var not in skip_quantities:
+    if var in store_quantities:
         init_val = restart_state[var]
         state[var].values[:] = init_val
 
