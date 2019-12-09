@@ -31,7 +31,7 @@ def createRun(input_ppm):
 os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/diagnostic/gray/co2/')
 
 # TEMPLATE, ENTIRE LIST:
-input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
+input_ppm_list = [100]#, 150, 220, 270, 540, 1080, 1215]
 
 for input_ppm in input_ppm_list:
     job_dir, sbatch_filename = createRun(input_ppm)

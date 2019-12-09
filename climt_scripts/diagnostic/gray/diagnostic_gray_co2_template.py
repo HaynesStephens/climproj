@@ -69,7 +69,8 @@ skip_quantities = ['convective_downdraft_specific_humidity_scale',
                    'convective_downdraft_temperature_scale',
                    'atmosphere_convective_available_potential_energy',
                    'air_temperature_tendency_from_convection',
-                   'stratiform_precipitation_rate']
+                   'stratiform_precipitation_rate',
+                   'cloud_ice_particle_size']
 
 def setInitValues(state, restart_state, var):
     if var not in skip_quantities:
