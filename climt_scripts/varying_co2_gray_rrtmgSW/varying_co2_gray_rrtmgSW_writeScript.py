@@ -30,7 +30,7 @@ os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/varying_co
 os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/varying_co2_gray_rrtmgSW/320solar')
 # TRIAL RUN ONLY USING 2 PPM
 co2_ppm_list = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-irradiance_list = [939, 1036]
+irradiance_list = [1036]
 insol_list = [320]
 insol_template_list = ['varying_co2_gray_rrtmgSW_template_320solar.py']
 

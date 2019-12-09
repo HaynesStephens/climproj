@@ -28,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_gray_rrtmgSW/varying_co2_gray_rrtmgSW_writeScript.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="224">
+              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -57,7 +57,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>humidit</find>
       <find>input</find>
       <find>inpu</find>
       <find>control</find>
@@ -87,6 +86,7 @@
       <find>print</find>
       <find>haynes</find>
       <find>pkl</find>
+      <find>varyin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -350,21 +350,7 @@
       <workItem from="1575673322721" duration="5074000" />
       <workItem from="1575834714548" duration="1856000" />
       <workItem from="1575836914947" duration="71000" />
-      <workItem from="1575859528021" duration="3211000" />
-    </task>
-    <task id="LOCAL-01247" summary="grey simulations">
-      <created>1575835765000</created>
-      <option name="number" value="01247" />
-      <option name="presentableId" value="LOCAL-01247" />
-      <option name="project" value="LOCAL" />
-      <updated>1575835765002</updated>
-    </task>
-    <task id="LOCAL-01248" summary="grey simulations">
-      <created>1575835771475</created>
-      <option name="number" value="01248" />
-      <option name="presentableId" value="LOCAL-01248" />
-      <option name="project" value="LOCAL" />
-      <updated>1575835771475</updated>
+      <workItem from="1575859528021" duration="3399000" />
     </task>
     <task id="LOCAL-01249" summary="grey simulations">
       <created>1575835957837</created>
@@ -695,11 +681,25 @@
       <option name="project" value="LOCAL" />
       <updated>1575906243861</updated>
     </task>
-    <option name="localTasksCounter" value="1296" />
+    <task id="LOCAL-01296" summary="grey simulations">
+      <created>1575906309296</created>
+      <option name="number" value="01296" />
+      <option name="presentableId" value="LOCAL-01296" />
+      <option name="project" value="LOCAL" />
+      <updated>1575906309296</updated>
+    </task>
+    <task id="LOCAL-01297" summary="grey simulations">
+      <created>1575906898944</created>
+      <option name="number" value="01297" />
+      <option name="presentableId" value="LOCAL-01297" />
+      <option name="project" value="LOCAL" />
+      <updated>1575906898944</updated>
+    </task>
+    <option name="localTasksCounter" value="1298" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290970000" />
+    <option name="totallyTimeSpent" value="291158000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1292,8 +1292,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_gray_rrtmgSW/varying_co2_gray_rrtmgSW_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="224">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
