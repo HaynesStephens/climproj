@@ -70,7 +70,14 @@ skip_quantities = ['convective_downdraft_specific_humidity_scale',
                    'convective_downdraft_temperature_scale',
                    'atmosphere_convective_available_potential_energy',
                    'air_temperature_tendency_from_convection',
-                   'stratiform_precipitation_rate']
+                   'stratiform_precipitation_rate',
+                   'surface_longwave_emissivity',
+                   'mole_fraction_of_cfc22_in_air',
+                   'mole_fraction_of_carbon_tetrachloride_in_air',
+                   'mole_fraction_of_cfc12_in_air',
+                   'longwave_optical_thickness_due_to_aerosol',
+                   'longwave_optical_thickness_due_to_cloud',
+                   'mole_fraction_of_cfc11_in_air']
 
 def setInitValues(state, restart_state, var):
     if var not in skip_quantities:
