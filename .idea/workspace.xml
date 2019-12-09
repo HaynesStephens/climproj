@@ -28,20 +28,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_gray_rrtmgSW/varying_co2_gray_rrtmgSW_writeScript.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+            <state relative-caret-position="533">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_co2_writeScript.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -57,7 +48,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>input</find>
       <find>inpu</find>
       <find>control</find>
       <find>control_q</find>
@@ -87,6 +77,7 @@
       <find>haynes</find>
       <find>pkl</find>
       <find>varyin</find>
+      <find>290</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -350,21 +341,7 @@
       <workItem from="1575673322721" duration="5074000" />
       <workItem from="1575834714548" duration="1856000" />
       <workItem from="1575836914947" duration="71000" />
-      <workItem from="1575859528021" duration="3412000" />
-    </task>
-    <task id="LOCAL-01250" summary="grey simulations">
-      <created>1575836004564</created>
-      <option name="number" value="01250" />
-      <option name="presentableId" value="LOCAL-01250" />
-      <option name="project" value="LOCAL" />
-      <updated>1575836004564</updated>
-    </task>
-    <task id="LOCAL-01251" summary="grey simulations">
-      <created>1575836068624</created>
-      <option name="number" value="01251" />
-      <option name="presentableId" value="LOCAL-01251" />
-      <option name="project" value="LOCAL" />
-      <updated>1575836068624</updated>
+      <workItem from="1575859528021" duration="3627000" />
     </task>
     <task id="LOCAL-01252" summary="grey simulations">
       <created>1575836077491</created>
@@ -695,11 +672,25 @@
       <option name="project" value="LOCAL" />
       <updated>1575906955359</updated>
     </task>
-    <option name="localTasksCounter" value="1299" />
+    <task id="LOCAL-01299" summary="grey simulations">
+      <created>1575906969575</created>
+      <option name="number" value="01299" />
+      <option name="presentableId" value="LOCAL-01299" />
+      <option name="project" value="LOCAL" />
+      <updated>1575906969575</updated>
+    </task>
+    <task id="LOCAL-01300" summary="grey simulations">
+      <created>1575911863316</created>
+      <option name="number" value="01300" />
+      <option name="presentableId" value="LOCAL-01300" />
+      <option name="project" value="LOCAL" />
+      <updated>1575911863317</updated>
+    </task>
+    <option name="localTasksCounter" value="1301" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291171000" />
+    <option name="totallyTimeSpent" value="291386000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1292,8 +1283,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_gray_rrtmgSW/varying_co2_gray_rrtmgSW_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        <state relative-caret-position="533">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

@@ -44,7 +44,7 @@ for i in range(len(co2_ppm_list)):
 
         job_dir, sbatch_filename = createRun(co2_ppm, irradiance, insol, template_py)
         os.chdir(job_dir)
-        # os.system('sbatch {0}'.format(sbatch_filename))
+        os.system('sbatch {0}'.format(sbatch_filename))
 
 
 
