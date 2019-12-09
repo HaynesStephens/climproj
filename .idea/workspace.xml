@@ -40,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray/diagnostic_gray_co2_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1184">
-              <caret line="74" column="51" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
+            <state relative-caret-position="193">
+              <caret line="75" column="26" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -72,7 +72,6 @@
       <find>haynes</find>
       <find>mol</find>
       <find>flatten</find>
-      <find>print</find>
       <find>q</find>
       <find>cst</find>
       <find>swapp</find>
@@ -90,6 +89,7 @@
       <find>gray</find>
       <find>to</find>
       <find>tot</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -341,21 +341,7 @@
       <workItem from="1575673322721" duration="5074000" />
       <workItem from="1575834714548" duration="1856000" />
       <workItem from="1575836914947" duration="71000" />
-      <workItem from="1575859528021" duration="344000" />
-    </task>
-    <task id="LOCAL-01215" summary="checking profile">
-      <created>1575675624180</created>
-      <option name="number" value="01215" />
-      <option name="presentableId" value="LOCAL-01215" />
-      <option name="project" value="LOCAL" />
-      <updated>1575675624180</updated>
-    </task>
-    <task id="LOCAL-01216" summary="checking profile">
-      <created>1575675804716</created>
-      <option name="number" value="01216" />
-      <option name="presentableId" value="LOCAL-01216" />
-      <option name="project" value="LOCAL" />
-      <updated>1575675804716</updated>
+      <workItem from="1575859528021" duration="943000" />
     </task>
     <task id="LOCAL-01217" summary="checking profile">
       <created>1575675882064</created>
@@ -686,11 +672,25 @@
       <option name="project" value="LOCAL" />
       <updated>1575859854662</updated>
     </task>
-    <option name="localTasksCounter" value="1264" />
+    <task id="LOCAL-01264" summary="grey simulations">
+      <created>1575859984503</created>
+      <option name="number" value="01264" />
+      <option name="presentableId" value="LOCAL-01264" />
+      <option name="project" value="LOCAL" />
+      <updated>1575859984504</updated>
+    </task>
+    <task id="LOCAL-01265" summary="grey simulations">
+      <created>1575860127915</created>
+      <option name="number" value="01265" />
+      <option name="presentableId" value="LOCAL-01265" />
+      <option name="project" value="LOCAL" />
+      <updated>1575860127915</updated>
+    </task>
+    <option name="localTasksCounter" value="1266" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="288103000" />
+    <option name="totallyTimeSpent" value="288702000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1286,8 +1286,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/gray/diagnostic_gray_co2_template.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1184">
-          <caret line="74" column="51" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
+        <state relative-caret-position="193">
+          <caret line="75" column="26" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

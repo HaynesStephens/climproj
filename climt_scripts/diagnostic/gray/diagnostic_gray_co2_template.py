@@ -29,6 +29,24 @@ store_quantities = ['air_temperature',
                     'downwelling_longwave_flux_in_air',
                     'downwelling_shortwave_flux_in_air']
 
+good_quanitites = ['surface_air_pressure',
+                   'air_pressure',
+                   'air_pressure_on_interface_levels',
+                   'air_temperature',
+                   'surface_temperature',
+                   'specific_humidity',
+                   'surface_specific_humidity',
+                   'cloud_base_mass_flux',
+                   'longwave_optical_depth_on_interface_levels',
+                   'downwelling_longwave_flux_in_air',
+                   'downwelling_shortwave_flux_in_air',
+                   'upwelling_longwave_flux_in_air',
+                   'upwelling_shortwave_flux_in_air',
+                   'surface_upward_latent_heat_flux',
+                   'surface_upward_sensible_heat_flux',
+                   'surface_thermal_capacity',
+                   'sea_water_density']
+
 netcdf_monitor = NetCDFMonitor(nc_name,
                                store_names=store_quantities,
                                write_on_store=True)
@@ -58,7 +76,10 @@ print(restart_quantities)
 def setInitValues(state, restart_state, var):
     if var in store_quantities:
         init_val = restart_state[var]
-        state[var].values[:] = init_val
+        try:
+            state[var].values[:] = init_val
+        except:
+            print(var)
 
 for var in restart_quantities:
     print('Setting', var)
