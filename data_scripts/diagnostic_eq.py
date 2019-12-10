@@ -45,7 +45,7 @@ def get_ds_batch(file_list):
 
 run_type = 'gray_rrtmgSW'
 diag_var_list = ['co2','q','T']
-for diag_var in diag_var_list
+for diag_var in diag_var_list:
     basepath = '/project2/moyer/old_project/haynes/climt_files/diagnostic/{0}/{1}/'.format(run_type, diag_var)
     input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
     job_list = ['diagnostic_{0}_{1}_input{2}'.format(run_type, diag_var, ppm) for ppm in input_ppm_list]
