@@ -6,8 +6,7 @@ store_quantities_1D = load_quantities_1D()
 
 input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
 fixed_list = ['q', 'T', 'co2']
-# run_type_list = ['rad', 'tot']
-run_type_list = ['swap_profiles']
+run_type_list = ['gray_rrtmgSW']
 
 
 for run_type in run_type_list:
