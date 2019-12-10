@@ -2,14 +2,6 @@ import pandas as pd
 import pickle
 
 
-run_type = 'gray_rrtmgSW'
-diag_var = 'co2'
-basepath = '/project2/moyer/old_project/haynes/climt_files/diagnostic/{0}/{1}/'.format(run_type, diag_var)
-input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
-job_list = ['diagnostic_{0}_{1}_input{2}'.format(run_type, diag_var, ppm) for ppm in input_ppm_list]
-file_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(basepath, job) for job in job_list]
-
-
 def get_df(fname, input_ppm):
     pkl         = pickle.load(open(fname, 'rb'))
     sw_up       = pkl['upwelling_shortwave_flux_in_air']
@@ -51,19 +43,27 @@ def get_ds_batch(file_list):
     return df0
 
 
-print('Loading & combining dataframes.')
-df = get_ds_batch(file_list)
+run_type = 'gray_rrtmgSW'
+diag_var_list = ['co2','q','T']
+for diag_var in diag_var_list
+    basepath = '/project2/moyer/old_project/haynes/climt_files/diagnostic/{0}/{1}/'.format(run_type, diag_var)
+    input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
+    job_list = ['diagnostic_{0}_{1}_input{2}'.format(run_type, diag_var, ppm) for ppm in input_ppm_list]
+    file_list = ['{0}{1}/{1}_pkl_eq.pkl'.format(basepath, job) for job in job_list]
 
-outpath = '/home/haynes13/code/python/climproj/' \
-          'data_calculated/diagnostic_{0}_{1}_eq.csv'.format(run_type, diag_var)
-f = open(outpath, 'w')
-comments = ['# This is a dataframe of the used to calculate anomalies \n',
-            '# for the diagnostic group,\n',
-            '# for varying {0} profiles. Used for:\n'.format(diag_var),
-            '# \n']
-print('Writing comments:')
-[print(comment) for comment in comments]
-[f.write(comment) for comment in comments]
-print('Writing dataframe to:\n' + outpath)
-df.to_csv(f, index=False)
-f.close()
+    print('Loading & combining dataframes.')
+    df = get_ds_batch(file_list)
+
+    outpath = '/home/haynes13/code/python/climproj/' \
+              'data_calculated/diagnostic_{0}_{1}_eq.csv'.format(run_type, diag_var)
+    f = open(outpath, 'w')
+    comments = ['# This is a dataframe of the used to calculate anomalies \n',
+                '# for the diagnostic group,\n',
+                '# for varying {0} profiles. Used for:\n'.format(diag_var),
+                '# \n']
+    print('Writing comments:')
+    [print(comment) for comment in comments]
+    [f.write(comment) for comment in comments]
+    print('Writing dataframe to:\n' + outpath)
+    df.to_csv(f, index=False)
+    f.close()
