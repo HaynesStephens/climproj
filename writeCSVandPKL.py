@@ -70,7 +70,7 @@ def load_quantities_1D():
             'specific_humidity',
             'air_pressure_on_interface_levels',
             'air_temperature_tendency_from_convection',
-            # 'air_temperature_tendency_from_longwave',
+            'air_temperature_tendency_from_longwave',
             'air_temperature_tendency_from_shortwave',
             'mole_fraction_of_carbon_dioxide_in_air',
             'upwelling_longwave_flux_in_air',

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="grey simulations">
+    <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/T_response_check.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writeCSVandPKL.py" beforeDir="false" afterPath="$PROJECT_DIR$/writeCSVandPKL.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +17,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profile_manipulation/distributionPlots.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="493">
               <caret line="32" column="7" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="7" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -25,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="344">
-              <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
+              <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
               <folding>
                 <element signature="e#223#241#0" expanded="true" />
               </folding>
@@ -46,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -56,6 +57,23 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/tot/diagnostic_tot_co2_writeScript.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/T_response_check.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -107,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/climt_scripts/diagnostic/cst_q_profile/diagnostic_cst_q_profile_co2_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/cst_q_profile/diagnostic_cst_q_profile_q_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/cst_q_profile/diagnostic_cst_q_profile_T_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/dry/diagnostic_dry_co2_writeScript.py" />
@@ -155,13 +172,14 @@
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW_uniform/diagnostic_gray_rrtmgSW_uniform_q_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2_gray_rrtmgSW/varying_co2_gray_rrtmgSW_template_320solar.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2_gray_rrtmgSW/varying_co2_gray_rrtmgSW_writeScript.py" />
-        <option value="$PROJECT_DIR$/writeCSVandPKL.py" />
         <option value="$PROJECT_DIR$/writeCSVandPKL_diagnostic.py" />
         <option value="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" />
+        <option value="$PROJECT_DIR$/profile_manipulation/T_response_check.py" />
+        <option value="$PROJECT_DIR$/writeCSVandPKL.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
@@ -170,6 +188,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,12 +197,28 @@
               <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
               <item name="climproj" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="climproj" type="462c0819:PsiDirectoryNode" />
+              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="climproj" type="462c0819:PsiDirectoryNode" />
+              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="diagnostic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="climproj" type="462c0819:PsiDirectoryNode" />
+              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="diagnostic" type="462c0819:PsiDirectoryNode" />
+              <item name="tot" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -193,11 +229,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/climt_scripts/diagnostic" />
       <recent name="$PROJECT_DIR$/climt_scripts/diagnostic/grey" />
       <recent name="$PROJECT_DIR$/climt_scripts/varying_co2_qRadCst" />
       <recent name="$PROJECT_DIR$/climt_scripts/varying_solar" />
-      <recent name="$PROJECT_DIR$/climt_scripts/varying_co2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -333,14 +369,8 @@
       <workItem from="1575834714548" duration="1856000" />
       <workItem from="1575836914947" duration="71000" />
       <workItem from="1575859528021" duration="3756000" />
-      <workItem from="1575996026160" duration="1356000" />
-    </task>
-    <task id="LOCAL-01259" summary="grey simulations">
-      <created>1575836567065</created>
-      <option name="number" value="01259" />
-      <option name="presentableId" value="LOCAL-01259" />
-      <option name="project" value="LOCAL" />
-      <updated>1575836567065</updated>
+      <workItem from="1575996026160" duration="1500000" />
+      <workItem from="1576022618645" duration="141000" />
     </task>
     <task id="LOCAL-01260" summary="grey simulations">
       <created>1575836626046</created>
@@ -678,11 +708,18 @@
       <option name="project" value="LOCAL" />
       <updated>1575997679895</updated>
     </task>
-    <option name="localTasksCounter" value="1308" />
+    <task id="LOCAL-01308" summary="grey simulations">
+      <created>1575998698344</created>
+      <option name="number" value="01308" />
+      <option name="presentableId" value="LOCAL-01308" />
+      <option name="project" value="LOCAL" />
+      <updated>1575998698344</updated>
+    </task>
+    <option name="localTasksCounter" value="1309" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292871000" />
+    <option name="totallyTimeSpent" value="293156000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -695,8 +732,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21082391" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21405493" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -790,16 +828,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_T_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="96" column="75" selection-start-line="96" selection-start-column="72" selection-end-line="96" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/exp_co2_profile/diagnostic_exp_co2_profile_q_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1015,16 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="3" lean-forward="true" selection-end-line="40" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/tot/diagnostic_tot_co2_writeScript.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" lean-forward="true" selection-end-line="39" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -1247,20 +1265,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile_manipulation/distributionPlots.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="493">
           <caret line="32" column="7" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="7" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
-          <folding>
-            <element signature="e#223#241#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1278,6 +1286,29 @@
           <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/tot/diagnostic_tot_co2_writeScript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/T_response_check.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+          <folding>
+            <element signature="e#223#241#0" expanded="true" />
           </folding>
         </state>
       </provider>
