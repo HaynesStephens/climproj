@@ -8,7 +8,7 @@ def plotProfiles(csv_files, labels, air_pressure, save_name):
         filename = csv_files[i]
         label = labels[i]
         time_series = np.loadtxt(filename, delimiter = ',', label = label)
-        plt.plot(time_series[-1].flatten(), air_pressure, 'o')
+        plt.plot(time_series[-1].flatten()[:20], air_pressure[:20], 'o')
     plt.yscale('log')
     plt.gca().invert_yaxis()
     plt.show()
@@ -61,7 +61,6 @@ def plotLWPartition(lw_up_csv, lw_dn_csv, ts_csv, save_name):
 
 # PROFILE PLOTS
 base_name = '/project2/moyer/old_project/haynes/climt_files/diagnostic/tot/'
-diag_var = 'T'
 co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
 save_name_list = ['/home/haynes13/code/python/climproj/figures/diagnostics/tot/diagnostic_tot_{0}_input{1}_profile_T.png'.format(diag_var, ppm) for ppm in input_ppm_list]
 run_name = ['{0}{1}/diagnostic_tot_{1}_input{2}/diagnostic_tot_{1}_input{2}'.format(base_name, diag_var, ppm) for ppm in input_ppm_list]
