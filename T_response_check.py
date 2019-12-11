@@ -8,7 +8,7 @@ def plotProfiles(csv_files, ppm_list, air_pressure, save_name):
         filename = csv_files[i]
         label = ppm_list[i]
         time_series = np.loadtxt(filename, delimiter = ',')
-        plt.plot(time_series[-1].flatten()[:20], air_pressure[:20], 'o', label = label)
+        plt.plot(time_series[-1].flatten()[:20], air_pressure[:20], '-o', markersize=1,label = label)
     plt.yscale('log')
     plt.gca().invert_yaxis()
     plt.show()
