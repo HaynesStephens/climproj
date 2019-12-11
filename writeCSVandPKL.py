@@ -211,7 +211,7 @@ def saveMoistEnthalpy(nc, save_path):
     print('Saved:', var_name)
 
 
-def saveEQpkl(save_path, nc, years_back = 3):
+def saveEQpkl(save_path, nc, years_back = 0.30):
     skip_list = load_skip_list()
     print('Saving EQ Pickle!')
     eq_pkl = {}
