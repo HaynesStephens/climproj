@@ -19,10 +19,10 @@ def plotLWPartition(lw_up_csv, lw_dn_csv, ts_csv, save_name):
     lw_up   = np.loadtxt(lw_up_csv, delimiter = ',')
     lw_dn   = np.loadtxt(lw_dn_csv, delimiter = ',')
     ts      = np.loadtxt(ts_csv, delimiter = ',')
-    net_lw = lw_up_surf - lw_dn_surf
 
     lw_up_surf = lw_up[:, 0]
     lw_dn_surf = lw_dn[:, 0]
+    net_lw = lw_up_surf - lw_dn_surf
     sigma = 5.67 * (10**(-8))
     ts_lw = sigma * (ts**4)
     time = np.arange(lw_up_surf.size)
