@@ -2,14 +2,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plotProfile(csv_file):
+def plotProfile(csv_file, air_pressure):
     time_series = np.loadtxt(csv_file, delimiter = ',')
     initial_profile = time_series[0].flatten()
     for i in range(len(time_series)):
         profile_i = time_series[i].flatten()
         if not np.array_equal(profile_i, initial_profile):
             print('WOAH!')
-
+    plt.plot()
 
 
 
