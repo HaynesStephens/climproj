@@ -30,13 +30,12 @@ def createRun(input_ppm, diag_var, diag_type):
     job_dir, sbatch_filename = newSbatch.newSbatch(base_dir, test_dir, job_name)
     return job_dir, sbatch_filename
 
-os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/diagnostic/{0}/{1}/'.format(diag_type, diag_var))
-
 # TEMPLATE, ENTIRE LIST:
 diag_type = 'short_tot'
 input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
 diag_var_list = ['co2', 'q', 'T']
 for diag_var in diag_var_list:
+    os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/diagnostic/{0}/{1}/'.format(diag_type, diag_var))
     for input_ppm in input_ppm_list:
         job_dir, sbatch_filename = createRun(input_ppm, diag_var, diag_type)
         os.chdir(job_dir)
