@@ -31,7 +31,7 @@ def plotLWPartition(lw_up_csv, lw_dn_csv, ts_csv, save_name):
     plt.plot(time, lw_dn_surf, label='Dn')
     plt.plot(time, ts_lw, '--', label = 'Ts', c = 'k')
     plt.plot(net_lw, label = 'net Up')
-    plt.title('Net: {0}'.format(net_lw[-1]))
+    plt.title('Net: {0:2f}'.format(net_lw[-1]))
     plt.legend()
     plt.savefig(save_name)
 
