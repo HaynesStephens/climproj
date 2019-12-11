@@ -69,7 +69,7 @@ save_name_list = ['/home/haynes13/code/python/climproj/figures/diagnostics/tot/d
 run_name = ['{0}{1}/diagnostic_tot_{1}_input{2}/diagnostic_tot_{1}_input{2}'.format(base_name, diag_var, ppm) for ppm in input_ppm_list]
 Tair_csv_list = ['{0}_air_temperature.csv'.format(name) for name in run_name]
 Pair_csv_list = ['{0}_air_pressure.csv'.format(name) for name in run_name]
-for i in range(len(ts_csv_list)):
+for i in range(len(run_name)):
     Tair_csv  = Tair_csv_list[i]
     Pair_csv  = Pair_csv_list[i]
     save_name = save_name_list[i]
