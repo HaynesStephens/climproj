@@ -60,14 +60,13 @@ def plotLWPartition(lw_up_csv, lw_dn_csv, ts_csv, save_name):
 
 
 # PROFILE PLOTS
-base_name = '/project2/moyer/old_project/haynes/climt_files/diagnostic/tot/'
-co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-save_name_list = ['/home/haynes13/code/python/climproj/figures/diagnostics/tot/diagnostic_tot_{0}_input{1}_profile_T.png'.format(diag_var, ppm) for ppm in input_ppm_list]
-run_name = ['{0}{1}/diagnostic_tot_{1}_input{2}/diagnostic_tot_{1}_input{2}'.format(base_name, diag_var, ppm) for ppm in input_ppm_list]
+base_name = '/project2/moyer/old_project/haynes/climt_files/varying_co2/320solar/'
+ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
+run_name = ['{0}/i{1}_320solar/i{1}_320solar'.format(base_name, ppm) for ppm in ppm_list]
 Tair_csv_list = ['{0}_air_temperature.csv'.format(name) for name in run_name]
 air_pressure_csv = '{0}_air_pressure.csv'.format(run_name[0])
 air_pressure= np.loadtxt(air_pressure_csv, delimiter = ',')[0].flatten()
 for i in range(len(run_name)):
     Tair_csv  = Tair_csv_list[i]
     save_name = save_name_list[i]
-    plotProfile(Tair_csv, air_pressure, save_name)
+    plotProfile(Tair_csv, ppm_list, air_pressure, save_name)
