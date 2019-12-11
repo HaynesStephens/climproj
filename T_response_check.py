@@ -61,13 +61,11 @@ def plotProfiles(csv_files, ppm_list, T_emit_list, air_pressure, save_name):
         time_series = np.loadtxt(filename, delimiter = ',')
         plot_pressure = air_pressure[:20]
         plot_z = pressure_to_height_std(plot_pressure * units.pascal)
-        plot_t = time_series[-1].flatten()[:20]
-        a, b = np.polyfit(plot_t, plot_z, 1)
-        z_emit = (a * T_emit) + b
+        plot_T = time_series[-1].flatten()[:20]
+        z_emit = np.interp(T_emit, plot_T, plot_z)
         # z_emit = pressure_to_height_std(P_emit * units.pascal)
         plt.plot(T_emit, z_emit, 'x', c='k')
-        plt.plot(plot_t, (a*plot_t)+b, '--')
-        plt.plot(plot_t, plot_z,
+        plt.plot(plot_T, plot_z,
                  '-o', markersize=1,label = '{0}: {1:.2f}'.format(label, z_emit))
 
     # plt.yscale('log')
