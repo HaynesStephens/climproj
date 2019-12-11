@@ -575,7 +575,7 @@ def plotTransTempHumSeries(ax, file_name, control_pkl):
 
 # Vary co2 run
 co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-co2_ppm_list    = [270, 405, 540]
+co2_ppm_list    = [100, 150, 220, 270, 540, 1080, 1215]
 insol_list      = [290, 320]
 for insol in insol_list:
     test_dir = 'varying_co2/{0}solar/'.format(insol)
