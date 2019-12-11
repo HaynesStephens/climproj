@@ -63,7 +63,7 @@ def plotLWPartition(lw_up_csv, lw_dn_csv, ts_csv, save_name):
 # PROFILE PLOTS
 base_name = '/project2/moyer/old_project/haynes/climt_files/varying_co2/320solar/'
 ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-run_name = ['{0}/i{1}_320solar/i{1}_320solar'.format(base_name, ppm) for ppm in ppm_list]
+run_name = ['{0}i{1}_320solar/i{1}_320solar'.format(base_name, ppm) for ppm in ppm_list]
 Tair_csv_list = ['{0}_air_temperature.csv'.format(name) for name in run_name]
 air_pressure_csv = '{0}_air_pressure.csv'.format(run_name[0])
 air_pressure= np.loadtxt(air_pressure_csv, delimiter = ',')[0].flatten()
