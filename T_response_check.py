@@ -65,7 +65,7 @@ def plotProfiles(csv_files, ppm_list, T_emit_list, air_pressure, save_name):
         if i == 0:
             print(plot_T)
             print(plot_z)
-        z_emit = np.interp(T_emit, plot_T[::-1], plot_z[::-1])
+        z_emit = np.interp(T_emit, plot_T.copy()[::-1], plot_z.copy()[::-1])
         # z_emit = pressure_to_height_std(P_emit * units.pascal)
         plt.plot(T_emit, z_emit, 'x', c='k')
         plt.plot(plot_T, plot_z,
