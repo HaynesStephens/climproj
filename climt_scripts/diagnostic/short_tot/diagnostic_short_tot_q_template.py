@@ -45,7 +45,7 @@ state = get_default_state([simple_physics, moist_convection, dry_convection,
 
 ### RESTART VALUES GIVEN FROM THE CONTROL RUN
 restart_file_name = '/home/haynes13/climt_files/control_fullstore/' \
-                    'i270_320solar_fullstore/i270_320solar_fullstore.eq.pkl'
+                    'i270_320solar_fullstore/i270_320solar_fullstore_pkl_eq.pkl'
 restart_file = open(restart_file_name, 'rb')
 restart_state = pickle.load(restart_file)
 control_T = restart_state['air_temperature'].copy()
@@ -95,7 +95,7 @@ state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(270) * 10**(-
 
 ### FIXED HUMIDITY PROFILE TO INPUT ###
 fixed_q_file_name = '/project2/moyer/old_project/haynes/climt_files/' \
-               'varying_co2/320solar/i{0}_320solar/i{0}_320solar.eq.pkl'.format(input_ppm)
+               'varying_co2/320solar/i{0}_320solar/i{0}_320solar_pkl_eq.pkl'.format(input_ppm)
 fixed_q_file = open(fixed_q_file_name, 'rb')
 fixed_q_state = pickle.load(fixed_q_file)
 fixed_q = fixed_q_state['specific_humidity'].copy()
