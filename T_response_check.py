@@ -69,4 +69,4 @@ air_pressure= np.loadtxt(air_pressure_csv, delimiter = ',')[0].flatten()
 save_name = ''
 for i in range(len(run_name)):
     Tair_csv  = Tair_csv_list[i]
-    plotProfile(Tair_csv, ppm_list, air_pressure, save_name)
+    plotProfiles(Tair_csv, ppm_list, air_pressure, save_name)
