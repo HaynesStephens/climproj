@@ -62,6 +62,9 @@ def plotProfiles(csv_files, ppm_list, T_emit_list, air_pressure, save_name):
         plot_pressure = air_pressure[:20]
         plot_z = pressure_to_height_std(plot_pressure * units.pascal)
         plot_T = time_series[-1].flatten()[:20]
+        if i == 0:
+            print(plot_T)
+            print(plot_z)
         z_emit = np.interp(T_emit, plot_T, plot_z)
         # z_emit = pressure_to_height_std(P_emit * units.pascal)
         plt.plot(T_emit, z_emit, 'x', c='k')
