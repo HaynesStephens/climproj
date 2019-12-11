@@ -62,9 +62,10 @@ def plotProfiles(csv_files, ppm_list, T_emit_list, air_pressure, save_name):
         plot_pressure = air_pressure[:20]
         plot_t = time_series[-1].flatten()[:20]
         a, b = np.polyfit(plot_t, plot_pressure, 1)
-        P_emit = a * T_emit + b
+        P_emit = (a * T_emit) + b
         z_emit = pressure_to_height_std(P_emit * units.pascal)
         plt.plot(T_emit, P_emit, 'x', c='k')
+        plt.plot(plot_t, (a*plot_t)+b, '--')
         plt.plot(plot_t, plot_pressure,
                  '-o', markersize=1,label = '{0}: {1:.2f}'.format(label, z_emit))
 
