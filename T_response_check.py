@@ -45,5 +45,5 @@ for i in range(len(ts_csv_list)):
     lw_dn_csv = lw_dn_csv_list[i]
     ts_csv    = ts_csv_list[i]
     save_name = save_name_list[i]
-    plotLWPartition(lw_up_csv, lw_dn_csv, ts_csv)
+    plotLWPartition(lw_up_csv, lw_dn_csv, ts_csv, save_name)
 

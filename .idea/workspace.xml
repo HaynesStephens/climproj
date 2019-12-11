@@ -61,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/T_response_check.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+            <state relative-caret-position="616">
+              <caret line="47" column="59" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -369,21 +369,7 @@
       <workItem from="1575836914947" duration="71000" />
       <workItem from="1575859528021" duration="3756000" />
       <workItem from="1575996026160" duration="1500000" />
-      <workItem from="1576022618645" duration="1490000" />
-    </task>
-    <task id="LOCAL-01269" summary="grey simulations">
-      <created>1575860999435</created>
-      <option name="number" value="01269" />
-      <option name="presentableId" value="LOCAL-01269" />
-      <option name="project" value="LOCAL" />
-      <updated>1575860999435</updated>
-    </task>
-    <task id="LOCAL-01270" summary="grey simulations">
-      <created>1575861061616</created>
-      <option name="number" value="01270" />
-      <option name="presentableId" value="LOCAL-01270" />
-      <option name="project" value="LOCAL" />
-      <updated>1575861061617</updated>
+      <workItem from="1576022618645" duration="1548000" />
     </task>
     <task id="LOCAL-01271" summary="grey simulations">
       <created>1575861147262</created>
@@ -714,11 +700,25 @@
       <option name="project" value="LOCAL" />
       <updated>1576024294727</updated>
     </task>
-    <option name="localTasksCounter" value="1318" />
+    <task id="LOCAL-01318" summary="checks">
+      <created>1576024365275</created>
+      <option name="number" value="01318" />
+      <option name="presentableId" value="LOCAL-01318" />
+      <option name="project" value="LOCAL" />
+      <updated>1576024365275</updated>
+    </task>
+    <task id="LOCAL-01319" summary="checks">
+      <created>1576024405330</created>
+      <option name="number" value="01319" />
+      <option name="presentableId" value="LOCAL-01319" />
+      <option name="project" value="LOCAL" />
+      <updated>1576024405330</updated>
+    </task>
+    <option name="localTasksCounter" value="1320" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294505000" />
+    <option name="totallyTimeSpent" value="294563000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1311,8 +1311,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/T_response_check.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+        <state relative-caret-position="616">
+          <caret line="47" column="59" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
