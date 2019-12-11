@@ -2,15 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plotProfile(csv_file, air_pressure, save_name):
-    time_series = np.loadtxt(csv_file, delimiter = ',')
-    initial_profile = time_series[0].flatten()
-    def check(arr1, arr2):
-        if not np.array_equal(arr1, arr2):
-            print('WOAH!')
-    [check(initial_profile, t_series) for t_series in time_series]
+def plotProfiles(csv_files, labels, air_pressure, save_name):
     plt.figure()
-    plt.plot(initial_profile, air_pressure)
+    for i in range(len(csv_files)):
+        filename = csv_files[i]
+        label = labels[i]
+        time_series = np.loadtxt(filename, delimiter = ',', label = label)
+        plt.plot(time_series[-1].flatten(), air_pressure, 'o')
     plt.yscale('log')
     plt.gca().invert_yaxis()
     plt.show()
