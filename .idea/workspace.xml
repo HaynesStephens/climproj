@@ -61,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/T_response_check.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+            <state relative-caret-position="399">
+              <caret line="32" column="100" selection-start-line="32" selection-start-column="100" selection-end-line="32" selection-end-column="100" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -208,6 +208,11 @@
               <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
               <item name="diagnostic" type="462c0819:PsiDirectoryNode" />
               <item name="tot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="climproj" type="462c0819:PsiDirectoryNode" />
+              <item name="figures" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -364,21 +369,7 @@
       <workItem from="1575836914947" duration="71000" />
       <workItem from="1575859528021" duration="3756000" />
       <workItem from="1575996026160" duration="1500000" />
-      <workItem from="1576022618645" duration="1182000" />
-    </task>
-    <task id="LOCAL-01264" summary="grey simulations">
-      <created>1575859984503</created>
-      <option name="number" value="01264" />
-      <option name="presentableId" value="LOCAL-01264" />
-      <option name="project" value="LOCAL" />
-      <updated>1575859984504</updated>
-    </task>
-    <task id="LOCAL-01265" summary="grey simulations">
-      <created>1575860127915</created>
-      <option name="number" value="01265" />
-      <option name="presentableId" value="LOCAL-01265" />
-      <option name="project" value="LOCAL" />
-      <updated>1575860127915</updated>
+      <workItem from="1576022618645" duration="1391000" />
     </task>
     <task id="LOCAL-01266" summary="grey simulations">
       <created>1575860694179</created>
@@ -709,11 +700,25 @@
       <option name="project" value="LOCAL" />
       <updated>1576023947842</updated>
     </task>
-    <option name="localTasksCounter" value="1313" />
+    <task id="LOCAL-01313" summary="checks">
+      <created>1576024030408</created>
+      <option name="number" value="01313" />
+      <option name="presentableId" value="LOCAL-01313" />
+      <option name="project" value="LOCAL" />
+      <updated>1576024030408</updated>
+    </task>
+    <task id="LOCAL-01314" summary="checks">
+      <created>1576024051738</created>
+      <option name="number" value="01314" />
+      <option name="presentableId" value="LOCAL-01314" />
+      <option name="project" value="LOCAL" />
+      <updated>1576024051738</updated>
+    </task>
+    <option name="localTasksCounter" value="1315" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294197000" />
+    <option name="totallyTimeSpent" value="294406000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -778,7 +783,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cutting Shanshan arrays" />
     <MESSAGE value="getting table values" />
     <MESSAGE value="adding strat precip" />
     <MESSAGE value="adding back normal runs" />
@@ -803,7 +807,8 @@
     <MESSAGE value="adding exponential carbon dioxide" />
     <MESSAGE value="checking profile" />
     <MESSAGE value="grey simulations" />
-    <option name="LAST_COMMIT_MESSAGE" value="grey simulations" />
+    <MESSAGE value="checks" />
+    <option name="LAST_COMMIT_MESSAGE" value="checks" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1306,8 +1311,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/T_response_check.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        <state relative-caret-position="399">
+          <caret line="32" column="100" selection-start-line="32" selection-start-column="100" selection-end-line="32" selection-end-column="100" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
