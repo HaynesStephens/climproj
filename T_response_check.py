@@ -29,7 +29,7 @@ def plotLWPartition(lw_up_csv, lw_dn_csv, ts_csv):
 base_name = '/project2/moyer/old_project/haynes/climt_files/diagnostic/tot/'
 diag_var = 'T'
 input_ppm_list = [100]#, 150, 220, 270, 540, 1080, 1215]
-run_name = ['{0}{1}/diagnostic_tot_{1}_input{2}'.format(base_name, diag_var, ppm) for ppm in input_ppm_list]
+run_name = ['{0}{1}/diagnostic_tot_{1}_input{2}/diagnostic_tot_{1}_input{2}'.format(base_name, diag_var, ppm) for ppm in input_ppm_list]
 lw_up_csv_list = ['{0}_upwelling_longwave_flux_in_air.csv'.format(name) for name in run_name]
 lw_dn_csv_list = ['{0}_downwelling_longwave_flux_in_air.csv'.format(name) for name in run_name]
 ts_csv_list = ['{0}_surface_temperature.csv'.format(name) for name in run_name]
