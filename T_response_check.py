@@ -22,16 +22,15 @@ def plotLWPartition(lw_up_csv, lw_dn_csv, ts_csv, save_name):
 
     lw_up_surf = lw_up[:, 0]
     lw_dn_surf = lw_dn[:, 0]
-    net_lw = lw_up_surf - lw_dn_surf
+    net_lw_surf = lw_up_surf - lw_dn_surf
     sigma = 5.67 * (10**(-8))
     ts_lw = sigma * (ts**4)
     time = np.arange(lw_up_surf.size)
 
-    plt.plot(time, lw_up_surf, label='Up')
-    plt.plot(time, lw_dn_surf, label='Dn')
+    plt.plot(time, lw_up_surf, label='Up: {0:2f}'.format(lw_up_surf[-1]))
+    plt.plot(time, lw_dn_surf, label='Dn: {0:2f}'.format(lw_dn_surf[-1]))
     plt.plot(time, ts_lw, '--', label = 'Ts', c = 'k')
-    plt.plot(net_lw, label = 'net Up')
-    plt.title('Net: {0:2f}'.format(net_lw[-1]))
+    plt.plot(net_lw_surf, label = 'Net Up: {0:2f}'.format(net_lw_surf[-1]))
     plt.legend()
     plt.savefig(save_name)
 
