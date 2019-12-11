@@ -12,6 +12,7 @@ def plotProfile(csv_file, air_pressure, save_name):
     plt.figure()
     plt.plot(initial_profile, air_pressure)
     plt.yscale('log')
+    plt.gca().invert_yaxis()
     plt.show()
     # plt.savefig(save_name)
 
