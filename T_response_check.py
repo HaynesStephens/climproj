@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 def plotProfile(csv_file, air_pressure, save_name):
     time_series = np.loadtxt(csv_file, delimiter = ',')
     initial_profile = time_series[0].flatten()
-    for i in range(len(time_series)):
-        profile_i = time_series[i].flatten()
-        if not np.array_equal(profile_i, initial_profile):
+    def check(arr1, arr2):
+        if not np.array_equal(arr1, arr2):
             print('WOAH!')
+    [check(initial_profile, t_series) for t_series in time_series]
     plt.figure()
     plt.plot(initial_profile, air_pressure)
     plt.yscale('log')
