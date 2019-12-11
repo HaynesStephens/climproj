@@ -4,7 +4,7 @@ import os
 import pickle
 
 input_param = 'T'
-input_ppm = 1080
+input_ppm = 270
 expt_name = 'swap_profiles'
 
 control_ppm = 270
