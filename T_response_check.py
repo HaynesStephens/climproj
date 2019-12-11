@@ -2,11 +2,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plotProfiles(csv_files, labels, air_pressure, save_name):
+def plotProfiles(csv_files, ppm_list, air_pressure, save_name):
     plt.figure()
     for i in range(len(csv_files)):
         filename = csv_files[i]
-        label = labels[i]
+        label = ppm_list[i]
         time_series = np.loadtxt(filename, delimiter = ',', label = label)
         plt.plot(time_series[-1].flatten()[:20], air_pressure[:20], 'o')
     plt.yscale('log')
