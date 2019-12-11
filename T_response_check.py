@@ -4,10 +4,13 @@ import matplotlib.pyplot as plt
 
 def plotProfile(csv_file):
     time_series = np.loadtxt(csv_file, delimiter = ',')
+    initial_profile = time_series[0].flatten()
     for i in range(len(time_series)):
-        if i == 0:
-            initial_profile = time_series[i].flatten()
         profile_i = time_series[i].flatten()
+        if not np.array_equal(profile_i, initial_profile):
+            print('WOAH!')
+
+
 
 
 def plotLWPartition(lw_up_csv, lw_dn_csv, ts_csv, save_name):
