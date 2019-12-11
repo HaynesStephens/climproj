@@ -51,9 +51,10 @@ def plotLWPartition(lw_up_csv, lw_dn_csv, ts_csv, save_name):
 #######################################################
 
 
-def plotProfiles(csv_files, ppm_list, air_pressure, save_name):
+def plotProfiles(csv_files, ppm_list, T_emit_list, air_pressure, save_name):
     plt.figure()
     for i in range(len(csv_files)):
+        T_emit = T_emit_list[i]
         filename = csv_files[i]
         print(filename)
         label = ppm_list[i]
@@ -82,5 +83,5 @@ Tair_csv_list = ['{0}_air_temperature.csv'.format(name) for name in run_name]
 air_pressure_csv = '{0}_air_pressure.csv'.format(run_name[0])
 air_pressure= np.loadtxt(air_pressure_csv, delimiter = ',')[0].flatten()
 save_name = '/home/haynes13/code/python/climproj/figures/diagnostics/tot/profiles.png'
-T_emit = np.array([270, 270, 270, 270, 270, 270, 270])
-plotProfiles(Tair_csv_list, ppm_list, air_pressure, save_name)
+T_emit_list = np.array([270, 270, 270, 270, 270, 270, 270])
+plotProfiles(Tair_csv_list, ppm_list, T_emit_list, air_pressure, save_name)
