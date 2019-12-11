@@ -34,8 +34,9 @@ os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/diagnostic
 
 # TEMPLATE, ENTIRE LIST:
 input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
-
-for input_ppm in input_ppm_list:
-    job_dir, sbatch_filename = createRun(input_ppm)
-    os.chdir(job_dir)
-    os.system('sbatch {0}'.format(sbatch_filename))
+diag_var_list = ['co2', 'q', 'T']
+for diag_var in diag_var_list:
+    for input_ppm in input_ppm_list:
+        job_dir, sbatch_filename = createRun(input_ppm, diag_var)
+        os.chdir(job_dir)
+        os.system('sbatch {0}'.format(sbatch_filename))
