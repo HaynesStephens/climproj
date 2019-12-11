@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/T_response_check.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-394">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="428">
+              <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -50,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/EQandTransResponses.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="281">
-              <caret line="576" column="58" lean-forward="true" selection-start-line="576" selection-end-line="577" />
+              <caret line="576" column="58" selection-start-line="576" selection-end-line="577" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -339,21 +339,7 @@
       <workItem from="1575836914947" duration="71000" />
       <workItem from="1575859528021" duration="3756000" />
       <workItem from="1575996026160" duration="1500000" />
-      <workItem from="1576022618645" duration="5467000" />
-    </task>
-    <task id="LOCAL-01317" summary="checks">
-      <created>1576024294727</created>
-      <option name="number" value="01317" />
-      <option name="presentableId" value="LOCAL-01317" />
-      <option name="project" value="LOCAL" />
-      <updated>1576024294727</updated>
-    </task>
-    <task id="LOCAL-01318" summary="checks">
-      <created>1576024365275</created>
-      <option name="number" value="01318" />
-      <option name="presentableId" value="LOCAL-01318" />
-      <option name="project" value="LOCAL" />
-      <updated>1576024365275</updated>
+      <workItem from="1576022618645" duration="5707000" />
     </task>
     <task id="LOCAL-01319" summary="checks">
       <created>1576024405330</created>
@@ -684,11 +670,25 @@
       <option name="project" value="LOCAL" />
       <updated>1576031701845</updated>
     </task>
-    <option name="localTasksCounter" value="1366" />
+    <task id="LOCAL-01366" summary="checks">
+      <created>1576031799370</created>
+      <option name="number" value="01366" />
+      <option name="presentableId" value="LOCAL-01366" />
+      <option name="project" value="LOCAL" />
+      <updated>1576031799370</updated>
+    </task>
+    <task id="LOCAL-01367" summary="checks">
+      <created>1576031898222</created>
+      <option name="number" value="01367" />
+      <option name="presentableId" value="LOCAL-01367" />
+      <option name="project" value="LOCAL" />
+      <updated>1576031898222</updated>
+    </task>
+    <option name="localTasksCounter" value="1368" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="298482000" />
+    <option name="totallyTimeSpent" value="298722000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1265,7 +1265,7 @@
     <entry file="file://$PROJECT_DIR$/EQandTransResponses.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
-          <caret line="576" column="58" lean-forward="true" selection-start-line="576" selection-end-line="577" />
+          <caret line="576" column="58" selection-start-line="576" selection-end-line="577" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -1281,8 +1281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/T_response_check.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-394">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="428">
+          <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
