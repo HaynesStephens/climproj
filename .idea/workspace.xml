@@ -17,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/T_response_check.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -322,14 +322,7 @@
       <workItem from="1575836914947" duration="71000" />
       <workItem from="1575859528021" duration="3756000" />
       <workItem from="1575996026160" duration="1500000" />
-      <workItem from="1576022618645" duration="12556000" />
-    </task>
-    <task id="LOCAL-01366" summary="checks">
-      <created>1576031799370</created>
-      <option name="number" value="01366" />
-      <option name="presentableId" value="LOCAL-01366" />
-      <option name="project" value="LOCAL" />
-      <updated>1576031799370</updated>
+      <workItem from="1576022618645" duration="12561000" />
     </task>
     <task id="LOCAL-01367" summary="checks">
       <created>1576031898222</created>
@@ -667,11 +660,18 @@
       <option name="project" value="LOCAL" />
       <updated>1576055271582</updated>
     </task>
-    <option name="localTasksCounter" value="1415" />
+    <task id="LOCAL-01415" summary="check">
+      <created>1576055320034</created>
+      <option name="number" value="01415" />
+      <option name="presentableId" value="LOCAL-01415" />
+      <option name="project" value="LOCAL" />
+      <updated>1576055320034</updated>
+    </task>
+    <option name="localTasksCounter" value="1416" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305571000" />
+    <option name="totallyTimeSpent" value="305576000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1257,7 +1257,7 @@
     <entry file="file://$PROJECT_DIR$/T_response_check.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

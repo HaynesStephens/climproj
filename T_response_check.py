@@ -28,7 +28,7 @@ def plotLWPartition(lw_up_csv, lw_dn_csv, ts_csv, save_name):
     plt.plot(time, lw_dn_surf, '-.', label='Tdn: {0:.2f}'.format(ts_lw_dn[-1]), c='k')
     plt.plot(time, net_lw_surf, label = 'Net Up: {0:.2f}'.format(net_lw_surf[-1]))
     plt.legend()
-    plt.savefig(save_name)k
+    plt.savefig(save_name)
 
 
 # LW FLUX PLOTS
