@@ -6,6 +6,7 @@ def plotProfiles(csv_files, ppm_list, air_pressure, save_name):
     plt.figure()
     for i in range(len(csv_files)):
         filename = csv_files[i]
+        print(filename)
         label = ppm_list[i]
         time_series = np.loadtxt(filename, delimiter = ',')
         plt.plot(time_series[-1].flatten()[:20], air_pressure[:20], '-o', markersize=1,label = label)
