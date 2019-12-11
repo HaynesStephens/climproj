@@ -24,6 +24,7 @@ def plotLWPartition(lw_up_csv, lw_dn_csv, ts_csv):
     plt.plot(time, lw_up_surf, label='Up')
     plt.plot(time, lw_dn_surf, label='Dn')
     plt.plot(time, ts_lw, label = 'Ts')
+    plt.legend()
     plt.show()
 
 base_name = '/project2/moyer/old_project/haynes/climt_files/diagnostic/tot/'
