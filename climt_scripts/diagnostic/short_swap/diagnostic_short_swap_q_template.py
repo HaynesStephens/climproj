@@ -98,6 +98,7 @@ state['eastward_wind'].values[0]                            = 5.0
 fixed_state = {
     'specific_humidity': copy.deepcopy(state['specific_humidity']),
     'air_temperature': copy.deepcopy(state['air_temperature']),
+    'surface_temperature': copy.deepcopy(state['surface_temperature']),
     'mole_fraction_of_carbon_dioxide_in_air': copy.deepcopy(state['mole_fraction_of_carbon_dioxide_in_air'])
 }
 ### PULLING EXP CO2 PROFILE
@@ -110,6 +111,7 @@ cst_q_profile_name = '/home/haynes13/code/python/climproj/profile_manipulation/'
 fixed_state['specific_humidity'].values[:] = np.load(cst_q_profile_name).copy()
 ### SETTING CONTROL T PROFILE
 fixed_state['air_temperature'].values[:] = control_T
+fixed_state['surface_temperature'].values[:] = control_Tsurf
 state.update(copy.deepcopy(fixed_state))
 ######################################
 time_stepper = AdamsBashforth([radiation_lw, radiation_sw, slab, moist_convection])
