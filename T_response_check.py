@@ -2,7 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plotProfile(csv_file, air_pressure, save_name):
+def plotProfile(csv_file, air_pressure_csv, save_name):
+    air_pressure= np.loadtxt(air_pressure_csv, delimiter = ',')[0].flatten()
     time_series = np.loadtxt(csv_file, delimiter = ',')
     initial_profile = time_series[0].flatten()
     for i in range(len(time_series)):
