@@ -4,13 +4,6 @@
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/T_response_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/T_response_check.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/diagnostics/tot/diagnostic_tot_T_input100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/diagnostics/tot/diagnostic_tot_T_input1080.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/diagnostics/tot/diagnostic_tot_T_input1215.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/diagnostics/tot/diagnostic_tot_T_input150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/diagnostics/tot/diagnostic_tot_T_input220.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/diagnostics/tot/diagnostic_tot_T_input270.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/diagnostics/tot/diagnostic_tot_T_input540.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/T_response_check.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state relative-caret-position="442">
+              <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -346,21 +339,7 @@
       <workItem from="1575836914947" duration="71000" />
       <workItem from="1575859528021" duration="3756000" />
       <workItem from="1575996026160" duration="1500000" />
-      <workItem from="1576022618645" duration="6138000" />
-    </task>
-    <task id="LOCAL-01324" summary="checks">
-      <created>1576025094781</created>
-      <option name="number" value="01324" />
-      <option name="presentableId" value="LOCAL-01324" />
-      <option name="project" value="LOCAL" />
-      <updated>1576025094782</updated>
-    </task>
-    <task id="LOCAL-01325" summary="checks">
-      <created>1576025106810</created>
-      <option name="number" value="01325" />
-      <option name="presentableId" value="LOCAL-01325" />
-      <option name="project" value="LOCAL" />
-      <updated>1576025106810</updated>
+      <workItem from="1576022618645" duration="6279000" />
     </task>
     <task id="LOCAL-01326" summary="checks">
       <created>1576025169372</created>
@@ -691,11 +670,25 @@
       <option name="project" value="LOCAL" />
       <updated>1576032351203</updated>
     </task>
-    <option name="localTasksCounter" value="1373" />
+    <task id="LOCAL-01373" summary="checks">
+      <created>1576032524212</created>
+      <option name="number" value="01373" />
+      <option name="presentableId" value="LOCAL-01373" />
+      <option name="project" value="LOCAL" />
+      <updated>1576032524212</updated>
+    </task>
+    <task id="LOCAL-01374" summary="checks">
+      <created>1576032621543</created>
+      <option name="number" value="01374" />
+      <option name="presentableId" value="LOCAL-01374" />
+      <option name="project" value="LOCAL" />
+      <updated>1576032621543</updated>
+    </task>
+    <option name="localTasksCounter" value="1375" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="299153000" />
+    <option name="totallyTimeSpent" value="299294000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1288,8 +1281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/T_response_check.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        <state relative-caret-position="442">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
