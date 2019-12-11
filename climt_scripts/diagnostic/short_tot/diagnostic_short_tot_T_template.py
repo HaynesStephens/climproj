@@ -49,7 +49,6 @@ restart_file_name = '/project2/moyer/old_project/haynes/climt_files/control_full
 restart_file = open(restart_file_name, 'rb')
 restart_state = pickle.load(restart_file)
 control_q = restart_state['specific_humidity'].copy()
-control_Tsurf = restart_state['surface_temperature'].copy()
 
 restart_quantities =  list(restart_state.keys())
 print(restart_quantities)
@@ -99,6 +98,7 @@ fixed_T_file_name = '/project2/moyer/old_project/haynes/climt_files/' \
 fixed_T_file = open(fixed_T_file_name, 'rb')
 fixed_T_state = pickle.load(fixed_T_file)
 fixed_T = fixed_T_state['air_temperature'].copy()
+fixed_Tsurf = fixed_T_state['surface_temperature'].copy()
 ##########################################
 
 ### FIXED STATE TO HOLD PROFILES CONSTANT ###
@@ -109,7 +109,7 @@ fixed_state = {
 }
 fixed_state['specific_humidity'].values[:] = control_q
 fixed_state['air_temperature'].values[:] = fixed_T
-fixed_state['surface_temperature'].values[:] = control_Tsurf
+fixed_state['surface_temperature'].values[:] = fixed_Tsurf
 
 state.update(copy.deepcopy(fixed_state))
 ######################################
