@@ -32,7 +32,7 @@ def createRun(input_ppm, diag_var, diag_type):
 
 # TEMPLATE, ENTIRE LIST:
 diag_type = 'short_grayrrtmg'
-input_ppm_list = [100]#, 150, 220, 270, 540, 1080, 1215]
+input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
 diag_var_list = ['co2', 'q', 'T']
 for diag_var in diag_var_list:
     os.system('mkdir -p /home/haynes13/code/python/climproj/climt_scripts/diagnostic/{0}/{1}/'.format(diag_type, diag_var))
