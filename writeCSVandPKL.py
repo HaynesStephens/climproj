@@ -142,7 +142,7 @@ def load_var_list():
             'upwelling_longwave_flux_in_air_assuming_clear_sky',
             'downwelling_longwave_flux_in_air_assuming_clear_sky',
             'air_temperature_tendency_from_longwave_assuming_clear_sky',
-            'air_temperature_tendency_from_longwave',
+            # 'air_temperature_tendency_from_longwave',
             'upwelling_shortwave_flux_in_air_assuming_clear_sky',
             'downwelling_shortwave_flux_in_air_assuming_clear_sky',
             'air_temperature_tendency_from_shortwave_assuming_clear_sky',
