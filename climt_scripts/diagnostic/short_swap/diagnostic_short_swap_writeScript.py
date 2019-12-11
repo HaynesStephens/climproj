@@ -31,7 +31,7 @@ def createRun(input_ppm, diag_var, diag_type):
     return job_dir, sbatch_filename
 
 # TEMPLATE, ENTIRE LIST:
-diag_type = 'o'
+diag_type = 'short_swap'
 input_ppm_list = [100, 150, 220, 270, 540, 1080, 1215]
 diag_var_list = ['co2', 'q', 'T']
 for diag_var in diag_var_list:
