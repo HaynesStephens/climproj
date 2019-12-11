@@ -15,7 +15,7 @@ def plotLWPartition(lw_up_csv, lw_dn_csv, ts_csv, save_name):
     print(lw_dn_csv)
     print(ts_csv)
     print(save_name)
-
+    plt.figure()
     lw_up   = np.loadtxt(lw_up_csv, delimiter = ',')
     lw_dn   = np.loadtxt(lw_dn_csv, delimiter = ',')
     ts      = np.loadtxt(ts_csv, delimiter = ',')
