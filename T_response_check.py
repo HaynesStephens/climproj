@@ -74,7 +74,7 @@ def plotProfiles(csv_files, ppm_list, T_emit_list, air_pressure, save_name):
     # plt.gca().invert_yaxis()
     plt.legend()
     plt.show()
-    # plt.savefig(save_name)
+    plt.savefig(save_name)
 
 
 # PROFILE PLOTS
