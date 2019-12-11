@@ -20,7 +20,7 @@ def plotLWPartition(lw_up_csv, lw_dn_csv, ts_csv, save_name):
     sigma = 5.67 * (10**(-8))
     ts_lw_up = sigma * (ts**4)
     ts_lw_dn = (lw_dn_surf/sigma)**(1/4)
-    time = np.arange(lw_up_surf.size) * 10 * 60 / (60 * 60 * 24)
+    time = np.arange(lw_up_surf.size) * 36 * 10 * 60 / (60 * 60 * 24)
 
     plt.plot(time, lw_up_surf, label='Up: {0:.2f}'.format(lw_up_surf[-1]))
     plt.plot(time, lw_dn_surf, label='Dn: {0:.2f}'.format(lw_dn_surf[-1]))
