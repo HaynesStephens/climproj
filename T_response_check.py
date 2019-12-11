@@ -9,9 +9,10 @@ def plotProfile(csv_file, air_pressure, save_name):
         profile_i = time_series[i].flatten()
         if not np.array_equal(profile_i, initial_profile):
             print('WOAH!')
-    # plt.figure()
-    # plt.plot(initial_profile, air_pressure)
-    # plt.yscale('log')
+    plt.figure()
+    plt.plot(initial_profile, air_pressure)
+    plt.yscale('log')
+    plt.show()
     # plt.savefig(save_name)
 
 
