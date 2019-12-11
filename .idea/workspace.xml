@@ -61,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/T_response_check.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+            <state relative-caret-position="507">
+              <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -356,28 +356,7 @@
       <workItem from="1575836914947" duration="71000" />
       <workItem from="1575859528021" duration="3756000" />
       <workItem from="1575996026160" duration="1500000" />
-      <workItem from="1576022618645" duration="2845000" />
-    </task>
-    <task id="LOCAL-01287" summary="grey simulations">
-      <created>1575878467840</created>
-      <option name="number" value="01287" />
-      <option name="presentableId" value="LOCAL-01287" />
-      <option name="project" value="LOCAL" />
-      <updated>1575878467840</updated>
-    </task>
-    <task id="LOCAL-01288" summary="grey simulations">
-      <created>1575878488798</created>
-      <option name="number" value="01288" />
-      <option name="presentableId" value="LOCAL-01288" />
-      <option name="project" value="LOCAL" />
-      <updated>1575878488798</updated>
-    </task>
-    <task id="LOCAL-01289" summary="grey simulations">
-      <created>1575878694632</created>
-      <option name="number" value="01289" />
-      <option name="presentableId" value="LOCAL-01289" />
-      <option name="project" value="LOCAL" />
-      <updated>1575878694632</updated>
+      <workItem from="1576022618645" duration="2950000" />
     </task>
     <task id="LOCAL-01290" summary="grey simulations">
       <created>1575878703134</created>
@@ -701,11 +680,32 @@
       <option name="project" value="LOCAL" />
       <updated>1576026166593</updated>
     </task>
-    <option name="localTasksCounter" value="1336" />
+    <task id="LOCAL-01336" summary="checks">
+      <created>1576026194983</created>
+      <option name="number" value="01336" />
+      <option name="presentableId" value="LOCAL-01336" />
+      <option name="project" value="LOCAL" />
+      <updated>1576026194983</updated>
+    </task>
+    <task id="LOCAL-01337" summary="checks">
+      <created>1576026253606</created>
+      <option name="number" value="01337" />
+      <option name="presentableId" value="LOCAL-01337" />
+      <option name="project" value="LOCAL" />
+      <updated>1576026253606</updated>
+    </task>
+    <task id="LOCAL-01338" summary="checks">
+      <created>1576026278136</created>
+      <option name="number" value="01338" />
+      <option name="presentableId" value="LOCAL-01338" />
+      <option name="project" value="LOCAL" />
+      <updated>1576026278136</updated>
+    </task>
+    <option name="localTasksCounter" value="1339" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295860000" />
+    <option name="totallyTimeSpent" value="295965000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1298,8 +1298,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/T_response_check.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+        <state relative-caret-position="507">
+          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
