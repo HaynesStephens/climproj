@@ -68,5 +68,5 @@ run_name = ['{0}i{1}_320solar/i{1}_320solar'.format(base_name, ppm) for ppm in p
 Tair_csv_list = ['{0}_air_temperature.csv'.format(name) for name in run_name]
 air_pressure_csv = '{0}_air_pressure.csv'.format(run_name[0])
 air_pressure= np.loadtxt(air_pressure_csv, delimiter = ',')[0].flatten()
-save_name = '/home/haynes13/code/python/climproj/figures/diagnostic/tot/profiles.png'
+save_name = '/home/haynes13/code/python/climproj/figures/diagnostics/tot/profiles.png'
 plotProfiles(Tair_csv_list, ppm_list, air_pressure, save_name)
