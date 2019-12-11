@@ -73,4 +73,4 @@ for i in range(len(ts_csv_list)):
     Tair_csv  = Tair_csv_list[i]
     Pair_csv  = Pair_csv_list[i]
     save_name = save_name_list[i]
-    plotProfile(csv_file, Pair_csv, save_name)
+    plotProfile(Tair_csv, Pair_csv, save_name)
