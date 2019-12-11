@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writeCSVandPKL_diagnostic.py" beforeDir="false" afterPath="$PROJECT_DIR$/writeCSVandPKL_diagnostic.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,14 +14,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/short_grayrrtmg/diagnostic_short_grayrrtmg_writeScript.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="578">
+              <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="45" column="27" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/writeCSVandPKL_diagnostic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -117,13 +140,13 @@
         <option value="$PROJECT_DIR$/T_response_check.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/short_swap/diagnostic_short_swap_writeScript.py" />
         <option value="$PROJECT_DIR$/writeCSVandPKL.py" />
-        <option value="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" />
-        <option value="$PROJECT_DIR$/writeCSVandPKL_diagnostic.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/short_grayrrtmg.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/short_grayrrtmg/diagnostic_short_grayrrtmg_co2_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/short_grayrrtmg/diagnostic_short_grayrrtmg_q_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/short_grayrrtmg/diagnostic_short_grayrrtmg_T_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/short_grayrrtmg/diagnostic_short_grayrrtmg_writeScript.py" />
+        <option value="$PROJECT_DIR$/data_scripts/diagnostic_eq.py" />
+        <option value="$PROJECT_DIR$/writeCSVandPKL_diagnostic.py" />
       </list>
     </option>
   </component>
@@ -148,20 +171,7 @@
             <path>
               <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
               <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="diagnostic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="climproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="climproj" type="462c0819:PsiDirectoryNode" />
-              <item name="climt_scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="diagnostic" type="462c0819:PsiDirectoryNode" />
-              <item name="short_grayrrtmg" type="462c0819:PsiDirectoryNode" />
+              <item name="data_scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -321,21 +331,7 @@
       <workItem from="1575836914947" duration="71000" />
       <workItem from="1575859528021" duration="3756000" />
       <workItem from="1575996026160" duration="1500000" />
-      <workItem from="1576022618645" duration="14417000" />
-    </task>
-    <task id="LOCAL-01381" summary="checks">
-      <created>1576047748928</created>
-      <option name="number" value="01381" />
-      <option name="presentableId" value="LOCAL-01381" />
-      <option name="project" value="LOCAL" />
-      <updated>1576047748928</updated>
-    </task>
-    <task id="LOCAL-01382" summary="checks">
-      <created>1576047979891</created>
-      <option name="number" value="01382" />
-      <option name="presentableId" value="LOCAL-01382" />
-      <option name="project" value="LOCAL" />
-      <updated>1576047979891</updated>
+      <workItem from="1576022618645" duration="14636000" />
     </task>
     <task id="LOCAL-01383" summary="checks">
       <created>1576048089039</created>
@@ -666,11 +662,25 @@
       <option name="project" value="LOCAL" />
       <updated>1576086415080</updated>
     </task>
-    <option name="localTasksCounter" value="1430" />
+    <task id="LOCAL-01430" summary="check">
+      <created>1576086489402</created>
+      <option name="number" value="01430" />
+      <option name="presentableId" value="LOCAL-01430" />
+      <option name="project" value="LOCAL" />
+      <updated>1576086489402</updated>
+    </task>
+    <task id="LOCAL-01431" summary="check">
+      <created>1576086626128</created>
+      <option name="number" value="01431" />
+      <option name="presentableId" value="LOCAL-01431" />
+      <option name="project" value="LOCAL" />
+      <updated>1576086626128</updated>
+    </task>
+    <option name="localTasksCounter" value="1432" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307432000" />
+    <option name="totallyTimeSpent" value="307651000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1109,23 +1119,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/writeCSVandPKL_diagnostic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/T_response_check.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1245,11 +1238,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/short_grayrrtmg/diagnostic_short_grayrrtmg_writeScript.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="578">
+          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writeCSVandPKL_diagnostic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
         </state>
       </provider>
     </entry>

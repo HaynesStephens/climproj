@@ -43,7 +43,7 @@ def get_ds_batch(file_list):
     return df0
 
 
-run_type = 'short_swap'
+run_type = 'short_grayrrtmg'
 diag_var_list = ['co2','q','T']
 for diag_var in diag_var_list:
     basepath = '/project2/moyer/old_project/haynes/climt_files/diagnostic/{0}/{1}/'.format(run_type, diag_var)
