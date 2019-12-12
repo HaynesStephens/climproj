@@ -99,7 +99,7 @@ state['mole_fraction_of_carbon_dioxide_in_air'].values[:]  = float(270) * 10**(-
 
 ### FIXED TEMPERATURE PROFILE TO INPUT ###
 fixed_T_file_name = '/project2/moyer/old_project/haynes/climt_files/' \
-               'varying_co2/320solar/i{0}_320solar/i{0}_320solar_pkl_eq.pkl'.format(input_ppm)
+               'varying_co2_qRadCst/i{0}_320solar_qRadCst/i{0}_320solar_qRadCst_pkl_eq.pkl'.format(input_ppm)
 fixed_T_file = open(fixed_T_file_name, 'rb')
 fixed_T_state = pickle.load(fixed_T_file)
 fixed_T = fixed_T_state['air_temperature'].copy()
