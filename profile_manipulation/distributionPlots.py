@@ -35,47 +35,47 @@ def loadProfile(file_name, dict_key):
     profile = pkl[dict_key]
     return profile
 
-for param in distribution_names.keys():
-    key_name = distribution_names[param]
-    if param == input_param:
-        file_name = '{0}_pkl_eq.pkl'.format(input_base)
-    else:
-        file_name = '{0}_pkl_eq.pkl'.format(control_base)
-    print(file_name)
-    profile = loadProfile(file_name, key_name)
-    distribution_reference[param] = profile
-
-    expt_job_name = 'diagnostic_{0}_{1}_input{2}'.format(expt_name, param, input_ppm)
-    expt_file_name = '{0}{1}/{2}/{2}_pkl_eq.pkl'.format(expt_dir, param, expt_job_name)
-    print(expt_file_name)
-    distribution_expt[param] = loadProfile(expt_file_name, key_name)
-
-
-plot_order = ['T', 'q', 'co2']
-fig, subplots = plt.subplots(2, 3, figsize=(21,8), sharey=True)
-for i in range(len(plot_order)):
-    param = plot_order[i]
-    if param == input_param:
-        title_ppm = str(input_ppm)
-    else:
-        title_ppm = str(control_ppm)
-    ref_axis = subplots[0, i]
-    ref_axis.plot(distribution_reference[param].flatten(), air_pressure)
-    plt.setp(ref_axis.get_xticklabels(), rotation=30, horizontalalignment='right')
-    plt.gca().invert_yaxis()
-    ref_axis.set_title('{0} ({1} ppm)'.format(param, title_ppm))
-    ref_axis.grid()
-
-    expt_axis = subplots[1, i]
-    expt_axis.plot(distribution_expt[param].flatten(), air_pressure)
-    plt.setp(expt_axis.get_xticklabels(), rotation=30, horizontalalignment='right')
-    plt.gca().invert_yaxis()
-    expt_axis.set_xlabel(units[param])
-    expt_axis.grid()
-for j in range(2):
-    subplots[j, 0].set_ylabel('Pa')
-    subplots[j, 0].set_yscale('log')
-plt.tight_layout()
-plt.show()
+# for param in distribution_names.keys():
+#     key_name = distribution_names[param]
+#     if param == input_param:
+#         file_name = '{0}_pkl_eq.pkl'.format(input_base)
+#     else:
+#         file_name = '{0}_pkl_eq.pkl'.format(control_base)
+#     print(file_name)
+#     profile = loadProfile(file_name, key_name)
+#     distribution_reference[param] = profile
+#
+#     expt_job_name = 'diagnostic_{0}_{1}_input{2}'.format(expt_name, param, input_ppm)
+#     expt_file_name = '{0}{1}/{2}/{2}_pkl_eq.pkl'.format(expt_dir, param, expt_job_name)
+#     print(expt_file_name)
+#     distribution_expt[param] = loadProfile(expt_file_name, key_name)
+#
+#
+# plot_order = ['T', 'q', 'co2']
+# fig, subplots = plt.subplots(2, 3, figsize=(21,8), sharey=True)
+# for i in range(len(plot_order)):
+#     param = plot_order[i]
+#     if param == input_param:
+#         title_ppm = str(input_ppm)
+#     else:
+#         title_ppm = str(control_ppm)
+#     ref_axis = subplots[0, i]
+#     ref_axis.plot(distribution_reference[param].flatten(), air_pressure)
+#     plt.setp(ref_axis.get_xticklabels(), rotation=30, horizontalalignment='right')
+#     plt.gca().invert_yaxis()
+#     ref_axis.set_title('{0} ({1} ppm)'.format(param, title_ppm))
+#     ref_axis.grid()
+#
+#     expt_axis = subplots[1, i]
+#     expt_axis.plot(distribution_expt[param].flatten(), air_pressure)
+#     plt.setp(expt_axis.get_xticklabels(), rotation=30, horizontalalignment='right')
+#     plt.gca().invert_yaxis()
+#     expt_axis.set_xlabel(units[param])
+#     expt_axis.grid()
+# for j in range(2):
+#     subplots[j, 0].set_ylabel('Pa')
+#     subplots[j, 0].set_yscale('log')
+# plt.tight_layout()
+# plt.show()
 
 
