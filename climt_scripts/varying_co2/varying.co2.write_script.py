@@ -46,6 +46,5 @@ for i in range(len(co2_ppm_list)):
         os.chdir(job_dir)
         os.system('sbatch {0}'.format(sbatch_filename))
 
-love
 
 
