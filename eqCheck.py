@@ -1,7 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from metpy.calc import moist_lapse, relative_humidity_from_specific_humidity
-from metpy.units import units
 import os
 import pickle
 
