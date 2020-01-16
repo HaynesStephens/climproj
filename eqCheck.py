@@ -50,13 +50,16 @@ def plotEQCheck(job_name, test_dir=''):
 
     ax0.plot(time_adj, net_flux_toa - net_flux_toa_mean,
              label = str(net_flux_toa_mean))
+    ax0.legend(frameon=False)
     ax0.set_ylabel('Wm-2')
 
     ax1.plot(time_adj, net_flux_surface - net_flux_surface_mean,
              label = str(net_flux_surface_mean))
+    ax1.legend(frameon=False)
     ax1.set_ylabel('Wm^-2')
 
     ax2.plot(time_adj, tsurf-tsurf_mean, label = str(tsurf_mean))
+    ax2.legend(frameon=False)
     ax2.set_ylabel('K')
 
 
