@@ -57,13 +57,13 @@ def plotEQCheck(job_name, test_dir=''):
     ax0.set_xlim(time_adj[eq_index][0], time_adj[eq_index][-1])
 
     ax1.plot(time_adj, net_flux_surface,
-             c='green', label = str(net_flux_surface_mean))
+             c='yellow', label = str(net_flux_surface_mean))
     ax1.axhline(net_flux_surface_mean, linestyle='dotted')
     ax1.legend(frameon=False)
     ax1.set_ylabel('surf [Wm^-2]')
     ax1.set_ylim(net_flux_surface_mean-0.1, net_flux_surface_mean+0.1)
 
-    ax2.plot(time_adj, tsurf, c='red', label = str(tsurf_mean))
+    ax2.plot(time_adj, tsurf, c='yellow', label = str(tsurf_mean))
     ax2.axhline(tsurf_mean, linestyle='dotted')
     ax2.legend(frameon=False)
     ax2.set_ylabel('Tsurf [K]')
