@@ -73,8 +73,8 @@ def plotEQCheck(job_name, test_dir=''):
 
     ax0.set_title('CO$_2$: {0} ppm'.format(co2_ppm // 1))
     plt.tight_layout()
-    plt.show()
-    # plt.savefig(plot_name)
+    # plt.show()
+    plt.savefig(plot_name)
 
 
 # Vary co2 run
