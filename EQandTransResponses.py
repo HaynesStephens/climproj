@@ -585,14 +585,8 @@ def plotResponseCheck(job_name, test_dir=''):
     def loadData(file_name, var):
         return np.loadtxt('{0}_{1}.csv'.format(file_name, var), delimiter=',')
 
-    def loadPKL(filename, pkl_type):
-        pkl_file = open('{0}_pkl_{1}.pkl'.format(filename, pkl_type), 'rb')
-        pkl_dict = pickle.load(pkl_file)
-        return pkl_dict
-
     time_arr = loadData(file_name, 'time')
     time_adj = time_arr / (3600 * 24)
-    time_title = 'Days'
     lh_flux = loadData(file_name, 'surface_upward_latent_heat_flux')
     sh_flux = loadData(file_name, 'surface_upward_sensible_heat_flux')
 
@@ -612,30 +606,12 @@ def plotResponseCheck(job_name, test_dir=''):
     net_flux_surface = net_flux[:, 0]
     net_flux_toa = net_flux[:, -1]
 
-    eq_pkl = loadPKL(file_name, 'eq')
     air_pressure_on_interface_levels = eq_pkl['air_pressure_on_interface_levels'].flatten()
     air_pressure = eq_pkl['air_pressure'].flatten()
-    eq_air_temperature = eq_pkl['air_temperature'].flatten()
-    eq_sw_up = eq_pkl['upwelling_shortwave_flux_in_air'].copy()
-    eq_sw_dn = eq_pkl['downwelling_shortwave_flux_in_air'].copy()
-    eq_lw_up = eq_pkl['upwelling_longwave_flux_in_air'].copy()
-    eq_lw_dn = eq_pkl['downwelling_longwave_flux_in_air'].copy()
-    eq_net_flux = np.reshape((eq_sw_up + eq_lw_up - eq_sw_dn - eq_lw_dn), (29, 1))
-    eq_q = eq_pkl['specific_humidity'].flatten()
 
-    fig, axes = plt.subplots(2, 2, figsize=(10, 10))
+    fig, axes = plt.subplots(figsize=(10, 10))
 
-    plotTempProfiles(axes[0, 0], eq_air_temperature, air_pressure)
-
-    plotHumProfiles(axes[0, 1], eq_q, eq_air_temperature, air_pressure)
-
-    plotTsurfPrecipLH(axes[1, 0], time_adj, tsurf, precip, time_title, lh_flux, strat_prec=strat_prec)
-
-    plotEQvals(axes[1, 1], eq_pkl)
-
-    fig.suptitle('CO$_2$: {0} ppm'.format(co2_ppm // 1), fontsize=10,
-                 bbox=dict(facecolor='none', edgecolor='green'),
-                 x=0.53, y=0.5)
+    ax.set_title('CO$_2$: {0} ppm'.format(co2_ppm // 1))
     plt.tight_layout()
     plt.savefig(plot_name)
 
