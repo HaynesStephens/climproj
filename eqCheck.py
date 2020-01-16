@@ -48,23 +48,23 @@ def plotEQCheck(job_name, test_dir=''):
     fig, axes = plt.subplots(nrows=3, ncols=1, sharex=True, figsize=(10, 10))
     ax0, ax1, ax2 = axes
 
-    ax0.plot(time_adj, net_flux_toa - net_flux_toa_mean,
+    ax0.plot(time_adj, net_flux_toa,
              c='k', label = str(net_flux_toa_mean))
     ax0.legend(frameon=False)
     ax0.set_ylabel('toa [Wm^-2]')
-    ax0.set_ylim(-0.5, 0.5)
+    ax0.set_ylim(net_flux_toa_mean-0.1, net_flux_toa_mean+0.1)
     ax0.set_xlim(time_adj[eq_index][0], time_adj[eq_index][-1])
 
-    ax1.plot(time_adj, net_flux_surface - net_flux_surface_mean,
+    ax1.plot(time_adj, net_flux_surface,
              c='k', label = str(net_flux_surface_mean))
     ax1.legend(frameon=False)
     ax1.set_ylabel('surf [Wm^-2]')
-    ax1.set_ylim(-0.5, 0.5)
+    ax1.set_ylim(net_flux_surface_mean-0.1, net_flux_surface_mean+0.1)
 
-    ax2.plot(time_adj, tsurf-tsurf_mean, c='k', label = str(tsurf_mean))
+    ax2.plot(time_adj, tsurf, c='k', label = str(tsurf_mean))
     ax2.legend(frameon=False)
     ax2.set_ylabel('Tsurf [K]')
-    ax2.set_ylim(-0.5, 0.5)
+    ax2.set_ylim(tsurf_mean-0.1, tsurf_mean+0.1)
 
 
     ax2.set_xlabel('Days')
