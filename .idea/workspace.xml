@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EQandTransResponses.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="581" column="32" selection-start-line="581" selection-start-column="32" selection-end-line="581" selection-end-column="32" />
+            <state relative-caret-position="109">
+              <caret line="579" column="56" selection-start-line="579" selection-start-column="56" selection-end-line="579" selection-end-column="56" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -333,14 +333,7 @@
       <workItem from="1578678515214" duration="90000" />
       <workItem from="1578924899992" duration="11000" />
       <workItem from="1578927153921" duration="3011000" />
-      <workItem from="1579190999301" duration="1053000" />
-    </task>
-    <task id="LOCAL-01405" summary="check">
-      <created>1576054423983</created>
-      <option name="number" value="01405" />
-      <option name="presentableId" value="LOCAL-01405" />
-      <option name="project" value="LOCAL" />
-      <updated>1576054423983</updated>
+      <workItem from="1579190999301" duration="1128000" />
     </task>
     <task id="LOCAL-01406" summary="check">
       <created>1576054507995</created>
@@ -678,11 +671,18 @@
       <option name="project" value="LOCAL" />
       <updated>1579195134897</updated>
     </task>
-    <option name="localTasksCounter" value="1454" />
+    <task id="LOCAL-01454" summary="check">
+      <created>1579195206040</created>
+      <option name="number" value="01454" />
+      <option name="presentableId" value="LOCAL-01454" />
+      <option name="project" value="LOCAL" />
+      <updated>1579195206040</updated>
+    </task>
+    <option name="localTasksCounter" value="1455" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="315336000" />
+    <option name="totallyTimeSpent" value="315411000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1242,8 +1242,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EQandTransResponses.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="581" column="32" selection-start-line="581" selection-start-column="32" selection-end-line="581" selection-end-column="32" />
+        <state relative-caret-position="109">
+          <caret line="579" column="56" selection-start-line="579" selection-start-column="56" selection-end-line="579" selection-end-column="56" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

@@ -577,7 +577,7 @@ def plotResponseCheck(job_name, test_dir=''):
     base_name = '/project2/moyer/old_project/haynes/climt_files/'
     file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
     plot_base = '/home/haynes13/code/python/climproj/figures/'
-    plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'EQandTransResponses/', test_dir, 'eq')
+    plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'eqCheck/', test_dir, 'eq')
     os.system('mkdir -p {0}'.format(plot_dir))
     plot_name = '{0}/{1}_eqCheck.png'.format(plot_dir, job_name)
     print(plot_name)
