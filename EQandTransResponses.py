@@ -585,8 +585,14 @@ def plotResponseCheck(job_name, test_dir=''):
     def loadData(file_name, var):
         return np.loadtxt('{0}_{1}.csv'.format(file_name, var), delimiter=',')
 
+    def loadPKL(filename, pkl_type):
+        pkl_file = open('{0}_pkl_{1}.pkl'.format(filename, pkl_type), 'rb')
+        pkl_dict = pickle.load(pkl_file)
+        return pkl_dict
+
     time_arr = loadData(file_name, 'time')
     time_adj = time_arr / (3600 * 24)
+    time_title = 'Days'
     lh_flux = loadData(file_name, 'surface_upward_latent_heat_flux')
     sh_flux = loadData(file_name, 'surface_upward_sensible_heat_flux')
 
@@ -607,11 +613,26 @@ def plotResponseCheck(job_name, test_dir=''):
     net_flux_toa = net_flux[:, -1]
 
     air_pressure_on_interface_levels = eq_pkl['air_pressure_on_interface_levels'].flatten()
-    air_pressure = eq_pkl['air_pressure'].flatten()
+    air_pressure = np.array([101044.31028193687, 100195.77632999333,
+                             98759.75807374805, 96753.28367666947,
+                             94200.14571469926, 91130.61904627077,
+                             87581.1018155814, 83593.68384655102,
+                             79215.6475452361, 74498.90722888586,
+                             69499.39352997651, 64276.39017480756,
+                             58891.83100071549, 53409.56554755569,
+                             47894.60193160131, 42412.335978499286,
+                             37027.775754769726, 31804.770689935383,
+                             26805.254424202667, 22088.51034726227,
+                             17710.468509501374, 13723.042175710103,
+                             10173.511710084977, 7103.962555307896,
+                             4550.781983286063, 2544.211053128718,
+                             1107.8840498713269, 256.08938210400294])
 
     fig, axes = plt.subplots(figsize=(10, 10))
 
-    ax.set_title('CO$_2$: {0} ppm'.format(co2_ppm // 1))
+    fig.suptitle('CO$_2$: {0} ppm'.format(co2_ppm // 1), fontsize=10,
+                 bbox=dict(facecolor='none', edgecolor='green'),
+                 x=0.53, y=0.5)
     plt.tight_layout()
     plt.savefig(plot_name)
 
