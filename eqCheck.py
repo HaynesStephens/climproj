@@ -61,7 +61,7 @@ def plotEQCheck(job_name, test_dir=''):
     ax0.set_xlim(time_adj[eq_index][0], time_adj[eq_index][-1])
 
     ax1.plot(time_adj, net_flux_surface,
-             c='yellow', label='{0} +/- {1}'.format(net_flux_surface_mean_mean, net_flux_surface_std))
+             c='yellow', label='{0} +/- {1}'.format(net_flux_surface_mean, net_flux_surface_std))
     ax1.axhline(net_flux_surface_mean, linestyle='dotted')
     ax1.legend(loc = 'upper right', frameon=True, facecolor='white')
     ax1.set_ylabel('surf [Wm^-2]')
