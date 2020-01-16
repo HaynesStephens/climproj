@@ -36,6 +36,12 @@ def plotEQCheck(job_name, test_dir=''):
     net_flux_surface = net_flux[:, 0] + lh_flux + sh_flux
     net_flux_toa = net_flux[:, -1]
 
+    years_back = 0.30
+    seconds_back = years_back * 365.25 * 24 * 60 * 60
+    t_final = time_arr[-1]
+    eq_index = np.where(time_arr > (t_final - seconds_back))
+    var_eq_val = np.mean(nc_var[eq_index], axis=0)
+
     air_pressure_on_interface_levels = np.array([101320.00000000001, 100768.79955129435,
                                                  99623.53236467099, 97897.77890813441,
                                                  95612.00299988744, 92793.30915035386,
@@ -70,7 +76,7 @@ def plotEQCheck(job_name, test_dir=''):
 
     ax.set_title('CO$_2$: {0} ppm'.format(co2_ppm // 1))
     plt.tight_layout()
-    plt.savefig(plot_name)
+    # plt.savefig(plot_name)
 
 
 # Vary co2 run
@@ -80,7 +86,7 @@ for insol in insol_list:
     test_dir = 'varying_co2/{0}solar/'.format(insol)
     for ppm in co2_ppm_list:
         job_name = 'i{0}_{1}solar'.format(ppm, insol)
-        plotEQResponse(job_name, test_dir=test_dir)
+        plotEQCheck(job_name, test_dir=test_dir)
         # plotTransResponse(job_name, insol=insol, test_dir=test_dir)
         print('DONE.', job_name)
 

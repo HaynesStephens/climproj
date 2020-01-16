@@ -25,11 +25,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="226" column="58" lean-forward="true" selection-start-line="226" selection-start-column="12" selection-end-line="226" selection-end-column="58" />
+              <folding>
+                <element signature="e#223#241#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eqCheck.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="15" column="78" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
+            <state relative-caret-position="515">
+              <caret line="42" column="50" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -345,21 +357,7 @@
       <workItem from="1578678515214" duration="90000" />
       <workItem from="1578924899992" duration="11000" />
       <workItem from="1578927153921" duration="3011000" />
-      <workItem from="1579190999301" duration="2427000" />
-    </task>
-    <task id="LOCAL-01415" summary="check">
-      <created>1576055320034</created>
-      <option name="number" value="01415" />
-      <option name="presentableId" value="LOCAL-01415" />
-      <option name="project" value="LOCAL" />
-      <updated>1576055320034</updated>
-    </task>
-    <task id="LOCAL-01416" summary="check">
-      <created>1576055326941</created>
-      <option name="number" value="01416" />
-      <option name="presentableId" value="LOCAL-01416" />
-      <option name="project" value="LOCAL" />
-      <updated>1576055326941</updated>
+      <workItem from="1579190999301" duration="2903000" />
     </task>
     <task id="LOCAL-01417" summary="check">
       <created>1576055346881</created>
@@ -690,11 +688,25 @@
       <option name="project" value="LOCAL" />
       <updated>1579197238548</updated>
     </task>
-    <option name="localTasksCounter" value="1464" />
+    <task id="LOCAL-01464" summary="check">
+      <created>1579197267596</created>
+      <option name="number" value="01464" />
+      <option name="presentableId" value="LOCAL-01464" />
+      <option name="project" value="LOCAL" />
+      <updated>1579197267596</updated>
+    </task>
+    <task id="LOCAL-01465" summary="check">
+      <created>1579197306013</created>
+      <option name="number" value="01465" />
+      <option name="presentableId" value="LOCAL-01465" />
+      <option name="project" value="LOCAL" />
+      <updated>1579197306013</updated>
+    </task>
+    <option name="localTasksCounter" value="1466" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="316710000" />
+    <option name="totallyTimeSpent" value="317186000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -706,10 +718,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1795422" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20274636" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -803,16 +815,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_trans.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/tot/co2/diagnostic_tot_co2_input100.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1686" />
@@ -1155,16 +1157,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
-          <folding>
-            <element signature="e#223#241#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_scripts/varyco2_290solar_eq.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1181,16 +1173,6 @@
           <caret line="18" column="59" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="59" />
           <folding>
             <element signature="e#0#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1252,10 +1234,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data_scripts/diagnostic_eq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writeCSVandPKL.varying.co2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="226" column="58" lean-forward="true" selection-start-line="226" selection-start-column="12" selection-end-line="226" selection-end-column="58" />
+          <folding>
+            <element signature="e#223#241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/eqCheck.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="15" column="78" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
+        <state relative-caret-position="515">
+          <caret line="42" column="50" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
