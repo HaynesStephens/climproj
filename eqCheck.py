@@ -16,7 +16,6 @@ def plotEQCheck(job_name, test_dir=''):
 
     time_arr = loadData(file_name, 'time')
     time_adj = time_arr / (3600 * 24)
-    time_title = 'Days'
     lh_flux = loadData(file_name, 'surface_upward_latent_heat_flux')
     sh_flux = loadData(file_name, 'surface_upward_sensible_heat_flux')
 
@@ -46,17 +45,17 @@ def plotEQCheck(job_name, test_dir=''):
     net_flux_toa_mean       = np.mean(net_flux_toa[eq_index], axis=0)
 
 
-    fig, axes = plt.subplots(nrows=4, ncols=1, sharex=True, figsize=(10, 10))
-    ax0, ax1, ax2, ax3 = axes
+    fig, axes = plt.subplots(nrows=3, ncols=1, sharex=True, figsize=(10, 10))
+    ax0, ax1, ax2 = axes
 
     ax0.plot(time_adj, tsurf-tsurf_mean)
     ax0.set_ylabel('K')
 
     ax1.plot(time_adj, net_flux_surface - net_flux_surface_mean)
-    ax1.set_ylabel('K')
+    ax1.set_ylabel('Wm^-2')
 
     ax2.plot(time_adj, net_flux_toa - net_flux_toa_mean)
-    ax2.set_ylabel('K')
+    ax2.set_ylabel('Wm-2')
     ax2.set_xlabel('Days')
 
 
