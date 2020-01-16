@@ -573,6 +573,80 @@ def plotTransTempHumSeries(ax, file_name, control_pkl):
     ax.grid()
 
 
+def plotResponseCheck(job_name, test_dir='', save_step=36):
+    base_name = '/project2/moyer/old_project/haynes/climt_files/'
+    #     file_name = '{0}/{1}/{1}'.format(base_name, job_name)
+    file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
+    plot_base = '/home/haynes13/code/python/climproj/figures/'
+    #     plot_name = '{0}/{1}/{1}_time_series.pdf'.format(plot_base, job_name)
+    plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'EQandTransResponses/', test_dir, 'eq')
+    os.system('mkdir -p {0}'.format(plot_dir))
+    plot_name = '{0}/{1}_eq.png'.format(plot_dir, job_name)
+    print(plot_name)
+
+    def loadData(file_name, var):
+        return np.loadtxt('{0}_{1}.csv'.format(file_name, var), delimiter=',')
+
+    def loadPKL(filename, pkl_type):
+        pkl_file = open('{0}_pkl_{1}.pkl'.format(filename, pkl_type), 'rb')
+        pkl_dict = pickle.load(pkl_file)
+        return pkl_dict
+
+    time_arr = loadData(file_name, 'time')
+    time_adj = time_arr / (3600 * 24)
+    time_title = 'Days'
+    lh_flux = loadData(file_name, 'surface_upward_latent_heat_flux')
+    precip = loadData(file_name, 'convective_precipitation_rate')
+
+    try:
+        strat_prec = loadData(file_name, 'stratiform_precipitation_rate')
+    except:
+        strat_prec = 'None'
+
+    tsurf = loadData(file_name, 'surface_temperature')
+    co2_ppm = loadData(file_name, 'mole_fraction_of_carbon_dioxide_in_air')[0, 0] * (10 ** 6)
+
+    upwelling_longwave_flux_in_air = loadData(file_name, 'upwelling_longwave_flux_in_air')
+    upwelling_shortwave_flux_in_air = loadData(file_name, 'upwelling_shortwave_flux_in_air')
+    downwelling_longwave_flux_in_air = loadData(file_name, 'downwelling_longwave_flux_in_air')
+    downwelling_shortwave_flux_in_air = loadData(file_name, 'downwelling_shortwave_flux_in_air')
+
+    net_flux = (upwelling_longwave_flux_in_air +
+                upwelling_shortwave_flux_in_air -
+                downwelling_longwave_flux_in_air -
+                downwelling_shortwave_flux_in_air)
+
+    net_flux_surface = net_flux[:, 0]
+    net_flux_toa = net_flux[:, -1]
+
+    eq_pkl = loadPKL(file_name, 'eq')
+    air_pressure_on_interface_levels = eq_pkl['air_pressure_on_interface_levels'].flatten()
+    air_pressure = eq_pkl['air_pressure'].flatten()
+    eq_air_temperature = eq_pkl['air_temperature'].flatten()
+    eq_sw_up = eq_pkl['upwelling_shortwave_flux_in_air'].copy()
+    eq_sw_dn = eq_pkl['downwelling_shortwave_flux_in_air'].copy()
+    eq_lw_up = eq_pkl['upwelling_longwave_flux_in_air'].copy()
+    eq_lw_dn = eq_pkl['downwelling_longwave_flux_in_air'].copy()
+    eq_net_flux = np.reshape((eq_sw_up + eq_lw_up - eq_sw_dn - eq_lw_dn), (29, 1))
+    eq_q = eq_pkl['specific_humidity'].flatten()
+
+    fig, axes = plt.subplots(2, 2, figsize=(10, 10))
+
+    plotTempProfiles(axes[0, 0], eq_air_temperature, air_pressure)
+
+    plotHumProfiles(axes[0, 1], eq_q, eq_air_temperature, air_pressure)
+
+    plotTsurfPrecipLH(axes[1, 0], time_adj, tsurf, precip, time_title, lh_flux, strat_prec=strat_prec)
+
+    plotEQvals(axes[1, 1], eq_pkl)
+
+    fig.suptitle('CO$_2$: {0} ppm'.format(co2_ppm // 1), fontsize=10,
+                 bbox=dict(facecolor='none', edgecolor='green'),
+                 x=0.53, y=0.5)
+    plt.tight_layout()
+    plt.savefig(plot_name)
+
+
 # Vary co2 run
 co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
 insol_list      = [290, 320]
@@ -581,7 +655,7 @@ for insol in insol_list:
     for ppm in co2_ppm_list:
         job_name = 'i{0}_{1}solar'.format(ppm, insol)
         plotEQResponse(job_name, test_dir=test_dir)
-        plotTransResponse(job_name, insol=insol, test_dir=test_dir)
+        # plotTransResponse(job_name, insol=insol, test_dir=test_dir)
         print('DONE.', job_name)
 
 
@@ -603,7 +677,7 @@ for insol in insol_list:
 # for ppm in co2_ppm_list:
 #     job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
 #     plotEQResponse(job_name, test_dir=test_dir)
-#     plotTransResponse(job_name, insol=insol, test_dir=test_dir)
+#     # plotTransResponse(job_name, insol=insol, test_dir=test_dir)
 #     print('DONE.', job_name)
 
 
