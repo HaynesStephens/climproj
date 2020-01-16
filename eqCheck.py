@@ -40,7 +40,10 @@ def plotEQCheck(job_name, test_dir=''):
     seconds_back = years_back * 365.25 * 24 * 60 * 60
     t_final = time_arr[-1]
     eq_index = np.where(time_arr > (t_final - seconds_back))
-    var_eq_val = np.mean(nc_var[eq_index], axis=0)
+
+    tsurf_mean = np.mean(tsurf[eq_index], axis=0)
+    net_flux_surface_mean = np.mean(net_flux_surface[eq_index], axis=0)
+    net_flux_toa_mean = np.mean(net_flux_toa[eq_index], axis=0)
 
     air_pressure_on_interface_levels = np.array([101320.00000000001, 100768.79955129435,
                                                  99623.53236467099, 97897.77890813441,
