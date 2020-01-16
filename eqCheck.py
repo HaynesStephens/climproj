@@ -69,10 +69,7 @@ def plotEQCheck(job_name, test_dir=''):
     ax2.set_ylabel('Tsurf [K]')
     ax2.set_ylim(tsurf_mean-0.1, tsurf_mean+0.1)
 
-
     ax2.set_xlabel('Days')
-
-
 
     ax0.set_title('CO$_2$: {0} ppm'.format(co2_ppm // 1))
     plt.tight_layout()
