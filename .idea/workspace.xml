@@ -40,11 +40,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eqCheck.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            <state relative-caret-position="342">
+              <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pressure_grids.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="986">
+              <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -60,7 +69,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>swapp</find>
       <find>swap</find>
       <find>exp</find>
       <find>!</find>
@@ -90,6 +98,7 @@
       <find>sw</find>
       <find>eqandtrans</find>
       <find>plotfluxes</find>
+      <find>pres</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -98,7 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW_uniform/diagnostic_gray_rrtmgSW_uniform_T_writeScript.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray/diagnostic_gray_co2_writeScript.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray/diagnostic_gray_co2_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_co2_writeScript.py" />
@@ -148,6 +156,7 @@
         <option value="$PROJECT_DIR$/data_scripts/varyco2_290solar_eq.py" />
         <option value="$PROJECT_DIR$/climt_scripts/varying_co2/varying_co2_template_290solar.py" />
         <option value="$PROJECT_DIR$/EQandTransResponses.py" />
+        <option value="$PROJECT_DIR$/pressure_grids.py" />
         <option value="$PROJECT_DIR$/eqCheck.py" />
       </list>
     </option>
@@ -357,21 +366,7 @@
       <workItem from="1578678515214" duration="90000" />
       <workItem from="1578924899992" duration="11000" />
       <workItem from="1578927153921" duration="3011000" />
-      <workItem from="1579190999301" duration="3148000" />
-    </task>
-    <task id="LOCAL-01419" summary="check">
-      <created>1576081948602</created>
-      <option name="number" value="01419" />
-      <option name="presentableId" value="LOCAL-01419" />
-      <option name="project" value="LOCAL" />
-      <updated>1576081948602</updated>
-    </task>
-    <task id="LOCAL-01420" summary="check">
-      <created>1576082004624</created>
-      <option name="number" value="01420" />
-      <option name="presentableId" value="LOCAL-01420" />
-      <option name="project" value="LOCAL" />
-      <updated>1576082004625</updated>
+      <workItem from="1579190999301" duration="3819000" />
     </task>
     <task id="LOCAL-01421" summary="check">
       <created>1576082228028</created>
@@ -702,11 +697,25 @@
       <option name="project" value="LOCAL" />
       <updated>1579204967568</updated>
     </task>
-    <option name="localTasksCounter" value="1468" />
+    <task id="LOCAL-01468" summary="check">
+      <created>1579205022523</created>
+      <option name="number" value="01468" />
+      <option name="presentableId" value="LOCAL-01468" />
+      <option name="project" value="LOCAL" />
+      <updated>1579205022523</updated>
+    </task>
+    <task id="LOCAL-01469" summary="check">
+      <created>1579205341082</created>
+      <option name="number" value="01469" />
+      <option name="presentableId" value="LOCAL-01469" />
+      <option name="project" value="LOCAL" />
+      <updated>1579205341082</updated>
+    </task>
+    <option name="localTasksCounter" value="1470" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="317431000" />
+    <option name="totallyTimeSpent" value="318102000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -815,11 +824,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/tot/co2/diagnostic_tot_co2_input100.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1686" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/short_tot/diagnostic_tot_co2_template.py" />
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/tot/diagnostic_tot_co2_template.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1257,10 +1261,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pressure_grids.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/eqCheck.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        <state relative-caret-position="342">
+          <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

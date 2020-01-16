@@ -46,16 +46,26 @@ def plotEQCheck(job_name, test_dir=''):
     net_flux_toa_mean       = np.mean(net_flux_toa[eq_index], axis=0)
 
 
-    fig, ax = plt.subplots(figsize=(10, 10))
+    fig, axes = plt.subplots(nrows=1, ncols=4, sharex=True, figsize=(10, 10))
+    ax0, ax1, ax2, ax3 = axes
 
-    ax.set_title('CO$_2$: {0} ppm'.format(co2_ppm // 1))
+    ax0.plot(time_adj, tsurf-tsurf_mean)
+
+    ax1.plot(time_adj, net_flux_surface - net_flux_surface_mean)
+
+    ax2.plot(time_adj, net_flux_toa - net_flux_toa_mean)
+
+
+
+    ax0.set_title('CO$_2$: {0} ppm'.format(co2_ppm // 1))
     plt.tight_layout()
+    plt.show()
     # plt.savefig(plot_name)
 
 
 # Vary co2 run
-co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-insol_list      = [290, 320]
+co2_ppm_list    = [2]#, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
+insol_list      = [290]#, 320]
 for insol in insol_list:
     test_dir = 'varying_co2/{0}solar/'.format(insol)
     for ppm in co2_ppm_list:
