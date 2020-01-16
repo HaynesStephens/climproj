@@ -44,28 +44,32 @@ def plotEQCheck(job_name, test_dir=''):
     net_flux_surface_mean   = np.mean(net_flux_surface[eq_index], axis=0)
     net_flux_toa_mean       = np.mean(net_flux_toa[eq_index], axis=0)
 
+    tsurf_std               = np.std(tsurf[eq_index], axis=0)
+    net_flux_surface_std    = np.std(net_flux_surface[eq_index], axis=0)
+    net_flux_toa_std        = np.std(net_flux_toa[eq_index], axis=0)
+
 
     fig, axes = plt.subplots(nrows=3, ncols=1, sharex=True, figsize=(10, 10))
     ax0, ax1, ax2 = axes
 
     ax0.plot(time_adj, net_flux_toa,
-             c='yellow', label = str(net_flux_toa_mean))
+             c='yellow', label = '{0} +/- {1}'.format(net_flux_toa_mean, net_flux_toa_std))
     ax0.axhline(net_flux_toa_mean, linestyle = 'dotted')
-    ax0.legend(frameon=False)
+    ax0.legend(loc = 'upper right', frameon=True, facecolor='white')
     ax0.set_ylabel('toa [Wm^-2]')
-    ax0.set_ylim(net_flux_toa_mean-0.1, net_flux_toa_mean+0.1)
+    ax0.set_ylim(net_flux_toa_mean-1.0, net_flux_toa_mean+1.0)
     ax0.set_xlim(time_adj[eq_index][0], time_adj[eq_index][-1])
 
     ax1.plot(time_adj, net_flux_surface,
-             c='yellow', label = str(net_flux_surface_mean))
+             c='yellow', label='{0} +/- {1}'.format(net_flux_surface_mean_mean, net_flux_surface_std))
     ax1.axhline(net_flux_surface_mean, linestyle='dotted')
-    ax1.legend(frameon=False)
+    ax1.legend(loc = 'upper right', frameon=True, facecolor='white')
     ax1.set_ylabel('surf [Wm^-2]')
-    ax1.set_ylim(net_flux_surface_mean-0.1, net_flux_surface_mean+0.1)
+    ax1.set_ylim(net_flux_surface_mean-1.0, net_flux_surface_mean+0.1)
 
-    ax2.plot(time_adj, tsurf, c='yellow', label = str(tsurf_mean))
+    ax2.plot(time_adj, tsurf, c='yellow', label = '{0} +/- {1}'.format(tsurf_mean, tsurf_std))
     ax2.axhline(tsurf_mean, linestyle='dotted')
-    ax2.legend(frameon=False)
+    ax2.legend(loc = 'upper right', frameon=True, facecolor='white')
     ax2.set_ylabel('Tsurf [K]')
     ax2.set_ylim(tsurf_mean-0.1, tsurf_mean+0.1)
 
@@ -79,7 +83,7 @@ def plotEQCheck(job_name, test_dir=''):
 
 # Vary co2 run
 co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-insol_list      = [290, 320]
+insol_list      = [320] #[290, 320]
 for insol in insol_list:
     test_dir = 'varying_co2/{0}solar/'.format(insol)
     for ppm in co2_ppm_list:
@@ -98,11 +102,11 @@ for insol in insol_list:
 #     print('DONE.', job_name)
 
 
-# Vary co2 qRadCst run
-co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-insol           = 320
-test_dir = 'varying_co2_qRadCst/'
-for ppm in co2_ppm_list:
-    job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
-    plotEQCheck(job_name, test_dir=test_dir)
-    print('DONE.', job_name)
+# # Vary co2 qRadCst run
+# co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
+# insol           = 320
+# test_dir = 'varying_co2_qRadCst/'
+# for ppm in co2_ppm_list:
+#     job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
+#     plotEQCheck(job_name, test_dir=test_dir)
+#     print('DONE.', job_name)
