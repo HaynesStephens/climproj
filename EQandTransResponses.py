@@ -594,14 +594,15 @@ def plotResponseCheck(job_name, test_dir=''):
     time_adj = time_arr / (3600 * 24)
     time_title = 'Days'
     lh_flux = loadData(file_name, 'surface_upward_latent_heat_flux')
+    sh_flux = loadData(file_name, 'surface_upward_sensible_heat_flux')
 
     tsurf = loadData(file_name, 'surface_temperature')
     co2_ppm = loadData(file_name, 'mole_fraction_of_carbon_dioxide_in_air')[0, 0] * (10 ** 6)
 
-    upwelling_longwave_flux_in_air = loadData(file_name, 'upwelling_longwave_flux_in_air')
-    upwelling_shortwave_flux_in_air = loadData(file_name, 'upwelling_shortwave_flux_in_air')
-    downwelling_longwave_flux_in_air = loadData(file_name, 'downwelling_longwave_flux_in_air')
-    downwelling_shortwave_flux_in_air = loadData(file_name, 'downwelling_shortwave_flux_in_air')
+    upwelling_longwave_flux_in_air      = loadData(file_name, 'upwelling_longwave_flux_in_air')
+    upwelling_shortwave_flux_in_air     = loadData(file_name, 'upwelling_shortwave_flux_in_air')
+    downwelling_longwave_flux_in_air    = loadData(file_name, 'downwelling_longwave_flux_in_air')
+    downwelling_shortwave_flux_in_air   = loadData(file_name, 'downwelling_shortwave_flux_in_air')
 
     net_flux = (upwelling_longwave_flux_in_air +
                 upwelling_shortwave_flux_in_air -
