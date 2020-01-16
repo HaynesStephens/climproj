@@ -49,7 +49,7 @@ def plotEQCheck(job_name, test_dir=''):
     ax0, ax1, ax2 = axes
 
     ax0.plot(time_adj, net_flux_toa,
-             c='blue', label = str(net_flux_toa_mean))
+             c='yellow', label = str(net_flux_toa_mean))
     ax0.axhline(net_flux_toa_mean, linestyle = 'dotted')
     ax0.legend(frameon=False)
     ax0.set_ylabel('toa [Wm^-2]')
