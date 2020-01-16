@@ -594,12 +594,6 @@ def plotResponseCheck(job_name, test_dir=''):
     time_adj = time_arr / (3600 * 24)
     time_title = 'Days'
     lh_flux = loadData(file_name, 'surface_upward_latent_heat_flux')
-    precip = loadData(file_name, 'convective_precipitation_rate')
-
-    try:
-        strat_prec = loadData(file_name, 'stratiform_precipitation_rate')
-    except:
-        strat_prec = 'None'
 
     tsurf = loadData(file_name, 'surface_temperature')
     co2_ppm = loadData(file_name, 'mole_fraction_of_carbon_dioxide_in_air')[0, 0] * (10 ** 6)
