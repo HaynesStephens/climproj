@@ -40,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eqCheck.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="42" column="50" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+            <state relative-caret-position="417">
+              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -152,7 +152,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -357,21 +357,7 @@
       <workItem from="1578678515214" duration="90000" />
       <workItem from="1578924899992" duration="11000" />
       <workItem from="1578927153921" duration="3011000" />
-      <workItem from="1579190999301" duration="2903000" />
-    </task>
-    <task id="LOCAL-01417" summary="check">
-      <created>1576055346881</created>
-      <option name="number" value="01417" />
-      <option name="presentableId" value="LOCAL-01417" />
-      <option name="project" value="LOCAL" />
-      <updated>1576055346881</updated>
-    </task>
-    <task id="LOCAL-01418" summary="check">
-      <created>1576055363077</created>
-      <option name="number" value="01418" />
-      <option name="presentableId" value="LOCAL-01418" />
-      <option name="project" value="LOCAL" />
-      <updated>1576055363077</updated>
+      <workItem from="1579190999301" duration="3148000" />
     </task>
     <task id="LOCAL-01419" summary="check">
       <created>1576081948602</created>
@@ -702,11 +688,25 @@
       <option name="project" value="LOCAL" />
       <updated>1579197306013</updated>
     </task>
-    <option name="localTasksCounter" value="1466" />
+    <task id="LOCAL-01466" summary="check">
+      <created>1579204726649</created>
+      <option name="number" value="01466" />
+      <option name="presentableId" value="LOCAL-01466" />
+      <option name="project" value="LOCAL" />
+      <updated>1579204726649</updated>
+    </task>
+    <task id="LOCAL-01467" summary="check">
+      <created>1579204967568</created>
+      <option name="number" value="01467" />
+      <option name="presentableId" value="LOCAL-01467" />
+      <option name="project" value="LOCAL" />
+      <updated>1579204967568</updated>
+    </task>
+    <option name="localTasksCounter" value="1468" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="317186000" />
+    <option name="totallyTimeSpent" value="317431000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -718,10 +718,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20274636" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1795422" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1259,8 +1259,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eqCheck.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="42" column="50" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+        <state relative-caret-position="417">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
