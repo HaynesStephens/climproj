@@ -48,14 +48,18 @@ def plotEQCheck(job_name, test_dir=''):
     fig, axes = plt.subplots(nrows=3, ncols=1, sharex=True, figsize=(10, 10))
     ax0, ax1, ax2 = axes
 
-    ax0.plot(time_adj, tsurf-tsurf_mean)
-    ax0.set_ylabel('K')
+    ax0.plot(time_adj, net_flux_toa - net_flux_toa_mean,
+             label = str(net_flux_toa_mean))
+    ax0.set_ylabel('Wm-2')
 
-    ax1.plot(time_adj, net_flux_surface - net_flux_surface_mean)
+    ax1.plot(time_adj, net_flux_surface - net_flux_surface_mean,
+             label = str(net_flux_surface_mean))
     ax1.set_ylabel('Wm^-2')
 
-    ax2.plot(time_adj, net_flux_toa - net_flux_toa_mean)
-    ax2.set_ylabel('Wm-2')
+    ax2.plot(time_adj, tsurf-tsurf_mean, label = str(tsurf_mean))
+    ax2.set_ylabel('K')
+
+
     ax2.set_xlabel('Days')
 
 
