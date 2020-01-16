@@ -72,11 +72,9 @@ def plotEQCheck(job_name, test_dir=''):
                              4550.781983286063, 2544.211053128718,
                              1107.8840498713269, 256.08938210400294])
 
-    fig, axes = plt.subplots(figsize=(10, 10))
+    fig, ax = plt.subplots(figsize=(10, 10))
 
-    fig.suptitle('CO$_2$: {0} ppm'.format(co2_ppm // 1), fontsize=10,
-                 bbox=dict(facecolor='none', edgecolor='green'),
-                 x=0.53, y=0.5)
+    ax.set_title('CO$_2$: {0} ppm'.format(co2_ppm // 1))
     plt.tight_layout()
     plt.savefig(plot_name)
 
