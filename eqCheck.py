@@ -15,11 +15,6 @@ def plotEQCheck(job_name, test_dir=''):
     def loadData(file_name, var):
         return np.loadtxt('{0}_{1}.csv'.format(file_name, var), delimiter=',')
 
-    def loadPKL(filename, pkl_type):
-        pkl_file = open('{0}_pkl_{1}.pkl'.format(filename, pkl_type), 'rb')
-        pkl_dict = pickle.load(pkl_file)
-        return pkl_dict
-
     time_arr = loadData(file_name, 'time')
     time_adj = time_arr / (3600 * 24)
     time_title = 'Days'
