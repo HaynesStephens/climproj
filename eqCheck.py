@@ -85,7 +85,6 @@ for insol in insol_list:
     for ppm in co2_ppm_list:
         job_name = 'i{0}_{1}solar'.format(ppm, insol)
         plotEQCheck(job_name, test_dir=test_dir)
-        # plotTransResponse(job_name, insol=insol, test_dir=test_dir)
         print('DONE.', job_name)
 
 
@@ -96,7 +95,6 @@ for insol in insol_list:
 # for insol in insol_list:
 #     job_name = 'i270_{0}solar'.format(insol)
 #     plotEQResponse(job_name, test_dir=test_dir)
-#     plotTransResponse(job_name, test_dir=test_dir)
 #     print('DONE.', job_name)
 
 
@@ -106,6 +104,5 @@ insol           = 320
 test_dir = 'varying_co2_qRadCst/'
 for ppm in co2_ppm_list:
     job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
-    plotEQResponse(job_name, test_dir=test_dir)
-    # plotTransResponse(job_name, insol=insol, test_dir=test_dir)
+    plotEQCheck(job_name, test_dir=test_dir)
     print('DONE.', job_name)
