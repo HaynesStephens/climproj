@@ -3,36 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EQandTransResponses.py" beforeDir="false" afterPath="$PROJECT_DIR$/EQandTransResponses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraDinh.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/290solar/eq/i100_290solar_eq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/290solar/eq/i150_290solar_eq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/290solar/eq/i220_290solar_eq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/290solar/eq/i270_290solar_eq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/290solar/eq/i405_290solar_eq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/290solar/eq/i540_290solar_eq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/290solar/trans/i100_290solar_trans.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/290solar/trans/i150_290solar_trans.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/290solar/trans/i220_290solar_trans.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/290solar/trans/i270_290solar_trans.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/290solar/trans/i405_290solar_trans.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/290solar/trans/i540_290solar_trans.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/320solar/eq/i100_320solar_eq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/320solar/eq/i1080_320solar_eq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/320solar/eq/i1215_320solar_eq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/320solar/eq/i150_320solar_eq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/320solar/eq/i220_320solar_eq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/320solar/eq/i270_320solar_eq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/320solar/eq/i405_320solar_eq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/320solar/eq/i540_320solar_eq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/320solar/trans/i100_320solar_trans.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/320solar/trans/i1080_320solar_trans.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/320solar/trans/i1215_320solar_trans.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/320solar/trans/i150_320solar_trans.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/320solar/trans/i220_320solar_trans.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/320solar/trans/i270_320solar_trans.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/320solar/trans/i405_320solar_trans.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/EQandTransResponses/varying_co2/320solar/trans/i540_320solar_trans.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EQandTransResponses.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-571">
-              <caret line="438" column="13" lean-forward="true" selection-start-line="438" selection-start-column="13" selection-end-line="438" selection-end-column="13" />
+            <state relative-caret-position="424">
+              <caret line="593" lean-forward="true" selection-start-line="593" selection-end-line="593" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -65,7 +35,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cst</find>
       <find>swapp</find>
       <find>swap</find>
       <find>exp</find>
@@ -95,6 +64,7 @@
       <find>LWsurf</find>
       <find>sw</find>
       <find>eqandtrans</find>
+      <find>plotfluxes</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,10 +128,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="-820" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -364,21 +332,7 @@
       <workItem from="1578678515214" duration="90000" />
       <workItem from="1578924899992" duration="11000" />
       <workItem from="1578927153921" duration="3011000" />
-      <workItem from="1579190999301" duration="296000" />
-    </task>
-    <task id="LOCAL-01402" summary="check">
-      <created>1576053794309</created>
-      <option name="number" value="01402" />
-      <option name="presentableId" value="LOCAL-01402" />
-      <option name="project" value="LOCAL" />
-      <updated>1576053794310</updated>
-    </task>
-    <task id="LOCAL-01403" summary="check">
-      <created>1576053931443</created>
-      <option name="number" value="01403" />
-      <option name="presentableId" value="LOCAL-01403" />
-      <option name="project" value="LOCAL" />
-      <updated>1576053931443</updated>
+      <workItem from="1579190999301" duration="985000" />
     </task>
     <task id="LOCAL-01404" summary="check">
       <created>1576054302562</created>
@@ -709,11 +663,25 @@
       <option name="project" value="LOCAL" />
       <updated>1578932112643</updated>
     </task>
-    <option name="localTasksCounter" value="1451" />
+    <task id="LOCAL-01451" summary="check">
+      <created>1579192120456</created>
+      <option name="number" value="01451" />
+      <option name="presentableId" value="LOCAL-01451" />
+      <option name="project" value="LOCAL" />
+      <updated>1579192120457</updated>
+    </task>
+    <task id="LOCAL-01452" summary="check">
+      <created>1579195129127</created>
+      <option name="number" value="01452" />
+      <option name="presentableId" value="LOCAL-01452" />
+      <option name="project" value="LOCAL" />
+      <updated>1579195129127</updated>
+    </task>
+    <option name="localTasksCounter" value="1453" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314579000" />
+    <option name="totallyTimeSpent" value="315268000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -725,10 +693,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-820" y="-1080" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13365282" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1795422" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1273,8 +1241,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EQandTransResponses.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-571">
-          <caret line="438" column="13" lean-forward="true" selection-start-line="438" selection-start-column="13" selection-end-line="438" selection-end-column="13" />
+        <state relative-caret-position="424">
+          <caret line="593" lean-forward="true" selection-start-line="593" selection-end-line="593" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
