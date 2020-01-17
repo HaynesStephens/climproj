@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-def plotEQCheck(job_name, test_dir=''):
+def plotEQCheck(job_name, co2_ppm, test_dir=''):
     base_name = '/project2/moyer/old_project/haynes/climt_files/'
     file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
     plot_base = '/home/haynes13/code/python/climproj/figures/'
@@ -20,7 +20,6 @@ def plotEQCheck(job_name, test_dir=''):
     sh_flux = loadData(file_name, 'surface_upward_sensible_heat_flux')
 
     tsurf = loadData(file_name, 'surface_temperature')
-    co2_ppm = loadData(file_name, 'mole_fraction_of_carbon_dioxide_in_air')[0, 0] * (10 ** 6)
 
     upwelling_longwave_flux_in_air      = loadData(file_name, 'upwelling_longwave_flux_in_air')
     upwelling_shortwave_flux_in_air     = loadData(file_name, 'upwelling_shortwave_flux_in_air')
@@ -88,7 +87,7 @@ for insol in insol_list:
     test_dir = 'varying_co2/{0}solar/'.format(insol)
     for ppm in co2_ppm_list:
         job_name = 'i{0}_{1}solar'.format(ppm, insol)
-        plotEQCheck(job_name, test_dir=test_dir)
+        plotEQCheck(job_name, ppm, test_dir=test_dir)
         print('DONE.', job_name)
 
 
