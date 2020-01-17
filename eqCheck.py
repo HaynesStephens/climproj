@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-def plotEQCheck(job_name, test_dir='', co2_ppm = None):
+def plotEQCheck(job_name, test_dir='', ppm = None):
     base_name = '/project2/moyer/old_project/haynes/climt_files/'
     file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
     plot_base = '/home/haynes13/code/python/climproj/figures/'
@@ -74,7 +74,7 @@ def plotEQCheck(job_name, test_dir='', co2_ppm = None):
 
     ax2.set_xlabel('Days')
 
-    ax0.set_title('CO$_2$: {0} ppm'.format(co2_ppm // 1))
+    ax0.set_title('CO$_2$: {0} ppm'.format(ppm // 1))
     plt.tight_layout()
     # plt.show()
     plt.savefig(plot_name)
