@@ -80,15 +80,15 @@ def plotEQCheck(job_name, co2_ppm, test_dir=''):
     plt.savefig(plot_name)
 
 
-# Vary co2 run
-co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-insol_list      = [290, 320]
-for insol in insol_list:
-    test_dir = 'varying_co2/{0}solar/'.format(insol)
-    for ppm in co2_ppm_list:
-        job_name = 'i{0}_{1}solar'.format(ppm, insol)
-        plotEQCheck(job_name, ppm, test_dir=test_dir)
-        print('DONE.', job_name)
+# # Vary co2 run
+# co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
+# insol_list      = [290, 320]
+# for insol in insol_list:
+#     test_dir = 'varying_co2/{0}solar/'.format(insol)
+#     for ppm in co2_ppm_list:
+#         job_name = 'i{0}_{1}solar'.format(ppm, insol)
+#         plotEQCheck(job_name, ppm, test_dir=test_dir)
+#         print('DONE.', job_name)
 
 
 # # Vary insol run
@@ -101,11 +101,11 @@ for insol in insol_list:
 #     print('DONE.', job_name)
 
 
-# # Vary co2 qRadCst run
-# co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-# insol           = 320
-# test_dir = 'varying_co2_qRadCst/'
-# for ppm in co2_ppm_list:
-#     job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
-#     plotEQCheck(job_name, test_dir=test_dir)
-#     print('DONE.', job_name)
+# Vary co2 qRadCst run
+co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
+insol           = 320
+test_dir = 'varying_co2_qRadCst/'
+for ppm in co2_ppm_list:
+    job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
+    plotEQCheck(job_name, test_dir=test_dir)
+    print('DONE.', job_name)
