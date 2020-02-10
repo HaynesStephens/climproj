@@ -53,7 +53,7 @@ def plotEQCheck(df, job_name, test_dir='', ppm = None):
 #     print('DONE.', job_name)
 
 
-def getFluxes(job_name, test_dir=''):
+def getDF(job_name, test_dir=''):
     base_name = '/project2/moyer/old_project/haynes/climt_files/'
     file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
 
@@ -88,5 +88,5 @@ def getFluxes(job_name, test_dir=''):
     df['net_surf'] = (df['lw_up_surf'] + df['sw_up_surf']) - (df['lw_dn_surf'] + df['sw_dn_surf']) + df['lh'] + df['sh']
     return df
 
-df = getFluxes(job_name = 'i{0}_{1}solar_qRadCst'.format(405, 320), test_dir = 'varying_co2_qRadCst/')
+df = getDF(job_name = 'i{0}_{1}solar_qRadCst'.format(405, 320), test_dir = 'varying_co2_qRadCst/')
 
