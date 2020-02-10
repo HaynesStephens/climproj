@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eqCheck.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="251">
+              <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -346,21 +346,7 @@
       <workItem from="1578927153921" duration="3011000" />
       <workItem from="1579190999301" duration="7264000" />
       <workItem from="1579300777994" duration="302000" />
-      <workItem from="1581366572820" duration="4975000" />
-    </task>
-    <task id="LOCAL-01469" summary="check">
-      <created>1579205341082</created>
-      <option name="number" value="01469" />
-      <option name="presentableId" value="LOCAL-01469" />
-      <option name="project" value="LOCAL" />
-      <updated>1579205341082</updated>
-    </task>
-    <task id="LOCAL-01470" summary="check">
-      <created>1579205695418</created>
-      <option name="number" value="01470" />
-      <option name="presentableId" value="LOCAL-01470" />
-      <option name="project" value="LOCAL" />
-      <updated>1579205695418</updated>
+      <workItem from="1581366572820" duration="5285000" />
     </task>
     <task id="LOCAL-01471" summary="check">
       <created>1579205949007</created>
@@ -691,11 +677,25 @@
       <option name="project" value="LOCAL" />
       <updated>1581372714732</updated>
     </task>
-    <option name="localTasksCounter" value="1518" />
+    <task id="LOCAL-01518" summary="check">
+      <created>1581372779598</created>
+      <option name="number" value="01518" />
+      <option name="presentableId" value="LOCAL-01518" />
+      <option name="project" value="LOCAL" />
+      <updated>1581372779598</updated>
+    </task>
+    <task id="LOCAL-01519" summary="check">
+      <created>1581373178049</created>
+      <option name="number" value="01519" />
+      <option name="presentableId" value="LOCAL-01519" />
+      <option name="project" value="LOCAL" />
+      <updated>1581373178049</updated>
+    </task>
+    <option name="localTasksCounter" value="1520" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="326824000" />
+    <option name="totallyTimeSpent" value="327134000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1244,8 +1244,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eqCheck.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="251">
+          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
