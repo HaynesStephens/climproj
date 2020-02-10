@@ -40,7 +40,48 @@ def getDF(job_name, test_dir=''):
     return df
 
 
-def plotEQCheck(df, job_name, test_dir='', ppm = None):
+def plotSeries(df, job_name, test_dir='', ppm = None):
+    base_name = '/project2/moyer/old_project/haynes/climt_files/'
+    file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
+    plot_base = '/home/haynes13/code/python/climproj/figures/'
+    plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'eqCheck/', test_dir, 'eq')
+    os.system('mkdir -p {0}'.format(plot_dir))
+    plot_name = '{0}/{1}_eqCheck.png'.format(plot_dir, job_name)
+    print(plot_name)
+
+    yrs_back = 3600 * 24 * 365 * 0.3
+    time_max = df.time.max() - yrs_back
+    mean_df = df[df.time > time_max]
+
+    fig, ax0 = plt.subplots(nrows=1, ncols=1, sharex=True, figsize=(10, 10))
+
+    def plotVal(ax, val):
+        ax.plot(df['time'], df[''])
+        mean_val = mean_df[val].mean()
+        ax.plot(df.time, df[val] - mean_val, label = '{0}:{1:.2f}'.format(val, mean_val))
+
+    plotVal(ax0, 'lw_up_surf')
+    plotVal(ax0, 'lw_dn_surf')
+    plotVal(ax0, 'sw_up_surf')
+    plotVal(ax0, 'sw_dn_surf')
+
+    plotVal(ax0, 'lw_up_toa')
+    plotVal(ax0, 'lw_dn_toa')
+    plotVal(ax0, 'sw_up_toa')
+    plotVal(ax0, 'sw_dn_toa')
+
+    plotVal(ax0, 'lh')
+    plotVal(ax0, 'sh')
+
+
+
+    ax0.set_title('CO$_2$: {0} ppm'.format(ppm // 1))
+    plt.tight_layout()
+    # plt.show()
+    plt.savefig(plot_name)
+
+
+def plotRolling(df, job_name, test_dir='', ppm = None):
     base_name = '/project2/moyer/old_project/haynes/climt_files/'
     file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
     plot_base = '/home/haynes13/code/python/climproj/figures/'
