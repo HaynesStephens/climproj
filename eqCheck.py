@@ -143,8 +143,8 @@ def getFluxes(job_name, test_dir=''):
             'sw_up_toa': sw_up[:, -1],
             'sw_dn_toa': sw_dn[:, -1],}
     df = pd.DataFrame(data, index=time_arr)
-    df['net_toa'] = (df['lw_up_toa'] - df['sw_up_toa']) + (df['lw_dn_toa'] - df['sw_dn_toa'])
-    df['net_surf'] = (df['lw_up_surf'] - df['sw_up_surf']) + (df['lw_dn_surf'] - df['sw_dn_surf']) + df['lh'] + df['sh']
+    df['net_toa'] = (df['lw_up_toa'] + df['sw_up_toa']) - (df['lw_dn_toa'] + df['sw_dn_toa'])
+    df['net_surf'] = (df['lw_up_surf'] + df['sw_up_surf']) - (df['lw_dn_surf'] + df['sw_dn_surf']) + df['lh'] + df['sh']
     return df
 
 df = getFluxes(job_name = 'i{0}_{1}solar_qRadCst'.format(405, 320), test_dir = 'varying_co2_qRadCst/')
