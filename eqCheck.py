@@ -102,11 +102,53 @@ def plotEQCheck(job_name, test_dir='', ppm = None):
 #     print('DONE.', job_name)
 
 
-# Vary co2 qRadCst run
-co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-insol           = 320
-test_dir = 'varying_co2_qRadCst/'
-for ppm in co2_ppm_list:
-    job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
-    plotEQCheck(job_name, test_dir=test_dir, ppm=ppm)
-    print('DONE.', job_name)
+# # Vary co2 qRadCst run
+# co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
+# insol           = 320
+# test_dir = 'varying_co2_qRadCst/'
+# for ppm in co2_ppm_list:
+#     job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
+#     plotEQCheck(job_name, test_dir=test_dir, ppm=ppm)
+#     print('DONE.', job_name)
+
+
+def getFluxes(job_name, test_dir=''):
+    base_name = '/project2/moyer/old_project/haynes/climt_files/'
+    file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
+
+    def loadData(file_name, var):
+        return np.loadtxt('{0}_{1}.csv'.format(file_name, var), delimiter=',')
+
+    time_arr = loadData(file_name, 'time')
+    lh_flux = loadData(file_name, 'surface_upward_latent_heat_flux')
+    sh_flux = loadData(file_name, 'surface_upward_sensible_heat_flux')
+
+    tsurf = loadData(file_name, 'surface_temperature')
+
+    lw_up       = loadData(file_name, 'upwelling_longwave_flux_in_air')
+    sw_up       = loadData(file_name, 'upwelling_shortwave_flux_in_air')
+    lw_dn       = loadData(file_name, 'downwelling_longwave_flux_in_air')
+    sw_dn       = loadData(file_name, 'downwelling_shortwave_flux_in_air')
+
+    net_flux = (upwelling_longwave_flux_in_air +
+                upwelling_shortwave_flux_in_air -
+                downwelling_longwave_flux_in_air -
+                downwelling_shortwave_flux_in_air)
+
+    net_flux_surface    = net_flux[:, 0] + lh_flux + sh_flux
+    net_flux_toa        = net_flux[:, -1]
+
+    data = {'tsurf': tsurf,
+            'lh': lh_flux,
+            'sh': sh_flux,
+            'lw_up_surf': lw_up[:, 0],
+            'lw_dn_surf': lw_dn[:, 0],
+            'sw_up_surf': sw_up[:, 0],
+            'sw_dn_surf': sw_dn[:, 0],
+            'lw_up_toa': lw_up[:, -1],
+            'lw_dn_toa': lw_dn[:, -1],
+            'sw_up_toa': sw_up[:, -1],
+            'sw_dn_toa': sw_dn[:, -1],}
+    df = pd.Dataframe(data, index=time_arr)
+    return df
+
