@@ -56,7 +56,6 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
     fig, ax0 = plt.subplots(nrows=1, ncols=1, sharex=True, figsize=(10, 10))
 
     def plotVal(ax, val):
-        ax.plot(df['time'], df[val])
         mean_val = mean_df[val].mean()
         ax.plot(df.time, df[val] - mean_val, label = '{0}:{1:.2f}'.format(val, mean_val))
 
