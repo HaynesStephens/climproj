@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+import pandas as pd
 
 def plotEQCheck(job_name, test_dir='', ppm = None):
     base_name = '/project2/moyer/old_project/haynes/climt_files/'
