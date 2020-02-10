@@ -81,8 +81,8 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
 
     ax0.set_title('CO$_2$: {0} ppm'.format(ppm // 1))
     plt.tight_layout()
-    plt.show()
-    # plt.savefig(plot_name)
+    # plt.show()
+    plt.savefig(plot_name)
 
 
 def plotRolling(df, job_name, test_dir='', ppm = None):
