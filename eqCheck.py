@@ -75,8 +75,8 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
 
     ax0.set_title('CO$_2$: {0} ppm'.format(ppm // 1))
     plt.tight_layout()
-    # plt.show()
-    plt.savefig(plot_name)
+    plt.show()
+    # plt.savefig(plot_name)
 
 
 def plotRolling(df, job_name, test_dir='', ppm = None):
@@ -119,14 +119,15 @@ def plotRolling(df, job_name, test_dir='', ppm = None):
 #     print('DONE.', job_name)
 
 
-# # Vary co2 qRadCst run
-# co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-# insol           = 320
-# test_dir = 'varying_co2_qRadCst/'
-# for ppm in co2_ppm_list:
-#     job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
-#     plotEQCheck(job_name, test_dir=test_dir, ppm=ppm)
-#     print('DONE.', job_name)
+# Vary co2 qRadCst run
+co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
+co2_ppm_list    = [450]
+insol           = 320
+test_dir = 'varying_co2_qRadCst/'
+for ppm in co2_ppm_list:
+    job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
+    plotEQCheck(job_name, test_dir=test_dir, ppm=ppm)
+    print('DONE.', job_name)
 
 
 df = getDF(job_name = 'i{0}_{1}solar_qRadCst'.format(405, 320), test_dir = 'varying_co2_qRadCst/')
