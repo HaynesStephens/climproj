@@ -128,7 +128,3 @@ for ppm in co2_ppm_list:
     job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
     plotEQCheck(job_name, test_dir=test_dir, ppm=ppm)
     print('DONE.', job_name)
-
-
-df = getDF(job_name = 'i{0}_{1}solar_qRadCst'.format(405, 320), test_dir = 'varying_co2_qRadCst/')
-
