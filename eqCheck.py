@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import os
 import pandas as pd
 
-def plotEQCheck(job_name, test_dir='', ppm = None):
+def plotEQCheck(df, job_name, test_dir='', ppm = None):
     base_name = '/project2/moyer/old_project/haynes/climt_files/'
     file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
     plot_base = '/home/haynes13/code/python/climproj/figures/'
@@ -12,68 +12,9 @@ def plotEQCheck(job_name, test_dir='', ppm = None):
     plot_name = '{0}/{1}_eqCheck.png'.format(plot_dir, job_name)
     print(plot_name)
 
-    def loadData(file_name, var):
-        return np.loadtxt('{0}_{1}.csv'.format(file_name, var), delimiter=',')
-
-    time_arr = loadData(file_name, 'time')
-    time_adj = time_arr / (3600 * 24)
-    lh_flux = loadData(file_name, 'surface_upward_latent_heat_flux')
-    sh_flux = loadData(file_name, 'surface_upward_sensible_heat_flux')
-
-    tsurf = loadData(file_name, 'surface_temperature')
-
-    upwelling_longwave_flux_in_air      = loadData(file_name, 'upwelling_longwave_flux_in_air')
-    upwelling_shortwave_flux_in_air     = loadData(file_name, 'upwelling_shortwave_flux_in_air')
-    downwelling_longwave_flux_in_air    = loadData(file_name, 'downwelling_longwave_flux_in_air')
-    downwelling_shortwave_flux_in_air   = loadData(file_name, 'downwelling_shortwave_flux_in_air')
-
-    net_flux = (upwelling_longwave_flux_in_air +
-                upwelling_shortwave_flux_in_air -
-                downwelling_longwave_flux_in_air -
-                downwelling_shortwave_flux_in_air)
-
-    net_flux_surface    = net_flux[:, 0] + lh_flux + sh_flux
-    net_flux_toa        = net_flux[:, -1]
-
-    years_back      = 0.30
-    seconds_back    = years_back * 365.25 * 24 * 60 * 60
-    t_final         = time_arr[-1]
-    eq_index        = np.where(time_arr > (t_final - seconds_back))
-
-    tsurf_mean              = np.mean(tsurf[eq_index], axis=0)
-    net_flux_surface_mean   = np.mean(net_flux_surface[eq_index], axis=0)
-    net_flux_toa_mean       = np.mean(net_flux_toa[eq_index], axis=0)
-
-    tsurf_std               = np.std(tsurf[eq_index], axis=0)
-    net_flux_surface_std    = np.std(net_flux_surface[eq_index], axis=0)
-    net_flux_toa_std        = np.std(net_flux_toa[eq_index], axis=0)
-
-
     fig, axes = plt.subplots(nrows=3, ncols=1, sharex=True, figsize=(10, 10))
     ax0, ax1, ax2 = axes
 
-    ax0.plot(time_adj, net_flux_toa,
-             c='yellow', label = '{0} +/- {1}'.format(net_flux_toa_mean, net_flux_toa_std))
-    ax0.axhline(net_flux_toa_mean, linestyle = 'dotted')
-    ax0.legend(loc = 'upper right', frameon=True, facecolor='white')
-    ax0.set_ylabel('toa [Wm^-2]')
-    ax0.set_ylim(net_flux_toa_mean-1.0, net_flux_toa_mean+1.0)
-    ax0.set_xlim(time_adj[eq_index][0], time_adj[eq_index][-1])
-
-    ax1.plot(time_adj, net_flux_surface,
-             c='yellow', label='{0} +/- {1}'.format(net_flux_surface_mean, net_flux_surface_std))
-    ax1.axhline(net_flux_surface_mean, linestyle='dotted')
-    ax1.legend(loc = 'upper right', frameon=True, facecolor='white')
-    ax1.set_ylabel('surf [Wm^-2]')
-    ax1.set_ylim(net_flux_surface_mean-1.0, net_flux_surface_mean+1.0)
-
-    ax2.plot(time_adj, tsurf, c='yellow', label = '{0} +/- {1}'.format(tsurf_mean, tsurf_std))
-    ax2.axhline(tsurf_mean, linestyle='dotted')
-    ax2.legend(loc = 'upper right', frameon=True, facecolor='white')
-    ax2.set_ylabel('Tsurf [K]')
-    ax2.set_ylim(tsurf_mean-0.1, tsurf_mean+0.1)
-
-    ax2.set_xlabel('Days')
 
     ax0.set_title('CO$_2$: {0} ppm'.format(ppm // 1))
     plt.tight_layout()
