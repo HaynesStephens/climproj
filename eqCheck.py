@@ -73,8 +73,6 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
     plotVal(ax0, 'lh')
     plotVal(ax0, 'sh')
 
-
-
     ax0.set_title('CO$_2$: {0} ppm'.format(ppm // 1))
     plt.tight_layout()
     # plt.show()
