@@ -130,14 +130,6 @@ def getFluxes(job_name, test_dir=''):
     lw_dn       = loadData(file_name, 'downwelling_longwave_flux_in_air')
     sw_dn       = loadData(file_name, 'downwelling_shortwave_flux_in_air')
 
-    net_flux = (upwelling_longwave_flux_in_air +
-                upwelling_shortwave_flux_in_air -
-                downwelling_longwave_flux_in_air -
-                downwelling_shortwave_flux_in_air)
-
-    net_flux_surface    = net_flux[:, 0] + lh_flux + sh_flux
-    net_flux_toa        = net_flux[:, -1]
-
     data = {'tsurf': tsurf,
             'lh': lh_flux,
             'sh': sh_flux,
