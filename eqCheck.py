@@ -128,5 +128,5 @@ test_dir = 'varying_co2_qRadCst/'
 for ppm in co2_ppm_list:
     job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
     df = getDF(job_name, test_dir=test_dir)
-    plotSeries(df, job_name, test_dir='', ppm=None)
+    plotSeries(df, job_name, test_dir='', ppm=ppm)
     print('DONE.', job_name)
