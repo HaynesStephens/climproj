@@ -53,27 +53,32 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
     time_max = df.time.max() - yrs_back
     mean_df = df[df.time > time_max]
 
-    fig, ax0 = plt.subplots(nrows=1, ncols=1, sharex=True, figsize=(10, 10))
+    fig, axes = plt.subplots(nrows=3, ncols=1, sharex=True, figsize=(10, 10))
 
     def plotVal(ax, val):
         mean_val = mean_df[val].mean()
         ax.plot(df.time, df[val] - mean_val, label = '{0}:{1:.2f}'.format(val, mean_val))
 
+    ax0 = axes[0]
     plotVal(ax0, 'lw_up_surf')
     plotVal(ax0, 'lw_dn_surf')
     plotVal(ax0, 'sw_up_surf')
     plotVal(ax0, 'sw_dn_surf')
+    ax0.legend()
 
-    plotVal(ax0, 'lw_up_toa')
-    plotVal(ax0, 'lw_dn_toa')
-    plotVal(ax0, 'sw_up_toa')
-    plotVal(ax0, 'sw_dn_toa')
+    ax1 = axes[1]
+    plotVal(ax1, 'lw_up_toa')
+    plotVal(ax1, 'lw_dn_toa')
+    plotVal(ax1, 'sw_up_toa')
+    plotVal(ax1, 'sw_dn_toa')
+    ax1.legend()
 
-    plotVal(ax0, 'lh')
-    plotVal(ax0, 'sh')
+    ax2 = axes[2]
+    plotVal(ax2, 'lh')
+    plotVal(ax2, 'sh')
+    ax2.legend()
 
     ax0.set_title('CO$_2$: {0} ppm'.format(ppm // 1))
-    ax0.legend()
     plt.tight_layout()
     plt.show()
     # plt.savefig(plot_name)
