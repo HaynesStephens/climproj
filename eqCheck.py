@@ -141,7 +141,7 @@ def getFluxes(job_name, test_dir=''):
             'lw_dn_toa': lw_dn[:, -1],
             'sw_up_toa': sw_up[:, -1],
             'sw_dn_toa': sw_dn[:, -1],}
-    df = pd.Dataframe(data, index=time_arr)
+    df = pd.DataFrame(data, index=time_arr)
     return df
 
 df = getFluxes(job_name = 'i{0}_{1}solar_qRadCst'.format(405, 320), test_dir = 'varying_co2_qRadCst/')
