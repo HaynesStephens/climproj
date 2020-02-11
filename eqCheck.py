@@ -157,8 +157,8 @@ def plotRolling(df, job_name, test_dir='', title = None):
     else:
         ax0.set_title('insol: {0}'.format(title // 1))
     plt.tight_layout()
-    # plt.show()
-    plt.savefig(plot_name)
+    plt.show()
+    # plt.savefig(plot_name)
 
 
 # Vary co2 run
