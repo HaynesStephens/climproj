@@ -112,7 +112,7 @@ def plotRolling(df_roll, job_name, test_dir='', title = None):
     fig, axes = plt.subplots(nrows=4, ncols=1, sharex=True, figsize=(10, 10))
 
     def plotVal(ax, val):
-        last_val = df_roll[val]
+        last_val = df_roll[val].iloc[-1]
         ax.plot(df.time / (3600 * 24), df_roll[val] - last_val, label='{0}:{1:.2f}'.format(val, last_val))
         ax.set_ylim(-1, 1)
 
