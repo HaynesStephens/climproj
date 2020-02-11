@@ -55,7 +55,7 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
 
     def plotVal(ax, val):
         mean_val = mean_df[val].mean()
-        ax.plot(df.time, df[val] - mean_val, label = '{0}:{1:.2f}'.format(val, mean_val))
+        ax.plot(df.time / (3600*24), df[val] - mean_val, label = '{0}:{1:.2f}'.format(val, mean_val))
         ax.set_ylim(-1, 1)
 
     ax0 = axes[0]
@@ -84,8 +84,8 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
     ax2.legend()
 
     ax3 = axes[3]
-    ax3.plot(df.time, df.lh + df.sh + df.lw_up_surf + df.sw_up_surf - df.lw_dn_surf - df.sw_dn_surf, label = 'surf')
-    ax3.plot(df.time, df.lw_up_toa + df.sw_up_toa - df.lw_dn_toa - df.sw_dn_toa, label = 'toa')
+    ax3.plot(df.time / (3600*24), df.lh + df.sh + df.lw_up_surf + df.sw_up_surf - df.lw_dn_surf - df.sw_dn_surf, label = 'surf')
+    ax3.plot(df.time / (3600*24), df.lw_up_toa + df.sw_up_toa - df.lw_dn_toa - df.sw_dn_toa, label = 'toa')
     ax3.set_xlabel('Days')
     ax3.set_ylabel('Wm^-2 (net)')
     ax3.legend()
