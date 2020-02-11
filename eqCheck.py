@@ -41,8 +41,6 @@ def getDF(job_name, test_dir=''):
 
 
 def plotSeries(df, job_name, test_dir='', ppm = None):
-    base_name = '/project2/moyer/old_project/haynes/climt_files/'
-    file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
     plot_base = '/home/haynes13/code/python/climproj/figures/'
     plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'eqCheck/', test_dir, 'eq')
     os.system('mkdir -p {0}'.format(plot_dir))
@@ -86,8 +84,6 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
 
 
 def plotRolling(df, job_name, test_dir='', ppm = None):
-    base_name = '/project2/moyer/old_project/haynes/climt_files/'
-    file_name = '{0}{1}{2}/{2}'.format(base_name, test_dir, job_name)
     plot_base = '/home/haynes13/code/python/climproj/figures/'
     plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'eqCheck/', test_dir, 'eq')
     os.system('mkdir -p {0}'.format(plot_dir))
@@ -132,5 +128,5 @@ test_dir = 'varying_co2_qRadCst/'
 for ppm in co2_ppm_list:
     job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
     df = getDF(job_name, test_dir=test_dir)
-    plotSeries(df, job_name, test_dir='', ppm=ppm)
+    plotSeries(df, job_name, test_dir=test_dir, ppm=ppm)
     print('DONE.', job_name)
