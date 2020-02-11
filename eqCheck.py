@@ -40,7 +40,7 @@ def getDF(job_name, test_dir=''):
     return df
 
 
-def plotSeries(df, job_name, test_dir='', ppm = None):
+def plotSeries(df, job_name, test_dir='', title = None):
     plot_base = '/home/haynes13/code/python/climproj/figures/'
     plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'eqCheck/', test_dir, 'eq')
     os.system('mkdir -p {0}'.format(plot_dir))
@@ -93,7 +93,10 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
     ax3.set_ylabel('Tsurf (K)')
     ax3.legend()
 
-    ax0.set_title('CO$_2$: {0} ppm'.format(ppm // 1))
+    if 'co2' in job_name:
+        ax0.set_title('CO$_2$: {0} ppm'.format(title // 1))
+    else:
+        ax0.set_title('insol: {0}'.format(title // 1))
     plt.tight_layout()
     plt.show()
     # plt.savefig(plot_name)
@@ -125,7 +128,7 @@ for insol in insol_list:
     for ppm in co2_ppm_list:
         job_name = 'i{0}_{1}solar'.format(ppm, insol)
         df = getDF(job_name, test_dir=test_dir)
-        plotSeries(df, job_name, test_dir=test_dir, ppm=ppm)
+        plotSeries(df, job_name, test_dir=test_dir, title=ppm)
         print('DONE.', job_name)
 
 
@@ -136,7 +139,7 @@ test_dir = 'varying_solar/'
 for insol in insol_list:
     job_name = 'i270_{0}solar'.format(insol)
     df = getDF(job_name, test_dir=test_dir)
-    plotSeries(df, job_name, test_dir=test_dir, ppm=ppm)
+    plotSeries(df, job_name, test_dir=test_dir, title=insol)
     print('DONE.', job_name)
 
 
@@ -147,5 +150,5 @@ test_dir = 'varying_co2_qRadCst/'
 for ppm in co2_ppm_list:
     job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
     df = getDF(job_name, test_dir=test_dir)
-    plotSeries(df, job_name, test_dir=test_dir, ppm=ppm)
+    plotSeries(df, job_name, test_dir=test_dir, title=ppm)
     print('DONE.', job_name)
