@@ -161,35 +161,37 @@ def plotRolling(df, job_name, test_dir='', title = None):
     # plt.savefig(plot_name)
 
 
-# Vary co2 run
-co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-insol_list      = [290, 320]
-for insol in insol_list:
-    test_dir = 'varying_co2/{0}solar/'.format(insol)
-    for ppm in co2_ppm_list:
-        job_name = 'i{0}_{1}solar'.format(ppm, insol)
-        df = getDF(job_name, test_dir=test_dir)
-        plotSeries(df, job_name, test_dir=test_dir, title=ppm)
-        print('DONE.', job_name)
-
-
-# Vary insol run
-insol_list = [200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265,
-              270, 275, 280, 285, 290, 295, 300, 305, 310, 315, 320, 325, 330, 335]
-test_dir = 'varying_solar/'
-for insol in insol_list:
-    job_name = 'i270_{0}solar'.format(insol)
-    df = getDF(job_name, test_dir=test_dir)
-    plotSeries(df, job_name, test_dir=test_dir, title=insol)
-    print('DONE.', job_name)
+# # Vary co2 run
+# co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
+# insol_list      = [290, 320]
+# for insol in insol_list:
+#     test_dir = 'varying_co2/{0}solar/'.format(insol)
+#     for ppm in co2_ppm_list:
+#         job_name = 'i{0}_{1}solar'.format(ppm, insol)
+#         df = getDF(job_name, test_dir=test_dir)
+#         plotSeries(df, job_name, test_dir=test_dir, title=ppm)
+#         print('DONE.', job_name)
+#
+#
+# # Vary insol run
+# insol_list = [200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265,
+#               270, 275, 280, 285, 290, 295, 300, 305, 310, 315, 320, 325, 330, 335]
+# test_dir = 'varying_solar/'
+# for insol in insol_list:
+#     job_name = 'i270_{0}solar'.format(insol)
+#     df = getDF(job_name, test_dir=test_dir)
+#     plotSeries(df, job_name, test_dir=test_dir, title=insol)
+#     print('DONE.', job_name)
 
 
 # Vary co2 qRadCst run
 co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
+co2_ppm_list    = [405]
 insol           = 320
 test_dir = 'varying_co2_qRadCst/'
 for ppm in co2_ppm_list:
     job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
     df = getDF(job_name, test_dir=test_dir)
-    plotSeries(df, job_name, test_dir=test_dir, title=ppm)
+    # plotSeries(df, job_name, test_dir=test_dir, title=ppm)
+    plotRolling(df, job_name, test_dir=test_dir, title=ppm)
     print('DONE.', job_name)
