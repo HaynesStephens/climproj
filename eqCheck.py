@@ -86,9 +86,9 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
     ax2.legend()
 
     ax3 = axes[3]
-    mean_tsurf = mean_df.tsurf.mean()
-    ax3.plot(df.time / (3600*24), df.tsurf, label = '{0}:{1:.2f}'.format('tsurf', mean_tsurf))
-    ax3.set_ylim(mean_tsurf - 0.5, mean_tsurf + 0.5)
+    tsurf_mean = mean_df.tsurf.mean()
+    ax3.plot(df.time / (3600*24), df.tsurf, label = '{0}:{1:.2f}'.format('tsurf', tsurf_mean))
+    ax3.set_ylim(tsurf_mean - 0.5, tsurf_mean + 0.5)
     ax3.set_xlabel('Days')
     ax3.set_ylabel('Tsurf (K)')
     ax3.legend()
