@@ -44,7 +44,7 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
     plot_base = '/home/haynes13/code/python/climproj/figures/'
     plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'eqCheck/', test_dir, 'eq')
     os.system('mkdir -p {0}'.format(plot_dir))
-    plot_name = '{0}/{1}_eqCheck.png'.format(plot_dir, job_name)
+    plot_name = '{0}/{1}_evolution.png'.format(plot_dir, job_name)
     print(plot_name)
 
     yrs_back = 3600 * 24 * 365 * 0.3
@@ -100,10 +100,11 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
 
 
 def plotRolling(df, job_name, test_dir='', ppm = None):
+    df_roll = df.rolling(120).mean()
     plot_base = '/home/haynes13/code/python/climproj/figures/'
-    plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'eqCheck/', test_dir, 'eq')
+    plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'eqCheck/', test_dir, 'mean')
     os.system('mkdir -p {0}'.format(plot_dir))
-    plot_name = '{0}/{1}_eqCheck.png'.format(plot_dir, job_name)
+    plot_name = '{0}/{1}_mean.png'.format(plot_dir, job_name)
     print(plot_name)
 
     fig, axes = plt.subplots(nrows=3, ncols=1, sharex=True, figsize=(10, 10))
@@ -116,30 +117,31 @@ def plotRolling(df, job_name, test_dir='', ppm = None):
     plt.savefig(plot_name)
 
 
-# # Vary co2 run
-# co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-# insol_list      = [290, 320]
-# for insol in insol_list:
-#     test_dir = 'varying_co2/{0}solar/'.format(insol)
-#     for ppm in co2_ppm_list:
-#         job_name = 'i{0}_{1}solar'.format(ppm, insol)
-#         plotEQCheck(job_name, ppm, test_dir=test_dir)
-#         print('DONE.', job_name)
+# Vary co2 run
+co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
+insol_list      = [290, 320]
+for insol in insol_list:
+    test_dir = 'varying_co2/{0}solar/'.format(insol)
+    for ppm in co2_ppm_list:
+        job_name = 'i{0}_{1}solar'.format(ppm, insol)
+        df = getDF(job_name, test_dir=test_dir)
+        plotSeries(df, job_name, test_dir=test_dir, ppm=ppm)
+        print('DONE.', job_name)
 
 
-# # Vary insol run
-# insol_list = [200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265,
-#               270, 275, 280, 285, 290, 295, 300, 305, 310, 315, 320, 325, 330, 335]
-# test_dir = 'varying_solar/'
-# for insol in insol_list:
-#     job_name = 'i270_{0}solar'.format(insol)
-#     plotEQResponse(job_name, test_dir=test_dir)
-#     print('DONE.', job_name)
+# Vary insol run
+insol_list = [200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265,
+              270, 275, 280, 285, 290, 295, 300, 305, 310, 315, 320, 325, 330, 335]
+test_dir = 'varying_solar/'
+for insol in insol_list:
+    job_name = 'i270_{0}solar'.format(insol)
+    df = getDF(job_name, test_dir=test_dir)
+    plotSeries(df, job_name, test_dir=test_dir, ppm=ppm)
+    print('DONE.', job_name)
 
 
 # Vary co2 qRadCst run
 co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-co2_ppm_list    = [405]
 
 insol           = 320
 test_dir = 'varying_co2_qRadCst/'
