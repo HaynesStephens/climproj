@@ -114,7 +114,7 @@ def plotRolling(df, job_name, test_dir='', title = None):
 
     def plotVal(ax, val):
         last_val = df_roll['val'][-1]
-        ax.plot(df.time / (3600 * 24), df_roll['val'], label='{0}:{1:.2f}'.format(val, last_val))
+        ax.plot(df.time / (3600 * 24), df_roll['val'] - last_val, label='{0}:{1:.2f}'.format(val, last_val))
         ax.set_ylim(-1, 1)
 
     ax0 = axes[0]
