@@ -55,7 +55,7 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
 
     def plotVal(ax, val):
         mean_val = mean_df[val].mean()
-        ax.plot(df.time, df[val] - mean_val, label = '{0}:{1:.2f}'.format(val, mean_val))
+        ax.plot(df.time / (3600 * 24), df[val] - mean_val, label = '{0}:{1:.2f}'.format(val, mean_val))
         ax.set_ylim(-1, 1)
 
     ax0 = axes[0]
@@ -63,6 +63,8 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
     plotVal(ax0, 'lw_dn_surf')
     plotVal(ax0, 'sw_up_surf')
     plotVal(ax0, 'sw_dn_surf')
+    ax0.set_xlabel('Days')
+    ax0.set_ylabel('Wm^-2 (from mean)')
     ax0.legend()
 
     ax1 = axes[1]
@@ -70,11 +72,15 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
     plotVal(ax1, 'lw_dn_toa')
     plotVal(ax1, 'sw_up_toa')
     plotVal(ax1, 'sw_dn_toa')
+    ax1.set_xlabel('Days')
+    ax1.set_ylabel('Wm^-2 (from mean)')
     ax1.legend()
 
     ax2 = axes[2]
     plotVal(ax2, 'lh')
     plotVal(ax2, 'sh')
+    ax2.set_xlabel('Days')
+    ax2.set_ylabel('Wm^-2 (from mean)')
     ax2.legend()
 
     ax0.set_title('CO$_2$: {0} ppm'.format(ppm // 1))
