@@ -102,7 +102,7 @@ def plotSeries(df, job_name, test_dir='', title = None):
     plt.savefig(plot_name)
 
 
-def plotRolling(df, job_name, test_dir='', ppm = None):
+def plotRolling(df, job_name, test_dir='', title = None):
     df_roll = df.rolling(120).mean()
     plot_base = '/home/haynes13/code/python/climproj/figures/'
     plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'eqCheck/', test_dir, 'mean')
@@ -110,11 +110,52 @@ def plotRolling(df, job_name, test_dir='', ppm = None):
     plot_name = '{0}/{1}_mean.png'.format(plot_dir, job_name)
     print(plot_name)
 
-    fig, axes = plt.subplots(nrows=3, ncols=1, sharex=True, figsize=(10, 10))
-    ax0, ax1, ax2 = axes
+    fig, axes = plt.subplots(nrows=4, ncols=1, sharex=True, figsize=(10, 10))
 
+    def plotVal(ax, val):
+        last_val = df_roll['val'][-1]
+        ax.plot(df.time / (3600 * 24), df_roll['val'], label='{0}:{1:.2f}'.format(val, last_val))
+        ax.set_ylim(-1, 1)
 
-    ax0.set_title('CO$_2$: {0} ppm'.format(ppm // 1))
+    ax0 = axes[0]
+    plotVal(ax0, 'net_toa')
+    plotVal(ax0, 'lw_up_toa')
+    plotVal(ax0, 'lw_dn_toa')
+    plotVal(ax0, 'sw_up_toa')
+    plotVal(ax0, 'sw_dn_toa')
+    ax0.set_xlabel('Days')
+    ax0.set_ylabel('Wm^-2 (mean +/-)')
+    ax0.legend()
+
+    ax1 = axes[1]
+    plotVal(ax1, 'lh')
+    plotVal(ax1, 'sh')
+    ax1.set_xlabel('Days')
+    ax1.set_ylabel('Wm^-2 (mean +/-)')
+    ax1.legend()
+
+    ax2 = axes[2]
+    plotVal(ax2, 'net_surf')
+    plotVal(ax2, 'lw_up_surf')
+    plotVal(ax2, 'lw_dn_surf')
+    plotVal(ax2, 'sw_up_surf')
+    plotVal(ax2, 'sw_dn_surf')
+    ax2.set_xlabel('Days')
+    ax2.set_ylabel('Wm^-2 (mean +/-)')
+    ax2.legend()
+
+    ax3 = axes[3]
+    tsurf_mean = mean_df.tsurf.mean()
+    ax3.plot(df.time / (3600 * 24), df.tsurf, label='{0}:{1:.2f}'.format('tsurf', tsurf_mean))
+    ax3.set_ylim(tsurf_mean - 0.5, tsurf_mean + 0.5)
+    ax3.set_xlabel('Days')
+    ax3.set_ylabel('Tsurf (K)')
+    ax3.legend()
+
+    if 'co2' in job_name:
+        ax0.set_title('CO$_2$: {0} ppm'.format(title // 1))
+    else:
+        ax0.set_title('insol: {0}'.format(title // 1))
     plt.tight_layout()
     # plt.show()
     plt.savefig(plot_name)
