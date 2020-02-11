@@ -189,7 +189,6 @@ for insol in insol_list:
 
 # Vary co2 qRadCst run
 co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
-co2_ppm_list    = [405]
 insol           = 320
 test_dir = 'varying_co2_qRadCst/'
 for ppm in co2_ppm_list:
