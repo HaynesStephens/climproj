@@ -55,7 +55,7 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
 
     def plotVal(ax, val):
         mean_val = mean_df[val].mean()
-        ax.plot(df.time / (3600 * 24), df[val] - mean_val, label = '{0}:{1:.2f}'.format(val, mean_val))
+        ax.plot(df.time, df[val] - mean_val, label = '{0}:{1:.2f}'.format(val, mean_val))
         ax.set_ylim(-1, 1)
 
     ax0 = axes[0]
