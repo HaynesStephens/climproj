@@ -144,7 +144,7 @@ def plotRolling(df_roll, job_name, test_dir='', title = None):
     ax2.legend()
 
     ax3 = axes[3]
-    tsurf_last = df_roll.tsurf[-1]
+    tsurf_last = df_roll.tsurf.iloc[-1]
     ax3.plot(df.time / (3600 * 24), df.tsurf, label='{0}:{1:.2f}'.format('tsurf', tsurf_last))
     ax3.set_ylim(tsurf_last - 0.5, tsurf_last + 0.5)
     ax3.set_xlabel('Days')
