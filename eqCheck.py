@@ -93,7 +93,7 @@ def plotSeries(df, job_name, test_dir='', title = None):
     ax3.set_ylabel('Tsurf (K)')
     ax3.legend()
 
-    if 'co2' in job_name:
+    if 'co2' in test_dir:
         ax0.set_title('CO$_2$: {0} ppm'.format(title // 1))
     else:
         ax0.set_title('insol: {0}'.format(title // 1))
@@ -151,7 +151,7 @@ def plotRolling(df_roll, job_name, test_dir='', title = None):
     ax3.set_ylabel('Tsurf (K)')
     ax3.legend()
 
-    if 'co2' in job_name:
+    if 'co2' in test_dir:
         ax0.set_title('CO$_2$: {0} ppm'.format(title // 1))
     else:
         ax0.set_title('insol: {0}'.format(title // 1))
