@@ -87,7 +87,7 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
     plotVal(ax3, 'net_surf')
     plotVal(ax3, 'net_toa')
     ax3.set_xlabel('Days')
-    ax3.set_ylabel('Wm^-2 (net)')
+    ax3.set_ylabel('Wm^-2 (mean +/-)')
     ax3.legend()
 
     ax0.set_title('CO$_2$: {0} ppm'.format(ppm // 1))
