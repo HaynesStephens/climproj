@@ -193,7 +193,7 @@ for ppm in co2_ppm_list:
     df = getDF(job_name, test_dir=test_dir)
     df_roll = df.rolling(120).mean()
     # plotSeries(df, job_name, test_dir=test_dir, title=ppm)
-    # plotRolling(df_roll, job_name, test_dir=test_dir, title=ppm)
+    plotRolling(df_roll, job_name, test_dir=test_dir, title=ppm)
     print('DONE.', job_name)
 
 
