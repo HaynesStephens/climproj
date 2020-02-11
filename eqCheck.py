@@ -47,7 +47,7 @@ def plotSeries(df, job_name, test_dir='', title = None):
     plot_name = '{0}/{1}_evolution.png'.format(plot_dir, job_name)
     print(plot_name)
 
-    yrs_back = 3600 * 24 * 365 * 0.3
+    yrs_back = 3600 * 24 * 30
     time_max = df.time.max() - yrs_back
     mean_df = df[df.time > time_max]
 
@@ -98,8 +98,8 @@ def plotSeries(df, job_name, test_dir='', title = None):
     else:
         ax0.set_title('insol: {0}'.format(title // 1))
     plt.tight_layout()
-    plt.show()
-    # plt.savefig(plot_name)
+    # plt.show()
+    plt.savefig(plot_name)
 
 
 def plotRolling(df, job_name, test_dir='', ppm = None):
