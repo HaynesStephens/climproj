@@ -51,7 +51,7 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
     time_max = df.time.max() - yrs_back
     mean_df = df[df.time > time_max]
 
-    fig, axes = plt.subplots(nrows=3, ncols=1, sharex=True, figsize=(10, 10))
+    fig, axes = plt.subplots(nrows=4, ncols=1, sharex=True, figsize=(10, 10))
 
     def plotVal(ax, val):
         mean_val = mean_df[val].mean()
@@ -83,10 +83,17 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
     ax2.set_ylabel('Wm^-2 (from mean)')
     ax2.legend()
 
+    ax3 = axes[3]
+    ax3.plot(df.time, df.lw_up_surf + df.sw_up_surf - df.lw_dn_surf - df.sw_dn_surf, label = 'surf')
+    ax3.plot(df.time / (3600 * 24), df.lw_up_toa + df.sw_up_toa - df.lw_dn_toa - df.sw_dn_toa, label = 'toa')
+    ax3.set_xlabel('Days')
+    ax3.set_ylabel('Wm^-2 (net)')
+    ax3.legend()
+
     ax0.set_title('CO$_2$: {0} ppm'.format(ppm // 1))
     plt.tight_layout()
-    # plt.show()
-    plt.savefig(plot_name)
+    plt.show()
+    # plt.savefig(plot_name)
 
 
 def plotRolling(df, job_name, test_dir='', ppm = None):
@@ -129,6 +136,8 @@ def plotRolling(df, job_name, test_dir='', ppm = None):
 
 # Vary co2 qRadCst run
 co2_ppm_list    = [2, 5, 10, 20, 50, 100, 150, 190, 220, 270, 405, 540, 675, 756, 1080, 1215]
+co2_ppm_list    = [405]
+
 insol           = 320
 test_dir = 'varying_co2_qRadCst/'
 for ppm in co2_ppm_list:
