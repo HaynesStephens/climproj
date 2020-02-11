@@ -63,6 +63,7 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
     plotVal(ax0, 'lw_dn_surf')
     plotVal(ax0, 'sw_up_surf')
     plotVal(ax0, 'sw_dn_surf')
+    plotVal(ax0, 'net_surf')
     ax0.set_xlabel('Days')
     ax0.set_ylabel('Wm^-2 (mean +/-)')
     ax0.legend()
@@ -72,6 +73,7 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
     plotVal(ax1, 'lw_dn_toa')
     plotVal(ax1, 'sw_up_toa')
     plotVal(ax1, 'sw_dn_toa')
+    plotVal(ax1, 'net_toa')
     ax1.set_xlabel('Days')
     ax1.set_ylabel('Wm^-2 (mean +/-)')
     ax1.legend()
@@ -84,10 +86,10 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
     ax2.legend()
 
     ax3 = axes[3]
-    plotVal(ax3, 'net_surf')
-    plotVal(ax3, 'net_toa')
+    mean_tsurf = mean_df.tsurf.mean()
+    ax3.plot(df.time / (3600*24), df.tsurf, label = '{0}:{1:.2f}'.format('tsurf', mean_tsurf))
     ax3.set_xlabel('Days')
-    ax3.set_ylabel('Wm^-2 (mean +/-)')
+    ax3.set_ylabel('Tsurf (K)')
     ax3.legend()
 
     ax0.set_title('CO$_2$: {0} ppm'.format(ppm // 1))
