@@ -102,8 +102,7 @@ def plotSeries(df, job_name, test_dir='', title = None):
     plt.savefig(plot_name)
 
 
-def plotRolling(df, job_name, test_dir='', title = None):
-    df_roll = df.rolling(120).mean()
+def plotRolling(df_roll, job_name, test_dir='', title = None):
     plot_base = '/home/haynes13/code/python/climproj/figures/'
     plot_dir = '{0}{1}{2}{3}'.format(plot_base, 'eqCheck/', test_dir, 'mean')
     os.system('mkdir -p {0}'.format(plot_dir))
@@ -192,6 +191,7 @@ test_dir = 'varying_co2_qRadCst/'
 for ppm in co2_ppm_list:
     job_name = 'i{0}_{1}solar_qRadCst'.format(ppm, insol)
     df = getDF(job_name, test_dir=test_dir)
+    df_roll = df.rolling(120).mean()
     # plotSeries(df, job_name, test_dir=test_dir, title=ppm)
     plotRolling(df, job_name, test_dir=test_dir, title=ppm)
     print('DONE.', job_name)
