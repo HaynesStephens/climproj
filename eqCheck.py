@@ -84,9 +84,8 @@ def plotSeries(df, job_name, test_dir='', ppm = None):
     ax2.legend()
 
     ax3 = axes[3]
-    ax3.plot(df.time / (3600*24), df.net_surf, label = 'surf')
-    ax3.plot(df.time / (3600*24), df.net_toa, label = 'toa')
-    ax3.set_ylim(-1, 1)
+    plotVal(ax3, 'net_surf')
+    plotVal(ax3, 'net_toa')
     ax3.set_xlabel('Days')
     ax3.set_ylabel('Wm^-2 (net)')
     ax3.legend()
