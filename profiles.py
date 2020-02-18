@@ -1,12 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import matplotlib
-import matplotlib.gridspec as gridspec
 from matplotlib.ticker import (MultipleLocator, FormatStrFormatter, AutoMinorLocator)
-import os
-import seaborn as sns
-import copy
 
 
 def loadProfiles(co2_ppm, qRadCst=False):
@@ -102,7 +97,7 @@ def plotdTdtVertSingle(co2_ppm, qRadCst=False, save=False):
     return True
 
 
-def makeGif(gif_name = 'dorian', fps = 1):
+def makeGif(gif_name = 'dorian', fps = 1, gif=False):
     # For making Gifs
     import glob
     import moviepy.editor as mpy
@@ -115,4 +110,8 @@ def makeGif(gif_name = 'dorian', fps = 1):
     # Sort the images by number, still have to name them reasonably well to begin with
     list.sort(file_list, key=lambda x: x.split('.')[0].split('/')[-1])
     clip = mpy.ImageSequenceClip(file_list, fps=fps)
-    clip.write_gif('{0}{1}.gif'.format(writedir, gif_name), fps=fps)
+    if gif:
+        clip.write_gif('{0}{1}.gif'.format(writedir, gif_name), fps=fps)
+    else:
+        clip.write_videofile("movie.mp4", fps=15, audio=False)  # default codec: 'libx264', 24 fps
+    return True
