@@ -211,11 +211,11 @@ def saveMoistEnthalpy(nc, save_path):
     print('Saved:', var_name)
 
 
-def saveEQpkl(save_path, nc, years_back = 0.30):
+def saveEQpkl(save_path, nc, days_back = 30):
     skip_list = load_skip_list()
     print('Saving EQ Pickle!')
     eq_pkl = {}
-    seconds_back = years_back*365.25*24*60*60
+    seconds_back = days_back*24*60*60
     time_array = nc['time'][:].copy()
     t_final = time_array[-1]
     eq_index = np.where(time_array > (t_final - seconds_back))
@@ -224,6 +224,8 @@ def saveEQpkl(save_path, nc, years_back = 0.30):
         if var not in skip_list:
             print('pkl,', var)
             nc_var = nc[var][:].copy()
+            if var == 'air_temperature_tendency_from_convection':
+                nc_var = np.reshape(nc_var, (nc_var.shape[0], nc_var.shape[-1], 1, 1))
             var_eq_val = np.mean(nc_var[eq_index], axis=0)
             eq_pkl[var] = var_eq_val
 

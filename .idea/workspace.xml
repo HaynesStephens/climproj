@@ -2,8 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e96e55-1e90-42b8-8d0c-669c78e7ac0c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/profiles.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqCheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/eqCheck.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/290solar/eq/i100_290solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/290solar/eq/i1080_290solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/290solar/eq/i10_290solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/290solar/eq/i1215_290solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/290solar/eq/i150_290solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/290solar/eq/i190_290solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/290solar/eq/i20_290solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/290solar/eq/i220_290solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/290solar/eq/i270_290solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/290solar/eq/i2_290solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/290solar/eq/i405_290solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/290solar/eq/i50_290solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/290solar/eq/i540_290solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/290solar/eq/i5_290solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/290solar/eq/i675_290solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/290solar/eq/i756_290solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/320solar/eq/i100_320solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/320solar/eq/i1080_320solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/320solar/eq/i10_320solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/320solar/eq/i1215_320solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/320solar/eq/i150_320solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/320solar/eq/i190_320solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/320solar/eq/i20_320solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/320solar/eq/i220_320solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/320solar/eq/i270_320solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/320solar/eq/i2_320solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/320solar/eq/i405_320solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/320solar/eq/i50_320solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/320solar/eq/i540_320solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/320solar/eq/i5_320solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/320solar/eq/i675_320solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2/320solar/eq/i756_320solar_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2_qRadCst/eq/i100_320solar_qRadCst_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2_qRadCst/eq/i1080_320solar_qRadCst_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2_qRadCst/eq/i10_320solar_qRadCst_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2_qRadCst/eq/i1215_320solar_qRadCst_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2_qRadCst/eq/i150_320solar_qRadCst_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2_qRadCst/eq/i190_320solar_qRadCst_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2_qRadCst/eq/i20_320solar_qRadCst_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2_qRadCst/eq/i220_320solar_qRadCst_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2_qRadCst/eq/i270_320solar_qRadCst_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2_qRadCst/eq/i2_320solar_qRadCst_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2_qRadCst/eq/i405_320solar_qRadCst_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2_qRadCst/eq/i50_320solar_qRadCst_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2_qRadCst/eq/i540_320solar_qRadCst_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2_qRadCst/eq/i5_320solar_qRadCst_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2_qRadCst/eq/i675_320solar_qRadCst_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/eqCheck/varying_co2_qRadCst/eq/i756_320solar_qRadCst_eqCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writeCSVandPKL.py" beforeDir="false" afterPath="$PROJECT_DIR$/writeCSVandPKL.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +71,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eqCheck.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-292">
-              <caret line="97" column="9" lean-forward="true" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
+            <state relative-caret-position="612">
+              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#1663#3467#0" />
+                <element signature="e#3537#5239#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="74" column="51" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="51" />
+              <folding>
+                <element signature="e#223#241#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/profiles.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="719">
+              <caret line="109" column="16" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -45,8 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>radiation</find>
-      <find>radiat</find>
       <find>gray</find>
       <find>to</find>
       <find>print</find>
@@ -75,6 +148,8 @@
       <find>dTdtve</find>
       <find>dTdt</find>
       <find>file_name</find>
+      <find>t</find>
+      <find>carobon</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,7 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray/diagnostic_gray_co2_writeScript.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray/diagnostic_gray_co2_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_rrtmgSW/diagnostic_gray_rrtmgSW_co2_writeScript.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/gray_EXP/diagnostic_gray_q_template.py" />
@@ -120,7 +194,6 @@
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/short_grayrrtmg/diagnostic_short_grayrrtmg_T_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/short_grayrrtmg/diagnostic_short_grayrrtmg_writeScript.py" />
         <option value="$PROJECT_DIR$/profile_manipulation/distributionPlots.py" />
-        <option value="$PROJECT_DIR$/writeCSVandPKL.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/short_qradcst/diagnostic_short_qradcst_co2_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/short_qradcst/diagnostic_short_qradcst_q_template.py" />
         <option value="$PROJECT_DIR$/climt_scripts/diagnostic/short_qradcst/diagnostic_short_qradcst_T_template.py" />
@@ -134,10 +207,12 @@
         <option value="$PROJECT_DIR$/EQandTransResponses.py" />
         <option value="$PROJECT_DIR$/pressure_grids.py" />
         <option value="$PROJECT_DIR$/eqCheck.py" />
+        <option value="$PROJECT_DIR$/writeCSVandPKL.py" />
+        <option value="$PROJECT_DIR$/profiles.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="-820" />
     <option name="y" value="-1080" />
     <option name="width" value="1920" />
@@ -148,7 +223,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,6 +234,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Course" />
     </panes>
   </component>
@@ -347,21 +422,8 @@
       <workItem from="1579190999301" duration="7264000" />
       <workItem from="1579300777994" duration="302000" />
       <workItem from="1581366572820" duration="5635000" />
-      <workItem from="1581438182002" duration="3774000" />
-    </task>
-    <task id="LOCAL-01513" summary="check">
-      <created>1581372445362</created>
-      <option name="number" value="01513" />
-      <option name="presentableId" value="LOCAL-01513" />
-      <option name="project" value="LOCAL" />
-      <updated>1581372445362</updated>
-    </task>
-    <task id="LOCAL-01514" summary="check">
-      <created>1581372493713</created>
-      <option name="number" value="01514" />
-      <option name="presentableId" value="LOCAL-01514" />
-      <option name="project" value="LOCAL" />
-      <updated>1581372493713</updated>
+      <workItem from="1581438182002" duration="4607000" />
+      <workItem from="1582040907963" duration="2315000" />
     </task>
     <task id="LOCAL-01515" summary="check">
       <created>1581372640751</created>
@@ -692,11 +754,25 @@
       <option name="project" value="LOCAL" />
       <updated>1581443597539</updated>
     </task>
-    <option name="localTasksCounter" value="1562" />
+    <task id="LOCAL-01562" summary="check">
+      <created>1581443753780</created>
+      <option name="number" value="01562" />
+      <option name="presentableId" value="LOCAL-01562" />
+      <option name="project" value="LOCAL" />
+      <updated>1581443753780</updated>
+    </task>
+    <task id="LOCAL-01563" summary="check">
+      <created>1581445452139</created>
+      <option name="number" value="01563" />
+      <option name="presentableId" value="LOCAL-01563" />
+      <option name="project" value="LOCAL" />
+      <updated>1581445452139</updated>
+    </task>
+    <option name="localTasksCounter" value="1564" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="331258000" />
+    <option name="totallyTimeSpent" value="334406000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -711,7 +787,7 @@
     <frame x="-820" y="-1080" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22044729" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19808307" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -805,24 +881,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/short_tot/diagnostic_tot_co2_template.py" />
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/tot/diagnostic_tot_co2_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="48" selection-end-line="136" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/tot/diagnostic_tot_q_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="94" column="39" lean-forward="true" selection-end-line="143" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/climt_scripts/diagnostic/tot/diagnostic_tot_T_template.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1226,16 +1284,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="906">
-          <caret line="226" column="58" selection-start-line="226" selection-start-column="12" selection-end-line="226" selection-end-column="58" />
-          <folding>
-            <element signature="e#223#241#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pressure_grids.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
@@ -1243,10 +1291,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/climt_scripts/varying_co2_qRadCst/i5_320solar_qRadCst.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-805" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/eqCheck.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-292">
-          <caret line="97" column="9" lean-forward="true" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
+        <state relative-caret-position="612">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#1663#3467#0" />
+            <element signature="e#3537#5239#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writeCSVandPKL_varing_co2_qRadCst.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writeCSVandPKL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="74" column="51" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="51" />
+          <folding>
+            <element signature="e#223#241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="109" column="16" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
